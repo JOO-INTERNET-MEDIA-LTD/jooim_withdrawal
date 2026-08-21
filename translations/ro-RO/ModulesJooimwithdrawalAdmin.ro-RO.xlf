@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" target-language="ro-RO" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="105639f6b7c568ce5ecf630b6d196109" resname="A new module version is available.">
+        <source>A new module version is available.</source>
+        <target>Este disponibilă o versiune nouă a modulului.</target>
+      </trans-unit>
+      <trans-unit id="b574958c30b5ba01314361601475b0d7" resname="Acknowledgement retry count">
+        <source>Acknowledgement retry count</source>
+        <target>Număr de reîncercări pentru confirmare</target>
+      </trans-unit>
+      <trans-unit id="7d04527e464401f037f7b770ef6f11ce" resname="Acknowledgement sent again">
+        <source>Acknowledgement sent again</source>
+        <target>Confirmare retrimisă</target>
+      </trans-unit>
+      <trans-unit id="4e229fb322d31d83c5a5c3564e3a31cf" resname="Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.">
+        <source>Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.</source>
+        <target>Adaugă o intrare pentru retragere în zona Contul meu a clientului. Clientul poate utiliza în continuare fluxul public atunci când comanda nu este vizibilă în cont.</target>
+      </trans-unit>
+      <trans-unit id="eb8c72d6f4238351ce427d900b7acdde" resname="Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.">
+        <source>Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.</source>
+        <target>Adaugă butonul „Retragere din contract” la detaliile unei comenzi care aparține clientului autentificat. Apartenența este verificată pe server.</target>
+      </trans-unit>
+      <trans-unit id="b66759fdefd03410fcc05c0a0cfb1617" resname="Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.">
+        <source>Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.</source>
+        <target>Permite consumatorului să trimită o declarație neechivocă de retragere fără autentificare sau afișarea datelor comenzii. Păstrați această funcție disponibilă pentru contractele B2C online aplicabile.</target>
+      </trans-unit>
+      <trans-unit id="48f420a5ab439f6afaefd045a2e36186" resname="Attach PDF acknowledgement">
+        <source>Attach PDF acknowledgement</source>
+        <target>Atașează confirmarea PDF</target>
+      </trans-unit>
+      <trans-unit id="7395a545f8e75cb154506f525d21ac7f" resname="Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.">
+        <source>Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.</source>
+        <target>Atașează la e-mailul de confirmare PDF-ul imuabil de confirmare a retragerii. Dezactivarea atașamentului nu șterge PDF-ul protejat stocat împreună cu cazul.</target>
+      </trans-unit>
+      <trans-unit id="08fc26d02a0a34750fa794c9210ea617" resname="Back Office settings only">
+        <source>Back Office settings only</source>
+        <target>Numai setările Back Office</target>
+      </trans-unit>
+      <trans-unit id="5bf9a5d2d48868e8bfd393ffb31b010a" resname="Case closed">
+        <source>Case closed</source>
+        <target>Caz închis</target>
+      </trans-unit>
+      <trans-unit id="1a820eaf098af708e2e899f448284922" resname="Cases:">
+        <source>Cases:</source>
+        <target>Cazuri:</target>
+      </trans-unit>
+      <trans-unit id="4608ac7d9d0cee7eca9bd8e6924a7ccd" resname="Company identifier">
+        <source>Company identifier</source>
+        <target>Identificatorul societății</target>
+      </trans-unit>
+      <trans-unit id="9fecbc47aacafec4c27333c9efcdf9fa" resname="Confirmation sent">
+        <source>Confirmation sent</source>
+        <target>Confirmare trimisă</target>
+      </trans-unit>
+      <trans-unit id="68af74b08d0a6bef3a7cab83b43007a8" resname="Current module version">
+        <source>Current module version</source>
+        <target>Versiunea curentă a modulului</target>
+      </trans-unit>
+      <trans-unit id="cf67f8ec1757747174f522cedbd0a3ef" resname="Customer account link">
+        <source>Customer account link</source>
+        <target>Link în contul clientului</target>
+      </trans-unit>
+      <trans-unit id="e299b273bfe65f12d5c5e635a00d0d08" resname="Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.">
+        <source>Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.</source>
+        <target>Adresă de contact afișată clientului pentru comunicarea privind retragerile. Utilizați o căsuță poștală monitorizată activ; nu introduceți aici e-mailul clientului.</target>
+      </trans-unit>
+      <trans-unit id="0f4dd5b31b2621c3867dbdc20bcfd6fb" resname="Direct Article 11a function">
+        <source>Direct Article 11a function</source>
+        <target>Funcția directă prevăzută la articolul 11a</target>
+      </trans-unit>
+      <trans-unit id="250ca4811bc3e3ed4ed5ab8d842651f7" resname="Direct withdrawal">
+        <source>Direct withdrawal</source>
+        <target>Retragere directă</target>
+      </trans-unit>
+      <trans-unit id="1c68e1ef8d76b6e3068ec0095d6b24d7" resname="Direct withdrawal function:">
+        <source>Direct withdrawal function:</source>
+        <target>Funcție de retragere directă:</target>
+      </trans-unit>
+      <trans-unit id="b9f5c797ebbf55adccdd8539a65a0241" resname="Disabled">
+        <source>Disabled</source>
+        <target>Dezactivată</target>
+      </trans-unit>
+      <trans-unit id="d0ab632cea3a5b05130f1097ac2829b4" resname="Disabled (legal review required)">
+        <source>Disabled (legal review required)</source>
+        <target>Dezactivată (este necesară o analiză juridică)</target>
+      </trans-unit>
+      <trans-unit id="1cedb4b2ec1998c6e929abf9084480b8" resname="Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.">
+        <source>Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.</source>
+        <target>Afișează linkul „Retragere din contract aici” în subsolul magazinului. Acest link cu funcție juridică este independent de atribuirea de marketing Joobox.</target>
+      </trans-unit>
+      <trans-unit id="00c6156d5f4d21eecf8aca0c3972d4a0" resname="Duplicate submission">
+        <source>Duplicate submission</source>
+        <target>Solicitare duplicată</target>
+      </trans-unit>
+      <trans-unit id="e04377a3e2bd9aee7e2aaaa8e42b6c31" resname="Each active shop language receives its own localized friendly path. The language-neutral entry URLs remain available for external link-list modules. Test both flows in every active language after deployment.">
+        <source>Each active shop language receives its own localized friendly path. The language-neutral entry URLs remain available for external link-list modules. Test both flows in every active language after deployment.</source>
+        <target>Fiecare limbă activă a magazinului primește propria cale localizată și lizibilă. URL-urile de intrare neutre din punct de vedere lingvistic rămân disponibile pentru modulele externe cu liste de linkuri. După implementare, testați ambele fluxuri în fiecare limbă activă.</target>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d" resname="Email">
+        <source>Email</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="d4785e1f28e6858ec969ad1e2ab8eb64" resname="Emails per order / day">
+        <source>Emails per order / day</source>
+        <target>E-mailuri per comandă / zi</target>
+      </trans-unit>
+      <trans-unit id="199baa0f4d93ce8c32c2a0eeec862d48" resname="Emails per order / hour">
+        <source>Emails per order / hour</source>
+        <target>E-mailuri per comandă / oră</target>
+      </trans-unit>
+      <trans-unit id="00d23a76e43b46dae9ec7aa9dcbebb32" resname="Enabled">
+        <source>Enabled</source>
+        <target>Activată</target>
+      </trans-unit>
+      <trans-unit id="e16b95f990f6ab5d2364ccf81cd68bd4" resname="Enables the direct online withdrawal form that does not require a customer account or access to the original order email. Disable it only after a market-specific legal review.">
+        <source>Enables the direct online withdrawal form that does not require a customer account or access to the original order email. Disable it only after a market-specific legal review.</source>
+        <target>Activează formularul online direct de retragere, care nu necesită un cont de client sau acces la e-mailul inițial al comenzii. Dezactivați-l numai după o analiză juridică specifică pieței.</target>
+      </trans-unit>
+      <trans-unit id="1224d5fb7c458ea5af3ef2c251285b41" resname="Ends a verified guest session after this period without activity. Expected range: 5–240 minutes; recommended default: 30.">
+        <source>Ends a verified guest session after this period without activity. Expected range: 5–240 minutes; recommended default: 30.</source>
+        <target>Încheie o sesiune de vizitator verificată după această perioadă de inactivitate. Interval estimat: 5–240 de minute; valoare implicită recomandată: 30.</target>
+      </trans-unit>
+      <trans-unit id="e7f3116e4841a8f09cfcdb891932d2c5" resname="English fallback">
+        <source>English fallback</source>
+        <target>Text de rezervă în limba engleză</target>
+      </trans-unit>
+      <trans-unit id="90a62e36815a61583061bb46d6698eea" resname="Enter the absolute HTTPS URL of the privacy policy that explains processing of personal data for receiving and handling withdrawals.">
+        <source>Enter the absolute HTTPS URL of the privacy policy that explains processing of personal data for receiving and handling withdrawals.</source>
+        <target>Introduceți URL-ul HTTPS absolut al politicii de confidențialitate care explică prelucrarea datelor cu caracter personal pentru primirea și soluționarea retragerilor.</target>
+      </trans-unit>
+      <trans-unit id="a2dba2de45cce2c64d076b7127eea3d2" resname="Enter the exact address and practical instructions for returning goods. These instructions must not impose conditions that unlawfully restrict the consumer’s withdrawal right.">
+        <source>Enter the exact address and practical instructions for returning goods. These instructions must not impose conditions that unlawfully restrict the consumer’s withdrawal right.</source>
+        <target>Introduceți adresa exactă și instrucțiunile practice pentru returnarea bunurilor. Instrucțiunile nu trebuie să impună condiții care limitează ilegal dreptul de retragere al consumatorului.</target>
+      </trans-unit>
+      <trans-unit id="bf416d02cb4378b9c79efb8b78bc6da3" resname="Enter the identifier required in the seller’s jurisdiction, for example company ID, VAT ID or commercial-register number.">
+        <source>Enter the identifier required in the seller’s jurisdiction, for example company ID, VAT ID or commercial-register number.</source>
+        <target>Introduceți identificatorul solicitat în jurisdicția vânzătorului, de exemplu codul societății, codul de TVA sau numărul din registrul comerțului.</target>
+      </trans-unit>
+      <trans-unit id="1469fd08f814cf33fcd6010e3d3f90cf" resname="Enter the seller’s full legal or registered business name, not the module vendor. It appears in the form, acknowledgement email and PDF.">
+        <source>Enter the seller’s full legal or registered business name, not the module vendor. It appears in the form, acknowledgement email and PDF.</source>
+        <target>Introduceți denumirea juridică sau comercială înregistrată completă a vânzătorului, nu a furnizorului modulului. Aceasta apare în formular, în e-mailul de confirmare și în PDF.</target>
+      </trans-unit>
+      <trans-unit id="332da8c46d9285d34fdc6a303ef961dd" resname="Enter the seller’s registered office or business address exactly as it should appear in the consumer document.">
+        <source>Enter the seller’s registered office or business address exactly as it should appear in the consumer document.</source>
+        <target>Introduceți sediul social sau adresa comercială a vânzătorului exact așa cum trebuie să apară în documentul destinat consumatorului.</target>
+      </trans-unit>
+      <trans-unit id="fb636d5dcc9a87608884c792adeba49c" resname="EU compliance note (2026):">
+        <source>EU compliance note (2026):</source>
+        <target>Notă privind conformitatea cu legislația UE (2026):</target>
+      </trans-unit>
+      <trans-unit id="162a905374d1a34924bb5845530d885b" resname="Footer link (keep enabled for applicable online B2C contracts)">
+        <source>Footer link (keep enabled for applicable online B2C contracts)</source>
+        <target>Link în subsol (păstrați-l activat pentru contractele B2C online aplicabile)</target>
+      </trans-unit>
+      <trans-unit id="392f8cab7b4ad880e3cee9522b23e07d" resname="For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.">
+        <source>For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.</source>
+        <target>Pentru contractele B2C la distanță aplicabile, încheiate printr-o interfață online, dezactivarea sau ascunderea funcției directe de retragere poate contraveni articolului 11a din Directiva 2011/83/UE, astfel cum a fost modificată prin Directiva (UE) 2023/2673. Transpunerea națională trebuie verificată în continuare pentru fiecare piață.</target>
+      </trans-unit>
+      <trans-unit id="1d1840de10b4c570a590a590a07b508c" resname="For PrestaShop installation, do not use GitHub automatic &quot;Source code ZIP&quot;. Use only the installation ZIP file from the release assets.">
+        <source>For PrestaShop installation, do not use GitHub automatic "Source code ZIP". Use only the installation ZIP file from the release assets.</source>
+        <target>Pentru instalarea în PrestaShop, nu utilizați arhiva automată „Source code ZIP” de la GitHub. Utilizați numai fișierul ZIP de instalare din activele versiunii.</target>
+      </trans-unit>
+      <trans-unit id="4a746ff7cde7d7d2d280c05dafad842c" resname="General and legal availability">
+        <source>General and legal availability</source>
+        <target>Disponibilitate generală și juridică</target>
+      </trans-unit>
+      <trans-unit id="189797bb7c7c6b6ffecb05ab1583781a" resname="Get Joobox support">
+        <source>Get Joobox support</source>
+        <target>Obțineți asistență Joobox</target>
+      </trans-unit>
+      <trans-unit id="19939b44c683468d1479c9cf5d506e61" resname="GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.">
+        <source>GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.</source>
+        <target>Verificările GitHub sunt efectuate cel mult o dată la șase ore, cu excepția cazului în care sunt reîmprospătate manual. Modulul nu descarcă și nu instalează niciodată cod automat.</target>
+      </trans-unit>
+      <trans-unit id="39589e1c0b6ffff6f9fa814e0aebdd60" resname="Hosting cron URL (secret):">
+        <source>Hosting cron URL (secret):</source>
+        <target>URL cron al găzduirii (secret):</target>
+      </trans-unit>
+      <trans-unit id="2e843e03cb6a49fd569c9c675a8247bd" resname="How long the one-time email access link remains usable. Expected range: 5–240 minutes; recommended default: 30.">
+        <source>How long the one-time email access link remains usable. Expected range: 5–240 minutes; recommended default: 30.</source>
+        <target>Perioada în care linkul unic de acces din e-mail rămâne utilizabil. Interval estimat: 5–240 de minute; valoare implicită recomandată: 30.</target>
+      </trans-unit>
+      <trans-unit id="984ceac16fab685fc50b8d8a5eabf7de" resname="Included">
+        <source>Included</source>
+        <target>Inclus</target>
+      </trans-unit>
+      <trans-unit id="f7266ba0eb429463c24906863d97f74d" resname="Joobox support for this module">
+        <source>Joobox support for this module</source>
+        <target>Asistență Joobox pentru acest modul</target>
+      </trans-unit>
+      <trans-unit id="0d2a03417d12c0922f7c8f09a8866cdd" resname="JOOIM Withdrawal – Online Contract Withdrawal">
+        <source>JOOIM Withdrawal – Online Contract Withdrawal</source>
+        <target>JOOIM Withdrawal – Retragere online din contract</target>
+      </trans-unit>
+      <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174" resname="Language">
+        <source>Language</source>
+        <target>Limbă</target>
+      </trans-unit>
+      <trans-unit id="0bb8ede719cfab55d1e46a227ba20f09" resname="Language-neutral URLs for external link lists:">
+        <source>Language-neutral URLs for external link lists:</source>
+        <target>URL-uri neutre din punct de vedere lingvistic pentru liste externe de linkuri:</target>
+      </trans-unit>
+      <trans-unit id="712bd563f4ec14a3e9f63cd426a8f515" resname="Last checked">
+        <source>Last checked</source>
+        <target>Ultima verificare</target>
+      </trans-unit>
+      <trans-unit id="90725f7a92bc20cc7d26c20261af79da" resname="Latest version on GitHub">
+        <source>Latest version on GitHub</source>
+        <target>Cea mai recentă versiune pe GitHub</target>
+      </trans-unit>
+      <trans-unit id="b03d6f17c7f8bac52fe77f5914c49186" resname="Links for active shop languages">
+        <source>Links for active shop languages</source>
+        <target>Linkuri pentru limbile active ale magazinului</target>
+      </trans-unit>
+      <trans-unit id="911f0f24bdce6808f4614d6a263b143b" resname="Locale">
+        <source>Locale</source>
+        <target>Setare regională</target>
+      </trans-unit>
+      <trans-unit id="f176436ebc257cd47b923ebfcf43ffb7" resname="Magic link validity (minutes)">
+        <source>Magic link validity (minutes)</source>
+        <target>Valabilitatea linkului unic (minute)</target>
+      </trans-unit>
+      <trans-unit id="42315b8de2a717eced9b289382e286f7" resname="Maintenance CLI:">
+        <source>Maintenance CLI:</source>
+        <target>CLI pentru întreținere:</target>
+      </trans-unit>
+      <trans-unit id="feb2d01c3d55ad9d1e7478f2ecc6ee46" resname="Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.">
+        <source>Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.</source>
+        <target>Comutator principal pentru fluxurile publice de retragere și linkurile de retragere afișate clienților. Dezactivarea sa nu șterge și nu modifică retragerile deja primite.</target>
+      </trans-unit>
+      <trans-unit id="ba0b7c08eb6bb4e2a041a1a0dc1a5416" resname="Maximum access-link requests associated with the same normalized order reference during 24 hours.">
+        <source>Maximum access-link requests associated with the same normalized order reference during 24 hours.</source>
+        <target>Numărul maxim de solicitări de link de acces asociate aceleiași referințe normalizate a comenzii în 24 de ore.</target>
+      </trans-unit>
+      <trans-unit id="6d6b5d20d325c5c90d4964db721a0ebd" resname="Maximum access-link requests associated with the same normalized order reference during one hour. This protects the customer mailbox from repeated messages.">
+        <source>Maximum access-link requests associated with the same normalized order reference during one hour. This protects the customer mailbox from repeated messages.</source>
+        <target>Numărul maxim de solicitări de link de acces asociate aceleiași referințe normalizate a comenzii într-o oră. Aceasta protejează căsuța poștală a clientului de mesaje repetate.</target>
+      </trans-unit>
+      <trans-unit id="36d0c453e24108cf2523ed0cd552bf30" resname="Maximum customer note length">
+        <source>Maximum customer note length</source>
+        <target>Lungimea maximă a notei clientului</target>
+      </trans-unit>
+      <trans-unit id="3a028adaaf8097ffc9995ec306cac1b5" resname="Maximum number of plain-text characters accepted in the optional customer note. HTML is not accepted. Recommended default: 2000.">
+        <source>Maximum number of plain-text characters accepted in the optional customer note. HTML is not accepted. Recommended default: 2000.</source>
+        <target>Numărul maxim de caractere de text simplu acceptate în nota opțională a clientului. HTML nu este acceptat. Valoare implicită recomandată: 2000.</target>
+      </trans-unit>
+      <trans-unit id="854523876a065fccaa9edb66ac5396aa" resname="Maximum order-reference access requests from one pseudonymized IP during 15 minutes. Successful and unsuccessful lookups share the same limit.">
+        <source>Maximum order-reference access requests from one pseudonymized IP during 15 minutes. Successful and unsuccessful lookups share the same limit.</source>
+        <target>Numărul maxim de solicitări de acces pe baza referinței comenzii de la o singură adresă IP pseudonimizată în 15 minute. Căutările reușite și nereușite folosesc aceeași limită.</target>
+      </trans-unit>
+      <trans-unit id="c1f0b7fc8b6133385ad0bbce831cf97c" resname="Maximum order-reference access requests from one pseudonymized IP during 24 hours. The raw IP address is not stored in the legal withdrawal record.">
+        <source>Maximum order-reference access requests from one pseudonymized IP during 24 hours. The raw IP address is not stored in the legal withdrawal record.</source>
+        <target>Numărul maxim de solicitări de acces pe baza referinței comenzii de la o singură adresă IP pseudonimizată în 24 de ore. Adresa IP brută nu este stocată în evidența juridică a retragerii.</target>
+      </trans-unit>
+      <trans-unit id="1b29aaded6e656c7c29df1a188724d60" resname="Maximum total lifetime of a verified guest session even when the customer remains active. Expected range: 15–1440 minutes; recommended default: 120.">
+        <source>Maximum total lifetime of a verified guest session even when the customer remains active. Expected range: 15–1440 minutes; recommended default: 120.</source>
+        <target>Durata totală maximă a unei sesiuni de vizitator verificate, chiar dacă clientul rămâne activ. Interval estimat: 15–1440 de minute; valoare implicită recomandată: 120.</target>
+      </trans-unit>
+      <trans-unit id="f4c9d126deaeb00d98b2a3b5c98e1592" resname="Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.">
+        <source>Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.</source>
+        <target>Întârzierea minimă înainte de a putea solicita un alt e-mail de acces pentru aceeași referință a comenzii. Valoare implicită recomandată: 60 de secunde.</target>
+      </trans-unit>
+      <trans-unit id="4e19d7f8160483be13ee95ed3f7dccc2" resname="Module data was permanently deleted.">
+        <source>Module data was permanently deleted.</source>
+        <target>Datele modulului au fost șterse definitiv.</target>
+      </trans-unit>
+      <trans-unit id="eb5534a6983af195fab96bffe2ca4549" resname="Module enabled">
+        <source>Module enabled</source>
+        <target>Modul activat</target>
+      </trans-unit>
+      <trans-unit id="afdac9282c19d277f0eb8c3cb62fcefb" resname="Module is up to date.">
+        <source>Module is up to date.</source>
+        <target>Modulul este actualizat.</target>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b" resname="No">
+        <source>No</source>
+        <target>Nu</target>
+      </trans-unit>
+      <trans-unit id="fb2d1435d9fcd5b2968d8e0290ee8691" resname="No active shop languages were found.">
+        <source>No active shop languages were found.</source>
+        <target>Nu au fost găsite limbi active ale magazinului.</target>
+      </trans-unit>
+      <trans-unit id="ff9aae6410bc98cd9a562bec02d2732c" resname="No data is deleted unless the value is exactly DELETE.">
+        <source>No data is deleted unless the value is exactly DELETE.</source>
+        <target>Nu se șterg date decât dacă valoarea este exact DELETE.</target>
+      </trans-unit>
+      <trans-unit id="647583f74c004a3c608af12e603c8544" resname="Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.">
+        <source>Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.</source>
+        <target>Dezinstalarea obișnuită a modulului păstrează înregistrările retragerilor. Această acțiune distructivă elimină toate tabelele modulului.</target>
+      </trans-unit>
+      <trans-unit id="8d2dd0c91251585950bc6ba2ab52108b" resname="Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.">
+        <source>Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.</source>
+        <target>Numărul de reîncercări automate după eșuarea unui e-mail de confirmare. Retragerea rămâne valabilă chiar dacă toate încercările de trimitere a e-mailului eșuează.</target>
+      </trans-unit>
+      <trans-unit id="8c912169e1c01fceba3bc0758f956fe5" resname="Open GitHub Releases">
+        <source>Open GitHub Releases</source>
+        <target>Deschide versiunile GitHub</target>
+      </trans-unit>
+      <trans-unit id="9d60cfba7dfc18f815cafc70ac701571" resname="Open withdrawals">
+        <source>Open withdrawals</source>
+        <target>Deschide retragerile</target>
+      </trans-unit>
+      <trans-unit id="36b030c8de809d689b3d5dc9d16ef7db" resname="Opens the Back Office list of received withdrawals, their status, documents, refund records and audit history.">
+        <source>Opens the Back Office list of received withdrawals, their status, documents, refund records and audit history.</source>
+        <target>Deschide lista din Back Office a retragerilor primite, starea, documentele, înregistrările rambursărilor și istoricul de audit ale acestora.</target>
+      </trans-unit>
+      <trans-unit id="8cc6aff5f8ec8880791350390f185d6b" resname="Optional customer-service phone number shown in the acknowledgement and PDF. It is not used to authenticate a withdrawal.">
+        <source>Optional customer-service phone number shown in the acknowledgement and PDF. It is not used to authenticate a withdrawal.</source>
+        <target>Număr opțional de telefon al serviciului pentru clienți, afișat în confirmare și în PDF. Nu este utilizat pentru autentificarea unei retrageri.</target>
+      </trans-unit>
+      <trans-unit id="91d0c684934e62d6e3e871cf760ab1a5" resname="Order detail button">
+        <source>Order detail button</source>
+        <target>Buton în detaliile comenzii</target>
+      </trans-unit>
+      <trans-unit id="e3226110b52a3a391cf9723cedf9afa9" resname="Order-reference flow">
+        <source>Order-reference flow</source>
+        <target>Flux pe baza referinței comenzii</target>
+      </trans-unit>
+      <trans-unit id="9f004157e4c148dac71da3ae5906351f" resname="Partially refunded">
+        <source>Partially refunded</source>
+        <target>Rambursat parțial</target>
+      </trans-unit>
+      <trans-unit id="389d382a151949ccbc613f148039f243" resname="Permanent data purge">
+        <source>Permanent data purge</source>
+        <target>Ștergere definitivă a datelor</target>
+      </trans-unit>
+      <trans-unit id="8bb19586e39b432b1f0d04860879f8fd" resname="Permanently delete all module data">
+        <source>Permanently delete all module data</source>
+        <target>Șterge definitiv toate datele modulului</target>
+      </trans-unit>
+      <trans-unit id="bcc254b55c4a1babdf1dcb82c207506b" resname="Phone">
+        <source>Phone</source>
+        <target>Telefon</target>
+      </trans-unit>
+      <trans-unit id="9e2cdc4e408db239280c5e043d50173f" resname="PHP 8.1 or newer is required.">
+        <source>PHP 8.1 or newer is required.</source>
+        <target>Este necesar PHP 8.1 sau o versiune mai nouă.</target>
+      </trans-unit>
+      <trans-unit id="c63031d958b58c8116035092362f25ed" resname="Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.">
+        <source>Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.</source>
+        <target>Metoda preferată pentru întreținerea programată. Elimină înregistrările temporare expirate, reîncearcă confirmările din coadă și procesează sarcinile de păstrare.</target>
+      </trans-unit>
+      <trans-unit id="4e86c1fd72fe463cdbe67c5704dbd4d9" resname="Privacy policy URL">
+        <source>Privacy policy URL</source>
+        <target>URL-ul politicii de confidențialitate</target>
+      </trans-unit>
+      <trans-unit id="fed94c98dce5cf7158450628d5f232c6" resname="Public entry:">
+        <source>Public entry:</source>
+        <target>Intrare publică:</target>
+      </trans-unit>
+      <trans-unit id="dc16a594f0069adea19ca1b5a4230fc7" resname="Purge confirmation">
+        <source>Purge confirmation</source>
+        <target>Confirmarea ștergerii</target>
+      </trans-unit>
+      <trans-unit id="32cf24c131e8c90129bc9dc6252c6003" resname="Ready. Required security values and module hooks are available.">
+        <source>Ready. Required security values and module hooks are available.</source>
+        <target>Pregătit. Valorile de securitate necesare și hook-urile modulului sunt disponibile.</target>
+      </trans-unit>
+      <trans-unit id="e42f6e063d74ea96cf2c30f2552d208f" resname="Reference prefix">
+        <source>Reference prefix</source>
+        <target>Prefixul referinței</target>
+      </trans-unit>
+      <trans-unit id="0d9e71a5f31d8ddea938f07fda9a1444" resname="Refresh update status">
+        <source>Refresh update status</source>
+        <target>Reîmprospătează starea actualizării</target>
+      </trans-unit>
+      <trans-unit id="e963a2769e317ec3289dc057845cd3e2" resname="Refund completed">
+        <source>Refund completed</source>
+        <target>Rambursare finalizată</target>
+      </trans-unit>
+      <trans-unit id="26d3b43de693b9d47c36dee1035a46a8" resname="Refund pending">
+        <source>Refund pending</source>
+        <target>Rambursare în așteptare</target>
+      </trans-unit>
+      <trans-unit id="18c16aedc5678290d3f50d8b0bd198f1" resname="Refund recorded">
+        <source>Refund recorded</source>
+        <target>Rambursare înregistrată</target>
+      </trans-unit>
+      <trans-unit id="e6fa03f0b7eb9b39761dd40a3b395334" resname="Registered address">
+        <source>Registered address</source>
+        <target>Adresa înregistrată</target>
+      </trans-unit>
+      <trans-unit id="a45536b852059a333397abd12f770f40" resname="Requests per IP / 15 minutes">
+        <source>Requests per IP / 15 minutes</source>
+        <target>Solicitări per IP / 15 minute</target>
+      </trans-unit>
+      <trans-unit id="3e5fbf238d7169b08b1620f5c0ed538e" resname="Requests per IP / day">
+        <source>Requests per IP / day</source>
+        <target>Solicitări per IP / zi</target>
+      </trans-unit>
+      <trans-unit id="2549e08c454fe021bf7ef601efd389f9" resname="Resend cooldown (seconds)">
+        <source>Resend cooldown (seconds)</source>
+        <target>Pauză înainte de retrimitere (secunde)</target>
+      </trans-unit>
+      <trans-unit id="f407eca5d4719f814784407e805a3320" resname="Return address / instructions">
+        <source>Return address / instructions</source>
+        <target>Adresa / instrucțiunile de returnare</target>
+      </trans-unit>
+      <trans-unit id="cd4b58c156cc842c8eaee4f2eda67386" resname="Returned goods received">
+        <source>Returned goods received</source>
+        <target>Produsele returnate au fost primite</target>
+      </trans-unit>
+      <trans-unit id="340047998cd91b899900eed231cc7fef" resname="Runtime configuration:">
+        <source>Runtime configuration:</source>
+        <target>Configurație în timpul rulării:</target>
+      </trans-unit>
+      <trans-unit id="d4dccb8ca2dac4e53c01bd9954755332" resname="Save settings">
+        <source>Save settings</source>
+        <target>Salvează setările</target>
+      </trans-unit>
+      <trans-unit id="508878a506066b8fadfa321807415ee0" resname="Secure online exercise and administration of the consumer right of withdrawal.">
+        <source>Secure online exercise and administration of the consumer right of withdrawal.</source>
+        <target>Exercitarea și administrarea online în siguranță a dreptului de retragere al consumatorului.</target>
+      </trans-unit>
+      <trans-unit id="2801f11e30091ea7db27772359285c58" resname="Security, session and abuse limits">
+        <source>Security, session and abuse limits</source>
+        <target>Limite de securitate, sesiune și abuz</target>
+      </trans-unit>
+      <trans-unit id="b0aca289a0a6e06700d28253aa26cba2" resname="Session absolute limit (minutes)">
+        <source>Session absolute limit (minutes)</source>
+        <target>Limita absolută a sesiunii (minute)</target>
+      </trans-unit>
+      <trans-unit id="0693fa44a6aabaf090af1bee024240fe" resname="Session inactivity limit (minutes)">
+        <source>Session inactivity limit (minutes)</source>
+        <target>Limita de inactivitate a sesiunii (minute)</target>
+      </trans-unit>
+      <trans-unit id="9a7e58ee13cb727cb7c4acc68f4cafe5" resname="Settings saved.">
+        <source>Settings saved.</source>
+        <target>Setările au fost salvate.</target>
+      </trans-unit>
+      <trans-unit id="9eeed2a79a0ce14783ba54b0b0420203" resname="Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.">
+        <source>Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.</source>
+        <target>Cod scurt utilizat la începutul referințelor retragerii. Folosiți numai litere, cifre și cratime, de exemplu WD. Referințele existente ale retragerilor nu sunt modificate niciodată.</target>
+      </trans-unit>
+      <trans-unit id="0cfb330ba2af0cc69f2cd95aca520abd" resname="Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.">
+        <source>Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.</source>
+        <target>Unele cerințe de rulare nu au putut fi sincronizate. Verificați jurnalele PrestaShop înainte de utilizarea publică.</target>
+      </trans-unit>
+      <trans-unit id="c84f3c8cccffa553f2b2322518573b57" resname="Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.">
+        <source>Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.</source>
+        <target>Pornește fluxul securizat pe baza referinței comenzii. Clientul introduce numai referința publică a comenzii; datele comenzii și datele personale rămân ascunse până la confirmarea linkului unic din e-mail.</target>
+      </trans-unit>
+      <trans-unit id="58200c5eb0a6df1eb10635ecb7363249" resname="Status changed by administrator">
+        <source>Status changed by administrator</source>
+        <target>Stare modificată de administrator</target>
+      </trans-unit>
+      <trans-unit id="34a1e6159e4b3b9f19d11093f9cf1c48" resname="Supported PrestaShop versions are 8.1 through 9.1.">
+        <source>Supported PrestaShop versions are 8.1 through 9.1.</source>
+        <target>Versiunile PrestaShop acceptate sunt de la 8.1 la 9.1.</target>
+      </trans-unit>
+      <trans-unit id="440cefce4f97e7cb67c869bf1d8dfe16" resname="The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.">
+        <source>The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.</source>
+        <target>Valorile implicite sunt intenționat prudente. Măriți limitele numai după analizarea traficului real și a jurnalelor de abuz; limitele prea mici pot bloca consumatorii legitimi.</target>
+      </trans-unit>
+      <trans-unit id="afc3f41e1b3dceb9e58a5d7fe33ca215" resname="These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.">
+        <source>These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.</source>
+        <target>Aceste valori identifică vânzătorul real care operează magazinul selectat. Sunt stocate pentru fiecare magazin în multistore și sunt tipărite în confirmările clientului și în dovada PDF.</target>
+      </trans-unit>
+      <trans-unit id="7c590d9272ad1786e0e73357bf415267" resname="This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.">
+        <source>This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.</source>
+        <target>Acest modul GitHub gratuit este furnizat fără asistență tehnică individuală. Instalarea, configurarea, testarea în producție, actualizările și depanarea sunt disponibile pentru clienții care folosesc Joobox PrestaShop Cloud sau un alt serviciu cu plată convenit în mod explicit cu JOO INTERNET MEDIA LTD.</target>
+      </trans-unit>
+      <trans-unit id="1bb184adfba62621740f795ec93d36e6" resname="Trader details – current shop">
+        <source>Trader details – current shop</source>
+        <target>Datele comerciantului – magazinul curent</target>
+      </trans-unit>
+      <trans-unit id="14a3e5ba5527ad9b624f6ff0a81c9b8c" resname="Trader name">
+        <source>Trader name</source>
+        <target>Denumirea comerciantului</target>
+      </trans-unit>
+      <trans-unit id="6dd08874f83507e9c7b23f1a46b7fa7c" resname="Translation">
+        <source>Translation</source>
+        <target>Traducere</target>
+      </trans-unit>
+      <trans-unit id="013033d8b098dd26ff49eb11860f1fa7" resname="Type DELETE">
+        <source>Type DELETE</source>
+        <target>Tastați DELETE</target>
+      </trans-unit>
+      <trans-unit id="9e5fb4183f6e1e965dc8f7de0c200cbf" resname="Type DELETE to confirm permanent data deletion.">
+        <source>Type DELETE to confirm permanent data deletion.</source>
+        <target>Tastați DELETE pentru a confirma ștergerea definitivă a datelor.</target>
+      </trans-unit>
+      <trans-unit id="9007b9aa19e4aeeb4c9c13a065c1ff47" resname="Type the exact word DELETE to remove all withdrawals, documents, audit history, access records and refund records. This action cannot be undone and is not required for an ordinary module update or reinstall.">
+        <source>Type the exact word DELETE to remove all withdrawals, documents, audit history, access records and refund records. This action cannot be undone and is not required for an ordinary module update or reinstall.</source>
+        <target>Tastați cuvântul exact DELETE pentru a elimina toate retragerile, documentele, istoricul de audit, înregistrările de acces și de rambursare. Acțiunea nu poate fi anulată și nu este necesară pentru o actualizare sau reinstalare obișnuită a modulului.</target>
+      </trans-unit>
+      <trans-unit id="ddc725eae7cbd49e09089df5f6cd7f50" resname="Unable to verify the latest version from GitHub. Check releases manually.">
+        <source>Unable to verify the latest version from GitHub. Check releases manually.</source>
+        <target>Nu s-a putut verifica cea mai recentă versiune de pe GitHub. Verificați manual versiunile.</target>
+      </trans-unit>
+      <trans-unit id="1321a344a5a1a622364582904f3d281d" resname="Under review">
+        <source>Under review</source>
+        <target>În curs de verificare</target>
+      </trans-unit>
+      <trans-unit id="88183b946cc5f0e8c96b2e66e1c74a7e" resname="Unknown">
+        <source>Unknown</source>
+        <target>Necunoscut</target>
+      </trans-unit>
+      <trans-unit id="e2b8575e1fd2467e8d1ee9749a57513c" resname="Update check">
+        <source>Update check</source>
+        <target>Verificarea actualizărilor</target>
+      </trans-unit>
+      <trans-unit id="d45473395df63bc3eaf7c87f2af3d617" resname="Update check failed: %error%">
+        <source>Update check failed: %error%</source>
+        <target>Verificarea actualizărilor a eșuat: %error%</target>
+      </trans-unit>
+      <trans-unit id="f5359d1dd07def542aa9b0577fb27068" resname="Update status">
+        <source>Update status</source>
+        <target>Starea actualizării</target>
+      </trans-unit>
+      <trans-unit id="ec0680bbb63e497125e1b9b3fa3aa255" resname="Use these URLs in modules that provide only one URL field for all languages. The entry controller selects the current or preferred shop language and redirects to the localized friendly path.">
+        <source>Use these URLs in modules that provide only one URL field for all languages. The entry controller selects the current or preferred shop language and redirects to the localized friendly path.</source>
+        <target>Utilizați aceste URL-uri în modulele care oferă un singur câmp URL pentru toate limbile. Controllerul de intrare selectează limba curentă sau preferată a magazinului și redirecționează către calea localizată și lizibilă.</target>
+      </trans-unit>
+      <trans-unit id="731b8ef7226d81e5dcdcb73d2cbaaa56" resname="Use this only in a disposable test installation.">
+        <source>Use this only in a disposable test installation.</source>
+        <target>Utilizați această funcție numai într-o instalare de test de unică folosință.</target>
+      </trans-unit>
+      <trans-unit id="577f4ba99fa5b48178e116e405081470" resname="Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.">
+        <source>Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.</source>
+        <target>Utilizați acest URL numai atunci când găzduirea nu poate executa comanda CLI. Tratați tokenul ca pe o parolă: nu îl publicați, nu îl trimiteți prin e-mail și nu îl includeți în monitorizarea publică.</target>
+      </trans-unit>
+      <trans-unit id="01f004435882e0df6fc4d48ff6d6b2b5" resname="Waiting for returned goods">
+        <source>Waiting for returned goods</source>
+        <target>Se așteaptă produsele returnate</target>
+      </trans-unit>
+      <trans-unit id="b0578341d6fba5c8fb8282b71deaaf49" resname="Withdrawal received">
+        <source>Withdrawal received</source>
+        <target>Retragere primită</target>
+      </trans-unit>
+      <trans-unit id="a6bf9dba77e2cf61e65fb7a0c4c07bea" resname="Withdrawal rejected">
+        <source>Withdrawal rejected</source>
+        <target>Retragere respinsă</target>
+      </trans-unit>
+      <trans-unit id="0bce86ca38c0bed64f9a8831fc4dceb4" resname="Withdrawal submitted">
+        <source>Withdrawal submitted</source>
+        <target>Retragere trimisă</target>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435" resname="Yes">
+        <source>Yes</source>
+        <target>Da</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

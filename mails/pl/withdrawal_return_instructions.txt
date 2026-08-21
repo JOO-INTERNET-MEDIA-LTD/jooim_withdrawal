@@ -1,0 +1,12 @@
+Instrukcje zwrotu
+Numer odstąpienia: {withdrawal_reference}
+Zamówienie / umowa: {order_reference}
+Status: {status}
+
+Wiadomość sprzedawcy:
+{public_message}
+
+Adres / instrukcje zwrotu:
+{return_address}
+
+Kontakt sprzedawcy: {merchant_email}

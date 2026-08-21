@@ -1,0 +1,28 @@
+Potvrdenie prijatia odstúpenia od zmluvy
+
+Potvrdzujeme prijatie vášho oznámenia o odstúpení od zmluvy.
+Referencia odstúpenia: {withdrawal_reference}
+Objednávka / zmluva: {order_reference}
+Spotrebiteľ: {firstname} {lastname}
+Elektronický kontakt: {customer_email}
+Dátum a čas prijatia: {submitted_at}
+Čas prijatia UTC: {submitted_at_utc}
+Rozsah: {scope}
+
+Obsah podania / položky:
+{items_text}
+
+Vyhlásenie:
+{statement}
+
+Obchodník:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Adresa / pokyny na vrátenie:
+{return_address}
+
+Toto potvrdenie uchovajte. Ide o potvrdenie obsahu, dátumu a času vášho online oznámenia.
+SHA-256 hash nemenného snapshotu: {payload_hash}

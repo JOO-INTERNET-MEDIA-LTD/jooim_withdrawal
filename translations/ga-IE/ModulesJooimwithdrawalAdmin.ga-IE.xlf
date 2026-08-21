@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" target-language="ga-IE" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="105639f6b7c568ce5ecf630b6d196109" resname="A new module version is available.">
+        <source>A new module version is available.</source>
+        <target>Tá leagan nua den mhodúl ar fáil.</target>
+      </trans-unit>
+      <trans-unit id="b574958c30b5ba01314361601475b0d7" resname="Acknowledgement retry count">
+        <source>Acknowledgement retry count</source>
+        <target>Líon na n-iarrachtaí eile don admháil</target>
+      </trans-unit>
+      <trans-unit id="7d04527e464401f037f7b770ef6f11ce" resname="Acknowledgement sent again">
+        <source>Acknowledgement sent again</source>
+        <target>Deimhniú seolta arís</target>
+      </trans-unit>
+      <trans-unit id="4e229fb322d31d83c5a5c3564e3a31cf" resname="Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.">
+        <source>Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.</source>
+        <target>Cuireann sé iontráil tarraingthe siar le limistéar Mo chuntas an chustaiméara. Is féidir leis an gcustaiméir an próiseas poiblí a úsáid fós nuair nach bhfuil an t-ordú le feiceáil sa chuntas.</target>
+      </trans-unit>
+      <trans-unit id="eb8c72d6f4238351ce427d900b7acdde" resname="Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.">
+        <source>Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.</source>
+        <target>Cuireann sé cnaipe “Tarraing siar ón gconradh” le sonraí ordaithe ar leis an gcustaiméir sínithe isteach é. Déantar an úinéireacht a sheiceáil ar an bhfreastalaí.</target>
+      </trans-unit>
+      <trans-unit id="b66759fdefd03410fcc05c0a0cfb1617" resname="Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.">
+        <source>Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.</source>
+        <target>Ligeann sé don tomhaltóir ráiteas aonchiallach tarraingthe siar a chur isteach gan síniú isteach ná sonraí ordaithe a thaispeáint. Coinnigh an fheidhm seo ar fáil do chonarthaí B2C ar líne lena mbaineann.</target>
+      </trans-unit>
+      <trans-unit id="48f420a5ab439f6afaefd045a2e36186" resname="Attach PDF acknowledgement">
+        <source>Attach PDF acknowledgement</source>
+        <target>Ceangail admháil PDF</target>
+      </trans-unit>
+      <trans-unit id="7395a545f8e75cb154506f525d21ac7f" resname="Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.">
+        <source>Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.</source>
+        <target>Ceanglaíonn sé PDF do-athraithe deimhniúcháin na tarraingthe siar leis an ríomhphost admhála. Ní scriosann díchumasú an cheangaltáin an PDF cosanta atá stóráilte leis an gcás.</target>
+      </trans-unit>
+      <trans-unit id="08fc26d02a0a34750fa794c9210ea617" resname="Back Office settings only">
+        <source>Back Office settings only</source>
+        <target>Socruithe Back Office amháin</target>
+      </trans-unit>
+      <trans-unit id="5bf9a5d2d48868e8bfd393ffb31b010a" resname="Case closed">
+        <source>Case closed</source>
+        <target>Cás dúnta</target>
+      </trans-unit>
+      <trans-unit id="1a820eaf098af708e2e899f448284922" resname="Cases:">
+        <source>Cases:</source>
+        <target>Cásanna:</target>
+      </trans-unit>
+      <trans-unit id="4608ac7d9d0cee7eca9bd8e6924a7ccd" resname="Company identifier">
+        <source>Company identifier</source>
+        <target>Aitheantóir cuideachta</target>
+      </trans-unit>
+      <trans-unit id="9fecbc47aacafec4c27333c9efcdf9fa" resname="Confirmation sent">
+        <source>Confirmation sent</source>
+        <target>Deimhniú seolta</target>
+      </trans-unit>
+      <trans-unit id="68af74b08d0a6bef3a7cab83b43007a8" resname="Current module version">
+        <source>Current module version</source>
+        <target>Leagan reatha an mhodúil</target>
+      </trans-unit>
+      <trans-unit id="cf67f8ec1757747174f522cedbd0a3ef" resname="Customer account link">
+        <source>Customer account link</source>
+        <target>Nasc i gcuntas an chustaiméara</target>
+      </trans-unit>
+      <trans-unit id="e299b273bfe65f12d5c5e635a00d0d08" resname="Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.">
+        <source>Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.</source>
+        <target>Seoladh teagmhála atá le feiceáil ag an gcustaiméir le haghaidh cumarsáide faoi tharraingt siar. Úsáid bosca poist a ndéantar monatóireacht ghníomhach air; ná cuir ríomhphost an chustaiméara anseo.</target>
+      </trans-unit>
+      <trans-unit id="0f4dd5b31b2621c3867dbdc20bcfd6fb" resname="Direct Article 11a function">
+        <source>Direct Article 11a function</source>
+        <target>Feidhm dhíreach Airteagal 11a</target>
+      </trans-unit>
+      <trans-unit id="250ca4811bc3e3ed4ed5ab8d842651f7" resname="Direct withdrawal">
+        <source>Direct withdrawal</source>
+        <target>Tarraingt siar dhíreach</target>
+      </trans-unit>
+      <trans-unit id="1c68e1ef8d76b6e3068ec0095d6b24d7" resname="Direct withdrawal function:">
+        <source>Direct withdrawal function:</source>
+        <target>Feidhm tarraingthe siar dírí:</target>
+      </trans-unit>
+      <trans-unit id="b9f5c797ebbf55adccdd8539a65a0241" resname="Disabled">
+        <source>Disabled</source>
+        <target>Díchumasaithe</target>
+      </trans-unit>
+      <trans-unit id="d0ab632cea3a5b05130f1097ac2829b4" resname="Disabled (legal review required)">
+        <source>Disabled (legal review required)</source>
+        <target>Díchumasaithe (athbhreithniú dlíthiúil riachtanach)</target>
+      </trans-unit>
+      <trans-unit id="1cedb4b2ec1998c6e929abf9084480b8" resname="Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.">
+        <source>Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.</source>
+        <target>Taispeánann sé an nasc “Tarraing siar ón gconradh anseo” i mbuntásc an tsiopa. Tá an nasc feidhme dlíthiúil seo neamhspleách ar an lua margaíochta Joobox.</target>
+      </trans-unit>
+      <trans-unit id="00c6156d5f4d21eecf8aca0c3972d4a0" resname="Duplicate submission">
+        <source>Duplicate submission</source>
+        <target>Aighneacht dhúblach</target>
+      </trans-unit>
+      <trans-unit id="e04377a3e2bd9aee7e2aaaa8e42b6c31" resname="Each active shop language receives its own localized friendly path. The language-neutral entry URLs remain available for external link-list modules. Test both flows in every active language after deployment.">
+        <source>Each active shop language receives its own localized friendly path. The language-neutral entry URLs remain available for external link-list modules. Test both flows in every active language after deployment.</source>
+        <target>Faigheann gach teanga ghníomhach siopa a cosán cairdiúil logánaithe féin. Fanann URLanna iontrála neodracha ó thaobh teanga ar fáil do mhodúil sheachtracha liosta nasc. Tar éis imlonnaithe, tástáil an dá phróiseas i ngach teanga ghníomhach.</target>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d" resname="Email">
+        <source>Email</source>
+        <target>Ríomhphost</target>
+      </trans-unit>
+      <trans-unit id="d4785e1f28e6858ec969ad1e2ab8eb64" resname="Emails per order / day">
+        <source>Emails per order / day</source>
+        <target>Ríomhphoist in aghaidh an ordaithe / an lae</target>
+      </trans-unit>
+      <trans-unit id="199baa0f4d93ce8c32c2a0eeec862d48" resname="Emails per order / hour">
+        <source>Emails per order / hour</source>
+        <target>Ríomhphoist in aghaidh an ordaithe / na huaire</target>
+      </trans-unit>
+      <trans-unit id="00d23a76e43b46dae9ec7aa9dcbebb32" resname="Enabled">
+        <source>Enabled</source>
+        <target>Cumasaithe</target>
+      </trans-unit>
+      <trans-unit id="e16b95f990f6ab5d2364ccf81cd68bd4" resname="Enables the direct online withdrawal form that does not require a customer account or access to the original order email. Disable it only after a market-specific legal review.">
+        <source>Enables the direct online withdrawal form that does not require a customer account or access to the original order email. Disable it only after a market-specific legal review.</source>
+        <target>Cumasaíonn sé an fhoirm dhíreach ar líne chun tarraingt siar nach n-éilíonn cuntas custaiméara ná rochtain ar ríomhphost bunaidh an ordaithe. Ná díchumasaigh í ach amháin tar éis athbhreithniú dlíthiúil don mhargadh áirithe.</target>
+      </trans-unit>
+      <trans-unit id="1224d5fb7c458ea5af3ef2c251285b41" resname="Ends a verified guest session after this period without activity. Expected range: 5–240 minutes; recommended default: 30.">
+        <source>Ends a verified guest session after this period without activity. Expected range: 5–240 minutes; recommended default: 30.</source>
+        <target>Críochnaíonn sé seisiún aoi fíoraithe tar éis na tréimhse neamhghníomhaíochta seo. Raon ionchais: 5–240 nóiméad; réamhshocrú molta: 30.</target>
+      </trans-unit>
+      <trans-unit id="e7f3116e4841a8f09cfcdb891932d2c5" resname="English fallback">
+        <source>English fallback</source>
+        <target>Cúltaca Béarla</target>
+      </trans-unit>
+      <trans-unit id="90a62e36815a61583061bb46d6698eea" resname="Enter the absolute HTTPS URL of the privacy policy that explains processing of personal data for receiving and handling withdrawals.">
+        <source>Enter the absolute HTTPS URL of the privacy policy that explains processing of personal data for receiving and handling withdrawals.</source>
+        <target>Cuir isteach URL iomlán HTTPS an bheartais phríobháideachais a mhíníonn próiseáil sonraí pearsanta chun tarraingtí siar a fháil agus a láimhseáil.</target>
+      </trans-unit>
+      <trans-unit id="a2dba2de45cce2c64d076b7127eea3d2" resname="Enter the exact address and practical instructions for returning goods. These instructions must not impose conditions that unlawfully restrict the consumer’s withdrawal right.">
+        <source>Enter the exact address and practical instructions for returning goods. These instructions must not impose conditions that unlawfully restrict the consumer’s withdrawal right.</source>
+        <target>Cuir isteach an seoladh cruinn agus na treoracha praiticiúla chun earraí a thabhairt ar ais. Níor cheart do na treoracha coinníollacha a fhorchur a chuireann srian neamhdhleathach ar cheart tarraingthe siar an tomhaltóra.</target>
+      </trans-unit>
+      <trans-unit id="bf416d02cb4378b9c79efb8b78bc6da3" resname="Enter the identifier required in the seller’s jurisdiction, for example company ID, VAT ID or commercial-register number.">
+        <source>Enter the identifier required in the seller’s jurisdiction, for example company ID, VAT ID or commercial-register number.</source>
+        <target>Cuir isteach an t-aitheantóir atá riachtanach i ndlínse an díoltóra, mar shampla uimhir chuideachta, uimhir CBL nó uimhir clárlainne tráchtála.</target>
+      </trans-unit>
+      <trans-unit id="1469fd08f814cf33fcd6010e3d3f90cf" resname="Enter the seller’s full legal or registered business name, not the module vendor. It appears in the form, acknowledgement email and PDF.">
+        <source>Enter the seller’s full legal or registered business name, not the module vendor. It appears in the form, acknowledgement email and PDF.</source>
+        <target>Cuir isteach ainm dlíthiúil iomlán nó ainm cláraithe gnó an díoltóra, ní ainm sholáthraí an mhodúil. Beidh sé le feiceáil san fhoirm, sa ríomhphost admhála agus sa PDF.</target>
+      </trans-unit>
+      <trans-unit id="332da8c46d9285d34fdc6a303ef961dd" resname="Enter the seller’s registered office or business address exactly as it should appear in the consumer document.">
+        <source>Enter the seller’s registered office or business address exactly as it should appear in the consumer document.</source>
+        <target>Cuir isteach oifig chláraithe nó seoladh gnó an díoltóra go díreach mar ba cheart é a bheith sa doiciméad don tomhaltóir.</target>
+      </trans-unit>
+      <trans-unit id="fb636d5dcc9a87608884c792adeba49c" resname="EU compliance note (2026):">
+        <source>EU compliance note (2026):</source>
+        <target>Nóta comhlíonta AE (2026):</target>
+      </trans-unit>
+      <trans-unit id="162a905374d1a34924bb5845530d885b" resname="Footer link (keep enabled for applicable online B2C contracts)">
+        <source>Footer link (keep enabled for applicable online B2C contracts)</source>
+        <target>Nasc buntáisc (coinnigh cumasaithe do chonarthaí B2C ar líne lena mbaineann)</target>
+      </trans-unit>
+      <trans-unit id="392f8cab7b4ad880e3cee9522b23e07d" resname="For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.">
+        <source>For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.</source>
+        <target>Maidir le cianchonarthaí B2C lena mbaineann a tugadh i gcrích trí chomhéadan ar líne, d'fhéadfadh díchumasú nó cur i bhfolach na feidhme dírí tarraingthe siar teacht salach ar Airteagal 11a de Threoir 2011/83/AE arna leasú le Treoir (AE) 2023/2673. Ní mór an cur chun feidhme náisiúnta a athbhreithniú fós do gach margadh.</target>
+      </trans-unit>
+      <trans-unit id="1d1840de10b4c570a590a590a07b508c" resname="For PrestaShop installation, do not use GitHub automatic &quot;Source code ZIP&quot;. Use only the installation ZIP file from the release assets.">
+        <source>For PrestaShop installation, do not use GitHub automatic "Source code ZIP". Use only the installation ZIP file from the release assets.</source>
+        <target>Le haghaidh suiteáil PrestaShop, ná húsáid “Source code ZIP” uathoibríoch GitHub. Ná húsáid ach an comhad ZIP suiteála ó shócmhainní na heisiúna.</target>
+      </trans-unit>
+      <trans-unit id="4a746ff7cde7d7d2d280c05dafad842c" resname="General and legal availability">
+        <source>General and legal availability</source>
+        <target>Infhaighteacht ghinearálta agus dhlíthiúil</target>
+      </trans-unit>
+      <trans-unit id="189797bb7c7c6b6ffecb05ab1583781a" resname="Get Joobox support">
+        <source>Get Joobox support</source>
+        <target>Faigh tacaíocht Joobox</target>
+      </trans-unit>
+      <trans-unit id="19939b44c683468d1479c9cf5d506e61" resname="GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.">
+        <source>GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.</source>
+        <target>Déantar seiceálacha GitHub ar a mhéad uair amháin gach sé huaire mura n-athnuachan de láimh iad. Ní íoslódálann ná ní shuiteálann an modúl cód go huathoibríoch riamh.</target>
+      </trans-unit>
+      <trans-unit id="39589e1c0b6ffff6f9fa814e0aebdd60" resname="Hosting cron URL (secret):">
+        <source>Hosting cron URL (secret):</source>
+        <target>URL cron óstála (rúnda):</target>
+      </trans-unit>
+      <trans-unit id="2e843e03cb6a49fd569c9c675a8247bd" resname="How long the one-time email access link remains usable. Expected range: 5–240 minutes; recommended default: 30.">
+        <source>How long the one-time email access link remains usable. Expected range: 5–240 minutes; recommended default: 30.</source>
+        <target>An fad a bhíonn an nasc rochtana aonuaire sa ríomhphost inúsáidte. Raon ionchais: 5–240 nóiméad; réamhshocrú molta: 30.</target>
+      </trans-unit>
+      <trans-unit id="984ceac16fab685fc50b8d8a5eabf7de" resname="Included">
+        <source>Included</source>
+        <target>San áireamh</target>
+      </trans-unit>
+      <trans-unit id="f7266ba0eb429463c24906863d97f74d" resname="Joobox support for this module">
+        <source>Joobox support for this module</source>
+        <target>Tacaíocht Joobox don mhodúl seo</target>
+      </trans-unit>
+      <trans-unit id="0d2a03417d12c0922f7c8f09a8866cdd" resname="JOOIM Withdrawal – Online Contract Withdrawal">
+        <source>JOOIM Withdrawal – Online Contract Withdrawal</source>
+        <target>JOOIM Withdrawal – Tarraingt siar ó chonradh ar líne</target>
+      </trans-unit>
+      <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174" resname="Language">
+        <source>Language</source>
+        <target>Teanga</target>
+      </trans-unit>
+      <trans-unit id="0bb8ede719cfab55d1e46a227ba20f09" resname="Language-neutral URLs for external link lists:">
+        <source>Language-neutral URLs for external link lists:</source>
+        <target>URLanna neodracha ó thaobh teanga do liostaí seachtracha nasc:</target>
+      </trans-unit>
+      <trans-unit id="712bd563f4ec14a3e9f63cd426a8f515" resname="Last checked">
+        <source>Last checked</source>
+        <target>Seiceáil dheireanach</target>
+      </trans-unit>
+      <trans-unit id="90725f7a92bc20cc7d26c20261af79da" resname="Latest version on GitHub">
+        <source>Latest version on GitHub</source>
+        <target>An leagan is déanaí ar GitHub</target>
+      </trans-unit>
+      <trans-unit id="b03d6f17c7f8bac52fe77f5914c49186" resname="Links for active shop languages">
+        <source>Links for active shop languages</source>
+        <target>Naisc do theangacha gníomhacha an tsiopa</target>
+      </trans-unit>
+      <trans-unit id="911f0f24bdce6808f4614d6a263b143b" resname="Locale">
+        <source>Locale</source>
+        <target>Logchaighdeán</target>
+      </trans-unit>
+      <trans-unit id="f176436ebc257cd47b923ebfcf43ffb7" resname="Magic link validity (minutes)">
+        <source>Magic link validity (minutes)</source>
+        <target>Bailíocht an naisc aonuaire (nóiméid)</target>
+      </trans-unit>
+      <trans-unit id="42315b8de2a717eced9b289382e286f7" resname="Maintenance CLI:">
+        <source>Maintenance CLI:</source>
+        <target>CLI cothabhála:</target>
+      </trans-unit>
+      <trans-unit id="feb2d01c3d55ad9d1e7478f2ecc6ee46" resname="Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.">
+        <source>Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.</source>
+        <target>Príomhlasc do na próisis phoiblí tarraingthe siar agus do na naisc tarraingthe siar a fheiceann custaiméirí. Ní scriosann ná ní athraíonn díchumasú tarraingtí siar a fuarthas cheana.</target>
+      </trans-unit>
+      <trans-unit id="ba0b7c08eb6bb4e2a041a1a0dc1a5416" resname="Maximum access-link requests associated with the same normalized order reference during 24 hours.">
+        <source>Maximum access-link requests associated with the same normalized order reference during 24 hours.</source>
+        <target>Uasmhéid iarrataí ar nasc rochtana a bhaineann leis an tagairt ordaithe normalaithe chéanna laistigh de 24 uair.</target>
+      </trans-unit>
+      <trans-unit id="6d6b5d20d325c5c90d4964db721a0ebd" resname="Maximum access-link requests associated with the same normalized order reference during one hour. This protects the customer mailbox from repeated messages.">
+        <source>Maximum access-link requests associated with the same normalized order reference during one hour. This protects the customer mailbox from repeated messages.</source>
+        <target>Uasmhéid iarrataí ar nasc rochtana a bhaineann leis an tagairt ordaithe normalaithe chéanna laistigh d'uair amháin. Cosnaíonn sé seo bosca poist an chustaiméara ar theachtaireachtaí arís agus arís eile.</target>
+      </trans-unit>
+      <trans-unit id="36d0c453e24108cf2523ed0cd552bf30" resname="Maximum customer note length">
+        <source>Maximum customer note length</source>
+        <target>Uasfhad nóta an chustaiméara</target>
+      </trans-unit>
+      <trans-unit id="3a028adaaf8097ffc9995ec306cac1b5" resname="Maximum number of plain-text characters accepted in the optional customer note. HTML is not accepted. Recommended default: 2000.">
+        <source>Maximum number of plain-text characters accepted in the optional customer note. HTML is not accepted. Recommended default: 2000.</source>
+        <target>Uasmhéid carachtar gnáth-théacs sa nóta roghnach custaiméara. Ní ghlactar le HTML. Réamhshocrú molta: 2000.</target>
+      </trans-unit>
+      <trans-unit id="854523876a065fccaa9edb66ac5396aa" resname="Maximum order-reference access requests from one pseudonymized IP during 15 minutes. Successful and unsuccessful lookups share the same limit.">
+        <source>Maximum order-reference access requests from one pseudonymized IP during 15 minutes. Successful and unsuccessful lookups share the same limit.</source>
+        <target>Uasmhéid iarrataí rochtana de réir tagartha ordaithe ó sheoladh IP bréagainmnithe amháin laistigh de 15 nóiméad. Úsáideann cuardaigh rathúla agus neamhrathúla an teorainn chéanna.</target>
+      </trans-unit>
+      <trans-unit id="c1f0b7fc8b6133385ad0bbce831cf97c" resname="Maximum order-reference access requests from one pseudonymized IP during 24 hours. The raw IP address is not stored in the legal withdrawal record.">
+        <source>Maximum order-reference access requests from one pseudonymized IP during 24 hours. The raw IP address is not stored in the legal withdrawal record.</source>
+        <target>Uasmhéid iarrataí rochtana de réir tagartha ordaithe ó sheoladh IP bréagainmnithe amháin laistigh de 24 uair. Ní stóráiltear an seoladh IP amh sa taifead dlíthiúil tarraingthe siar.</target>
+      </trans-unit>
+      <trans-unit id="1b29aaded6e656c7c29df1a188724d60" resname="Maximum total lifetime of a verified guest session even when the customer remains active. Expected range: 15–1440 minutes; recommended default: 120.">
+        <source>Maximum total lifetime of a verified guest session even when the customer remains active. Expected range: 15–1440 minutes; recommended default: 120.</source>
+        <target>Uastréimhse iomlán seisiúin aoi fíoraithe fiú nuair a bhíonn an custaiméir gníomhach. Raon ionchais: 15–1440 nóiméad; réamhshocrú molta: 120.</target>
+      </trans-unit>
+      <trans-unit id="f4c9d126deaeb00d98b2a3b5c98e1592" resname="Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.">
+        <source>Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.</source>
+        <target>An mhoill íosta sular féidir ríomhphost rochtana eile a iarraidh don tagairt ordaithe chéanna. Réamhshocrú molta: 60 soicind.</target>
+      </trans-unit>
+      <trans-unit id="4e19d7f8160483be13ee95ed3f7dccc2" resname="Module data was permanently deleted.">
+        <source>Module data was permanently deleted.</source>
+        <target>Scriosadh sonraí an mhodúil go buan.</target>
+      </trans-unit>
+      <trans-unit id="eb5534a6983af195fab96bffe2ca4549" resname="Module enabled">
+        <source>Module enabled</source>
+        <target>Modúl cumasaithe</target>
+      </trans-unit>
+      <trans-unit id="afdac9282c19d277f0eb8c3cb62fcefb" resname="Module is up to date.">
+        <source>Module is up to date.</source>
+        <target>Tá an modúl cothrom le dáta.</target>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b" resname="No">
+        <source>No</source>
+        <target>Níl</target>
+      </trans-unit>
+      <trans-unit id="fb2d1435d9fcd5b2968d8e0290ee8691" resname="No active shop languages were found.">
+        <source>No active shop languages were found.</source>
+        <target>Níor aimsíodh aon teanga ghníomhach siopa.</target>
+      </trans-unit>
+      <trans-unit id="ff9aae6410bc98cd9a562bec02d2732c" resname="No data is deleted unless the value is exactly DELETE.">
+        <source>No data is deleted unless the value is exactly DELETE.</source>
+        <target>Ní scriostar aon sonraí mura bhfuil an luach go díreach DELETE.</target>
+      </trans-unit>
+      <trans-unit id="647583f74c004a3c608af12e603c8544" resname="Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.">
+        <source>Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.</source>
+        <target>Coinníonn gnáthdhíshuiteáil an mhodúil taifid tarraingthe siar. Baineann an gníomh millteach seo táblaí uile an mhodúil.</target>
+      </trans-unit>
+      <trans-unit id="8d2dd0c91251585950bc6ba2ab52108b" resname="Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.">
+        <source>Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.</source>
+        <target>Líon na n-iarrachtaí uathoibríocha eile tar éis do ríomhphost admhála teip. Fanann an tarraingt siar bailí fiú má theipeann ar gach iarracht ríomhphoist.</target>
+      </trans-unit>
+      <trans-unit id="8c912169e1c01fceba3bc0758f956fe5" resname="Open GitHub Releases">
+        <source>Open GitHub Releases</source>
+        <target>Oscail eisiúintí GitHub</target>
+      </trans-unit>
+      <trans-unit id="9d60cfba7dfc18f815cafc70ac701571" resname="Open withdrawals">
+        <source>Open withdrawals</source>
+        <target>Oscail tarraingtí siar</target>
+      </trans-unit>
+      <trans-unit id="36b030c8de809d689b3d5dc9d16ef7db" resname="Opens the Back Office list of received withdrawals, their status, documents, refund records and audit history.">
+        <source>Opens the Back Office list of received withdrawals, their status, documents, refund records and audit history.</source>
+        <target>Osclaíonn sé liosta Back Office de na tarraingtí siar a fuarthas, a stádas, doiciméid, taifid aisíocaíochta agus stair iniúchta.</target>
+      </trans-unit>
+      <trans-unit id="8cc6aff5f8ec8880791350390f185d6b" resname="Optional customer-service phone number shown in the acknowledgement and PDF. It is not used to authenticate a withdrawal.">
+        <source>Optional customer-service phone number shown in the acknowledgement and PDF. It is not used to authenticate a withdrawal.</source>
+        <target>Uimhir roghnach seirbhíse custaiméara a thaispeántar san admháil agus sa PDF. Ní úsáidtear í chun tarraingt siar a fhíordheimhniú.</target>
+      </trans-unit>
+      <trans-unit id="91d0c684934e62d6e3e871cf760ab1a5" resname="Order detail button">
+        <source>Order detail button</source>
+        <target>Cnaipe i sonraí an ordaithe</target>
+      </trans-unit>
+      <trans-unit id="e3226110b52a3a391cf9723cedf9afa9" resname="Order-reference flow">
+        <source>Order-reference flow</source>
+        <target>Próiseas de réir tagartha ordaithe</target>
+      </trans-unit>
+      <trans-unit id="9f004157e4c148dac71da3ae5906351f" resname="Partially refunded">
+        <source>Partially refunded</source>
+        <target>Aisíocadh go páirteach</target>
+      </trans-unit>
+      <trans-unit id="389d382a151949ccbc613f148039f243" resname="Permanent data purge">
+        <source>Permanent data purge</source>
+        <target>Glanadh buan sonraí</target>
+      </trans-unit>
+      <trans-unit id="8bb19586e39b432b1f0d04860879f8fd" resname="Permanently delete all module data">
+        <source>Permanently delete all module data</source>
+        <target>Scrios sonraí uile an mhodúil go buan</target>
+      </trans-unit>
+      <trans-unit id="bcc254b55c4a1babdf1dcb82c207506b" resname="Phone">
+        <source>Phone</source>
+        <target>Fón</target>
+      </trans-unit>
+      <trans-unit id="9e2cdc4e408db239280c5e043d50173f" resname="PHP 8.1 or newer is required.">
+        <source>PHP 8.1 or newer is required.</source>
+        <target>Tá PHP 8.1 nó níos nuaí riachtanach.</target>
+      </trans-unit>
+      <trans-unit id="c63031d958b58c8116035092362f25ed" resname="Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.">
+        <source>Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.</source>
+        <target>An modh is fearr le haghaidh cothabhála sceidealaithe. Baineann sé taifid shealadacha atá imithe in éag, déanann sé iarracht eile ar admhálacha sa scuaine agus próiseálann sé tascanna coinneála.</target>
+      </trans-unit>
+      <trans-unit id="4e86c1fd72fe463cdbe67c5704dbd4d9" resname="Privacy policy URL">
+        <source>Privacy policy URL</source>
+        <target>URL an bheartais phríobháideachais</target>
+      </trans-unit>
+      <trans-unit id="fed94c98dce5cf7158450628d5f232c6" resname="Public entry:">
+        <source>Public entry:</source>
+        <target>Iontráil phoiblí:</target>
+      </trans-unit>
+      <trans-unit id="dc16a594f0069adea19ca1b5a4230fc7" resname="Purge confirmation">
+        <source>Purge confirmation</source>
+        <target>Deimhniú glanta</target>
+      </trans-unit>
+      <trans-unit id="32cf24c131e8c90129bc9dc6252c6003" resname="Ready. Required security values and module hooks are available.">
+        <source>Ready. Required security values and module hooks are available.</source>
+        <target>Réidh. Tá na luachanna slándála agus hookanna modúil riachtanacha ar fáil.</target>
+      </trans-unit>
+      <trans-unit id="e42f6e063d74ea96cf2c30f2552d208f" resname="Reference prefix">
+        <source>Reference prefix</source>
+        <target>Réimír tagartha</target>
+      </trans-unit>
+      <trans-unit id="0d9e71a5f31d8ddea938f07fda9a1444" resname="Refresh update status">
+        <source>Refresh update status</source>
+        <target>Athnuaigh stádas an nuashonraithe</target>
+      </trans-unit>
+      <trans-unit id="e963a2769e317ec3289dc057845cd3e2" resname="Refund completed">
+        <source>Refund completed</source>
+        <target>Aisíocaíocht críochnaithe</target>
+      </trans-unit>
+      <trans-unit id="26d3b43de693b9d47c36dee1035a46a8" resname="Refund pending">
+        <source>Refund pending</source>
+        <target>Aisíocaíocht ar feitheamh</target>
+      </trans-unit>
+      <trans-unit id="18c16aedc5678290d3f50d8b0bd198f1" resname="Refund recorded">
+        <source>Refund recorded</source>
+        <target>Aisíocaíocht taifeadta</target>
+      </trans-unit>
+      <trans-unit id="e6fa03f0b7eb9b39761dd40a3b395334" resname="Registered address">
+        <source>Registered address</source>
+        <target>Seoladh cláraithe</target>
+      </trans-unit>
+      <trans-unit id="a45536b852059a333397abd12f770f40" resname="Requests per IP / 15 minutes">
+        <source>Requests per IP / 15 minutes</source>
+        <target>Iarrataí in aghaidh IP / 15 nóiméad</target>
+      </trans-unit>
+      <trans-unit id="3e5fbf238d7169b08b1620f5c0ed538e" resname="Requests per IP / day">
+        <source>Requests per IP / day</source>
+        <target>Iarrataí in aghaidh IP / lá</target>
+      </trans-unit>
+      <trans-unit id="2549e08c454fe021bf7ef601efd389f9" resname="Resend cooldown (seconds)">
+        <source>Resend cooldown (seconds)</source>
+        <target>Moill athsheolta (soicindí)</target>
+      </trans-unit>
+      <trans-unit id="f407eca5d4719f814784407e805a3320" resname="Return address / instructions">
+        <source>Return address / instructions</source>
+        <target>Seoladh / treoracha fillte</target>
+      </trans-unit>
+      <trans-unit id="cd4b58c156cc842c8eaee4f2eda67386" resname="Returned goods received">
+        <source>Returned goods received</source>
+        <target>Earraí ar ais faighte</target>
+      </trans-unit>
+      <trans-unit id="340047998cd91b899900eed231cc7fef" resname="Runtime configuration:">
+        <source>Runtime configuration:</source>
+        <target>Cumraíocht ama rite:</target>
+      </trans-unit>
+      <trans-unit id="d4dccb8ca2dac4e53c01bd9954755332" resname="Save settings">
+        <source>Save settings</source>
+        <target>Sábháil socruithe</target>
+      </trans-unit>
+      <trans-unit id="508878a506066b8fadfa321807415ee0" resname="Secure online exercise and administration of the consumer right of withdrawal.">
+        <source>Secure online exercise and administration of the consumer right of withdrawal.</source>
+        <target>Feidhmiú agus riar slán ar líne ar cheart tarraingthe siar an tomhaltóra.</target>
+      </trans-unit>
+      <trans-unit id="2801f11e30091ea7db27772359285c58" resname="Security, session and abuse limits">
+        <source>Security, session and abuse limits</source>
+        <target>Teorainneacha slándála, seisiúin agus mí-úsáide</target>
+      </trans-unit>
+      <trans-unit id="b0aca289a0a6e06700d28253aa26cba2" resname="Session absolute limit (minutes)">
+        <source>Session absolute limit (minutes)</source>
+        <target>Teorainn iomlán seisiúin (nóiméid)</target>
+      </trans-unit>
+      <trans-unit id="0693fa44a6aabaf090af1bee024240fe" resname="Session inactivity limit (minutes)">
+        <source>Session inactivity limit (minutes)</source>
+        <target>Teorainn neamhghníomhaíochta seisiúin (nóiméid)</target>
+      </trans-unit>
+      <trans-unit id="9a7e58ee13cb727cb7c4acc68f4cafe5" resname="Settings saved.">
+        <source>Settings saved.</source>
+        <target>Sábháladh na socruithe.</target>
+      </trans-unit>
+      <trans-unit id="9eeed2a79a0ce14783ba54b0b0420203" resname="Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.">
+        <source>Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.</source>
+        <target>Cód gearr a úsáidtear ag tús tagairtí tarraingthe siar. Ná húsáid ach litreacha, digití agus fleiscíní, mar shampla WD. Ní athraítear tagairtí tarraingthe siar atá ann cheana riamh.</target>
+      </trans-unit>
+      <trans-unit id="0cfb330ba2af0cc69f2cd95aca520abd" resname="Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.">
+        <source>Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.</source>
+        <target>Níorbh fhéidir roinnt riachtanas ama rite a shioncronú. Athbhreithnigh logaí PrestaShop roimh úsáid phoiblí.</target>
+      </trans-unit>
+      <trans-unit id="c84f3c8cccffa553f2b2322518573b57" resname="Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.">
+        <source>Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.</source>
+        <target>Tosaíonn sé an próiseas slán de réir tagartha ordaithe. Ní chuireann an custaiméir isteach ach an tagairt phoiblí ordaithe; fanann sonraí ordaithe agus pearsanta i bhfolach go dtí go ndeimhnítear an nasc aonuaire sa ríomhphost.</target>
+      </trans-unit>
+      <trans-unit id="58200c5eb0a6df1eb10635ecb7363249" resname="Status changed by administrator">
+        <source>Status changed by administrator</source>
+        <target>Stádas athraithe ag riarthóir</target>
+      </trans-unit>
+      <trans-unit id="34a1e6159e4b3b9f19d11093f9cf1c48" resname="Supported PrestaShop versions are 8.1 through 9.1.">
+        <source>Supported PrestaShop versions are 8.1 through 9.1.</source>
+        <target>Is iad 8.1 go 9.1 na leaganacha PrestaShop a dtacaítear leo.</target>
+      </trans-unit>
+      <trans-unit id="440cefce4f97e7cb67c869bf1d8dfe16" resname="The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.">
+        <source>The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.</source>
+        <target>Tá na luachanna réamhshocraithe coimeádach d'aon ghnó. Ná méadaigh teorainneacha ach tar éis athbhreithniú a dhéanamh ar thrácht iarbhír agus ar logaí mí-úsáide; d'fhéadfadh teorainneacha ró-ísle tomhaltóirí dlisteanacha a bhlocáil.</target>
+      </trans-unit>
+      <trans-unit id="afc3f41e1b3dceb9e58a5d7fe33ca215" resname="These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.">
+        <source>These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.</source>
+        <target>Sainaithníonn na luachanna seo an díoltóir iarbhír a oibríonn an siopa roghnaithe. Stóráiltear iad de réir siopa in multistore agus cuirtear i gcló iad in admhálacha custaiméara agus i bhfianaise PDF.</target>
+      </trans-unit>
+      <trans-unit id="7c590d9272ad1786e0e73357bf415267" resname="This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.">
+        <source>This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.</source>
+        <target>Cuirtear an modúl GitHub saor in aisce seo ar fáil gan tacaíocht theicniúil aonair. Tá suiteáil, cumraíocht, tástáil táirgeachta, nuashonruithe agus fabhtcheartú ar fáil do chustaiméirí a úsáideann Joobox PrestaShop Cloud nó seirbhís íoctha eile a comhaontaíodh go sainráite le JOO INTERNET MEDIA LTD.</target>
+      </trans-unit>
+      <trans-unit id="1bb184adfba62621740f795ec93d36e6" resname="Trader details – current shop">
+        <source>Trader details – current shop</source>
+        <target>Sonraí an trádálaí – an siopa reatha</target>
+      </trans-unit>
+      <trans-unit id="14a3e5ba5527ad9b624f6ff0a81c9b8c" resname="Trader name">
+        <source>Trader name</source>
+        <target>Ainm an trádálaí</target>
+      </trans-unit>
+      <trans-unit id="6dd08874f83507e9c7b23f1a46b7fa7c" resname="Translation">
+        <source>Translation</source>
+        <target>Aistriúchán</target>
+      </trans-unit>
+      <trans-unit id="013033d8b098dd26ff49eb11860f1fa7" resname="Type DELETE">
+        <source>Type DELETE</source>
+        <target>Clóscríobh DELETE</target>
+      </trans-unit>
+      <trans-unit id="9e5fb4183f6e1e965dc8f7de0c200cbf" resname="Type DELETE to confirm permanent data deletion.">
+        <source>Type DELETE to confirm permanent data deletion.</source>
+        <target>Clóscríobh DELETE chun scriosadh buan sonraí a dheimhniú.</target>
+      </trans-unit>
+      <trans-unit id="9007b9aa19e4aeeb4c9c13a065c1ff47" resname="Type the exact word DELETE to remove all withdrawals, documents, audit history, access records and refund records. This action cannot be undone and is not required for an ordinary module update or reinstall.">
+        <source>Type the exact word DELETE to remove all withdrawals, documents, audit history, access records and refund records. This action cannot be undone and is not required for an ordinary module update or reinstall.</source>
+        <target>Clóscríobh an focal cruinn DELETE chun gach tarraingt siar, doiciméad, stair iniúchta, taifead rochtana agus aisíocaíochta a bhaint. Ní féidir an gníomh seo a chealú agus níl sé riachtanach le haghaidh gnáthnuashonrú nó athshuiteáil modúil.</target>
+      </trans-unit>
+      <trans-unit id="ddc725eae7cbd49e09089df5f6cd7f50" resname="Unable to verify the latest version from GitHub. Check releases manually.">
+        <source>Unable to verify the latest version from GitHub. Check releases manually.</source>
+        <target>Níorbh fhéidir an leagan is déanaí ó GitHub a fhíorú. Seiceáil na heisiúintí de láimh.</target>
+      </trans-unit>
+      <trans-unit id="1321a344a5a1a622364582904f3d281d" resname="Under review">
+        <source>Under review</source>
+        <target>Á athbhreithniú</target>
+      </trans-unit>
+      <trans-unit id="88183b946cc5f0e8c96b2e66e1c74a7e" resname="Unknown">
+        <source>Unknown</source>
+        <target>Anaithnid</target>
+      </trans-unit>
+      <trans-unit id="e2b8575e1fd2467e8d1ee9749a57513c" resname="Update check">
+        <source>Update check</source>
+        <target>Seiceáil nuashonraithe</target>
+      </trans-unit>
+      <trans-unit id="d45473395df63bc3eaf7c87f2af3d617" resname="Update check failed: %error%">
+        <source>Update check failed: %error%</source>
+        <target>Theip ar an seiceáil nuashonraithe: %error%</target>
+      </trans-unit>
+      <trans-unit id="f5359d1dd07def542aa9b0577fb27068" resname="Update status">
+        <source>Update status</source>
+        <target>Stádas nuashonraithe</target>
+      </trans-unit>
+      <trans-unit id="ec0680bbb63e497125e1b9b3fa3aa255" resname="Use these URLs in modules that provide only one URL field for all languages. The entry controller selects the current or preferred shop language and redirects to the localized friendly path.">
+        <source>Use these URLs in modules that provide only one URL field for all languages. The entry controller selects the current or preferred shop language and redirects to the localized friendly path.</source>
+        <target>Úsáid na URLanna seo i modúil nach soláthraíonn ach réimse URL amháin do gach teanga. Roghnaíonn an controller iontrála teanga reatha nó roghnaithe an tsiopa agus atreoraíonn sé chuig an gcosán cairdiúil logánaithe.</target>
+      </trans-unit>
+      <trans-unit id="731b8ef7226d81e5dcdcb73d2cbaaa56" resname="Use this only in a disposable test installation.">
+        <source>Use this only in a disposable test installation.</source>
+        <target>Ná húsáid é seo ach i suiteáil tástála indiúscartha.</target>
+      </trans-unit>
+      <trans-unit id="577f4ba99fa5b48178e116e405081470" resname="Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.">
+        <source>Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.</source>
+        <target>Ná húsáid an URL seo ach nuair nach féidir leis an tseirbhís óstála an t-ordú CLI a rith. Caith leis an token mar fhocal faire: ná foilsigh é, ná seol le ríomhphost é agus ná cuir i monatóireacht phoiblí é.</target>
+      </trans-unit>
+      <trans-unit id="01f004435882e0df6fc4d48ff6d6b2b5" resname="Waiting for returned goods">
+        <source>Waiting for returned goods</source>
+        <target>Ag fanacht ar na hearraí ar ais</target>
+      </trans-unit>
+      <trans-unit id="b0578341d6fba5c8fb8282b71deaaf49" resname="Withdrawal received">
+        <source>Withdrawal received</source>
+        <target>Tarraingt siar faighte</target>
+      </trans-unit>
+      <trans-unit id="a6bf9dba77e2cf61e65fb7a0c4c07bea" resname="Withdrawal rejected">
+        <source>Withdrawal rejected</source>
+        <target>Tarraingt siar diúltaithe</target>
+      </trans-unit>
+      <trans-unit id="0bce86ca38c0bed64f9a8831fc4dceb4" resname="Withdrawal submitted">
+        <source>Withdrawal submitted</source>
+        <target>Tarraingt siar curtha isteach</target>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435" resname="Yes">
+        <source>Yes</source>
+        <target>Tá</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

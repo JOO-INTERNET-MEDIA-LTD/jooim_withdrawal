@@ -1,0 +1,120 @@
+001	Ir pieejama jauna moduļa versija.
+002	Apstiprinājuma atkārtotas nosūtīšanas mēģinājumu skaits
+003	Pievieno atteikšanās ierakstu klienta sadaļai “Mans konts”. Klients joprojām var izmantot publisko procesu, ja pasūtījums kontā nav redzams.
+004	Pievieno pogu “Atteikties no līguma” tā pasūtījuma detaļām, kas pieder klientam, kurš ir pieteicies. Īpašumtiesības tiek pārbaudītas serverī.
+005	Ļauj patērētājam iesniegt nepārprotamu atteikuma paziņojumu bez pieteikšanās vai pasūtījuma datu parādīšanas. Saglabājiet šo funkciju pieejamu attiecīgajiem tiešsaistes B2C līgumiem.
+006	Pievienot PDF apstiprinājumu
+007	Pievieno nemaināmo PDF atteikuma apstiprinājumu apstiprinājuma e-pastam. Pielikuma atspējošana neizdzēš aizsargāto PDF, kas glabājas kopā ar lietu.
+008	Lietas:
+009	Uzņēmuma identifikators
+010	Pašreizējā moduļa versija
+011	Saite klienta kontā
+012	Klientam redzamā kontaktadrese saziņai par atteikšanos. Izmantojiet aktīvi uzraudzītu pastkasti; neievadiet šeit klienta e-pasta adresi.
+013	11.a panta tiešā funkcija
+014	Tieša atteikšanās
+015	Tiešās atteikšanās funkcija:
+016	Atspējota
+017	Atspējota (nepieciešama juridiska pārbaude)
+018	Veikala kājenē parāda klientam saiti “Atteikties no līguma šeit”. Šī juridiskās funkcijas saite nav atkarīga no Joobox mārketinga norādes.
+019	ES atbilstības piezīme (2026):
+020	Katra aktīvā veikala valoda saņem savu lokalizētu, lasāmu ceļu. No valodas neatkarīgie ieejas URL paliek pieejami ārējiem saišu saraksta moduļiem. Pēc izvietošanas pārbaudiet abus procesus katrā aktīvajā valodā.
+021	E-pasts
+022	E-pasti vienam pasūtījumam / dienā
+023	E-pasti vienam pasūtījumam / stundā
+024	Iespējota
+025	Iespējo tiešo tiešsaistes atteikšanās veidlapu, kurai nav nepieciešams klienta konts vai piekļuve sākotnējam pasūtījuma e-pastam. Atspējojiet tikai pēc konkrētā tirgus juridiskas pārbaudes.
+026	Pārtrauc pārbaudītu viesa sesiju pēc šī neaktivitātes perioda. Paredzamais diapazons: 5–240 minūtes; ieteicamā noklusējuma vērtība: 30.
+027	Angļu valodas rezerves variants
+028	Ievadiet absolūto konfidencialitātes politikas HTTPS URL, kas izskaidro personas datu apstrādi atteikumu saņemšanai un izskatīšanai.
+029	Ievadiet precīzu preču atgriešanas adresi un praktiskos norādījumus. Norādījumi nedrīkst noteikt nosacījumus, kas nelikumīgi ierobežo patērētāja atteikuma tiesības.
+030	Ievadiet pārdevēja jurisdikcijā prasīto identifikatoru, piemēram, uzņēmuma reģistrācijas numuru, PVN numuru vai komercreģistra numuru.
+031	Ievadiet pilnu pārdevēja juridisko vai reģistrēto uzņēmuma nosaukumu, nevis moduļa piegādātāja nosaukumu. Tas tiek parādīts veidlapā, apstiprinājuma e-pastā un PDF.
+032	Ievadiet pārdevēja juridisko adresi vai uzņēmējdarbības adresi tieši tā, kā tai jāparādās patērētāja dokumentā.
+033	Saite kājenē (atstājiet iespējotu attiecīgajiem tiešsaistes B2C līgumiem)
+034	PrestaShop instalēšanai neizmantojiet GitHub automātisko “Source code ZIP”. Izmantojiet tikai instalācijas ZIP failu no laidiena resursiem.
+035	Attiecīgajiem B2C distances līgumiem, kas noslēgti tiešsaistes saskarnē, tiešās atteikšanās funkcijas atspējošana vai slēpšana var būt pretrunā Direktīvas 2011/83/ES 11.a pantam, kas grozīts ar Direktīvu (ES) 2023/2673. Katrā tirgū joprojām jāpārbauda valsts īstenošana.
+036	Vispārējā un juridiskā pieejamība
+037	Saņemt Joobox atbalstu
+038	GitHub pārbaudes tiek veiktas ne biežāk kā reizi sešās stundās, ja vien tās netiek manuāli atsvaidzinātas. Modulis nekad automātiski nelejupielādē vai neinstalē kodu.
+039	Hostinga cron URL (slepenais):
+040	Cik ilgi vienreizējā e-pasta piekļuves saite paliek izmantojama. Paredzamais diapazons: 5–240 minūtes; ieteicamā noklusējuma vērtība: 30.
+041	Iekļauts
+042	JOOIM Withdrawal – Atteikšanās no līguma tiešsaistē
+043	Joobox atbalsts šim modulim
+044	Valoda
+045	No valodas neatkarīgi URL ārējiem saišu sarakstiem:
+046	Pēdējā pārbaude
+047	Jaunākā versija GitHub
+048	Saites aktīvajām veikala valodām
+049	Lokalizācija
+050	Vienreizējās saites derīgums (minūtes)
+051	Uzturēšanas CLI:
+052	Galvenais slēdzis publiskajiem atteikšanās procesiem un klientiem redzamajām atteikšanās saitēm. Atspējošana neizdzēš un nemaina jau saņemtos atteikumus.
+053	Maksimālais piekļuves saites pieprasījumu skaits, kas saistīts ar vienu un to pašu normalizēto pasūtījuma atsauci 24 stundu laikā.
+054	Maksimālais piekļuves saites pieprasījumu skaits, kas saistīts ar vienu un to pašu normalizēto pasūtījuma atsauci vienas stundas laikā. Tas aizsargā klienta pastkasti no atkārtotiem ziņojumiem.
+055	Klienta piezīmes maksimālais garums
+056	Maksimālais vienkārša teksta rakstzīmju skaits neobligātajā klienta piezīmē. HTML netiek pieņemts. Ieteicamā noklusējuma vērtība: 2000.
+057	Maksimālais piekļuves pieprasījumu skaits pēc pasūtījuma atsauces no vienas pseidonimizētas IP adreses 15 minūšu laikā. Veiksmīgiem un neveiksmīgiem meklējumiem ir kopīgs limits.
+058	Maksimālais piekļuves pieprasījumu skaits pēc pasūtījuma atsauces no vienas pseidonimizētas IP adreses 24 stundu laikā. Neapstrādātā IP adrese netiek glabāta juridiskajā atteikuma ierakstā.
+059	Pārbaudītas viesa sesijas maksimālais kopējais ilgums pat tad, ja klients paliek aktīvs. Paredzamais diapazons: 15–1440 minūtes; ieteicamā noklusējuma vērtība: 120.
+060	Minimālā aizkave, pirms tai pašai pasūtījuma atsaucei var pieprasīt citu piekļuves e-pastu. Ieteicamā noklusējuma vērtība: 60 sekundes.
+061	Moduļa dati tika neatgriezeniski izdzēsti.
+062	Modulis ir iespējots
+063	Modulis ir atjaunināts.
+064	Nē
+065	Netika atrasta neviena aktīva veikala valoda.
+066	Dati netiek dzēsti, ja vien vērtība nav precīzi DELETE.
+067	Parasta moduļa atinstalēšana saglabā atteikumu ierakstus. Šī destruktīvā darbība noņem visas moduļa tabulas.
+068	Automātisko atkārtoto mēģinājumu skaits pēc neveiksmīgas apstiprinājuma e-pasta nosūtīšanas. Atteikums paliek spēkā pat tad, ja visi e-pasta mēģinājumi neizdodas.
+069	Atvērt GitHub laidienus
+070	Atvērt atteikumus
+071	Atver Back Office saņemto atteikumu sarakstu, to statusu, dokumentus, atmaksu ierakstus un audita vēsturi.
+072	Neobligāts klientu apkalpošanas tālruņa numurs, kas parādās apstiprinājumā un PDF. Tas netiek izmantots atteikuma autentificēšanai.
+073	Poga pasūtījuma detaļās
+074	Process pēc pasūtījuma atsauces
+075	Nepieciešama PHP 8.1 vai jaunāka versija.
+076	Neatgriezeniska datu tīrīšana
+077	Neatgriezeniski dzēst visus moduļa datus
+078	Tālrunis
+079	Vēlamā plānotās uzturēšanas metode. Tā noņem beigušos pagaidu ierakstus, atkārtoti mēģina nosūtīt rindā esošos apstiprinājumus un apstrādā glabāšanas uzdevumus.
+080	Konfidencialitātes politikas URL
+081	Publiskā ieeja:
+082	Tīrīšanas apstiprinājums
+083	Gatavs. Nepieciešamās drošības vērtības un moduļa hook'i ir pieejami.
+084	Atsauces prefikss
+085	Atsvaidzināt atjauninājuma statusu
+086	Juridiskā adrese
+087	Pieprasījumi uz IP / 15 minūtes
+088	Pieprasījumi uz IP / dienā
+089	Atkārtotas nosūtīšanas gaidīšanas laiks (sekundes)
+090	Atgriešanas adrese / norādījumi
+091	Izpildlaika konfigurācija:
+092	Saglabāt iestatījumus
+093	Droša patērētāja atteikuma tiesību izmantošana un pārvaldība tiešsaistē.
+094	Drošības, sesijas un ļaunprātīgas izmantošanas limiti
+095	Sesijas absolūtais limits (minūtes)
+096	Sesijas neaktivitātes limits (minūtes)
+097	Iestatījumi saglabāti.
+098	Īss kods atteikuma atsauču sākumā. Izmantojiet tikai burtus, ciparus un defises, piemēram, WD. Esošās atteikuma atsauces nekad netiek mainītas.
+099	Dažas izpildlaika prasības neizdevās sinhronizēt. Pirms publiskas lietošanas pārskatiet PrestaShop žurnālus.
+100	Sāk drošo procesu pēc pasūtījuma atsauces. Klients ievada tikai publisko pasūtījuma atsauci; pasūtījuma un personas dati paliek slēpti, līdz tiek apstiprināta vienreizējā e-pasta saite.
+101	Atbalstītās PrestaShop versijas ir no 8.1 līdz 9.1.
+102	Noklusējuma vērtības ir apzināti konservatīvas. Palieliniet limitus tikai pēc faktiskās datplūsmas un ļaunprātīgas izmantošanas žurnālu pārskatīšanas; pārāk zemi limiti var bloķēt likumīgus patērētājus.
+103	Šīs vērtības identificē faktisko pārdevēju, kas pārvalda izvēlēto veikalu. Tās tiek glabātas katram multistore veikalam un drukātas klientu apstiprinājumos un PDF pierādījumā.
+104	Šis bezmaksas GitHub modulis tiek nodrošināts bez individuāla tehniskā atbalsta. Instalēšana, konfigurēšana, ražošanas testēšana, atjauninājumi un problēmu novēršana ir pieejami Joobox PrestaShop Cloud klientiem vai saskaņā ar citu maksas pakalpojumu, par ko skaidri panākta vienošanās ar JOO INTERNET MEDIA LTD.
+105	Tirgotāja dati – pašreizējais veikals
+106	Tirgotāja nosaukums
+107	Tulkojums
+108	Ierakstiet DELETE
+109	Ierakstiet DELETE, lai apstiprinātu neatgriezenisku datu dzēšanu.
+110	Ierakstiet precīzu vārdu DELETE, lai noņemtu visus atteikumus, dokumentus, audita vēsturi, piekļuves un atmaksas ierakstus. Darbību nevar atsaukt, un tā nav nepieciešama parastam moduļa atjauninājumam vai pārinstalēšanai.
+111	Neizdevās pārbaudīt jaunāko versiju GitHub. Pārbaudiet laidienus manuāli.
+112	Nezināms
+113	Atjauninājuma pārbaude
+114	Atjauninājuma pārbaude neizdevās: %error%
+115	Atjauninājuma statuss
+116	Izmantojiet šos URL moduļos, kuros visām valodām ir tikai viens URL lauks. Ieejas controller izvēlas pašreizējo vai vēlamo veikala valodu un novirza uz lokalizēto, lasāmo ceļu.
+117	Izmantojiet šo URL tikai tad, ja hostings nevar izpildīt CLI komandu. Uztveriet tokenu kā paroli: nepublicējiet to, nesūtiet e-pastā un neievietojiet publiskā uzraudzībā.
+118	Izmantojiet to tikai vienreizlietojamā testa instalācijā.
+119	Jā
+120	Tikai Back Office iestatījumi

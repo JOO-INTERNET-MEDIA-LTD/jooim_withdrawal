@@ -1,0 +1,120 @@
+001	È disponibile una nuova versione del modulo.
+002	Numero di tentativi di reinvio della conferma
+003	Aggiunge una voce per il recesso nell’area Il mio account del cliente. Il cliente può comunque usare la procedura pubblica quando l’ordine non è visibile nell’account.
+004	Aggiunge un pulsante «Recedi dal contratto» al dettaglio di un ordine appartenente al cliente autenticato. La titolarità viene verificata sul server.
+005	Consente al consumatore di inviare una dichiarazione inequivocabile di recesso senza accedere o visualizzare i dati dell’ordine. Mantenere disponibile questa funzione per i contratti B2C online applicabili.
+006	Allega conferma PDF
+007	Allega all’e-mail di conferma il PDF immutabile del recesso. La disattivazione dell’allegato non elimina il PDF protetto memorizzato nel caso.
+008	Casi:
+009	Identificativo dell’impresa
+010	Versione corrente del modulo
+011	Link nell’account cliente
+012	Indirizzo di contatto visibile al cliente per le comunicazioni sul recesso. Utilizzare una casella monitorata; non inserire qui l’e-mail del cliente.
+013	Funzione diretta dell’articolo 11 bis
+014	Recesso diretto
+015	Funzione di recesso diretto:
+016	Disattivato
+017	Disattivato (è necessaria una verifica legale)
+018	Mostra nel footer del negozio il link «Recedi dal contratto qui» rivolto al cliente. Questo link alla funzione legale è indipendente dall’attribuzione marketing Joobox.
+019	Nota sulla conformità UE (2026):
+020	Ogni lingua attiva del negozio riceve un proprio percorso leggibile localizzato. Gli URL di ingresso indipendenti dalla lingua restano disponibili per i moduli esterni di elenchi link. Dopo la distribuzione verificare entrambi i flussi in ogni lingua attiva.
+021	E-mail
+022	E-mail per ordine / giorno
+023	E-mail per ordine / ora
+024	Attivato
+025	Attiva il modulo diretto di recesso online che non richiede un account cliente né l’accesso all’e-mail originale dell’ordine. Disattivarlo solo dopo una verifica legale specifica per il mercato.
+026	Termina una sessione ospite verificata dopo questo periodo di inattività. Intervallo previsto: 5–240 minuti; valore consigliato: 30.
+027	Ripiego in inglese
+028	Inserire l’URL HTTPS assoluto dell’informativa sulla privacy che spiega il trattamento dei dati personali per ricevere e gestire i recessi.
+029	Inserire l’indirizzo esatto e le istruzioni pratiche per la restituzione dei beni. Le istruzioni non devono imporre condizioni che limitino illecitamente il diritto di recesso del consumatore.
+030	Inserire l’identificativo richiesto nella giurisdizione del venditore, ad esempio numero d’impresa, partita IVA o numero del registro delle imprese.
+031	Inserire la denominazione legale o sociale completa del venditore, non quella del fornitore del modulo. Compare nel modulo, nell’e-mail di conferma e nel PDF.
+032	Inserire la sede legale o l’indirizzo commerciale del venditore esattamente come deve apparire nel documento del consumatore.
+033	Link nel footer (mantenere attivo per i contratti B2C online applicabili)
+034	Per l’installazione in PrestaShop non utilizzare l’archivio automatico GitHub «Source code ZIP». Usare solo il file ZIP di installazione tra gli asset della release.
+035	Per i contratti B2C a distanza applicabili conclusi tramite un’interfaccia online, disattivare o nascondere la funzione diretta di recesso può essere in contrasto con l’articolo 11 bis della direttiva 2011/83/UE, come modificata dalla direttiva (UE) 2023/2673. L’attuazione nazionale deve comunque essere verificata per ogni mercato.
+036	Disponibilità generale e legale
+037	Ottieni assistenza Joobox
+038	I controlli GitHub vengono eseguiti al massimo una volta ogni sei ore, salvo aggiornamento manuale. Il modulo non scarica né installa mai codice automaticamente.
+039	URL cron dell’hosting (segreto):
+040	Durata di utilizzo del link di accesso monouso inviato via e-mail. Intervallo previsto: 5–240 minuti; valore consigliato: 30.
+041	Incluso
+042	JOOIM Withdrawal – Recesso contrattuale online
+043	Assistenza Joobox per questo modulo
+044	Lingua
+045	URL indipendenti dalla lingua per elenchi link esterni:
+046	Ultimo controllo
+047	Ultima versione su GitHub
+048	Link per le lingue attive del negozio
+049	Impostazioni locali
+050	Validità del magic link (minuti)
+051	Manutenzione CLI:
+052	Interruttore principale dei flussi pubblici di recesso e dei link rivolti ai clienti. La disattivazione non elimina né modifica i recessi già ricevuti.
+053	Numero massimo di richieste del link di accesso associate allo stesso riferimento d’ordine normalizzato in 24 ore.
+054	Numero massimo di richieste del link di accesso associate allo stesso riferimento d’ordine normalizzato in un’ora. Protegge la casella del cliente da messaggi ripetuti.
+055	Lunghezza massima della nota del cliente
+056	Numero massimo di caratteri di testo semplice accettati nella nota facoltativa del cliente. L’HTML non è consentito. Valore consigliato: 2000.
+057	Numero massimo di richieste di accesso tramite riferimento d’ordine da un IP pseudonimizzato in 15 minuti. Le ricerche riuscite e fallite condividono lo stesso limite.
+058	Numero massimo di richieste di accesso tramite riferimento d’ordine da un IP pseudonimizzato in 24 ore. L’indirizzo IP grezzo non viene memorizzato nel registro legale del recesso.
+059	Durata totale massima di una sessione ospite verificata, anche se il cliente resta attivo. Intervallo previsto: 15–1440 minuti; valore consigliato: 120.
+060	Ritardo minimo prima di poter richiedere un’altra e-mail di accesso per lo stesso riferimento d’ordine. Valore consigliato: 60 secondi.
+061	I dati del modulo sono stati eliminati definitivamente.
+062	Modulo attivo
+063	Il modulo è aggiornato.
+064	No
+065	Non sono state trovate lingue attive del negozio.
+066	Nessun dato viene eliminato se il valore non è esattamente DELETE.
+067	La normale disinstallazione del modulo conserva i registri di recesso. Questa azione distruttiva elimina tutte le tabelle del modulo.
+068	Numero di tentativi automatici dopo il mancato invio di un’e-mail di conferma. Il recesso resta valido anche se tutti i tentativi e-mail falliscono.
+069	Apri le release GitHub
+070	Apri i recessi
+071	Apre l’elenco Back Office dei recessi ricevuti, con stati, documenti, registrazioni dei rimborsi e cronologia di audit.
+072	Numero facoltativo del servizio clienti mostrato nella conferma e nel PDF. Non viene utilizzato per autenticare il recesso.
+073	Pulsante nel dettaglio dell’ordine
+074	Flusso tramite riferimento d’ordine
+075	È richiesto PHP 8.1 o successivo.
+076	Eliminazione permanente dei dati
+077	Elimina definitivamente tutti i dati del modulo
+078	Telefono
+079	Metodo consigliato per la manutenzione pianificata. Elimina i record temporanei scaduti, ritenta le conferme in coda ed esegue le attività di conservazione.
+080	URL dell’informativa sulla privacy
+081	Ingresso pubblico:
+082	Conferma eliminazione
+083	Pronto. Sono disponibili i valori di sicurezza e gli hook richiesti dal modulo.
+084	Prefisso del riferimento
+085	Aggiorna stato versione
+086	Sede legale
+087	Richieste per IP / 15 minuti
+088	Richieste per IP / giorno
+089	Intervallo tra reinvii (secondi)
+090	Indirizzo di restituzione / istruzioni
+091	Configurazione di runtime:
+092	Salva impostazioni
+093	Esercizio e amministrazione sicuri online del diritto di recesso del consumatore.
+094	Sicurezza, sessione e limiti antiabuso
+095	Limite assoluto della sessione (minuti)
+096	Limite di inattività della sessione (minuti)
+097	Impostazioni salvate.
+098	Codice breve usato all’inizio dei riferimenti di recesso. Utilizzare solo lettere, cifre e trattini, ad esempio WD. I riferimenti esistenti non vengono mai modificati.
+099	Non è stato possibile sincronizzare alcuni requisiti di runtime. Consultare i log PrestaShop prima dell’uso pubblico.
+100	Avvia il flusso sicuro tramite riferimento d’ordine. Il cliente inserisce solo il riferimento pubblico; i dati dell’ordine e quelli personali restano nascosti fino alla conferma del link e-mail monouso.
+101	Sono supportate le versioni PrestaShop da 8.1 a 9.1.
+102	I valori predefiniti sono volutamente prudenti. Aumentare i limiti solo dopo aver esaminato il traffico reale e i log degli abusi; valori troppo bassi possono bloccare consumatori legittimi.
+103	Questi valori identificano il venditore effettivo che gestisce il negozio selezionato. Nel multistore sono memorizzati per negozio e stampati nelle conferme al cliente e nelle prove PDF.
+104	Questo modulo GitHub gratuito è fornito senza assistenza tecnica individuale. Installazione, configurazione, test di produzione, aggiornamenti e risoluzione dei problemi sono disponibili per i clienti di Joobox PrestaShop Cloud o di un altro servizio a pagamento espressamente concordato con JOO INTERNET MEDIA LTD.
+105	Dati del venditore – negozio corrente
+106	Nome del venditore
+107	Traduzione
+108	Digitare DELETE
+109	Digitare DELETE per confermare l’eliminazione permanente dei dati.
+110	Digitare esattamente DELETE per eliminare tutti i recessi, i documenti, la cronologia di audit, i record di accesso e i record dei rimborsi. L’azione non può essere annullata e non è necessaria per un normale aggiornamento o una reinstallazione del modulo.
+111	Impossibile verificare l’ultima versione da GitHub. Controllare manualmente le release.
+112	Sconosciuto
+113	Controllo aggiornamenti
+114	Controllo aggiornamento non riuscito: %error%
+115	Stato aggiornamento
+116	Utilizzare questi URL nei moduli che offrono un solo campo URL per tutte le lingue. Il controller di ingresso seleziona la lingua corrente o preferita del negozio e reindirizza al percorso leggibile localizzato.
+117	Utilizzare questo URL solo quando l’hosting non può eseguire il comando CLI. Trattare il token come una password: non pubblicarlo, non inviarlo per e-mail e non inserirlo in sistemi di monitoraggio pubblici.
+118	Utilizzare questa funzione solo in un’installazione di test eliminabile.
+119	Sì
+120	Solo impostazioni Back Office

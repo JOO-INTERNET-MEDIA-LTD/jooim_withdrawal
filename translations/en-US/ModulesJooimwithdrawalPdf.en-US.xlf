@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" target-language="en-US" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="951b09a121159fc692b81e7bc405a78b" resname="Acknowledgement of receipt of contract withdrawal"><source>Acknowledgement of receipt of contract withdrawal</source><target>Acknowledgement of receipt of contract withdrawal</target></trans-unit>
+      <trans-unit id="e58446ff7cd7eefcc32c26422a568832" resname="Consumer and contract"><source>Consumer and contract</source><target>Consumer and contract</target></trans-unit>
+      <trans-unit id="7bbd128d26f58f820d0aa0bacabe915d" resname="Date and time received:"><source>Date and time received:</source><target>Date and time received:</target></trans-unit>
+      <trans-unit id="1b48f71af5a49fcbc0f74c4f1fa0b1a7" resname="Entire contract/order"><source>Entire contract/order</source><target>Entire contract/order</target></trans-unit>
+      <trans-unit id="4a55cab76ff88f3a49660cba8b80cdcc" resname="Immutable snapshot SHA-256:"><source>Immutable snapshot SHA-256:</source><target>Immutable snapshot SHA-256:</target></trans-unit>
+      <trans-unit id="e87f4443dc0d3dfcb89528a638a216a3" resname="Item"><source>Item</source><target>Item</target></trans-unit>
+      <trans-unit id="de48237748cc127975a7d512b6d132fc" resname="Order / contract reference:"><source>Order / contract reference:</source><target>Order / contract reference:</target></trans-unit>
+      <trans-unit id="38f97800b33e338050c6b5ec7cab5af0" resname="Quantity"><source>Quantity</source><target>Quantity</target></trans-unit>
+      <trans-unit id="b79a5d8ec74adaa1fab481c58f0f2c7d" resname="Received at (UTC):"><source>Received at (UTC):</source><target>Received at (UTC):</target></trans-unit>
+      <trans-unit id="b7e2d628a82397565baf251cffa17504" resname="Reference"><source>Reference</source><target>Reference</target></trans-unit>
+      <trans-unit id="78ba60c769e1a02a2c04f895f4e32690" resname="Return instructions"><source>Return instructions</source><target>Return instructions</target></trans-unit>
+      <trans-unit id="8bf234abe970464f110f4d39326ff89c" resname="Selected goods or contract part"><source>Selected goods or contract part</source><target>Selected goods or contract part</target></trans-unit>
+      <trans-unit id="2fd47fbc5f7994144179b08c591a20c8" resname="Trader"><source>Trader</source><target>Trader</target></trans-unit>
+      <trans-unit id="3ec2b7348f38ffc8f06a9c6e0ed380cb" resname="Withdrawal acknowledgement"><source>Withdrawal acknowledgement</source><target>Withdrawal acknowledgement</target></trans-unit>
+      <trans-unit id="a4a5eb37828409d7441ea5761b28bb4b" resname="Withdrawal reference:"><source>Withdrawal reference:</source><target>Withdrawal reference:</target></trans-unit>
+      <trans-unit id="aac7e5a6e86684aa30a72dcb361da7e5" resname="Withdrawal scope"><source>Withdrawal scope</source><target>Withdrawal scope</target></trans-unit>
+      <trans-unit id="6f830c19157c0f921914cd76315e1575" resname="Withdrawal statement"><source>Withdrawal statement</source><target>Withdrawal statement</target></trans-unit>
+    </body>
+  </file>
+</xliff>

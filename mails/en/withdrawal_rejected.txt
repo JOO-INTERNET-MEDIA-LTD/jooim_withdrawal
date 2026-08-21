@@ -1,0 +1,9 @@
+The trader has recorded a rejection of the case; the reason is stated below.
+Withdrawal reference: {withdrawal_reference}
+Order / contract: {order_reference}
+Status: {status}
+
+Trader message:
+{public_message}
+
+Trader contact: {merchant_email}

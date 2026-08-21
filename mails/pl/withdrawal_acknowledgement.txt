@@ -1,0 +1,28 @@
+Potwierdzenie otrzymania odstąpienia od umowy
+
+Potwierdzamy otrzymanie oświadczenia o odstąpieniu od umowy.
+Numer odstąpienia: {withdrawal_reference}
+Zamówienie / umowa: {order_reference}
+Konsument: {firstname} {lastname}
+Kontakt elektroniczny: {customer_email}
+Data i godzina otrzymania: {submitted_at}
+Czas otrzymania UTC: {submitted_at_utc}
+Zakres: {scope}
+
+Treść zgłoszenia / pozycje:
+{items_text}
+
+Oświadczenie:
+{statement}
+
+Sprzedawca:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Adres / instrukcje zwrotu:
+{return_address}
+
+Prosimy zachować to potwierdzenie. Potwierdza ono treść, datę i godzinę zgłoszenia online.
+Hash SHA-256 niezmiennego snapshotu: {payload_hash}

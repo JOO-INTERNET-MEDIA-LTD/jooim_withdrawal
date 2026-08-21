@@ -1,0 +1,9 @@
+Refundace byla zaevidována jako provedená.
+Reference odstoupení: {withdrawal_reference}
+Objednávka / smlouva: {order_reference}
+Status: {status}
+
+Zpráva obchodníka:
+{public_message}
+
+Kontakt obchodníka: {merchant_email}

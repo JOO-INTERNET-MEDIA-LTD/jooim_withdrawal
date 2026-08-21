@@ -1,0 +1,8 @@
+Dzień dobry, {firstname},
+
+Użyj tego linku, aby przejść do bezpiecznej funkcji odstąpienia od umowy online:
+Przejdź do odstąpienia: {access_url}
+
+Link jest ważny przez {expires_minutes} minut. Samo otwarcie go nie zużywa; przejście dalej potwierdza się dopiero na następnej stronie.
+
+Jeżeli nie prosili Państwo o ten link, wiadomość można zignorować.

@@ -1,0 +1,67 @@
+/* Front-office rules intentionally inherit the active PrestaShop theme. */
+.jooim-withdrawal {
+    width: 100%;
+}
+
+.jooim-withdrawal .form-group,
+.jooim-withdrawal .jooim-withdrawal-fieldset,
+.jooim-withdrawal .jooim-withdrawal-items,
+.jooim-withdrawal .jooim-statement,
+.jooim-withdrawal .jooim-privacy,
+.jooim-withdrawal .jooim-withdrawal-actions {
+    margin-block-end: 1.25rem;
+}
+
+.jooim-withdrawal .jooim-withdrawal-fieldset {
+    padding: 0;
+    border: 0;
+}
+
+.jooim-withdrawal .jooim-withdrawal-fieldset legend {
+    margin-block-end: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.jooim-withdrawal .form-check + .form-check {
+    margin-block-start: 0.5rem;
+}
+
+.jooim-withdrawal .jooim-privacy {
+    font-size: 0.9em;
+}
+
+.jooim-withdrawal .jooim-statement {
+    padding: 1rem;
+    border-inline-start: 0.25rem solid currentColor;
+    background: color-mix(in srgb, currentColor 4%, transparent);
+}
+
+@supports not (background: color-mix(in srgb, currentColor 4%, transparent)) {
+    .jooim-withdrawal .jooim-statement {
+        background: transparent;
+    }
+}
+
+.jooim-withdrawal .jooim-withdrawal-summary dt,
+.jooim-withdrawal .jooim-withdrawal-summary dd {
+    margin-block-end: 0.5rem;
+}
+
+.jooim-withdrawal .jooim-quantity-input {
+    width: 5.5rem;
+    max-width: 100%;
+}
+
+/* The injected list item intentionally has no module-specific visual rules.
+ * front.js copies the neighbouring ps_linklist anchor classes, so the active
+ * theme controls typography, spacing, hover state and mobile collapsing. */
+
+/* No-JavaScript/generic-theme fallback rendered by displayFooter. The normal
+ * JavaScript path removes this block after inserting the link into ps_linklist. */
+.jooim-withdrawal-footer-link-wrapper {
+    box-sizing: border-box;
+    display: block;
+    margin: 0.5rem 0 0;
+    padding: 0;
+}

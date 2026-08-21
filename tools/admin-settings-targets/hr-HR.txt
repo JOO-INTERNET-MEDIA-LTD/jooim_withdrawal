@@ -1,0 +1,120 @@
+001	Dostupna je nova verzija modula.
+002	Broj ponovnih pokušaja slanja potvrde
+003	Dodaje stavku za odustanak u područje Moj račun kupca. Kupac i dalje može koristiti javni postupak kada narudžba nije vidljiva na računu.
+004	Dodaje gumb „Odustani od ugovora” u detalje narudžbe koja pripada prijavljenom kupcu. Vlasništvo se provjerava na poslužitelju.
+005	Omogućuje potrošaču da podnese nedvosmislenu izjavu o odustanku bez prijave ili prikaza podataka narudžbe. Ostavite ovu funkciju dostupnom za primjenjive internetske B2C ugovore.
+006	Priloži PDF potvrdu
+007	Prilaže nepromjenjivi PDF potvrde odustanka e-poruci potvrde. Isključivanje privitka ne uklanja zaštićeni PDF pohranjen uz predmet.
+008	Predmeti:
+009	Identifikator društva
+010	Trenutačna verzija modula
+011	Poveznica u računu kupca
+012	Adresa za kontakt vidljiva kupcu za komunikaciju o odustanku. Koristite aktivno nadzirani poštanski sandučić; ovdje ne unosite e-adresu kupca.
+013	Izravna funkcija iz članka 11.a
+014	Izravni odustanak
+015	Funkcija izravnog odustanka:
+016	Onemogućeno
+017	Onemogućeno (potreban je pravni pregled)
+018	Prikazuje poveznicu „Odustani od ugovora ovdje” u podnožju trgovine. Ova poveznica pravne funkcije neovisna je o marketinškoj oznaci Joobox.
+019	Napomena o usklađenosti s pravom EU-a (2026.):
+020	Svaki aktivni jezik trgovine dobiva vlastitu lokaliziranu čitljivu putanju. Jezično neutralne ulazne URL adrese ostaju dostupne vanjskim modulima popisa poveznica. Nakon implementacije testirajte oba postupka na svakom aktivnom jeziku.
+021	E-pošta
+022	E-poruke po narudžbi / dan
+023	E-poruke po narudžbi / sat
+024	Omogućeno
+025	Omogućuje izravni mrežni obrazac za odustanak koji ne zahtijeva račun kupca ni pristup izvornoj e-poruci narudžbe. Onemogućite ga samo nakon pravnog pregleda za određeno tržište.
+026	Završava potvrđenu sesiju gosta nakon ovog razdoblja neaktivnosti. Očekivani raspon: 5–240 minuta; preporučena zadana vrijednost: 30.
+027	Engleska pričuvna verzija
+028	Unesite apsolutnu HTTPS URL adresu pravila privatnosti koja objašnjavaju obradu osobnih podataka za zaprimanje i obradu odustanaka.
+029	Unesite točnu adresu i praktične upute za povrat robe. Upute ne smiju nametati uvjete koji nezakonito ograničavaju pravo potrošača na odustanak.
+030	Unesite identifikator potreban u nadležnosti prodavatelja, primjerice identifikacijski broj društva, PDV broj ili broj trgovačkog registra.
+031	Unesite puni pravni ili registrirani naziv prodavatelja, a ne dobavljača modula. Prikazuje se u obrascu, e-poruci potvrde i PDF-u.
+032	Unesite registrirano sjedište ili poslovnu adresu prodavatelja točno kako treba biti prikazana u dokumentu za potrošača.
+033	Poveznica u podnožju (ostavite omogućenu za primjenjive internetske B2C ugovore)
+034	Za instalaciju u PrestaShopu nemojte koristiti GitHubov automatski „Source code ZIP”. Koristite samo instalacijsku ZIP datoteku iz sadržaja izdanja.
+035	Za primjenjive B2C ugovore na daljinu sklopljene putem internetskog sučelja onemogućavanje ili skrivanje izravne funkcije odustanka može biti protivno članku 11.a Direktive 2011/83/EU kako je izmijenjena Direktivom (EU) 2023/2673. Nacionalnu provedbu ipak treba provjeriti za svako tržište.
+036	Opća i pravna dostupnost
+037	Zatraži Joobox podršku
+038	Provjere GitHuba obavljaju se najviše jednom u šest sati osim ako se ručno osvježe. Modul nikada automatski ne preuzima niti instalira kôd.
+039	URL adresa hosting crona (tajna):
+040	Koliko dugo jednokratna poveznica za pristup iz e-poruke ostaje upotrebljiva. Očekivani raspon: 5–240 minuta; preporučena zadana vrijednost: 30.
+041	Uključeno
+042	JOOIM Withdrawal – Mrežni odustanak od ugovora
+043	Joobox podrška za ovaj modul
+044	Jezik
+045	Jezično neutralne URL adrese za vanjske popise poveznica:
+046	Zadnja provjera
+047	Najnovija verzija na GitHubu
+048	Poveznice za aktivne jezike trgovine
+049	Lokalne postavke
+050	Valjanost jednokratne poveznice (minute)
+051	CLI za održavanje:
+052	Glavni prekidač javnih postupaka odustanka i poveznica za odustanak vidljivih kupcima. Isključivanje ne briše niti mijenja već zaprimljene odustanke.
+053	Najveći broj zahtjeva za poveznicu pristupa povezanih s istom normaliziranom referencom narudžbe u 24 sata.
+054	Najveći broj zahtjeva za poveznicu pristupa povezanih s istom normaliziranom referencom narudžbe u jednom satu. Time se poštanski sandučić kupca štiti od ponavljanih poruka.
+055	Najveća duljina napomene kupca
+056	Najveći broj znakova običnog teksta u neobaveznoj napomeni kupca. HTML nije dopušten. Preporučena zadana vrijednost: 2000.
+057	Najveći broj zahtjeva za pristup prema referenci narudžbe s jedne pseudonimizirane IP adrese u 15 minuta. Uspješna i neuspješna pretraživanja dijele isto ograničenje.
+058	Najveći broj zahtjeva za pristup prema referenci narudžbe s jedne pseudonimizirane IP adrese u 24 sata. Neobrađena IP adresa ne pohranjuje se u pravni zapis odustanka.
+059	Najveće ukupno trajanje potvrđene sesije gosta čak i ako je kupac i dalje aktivan. Očekivani raspon: 15–1440 minuta; preporučena zadana vrijednost: 120.
+060	Najmanja odgoda prije nego što se za istu referencu narudžbe može zatražiti druga e-poruka za pristup. Preporučena zadana vrijednost: 60 sekundi.
+061	Podaci modula trajno su izbrisani.
+062	Modul je omogućen
+063	Modul je ažuran.
+064	Ne
+065	Nisu pronađeni aktivni jezici trgovine.
+066	Podaci se ne brišu osim ako je vrijednost točno DELETE.
+067	Uobičajena deinstalacija modula čuva zapise odustanka. Ova destruktivna radnja uklanja sve tablice modula.
+068	Broj automatskih ponovnih pokušaja nakon neuspjelog slanja e-poruke potvrde. Odustanak ostaje valjan čak i ako svi pokušaji slanja e-pošte ne uspiju.
+069	Otvori GitHub izdanja
+070	Otvori odustanke
+071	Otvara Back Office popis zaprimljenih odustanaka, njihovih statusa, dokumenata, zapisa povrata novca i povijesti revizije.
+072	Neobavezni telefonski broj korisničke službe prikazan u potvrdi i PDF-u. Ne koristi se za provjeru identiteta pri odustanku.
+073	Gumb u detaljima narudžbe
+074	Postupak prema referenci narudžbe
+075	Potreban je PHP 8.1 ili noviji.
+076	Trajno čišćenje podataka
+077	Trajno izbriši sve podatke modula
+078	Telefon
+079	Preporučena metoda planiranog održavanja. Uklanja istekle privremene zapise, ponovno pokušava poslati potvrde na čekanju i obrađuje zadatke čuvanja podataka.
+080	URL pravila privatnosti
+081	Javni ulaz:
+082	Potvrda čišćenja
+083	Spremno. Potrebne sigurnosne vrijednosti i hookovi modula dostupni su.
+084	Prefiks reference
+085	Osvježi stanje ažuriranja
+086	Registrirana adresa
+087	Zahtjevi po IP-u / 15 minuta
+088	Zahtjevi po IP-u / dan
+089	Pauza prije ponovnog slanja (sekunde)
+090	Adresa / upute za povrat
+091	Konfiguracija tijekom izvođenja:
+092	Spremi postavke
+093	Sigurno mrežno ostvarivanje i upravljanje pravom potrošača na odustanak.
+094	Ograničenja sigurnosti, sesije i zlouporabe
+095	Apsolutno ograničenje sesije (minute)
+096	Ograničenje neaktivnosti sesije (minute)
+097	Postavke su spremljene.
+098	Kratki kôd na početku referenci odustanka. Koristite samo slova, znamenke i crtice, primjerice WD. Postojeće reference odustanka nikada se ne mijenjaju.
+099	Neke zahtjeve tijekom izvođenja nije bilo moguće sinkronizirati. Prije javne uporabe pregledajte zapisnike PrestaShopa.
+100	Pokreće sigurni postupak prema referenci narudžbe. Kupac unosi samo javnu referencu; podaci narudžbe i osobni podaci ostaju skriveni dok se ne potvrdi jednokratna poveznica iz e-poruke.
+101	Podržane verzije PrestaShopa su od 8.1 do 9.1.
+102	Zadane vrijednosti namjerno su konzervativne. Povećajte ograničenja tek nakon pregleda stvarnog prometa i zapisnika zlouporabe; preniska ograničenja mogu blokirati legitimne potrošače.
+103	Ove vrijednosti identificiraju stvarnog prodavatelja koji upravlja odabranom trgovinom. Pohranjuju se zasebno za svaku trgovinu u multistore okruženju i ispisuju se u potvrdama kupcu i PDF dokazima.
+104	Ovaj besplatni GitHub modul pruža se bez pojedinačne tehničke podrške. Instalacija, konfiguracija, produkcijsko testiranje, ažuriranja i rješavanje problema dostupni su korisnicima Joobox PrestaShop Clouda ili druge plaćene usluge izričito ugovorene s JOO INTERNET MEDIA LTD.
+105	Podaci trgovca – trenutačna trgovina
+106	Naziv trgovca
+107	Prijevod
+108	Upišite DELETE
+109	Upišite DELETE kako biste potvrdili trajno brisanje podataka.
+110	Upišite točnu riječ DELETE kako biste uklonili sve odustanke, dokumente, povijest revizije, zapise pristupa i povrata novca. Radnja se ne može poništiti i nije potrebna za uobičajeno ažuriranje ili ponovnu instalaciju modula.
+111	Nije moguće provjeriti najnoviju verziju na GitHubu. Ručno provjerite izdanja.
+112	Nepoznato
+113	Provjera ažuriranja
+114	Provjera ažuriranja nije uspjela: %error%
+115	Stanje ažuriranja
+116	Ove URL adrese koristite u modulima koji nude samo jedno URL polje za sve jezike. Ulazni controller odabire trenutačni ili željeni jezik trgovine i preusmjerava na lokaliziranu čitljivu putanju.
+117	Ovu URL adresu koristite samo kada hosting ne može pokrenuti CLI naredbu. Token tretirajte kao lozinku: nemojte ga objavljivati, slati e-poštom niti stavljati u javni nadzor.
+118	Koristite ovo samo u jednokratnoj testnoj instalaciji.
+119	Da
+120	Samo postavke Back Officea

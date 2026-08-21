@@ -1,0 +1,29 @@
+.jooim-withdrawal-admin pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.jooim-withdrawal-link-list dt {
+  margin-top: 12px;
+}
+
+.jooim-withdrawal-link-list dd {
+  margin-left: 0;
+}
+
+.jooim-withdrawal-link-list .help-block,
+.jooim-withdrawal-secret-url + .help-block {
+  margin-top: 4px;
+}
+
+.jooim-withdrawal-secret-url {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.jooim-withdrawal-support-panel .btn,
+.jooim-withdrawal-update-panel .btn {
+  margin-right: 6px;
+}

@@ -1,0 +1,9 @@
+The withdrawal status has been updated.
+Withdrawal reference: {withdrawal_reference}
+Order / contract: {order_reference}
+Status: {status}
+
+Trader message:
+{public_message}
+
+Trader contact: {merchant_email}

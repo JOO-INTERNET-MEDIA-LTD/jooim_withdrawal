@@ -1,0 +1,9 @@
+The refund has been recorded as completed.
+Withdrawal reference: {withdrawal_reference}
+Order / contract: {order_reference}
+Status: {status}
+
+Trader message:
+{public_message}
+
+Trader contact: {merchant_email}

@@ -1,0 +1,5 @@
+Nové odstoupení od smlouvy bylo zaevidováno.
+Reference odstoupení: {withdrawal_reference}
+Objednávka / smlouva: {order_reference}
+Elektronický kontakt: {customer_email}
+Status: {status}

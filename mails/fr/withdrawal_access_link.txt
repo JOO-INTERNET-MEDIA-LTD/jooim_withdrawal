@@ -1,0 +1,8 @@
+Bonjour {firstname},
+
+Utilisez ce lien pour poursuivre la procédure sécurisée de rétractation en ligne :
+Continuer vers la rétractation: {access_url}
+
+Le lien est valable {expires_minutes} minutes. Son simple affichage ne le consomme pas ; la poursuite est confirmée sur la page suivante.
+
+Si vous n’avez pas demandé ce lien, vous pouvez ignorer ce message.

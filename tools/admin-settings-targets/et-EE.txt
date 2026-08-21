@@ -1,0 +1,120 @@
+001	Saadaval on mooduli uus versioon.
+002	Kinnituse korduskatsete arv
+003	Lisab taganemise kirje kliendi ala „Minu konto“ juurde. Klient võib kasutada ka avalikku protsessi, kui tellimust kontol ei kuvata.
+004	Lisab sisselogitud kliendile kuuluva tellimuse üksikasjadesse nupu „Tagane lepingust“. Kuuluvust kontrollitakse serveris.
+005	Võimaldab tarbijal esitada ühemõttelise taganemisavalduse ilma sisse logimata või tellimuse andmeid kuvamata. Hoidke funktsioon asjakohaste veebipõhiste B2C-lepingute jaoks kättesaadav.
+006	Lisa PDF-kinnitus
+007	Lisab taganemise muutumatu PDF-kinnituse kinnitusmeilile. Manuse väljalülitamine ei kustuta juhtumiga koos talletatud kaitstud PDF-i.
+008	Juhtumid:
+009	Ettevõtte tunnus
+010	Mooduli praegune versioon
+011	Link kliendikontol
+012	Kliendile nähtav kontaktaadress taganemisega seotud suhtluseks. Kasutage aktiivselt jälgitavat postkasti; ärge sisestage siia kliendi e-posti aadressi.
+013	Artikli 11a otsefunktsioon
+014	Otsene taganemine
+015	Otsese taganemise funktsioon:
+016	Keelatud
+017	Keelatud (vajalik õiguslik ülevaatus)
+018	Kuvab poe jaluses kliendile suunatud lingi „Tagane lepingust siin“. See õigusliku funktsiooni link on Jooboxi turundusviitest sõltumatu.
+019	ELi nõuetele vastavuse märkus (2026):
+020	Iga aktiivne poe keel saab oma lokaliseeritud kasutajasõbraliku tee. Keeleliselt neutraalsed sisenemis-URL-id jäävad väliste lingiloendi moodulite jaoks kättesaadavaks. Testige pärast juurutamist mõlemat protsessi igas aktiivses keeles.
+021	E-post
+022	E-kirju tellimuse kohta / päevas
+023	E-kirju tellimuse kohta / tunnis
+024	Lubatud
+025	Lubab otsese veebipõhise taganemisvormi, mis ei nõua kliendikontot ega juurdepääsu algsele tellimuse e-kirjale. Keelake see ainult turupõhise õigusliku ülevaatuse järel.
+026	Lõpetab kinnitatud külalisseansi pärast seda tegevusetuse aega. Eeldatav vahemik: 5–240 minutit; soovituslik vaikeväärtus: 30.
+027	Ingliskeelne varuvariant
+028	Sisestage privaatsuspoliitika absoluutne HTTPS-URL, mis selgitab isikuandmete töötlemist taganemiste vastuvõtmiseks ja menetlemiseks.
+029	Sisestage kaupade tagastamise täpne aadress ja praktilised juhised. Juhised ei tohi kehtestada tingimusi, mis piiravad õigusvastaselt tarbija taganemisõigust.
+030	Sisestage müüja jurisdiktsioonis nõutav tunnus, näiteks registrikood, KMKR-number või äriregistri number.
+031	Sisestage müüja täielik ametlik või registrisse kantud ärinimi, mitte mooduli tarnija nimi. See kuvatakse vormil, kinnitusmeilis ja PDF-is.
+032	Sisestage müüja registrijärgne asukoht või tegevuskoha aadress täpselt sellisel kujul, nagu see peab tarbijadokumendis ilmuma.
+033	Jaluse link (hoidke asjakohaste veebipõhiste B2C-lepingute korral lubatuna)
+034	PrestaShopi installimiseks ärge kasutage GitHubi automaatset faili „Source code ZIP“. Kasutage ainult väljaande varade hulgas olevat installi-ZIP-faili.
+035	Asjakohaste veebiliidese kaudu sõlmitud B2C-kauglepingute puhul võib otsese taganemisfunktsiooni keelamine või peitmine olla vastuolus direktiivi 2011/83/EL artikliga 11a, mida on muudetud direktiiviga (EL) 2023/2673. Iga turu puhul tuleb siiski kontrollida riiklikku rakendust.
+036	Üldine ja õiguslik kättesaadavus
+037	Hangi Jooboxi tugi
+038	GitHubi kontrolle tehakse maksimaalselt kord kuue tunni jooksul, kui neid käsitsi ei värskendata. Moodul ei laadi ega installi koodi kunagi automaatselt.
+039	Hostingu cron-i URL (salajane):
+040	Kui kaua on ühekordne e-posti juurdepääsulink kasutatav. Eeldatav vahemik: 5–240 minutit; soovituslik vaikeväärtus: 30.
+041	Sisaldub
+042	JOOIM Withdrawal – Veebipõhine lepingust taganemine
+043	Jooboxi tugi sellele moodulile
+044	Keel
+045	Keeleliselt neutraalsed URL-id välistele lingiloenditele:
+046	Viimati kontrollitud
+047	GitHubi uusim versioon
+048	Lingid poe aktiivsetele keeltele
+049	Lokaat
+050	Ühekordse lingi kehtivus (minutites)
+051	Hoolduse CLI:
+052	Avalike taganemisprotsesside ja kliendile nähtavate taganemislinkide põhilüliti. Selle keelamine ei kustuta ega muuda juba saadud taganemisi.
+053	Sama normaliseeritud tellimuse viitega seotud juurdepääsulingi taotluste maksimaalne arv 24 tunni jooksul.
+054	Sama normaliseeritud tellimuse viitega seotud juurdepääsulingi taotluste maksimaalne arv ühe tunni jooksul. See kaitseb kliendi postkasti korduvate sõnumite eest.
+055	Kliendi märkuse maksimaalne pikkus
+056	Valikulises kliendimärkuses lubatud lihtteksti märkide maksimaalne arv. HTML-i ei aktsepteerita. Soovituslik vaikeväärtus: 2000.
+057	Ühe pseudonüümitud IP-aadressi tellimuse viite juurdepääsutaotluste maksimaalne arv 15 minuti jooksul. Edukad ja ebaõnnestunud päringud kasutavad sama piirangut.
+058	Ühe pseudonüümitud IP-aadressi tellimuse viite juurdepääsutaotluste maksimaalne arv 24 tunni jooksul. Toorest IP-aadressi ei salvestata õiguslikku taganemiskirjesse.
+059	Kinnitatud külalisseansi maksimaalne kogukestus isegi siis, kui klient on jätkuvalt aktiivne. Eeldatav vahemik: 15–1440 minutit; soovituslik vaikeväärtus: 120.
+060	Minimaalne viivitus enne uue juurdepääsumeili taotlemist sama tellimuse viite jaoks. Soovituslik vaikeväärtus: 60 sekundit.
+061	Mooduli andmed kustutati jäädavalt.
+062	Moodul on lubatud
+063	Moodul on ajakohane.
+064	Ei
+065	Aktiivseid poe keeli ei leitud.
+066	Andmeid ei kustutata, kui väärtus ei ole täpselt DELETE.
+067	Mooduli tavapärane desinstallimine säilitab taganemiskirjed. See hävitav toiming eemaldab kõik mooduli tabelid.
+068	Automaatsete korduskatsete arv pärast kinnitusmeili ebaõnnestumist. Taganemine jääb kehtivaks ka siis, kui kõik e-posti katsed nurjuvad.
+069	Ava GitHubi väljalasked
+070	Ava taganemised
+071	Avab Back Office'is saadud taganemiste loendi koos nende oleku, dokumentide, tagasimaksekirjete ja auditiajalooga.
+072	Valikuline klienditeeninduse telefoninumber, mis kuvatakse kinnituses ja PDF-is. Seda ei kasutata taganemise autentimiseks.
+073	Nupp tellimuse üksikasjades
+074	Tellimuse viite protsess
+075	Nõutav on PHP 8.1 või uuem.
+076	Andmete püsiv kustutamine
+077	Kustuta kõik mooduli andmed jäädavalt
+078	Telefon
+079	Eelistatud plaanilise hoolduse meetod. See eemaldab aegunud ajutised kirjed, proovib ootel kinnitusi uuesti saata ja töötleb säilitusülesandeid.
+080	Privaatsuspoliitika URL
+081	Avalik sisenemine:
+082	Kustutamise kinnitus
+083	Valmis. Nõutavad turbeväärtused ja mooduli hook'id on saadaval.
+084	Viite prefiks
+085	Värskenda uuenduse olekut
+086	Registrijärgne aadress
+087	Taotlusi IP kohta / 15 minutit
+088	Taotlusi IP kohta / päev
+089	Kordussaatmise ooteaeg (sekundites)
+090	Tagastusaadress / juhised
+091	Käitusaegne konfiguratsioon:
+092	Salvesta seaded
+093	Tarbija taganemisõiguse turvaline veebipõhine kasutamine ja haldamine.
+094	Turbe-, seansi- ja väärkasutuspiirangud
+095	Seansi absoluutne piirang (minutites)
+096	Seansi tegevusetuse piirang (minutites)
+097	Seaded salvestati.
+098	Taganemisviidete alguses kasutatav lühikood. Kasutage ainult tähti, numbreid ja sidekriipse, näiteks WD. Olemasolevaid taganemisviiteid ei muudeta kunagi.
+099	Mõnda käitusaegset nõuet ei saanud sünkroonida. Vaadake enne avalikku kasutamist üle PrestaShopi logid.
+100	Käivitab turvalise tellimuse viite protsessi. Klient sisestab ainult avaliku tellimuse viite; tellimuse- ja isikuandmed jäävad peidetuks, kuni ühekordne e-posti link on kinnitatud.
+101	Toetatud PrestaShopi versioonid on 8.1 kuni 9.1.
+102	Vaikeväärtused on teadlikult konservatiivsed. Suurendage piiranguid alles pärast tegeliku liikluse ja väärkasutuslogide ülevaatamist; liiga madalad piirangud võivad blokeerida õiguspäraseid tarbijaid.
+103	Need väärtused tuvastavad valitud poodi tegelikult käitava müüja. Need salvestatakse multistore'is poe kaupa ning trükitakse kliendi kinnitustele ja PDF-tõendile.
+104	See tasuta GitHubi moodul antakse individuaalse tehnilise toeta. Paigaldus, seadistamine, tootmiskeskkonna testimine, uuendused ja tõrkeotsing on saadaval Joobox PrestaShop Cloudi klientidele või muu tasulise teenuse alusel, milles on JOO INTERNET MEDIA LTD-ga selgesõnaliselt kokku lepitud.
+105	Kaupleja andmed – praegune pood
+106	Kaupleja nimi
+107	Tõlge
+108	Sisestage DELETE
+109	Sisestage DELETE, et kinnitada andmete jäädav kustutamine.
+110	Sisestage täpne sõna DELETE, et eemaldada kõik taganemised, dokumendid, auditiajalugu, juurdepääsu- ja tagasimaksekirjed. Seda toimingut ei saa tagasi võtta ning seda ei ole vaja tavapärase mooduli uuenduse või taasinstallimise jaoks.
+111	GitHubist ei õnnestunud uusimat versiooni kontrollida. Kontrollige väljalaskeid käsitsi.
+112	Teadmata
+113	Uuenduse kontroll
+114	Uuenduse kontroll ebaõnnestus: %error%
+115	Uuenduse olek
+116	Kasutage neid URL-e moodulites, mis pakuvad kõigi keelte jaoks ainult ühte URL-välja. Sisenemiskontroller valib poe praeguse või eelistatud keele ja suunab lokaliseeritud kasutajasõbralikule teele.
+117	Kasutage seda URL-i ainult siis, kui hosting ei saa CLI-käsku käivitada. Käsitlege tokenit paroolina: ärge avaldage seda, saatke seda e-postiga ega lisage avalikku monitooringusse.
+118	Kasutage seda ainult ühekordses testinstallatsioonis.
+119	Jah
+120	Ainult Back Office'i seaded

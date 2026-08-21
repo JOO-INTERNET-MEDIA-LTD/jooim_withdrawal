@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a reproducible problem in JOOIM Withdrawal
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Remove customer data, order data, access links, tokens and credentials before submitting. Security vulnerabilities must follow SECURITY.md and must not be reported publicly.
+  - type: input
+    id: version
+    attributes:
+      label: Module version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: prestashop
+    attributes:
+      label: PrestaShop and PHP versions
+      placeholder: PrestaShop 8.2.3 / PHP 8.1
+    validations:
+      required: true
+  - type: input
+    id: theme
+    attributes:
+      label: Theme and multistore context
+      placeholder: Theme name; single shop or multistore
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Public order-reference flow
+        - Direct withdrawal flow
+        - Logged-in customer flow
+        - Email
+        - PDF
+        - Back Office
+        - Maintenance / cron
+        - Translation / localized route
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use sanitized test data only.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result and sanitized logs
+    validations:
+      required: true

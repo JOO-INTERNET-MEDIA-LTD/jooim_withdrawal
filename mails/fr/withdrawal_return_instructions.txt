@@ -1,0 +1,12 @@
+Instructions de retour
+Référence de rétractation: {withdrawal_reference}
+Commande / contrat: {order_reference}
+Status: {status}
+
+Message du professionnel:
+{public_message}
+
+Adresse / instructions de retour:
+{return_address}
+
+Contact du professionnel: {merchant_email}

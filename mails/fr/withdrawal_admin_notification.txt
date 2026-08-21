@@ -1,0 +1,5 @@
+Une nouvelle rétractation a été enregistrée.
+Référence de rétractation: {withdrawal_reference}
+Commande / contrat: {order_reference}
+Contact électronique: {customer_email}
+Status: {status}

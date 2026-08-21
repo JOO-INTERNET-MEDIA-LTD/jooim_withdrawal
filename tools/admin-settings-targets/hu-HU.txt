@@ -1,0 +1,120 @@
+001	Elérhető a modul új verziója.
+002	A visszaigazoló e-mail újrapróbálkozásainak száma
+003	Elállási bejegyzést ad a vásárló Saját fiók területéhez. A vásárló akkor is használhatja a nyilvános folyamatot, ha a rendelés nem látható a fiókjában.
+004	„Elállás a szerződéstől” gombot ad a bejelentkezett vásárló tulajdonában lévő rendelés részleteihez. A tulajdonjog ellenőrzése a szerveren történik.
+005	Lehetővé teszi, hogy a fogyasztó bejelentkezés és rendelési adatok megjelenítése nélkül egyértelmű elállási nyilatkozatot tegyen. Tartsa elérhetően ezt a funkciót az alkalmazandó online B2C-szerződéseknél.
+006	PDF-visszaigazolás csatolása
+007	A visszaigazoló e-mailhez csatolja az elállás megváltoztathatatlan PDF-igazolását. A melléklet kikapcsolása nem törli az ügyhöz tárolt védett PDF-et.
+008	Ügyek:
+009	Cégazonosító
+010	A modul jelenlegi verziója
+011	Hivatkozás a vásárlói fiókban
+012	A vásárló számára látható kapcsolattartási cím az elállással kapcsolatos kommunikációhoz. Aktívan figyelt postafiókot használjon; ide ne a vásárló e-mail-címét írja.
+013	Közvetlen funkció a 11a. cikk szerint
+014	Közvetlen elállás
+015	Közvetlen elállási funkció:
+016	Kikapcsolva
+017	Kikapcsolva (jogi felülvizsgálat szükséges)
+018	Megjeleníti a vásárlónak szóló „Elállás a szerződéstől itt” hivatkozást az áruház láblécében. Ez a jogi funkcióhivatkozás független a Joobox marketinghivatkozásától.
+019	EU-megfelelőségi megjegyzés (2026):
+020	Minden aktív áruházi nyelv saját lokalizált, olvasható útvonalat kap. A nyelvfüggetlen belépési URL-ek továbbra is használhatók külső hivatkozáslista-modulokban. Telepítés után mindkét folyamatot tesztelje minden aktív nyelven.
+021	E-mail
+022	E-mailek rendelésenként / nap
+023	E-mailek rendelésenként / óra
+024	Bekapcsolva
+025	Bekapcsolja a közvetlen online elállási űrlapot, amelyhez nem szükséges vásárlói fiók vagy hozzáférés az eredeti rendelési e-mailhez. Csak piacspecifikus jogi felülvizsgálat után kapcsolja ki.
+026	Ennyi inaktivitás után lezárja az ellenőrzött vendégmunkamenetet. Elvárt tartomány: 5–240 perc; ajánlott alapérték: 30.
+027	Angol tartalék szöveg
+028	Adja meg az elállások fogadásához és kezeléséhez szükséges személyesadat-kezelést ismertető adatvédelmi szabályzat abszolút HTTPS URL-jét.
+029	Adja meg az áruk visszaküldésének pontos címét és gyakorlati utasításait. Az utasítások nem írhatnak elő olyan feltételeket, amelyek jogellenesen korlátozzák a fogyasztó elállási jogát.
+030	Adja meg az eladó joghatóságában előírt azonosítót, például cégjegyzékszámot, adószámot vagy kereskedelmi nyilvántartási számot.
+031	Adja meg az eladó teljes hivatalos vagy bejegyzett cégnevét, ne a modul szállítójának nevét. Ez jelenik meg az űrlapon, a visszaigazoló e-mailben és a PDF-ben.
+032	Adja meg az eladó bejegyzett székhelyét vagy üzleti címét pontosan úgy, ahogy annak a fogyasztói dokumentumban szerepelnie kell.
+033	Lábléc-hivatkozás (tartsa bekapcsolva az alkalmazandó online B2C-szerződéseknél)
+034	PrestaShop-telepítéshez ne használja a GitHub automatikus „Source code ZIP” fájlját. Kizárólag a kiadás eszközei között található telepítési ZIP-et használja.
+035	Az online felületen megkötött, alkalmazandó B2C-távollévők közötti szerződéseknél a közvetlen elállási funkció kikapcsolása vagy elrejtése ellentétes lehet a 2011/83/EU irányelv 11a. cikkével, a (EU) 2023/2673 irányelv szerinti módosításokkal. A nemzeti végrehajtást minden piacon külön ellenőrizni kell.
+036	Általános és jogi elérhetőség
+037	Joobox-támogatás igénylése
+038	A GitHub ellenőrzése legfeljebb hatóránként történik, kivéve kézi frissítés esetén. A modul soha nem tölt le vagy telepít automatikusan kódot.
+039	Tárhely cron URL-je (titkos):
+040	Az egyszer használatos e-mailes hozzáférési hivatkozás használhatósági ideje. Elvárt tartomány: 5–240 perc; ajánlott alapérték: 30.
+041	Tartalmazza
+042	JOOIM Withdrawal – Online elállás a szerződéstől
+043	Joobox-támogatás ehhez a modulhoz
+044	Nyelv
+045	Nyelvfüggetlen URL-ek külső hivatkozáslistákhoz:
+046	Utolsó ellenőrzés
+047	Legújabb verzió a GitHubon
+048	Hivatkozások az aktív áruházi nyelvekhez
+049	Területi beállítás
+050	Egyszer használatos hivatkozás érvényessége (perc)
+051	Karbantartási CLI:
+052	A nyilvános elállási folyamatok és a vásárlóknak megjelenő elállási hivatkozások főkapcsolója. Kikapcsolása nem törli és nem módosítja a már beérkezett elállásokat.
+053	Az ugyanahhoz a normalizált rendelési hivatkozáshoz kapcsolódó hozzáférésihivatkozás-kérések maximális száma 24 órán belül.
+054	Az ugyanahhoz a normalizált rendelési hivatkozáshoz kapcsolódó hozzáférésihivatkozás-kérések maximális száma egy órán belül. Ez megvédi a vásárló postafiókját az ismételt üzenetektől.
+055	A vásárlói megjegyzés legnagyobb hossza
+056	A választható vásárlói megjegyzésben elfogadott egyszerű szöveges karakterek maximális száma. HTML nem engedélyezett. Ajánlott alapérték: 2000.
+057	Egy pszeudonimizált IP-címről 15 percen belül indított, rendelési hivatkozás alapú hozzáférési kérések maximális száma. A sikeres és sikertelen keresések ugyanazt a korlátot használják.
+058	Egy pszeudonimizált IP-címről 24 órán belül indított, rendelési hivatkozás alapú hozzáférési kérések maximális száma. A nyers IP-cím nem kerül a jogi elállási nyilvántartásba.
+059	Az ellenőrzött vendégmunkamenet maximális teljes élettartama akkor is, ha a vásárló aktív marad. Elvárt tartomány: 15–1440 perc; ajánlott alapérték: 120.
+060	Minimális várakozási idő, mielőtt ugyanahhoz a rendelési hivatkozáshoz újabb hozzáférési e-mail kérhető. Ajánlott alapérték: 60 másodperc.
+061	A modul adatai véglegesen törölve lettek.
+062	Modul bekapcsolva
+063	A modul naprakész.
+064	Nem
+065	Nem található aktív áruházi nyelv.
+066	Nem törlődik adat, kivéve ha az érték pontosan DELETE.
+067	A modul szokásos eltávolítása megőrzi az elállási nyilvántartásokat. Ez a végleges művelet eltávolítja a modul összes tábláját.
+068	A visszaigazoló e-mail sikertelensége utáni automatikus újraküldési kísérletek száma. Az elállás akkor is érvényes marad, ha minden e-mailes kísérlet sikertelen.
+069	GitHub-kiadások megnyitása
+070	Elállások megnyitása
+071	Megnyitja a Back Office-ban a beérkezett elállások listáját, állapotukat, dokumentumaikat, visszatérítési nyilvántartásaikat és ellenőrzési előzményeiket.
+072	A visszaigazolásban és a PDF-ben megjelenő választható ügyfélszolgálati telefonszám. Nem használható az elállás hitelesítésére.
+073	Gomb a rendelés részleteiben
+074	Rendelési hivatkozás alapú folyamat
+075	PHP 8.1 vagy újabb szükséges.
+076	Adatok végleges törlése
+077	A modul összes adatának végleges törlése
+078	Telefon
+079	Az ütemezett karbantartás előnyben részesített módja. Eltávolítja a lejárt ideiglenes rekordokat, újrapróbálja a sorban álló visszaigazolásokat és feldolgozza a megőrzési feladatokat.
+080	Adatvédelmi szabályzat URL-je
+081	Nyilvános belépés:
+082	Törlés megerősítése
+083	Kész. A szükséges biztonsági értékek és modulhookok rendelkezésre állnak.
+084	Hivatkozási előtag
+085	Frissítési állapot újraellenőrzése
+086	Bejegyzett cím
+087	Kérések IP-nként / 15 perc
+088	Kérések IP-nként / nap
+089	Újraküldési várakozás (másodperc)
+090	Visszaküldési cím / utasítások
+091	Futásidejű konfiguráció:
+092	Beállítások mentése
+093	A fogyasztó elállási jogának biztonságos online gyakorlása és kezelése.
+094	Biztonsági, munkamenet- és visszaélési korlátok
+095	Munkamenet abszolút korlátja (perc)
+096	Munkamenet inaktivitási korlátja (perc)
+097	A beállítások mentve.
+098	Az elállási hivatkozások elején használt rövid kód. Csak betűket, számjegyeket és kötőjeleket használjon, például WD. A meglévő elállási hivatkozások soha nem változnak.
+099	Bizonyos futásidejű követelményeket nem sikerült szinkronizálni. Nyilvános használat előtt tekintse át a PrestaShop naplóit.
+100	Elindítja a biztonságos, rendelési hivatkozás alapú folyamatot. A vásárló csak a nyilvános rendelési hivatkozást írja be; a rendelési és személyes adatok rejtve maradnak az egyszer használatos e-mailes hivatkozás megerősítéséig.
+101	A támogatott PrestaShop-verziók: 8.1–9.1.
+102	Az alapértékek szándékosan óvatosak. Csak a valós forgalom és a visszaélési naplók áttekintése után emelje a korlátokat; a túl alacsony értékek jogos fogyasztókat is blokkolhatnak.
+103	Ezek az értékek a kiválasztott áruházat ténylegesen üzemeltető eladót azonosítják. Multistore esetén áruházanként tárolódnak, és megjelennek a vásárlói visszaigazolásokban és a PDF-bizonyítékban.
+104	Ez az ingyenes GitHub-modul egyéni műszaki támogatás nélkül érhető el. Telepítés, konfigurálás, éles tesztelés, frissítés és hibaelhárítás a Joobox PrestaShop Cloudot használó ügyfeleknek vagy a JOO INTERNET MEDIA LTD-vel kifejezetten egyeztetett más fizetős szolgáltatás részeként érhető el.
+105	Kereskedő adatai – aktuális áruház
+106	Kereskedő neve
+107	Fordítás
+108	Írja be: DELETE
+109	A végleges adattörlés megerősítéséhez írja be: DELETE.
+110	Az összes elállás, dokumentum, ellenőrzési előzmény, hozzáférési és visszatérítési rekord eltávolításához írja be pontosan a DELETE szót. A művelet nem vonható vissza, és nem szükséges a modul szokásos frissítéséhez vagy újratelepítéséhez.
+111	Nem sikerült ellenőrizni a legújabb verziót a GitHubon. Ellenőrizze kézzel a kiadásokat.
+112	Ismeretlen
+113	Frissítés ellenőrzése
+114	A frissítés ellenőrzése sikertelen: %error%
+115	Frissítési állapot
+116	Ezeket az URL-eket olyan modulokban használja, amelyek minden nyelvhez csak egy URL-mezőt biztosítanak. A belépési controller kiválasztja az áruház aktuális vagy előnyben részesített nyelvét, majd a lokalizált, olvasható útvonalra irányít.
+117	Ezt az URL-t csak akkor használja, ha a tárhelyszolgáltatás nem tudja futtatni a CLI-parancsot. A tokent jelszóként kezelje: ne tegye közzé, ne küldje e-mailben és ne helyezze nyilvános megfigyelőrendszerbe.
+118	Ezt csak eldobható teszttelepítésben használja.
+119	Igen
+120	Csak Back Office-beállítások

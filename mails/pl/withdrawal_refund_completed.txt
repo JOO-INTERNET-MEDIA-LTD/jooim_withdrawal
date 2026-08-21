@@ -1,0 +1,9 @@
+Zwrot środków został zarejestrowany jako wykonany.
+Numer odstąpienia: {withdrawal_reference}
+Zamówienie / umowa: {order_reference}
+Status: {status}
+
+Wiadomość sprzedawcy:
+{public_message}
+
+Kontakt sprzedawcy: {merchant_email}

@@ -1,0 +1,9 @@
+Refundácia bola zaevidovaná ako vykonaná.
+Referencia odstúpenia: {withdrawal_reference}
+Objednávka / zmluva: {order_reference}
+Status: {status}
+
+Správa obchodníka:
+{public_message}
+
+Kontakt obchodníka: {merchant_email}

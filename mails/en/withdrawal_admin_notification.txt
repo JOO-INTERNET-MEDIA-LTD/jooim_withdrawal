@@ -1,0 +1,5 @@
+A new contract withdrawal has been recorded.
+Withdrawal reference: {withdrawal_reference}
+Order / contract: {order_reference}
+Electronic contact: {customer_email}
+Status: {status}

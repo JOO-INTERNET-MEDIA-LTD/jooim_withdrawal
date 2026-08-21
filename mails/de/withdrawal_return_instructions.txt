@@ -1,0 +1,12 @@
+Hinweise zur Rücksendung
+Widerrufsreferenz: {withdrawal_reference}
+Bestellung / Vertrag: {order_reference}
+Status: {status}
+
+Mitteilung des Unternehmers:
+{public_message}
+
+Rücksendeadresse / Hinweise:
+{return_address}
+
+Kontakt des Unternehmers: {merchant_email}

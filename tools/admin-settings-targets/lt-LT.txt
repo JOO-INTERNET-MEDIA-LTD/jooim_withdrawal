@@ -1,0 +1,120 @@
+001	Yra nauja modulio versija.
+002	Patvirtinimo siuntimo pakartojimų skaičius
+003	Prideda sutarties atsisakymo punktą kliento srityje „Mano paskyra“. Klientas vis tiek gali naudoti viešą procesą, kai užsakymas paskyroje nematomas.
+004	Prideda mygtuką „Atsisakyti sutarties“ prie prisijungusiam klientui priklausančio užsakymo informacijos. Nuosavybė tikrinama serveryje.
+005	Leidžia vartotojui pateikti nedviprasmišką sutarties atsisakymo pareiškimą neprisijungus ir nerodant užsakymo duomenų. Palikite funkciją prieinamą taikomoms internetinėms B2C sutartims.
+006	Pridėti PDF patvirtinimą
+007	Prideda nekeičiamą sutarties atsisakymo PDF patvirtinimą prie patvirtinimo el. laiško. Išjungus priedą, su byla saugomas apsaugotas PDF nepašalinamas.
+008	Bylos:
+009	Įmonės identifikatorius
+010	Dabartinė modulio versija
+011	Nuoroda kliento paskyroje
+012	Klientui rodomas kontaktinis adresas bendravimui dėl sutarties atsisakymo. Naudokite aktyviai stebimą pašto dėžutę; čia neįveskite kliento el. pašto adreso.
+013	Tiesioginė 11a straipsnio funkcija
+014	Tiesioginis sutarties atsisakymas
+015	Tiesioginio sutarties atsisakymo funkcija:
+016	Išjungta
+017	Išjungta (būtina teisinė peržiūra)
+018	Parduotuvės poraštėje rodo klientui skirtą nuorodą „Atsisakyti sutarties čia“. Ši teisinės funkcijos nuoroda nepriklauso nuo „Joobox“ rinkodaros nuorodos.
+019	ES atitikties pastaba (2026):
+020	Kiekviena aktyvi parduotuvės kalba gauna savo lokalizuotą aiškų kelią. Nuo kalbos nepriklausomi įėjimo URL lieka prieinami išoriniams nuorodų sąrašo moduliams. Įdiegę išbandykite abu procesus kiekviena aktyvia kalba.
+021	El. paštas
+022	El. laiškai vienam užsakymui / dieną
+023	El. laiškai vienam užsakymui / valandą
+024	Įjungta
+025	Įjungia tiesioginę internetinę sutarties atsisakymo formą, kuriai nereikia kliento paskyros ar prieigos prie pradinio užsakymo el. laiško. Išjunkite tik atlikę konkrečios rinkos teisinę peržiūrą.
+026	Po šio neaktyvumo laikotarpio nutraukia patvirtintą svečio seansą. Tikėtinas intervalas: 5–240 minučių; rekomenduojama numatytoji reikšmė: 30.
+027	Angliškas atsarginis tekstas
+028	Įveskite absoliutų privatumo politikos HTTPS URL, kuriame paaiškinamas asmens duomenų tvarkymas priimant ir nagrinėjant sutarties atsisakymus.
+029	Įveskite tikslų prekių grąžinimo adresą ir praktinius nurodymus. Nurodymai negali nustatyti sąlygų, neteisėtai ribojančių vartotojo teisę atsisakyti sutarties.
+030	Įveskite pardavėjo jurisdikcijoje reikalaujamą identifikatorių, pavyzdžiui, įmonės kodą, PVM mokėtojo kodą ar komercinio registro numerį.
+031	Įveskite visą juridinį arba registruotą pardavėjo pavadinimą, o ne modulio tiekėjo pavadinimą. Jis rodomas formoje, patvirtinimo el. laiške ir PDF.
+032	Įveskite pardavėjo registruotos buveinės arba veiklos adresą tiksliai taip, kaip jis turi būti rodomas vartotojo dokumente.
+033	Nuoroda poraštėje (palikite įjungtą taikomoms internetinėms B2C sutartims)
+034	Diegdami „PrestaShop“ nenaudokite automatinio „GitHub“ failo „Source code ZIP“. Naudokite tik diegimo ZIP iš leidimo išteklių.
+035	Taikomų B2C nuotolinių sutarčių, sudarytų naudojant internetinę sąsają, atveju tiesioginės sutarties atsisakymo funkcijos išjungimas ar slėpimas gali prieštarauti Direktyvos 2011/83/ES 11a straipsniui, iš dalies pakeistam Direktyva (ES) 2023/2673. Vis tiek reikia patikrinti nacionalinį įgyvendinimą kiekvienoje rinkoje.
+036	Bendras ir teisinis prieinamumas
+037	Gauti „Joobox“ pagalbą
+038	„GitHub“ tikrinama ne dažniau kaip kartą per šešias valandas, nebent atnaujinama rankiniu būdu. Modulis niekada automatiškai neatsisiunčia ir neįdiegia kodo.
+039	Prieglobos cron URL (slaptas):
+040	Kiek laiko galima naudoti vienkartinę el. pašto prieigos nuorodą. Tikėtinas intervalas: 5–240 minučių; rekomenduojama numatytoji reikšmė: 30.
+041	Įtraukta
+042	JOOIM Withdrawal – Sutarties atsisakymas internetu
+043	„Joobox“ pagalba šiam moduliui
+044	Kalba
+045	Nuo kalbos nepriklausomi URL išoriniams nuorodų sąrašams:
+046	Paskutinį kartą tikrinta
+047	Naujausia versija „GitHub“
+048	Aktyvių parduotuvės kalbų nuorodos
+049	Lokalė
+050	Vienkartinės nuorodos galiojimas (minutėmis)
+051	Priežiūros CLI:
+052	Pagrindinis viešųjų sutarties atsisakymo procesų ir klientams rodomų nuorodų jungiklis. Išjungus jau gauti atsisakymai neištrinami ir nekeičiami.
+053	Didžiausias prieigos nuorodos užklausų, susijusių su ta pačia normalizuota užsakymo nuoroda, skaičius per 24 valandas.
+054	Didžiausias prieigos nuorodos užklausų, susijusių su ta pačia normalizuota užsakymo nuoroda, skaičius per vieną valandą. Tai saugo kliento pašto dėžutę nuo pasikartojančių laiškų.
+055	Didžiausias kliento pastabos ilgis
+056	Didžiausias paprasto teksto simbolių skaičius neprivalomoje kliento pastaboje. HTML nepriimamas. Rekomenduojama numatytoji reikšmė: 2000.
+057	Didžiausias prieigos pagal užsakymo nuorodą užklausų iš vieno pseudonimizuoto IP adreso skaičius per 15 minučių. Sėkmingoms ir nesėkmingoms paieškoms taikomas tas pats limitas.
+058	Didžiausias prieigos pagal užsakymo nuorodą užklausų iš vieno pseudonimizuoto IP adreso skaičius per 24 valandas. Neapdorotas IP adresas nesaugomas teisiniame sutarties atsisakymo įraše.
+059	Didžiausia bendra patvirtinto svečio seanso trukmė, net jei klientas išlieka aktyvus. Tikėtinas intervalas: 15–1440 minučių; rekomenduojama numatytoji reikšmė: 120.
+060	Mažiausia pauzė prieš prašant kito prieigos el. laiško tai pačiai užsakymo nuorodai. Rekomenduojama numatytoji reikšmė: 60 sekundžių.
+061	Modulio duomenys ištrinti visam laikui.
+062	Modulis įjungtas
+063	Modulis atnaujintas.
+064	Ne
+065	Aktyvių parduotuvės kalbų nerasta.
+066	Duomenys neištrinami, nebent reikšmė yra tiksliai DELETE.
+067	Įprastas modulio pašalinimas išsaugo sutarties atsisakymo įrašus. Šis naikinantis veiksmas pašalina visas modulio lenteles.
+068	Automatinių pakartotinių bandymų skaičius nepavykus išsiųsti patvirtinimo el. laiško. Sutarties atsisakymas lieka galioti net jei nepavyksta visi el. pašto bandymai.
+069	Atidaryti „GitHub“ leidimus
+070	Atidaryti sutarties atsisakymus
+071	Atidaro Back Office gautų sutarties atsisakymų sąrašą, jų būsenas, dokumentus, grąžinamų sumų įrašus ir audito istoriją.
+072	Neprivalomas klientų aptarnavimo telefono numeris, rodomas patvirtinime ir PDF. Jis nenaudojamas sutarties atsisakymui autentifikuoti.
+073	Mygtukas užsakymo informacijoje
+074	Procesas pagal užsakymo nuorodą
+075	Reikalinga PHP 8.1 arba naujesnė versija.
+076	Nuolatinis duomenų išvalymas
+077	Visam laikui ištrinti visus modulio duomenis
+078	Telefonas
+079	Rekomenduojamas suplanuotos priežiūros būdas. Jis pašalina pasibaigusius laikinuosius įrašus, pakartotinai siunčia eilėje esančius patvirtinimus ir vykdo saugojimo užduotis.
+080	Privatumo politikos URL
+081	Viešas įėjimas:
+082	Išvalymo patvirtinimas
+083	Paruošta. Reikiamos saugos reikšmės ir modulio hook'ai prieinami.
+084	Nuorodos prefiksas
+085	Atnaujinti naujinimo būseną
+086	Registruotas adresas
+087	Užklausos vienam IP / 15 minučių
+088	Užklausos vienam IP / dieną
+089	Pakartotinio siuntimo laukimas (sekundėmis)
+090	Grąžinimo adresas / nurodymai
+091	Vykdymo konfigūracija:
+092	Išsaugoti nustatymus
+093	Saugus vartotojo teisės atsisakyti sutarties įgyvendinimas ir administravimas internetu.
+094	Saugos, seanso ir piktnaudžiavimo ribos
+095	Absoliuti seanso riba (minutėmis)
+096	Seanso neaktyvumo riba (minutėmis)
+097	Nustatymai išsaugoti.
+098	Trumpas kodas sutarties atsisakymo nuorodų pradžioje. Naudokite tik raides, skaitmenis ir brūkšnelius, pavyzdžiui, WD. Esamos nuorodos niekada nekeičiamos.
+099	Kai kurių vykdymo reikalavimų nepavyko sinchronizuoti. Prieš viešai naudodami peržiūrėkite „PrestaShop“ žurnalus.
+100	Pradeda saugų procesą pagal užsakymo nuorodą. Klientas įveda tik viešą užsakymo nuorodą; užsakymo ir asmens duomenys lieka paslėpti, kol patvirtinama vienkartinė el. pašto nuoroda.
+101	Palaikomos „PrestaShop“ versijos nuo 8.1 iki 9.1.
+102	Numatytosios reikšmės sąmoningai konservatyvios. Didinkite ribas tik peržiūrėję tikrą srautą ir piktnaudžiavimo žurnalus; per mažos ribos gali blokuoti teisėtus vartotojus.
+103	Šios reikšmės identifikuoja faktinį pardavėją, valdantį pasirinktą parduotuvę. Jos saugomos kiekvienai multistore parduotuvei ir spausdinamos kliento patvirtinimuose bei PDF įrodymuose.
+104	Šis nemokamas „GitHub“ modulis teikiamas be individualios techninės pagalbos. Diegimas, konfigūravimas, testavimas gamybinėje aplinkoje, naujinimai ir trikčių šalinimas teikiami „Joobox PrestaShop Cloud“ klientams arba pagal kitą mokamą paslaugą, aiškiai suderintą su JOO INTERNET MEDIA LTD.
+105	Prekybininko duomenys – dabartinė parduotuvė
+106	Prekybininko pavadinimas
+107	Vertimas
+108	Įveskite DELETE
+109	Įveskite DELETE, kad patvirtintumėte nuolatinį duomenų ištrynimą.
+110	Įveskite tikslų žodį DELETE, kad pašalintumėte visus sutarties atsisakymus, dokumentus, audito istoriją, prieigos ir grąžinimo įrašus. Veiksmo negalima atšaukti ir jis nereikalingas įprastam modulio naujinimui ar diegimui iš naujo.
+111	Nepavyko patikrinti naujausios versijos „GitHub“. Patikrinkite leidimus rankiniu būdu.
+112	Nežinoma
+113	Naujinimo tikrinimas
+114	Naujinimo tikrinimas nepavyko: %error%
+115	Naujinimo būsena
+116	Naudokite šiuos URL moduliuose, kuriuose visoms kalboms pateikiamas tik vienas URL laukas. Įėjimo controller pasirenka dabartinę arba pageidaujamą parduotuvės kalbą ir nukreipia į lokalizuotą aiškų kelią.
+117	Šį URL naudokite tik tada, kai priegloba negali vykdyti CLI komandos. Tokeną laikykite slaptažodžiu: jo neskelbkite, nesiųskite el. paštu ir nedėkite į viešą stebėjimo sistemą.
+118	Naudokite tik vienkartinėje testavimo aplinkoje.
+119	Taip
+120	Tik Back Office nustatymai

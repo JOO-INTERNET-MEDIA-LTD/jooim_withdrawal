@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_refund`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_sequence`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_event_outbox`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_text_version`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_order_identity`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_mail`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_document`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_history`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_draft`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_guest_session`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_access_request`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal_item`;
+DROP TABLE IF EXISTS `PREFIX_jooim_withdrawal`;

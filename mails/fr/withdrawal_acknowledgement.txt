@@ -1,0 +1,28 @@
+Accusé de réception de la rétractation
+
+Nous accusons réception de votre notification de rétractation du contrat.
+Référence de rétractation: {withdrawal_reference}
+Commande / contrat: {order_reference}
+Consommateur: {firstname} {lastname}
+Contact électronique: {customer_email}
+Date et heure de réception: {submitted_at}
+Heure de réception UTC: {submitted_at_utc}
+Portée: {scope}
+
+Contenu de la notification / articles:
+{items_text}
+
+Déclaration:
+{statement}
+
+Professionnel:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Adresse / instructions de retour:
+{return_address}
+
+Conservez cet accusé de réception. Il confirme le contenu, la date et l’heure de votre notification en ligne.
+Hash SHA-256 de l’instantané immuable: {payload_hash}

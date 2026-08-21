@@ -1,0 +1,28 @@
+Bestätigung des Eingangs des Widerrufs
+
+Wir bestätigen den Eingang Ihrer Erklärung zum Widerruf des Vertrags.
+Widerrufsreferenz: {withdrawal_reference}
+Bestellung / Vertrag: {order_reference}
+Verbraucher: {firstname} {lastname}
+Elektronischer Kontakt: {customer_email}
+Datum und Uhrzeit des Eingangs: {submitted_at}
+Eingangszeit UTC: {submitted_at_utc}
+Umfang: {scope}
+
+Inhalt der Erklärung / Artikel:
+{items_text}
+
+Erklärung:
+{statement}
+
+Unternehmer:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Rücksendeadresse / Hinweise:
+{return_address}
+
+Bewahren Sie diese Bestätigung auf. Sie bestätigt Inhalt, Datum und Uhrzeit Ihrer Online-Erklärung.
+SHA-256-Hash des unveränderlichen Snapshots: {payload_hash}

@@ -1,0 +1,1 @@
+<div class="jooim-withdrawal-order-action mt-2"><a class="btn btn-outline-primary" href="{$withdrawal_url|escape:'htmlall':'UTF-8'}">{l s='Withdraw from contract' d='Modules.Jooimwithdrawal.Shop'}</a></div>

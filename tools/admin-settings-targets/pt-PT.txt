@@ -1,0 +1,120 @@
+001	Está disponível uma nova versão do módulo.
+002	Número de novas tentativas de confirmação
+003	Adiciona uma entrada de resolução contratual à área A minha conta do cliente. O cliente continua a poder utilizar o processo público quando a encomenda não estiver visível na conta.
+004	Adiciona um botão «Resolver o contrato» ao detalhe de uma encomenda pertencente ao cliente autenticado. A titularidade é verificada no servidor.
+005	Permite ao consumidor apresentar uma declaração inequívoca de resolução sem iniciar sessão nem mostrar dados da encomenda. Mantenha esta função disponível para os contratos B2C em linha aplicáveis.
+006	Anexar confirmação em PDF
+007	Anexa ao e-mail de confirmação o PDF imutável da resolução. Desativar o anexo não elimina o PDF protegido guardado com o caso.
+008	Casos:
+009	Identificador da empresa
+010	Versão atual do módulo
+011	Ligação na conta do cliente
+012	Endereço de contacto visível ao cliente para comunicações sobre resoluções. Utilize uma caixa de correio acompanhada; não introduza aqui o e-mail do cliente.
+013	Função direta do artigo 11.º-A
+014	Resolução direta
+015	Função de resolução direta:
+016	Desativado
+017	Desativado (é necessária revisão jurídica)
+018	Apresenta no rodapé da loja a ligação «Resolver o contrato aqui» destinada ao cliente. Esta ligação à função jurídica é independente da atribuição comercial Joobox.
+019	Nota de conformidade com a UE (2026):
+020	Cada idioma ativo da loja recebe o seu próprio caminho amigável localizado. Os URL de entrada independentes do idioma continuam disponíveis para módulos externos de listas de ligações. Teste ambos os processos em cada idioma ativo após a implementação.
+021	E-mail
+022	E-mails por encomenda / dia
+023	E-mails por encomenda / hora
+024	Ativado
+025	Ativa o formulário direto de resolução em linha, que não exige uma conta de cliente nem acesso ao e-mail original da encomenda. Desative-o apenas após uma revisão jurídica específica do mercado.
+026	Termina uma sessão de convidado verificada após este período sem atividade. Intervalo previsto: 5–240 minutos; valor recomendado: 30.
+027	Alternativa em inglês
+028	Introduza o URL HTTPS absoluto da política de privacidade que explica o tratamento de dados pessoais para receber e tratar resoluções.
+029	Introduza o endereço exato e instruções práticas para devolver os bens. Estas instruções não podem impor condições que limitem ilegalmente o direito de resolução do consumidor.
+030	Introduza o identificador exigido na jurisdição do vendedor, por exemplo número da empresa, número de IVA ou número do registo comercial.
+031	Introduza a denominação legal ou comercial completa do vendedor, não a do fornecedor do módulo. É apresentada no formulário, no e-mail de confirmação e no PDF.
+032	Introduza a sede registada ou o endereço comercial do vendedor exatamente como deve constar do documento do consumidor.
+033	Ligação no rodapé (mantenha ativa para contratos B2C em linha aplicáveis)
+034	Para instalar no PrestaShop, não utilize o arquivo automático «Source code ZIP» do GitHub. Utilize apenas o ZIP de instalação incluído nos recursos da versão.
+035	Para contratos B2C à distância aplicáveis celebrados através de uma interface em linha, desativar ou ocultar a função direta de resolução pode entrar em conflito com o artigo 11.º-A da Diretiva 2011/83/UE, alterada pela Diretiva (UE) 2023/2673. A transposição nacional deve continuar a ser verificada para cada mercado.
+036	Disponibilidade geral e jurídica
+037	Obter suporte Joobox
+038	As verificações do GitHub são efetuadas no máximo uma vez a cada seis horas, salvo atualização manual. O módulo nunca descarrega nem instala código automaticamente.
+039	URL cron do alojamento (secreto):
+040	Período durante o qual a ligação de acesso de utilização única enviada por e-mail permanece válida. Intervalo previsto: 5–240 minutos; valor recomendado: 30.
+041	Incluído
+042	JOOIM Withdrawal – Resolução contratual em linha
+043	Suporte Joobox para este módulo
+044	Idioma
+045	URL independentes do idioma para listas externas de ligações:
+046	Última verificação
+047	Última versão no GitHub
+048	Ligações para os idiomas ativos da loja
+049	Configuração regional
+050	Validade da ligação mágica (minutos)
+051	Manutenção por CLI:
+052	Interruptor principal dos processos públicos de resolução e das ligações destinadas aos clientes. Desativá-lo não elimina nem altera resoluções já recebidas.
+053	Número máximo de pedidos de ligação de acesso associados à mesma referência normalizada de encomenda durante 24 horas.
+054	Número máximo de pedidos de ligação de acesso associados à mesma referência normalizada de encomenda durante uma hora. Protege a caixa de correio do cliente contra mensagens repetidas.
+055	Comprimento máximo da nota do cliente
+056	Número máximo de caracteres de texto simples aceites na nota opcional do cliente. Não é aceite HTML. Valor recomendado: 2000.
+057	Número máximo de pedidos de acesso por referência de encomenda a partir de um IP pseudonimizado durante 15 minutos. As pesquisas com e sem sucesso partilham o mesmo limite.
+058	Número máximo de pedidos de acesso por referência de encomenda a partir de um IP pseudonimizado durante 24 horas. O endereço IP em bruto não é guardado no registo jurídico da resolução.
+059	Duração total máxima de uma sessão de convidado verificada, mesmo quando o cliente permanece ativo. Intervalo previsto: 15–1440 minutos; valor recomendado: 120.
+060	Atraso mínimo antes de poder ser pedido outro e-mail de acesso para a mesma referência de encomenda. Valor recomendado: 60 segundos.
+061	Os dados do módulo foram eliminados permanentemente.
+062	Módulo ativado
+063	O módulo está atualizado.
+064	Não
+065	Não foram encontrados idiomas ativos da loja.
+066	Nenhum dado é eliminado a menos que o valor seja exatamente DELETE.
+067	A desinstalação normal do módulo preserva os registos de resolução. Esta ação destrutiva elimina todas as tabelas do módulo.
+068	Número de novas tentativas automáticas após falhar um e-mail de confirmação. A resolução continua válida mesmo que todas as tentativas de e-mail falhem.
+069	Abrir versões do GitHub
+070	Abrir resoluções
+071	Abre a lista do Back Office de resoluções recebidas, incluindo estados, documentos, registos de reembolso e histórico de auditoria.
+072	Número opcional do apoio ao cliente apresentado na confirmação e no PDF. Não é utilizado para autenticar uma resolução.
+073	Botão no detalhe da encomenda
+074	Processo por referência de encomenda
+075	É necessário PHP 8.1 ou posterior.
+076	Eliminação permanente de dados
+077	Eliminar permanentemente todos os dados do módulo
+078	Telefone
+079	Método recomendado de manutenção agendada. Elimina registos temporários expirados, repete confirmações em fila e processa tarefas de retenção.
+080	URL da política de privacidade
+081	Entrada pública:
+082	Confirmação da eliminação
+083	Pronto. Estão disponíveis os valores de segurança e hooks necessários do módulo.
+084	Prefixo da referência
+085	Atualizar estado da versão
+086	Morada registada
+087	Pedidos por IP / 15 minutos
+088	Pedidos por IP / dia
+089	Intervalo entre reenvios (segundos)
+090	Endereço de devolução / instruções
+091	Configuração de execução:
+092	Guardar definições
+093	Exercício e administração seguros em linha do direito de resolução do consumidor.
+094	Segurança, sessão e limites contra abusos
+095	Limite absoluto da sessão (minutos)
+096	Limite de inatividade da sessão (minutos)
+097	Definições guardadas.
+098	Código curto utilizado no início das referências de resolução. Utilize apenas letras, algarismos e hífenes, por exemplo WD. As referências existentes nunca são alteradas.
+099	Não foi possível sincronizar alguns requisitos de execução. Consulte os registos do PrestaShop antes da utilização pública.
+100	Inicia o processo seguro por referência de encomenda. O cliente introduz apenas a referência pública; os dados da encomenda e os dados pessoais permanecem ocultos até à confirmação da ligação de e-mail de utilização única.
+101	São suportadas as versões do PrestaShop 8.1 a 9.1.
+102	Os valores predefinidos são deliberadamente conservadores. Aumente os limites apenas depois de analisar o tráfego real e os registos de abuso; reduzi-los demasiado pode bloquear consumidores legítimos.
+103	Estes valores identificam o vendedor efetivo que opera a loja selecionada. São guardados por loja em multiloja e impressos nas confirmações do cliente e nas provas em PDF.
+104	Este módulo GitHub gratuito é fornecido sem suporte técnico individual. A instalação, configuração, testes de produção, atualizações e resolução de problemas estão disponíveis para clientes do Joobox PrestaShop Cloud ou de outro serviço pago expressamente acordado com a JOO INTERNET MEDIA LTD.
+105	Dados do vendedor – loja atual
+106	Nome do vendedor
+107	Tradução
+108	Escreva DELETE
+109	Escreva DELETE para confirmar a eliminação permanente dos dados.
+110	Escreva exatamente DELETE para eliminar todas as resoluções, documentos, histórico de auditoria, registos de acesso e registos de reembolso. Esta ação não pode ser anulada e não é necessária para uma atualização ou reinstalação normal do módulo.
+111	Não foi possível verificar a versão mais recente no GitHub. Consulte as versões manualmente.
+112	Desconhecido
+113	Verificação de atualizações
+114	Falha na verificação da atualização: %error%
+115	Estado da atualização
+116	Utilize estes URL em módulos que fornecem apenas um campo URL para todos os idiomas. O controlador de entrada seleciona o idioma atual ou preferido da loja e redireciona para o caminho amigável localizado.
+117	Utilize este URL apenas quando o alojamento não puder executar o comando CLI. Trate o token como uma palavra-passe: não o publique, não o envie por e-mail nem o coloque em monitorização pública.
+118	Utilize isto apenas numa instalação de teste descartável.
+119	Sim
+120	Apenas definições do Back Office

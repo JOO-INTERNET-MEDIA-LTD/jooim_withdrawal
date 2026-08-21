@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" target-language="bg-BG" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="105639f6b7c568ce5ecf630b6d196109" resname="A new module version is available.">
+        <source>A new module version is available.</source>
+        <target>Налична е нова версия на модула.</target>
+      </trans-unit>
+      <trans-unit id="b574958c30b5ba01314361601475b0d7" resname="Acknowledgement retry count">
+        <source>Acknowledgement retry count</source>
+        <target>Брой повторни опити за изпращане на потвърждението</target>
+      </trans-unit>
+      <trans-unit id="7d04527e464401f037f7b770ef6f11ce" resname="Acknowledgement sent again">
+        <source>Acknowledgement sent again</source>
+        <target>Потвърждението е изпратено отново</target>
+      </trans-unit>
+      <trans-unit id="4e229fb322d31d83c5a5c3564e3a31cf" resname="Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.">
+        <source>Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.</source>
+        <target>Добавя запис за отказ от договора в раздела „Моят профил“ на клиента. Клиентът може да използва и публичната процедура, когато поръчката не се вижда в профила му.</target>
+      </trans-unit>
+      <trans-unit id="eb8c72d6f4238351ce427d900b7acdde" resname="Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.">
+        <source>Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.</source>
+        <target>Добавя бутон „Отказ от договора“ към подробностите на поръчка, принадлежаща на влезлия клиент. Принадлежността се проверява на сървъра.</target>
+      </trans-unit>
+      <trans-unit id="b66759fdefd03410fcc05c0a0cfb1617" resname="Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.">
+        <source>Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.</source>
+        <target>Позволява на потребителя да подаде недвусмислено заявление за отказ без вход в профил и без показване на данните за поръчката. Оставете тази функция достъпна за приложимите онлайн договори B2C.</target>
+      </trans-unit>
+      <trans-unit id="48f420a5ab439f6afaefd045a2e36186" resname="Attach PDF acknowledgement">
+        <source>Attach PDF acknowledgement</source>
+        <target>Прикачване на PDF потвърждение</target>
+      </trans-unit>
+      <trans-unit id="7395a545f8e75cb154506f525d21ac7f" resname="Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.">
+        <source>Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.</source>
+        <target>Прикачва неизменяемото PDF потвърждение за отказ към имейла за потвърждение. Изключването на прикачения файл не премахва защитения PDF, съхранен към случая.</target>
+      </trans-unit>
+      <trans-unit id="08fc26d02a0a34750fa794c9210ea617" resname="Back Office settings only">
+        <source>Back Office settings only</source>
+        <target>Само настройки на Back Office</target>
+      </trans-unit>
+      <trans-unit id="5bf9a5d2d48868e8bfd393ffb31b010a" resname="Case closed">
+        <source>Case closed</source>
+        <target>Случаят е приключен</target>
+      </trans-unit>
+      <trans-unit id="1a820eaf098af708e2e899f448284922" resname="Cases:">
+        <source>Cases:</source>
+        <target>Случаи:</target>
+      </trans-unit>
+      <trans-unit id="4608ac7d9d0cee7eca9bd8e6924a7ccd" resname="Company identifier">
+        <source>Company identifier</source>
+        <target>Идентификатор на дружеството</target>
+      </trans-unit>
+      <trans-unit id="9fecbc47aacafec4c27333c9efcdf9fa" resname="Confirmation sent">
+        <source>Confirmation sent</source>
+        <target>Потвърждението е изпратено</target>
+      </trans-unit>
+      <trans-unit id="68af74b08d0a6bef3a7cab83b43007a8" resname="Current module version">
+        <source>Current module version</source>
+        <target>Текуща версия на модула</target>
+      </trans-unit>
+      <trans-unit id="cf67f8ec1757747174f522cedbd0a3ef" resname="Customer account link">
+        <source>Customer account link</source>
+        <target>Връзка в клиентския профил</target>
+      </trans-unit>
+      <trans-unit id="e299b273bfe65f12d5c5e635a00d0d08" resname="Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.">
+        <source>Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.</source>
+        <target>Адрес за контакт с клиента при комуникация относно отказа. Използвайте активно наблюдавана пощенска кутия; не въвеждайте тук имейла на клиента.</target>
+      </trans-unit>
+      <trans-unit id="0f4dd5b31b2621c3867dbdc20bcfd6fb" resname="Direct Article 11a function">
+        <source>Direct Article 11a function</source>
+        <target>Директна функция по член 11а</target>
+      </trans-unit>
+      <trans-unit id="250ca4811bc3e3ed4ed5ab8d842651f7" resname="Direct withdrawal">
+        <source>Direct withdrawal</source>
+        <target>Директен отказ</target>
+      </trans-unit>
+      <trans-unit id="1c68e1ef8d76b6e3068ec0095d6b24d7" resname="Direct withdrawal function:">
+        <source>Direct withdrawal function:</source>
+        <target>Функция за директен отказ:</target>
+      </trans-unit>
+      <trans-unit id="b9f5c797ebbf55adccdd8539a65a0241" resname="Disabled">
+        <source>Disabled</source>
+        <target>Изключено</target>
+      </trans-unit>
+      <trans-unit id="d0ab632cea3a5b05130f1097ac2829b4" resname="Disabled (legal review required)">
+        <source>Disabled (legal review required)</source>
+        <target>Изключено (необходим е правен преглед)</target>
+      </trans-unit>
+      <trans-unit id="1cedb4b2ec1998c6e929abf9084480b8" resname="Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.">
+        <source>Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.</source>
+        <target>Показва връзката „Откажете се от договора тук“ във футъра на магазина. Тази правна функционална връзка е независима от маркетинговото посочване на Joobox.</target>
+      </trans-unit>
+      <trans-unit id="00c6156d5f4d21eecf8aca0c3972d4a0" resname="Duplicate submission">
+        <source>Duplicate submission</source>
+        <target>Дублирано подаване</target>
+      </trans-unit>
+      <trans-unit id="e04377a3e2bd9aee7e2aaaa8e42b6c31" resname="Each active shop language receives its own localized friendly path. The language-neutral entry URLs remain available for external link-list modules. Test both flows in every active language after deployment.">
+        <source>Each active shop language receives its own localized friendly path. The language-neutral entry URLs remain available for external link-list modules. Test both flows in every active language after deployment.</source>
+        <target>Всеки активен език на магазина получава собствен локализиран четим път. Езиково неутралните входни URL адреси остават достъпни за външни модули със списъци от връзки. След внедряването тествайте и двете процедури на всеки активен език.</target>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d" resname="Email">
+        <source>Email</source>
+        <target>Имейл</target>
+      </trans-unit>
+      <trans-unit id="d4785e1f28e6858ec969ad1e2ab8eb64" resname="Emails per order / day">
+        <source>Emails per order / day</source>
+        <target>Имейли за поръчка / ден</target>
+      </trans-unit>
+      <trans-unit id="199baa0f4d93ce8c32c2a0eeec862d48" resname="Emails per order / hour">
+        <source>Emails per order / hour</source>
+        <target>Имейли за поръчка / час</target>
+      </trans-unit>
+      <trans-unit id="00d23a76e43b46dae9ec7aa9dcbebb32" resname="Enabled">
+        <source>Enabled</source>
+        <target>Включено</target>
+      </trans-unit>
+      <trans-unit id="e16b95f990f6ab5d2364ccf81cd68bd4" resname="Enables the direct online withdrawal form that does not require a customer account or access to the original order email. Disable it only after a market-specific legal review.">
+        <source>Enables the direct online withdrawal form that does not require a customer account or access to the original order email. Disable it only after a market-specific legal review.</source>
+        <target>Активира директния онлайн формуляр за отказ, който не изисква клиентски профил или достъп до първоначалния имейл на поръчката. Изключвайте го само след правен преглед за конкретния пазар.</target>
+      </trans-unit>
+      <trans-unit id="1224d5fb7c458ea5af3ef2c251285b41" resname="Ends a verified guest session after this period without activity. Expected range: 5–240 minutes; recommended default: 30.">
+        <source>Ends a verified guest session after this period without activity. Expected range: 5–240 minutes; recommended default: 30.</source>
+        <target>Прекратява потвърдена гост сесия след този период без активност. Допустим диапазон: 5–240 минути; препоръчителна стойност: 30.</target>
+      </trans-unit>
+      <trans-unit id="e7f3116e4841a8f09cfcdb891932d2c5" resname="English fallback">
+        <source>English fallback</source>
+        <target>Резервен английски превод</target>
+      </trans-unit>
+      <trans-unit id="90a62e36815a61583061bb46d6698eea" resname="Enter the absolute HTTPS URL of the privacy policy that explains processing of personal data for receiving and handling withdrawals.">
+        <source>Enter the absolute HTTPS URL of the privacy policy that explains processing of personal data for receiving and handling withdrawals.</source>
+        <target>Въведете абсолютния HTTPS URL адрес на политиката за поверителност, която обяснява обработването на лични данни при получаване и разглеждане на откази.</target>
+      </trans-unit>
+      <trans-unit id="a2dba2de45cce2c64d076b7127eea3d2" resname="Enter the exact address and practical instructions for returning goods. These instructions must not impose conditions that unlawfully restrict the consumer’s withdrawal right.">
+        <source>Enter the exact address and practical instructions for returning goods. These instructions must not impose conditions that unlawfully restrict the consumer’s withdrawal right.</source>
+        <target>Въведете точния адрес и практическите инструкции за връщане на стоки. Тези инструкции не трябва да налагат условия, които неправомерно ограничават правото на отказ на потребителя.</target>
+      </trans-unit>
+      <trans-unit id="bf416d02cb4378b9c79efb8b78bc6da3" resname="Enter the identifier required in the seller’s jurisdiction, for example company ID, VAT ID or commercial-register number.">
+        <source>Enter the identifier required in the seller’s jurisdiction, for example company ID, VAT ID or commercial-register number.</source>
+        <target>Въведете идентификатора, изискван в юрисдикцията на продавача, например ЕИК, ДДС номер или номер в търговския регистър.</target>
+      </trans-unit>
+      <trans-unit id="1469fd08f814cf33fcd6010e3d3f90cf" resname="Enter the seller’s full legal or registered business name, not the module vendor. It appears in the form, acknowledgement email and PDF.">
+        <source>Enter the seller’s full legal or registered business name, not the module vendor. It appears in the form, acknowledgement email and PDF.</source>
+        <target>Въведете пълното юридическо или регистрирано наименование на продавача, а не доставчика на модула. То се показва във формуляра, имейла за потвърждение и PDF документа.</target>
+      </trans-unit>
+      <trans-unit id="332da8c46d9285d34fdc6a303ef961dd" resname="Enter the seller’s registered office or business address exactly as it should appear in the consumer document.">
+        <source>Enter the seller’s registered office or business address exactly as it should appear in the consumer document.</source>
+        <target>Въведете седалището или адреса на дейност на продавача точно както трябва да се показва в документа за потребителя.</target>
+      </trans-unit>
+      <trans-unit id="fb636d5dcc9a87608884c792adeba49c" resname="EU compliance note (2026):">
+        <source>EU compliance note (2026):</source>
+        <target>Бележка за съответствие с правото на ЕС (2026):</target>
+      </trans-unit>
+      <trans-unit id="162a905374d1a34924bb5845530d885b" resname="Footer link (keep enabled for applicable online B2C contracts)">
+        <source>Footer link (keep enabled for applicable online B2C contracts)</source>
+        <target>Връзка във футъра (оставете включена за приложимите онлайн договори B2C)</target>
+      </trans-unit>
+      <trans-unit id="392f8cab7b4ad880e3cee9522b23e07d" resname="For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.">
+        <source>For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.</source>
+        <target>За приложимите дистанционни договори B2C, сключени чрез онлайн интерфейс, изключването или скриването на директната функция за отказ може да противоречи на член 11а от Директива 2011/83/ЕС, изменена с Директива (ЕС) 2023/2673. Националното прилагане трябва да се провери за всеки пазар.</target>
+      </trans-unit>
+      <trans-unit id="1d1840de10b4c570a590a590a07b508c" resname="For PrestaShop installation, do not use GitHub automatic &quot;Source code ZIP&quot;. Use only the installation ZIP file from the release assets.">
+        <source>For PrestaShop installation, do not use GitHub automatic "Source code ZIP". Use only the installation ZIP file from the release assets.</source>
+        <target>За инсталиране в PrestaShop не използвайте автоматичния „Source code ZIP“ от GitHub. Използвайте само инсталационния ZIP файл от ресурсите на изданието.</target>
+      </trans-unit>
+      <trans-unit id="4a746ff7cde7d7d2d280c05dafad842c" resname="General and legal availability">
+        <source>General and legal availability</source>
+        <target>Обща и правна достъпност</target>
+      </trans-unit>
+      <trans-unit id="189797bb7c7c6b6ffecb05ab1583781a" resname="Get Joobox support">
+        <source>Get Joobox support</source>
+        <target>Получаване на поддръжка от Joobox</target>
+      </trans-unit>
+      <trans-unit id="19939b44c683468d1479c9cf5d506e61" resname="GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.">
+        <source>GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.</source>
+        <target>Проверките в GitHub се извършват най-много веднъж на шест часа, освен при ръчно обновяване. Модулът никога не изтегля или инсталира код автоматично.</target>
+      </trans-unit>
+      <trans-unit id="39589e1c0b6ffff6f9fa814e0aebdd60" resname="Hosting cron URL (secret):">
+        <source>Hosting cron URL (secret):</source>
+        <target>URL адрес за cron на хостинга (таен):</target>
+      </trans-unit>
+      <trans-unit id="2e843e03cb6a49fd569c9c675a8247bd" resname="How long the one-time email access link remains usable. Expected range: 5–240 minutes; recommended default: 30.">
+        <source>How long the one-time email access link remains usable. Expected range: 5–240 minutes; recommended default: 30.</source>
+        <target>Колко дълго еднократната връзка за достъп по имейл остава използваема. Допустим диапазон: 5–240 минути; препоръчителна стойност: 30.</target>
+      </trans-unit>
+      <trans-unit id="984ceac16fab685fc50b8d8a5eabf7de" resname="Included">
+        <source>Included</source>
+        <target>Включено</target>
+      </trans-unit>
+      <trans-unit id="f7266ba0eb429463c24906863d97f74d" resname="Joobox support for this module">
+        <source>Joobox support for this module</source>
+        <target>Поддръжка от Joobox за този модул</target>
+      </trans-unit>
+      <trans-unit id="0d2a03417d12c0922f7c8f09a8866cdd" resname="JOOIM Withdrawal – Online Contract Withdrawal">
+        <source>JOOIM Withdrawal – Online Contract Withdrawal</source>
+        <target>JOOIM Withdrawal – Онлайн отказ от договор</target>
+      </trans-unit>
+      <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174" resname="Language">
+        <source>Language</source>
+        <target>Език</target>
+      </trans-unit>
+      <trans-unit id="0bb8ede719cfab55d1e46a227ba20f09" resname="Language-neutral URLs for external link lists:">
+        <source>Language-neutral URLs for external link lists:</source>
+        <target>Езиково неутрални URL адреси за външни списъци с връзки:</target>
+      </trans-unit>
+      <trans-unit id="712bd563f4ec14a3e9f63cd426a8f515" resname="Last checked">
+        <source>Last checked</source>
+        <target>Последна проверка</target>
+      </trans-unit>
+      <trans-unit id="90725f7a92bc20cc7d26c20261af79da" resname="Latest version on GitHub">
+        <source>Latest version on GitHub</source>
+        <target>Най-нова версия в GitHub</target>
+      </trans-unit>
+      <trans-unit id="b03d6f17c7f8bac52fe77f5914c49186" resname="Links for active shop languages">
+        <source>Links for active shop languages</source>
+        <target>Връзки за активните езици на магазина</target>
+      </trans-unit>
+      <trans-unit id="911f0f24bdce6808f4614d6a263b143b" resname="Locale">
+        <source>Locale</source>
+        <target>Локал</target>
+      </trans-unit>
+      <trans-unit id="f176436ebc257cd47b923ebfcf43ffb7" resname="Magic link validity (minutes)">
+        <source>Magic link validity (minutes)</source>
+        <target>Валидност на еднократната връзка (минути)</target>
+      </trans-unit>
+      <trans-unit id="42315b8de2a717eced9b289382e286f7" resname="Maintenance CLI:">
+        <source>Maintenance CLI:</source>
+        <target>CLI за поддръжка:</target>
+      </trans-unit>
+      <trans-unit id="feb2d01c3d55ad9d1e7478f2ecc6ee46" resname="Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.">
+        <source>Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.</source>
+        <target>Главен превключвател за публичните процедури за отказ и клиентските връзки за отказ. Изключването му не изтрива и не променя вече получени откази.</target>
+      </trans-unit>
+      <trans-unit id="ba0b7c08eb6bb4e2a041a1a0dc1a5416" resname="Maximum access-link requests associated with the same normalized order reference during 24 hours.">
+        <source>Maximum access-link requests associated with the same normalized order reference during 24 hours.</source>
+        <target>Максимален брой заявки за връзка за достъп, свързани с една и съща нормализирана референция на поръчка за 24 часа.</target>
+      </trans-unit>
+      <trans-unit id="6d6b5d20d325c5c90d4964db721a0ebd" resname="Maximum access-link requests associated with the same normalized order reference during one hour. This protects the customer mailbox from repeated messages.">
+        <source>Maximum access-link requests associated with the same normalized order reference during one hour. This protects the customer mailbox from repeated messages.</source>
+        <target>Максимален брой заявки за връзка за достъп, свързани с една и съща нормализирана референция на поръчка за един час. Това предпазва пощенската кутия на клиента от повтарящи се съобщения.</target>
+      </trans-unit>
+      <trans-unit id="36d0c453e24108cf2523ed0cd552bf30" resname="Maximum customer note length">
+        <source>Maximum customer note length</source>
+        <target>Максимална дължина на бележката на клиента</target>
+      </trans-unit>
+      <trans-unit id="3a028adaaf8097ffc9995ec306cac1b5" resname="Maximum number of plain-text characters accepted in the optional customer note. HTML is not accepted. Recommended default: 2000.">
+        <source>Maximum number of plain-text characters accepted in the optional customer note. HTML is not accepted. Recommended default: 2000.</source>
+        <target>Максимален брой обикновени текстови знаци в незадължителната бележка на клиента. HTML не се приема. Препоръчителна стойност: 2000.</target>
+      </trans-unit>
+      <trans-unit id="854523876a065fccaa9edb66ac5396aa" resname="Maximum order-reference access requests from one pseudonymized IP during 15 minutes. Successful and unsuccessful lookups share the same limit.">
+        <source>Maximum order-reference access requests from one pseudonymized IP during 15 minutes. Successful and unsuccessful lookups share the same limit.</source>
+        <target>Максимален брой заявки за достъп по референция на поръчка от един псевдонимизиран IP адрес за 15 минути. Успешните и неуспешните търсения използват общ лимит.</target>
+      </trans-unit>
+      <trans-unit id="c1f0b7fc8b6133385ad0bbce831cf97c" resname="Maximum order-reference access requests from one pseudonymized IP during 24 hours. The raw IP address is not stored in the legal withdrawal record.">
+        <source>Maximum order-reference access requests from one pseudonymized IP during 24 hours. The raw IP address is not stored in the legal withdrawal record.</source>
+        <target>Максимален брой заявки за достъп по референция на поръчка от един псевдонимизиран IP адрес за 24 часа. Необработеният IP адрес не се съхранява в правния запис за отказ.</target>
+      </trans-unit>
+      <trans-unit id="1b29aaded6e656c7c29df1a188724d60" resname="Maximum total lifetime of a verified guest session even when the customer remains active. Expected range: 15–1440 minutes; recommended default: 120.">
+        <source>Maximum total lifetime of a verified guest session even when the customer remains active. Expected range: 15–1440 minutes; recommended default: 120.</source>
+        <target>Максимална обща продължителност на потвърдена гост сесия, дори когато клиентът остава активен. Допустим диапазон: 15–1440 минути; препоръчителна стойност: 120.</target>
+      </trans-unit>
+      <trans-unit id="f4c9d126deaeb00d98b2a3b5c98e1592" resname="Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.">
+        <source>Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.</source>
+        <target>Минимално време преди да може да бъде поискан нов имейл за достъп за същата референция на поръчка. Препоръчителна стойност: 60 секунди.</target>
+      </trans-unit>
+      <trans-unit id="4e19d7f8160483be13ee95ed3f7dccc2" resname="Module data was permanently deleted.">
+        <source>Module data was permanently deleted.</source>
+        <target>Данните на модула бяха изтрити окончателно.</target>
+      </trans-unit>
+      <trans-unit id="eb5534a6983af195fab96bffe2ca4549" resname="Module enabled">
+        <source>Module enabled</source>
+        <target>Модулът е включен</target>
+      </trans-unit>
+      <trans-unit id="afdac9282c19d277f0eb8c3cb62fcefb" resname="Module is up to date.">
+        <source>Module is up to date.</source>
+        <target>Модулът е актуален.</target>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b" resname="No">
+        <source>No</source>
+        <target>Не</target>
+      </trans-unit>
+      <trans-unit id="fb2d1435d9fcd5b2968d8e0290ee8691" resname="No active shop languages were found.">
+        <source>No active shop languages were found.</source>
+        <target>Не са намерени активни езици на магазина.</target>
+      </trans-unit>
+      <trans-unit id="ff9aae6410bc98cd9a562bec02d2732c" resname="No data is deleted unless the value is exactly DELETE.">
+        <source>No data is deleted unless the value is exactly DELETE.</source>
+        <target>Никакви данни не се изтриват, освен ако стойността не е точно DELETE.</target>
+      </trans-unit>
+      <trans-unit id="647583f74c004a3c608af12e603c8544" resname="Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.">
+        <source>Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.</source>
+        <target>Обичайното деинсталиране на модула запазва записите за отказ. Това разрушително действие премахва всички таблици на модула.</target>
+      </trans-unit>
+      <trans-unit id="8d2dd0c91251585950bc6ba2ab52108b" resname="Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.">
+        <source>Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.</source>
+        <target>Брой автоматични повторни изпращания след неуспешен имейл за потвърждение. Отказът остава валиден дори когато всички опити за имейл са неуспешни.</target>
+      </trans-unit>
+      <trans-unit id="8c912169e1c01fceba3bc0758f956fe5" resname="Open GitHub Releases">
+        <source>Open GitHub Releases</source>
+        <target>Отваряне на изданията в GitHub</target>
+      </trans-unit>
+      <trans-unit id="9d60cfba7dfc18f815cafc70ac701571" resname="Open withdrawals">
+        <source>Open withdrawals</source>
+        <target>Отваряне на отказите</target>
+      </trans-unit>
+      <trans-unit id="36b030c8de809d689b3d5dc9d16ef7db" resname="Opens the Back Office list of received withdrawals, their status, documents, refund records and audit history.">
+        <source>Opens the Back Office list of received withdrawals, their status, documents, refund records and audit history.</source>
+        <target>Отваря списъка в Back Office с получените откази, техния статус, документи, записи за възстановяване на суми и одитна история.</target>
+      </trans-unit>
+      <trans-unit id="8cc6aff5f8ec8880791350390f185d6b" resname="Optional customer-service phone number shown in the acknowledgement and PDF. It is not used to authenticate a withdrawal.">
+        <source>Optional customer-service phone number shown in the acknowledgement and PDF. It is not used to authenticate a withdrawal.</source>
+        <target>Незадължителен телефон на обслужването на клиенти, показван в потвърждението и PDF документа. Не се използва за удостоверяване на отказ.</target>
+      </trans-unit>
+      <trans-unit id="91d0c684934e62d6e3e871cf760ab1a5" resname="Order detail button">
+        <source>Order detail button</source>
+        <target>Бутон в подробностите за поръчката</target>
+      </trans-unit>
+      <trans-unit id="e3226110b52a3a391cf9723cedf9afa9" resname="Order-reference flow">
+        <source>Order-reference flow</source>
+        <target>Процедура по референция на поръчка</target>
+      </trans-unit>
+      <trans-unit id="9f004157e4c148dac71da3ae5906351f" resname="Partially refunded">
+        <source>Partially refunded</source>
+        <target>Частично възстановена сума</target>
+      </trans-unit>
+      <trans-unit id="389d382a151949ccbc613f148039f243" resname="Permanent data purge">
+        <source>Permanent data purge</source>
+        <target>Окончателно изчистване на данните</target>
+      </trans-unit>
+      <trans-unit id="8bb19586e39b432b1f0d04860879f8fd" resname="Permanently delete all module data">
+        <source>Permanently delete all module data</source>
+        <target>Окончателно изтриване на всички данни на модула</target>
+      </trans-unit>
+      <trans-unit id="bcc254b55c4a1babdf1dcb82c207506b" resname="Phone">
+        <source>Phone</source>
+        <target>Телефон</target>
+      </trans-unit>
+      <trans-unit id="9e2cdc4e408db239280c5e043d50173f" resname="PHP 8.1 or newer is required.">
+        <source>PHP 8.1 or newer is required.</source>
+        <target>Изисква се PHP 8.1 или по-нова версия.</target>
+      </trans-unit>
+      <trans-unit id="c63031d958b58c8116035092362f25ed" resname="Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.">
+        <source>Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.</source>
+        <target>Предпочитан метод за планирана поддръжка. Премахва изтекли временни записи, повтаря изпращането на чакащи потвърждения и изпълнява задачи за съхранение.</target>
+      </trans-unit>
+      <trans-unit id="4e86c1fd72fe463cdbe67c5704dbd4d9" resname="Privacy policy URL">
+        <source>Privacy policy URL</source>
+        <target>URL адрес на политиката за поверителност</target>
+      </trans-unit>
+      <trans-unit id="fed94c98dce5cf7158450628d5f232c6" resname="Public entry:">
+        <source>Public entry:</source>
+        <target>Публичен вход:</target>
+      </trans-unit>
+      <trans-unit id="dc16a594f0069adea19ca1b5a4230fc7" resname="Purge confirmation">
+        <source>Purge confirmation</source>
+        <target>Потвърждение за изчистване</target>
+      </trans-unit>
+      <trans-unit id="32cf24c131e8c90129bc9dc6252c6003" resname="Ready. Required security values and module hooks are available.">
+        <source>Ready. Required security values and module hooks are available.</source>
+        <target>Готово. Необходимите стойности за сигурност и hook-ове на модула са налични.</target>
+      </trans-unit>
+      <trans-unit id="e42f6e063d74ea96cf2c30f2552d208f" resname="Reference prefix">
+        <source>Reference prefix</source>
+        <target>Префикс на референцията</target>
+      </trans-unit>
+      <trans-unit id="0d9e71a5f31d8ddea938f07fda9a1444" resname="Refresh update status">
+        <source>Refresh update status</source>
+        <target>Обновяване на състоянието на актуализацията</target>
+      </trans-unit>
+      <trans-unit id="e963a2769e317ec3289dc057845cd3e2" resname="Refund completed">
+        <source>Refund completed</source>
+        <target>Възстановяването е завършено</target>
+      </trans-unit>
+      <trans-unit id="26d3b43de693b9d47c36dee1035a46a8" resname="Refund pending">
+        <source>Refund pending</source>
+        <target>Предстои възстановяване на сумата</target>
+      </trans-unit>
+      <trans-unit id="18c16aedc5678290d3f50d8b0bd198f1" resname="Refund recorded">
+        <source>Refund recorded</source>
+        <target>Възстановяването е записано</target>
+      </trans-unit>
+      <trans-unit id="e6fa03f0b7eb9b39761dd40a3b395334" resname="Registered address">
+        <source>Registered address</source>
+        <target>Регистриран адрес</target>
+      </trans-unit>
+      <trans-unit id="a45536b852059a333397abd12f770f40" resname="Requests per IP / 15 minutes">
+        <source>Requests per IP / 15 minutes</source>
+        <target>Заявки от IP / 15 минути</target>
+      </trans-unit>
+      <trans-unit id="3e5fbf238d7169b08b1620f5c0ed538e" resname="Requests per IP / day">
+        <source>Requests per IP / day</source>
+        <target>Заявки от IP / ден</target>
+      </trans-unit>
+      <trans-unit id="2549e08c454fe021bf7ef601efd389f9" resname="Resend cooldown (seconds)">
+        <source>Resend cooldown (seconds)</source>
+        <target>Изчакване преди повторно изпращане (секунди)</target>
+      </trans-unit>
+      <trans-unit id="f407eca5d4719f814784407e805a3320" resname="Return address / instructions">
+        <source>Return address / instructions</source>
+        <target>Адрес / инструкции за връщане</target>
+      </trans-unit>
+      <trans-unit id="cd4b58c156cc842c8eaee4f2eda67386" resname="Returned goods received">
+        <source>Returned goods received</source>
+        <target>Върнатата стока е получена</target>
+      </trans-unit>
+      <trans-unit id="340047998cd91b899900eed231cc7fef" resname="Runtime configuration:">
+        <source>Runtime configuration:</source>
+        <target>Конфигурация при изпълнение:</target>
+      </trans-unit>
+      <trans-unit id="d4dccb8ca2dac4e53c01bd9954755332" resname="Save settings">
+        <source>Save settings</source>
+        <target>Запазване на настройките</target>
+      </trans-unit>
+      <trans-unit id="508878a506066b8fadfa321807415ee0" resname="Secure online exercise and administration of the consumer right of withdrawal.">
+        <source>Secure online exercise and administration of the consumer right of withdrawal.</source>
+        <target>Сигурно онлайн упражняване и администриране на потребителското право на отказ.</target>
+      </trans-unit>
+      <trans-unit id="2801f11e30091ea7db27772359285c58" resname="Security, session and abuse limits">
+        <source>Security, session and abuse limits</source>
+        <target>Сигурност, сесия и лимити срещу злоупотреби</target>
+      </trans-unit>
+      <trans-unit id="b0aca289a0a6e06700d28253aa26cba2" resname="Session absolute limit (minutes)">
+        <source>Session absolute limit (minutes)</source>
+        <target>Абсолютен лимит на сесията (минути)</target>
+      </trans-unit>
+      <trans-unit id="0693fa44a6aabaf090af1bee024240fe" resname="Session inactivity limit (minutes)">
+        <source>Session inactivity limit (minutes)</source>
+        <target>Лимит за неактивност на сесията (минути)</target>
+      </trans-unit>
+      <trans-unit id="9a7e58ee13cb727cb7c4acc68f4cafe5" resname="Settings saved.">
+        <source>Settings saved.</source>
+        <target>Настройките са запазени.</target>
+      </trans-unit>
+      <trans-unit id="9eeed2a79a0ce14783ba54b0b0420203" resname="Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.">
+        <source>Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.</source>
+        <target>Кратък код в началото на референциите за отказ. Използвайте само букви, цифри и тирета, например WD. Съществуващите референции никога не се променят.</target>
+      </trans-unit>
+      <trans-unit id="0cfb330ba2af0cc69f2cd95aca520abd" resname="Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.">
+        <source>Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.</source>
+        <target>Някои изисквания при изпълнение не можаха да бъдат синхронизирани. Прегледайте логовете на PrestaShop преди публично използване.</target>
+      </trans-unit>
+      <trans-unit id="c84f3c8cccffa553f2b2322518573b57" resname="Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.">
+        <source>Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.</source>
+        <target>Стартира сигурната процедура по референция на поръчка. Клиентът въвежда само публичната референция; данните за поръчката и личните данни остават скрити, докато еднократната връзка по имейл не бъде потвърдена.</target>
+      </trans-unit>
+      <trans-unit id="58200c5eb0a6df1eb10635ecb7363249" resname="Status changed by administrator">
+        <source>Status changed by administrator</source>
+        <target>Статусът е променен от администратор</target>
+      </trans-unit>
+      <trans-unit id="34a1e6159e4b3b9f19d11093f9cf1c48" resname="Supported PrestaShop versions are 8.1 through 9.1.">
+        <source>Supported PrestaShop versions are 8.1 through 9.1.</source>
+        <target>Поддържаните версии на PrestaShop са от 8.1 до 9.1.</target>
+      </trans-unit>
+      <trans-unit id="440cefce4f97e7cb67c869bf1d8dfe16" resname="The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.">
+        <source>The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.</source>
+        <target>Стойностите по подразбиране са умишлено консервативни. Увеличавайте лимитите само след преглед на реалния трафик и логовете за злоупотреби; прекалено ниските стойности могат да блокират добросъвестни потребители.</target>
+      </trans-unit>
+      <trans-unit id="afc3f41e1b3dceb9e58a5d7fe33ca215" resname="These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.">
+        <source>These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.</source>
+        <target>Тези стойности идентифицират действителния продавач, който управлява избрания магазин. Те се съхраняват по магазин в multistore и се отпечатват в потвържденията за клиента и PDF доказателството.</target>
+      </trans-unit>
+      <trans-unit id="7c590d9272ad1786e0e73357bf415267" resname="This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.">
+        <source>This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.</source>
+        <target>Този безплатен GitHub модул се предоставя без индивидуална техническа поддръжка. Инсталиране, конфигуриране, продукционно тестване, актуализации и отстраняване на проблеми се предлагат за клиенти на Joobox PrestaShop Cloud или на друга платена услуга, изрично договорена с JOO INTERNET MEDIA LTD.</target>
+      </trans-unit>
+      <trans-unit id="1bb184adfba62621740f795ec93d36e6" resname="Trader details – current shop">
+        <source>Trader details – current shop</source>
+        <target>Данни на търговеца – текущ магазин</target>
+      </trans-unit>
+      <trans-unit id="14a3e5ba5527ad9b624f6ff0a81c9b8c" resname="Trader name">
+        <source>Trader name</source>
+        <target>Име на търговеца</target>
+      </trans-unit>
+      <trans-unit id="6dd08874f83507e9c7b23f1a46b7fa7c" resname="Translation">
+        <source>Translation</source>
+        <target>Превод</target>
+      </trans-unit>
+      <trans-unit id="013033d8b098dd26ff49eb11860f1fa7" resname="Type DELETE">
+        <source>Type DELETE</source>
+        <target>Въведете DELETE</target>
+      </trans-unit>
+      <trans-unit id="9e5fb4183f6e1e965dc8f7de0c200cbf" resname="Type DELETE to confirm permanent data deletion.">
+        <source>Type DELETE to confirm permanent data deletion.</source>
+        <target>Въведете DELETE, за да потвърдите окончателното изтриване на данните.</target>
+      </trans-unit>
+      <trans-unit id="9007b9aa19e4aeeb4c9c13a065c1ff47" resname="Type the exact word DELETE to remove all withdrawals, documents, audit history, access records and refund records. This action cannot be undone and is not required for an ordinary module update or reinstall.">
+        <source>Type the exact word DELETE to remove all withdrawals, documents, audit history, access records and refund records. This action cannot be undone and is not required for an ordinary module update or reinstall.</source>
+        <target>Въведете точната дума DELETE, за да премахнете всички откази, документи, одитна история, записи за достъп и възстановявания. Действието не може да бъде отменено и не е необходимо при обичайна актуализация или преинсталиране на модула.</target>
+      </trans-unit>
+      <trans-unit id="ddc725eae7cbd49e09089df5f6cd7f50" resname="Unable to verify the latest version from GitHub. Check releases manually.">
+        <source>Unable to verify the latest version from GitHub. Check releases manually.</source>
+        <target>Неуспешна проверка на най-новата версия в GitHub. Проверете изданията ръчно.</target>
+      </trans-unit>
+      <trans-unit id="1321a344a5a1a622364582904f3d281d" resname="Under review">
+        <source>Under review</source>
+        <target>В процес на проверка</target>
+      </trans-unit>
+      <trans-unit id="88183b946cc5f0e8c96b2e66e1c74a7e" resname="Unknown">
+        <source>Unknown</source>
+        <target>Неизвестно</target>
+      </trans-unit>
+      <trans-unit id="e2b8575e1fd2467e8d1ee9749a57513c" resname="Update check">
+        <source>Update check</source>
+        <target>Проверка за актуализация</target>
+      </trans-unit>
+      <trans-unit id="d45473395df63bc3eaf7c87f2af3d617" resname="Update check failed: %error%">
+        <source>Update check failed: %error%</source>
+        <target>Проверката за актуализация е неуспешна: %error%</target>
+      </trans-unit>
+      <trans-unit id="f5359d1dd07def542aa9b0577fb27068" resname="Update status">
+        <source>Update status</source>
+        <target>Състояние на актуализацията</target>
+      </trans-unit>
+      <trans-unit id="ec0680bbb63e497125e1b9b3fa3aa255" resname="Use these URLs in modules that provide only one URL field for all languages. The entry controller selects the current or preferred shop language and redirects to the localized friendly path.">
+        <source>Use these URLs in modules that provide only one URL field for all languages. The entry controller selects the current or preferred shop language and redirects to the localized friendly path.</source>
+        <target>Използвайте тези URL адреси в модули, които предоставят само едно URL поле за всички езици. Входният контролер избира текущия или предпочитания език на магазина и пренасочва към локализирания четим път.</target>
+      </trans-unit>
+      <trans-unit id="731b8ef7226d81e5dcdcb73d2cbaaa56" resname="Use this only in a disposable test installation.">
+        <source>Use this only in a disposable test installation.</source>
+        <target>Използвайте това само в тестова инсталация за еднократна употреба.</target>
+      </trans-unit>
+      <trans-unit id="577f4ba99fa5b48178e116e405081470" resname="Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.">
+        <source>Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.</source>
+        <target>Използвайте този URL адрес само когато хостингът не може да изпълни CLI командата. Третирайте токена като парола: не го публикувайте, не го изпращайте по имейл и не го поставяйте в публичен мониторинг.</target>
+      </trans-unit>
+      <trans-unit id="01f004435882e0df6fc4d48ff6d6b2b5" resname="Waiting for returned goods">
+        <source>Waiting for returned goods</source>
+        <target>Очаква се връщане на стоката</target>
+      </trans-unit>
+      <trans-unit id="b0578341d6fba5c8fb8282b71deaaf49" resname="Withdrawal received">
+        <source>Withdrawal received</source>
+        <target>Отказът е получен</target>
+      </trans-unit>
+      <trans-unit id="a6bf9dba77e2cf61e65fb7a0c4c07bea" resname="Withdrawal rejected">
+        <source>Withdrawal rejected</source>
+        <target>Отказът е отхвърлен</target>
+      </trans-unit>
+      <trans-unit id="0bce86ca38c0bed64f9a8831fc4dceb4" resname="Withdrawal submitted">
+        <source>Withdrawal submitted</source>
+        <target>Отказът е подаден</target>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435" resname="Yes">
+        <source>Yes</source>
+        <target>Да</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

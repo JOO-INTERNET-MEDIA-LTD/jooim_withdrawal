@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://joobox.eu/en-gb/support
+    about: Do not disclose vulnerabilities or live data in a public issue. Follow SECURITY.md.
+  - name: Paid installation and support
+    url: https://joobox.eu
+    about: Installation, configuration review and custom work are outside the free GitHub support scope.

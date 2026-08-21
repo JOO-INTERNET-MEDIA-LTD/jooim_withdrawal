@@ -1,0 +1,12 @@
+Pokyny k vrácení zboží
+Reference odstoupení: {withdrawal_reference}
+Objednávka / smlouva: {order_reference}
+Status: {status}
+
+Zpráva obchodníka:
+{public_message}
+
+Adresa / pokyny pro vrácení:
+{return_address}
+
+Kontakt obchodníka: {merchant_email}

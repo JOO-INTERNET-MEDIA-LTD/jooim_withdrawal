@@ -1,0 +1,120 @@
+001	Este disponibilă o versiune nouă a modulului.
+002	Număr de reîncercări pentru confirmare
+003	Adaugă o intrare pentru retragere în zona Contul meu a clientului. Clientul poate utiliza în continuare fluxul public atunci când comanda nu este vizibilă în cont.
+004	Adaugă butonul „Retragere din contract” la detaliile unei comenzi care aparține clientului autentificat. Apartenența este verificată pe server.
+005	Permite consumatorului să trimită o declarație neechivocă de retragere fără autentificare sau afișarea datelor comenzii. Păstrați această funcție disponibilă pentru contractele B2C online aplicabile.
+006	Atașează confirmarea PDF
+007	Atașează la e-mailul de confirmare PDF-ul imuabil de confirmare a retragerii. Dezactivarea atașamentului nu șterge PDF-ul protejat stocat împreună cu cazul.
+008	Cazuri:
+009	Identificatorul societății
+010	Versiunea curentă a modulului
+011	Link în contul clientului
+012	Adresă de contact afișată clientului pentru comunicarea privind retragerile. Utilizați o căsuță poștală monitorizată activ; nu introduceți aici e-mailul clientului.
+013	Funcția directă prevăzută la articolul 11a
+014	Retragere directă
+015	Funcție de retragere directă:
+016	Dezactivată
+017	Dezactivată (este necesară o analiză juridică)
+018	Afișează linkul „Retragere din contract aici” în subsolul magazinului. Acest link cu funcție juridică este independent de atribuirea de marketing Joobox.
+019	Notă privind conformitatea cu legislația UE (2026):
+020	Fiecare limbă activă a magazinului primește propria cale localizată și lizibilă. URL-urile de intrare neutre din punct de vedere lingvistic rămân disponibile pentru modulele externe cu liste de linkuri. După implementare, testați ambele fluxuri în fiecare limbă activă.
+021	E-mail
+022	E-mailuri per comandă / zi
+023	E-mailuri per comandă / oră
+024	Activată
+025	Activează formularul online direct de retragere, care nu necesită un cont de client sau acces la e-mailul inițial al comenzii. Dezactivați-l numai după o analiză juridică specifică pieței.
+026	Încheie o sesiune de vizitator verificată după această perioadă de inactivitate. Interval estimat: 5–240 de minute; valoare implicită recomandată: 30.
+027	Text de rezervă în limba engleză
+028	Introduceți URL-ul HTTPS absolut al politicii de confidențialitate care explică prelucrarea datelor cu caracter personal pentru primirea și soluționarea retragerilor.
+029	Introduceți adresa exactă și instrucțiunile practice pentru returnarea bunurilor. Instrucțiunile nu trebuie să impună condiții care limitează ilegal dreptul de retragere al consumatorului.
+030	Introduceți identificatorul solicitat în jurisdicția vânzătorului, de exemplu codul societății, codul de TVA sau numărul din registrul comerțului.
+031	Introduceți denumirea juridică sau comercială înregistrată completă a vânzătorului, nu a furnizorului modulului. Aceasta apare în formular, în e-mailul de confirmare și în PDF.
+032	Introduceți sediul social sau adresa comercială a vânzătorului exact așa cum trebuie să apară în documentul destinat consumatorului.
+033	Link în subsol (păstrați-l activat pentru contractele B2C online aplicabile)
+034	Pentru instalarea în PrestaShop, nu utilizați arhiva automată „Source code ZIP” de la GitHub. Utilizați numai fișierul ZIP de instalare din activele versiunii.
+035	Pentru contractele B2C la distanță aplicabile, încheiate printr-o interfață online, dezactivarea sau ascunderea funcției directe de retragere poate contraveni articolului 11a din Directiva 2011/83/UE, astfel cum a fost modificată prin Directiva (UE) 2023/2673. Transpunerea națională trebuie verificată în continuare pentru fiecare piață.
+036	Disponibilitate generală și juridică
+037	Obțineți asistență Joobox
+038	Verificările GitHub sunt efectuate cel mult o dată la șase ore, cu excepția cazului în care sunt reîmprospătate manual. Modulul nu descarcă și nu instalează niciodată cod automat.
+039	URL cron al găzduirii (secret):
+040	Perioada în care linkul unic de acces din e-mail rămâne utilizabil. Interval estimat: 5–240 de minute; valoare implicită recomandată: 30.
+041	Inclus
+042	JOOIM Withdrawal – Retragere online din contract
+043	Asistență Joobox pentru acest modul
+044	Limbă
+045	URL-uri neutre din punct de vedere lingvistic pentru liste externe de linkuri:
+046	Ultima verificare
+047	Cea mai recentă versiune pe GitHub
+048	Linkuri pentru limbile active ale magazinului
+049	Setare regională
+050	Valabilitatea linkului unic (minute)
+051	CLI pentru întreținere:
+052	Comutator principal pentru fluxurile publice de retragere și linkurile de retragere afișate clienților. Dezactivarea sa nu șterge și nu modifică retragerile deja primite.
+053	Numărul maxim de solicitări de link de acces asociate aceleiași referințe normalizate a comenzii în 24 de ore.
+054	Numărul maxim de solicitări de link de acces asociate aceleiași referințe normalizate a comenzii într-o oră. Aceasta protejează căsuța poștală a clientului de mesaje repetate.
+055	Lungimea maximă a notei clientului
+056	Numărul maxim de caractere de text simplu acceptate în nota opțională a clientului. HTML nu este acceptat. Valoare implicită recomandată: 2000.
+057	Numărul maxim de solicitări de acces pe baza referinței comenzii de la o singură adresă IP pseudonimizată în 15 minute. Căutările reușite și nereușite folosesc aceeași limită.
+058	Numărul maxim de solicitări de acces pe baza referinței comenzii de la o singură adresă IP pseudonimizată în 24 de ore. Adresa IP brută nu este stocată în evidența juridică a retragerii.
+059	Durata totală maximă a unei sesiuni de vizitator verificate, chiar dacă clientul rămâne activ. Interval estimat: 15–1440 de minute; valoare implicită recomandată: 120.
+060	Întârzierea minimă înainte de a putea solicita un alt e-mail de acces pentru aceeași referință a comenzii. Valoare implicită recomandată: 60 de secunde.
+061	Datele modulului au fost șterse definitiv.
+062	Modul activat
+063	Modulul este actualizat.
+064	Nu
+065	Nu au fost găsite limbi active ale magazinului.
+066	Nu se șterg date decât dacă valoarea este exact DELETE.
+067	Dezinstalarea obișnuită a modulului păstrează înregistrările retragerilor. Această acțiune distructivă elimină toate tabelele modulului.
+068	Numărul de reîncercări automate după eșuarea unui e-mail de confirmare. Retragerea rămâne valabilă chiar dacă toate încercările de trimitere a e-mailului eșuează.
+069	Deschide versiunile GitHub
+070	Deschide retragerile
+071	Deschide lista din Back Office a retragerilor primite, starea, documentele, înregistrările rambursărilor și istoricul de audit ale acestora.
+072	Număr opțional de telefon al serviciului pentru clienți, afișat în confirmare și în PDF. Nu este utilizat pentru autentificarea unei retrageri.
+073	Buton în detaliile comenzii
+074	Flux pe baza referinței comenzii
+075	Este necesar PHP 8.1 sau o versiune mai nouă.
+076	Ștergere definitivă a datelor
+077	Șterge definitiv toate datele modulului
+078	Telefon
+079	Metoda preferată pentru întreținerea programată. Elimină înregistrările temporare expirate, reîncearcă confirmările din coadă și procesează sarcinile de păstrare.
+080	URL-ul politicii de confidențialitate
+081	Intrare publică:
+082	Confirmarea ștergerii
+083	Pregătit. Valorile de securitate necesare și hook-urile modulului sunt disponibile.
+084	Prefixul referinței
+085	Reîmprospătează starea actualizării
+086	Adresa înregistrată
+087	Solicitări per IP / 15 minute
+088	Solicitări per IP / zi
+089	Pauză înainte de retrimitere (secunde)
+090	Adresa / instrucțiunile de returnare
+091	Configurație în timpul rulării:
+092	Salvează setările
+093	Exercitarea și administrarea online în siguranță a dreptului de retragere al consumatorului.
+094	Limite de securitate, sesiune și abuz
+095	Limita absolută a sesiunii (minute)
+096	Limita de inactivitate a sesiunii (minute)
+097	Setările au fost salvate.
+098	Cod scurt utilizat la începutul referințelor retragerii. Folosiți numai litere, cifre și cratime, de exemplu WD. Referințele existente ale retragerilor nu sunt modificate niciodată.
+099	Unele cerințe de rulare nu au putut fi sincronizate. Verificați jurnalele PrestaShop înainte de utilizarea publică.
+100	Pornește fluxul securizat pe baza referinței comenzii. Clientul introduce numai referința publică a comenzii; datele comenzii și datele personale rămân ascunse până la confirmarea linkului unic din e-mail.
+101	Versiunile PrestaShop acceptate sunt de la 8.1 la 9.1.
+102	Valorile implicite sunt intenționat prudente. Măriți limitele numai după analizarea traficului real și a jurnalelor de abuz; limitele prea mici pot bloca consumatorii legitimi.
+103	Aceste valori identifică vânzătorul real care operează magazinul selectat. Sunt stocate pentru fiecare magazin în multistore și sunt tipărite în confirmările clientului și în dovada PDF.
+104	Acest modul GitHub gratuit este furnizat fără asistență tehnică individuală. Instalarea, configurarea, testarea în producție, actualizările și depanarea sunt disponibile pentru clienții care folosesc Joobox PrestaShop Cloud sau un alt serviciu cu plată convenit în mod explicit cu JOO INTERNET MEDIA LTD.
+105	Datele comerciantului – magazinul curent
+106	Denumirea comerciantului
+107	Traducere
+108	Tastați DELETE
+109	Tastați DELETE pentru a confirma ștergerea definitivă a datelor.
+110	Tastați cuvântul exact DELETE pentru a elimina toate retragerile, documentele, istoricul de audit, înregistrările de acces și de rambursare. Acțiunea nu poate fi anulată și nu este necesară pentru o actualizare sau reinstalare obișnuită a modulului.
+111	Nu s-a putut verifica cea mai recentă versiune de pe GitHub. Verificați manual versiunile.
+112	Necunoscut
+113	Verificarea actualizărilor
+114	Verificarea actualizărilor a eșuat: %error%
+115	Starea actualizării
+116	Utilizați aceste URL-uri în modulele care oferă un singur câmp URL pentru toate limbile. Controllerul de intrare selectează limba curentă sau preferată a magazinului și redirecționează către calea localizată și lizibilă.
+117	Utilizați acest URL numai atunci când găzduirea nu poate executa comanda CLI. Tratați tokenul ca pe o parolă: nu îl publicați, nu îl trimiteți prin e-mail și nu îl includeți în monitorizarea publică.
+118	Utilizați această funcție numai într-o instalare de test de unică folosință.
+119	Da
+120	Numai setările Back Office

@@ -1,0 +1,120 @@
+001	Hemm verżjoni ġdida tal-modulu disponibbli.
+002	Għadd ta’ tentattivi mill-ġdid għall-konferma
+003	Iżid entrata tal-irtirar fiż-żona Il-kont tiegħi tal-klijent. Il-klijent xorta jista’ juża l-proċess pubbliku meta l-ordni ma tidhirx fil-kont.
+004	Iżid buttuna “Irtira mill-kuntratt” mad-dettalji ta’ ordni li tappartjeni lill-klijent illoggjat. Is-sjieda tiġi ċċekkjata fuq is-server.
+005	Jippermetti lill-konsumatur jibgħat dikjarazzjoni ċara ta’ rtirar mingħajr ma jidħol jew juri d-data tal-ordni. Żomm din il-funzjoni disponibbli għall-kuntratti B2C online applikabbli.
+006	Ehmeż konferma PDF
+007	Jehemż il-PDF immutabbli tal-konferma tal-irtirar mal-email ta’ konferma. It-tifi tal-anness ma jneħħix il-PDF protett maħżun mal-każ.
+008	Każijiet:
+009	Identifikatur tal-kumpanija
+010	Verżjoni attwali tal-modulu
+011	Link fil-kont tal-klijent
+012	Indirizz ta’ kuntatt viżibbli għall-klijent għall-komunikazzjoni dwar l-irtirar. Uża mailbox immonitorjata b’mod attiv; ddaħħalx hawn l-email tal-klijent.
+013	Funzjoni diretta tal-Artikolu 11a
+014	Irtirar dirett
+015	Funzjoni ta’ rtirar dirett:
+016	Diżattivata
+017	Diżattivata (meħtieġa reviżjoni legali)
+018	Turi l-link “Irtira mill-kuntratt hawn” fil-footer tal-ħanut. Din il-link ta’ funzjoni legali hija indipendenti mill-attribuzzjoni ta’ kummerċjalizzazzjoni Joobox.
+019	Nota dwar il-konformità tal-UE (2026):
+020	Kull lingwa attiva tal-ħanut tirċievi mogħdija lokalizzata u faċli biex tinqara. L-URLs tad-dħul newtrali għal-lingwa jibqgħu disponibbli għal moduli esterni ta’ listi ta’ links. Wara l-implimentazzjoni, ittestja ż-żewġ proċessi f’kull lingwa attiva.
+021	Email
+022	Emails għal kull ordni / jum
+023	Emails għal kull ordni / siegħa
+024	Attivata
+025	Tattiva l-formola diretta online tal-irtirar li ma teħtieġx kont tal-klijent jew aċċess għall-email oriġinali tal-ordni. Itfiha biss wara reviżjoni legali speċifika għas-suq.
+026	Ittemm sessjoni mistieden ivverifikata wara dan il-perjodu ta’ inattività. Firxa mistennija: 5–240 minuta; valur predefinit rakkomandat: 30.
+027	Riżerva bl-Ingliż
+028	Daħħal l-URL assolut HTTPS tal-politika tal-privatezza li tispjega l-ipproċessar tad-data personali biex jiġu rċevuti u ttrattati l-irtirariet.
+029	Daħħal l-indirizz eżatt u l-istruzzjonijiet prattiċi għar-ritorn tal-oġġetti. L-istruzzjonijiet ma għandhomx jimponu kundizzjonijiet li jillimitaw illegalment id-dritt tal-konsumatur għall-irtirar.
+030	Daħħal l-identifikatur meħtieġ fil-ġurisdizzjoni tal-bejjiegħ, pereżempju numru tal-kumpanija, numru tal-VAT jew numru tar-reġistru kummerċjali.
+031	Daħħal l-isem legali sħiħ jew reġistrat tal-bejjiegħ, mhux dak tal-fornitur tal-modulu. Jidher fil-formola, fl-email ta’ konferma u fil-PDF.
+032	Daħħal l-uffiċċju reġistrat jew l-indirizz tan-negozju tal-bejjiegħ eżatt kif għandu jidher fid-dokument għall-konsumatur.
+033	Link fil-footer (żommha attivata għall-kuntratti B2C online applikabbli)
+034	Għall-installazzjoni ta’ PrestaShop, tużax il-“Source code ZIP” awtomatiku ta’ GitHub. Uża biss il-fajl ZIP tal-installazzjoni mill-assi tar-rilaxx.
+035	Għal kuntratti B2C mill-bogħod applikabbli konklużi permezz ta’ interfaċċa online, it-tifi jew il-ħabi tal-funzjoni diretta tal-irtirar jista’ jkun f’kunflitt mal-Artikolu 11a tad-Direttiva 2011/83/UE kif emendata bid-Direttiva (UE) 2023/2673. L-implimentazzjoni nazzjonali xorta trid tiġi riveduta għal kull suq.
+036	Disponibbiltà ġenerali u legali
+037	Ikseb appoġġ Joobox
+038	Il-kontrolli ta’ GitHub isiru mhux aktar minn darba kull sitt sigħat sakemm ma jiġux aġġornati manwalment. Il-modulu qatt ma jniżżel jew jinstalla kodiċi awtomatikament.
+039	URL cron tal-hosting (sigriet):
+040	Kemm iddum tista’ tintuża l-link ta’ aċċess ta’ darba fl-email. Firxa mistennija: 5–240 minuta; valur predefinit rakkomandat: 30.
+041	Inkluż
+042	JOOIM Withdrawal – Irtirar minn kuntratt online
+043	Appoġġ Joobox għal dan il-modulu
+044	Lingwa
+045	URLs newtrali għal-lingwa għal listi esterni ta’ links:
+046	Iċċekkjat l-aħħar
+047	L-aħħar verżjoni fuq GitHub
+048	Links għal-lingwi attivi tal-ħanut
+049	Lokali
+050	Validità tal-link ta’ darba (minuti)
+051	CLI tal-manutenzjoni:
+052	Swiċċ ewlieni għall-proċessi pubbliċi tal-irtirar u l-links tal-irtirar li jaraw il-klijenti. It-tifi ma jħassarx jew jibdel irtirariet li diġà ġew riċevuti.
+053	Għadd massimu ta’ talbiet għal link ta’ aċċess marbuta mal-istess referenza normalizzata tal-ordni matul 24 siegħa.
+054	Għadd massimu ta’ talbiet għal link ta’ aċċess marbuta mal-istess referenza normalizzata tal-ordni matul siegħa. Dan jipproteġi l-mailbox tal-klijent minn messaġġi ripetuti.
+055	Tul massimu tan-nota tal-klijent
+056	Għadd massimu ta’ karattri ta’ test sempliċi fin-nota fakultattiva tal-klijent. HTML mhux aċċettat. Valur predefinit rakkomandat: 2000.
+057	Għadd massimu ta’ talbiet ta’ aċċess skont ir-referenza tal-ordni minn indirizz IP psewdonimizzat wieħed f’15-il minuta. It-tfittxijiet ta’ suċċess u dawk falluti jaqsmu l-istess limitu.
+058	Għadd massimu ta’ talbiet ta’ aċċess skont ir-referenza tal-ordni minn indirizz IP psewdonimizzat wieħed f’24 siegħa. L-indirizz IP mhux ipproċessat ma jinħażinx fir-rekord legali tal-irtirar.
+059	Tul massimu totali ta’ sessjoni mistieden ivverifikata anke meta l-klijent jibqa’ attiv. Firxa mistennija: 15–1440 minuta; valur predefinit rakkomandat: 120.
+060	Dewmien minimu qabel ma tista’ tintalab email oħra ta’ aċċess għall-istess referenza tal-ordni. Valur predefinit rakkomandat: 60 sekonda.
+061	Id-data tal-modulu tħassret b’mod permanenti.
+062	Modulu attivat
+063	Il-modulu huwa aġġornat.
+064	Le
+065	Ma nstabet l-ebda lingwa attiva tal-ħanut.
+066	L-ebda data ma titħassar sakemm il-valur ma jkunx eżattament DELETE.
+067	Id-diżinstallazzjoni normali tal-modulu żżomm ir-rekords tal-irtirar. Din l-azzjoni distruttiva tneħħi t-tabelli kollha tal-modulu.
+068	Għadd ta’ tentattivi awtomatiċi mill-ġdid wara li tfalli email ta’ konferma. L-irtirar jibqa’ validu anke jekk ifallu t-tentattivi kollha tal-email.
+069	Iftaħ ir-rilaxxi ta’ GitHub
+070	Iftaħ l-irtirariet
+071	Jiftaħ il-lista tal-Back Office tal-irtirariet riċevuti, l-istatus tagħhom, id-dokumenti, ir-rekords tar-rifużjoni u l-istorja tal-awditjar.
+072	Numru tat-telefon fakultattiv tas-servizz tal-klijent muri fil-konferma u fil-PDF. Ma jintużax biex jawtentika rtirar.
+073	Buttuna fid-dettalji tal-ordni
+074	Proċess skont ir-referenza tal-ordni
+075	Huwa meħtieġ PHP 8.1 jew aktar ġdid.
+076	Tindif permanenti tad-data
+077	Ħassar b’mod permanenti d-data kollha tal-modulu
+078	Telefon
+079	Metodu preferut għall-manutenzjoni skedata. Ineħħi rekords temporanji skaduti, jerġa’ jipprova jibgħat konfermi fil-kju u jipproċessa kompiti ta’ żamma.
+080	URL tal-politika tal-privatezza
+081	Dħul pubbliku:
+082	Konferma tat-tindif
+083	Lest. Il-valuri tas-sigurtà meħtieġa u l-hooks tal-modulu huma disponibbli.
+084	Prefiss tar-referenza
+085	Aġġorna l-istatus tal-aġġornament
+086	Indirizz reġistrat
+087	Talbiet għal kull IP / 15-il minuta
+088	Talbiet għal kull IP / jum
+089	Pawża qabel tibgħat mill-ġdid (sekondi)
+090	Indirizz / struzzjonijiet tar-ritorn
+091	Konfigurazzjoni waqt it-tħaddim:
+092	Issejvja s-settings
+093	Eżerċizzju u amministrazzjoni siguri online tad-dritt tal-konsumatur għall-irtirar.
+094	Limiti tas-sigurtà, tas-sessjoni u tal-abbuż
+095	Limitu assolut tas-sessjoni (minuti)
+096	Limitu ta’ inattività tas-sessjoni (minuti)
+097	Is-settings ġew issejvjati.
+098	Kodiċi qasir użat fil-bidu tar-referenzi tal-irtirar. Uża biss ittri, numri u singijiet, pereżempju WD. Ir-referenzi eżistenti tal-irtirar qatt ma jinbidlu.
+099	Xi rekwiżiti waqt it-tħaddim ma setgħux jiġu sinkronizzati. Irrevedi l-logs ta’ PrestaShop qabel l-użu pubbliku.
+100	Jibda l-proċess sigur skont ir-referenza tal-ordni. Il-klijent idaħħal biss ir-referenza pubblika tal-ordni; id-data tal-ordni u d-data personali jibqgħu moħbija sakemm tiġi kkonfermata l-link ta’ darba fl-email.
+101	Il-verżjonijiet appoġġjati ta’ PrestaShop huma minn 8.1 sa 9.1.
+102	Il-valuri predefiniti huma konservattivi apposta. Żid il-limiti biss wara li tirrevedi t-traffiku reali u l-logs tal-abbuż; limiti baxxi wisq jistgħu jimblukkaw konsumaturi leġittimi.
+103	Dawn il-valuri jidentifikaw il-bejjiegħ attwali li jopera l-ħanut magħżul. Jinħażnu għal kull ħanut f’multistore u jiġu stampati fil-konfermi tal-klijenti u fl-evidenza PDF.
+104	Dan il-modulu GitHub b’xejn jingħata mingħajr appoġġ tekniku individwali. L-installazzjoni, il-konfigurazzjoni, l-ittestjar fil-produzzjoni, l-aġġornamenti u s-soluzzjoni tal-problemi huma disponibbli għall-klijenti li jużaw Joobox PrestaShop Cloud jew servizz ieħor bi ħlas miftiehem espliċitament ma’ JOO INTERNET MEDIA LTD.
+105	Dettalji tan-negozjant – ħanut attwali
+106	Isem in-negozjant
+107	Traduzzjoni
+108	Ikteb DELETE
+109	Ikteb DELETE biex tikkonferma t-tħassir permanenti tad-data.
+110	Ikteb il-kelma eżatta DELETE biex tneħħi l-irtirariet kollha, id-dokumenti, l-istorja tal-awditjar, ir-rekords tal-aċċess u tar-rifużjoni. Din l-azzjoni ma tistax titreġġa’ lura u mhijiex meħtieġa għal aġġornament jew installazzjoni mill-ġdid normali tal-modulu.
+111	Ma setgħetx tiġi vverifikata l-aħħar verżjoni minn GitHub. Iċċekkja r-rilaxxi manwalment.
+112	Mhux magħruf
+113	Kontroll tal-aġġornament
+114	Il-kontroll tal-aġġornament falla: %error%
+115	Status tal-aġġornament
+116	Uża dawn l-URLs f’moduli li jipprovdu qasam URL wieħed biss għal-lingwi kollha. Il-controller tad-dħul jagħżel il-lingwa attwali jew preferuta tal-ħanut u jidderieġi lejn il-mogħdija lokalizzata u faċli biex tinqara.
+117	Uża dan l-URL biss meta l-hosting ma jkunx jista’ jħaddem il-kmand CLI. Ittratta t-token bħala password: tippubblikahx, tibagħtux bl-email u tpoġġihx f’monitoraġġ pubbliku.
+118	Uża dan biss f’installazzjoni tat-test li tista’ tintrema.
+119	Iva
+120	Settings tal-Back Office biss

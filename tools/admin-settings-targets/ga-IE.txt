@@ -1,0 +1,120 @@
+001	Tá leagan nua den mhodúl ar fáil.
+002	Líon na n-iarrachtaí eile don admháil
+003	Cuireann sé iontráil tarraingthe siar le limistéar Mo chuntas an chustaiméara. Is féidir leis an gcustaiméir an próiseas poiblí a úsáid fós nuair nach bhfuil an t-ordú le feiceáil sa chuntas.
+004	Cuireann sé cnaipe “Tarraing siar ón gconradh” le sonraí ordaithe ar leis an gcustaiméir sínithe isteach é. Déantar an úinéireacht a sheiceáil ar an bhfreastalaí.
+005	Ligeann sé don tomhaltóir ráiteas aonchiallach tarraingthe siar a chur isteach gan síniú isteach ná sonraí ordaithe a thaispeáint. Coinnigh an fheidhm seo ar fáil do chonarthaí B2C ar líne lena mbaineann.
+006	Ceangail admháil PDF
+007	Ceanglaíonn sé PDF do-athraithe deimhniúcháin na tarraingthe siar leis an ríomhphost admhála. Ní scriosann díchumasú an cheangaltáin an PDF cosanta atá stóráilte leis an gcás.
+008	Cásanna:
+009	Aitheantóir cuideachta
+010	Leagan reatha an mhodúil
+011	Nasc i gcuntas an chustaiméara
+012	Seoladh teagmhála atá le feiceáil ag an gcustaiméir le haghaidh cumarsáide faoi tharraingt siar. Úsáid bosca poist a ndéantar monatóireacht ghníomhach air; ná cuir ríomhphost an chustaiméara anseo.
+013	Feidhm dhíreach Airteagal 11a
+014	Tarraingt siar dhíreach
+015	Feidhm tarraingthe siar dírí:
+016	Díchumasaithe
+017	Díchumasaithe (athbhreithniú dlíthiúil riachtanach)
+018	Taispeánann sé an nasc “Tarraing siar ón gconradh anseo” i mbuntásc an tsiopa. Tá an nasc feidhme dlíthiúil seo neamhspleách ar an lua margaíochta Joobox.
+019	Nóta comhlíonta AE (2026):
+020	Faigheann gach teanga ghníomhach siopa a cosán cairdiúil logánaithe féin. Fanann URLanna iontrála neodracha ó thaobh teanga ar fáil do mhodúil sheachtracha liosta nasc. Tar éis imlonnaithe, tástáil an dá phróiseas i ngach teanga ghníomhach.
+021	Ríomhphost
+022	Ríomhphoist in aghaidh an ordaithe / an lae
+023	Ríomhphoist in aghaidh an ordaithe / na huaire
+024	Cumasaithe
+025	Cumasaíonn sé an fhoirm dhíreach ar líne chun tarraingt siar nach n-éilíonn cuntas custaiméara ná rochtain ar ríomhphost bunaidh an ordaithe. Ná díchumasaigh í ach amháin tar éis athbhreithniú dlíthiúil don mhargadh áirithe.
+026	Críochnaíonn sé seisiún aoi fíoraithe tar éis na tréimhse neamhghníomhaíochta seo. Raon ionchais: 5–240 nóiméad; réamhshocrú molta: 30.
+027	Cúltaca Béarla
+028	Cuir isteach URL iomlán HTTPS an bheartais phríobháideachais a mhíníonn próiseáil sonraí pearsanta chun tarraingtí siar a fháil agus a láimhseáil.
+029	Cuir isteach an seoladh cruinn agus na treoracha praiticiúla chun earraí a thabhairt ar ais. Níor cheart do na treoracha coinníollacha a fhorchur a chuireann srian neamhdhleathach ar cheart tarraingthe siar an tomhaltóra.
+030	Cuir isteach an t-aitheantóir atá riachtanach i ndlínse an díoltóra, mar shampla uimhir chuideachta, uimhir CBL nó uimhir clárlainne tráchtála.
+031	Cuir isteach ainm dlíthiúil iomlán nó ainm cláraithe gnó an díoltóra, ní ainm sholáthraí an mhodúil. Beidh sé le feiceáil san fhoirm, sa ríomhphost admhála agus sa PDF.
+032	Cuir isteach oifig chláraithe nó seoladh gnó an díoltóra go díreach mar ba cheart é a bheith sa doiciméad don tomhaltóir.
+033	Nasc buntáisc (coinnigh cumasaithe do chonarthaí B2C ar líne lena mbaineann)
+034	Le haghaidh suiteáil PrestaShop, ná húsáid “Source code ZIP” uathoibríoch GitHub. Ná húsáid ach an comhad ZIP suiteála ó shócmhainní na heisiúna.
+035	Maidir le cianchonarthaí B2C lena mbaineann a tugadh i gcrích trí chomhéadan ar líne, d'fhéadfadh díchumasú nó cur i bhfolach na feidhme dírí tarraingthe siar teacht salach ar Airteagal 11a de Threoir 2011/83/AE arna leasú le Treoir (AE) 2023/2673. Ní mór an cur chun feidhme náisiúnta a athbhreithniú fós do gach margadh.
+036	Infhaighteacht ghinearálta agus dhlíthiúil
+037	Faigh tacaíocht Joobox
+038	Déantar seiceálacha GitHub ar a mhéad uair amháin gach sé huaire mura n-athnuachan de láimh iad. Ní íoslódálann ná ní shuiteálann an modúl cód go huathoibríoch riamh.
+039	URL cron óstála (rúnda):
+040	An fad a bhíonn an nasc rochtana aonuaire sa ríomhphost inúsáidte. Raon ionchais: 5–240 nóiméad; réamhshocrú molta: 30.
+041	San áireamh
+042	JOOIM Withdrawal – Tarraingt siar ó chonradh ar líne
+043	Tacaíocht Joobox don mhodúl seo
+044	Teanga
+045	URLanna neodracha ó thaobh teanga do liostaí seachtracha nasc:
+046	Seiceáil dheireanach
+047	An leagan is déanaí ar GitHub
+048	Naisc do theangacha gníomhacha an tsiopa
+049	Logchaighdeán
+050	Bailíocht an naisc aonuaire (nóiméid)
+051	CLI cothabhála:
+052	Príomhlasc do na próisis phoiblí tarraingthe siar agus do na naisc tarraingthe siar a fheiceann custaiméirí. Ní scriosann ná ní athraíonn díchumasú tarraingtí siar a fuarthas cheana.
+053	Uasmhéid iarrataí ar nasc rochtana a bhaineann leis an tagairt ordaithe normalaithe chéanna laistigh de 24 uair.
+054	Uasmhéid iarrataí ar nasc rochtana a bhaineann leis an tagairt ordaithe normalaithe chéanna laistigh d'uair amháin. Cosnaíonn sé seo bosca poist an chustaiméara ar theachtaireachtaí arís agus arís eile.
+055	Uasfhad nóta an chustaiméara
+056	Uasmhéid carachtar gnáth-théacs sa nóta roghnach custaiméara. Ní ghlactar le HTML. Réamhshocrú molta: 2000.
+057	Uasmhéid iarrataí rochtana de réir tagartha ordaithe ó sheoladh IP bréagainmnithe amháin laistigh de 15 nóiméad. Úsáideann cuardaigh rathúla agus neamhrathúla an teorainn chéanna.
+058	Uasmhéid iarrataí rochtana de réir tagartha ordaithe ó sheoladh IP bréagainmnithe amháin laistigh de 24 uair. Ní stóráiltear an seoladh IP amh sa taifead dlíthiúil tarraingthe siar.
+059	Uastréimhse iomlán seisiúin aoi fíoraithe fiú nuair a bhíonn an custaiméir gníomhach. Raon ionchais: 15–1440 nóiméad; réamhshocrú molta: 120.
+060	An mhoill íosta sular féidir ríomhphost rochtana eile a iarraidh don tagairt ordaithe chéanna. Réamhshocrú molta: 60 soicind.
+061	Scriosadh sonraí an mhodúil go buan.
+062	Modúl cumasaithe
+063	Tá an modúl cothrom le dáta.
+064	Níl
+065	Níor aimsíodh aon teanga ghníomhach siopa.
+066	Ní scriostar aon sonraí mura bhfuil an luach go díreach DELETE.
+067	Coinníonn gnáthdhíshuiteáil an mhodúil taifid tarraingthe siar. Baineann an gníomh millteach seo táblaí uile an mhodúil.
+068	Líon na n-iarrachtaí uathoibríocha eile tar éis do ríomhphost admhála teip. Fanann an tarraingt siar bailí fiú má theipeann ar gach iarracht ríomhphoist.
+069	Oscail eisiúintí GitHub
+070	Oscail tarraingtí siar
+071	Osclaíonn sé liosta Back Office de na tarraingtí siar a fuarthas, a stádas, doiciméid, taifid aisíocaíochta agus stair iniúchta.
+072	Uimhir roghnach seirbhíse custaiméara a thaispeántar san admháil agus sa PDF. Ní úsáidtear í chun tarraingt siar a fhíordheimhniú.
+073	Cnaipe i sonraí an ordaithe
+074	Próiseas de réir tagartha ordaithe
+075	Tá PHP 8.1 nó níos nuaí riachtanach.
+076	Glanadh buan sonraí
+077	Scrios sonraí uile an mhodúil go buan
+078	Fón
+079	An modh is fearr le haghaidh cothabhála sceidealaithe. Baineann sé taifid shealadacha atá imithe in éag, déanann sé iarracht eile ar admhálacha sa scuaine agus próiseálann sé tascanna coinneála.
+080	URL an bheartais phríobháideachais
+081	Iontráil phoiblí:
+082	Deimhniú glanta
+083	Réidh. Tá na luachanna slándála agus hookanna modúil riachtanacha ar fáil.
+084	Réimír tagartha
+085	Athnuaigh stádas an nuashonraithe
+086	Seoladh cláraithe
+087	Iarrataí in aghaidh IP / 15 nóiméad
+088	Iarrataí in aghaidh IP / lá
+089	Moill athsheolta (soicindí)
+090	Seoladh / treoracha fillte
+091	Cumraíocht ama rite:
+092	Sábháil socruithe
+093	Feidhmiú agus riar slán ar líne ar cheart tarraingthe siar an tomhaltóra.
+094	Teorainneacha slándála, seisiúin agus mí-úsáide
+095	Teorainn iomlán seisiúin (nóiméid)
+096	Teorainn neamhghníomhaíochta seisiúin (nóiméid)
+097	Sábháladh na socruithe.
+098	Cód gearr a úsáidtear ag tús tagairtí tarraingthe siar. Ná húsáid ach litreacha, digití agus fleiscíní, mar shampla WD. Ní athraítear tagairtí tarraingthe siar atá ann cheana riamh.
+099	Níorbh fhéidir roinnt riachtanas ama rite a shioncronú. Athbhreithnigh logaí PrestaShop roimh úsáid phoiblí.
+100	Tosaíonn sé an próiseas slán de réir tagartha ordaithe. Ní chuireann an custaiméir isteach ach an tagairt phoiblí ordaithe; fanann sonraí ordaithe agus pearsanta i bhfolach go dtí go ndeimhnítear an nasc aonuaire sa ríomhphost.
+101	Is iad 8.1 go 9.1 na leaganacha PrestaShop a dtacaítear leo.
+102	Tá na luachanna réamhshocraithe coimeádach d'aon ghnó. Ná méadaigh teorainneacha ach tar éis athbhreithniú a dhéanamh ar thrácht iarbhír agus ar logaí mí-úsáide; d'fhéadfadh teorainneacha ró-ísle tomhaltóirí dlisteanacha a bhlocáil.
+103	Sainaithníonn na luachanna seo an díoltóir iarbhír a oibríonn an siopa roghnaithe. Stóráiltear iad de réir siopa in multistore agus cuirtear i gcló iad in admhálacha custaiméara agus i bhfianaise PDF.
+104	Cuirtear an modúl GitHub saor in aisce seo ar fáil gan tacaíocht theicniúil aonair. Tá suiteáil, cumraíocht, tástáil táirgeachta, nuashonruithe agus fabhtcheartú ar fáil do chustaiméirí a úsáideann Joobox PrestaShop Cloud nó seirbhís íoctha eile a comhaontaíodh go sainráite le JOO INTERNET MEDIA LTD.
+105	Sonraí an trádálaí – an siopa reatha
+106	Ainm an trádálaí
+107	Aistriúchán
+108	Clóscríobh DELETE
+109	Clóscríobh DELETE chun scriosadh buan sonraí a dheimhniú.
+110	Clóscríobh an focal cruinn DELETE chun gach tarraingt siar, doiciméad, stair iniúchta, taifead rochtana agus aisíocaíochta a bhaint. Ní féidir an gníomh seo a chealú agus níl sé riachtanach le haghaidh gnáthnuashonrú nó athshuiteáil modúil.
+111	Níorbh fhéidir an leagan is déanaí ó GitHub a fhíorú. Seiceáil na heisiúintí de láimh.
+112	Anaithnid
+113	Seiceáil nuashonraithe
+114	Theip ar an seiceáil nuashonraithe: %error%
+115	Stádas nuashonraithe
+116	Úsáid na URLanna seo i modúil nach soláthraíonn ach réimse URL amháin do gach teanga. Roghnaíonn an controller iontrála teanga reatha nó roghnaithe an tsiopa agus atreoraíonn sé chuig an gcosán cairdiúil logánaithe.
+117	Ná húsáid an URL seo ach nuair nach féidir leis an tseirbhís óstála an t-ordú CLI a rith. Caith leis an token mar fhocal faire: ná foilsigh é, ná seol le ríomhphost é agus ná cuir i monatóireacht phoiblí é.
+118	Ná húsáid é seo ach i suiteáil tástála indiúscartha.
+119	Tá
+120	Socruithe Back Office amháin

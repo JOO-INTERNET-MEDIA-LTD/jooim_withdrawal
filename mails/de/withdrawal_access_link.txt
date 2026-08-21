@@ -1,0 +1,8 @@
+Guten Tag {firstname},
+
+Über diesen Link gelangen Sie zur sicheren Online-Widerrufsfunktion:
+Zum Widerruf fortfahren: {access_url}
+
+Der Link ist {expires_minutes} Minuten gültig. Das bloße Öffnen verbraucht ihn nicht; die Fortsetzung wird erst auf der nächsten Seite bestätigt.
+
+Wenn Sie diesen Link nicht angefordert haben, können Sie diese Nachricht ignorieren.

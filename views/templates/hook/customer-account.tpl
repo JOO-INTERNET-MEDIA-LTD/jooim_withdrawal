@@ -1,0 +1,1 @@
+<a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="jooim-withdrawal-account-link" href="{$withdrawal_url|escape:'htmlall':'UTF-8'}"><span class="link-item"><i class="material-icons">assignment_return</i>{l s='Contract withdrawal' d='Modules.Jooimwithdrawal.Shop'}</span></a>

@@ -1,0 +1,8 @@
+services:
+  _defaults:
+    public: true
+
+  jooim_withdrawal.command.maintenance:
+    class: JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Command\MaintenanceCommand
+    tags:
+      - { name: 'console.command' }

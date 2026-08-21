@@ -1,0 +1,9 @@
+Die Erstattung wurde als durchgeführt erfasst.
+Widerrufsreferenz: {withdrawal_reference}
+Bestellung / Vertrag: {order_reference}
+Status: {status}
+
+Mitteilung des Unternehmers:
+{public_message}
+
+Kontakt des Unternehmers: {merchant_email}

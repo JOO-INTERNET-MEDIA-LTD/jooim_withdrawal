@@ -1,0 +1,120 @@
+001	En ny modulversion er tilgængelig.
+002	Antal nye forsøg på at sende kvittering
+003	Tilføjer et punkt om fortrydelse i kundens Min konto-område. Kunden kan stadig bruge det offentlige forløb, når ordren ikke er synlig på kontoen.
+004	Tilføjer knappen »Fortryd aftalen« til detaljerne for en ordre, der tilhører den indloggede kunde. Ejerskabet kontrolleres på serveren.
+005	Gør det muligt for forbrugeren at afgive en utvetydig meddelelse om fortrydelse uden at logge ind eller få vist ordredata. Bevar funktionen tilgængelig for relevante online B2C-aftaler.
+006	Vedhæft PDF-kvittering
+007	Vedhæfter den uforanderlige PDF-bekræftelse af fortrydelsen til kvitteringsmailen. Deaktivering af vedhæftningen fjerner ikke den beskyttede PDF, der er gemt sammen med sagen.
+008	Sager:
+009	Virksomhedsidentifikator
+010	Aktuel modulversion
+011	Link på kundekontoen
+012	Kundevendt kontaktadresse til kommunikation om fortrydelse. Brug en aktivt overvåget postkasse; indtast ikke kundens e-mailadresse her.
+013	Direkte funktion efter artikel 11a
+014	Direkte fortrydelse
+015	Direkte fortrydelsesfunktion:
+016	Deaktiveret
+017	Deaktiveret (juridisk vurdering påkrævet)
+018	Viser det kundevendte link »Fortryd aftalen her« i butikkens sidefod. Dette juridiske funktionslink er uafhængigt af Joobox-markedsføringskrediteringen.
+019	Bemærkning om EU-overholdelse (2026):
+020	Hvert aktivt butikssprog får sin egen lokaliserede læsevenlige sti. Sprogneutrale indgangs-URL'er er fortsat tilgængelige for eksterne linklistemoduler. Test begge forløb på hvert aktivt sprog efter implementeringen.
+021	E-mail
+022	E-mails pr. ordre / dag
+023	E-mails pr. ordre / time
+024	Aktiveret
+025	Aktiverer den direkte onlinefortrydelsesformular, som ikke kræver en kundekonto eller adgang til den oprindelige ordre-e-mail. Deaktiver den kun efter en markedsspecifik juridisk vurdering.
+026	Afslutter en verificeret gæstesession efter denne periode uden aktivitet. Forventet interval: 5–240 minutter; anbefalet standard: 30.
+027	Engelsk reserveoversættelse
+028	Indtast den absolutte HTTPS-URL til privatlivspolitikken, der forklarer behandlingen af personoplysninger ved modtagelse og håndtering af fortrydelser.
+029	Indtast den nøjagtige adresse og praktiske vejledning til returnering af varer. Vejledningen må ikke pålægge vilkår, som ulovligt begrænser forbrugerens fortrydelsesret.
+030	Indtast den identifikator, der kræves i sælgerens jurisdiktion, f.eks. virksomhedsnummer, momsnummer eller handelsregisternummer.
+031	Indtast sælgerens fulde juridiske eller registrerede virksomhedsnavn, ikke moduludbyderens. Det vises i formularen, kvitteringsmailen og PDF-filen.
+032	Indtast sælgerens registrerede hjemsted eller virksomhedsadresse præcis, som den skal fremgå af forbrugerdokumentet.
+033	Link i sidefod (bevar aktiveret for relevante online B2C-aftaler)
+034	Ved installation i PrestaShop må GitHubs automatiske »Source code ZIP« ikke bruges. Brug kun installations-ZIP-filen fra udgivelsesaktiverne.
+035	For relevante B2C-fjernaftaler indgået via en onlinegrænseflade kan deaktivering eller skjulning af den direkte fortrydelsesfunktion være i strid med artikel 11a i direktiv 2011/83/EU som ændret ved direktiv (EU) 2023/2673. Den nationale gennemførelse skal stadig vurderes for hvert marked.
+036	Generel og juridisk tilgængelighed
+037	Få Joobox-support
+038	GitHub-kontroller udføres højst én gang hver sjette time, medmindre de opdateres manuelt. Modulet downloader eller installerer aldrig kode automatisk.
+039	Hosting-cron-URL (hemmelig):
+040	Hvor længe engangslinket i e-mailen kan bruges. Forventet interval: 5–240 minutter; anbefalet standard: 30.
+041	Inkluderet
+042	JOOIM Withdrawal – Onlinefortrydelse af aftale
+043	Joobox-support til dette modul
+044	Sprog
+045	Sprogneutrale URL'er til eksterne linklister:
+046	Senest kontrolleret
+047	Seneste version på GitHub
+048	Links til aktive butikssprog
+049	Landestandard
+050	Gyldighed af magic link (minutter)
+051	Vedligeholdelses-CLI:
+052	Hovedkontakt for de offentlige fortrydelsesforløb og kundevendte fortrydelseslinks. Deaktivering sletter eller ændrer ikke allerede modtagne fortrydelser.
+053	Maksimalt antal anmodninger om adgangslink knyttet til samme normaliserede ordrereference inden for 24 timer.
+054	Maksimalt antal anmodninger om adgangslink knyttet til samme normaliserede ordrereference inden for én time. Dette beskytter kundens postkasse mod gentagne meddelelser.
+055	Maksimal længde på kundebemærkning
+056	Maksimalt antal almindelige teksttegn i den valgfri kundebemærkning. HTML accepteres ikke. Anbefalet standard: 2000.
+057	Maksimalt antal adgangsanmodninger efter ordrereference fra én pseudonymiseret IP-adresse inden for 15 minutter. Vellykkede og mislykkede opslag deler samme grænse.
+058	Maksimalt antal adgangsanmodninger efter ordrereference fra én pseudonymiseret IP-adresse inden for 24 timer. Den rå IP-adresse gemmes ikke i den juridiske fortrydelsesregistrering.
+059	Maksimal samlet levetid for en verificeret gæstesession, selv når kunden fortsat er aktiv. Forventet interval: 15–1440 minutter; anbefalet standard: 120.
+060	Mindste ventetid, før der kan anmodes om endnu en adgangsmail for samme ordrereference. Anbefalet standard: 60 sekunder.
+061	Modulets data blev slettet permanent.
+062	Modul aktiveret
+063	Modulet er opdateret.
+064	Nej
+065	Der blev ikke fundet aktive butikssprog.
+066	Ingen data slettes, medmindre værdien er præcis DELETE.
+067	Normal afinstallation af modulet bevarer fortrydelsesregistreringerne. Denne destruktive handling fjerner alle modulets tabeller.
+068	Antal automatiske genforsøg efter en mislykket kvitteringsmail. Fortrydelsen forbliver gyldig, selv når alle e-mailforsøg mislykkes.
+069	Åbn GitHub-udgivelser
+070	Åbn fortrydelser
+071	Åbner Back Office-listen over modtagne fortrydelser, deres status, dokumenter, refusionsregistreringer og revisionshistorik.
+072	Valgfrit kundeservicetelefonnummer, der vises i kvitteringen og PDF-filen. Det bruges ikke til at godkende en fortrydelse.
+073	Knap i ordredetaljer
+074	Forløb efter ordrereference
+075	PHP 8.1 eller nyere er påkrævet.
+076	Permanent datasletning
+077	Slet alle moduldata permanent
+078	Telefon
+079	Foretrukken metode til planlagt vedligeholdelse. Den fjerner udløbne midlertidige registreringer, forsøger igen med ventende kvitteringer og behandler opbevaringsopgaver.
+080	URL til privatlivspolitik
+081	Offentlig indgang:
+082	Bekræftelse af sletning
+083	Klar. Nødvendige sikkerhedsværdier og modulhooks er tilgængelige.
+084	Referencepræfiks
+085	Opdater opdateringsstatus
+086	Registreret adresse
+087	Anmodninger pr. IP / 15 minutter
+088	Anmodninger pr. IP / dag
+089	Ventetid mellem gensendelser (sekunder)
+090	Returadresse / vejledning
+091	Kørselskonfiguration:
+092	Gem indstillinger
+093	Sikker onlineudøvelse og administration af forbrugerens fortrydelsesret.
+094	Sikkerheds-, sessions- og misbrugsgrænser
+095	Absolut sessionsgrænse (minutter)
+096	Grænse for sessionsinaktivitet (minutter)
+097	Indstillingerne blev gemt.
+098	Kort kode i begyndelsen af fortrydelsesreferencer. Brug kun bogstaver, tal og bindestreger, f.eks. WD. Eksisterende fortrydelsesreferencer ændres aldrig.
+099	Nogle kørselskrav kunne ikke synkroniseres. Gennemgå PrestaShop-loggene før offentlig brug.
+100	Starter det sikre forløb efter ordrereference. Kunden indtaster kun den offentlige ordrereference; ordre- og personoplysninger forbliver skjult, indtil engangslinket i e-mailen er bekræftet.
+101	Understøttede PrestaShop-versioner er 8.1 til 9.1.
+102	Standardværdierne er bevidst forsigtige. Forøg kun grænserne efter gennemgang af reel trafik og misbrugslogge; for lave værdier kan blokere legitime forbrugere.
+103	Disse værdier identificerer den faktiske sælger, som driver den valgte butik. De gemmes pr. butik i multistore og udskrives i kundekvitteringer og PDF-dokumentation.
+104	Dette gratis GitHub-modul leveres uden individuel teknisk support. Installation, konfiguration, produktionstest, opdateringer og fejlfinding tilbydes kunder, der bruger Joobox PrestaShop Cloud eller en anden betalt tjeneste, som udtrykkeligt er aftalt med JOO INTERNET MEDIA LTD.
+105	Sælgeroplysninger – aktuel butik
+106	Sælgernavn
+107	Oversættelse
+108	Skriv DELETE
+109	Skriv DELETE for at bekræfte permanent sletning af data.
+110	Skriv det nøjagtige ord DELETE for at fjerne alle fortrydelser, dokumenter, revisionshistorik, adgangsregistreringer og refusionsregistreringer. Handlingen kan ikke fortrydes og er ikke nødvendig ved en almindelig modulopdatering eller geninstallation.
+111	Den seneste version kunne ikke kontrolleres på GitHub. Kontroller udgivelserne manuelt.
+112	Ukendt
+113	Opdateringskontrol
+114	Opdateringskontrol mislykkedes: %error%
+115	Opdateringsstatus
+116	Brug disse URL'er i moduler, der kun har ét URL-felt til alle sprog. Indgangscontrolleren vælger butikkens aktuelle eller foretrukne sprog og viderestiller til den lokaliserede læsevenlige sti.
+117	Brug kun denne URL, når hostingtjenesten ikke kan køre CLI-kommandoen. Behandl tokenet som en adgangskode: offentliggør det ikke, send det ikke via e-mail, og placer det ikke i offentlig overvågning.
+118	Brug kun dette i en midlertidig testinstallation.
+119	Ja
+120	Kun Back Office-indstillinger

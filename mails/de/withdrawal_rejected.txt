@@ -1,0 +1,9 @@
+Der Unternehmer hat eine Ablehnung des Falls erfasst; die Begründung steht unten.
+Widerrufsreferenz: {withdrawal_reference}
+Bestellung / Vertrag: {order_reference}
+Status: {status}
+
+Mitteilung des Unternehmers:
+{public_message}
+
+Kontakt des Unternehmers: {merchant_email}

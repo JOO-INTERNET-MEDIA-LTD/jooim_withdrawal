@@ -1,0 +1,120 @@
+001	Moduulista on saatavilla uusi versio.
+002	Vahvistuksen uudelleenyritysten määrä
+003	Lisää peruuttamista koskevan kohdan asiakkaan Oma tili -alueelle. Asiakas voi edelleen käyttää julkista menettelyä, jos tilausta ei näy tilillä.
+004	Lisää kirjautuneelle asiakkaalle kuuluvan tilauksen tietoihin painikkeen ”Peruuta sopimus”. Omistajuus tarkistetaan palvelimella.
+005	Antaa kuluttajalle mahdollisuuden tehdä yksiselitteinen peruuttamisilmoitus kirjautumatta sisään tai näyttämättä tilaustietoja. Pidä toiminto saatavilla soveltuville verkossa tehdyille B2C-sopimuksille.
+006	Liitä PDF-vahvistus
+007	Liittää muuttumattoman PDF-peruuttamisvahvistuksen vahvistussähköpostiin. Liitteen poistaminen käytöstä ei poista tapaukseen tallennettua suojattua PDF-tiedostoa.
+008	Tapaukset:
+009	Yrityksen tunniste
+010	Moduulin nykyinen versio
+011	Linkki asiakastilillä
+012	Asiakkaalle näkyvä yhteysosoite peruuttamiseen liittyvää viestintää varten. Käytä aktiivisesti valvottua postilaatikkoa; älä kirjoita tähän asiakkaan sähköpostiosoitetta.
+013	11 a artiklan suora toiminto
+014	Suora peruuttaminen
+015	Suoran peruuttamisen toiminto:
+016	Poistettu käytöstä
+017	Poistettu käytöstä (oikeudellinen arviointi vaaditaan)
+018	Näyttää asiakkaalle linkin ”Peruuta sopimus tästä” kaupan alatunnisteessa. Tämä oikeudellisen toiminnon linkki on riippumaton Jooboxin markkinointiviittauksesta.
+019	EU-vaatimustenmukaisuutta koskeva huomautus (2026):
+020	Jokainen aktiivinen kaupan kieli saa oman lokalisoidun käyttäjäystävällisen polkunsa. Kielestä riippumattomat aloitus-URL-osoitteet säilyvät ulkoisten linkkiluettelomoduulien käytettävissä. Testaa molemmat menettelyt jokaisella aktiivisella kielellä käyttöönoton jälkeen.
+021	Sähköposti
+022	Sähköposteja tilausta kohti / päivä
+023	Sähköposteja tilausta kohti / tunti
+024	Käytössä
+025	Ottaa käyttöön suoran verkkoperuuttamislomakkeen, joka ei edellytä asiakastiliä tai pääsyä alkuperäiseen tilaussähköpostiin. Poista se käytöstä vain markkinakohtaisen oikeudellisen arvioinnin jälkeen.
+026	Päättää vahvistetun vierasistunnon tämän toimettomuusajan jälkeen. Odotettu alue: 5–240 minuuttia; suositeltu oletus: 30.
+027	Englanninkielinen varateksti
+028	Anna tietosuojakäytännön täydellinen HTTPS-URL-osoite. Käytännön on selitettävä henkilötietojen käsittely peruuttamisten vastaanottamista ja käsittelyä varten.
+029	Anna tavaroiden palauttamisen tarkka osoite ja käytännön ohjeet. Ohjeissa ei saa asettaa ehtoja, jotka rajoittavat lainvastaisesti kuluttajan peruuttamisoikeutta.
+030	Anna myyjän lainkäyttöalueella vaadittu tunniste, esimerkiksi yritystunnus, ALV-tunniste tai kaupparekisterinumero.
+031	Anna myyjän täydellinen virallinen tai rekisteröity toiminimi, ei moduulin toimittajan nimeä. Se näkyy lomakkeessa, vahvistussähköpostissa ja PDF-tiedostossa.
+032	Anna myyjän rekisteröity toimipaikka tai liikeosoite täsmälleen siinä muodossa kuin sen tulee näkyä kuluttaja-asiakirjassa.
+033	Alatunnisteen linkki (pidä käytössä soveltuville verkossa tehdyille B2C-sopimuksille)
+034	Älä käytä PrestaShop-asennukseen GitHubin automaattista ”Source code ZIP” -tiedostoa. Käytä vain julkaisun aineistossa olevaa asennus-ZIP-tiedostoa.
+035	Soveltuvissa verkkokäyttöliittymän kautta tehdyissä B2C-etäsopimuksissa suoran peruuttamistoiminnon poistaminen käytöstä tai piilottaminen voi olla ristiriidassa direktiivin 2011/83/EU 11 a artiklan kanssa, sellaisena kuin se on muutettuna direktiivillä (EU) 2023/2673. Kansallinen täytäntöönpano on silti tarkistettava jokaisella markkina-alueella.
+036	Yleinen ja oikeudellinen saatavuus
+037	Hanki Joobox-tukea
+038	GitHub-tarkistus tehdään enintään kerran kuudessa tunnissa, ellei sitä päivitetä käsin. Moduuli ei koskaan lataa tai asenna koodia automaattisesti.
+039	Palvelun cron-URL (salainen):
+040	Kuinka kauan sähköpostin kertakäyttöinen pääsylinkki on käytettävissä. Odotettu alue: 5–240 minuuttia; suositeltu oletus: 30.
+041	Sisältyy
+042	JOOIM Withdrawal – Sopimuksen peruuttaminen verkossa
+043	Joobox-tuki tälle moduulille
+044	Kieli
+045	Kielestä riippumattomat URL-osoitteet ulkoisille linkkiluetteloille:
+046	Tarkistettu viimeksi
+047	Uusin versio GitHubissa
+048	Linkit kaupan aktiivisille kielille
+049	Alueasetus
+050	Kertakäyttölinkin voimassaolo (minuuttia)
+051	Ylläpidon CLI:
+052	Julkisten peruuttamismenettelyjen ja asiakkaalle näkyvien peruuttamislinkkien pääkytkin. Sen poistaminen käytöstä ei poista tai muuta jo vastaanotettuja peruuttamisia.
+053	Samaan normalisoituun tilausviitteeseen liittyvien pääsylinkkipyyntöjen enimmäismäärä 24 tunnin aikana.
+054	Samaan normalisoituun tilausviitteeseen liittyvien pääsylinkkipyyntöjen enimmäismäärä yhden tunnin aikana. Tämä suojaa asiakkaan postilaatikkoa toistuvilta viesteiltä.
+055	Asiakkaan huomautuksen enimmäispituus
+056	Valinnaisessa asiakkaan huomautuksessa sallittujen tavallisten tekstimerkkien enimmäismäärä. HTML:ää ei hyväksytä. Suositeltu oletus: 2000.
+057	Yhdestä pseudonymisoidusta IP-osoitteesta tehtävien tilausviitteen pääsypyyntöjen enimmäismäärä 15 minuutin aikana. Onnistuneet ja epäonnistuneet haut käyttävät samaa rajaa.
+058	Yhdestä pseudonymisoidusta IP-osoitteesta tehtävien tilausviitteen pääsypyyntöjen enimmäismäärä 24 tunnin aikana. Käsittelemätöntä IP-osoitetta ei tallenneta oikeudelliseen peruuttamisrekisteriin.
+059	Vahvistetun vierasistunnon enimmäiskesto myös asiakkaan pysyessä aktiivisena. Odotettu alue: 15–1440 minuuttia; suositeltu oletus: 120.
+060	Vähimmäisviive ennen uuden pääsysähköpostin pyytämistä samalle tilausviitteelle. Suositeltu oletus: 60 sekuntia.
+061	Moduulin tiedot poistettiin pysyvästi.
+062	Moduuli käytössä
+063	Moduuli on ajan tasalla.
+064	Ei
+065	Aktiivisia kaupan kieliä ei löytynyt.
+066	Tietoja ei poisteta, ellei arvo ole täsmälleen DELETE.
+067	Moduulin tavallinen asennuksen poisto säilyttää peruuttamisrekisterit. Tämä tuhoava toiminto poistaa kaikki moduulin taulut.
+068	Automaattisten uudelleenlähetysyritysten määrä vahvistussähköpostin epäonnistumisen jälkeen. Peruuttaminen pysyy voimassa, vaikka kaikki sähköpostiyritykset epäonnistuisivat.
+069	Avaa GitHub-julkaisut
+070	Avaa peruuttamiset
+071	Avaa Back Office -luettelon vastaanotetuista peruuttamisista, niiden tiloista, asiakirjoista, hyvitystiedoista ja tarkastushistoriasta.
+072	Valinnainen asiakaspalvelun puhelinnumero, joka näkyy vahvistuksessa ja PDF-tiedostossa. Sitä ei käytetä peruuttamisen todentamiseen.
+073	Painike tilauksen tiedoissa
+074	Tilausviitteeseen perustuva menettely
+075	PHP 8.1 tai uudempi vaaditaan.
+076	Tietojen pysyvä tyhjennys
+077	Poista kaikki moduulin tiedot pysyvästi
+078	Puhelin
+079	Suositeltu ajoitetun ylläpidon menetelmä. Se poistaa vanhentuneet väliaikaiset tietueet, yrittää odottavia vahvistuksia uudelleen ja käsittelee säilytystehtäviä.
+080	Tietosuojakäytännön URL
+081	Julkinen aloitus:
+082	Tyhjennyksen vahvistus
+083	Valmis. Vaaditut suojausarvot ja moduulin hookit ovat käytettävissä.
+084	Viitteen etuliite
+085	Päivitä päivityksen tila
+086	Rekisteröity osoite
+087	Pyyntöjä IP:tä kohti / 15 minuuttia
+088	Pyyntöjä IP:tä kohti / päivä
+089	Uudelleenlähetyksen odotusaika (sekuntia)
+090	Palautusosoite / ohjeet
+091	Ajonaikainen määritys:
+092	Tallenna asetukset
+093	Kuluttajan peruuttamisoikeuden turvallinen käyttäminen ja hallinta verkossa.
+094	Suojaus-, istunto- ja väärinkäyttörajat
+095	Istunnon ehdoton aikaraja (minuuttia)
+096	Istunnon toimettomuusraja (minuuttia)
+097	Asetukset tallennettiin.
+098	Lyhyt koodi peruuttamisviitteiden alussa. Käytä vain kirjaimia, numeroita ja yhdysmerkkejä, esimerkiksi WD. Olemassa olevia peruuttamisviitteitä ei koskaan muuteta.
+099	Joitakin ajonaikaisia vaatimuksia ei voitu synkronoida. Tarkista PrestaShop-lokit ennen julkista käyttöä.
+100	Käynnistää suojatun tilausviitteeseen perustuvan menettelyn. Asiakas syöttää vain julkisen tilausviitteen; tilaus- ja henkilötiedot pysyvät piilossa, kunnes sähköpostin kertakäyttölinkki vahvistetaan.
+101	Tuetut PrestaShop-versiot ovat 8.1–9.1.
+102	Oletusarvot ovat tarkoituksella varovaisia. Nosta rajoja vasta todellisen liikenteen ja väärinkäyttölokien tarkastelun jälkeen; liian matalat rajat voivat estää oikeutettuja kuluttajia.
+103	Nämä arvot yksilöivät valittua kauppaa tosiasiallisesti ylläpitävän myyjän. Ne tallennetaan multistore-ympäristössä kauppakohtaisesti ja tulostetaan asiakkaan vahvistuksiin ja PDF-todisteeseen.
+104	Tämä ilmainen GitHub-moduuli toimitetaan ilman henkilökohtaista teknistä tukea. Asennus, määritys, tuotantotestaus, päivitykset ja vianmääritys ovat saatavilla Joobox PrestaShop Cloudia käyttäville asiakkaille tai muun JOO INTERNET MEDIA LTD:n kanssa nimenomaisesti sovitun maksullisen palvelun perusteella.
+105	Kauppiaan tiedot – nykyinen kauppa
+106	Kauppiaan nimi
+107	Käännös
+108	Kirjoita DELETE
+109	Vahvista tietojen pysyvä poistaminen kirjoittamalla DELETE.
+110	Kirjoita täsmälleen sana DELETE poistaaksesi kaikki peruuttamiset, asiakirjat, tarkastushistorian, pääsytiedot ja hyvitystiedot. Toimintoa ei voi perua, eikä sitä tarvita tavalliseen moduulin päivitykseen tai uudelleenasennukseen.
+111	Uusinta versiota ei voitu tarkistaa GitHubista. Tarkista julkaisut käsin.
+112	Tuntematon
+113	Päivitystarkistus
+114	Päivitystarkistus epäonnistui: %error%
+115	Päivityksen tila
+116	Käytä näitä URL-osoitteita moduuleissa, joissa on vain yksi URL-kenttä kaikille kielille. Aloituscontroller valitsee kaupan nykyisen tai ensisijaisen kielen ja ohjaa lokalisoituun käyttäjäystävälliseen polkuun.
+117	Käytä tätä URL-osoitetta vain, jos hosting-palvelu ei voi suorittaa CLI-komentoa. Käsittele tokenia salasanana: älä julkaise sitä, lähetä sitä sähköpostitse tai lisää sitä julkiseen valvontaan.
+118	Käytä tätä vain kertakäyttöisessä testiympäristössä.
+119	Kyllä
+120	Vain Back Office -asetukset

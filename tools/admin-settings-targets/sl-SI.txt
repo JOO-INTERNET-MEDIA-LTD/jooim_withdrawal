@@ -1,0 +1,120 @@
+001	Na voljo je nova različica modula.
+002	Število ponovnih poskusov pošiljanja potrditve
+003	Doda vnos za odstop v območje Moj račun kupca. Kupec lahko še vedno uporabi javni postopek, kadar naročilo ni vidno v računu.
+004	Doda gumb »Odstop od pogodbe« v podrobnosti naročila, ki pripada prijavljenemu kupcu. Lastništvo se preveri na strežniku.
+005	Potrošniku omogoča predložitev nedvoumne izjave o odstopu brez prijave ali prikaza podatkov naročila. Funkcijo ohranite dostopno za veljavne spletne pogodbe B2C.
+006	Priloži potrdilo PDF
+007	Potrditvenemu e-poštnemu sporočilu priloži nespremenljivo potrdilo PDF o odstopu. Izklop priloge ne izbriše zaščitenega PDF-ja, shranjenega pri zadevi.
+008	Zadeve:
+009	Identifikator podjetja
+010	Trenutna različica modula
+011	Povezava v računu kupca
+012	Kontaktni naslov, prikazan kupcu za komunikacijo o odstopu. Uporabite aktivno nadzorovan poštni predal; sem ne vnašajte e-pošte kupca.
+013	Neposredna funkcija iz člena 11a
+014	Neposredni odstop
+015	Funkcija neposrednega odstopa:
+016	Onemogočeno
+017	Onemogočeno (potreben je pravni pregled)
+018	V nogi trgovine prikaže kupcu namenjeno povezavo »Odstopite od pogodbe tukaj«. Ta povezava pravne funkcije je neodvisna od trženjske navedbe Joobox.
+019	Opomba o skladnosti s pravom EU (2026):
+020	Vsak aktivni jezik trgovine prejme svojo lokalizirano berljivo pot. Jezikovno nevtralni vstopni URL-ji ostanejo na voljo zunanjim modulom za sezname povezav. Po uvedbi preskusite oba postopka v vsakem aktivnem jeziku.
+021	E-pošta
+022	E-poštna sporočila na naročilo / dan
+023	E-poštna sporočila na naročilo / uro
+024	Omogočeno
+025	Omogoči neposredni spletni obrazec za odstop, ki ne zahteva računa kupca ali dostopa do izvirnega e-poštnega sporočila naročila. Onemogočite ga samo po pravnem pregledu za posamezni trg.
+026	Po tem obdobju nedejavnosti konča preverjeno sejo gosta. Pričakovani razpon: 5–240 minut; priporočena privzeta vrednost: 30.
+027	Nadomestno besedilo v angleščini
+028	Vnesite absolutni HTTPS URL pravilnika o zasebnosti, ki pojasnjuje obdelavo osebnih podatkov za sprejem in obravnavo odstopov.
+029	Vnesite točen naslov in praktična navodila za vračilo blaga. Navodila ne smejo določati pogojev, ki nezakonito omejujejo potrošnikovo pravico do odstopa.
+030	Vnesite identifikator, zahtevan v jurisdikciji prodajalca, na primer matično številko podjetja, ID za DDV ali številko poslovnega registra.
+031	Vnesite polno pravno ali registrirano poslovno ime prodajalca, ne dobavitelja modula. Prikazano je v obrazcu, potrditvenem e-poštnem sporočilu in PDF-ju.
+032	Vnesite registrirani sedež ali poslovni naslov prodajalca natanko tako, kot mora biti prikazan v dokumentu za potrošnika.
+033	Povezava v nogi (ohranite omogočeno za veljavne spletne pogodbe B2C)
+034	Za namestitev PrestaShop ne uporabljajte samodejnega »Source code ZIP« z GitHuba. Uporabite samo namestitveno datoteko ZIP iz sredstev izdaje.
+035	Za veljavne pogodbe B2C na daljavo, sklenjene prek spletnega vmesnika, je lahko onemogočanje ali skrivanje neposredne funkcije odstopa v nasprotju s členom 11a Direktive 2011/83/EU, kot je bila spremenjena z Direktivo (EU) 2023/2673. Nacionalno izvajanje je treba še preveriti za vsak trg.
+036	Splošna in pravna razpoložljivost
+037	Pridobi podporo Joobox
+038	Preverjanje GitHuba se izvede največ enkrat na šest ur, razen če ga ročno osvežite. Modul nikoli samodejno ne prenese ali namesti kode.
+039	URL gostiteljskega crona (skriven):
+040	Kako dolgo je enkratna povezava za dostop v e-poštnem sporočilu uporabna. Pričakovani razpon: 5–240 minut; priporočena privzeta vrednost: 30.
+041	Vključeno
+042	JOOIM Withdrawal – Spletni odstop od pogodbe
+043	Podpora Joobox za ta modul
+044	Jezik
+045	Jezikovno nevtralni URL-ji za zunanje sezname povezav:
+046	Nazadnje preverjeno
+047	Najnovejša različica na GitHubu
+048	Povezave za aktivne jezike trgovine
+049	Področne nastavitve
+050	Veljavnost enkratne povezave (minute)
+051	CLI za vzdrževanje:
+052	Glavno stikalo javnih postopkov odstopa in povezav za odstop, prikazanih kupcem. Onemogočanje ne izbriše ali spremeni že prejetih odstopov.
+053	Največje število zahtev za povezavo za dostop, povezanih z isto normalizirano referenco naročila v 24 urah.
+054	Največje število zahtev za povezavo za dostop, povezanih z isto normalizirano referenco naročila v eni uri. S tem se poštni predal kupca zaščiti pred ponavljajočimi se sporočili.
+055	Največja dolžina opombe kupca
+056	Največje število znakov navadnega besedila v neobvezni opombi kupca. HTML ni dovoljen. Priporočena privzeta vrednost: 2000.
+057	Največje število zahtev za dostop po referenci naročila z enega psevdonimiziranega naslova IP v 15 minutah. Uspešna in neuspešna iskanja uporabljajo isto omejitev.
+058	Največje število zahtev za dostop po referenci naročila z enega psevdonimiziranega naslova IP v 24 urah. Neobdelani naslov IP se ne shrani v pravni zapis odstopa.
+059	Najdaljša skupna življenjska doba preverjene seje gosta, tudi če je kupec še naprej aktiven. Pričakovani razpon: 15–1440 minut; priporočena privzeta vrednost: 120.
+060	Najkrajši zamik, preden se lahko za isto referenco naročila zahteva drugo e-poštno sporočilo za dostop. Priporočena privzeta vrednost: 60 sekund.
+061	Podatki modula so bili trajno izbrisani.
+062	Modul je omogočen
+063	Modul je posodobljen.
+064	Ne
+065	Ni bilo najdenih aktivnih jezikov trgovine.
+066	Podatki se ne izbrišejo, razen če je vrednost natanko DELETE.
+067	Običajna odstranitev modula ohrani zapise odstopov. To uničujoče dejanje odstrani vse tabele modula.
+068	Število samodejnih ponovnih poskusov po neuspešnem potrditvenem e-poštnem sporočilu. Odstop ostane veljaven, tudi če so vsi poskusi e-pošte neuspešni.
+069	Odpri izdaje GitHub
+070	Odpri odstope
+071	Odpre seznam prejetih odstopov v Back Office, njihova stanja, dokumente, zapise o vračilih in revizijsko zgodovino.
+072	Neobvezna telefonska številka službe za stranke, prikazana v potrditvi in PDF-ju. Ne uporablja se za preverjanje pristnosti odstopa.
+073	Gumb v podrobnostih naročila
+074	Postopek po referenci naročila
+075	Zahtevan je PHP 8.1 ali novejši.
+076	Trajno čiščenje podatkov
+077	Trajno izbriši vse podatke modula
+078	Telefon
+079	Prednostna metoda načrtovanega vzdrževanja. Odstrani potekle začasne zapise, ponovno poskusi poslati potrditve v čakalni vrsti in obdela naloge hrambe.
+080	URL pravilnika o zasebnosti
+081	Javni vstop:
+082	Potrditev čiščenja
+083	Pripravljeno. Zahtevane varnostne vrednosti in hooki modula so na voljo.
+084	Predpona reference
+085	Osveži stanje posodobitve
+086	Registrirani naslov
+087	Zahteve na IP / 15 minut
+088	Zahteve na IP / dan
+089	Čakanje pred ponovnim pošiljanjem (sekunde)
+090	Naslov / navodila za vračilo
+091	Konfiguracija med izvajanjem:
+092	Shrani nastavitve
+093	Varno spletno uveljavljanje in upravljanje potrošnikove pravice do odstopa.
+094	Omejitve varnosti, seje in zlorab
+095	Absolutna omejitev seje (minute)
+096	Omejitev nedejavnosti seje (minute)
+097	Nastavitve so shranjene.
+098	Kratka koda na začetku referenc odstopa. Uporabljajte samo črke, številke in vezaje, na primer WD. Obstoječe reference odstopa se nikoli ne spremenijo.
+099	Nekaterih zahtev med izvajanjem ni bilo mogoče uskladiti. Pred javno uporabo preglejte dnevnike PrestaShop.
+100	Začne varen postopek po referenci naročila. Kupec vnese samo javno referenco naročila; podatki naročila in osebni podatki ostanejo skriti, dokler ni potrjena enkratna povezava v e-poštnem sporočilu.
+101	Podprte različice PrestaShop so od 8.1 do 9.1.
+102	Privzete vrednosti so namenoma previdne. Omejitve povečajte šele po pregledu dejanskega prometa in dnevnikov zlorab; prenizke omejitve lahko blokirajo upravičene potrošnike.
+103	Te vrednosti identificirajo dejanskega prodajalca, ki upravlja izbrano trgovino. V okolju multistore se shranijo za vsako trgovino posebej in se natisnejo v potrditvah kupcu ter dokazilu PDF.
+104	Ta brezplačni modul GitHub je na voljo brez individualne tehnične podpore. Namestitev, konfiguracija, produkcijsko preskušanje, posodobitve in odpravljanje težav so na voljo strankam, ki uporabljajo Joobox PrestaShop Cloud ali drugo plačljivo storitev, izrecno dogovorjeno z JOO INTERNET MEDIA LTD.
+105	Podatki trgovca – trenutna trgovina
+106	Ime trgovca
+107	Prevod
+108	Vnesite DELETE
+109	Vnesite DELETE za potrditev trajnega izbrisa podatkov.
+110	Vnesite natančno besedo DELETE, da odstranite vse odstope, dokumente, revizijsko zgodovino, zapise dostopa in vračil. Dejanja ni mogoče razveljaviti in ni potrebno za običajno posodobitev ali ponovno namestitev modula.
+111	Najnovejše različice ni bilo mogoče preveriti na GitHubu. Izdaje preverite ročno.
+112	Neznano
+113	Preverjanje posodobitev
+114	Preverjanje posodobitev ni uspelo: %error%
+115	Stanje posodobitve
+116	Te URL-je uporabite v modulih, ki za vse jezike ponujajo samo eno polje URL. Vstopni controller izbere trenutni ali prednostni jezik trgovine in preusmeri na lokalizirano berljivo pot.
+117	Ta URL uporabite samo, kadar gostovanje ne more izvesti ukaza CLI. Token obravnavajte kot geslo: ne objavljajte ga, ne pošiljajte ga po e-pošti in ga ne vključujte v javno spremljanje.
+118	Uporabite samo v začasni preskusni namestitvi.
+119	Da
+120	Samo nastavitve Back Office

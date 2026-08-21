@@ -1,0 +1,9 @@
+Nous avons enregistré la réception des biens retournés.
+Référence de rétractation: {withdrawal_reference}
+Commande / contrat: {order_reference}
+Status: {status}
+
+Message du professionnel:
+{public_message}
+
+Contact du professionnel: {merchant_email}

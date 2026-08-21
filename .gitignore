@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+.idea/
+.vscode/
+.phpunit.result.cache
+composer.lock
+/var/documents/*
+/var/queue/*
+/var/temporary/*
+!/var/documents/.gitkeep
+!/var/queue/.gitkeep
+!/var/temporary/.gitkeep

@@ -1,0 +1,47 @@
+{
+  "name": "joo-internet-media/jooim-withdrawal",
+  "description": "Multilingual online contract withdrawal module for PrestaShop 8.1-9.1 with secure EU-oriented flows, immutable evidence and multistore administration",
+  "type": "prestashop-module",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "JooInternetMedia\\PrestaShop\\Module\\JooimWithdrawal\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "JOO INTERNET MEDIA LTD"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "prepend-autoloader": false
+  },
+  "keywords": [
+    "prestashop",
+    "prestashop-module",
+    "prestashop-8",
+    "prestashop-9",
+    "contract-withdrawal",
+    "online-withdrawal",
+    "consumer-rights",
+    "eu-consumer-law",
+    "multistore",
+    "joobox",
+    "odstupenie-od-zmluvy",
+    "odstoupeni-od-smlouvy",
+    "vertragswiderruf",
+    "retractation-du-contrat",
+    "odstapienie-od-umowy",
+    "desistimiento-del-contrato",
+    "recesso-dal-contratto"
+  ],
+  "homepage": "https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal",
+  "support": {
+    "issues": "https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal/issues",
+    "source": "https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal"
+  }
+}

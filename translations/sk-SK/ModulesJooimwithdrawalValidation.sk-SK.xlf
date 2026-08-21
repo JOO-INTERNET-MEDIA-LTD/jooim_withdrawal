@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" target-language="sk-SK" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="4b2ce3a2a3cc7173c7e1d35c0d17cd7f" resname="The confirmation session expired. Please start again."><source>The confirmation session expired. Please start again.</source><target>Relácia na potvrdenie vypršala. Začnite znova.</target></trans-unit>
+      <trans-unit id="ec88070e63b31b87a33f108354604f1e" resname="The form expired. Please start again."><source>The form expired. Please start again.</source><target>Platnosť formulára vypršala. Začnite znova.</target></trans-unit>
+      <trans-unit id="a035e68027208850e51401466ebb76c6" resname="The form expired. Please try again."><source>The form expired. Please try again.</source><target>Platnosť formulára vypršala. Skúste to znova.</target></trans-unit>
+      <trans-unit id="84f351c2afee3ff2ede2496973b0157a" resname="The verification page expired. Open the link from the email again."><source>The verification page expired. Open the link from the email again.</source><target>Platnosť overovacej stránky vypršala. Znova otvorte odkaz z e-mailu.</target></trans-unit>
+      <trans-unit id="871d3bb1d7936dc50ad8946c05fa3664" resname="This access link is invalid, expired or already used."><source>This access link is invalid, expired or already used.</source><target>Tento prístupový odkaz je neplatný, expirovaný alebo už použitý.</target></trans-unit>
+      <trans-unit id="4eb71d41a3300d1e7218a8c2833991f3" resname="This confirmation link is invalid or expired."><source>This confirmation link is invalid or expired.</source><target>Tento potvrdzovací odkaz je neplatný alebo expirovaný.</target></trans-unit>
+      <trans-unit id="0ba3e1c2228c7b92f4ac15002570c157" resname="This status link is invalid or expired."><source>This status link is invalid or expired.</source><target>Tento odkaz na stav je neplatný alebo expirovaný.</target></trans-unit>
+      <trans-unit id="16cc03f594912e1465112faa25b255f8" resname="Your secure order session expired. Please request a new access link."><source>Your secure order session expired. Please request a new access link.</source><target>Vaša bezpečná relácia objednávky vypršala. Vyžiadajte si nový prístupový odkaz.</target></trans-unit>
+    </body>
+  </file>
+</xliff>

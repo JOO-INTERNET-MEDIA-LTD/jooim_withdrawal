@@ -1,0 +1,5 @@
+Ein neuer Vertragswiderruf wurde erfasst.
+Widerrufsreferenz: {withdrawal_reference}
+Bestellung / Vertrag: {order_reference}
+Elektronischer Kontakt: {customer_email}
+Status: {status}

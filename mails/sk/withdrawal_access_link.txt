@@ -1,0 +1,8 @@
+Dobrý deň, {firstname},
+
+Na pokračovanie k bezpečnému online odstúpeniu od zmluvy použite tento odkaz:
+Pokračovať k odstúpeniu: {access_url}
+
+Odkaz je platný {expires_minutes} minút. Samotné otvorenie odkazu ho nespotrebuje; potvrdenie pokračovania sa vykoná až na nasledujúcej stránke.
+
+Ak ste o tento odkaz nežiadali, správu môžete ignorovať.

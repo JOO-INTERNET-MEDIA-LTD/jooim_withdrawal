@@ -1,0 +1,120 @@
+001	Hay una nueva versión del módulo disponible.
+002	Número de reintentos del acuse de recibo
+003	Añade una opción de desistimiento en el área Mi cuenta del cliente. El cliente puede seguir utilizando el proceso público cuando el pedido no aparezca en su cuenta.
+004	Añade un botón «Desistir del contrato» al detalle de un pedido perteneciente al cliente conectado. La titularidad se comprueba en el servidor.
+005	Permite al consumidor presentar una declaración inequívoca de desistimiento sin iniciar sesión ni mostrar datos del pedido. Mantenga esta función disponible para los contratos B2C en línea a los que sea aplicable.
+006	Adjuntar acuse de recibo en PDF
+007	Adjunta al correo de acuse de recibo el PDF inmutable de confirmación del desistimiento. Desactivar el adjunto no elimina el PDF protegido almacenado con el caso.
+008	Casos:
+009	Identificador de la empresa
+010	Versión actual del módulo
+011	Enlace en la cuenta del cliente
+012	Dirección de contacto visible para el cliente para comunicaciones sobre desistimientos. Utilice un buzón supervisado activamente; no introduzca aquí el correo del cliente.
+013	Función directa del artículo 11 bis
+014	Desistimiento directo
+015	Función de desistimiento directo:
+016	Desactivado
+017	Desactivado (se requiere revisión jurídica)
+018	Muestra en el pie de la tienda el enlace «Desistir del contrato aquí» dirigido al cliente. Este enlace de función jurídica es independiente de la atribución comercial de Joobox.
+019	Nota de cumplimiento de la UE (2026):
+020	Cada idioma activo de la tienda recibe su propia ruta amigable localizada. Las URL de entrada independientes del idioma siguen disponibles para módulos externos de listas de enlaces. Pruebe ambos procesos en cada idioma activo después del despliegue.
+021	Correo electrónico
+022	Correos por pedido / día
+023	Correos por pedido / hora
+024	Activado
+025	Activa el formulario directo de desistimiento en línea, que no requiere una cuenta de cliente ni acceso al correo original del pedido. Desactívelo únicamente después de una revisión jurídica específica del mercado.
+026	Finaliza una sesión de invitado verificada tras este período de inactividad. Intervalo esperado: 5–240 minutos; valor recomendado: 30.
+027	Alternativa en inglés
+028	Introduzca la URL HTTPS absoluta de la política de privacidad que explica el tratamiento de datos personales para recibir y gestionar desistimientos.
+029	Introduzca la dirección exacta y las instrucciones prácticas para devolver los productos. Estas instrucciones no deben imponer condiciones que restrinjan ilícitamente el derecho de desistimiento del consumidor.
+030	Introduzca el identificador exigido en la jurisdicción del vendedor, por ejemplo el número de empresa, el NIF-IVA o el número del registro mercantil.
+031	Introduzca la denominación jurídica o social completa del vendedor, no la del proveedor del módulo. Aparece en el formulario, el correo de acuse y el PDF.
+032	Introduzca el domicilio social o la dirección comercial del vendedor exactamente como debe aparecer en el documento del consumidor.
+033	Enlace en el pie (manténgalo activado para los contratos B2C en línea aplicables)
+034	Para instalar en PrestaShop no utilice el archivo automático «Source code ZIP» de GitHub. Utilice únicamente el ZIP de instalación incluido en los recursos de la versión.
+035	Para los contratos a distancia B2C aplicables celebrados mediante una interfaz en línea, desactivar u ocultar la función directa de desistimiento puede entrar en conflicto con el artículo 11 bis de la Directiva 2011/83/UE, modificada por la Directiva (UE) 2023/2673. La transposición nacional debe revisarse para cada mercado.
+036	Disponibilidad general y jurídica
+037	Obtener soporte de Joobox
+038	Las comprobaciones de GitHub se realizan como máximo una vez cada seis horas, salvo actualización manual. El módulo nunca descarga ni instala código automáticamente.
+039	URL cron del alojamiento (secreta):
+040	Tiempo durante el que puede utilizarse el enlace de acceso de un solo uso enviado por correo. Intervalo esperado: 5–240 minutos; valor recomendado: 30.
+041	Incluido
+042	JOOIM Withdrawal – Desistimiento contractual en línea
+043	Soporte de Joobox para este módulo
+044	Idioma
+045	URL independientes del idioma para listas de enlaces externas:
+046	Última comprobación
+047	Última versión en GitHub
+048	Enlaces para los idiomas activos de la tienda
+049	Configuración regional
+050	Validez del enlace mágico (minutos)
+051	Mantenimiento mediante CLI:
+052	Interruptor principal de los procesos públicos de desistimiento y de los enlaces dirigidos al cliente. Desactivarlo no elimina ni modifica desistimientos ya recibidos.
+053	Número máximo de solicitudes de enlace de acceso asociadas a la misma referencia normalizada de pedido durante 24 horas.
+054	Número máximo de solicitudes de enlace de acceso asociadas a la misma referencia normalizada de pedido durante una hora. Protege el buzón del cliente frente a mensajes repetidos.
+055	Longitud máxima de la nota del cliente
+056	Número máximo de caracteres de texto sin formato aceptados en la nota opcional del cliente. No se admite HTML. Valor recomendado: 2000.
+057	Número máximo de solicitudes de acceso por referencia de pedido desde una IP seudonimizada durante 15 minutos. Las búsquedas correctas y fallidas comparten el mismo límite.
+058	Número máximo de solicitudes de acceso por referencia de pedido desde una IP seudonimizada durante 24 horas. La IP sin tratar no se almacena en el registro jurídico del desistimiento.
+059	Duración total máxima de una sesión de invitado verificada, incluso si el cliente permanece activo. Intervalo esperado: 15–1440 minutos; valor recomendado: 120.
+060	Espera mínima antes de poder solicitar otro correo de acceso para la misma referencia de pedido. Valor recomendado: 60 segundos.
+061	Los datos del módulo se han eliminado permanentemente.
+062	Módulo activado
+063	El módulo está actualizado.
+064	No
+065	No se encontraron idiomas activos de la tienda.
+066	No se elimina ningún dato salvo que el valor sea exactamente DELETE.
+067	La desinstalación normal del módulo conserva los registros de desistimiento. Esta acción destructiva elimina todas las tablas del módulo.
+068	Número de reenvíos automáticos después de que falle un correo de acuse. El desistimiento sigue siendo válido aunque fallen todos los intentos de correo.
+069	Abrir versiones de GitHub
+070	Abrir desistimientos
+071	Abre la lista de desistimientos recibidos en el Back Office, incluidos estados, documentos, registros de reembolso e historial de auditoría.
+072	Número opcional de atención al cliente mostrado en el acuse y el PDF. No se utiliza para autenticar un desistimiento.
+073	Botón en el detalle del pedido
+074	Proceso mediante referencia de pedido
+075	Se requiere PHP 8.1 o posterior.
+076	Eliminación permanente de datos
+077	Eliminar permanentemente todos los datos del módulo
+078	Teléfono
+079	Método recomendado de mantenimiento programado. Elimina registros temporales caducados, reintenta los acuses en cola y procesa las tareas de conservación.
+080	URL de la política de privacidad
+081	Entrada pública:
+082	Confirmación de eliminación
+083	Preparado. Están disponibles los valores de seguridad y los hooks necesarios del módulo.
+084	Prefijo de referencia
+085	Actualizar estado de la versión
+086	Domicilio social
+087	Solicitudes por IP / 15 minutos
+088	Solicitudes por IP / día
+089	Espera entre reenvíos (segundos)
+090	Dirección de devolución / instrucciones
+091	Configuración de ejecución:
+092	Guardar ajustes
+093	Ejercicio y administración seguros en línea del derecho de desistimiento del consumidor.
+094	Seguridad, sesión y límites contra abusos
+095	Límite absoluto de sesión (minutos)
+096	Límite de inactividad de sesión (minutos)
+097	Ajustes guardados.
+098	Código corto utilizado al inicio de las referencias de desistimiento. Utilice solo letras, números y guiones, por ejemplo WD. Las referencias existentes nunca se modifican.
+099	No se pudieron sincronizar algunos requisitos de ejecución. Revise los registros de PrestaShop antes del uso público.
+100	Inicia el proceso seguro mediante referencia de pedido. El cliente introduce únicamente la referencia pública; los datos del pedido y los datos personales permanecen ocultos hasta confirmar el enlace de correo de un solo uso.
+101	Se admiten las versiones de PrestaShop 8.1 a 9.1.
+102	Los valores predeterminados son deliberadamente conservadores. Aumente los límites solo después de revisar el tráfico real y los registros de abuso; reducirlos demasiado puede bloquear a consumidores legítimos.
+103	Estos valores identifican al vendedor real que opera la tienda seleccionada. Se almacenan por tienda en multitienda y se imprimen en los acuses del cliente y en las pruebas PDF.
+104	Este módulo gratuito de GitHub se proporciona sin soporte técnico individual. La instalación, configuración, pruebas de producción, actualizaciones y resolución de problemas están disponibles para clientes de Joobox PrestaShop Cloud u otro servicio de pago acordado expresamente con JOO INTERNET MEDIA LTD.
+105	Datos del vendedor – tienda actual
+106	Nombre del vendedor
+107	Traducción
+108	Escriba DELETE
+109	Escriba DELETE para confirmar la eliminación permanente de datos.
+110	Escriba exactamente DELETE para eliminar todos los desistimientos, documentos, historial de auditoría, registros de acceso y registros de reembolso. Esta acción no se puede deshacer y no es necesaria para una actualización o reinstalación normal del módulo.
+111	No se pudo verificar la última versión en GitHub. Revise las versiones manualmente.
+112	Desconocido
+113	Comprobación de actualizaciones
+114	Error al comprobar la actualización: %error%
+115	Estado de actualización
+116	Utilice estas URL en módulos que solo ofrecen un campo URL para todos los idiomas. El controlador de entrada selecciona el idioma actual o preferido de la tienda y redirige a la ruta amigable localizada.
+117	Utilice esta URL únicamente cuando el alojamiento no pueda ejecutar el comando CLI. Trate el token como una contraseña: no lo publique, no lo envíe por correo ni lo incluya en una supervisión pública.
+118	Utilice esto únicamente en una instalación de prueba desechable.
+119	Sí
+120	Solo ajustes del Back Office

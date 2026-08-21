@@ -1,0 +1,60 @@
+# Acceptance test checklist
+
+- [ ] When upgrading from a pre-release `1.0.0` test build, opening the module configuration reports **Runtime configuration: Ready** in every relevant shop context.
+- [ ] Every one of the 24 editable Back Office inputs has clear purpose, expected-value and impact guidance in the active administration language.
+- [ ] All 120 Back Office configuration strings render from the packaged catalogue in each installed administration language; Slovak does not fall back to English.
+- [ ] The secure order-reference entry and direct withdrawal page both render normally through friendly and canonical controller URLs; neither returns a blank page or HTTP 500.
+- [ ] Loading either public page creates only the small `jooim_withdrawal_csrf` cookie for module CSRF state and does not add `jooim_wd_csrf_*` entries to the main PrestaShop cookie.
+- [ ] A CSRF token issued for one purpose or shop is rejected for another purpose or shop.
+- [ ] The configuration page lists both public URLs for every active language in the current shop and distinguishes complete, settings-only and English-fallback catalogue scopes.
+- [ ] Friendly URLs use language-appropriate slugs (for example `/sk/odstupenie-od-zmluvy`, `/en/contract-withdrawal`, `/uk/vidmova-vid-dohovoru` and `/de/vertragswiderruf`).
+- [ ] The language-neutral `entry` URLs redirect from a Link List click to the correct active-language friendly URL.
+- [ ] Foreign-language canonical routes do not reuse the Slovak `odstupenie-od-zmluvy` segment.
+- [ ] In the real `footer#footer`, the withdrawal link is a normal `<li>` immediately after the `ps_linklist` static Stores item (`a[id^="link-static-page-stores-"]`); it inherits the neighbouring `cms-page-link` styling and remains inside the same mobile-collapsible `<ul>`. No visible copy remains in the earlier page-content `<footer class="page-footer">`.
+- [ ] When a controlled storefront exception is introduced on staging, the customer receives a neutral HTTP 503 page with a `WDERR-...` reference and the matching technical exception appears in the PrestaShop log.
+- [ ] Removing only the test installation's module-secret configuration on staging does not produce a blank page; the secret is safely recovered without changing an existing non-empty secret.
+- [ ] Direct withdrawal function is reachable without login from a prominent link.
+- [ ] Direct form requires name, contract/order identification and acknowledgement email.
+- [ ] Final button clearly says `Confirm withdrawal` in the active language.
+- [ ] Direct submission never reveals whether the entered order reference exists.
+- [ ] Secure order-reference entry gives the same public response for existing and non-existing orders.
+- [ ] No name, email, items or other order data are shown before verification.
+- [ ] Magic-link GET does not consume the token.
+- [ ] POST verification consumes it once and establishes a secure HttpOnly SameSite cookie.
+- [ ] Expired/reused magic links fail safely.
+- [ ] Logged-in customer can access only own orders.
+- [ ] Guest session cannot access another order or another shop.
+- [ ] Full withdrawal works.
+- [ ] Partial withdrawal validates item quantities server-side.
+- [ ] Final confirmation POST is processed in `postProcess()` and redirects to the confirmation page before any `displayHeader` hook; `/odoslat` never renders a theme page.
+- [ ] The committed withdrawal appears immediately in **Orders → Contract withdrawals** with its selected partial items.
+- [ ] The immutable main record, items, initial history event and outbox event are committed together; a forced pre-commit database failure leaves none of them partially stored.
+- [ ] A forced PDF, mail or custom-hook failure after commit does not remove the withdrawal or prevent the confirmation redirect.
+- [ ] Repeated final POST does not create a second withdrawal and returns the original reference.
+- [ ] Snapshot JSON is unchanged after submission and SHA-256 matches it.
+- [ ] Email failure does not roll back the submission.
+- [ ] Maintenance retries failed acknowledgement email.
+- [ ] PDF is generated from snapshot data and is not directly web-addressable.
+- [ ] Back Office document download requires admin token and shop access.
+- [ ] Status changes are audited; rejection requires a customer-facing reason.
+- [ ] Refund record does not automatically trigger a payment refund.
+- [ ] Multistore search is limited to the current shop/domain.
+- [ ] Trader details are correct separately for every shop.
+- [ ] SK/CS/EN/DE/FR/PL mail templates render in both HTML and text.
+- [ ] Module translations can be edited through PrestaShop translation tooling.
+- [ ] Normal uninstall preserves submitted withdrawal tables.
+- [ ] Explicit destructive purge requires `DELETE` confirmation.
+- [ ] SMTP timing is measured for existing vs non-existing order references and deemed acceptable or moved to an asynchronous queue.
+- [ ] Public and guest pages inherit the active theme header, navigation, content container, typography and footer on desktop and mobile.
+- [ ] A signed-in customer sees the withdrawal flow inside the theme's customer-account shell when `customer/page.tpl` is available.
+- [ ] Classic, Hummingbird and the production commercial theme are checked separately; no module stylesheet replaces the theme's global visual system.
+
+## Final POST lifecycle and third-party hooks
+
+- [ ] With `ganalyticspro` enabled, final confirmation of an order-based partial withdrawal immediately redirects away from `/odoslat`; the POST response does not render the storefront header.
+- [ ] The redirected confirmation GET shows the complete theme header/menu/footer and a `WD-...` withdrawal reference.
+- [ ] The withdrawal appears in **Orders → Contract withdrawals** with the selected item and quantity.
+- [ ] The matching draft has `submitted_at` populated and exactly one main withdrawal row exists.
+- [ ] Retrying or refreshing the final request does not create a duplicate withdrawal.
+- [ ] No new `getCartRules() on null` error is generated by the `jooim_withdrawal-submit` POST request.
+- [ ] A forced exception in the final action is logged with a `WDERR-...` reference and redirects to a normal GET page; it does not leave a partially rendered menu.

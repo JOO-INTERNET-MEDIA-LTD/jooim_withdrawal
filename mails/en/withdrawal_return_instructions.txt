@@ -1,0 +1,12 @@
+Return instructions
+Withdrawal reference: {withdrawal_reference}
+Order / contract: {order_reference}
+Status: {status}
+
+Trader message:
+{public_message}
+
+Return address / instructions:
+{return_address}
+
+Trader contact: {merchant_email}

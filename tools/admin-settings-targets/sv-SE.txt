@@ -1,0 +1,120 @@
+001	En ny modulversion finns tillgänglig.
+002	Antal nya försök för bekräftelsen
+003	Lägger till ett val för ångerrätt i kundens område Mitt konto. Kunden kan fortfarande använda det offentliga flödet när beställningen inte visas på kontot.
+004	Lägger till knappen ”Frånträd avtalet” i informationen för en beställning som tillhör den inloggade kunden. Ägarskapet kontrolleras på servern.
+005	Gör det möjligt för konsumenten att lämna ett otvetydigt meddelande om frånträde utan att logga in eller visa beställningsuppgifter. Behåll funktionen tillgänglig för tillämpliga B2C-avtal online.
+006	Bifoga PDF-bekräftelse
+007	Bifogar den oföränderliga PDF-bekräftelsen av frånträdet till bekräftelsemeddelandet. Om bilagan stängs av tas inte den skyddade PDF-filen som lagras med ärendet bort.
+008	Ärenden:
+009	Företagsidentifierare
+010	Aktuell modulversion
+011	Länk på kundkontot
+012	Kontaktadress som visas för kunden vid kommunikation om frånträde. Använd en aktivt övervakad brevlåda; ange inte kundens e-postadress här.
+013	Direkt funktion enligt artikel 11a
+014	Direkt frånträde
+015	Funktion för direkt frånträde:
+016	Inaktiverad
+017	Inaktiverad (juridisk granskning krävs)
+018	Visar den kundinriktade länken ”Frånträd avtalet här” i butikens sidfot. Denna juridiska funktionslänk är oberoende av Joobox marknadsföringsangivelse.
+019	Anmärkning om EU-efterlevnad (2026):
+020	Varje aktivt butiksspråk får en egen lokaliserad, läsbar sökväg. Språkneutrala ingångs-URL:er är fortsatt tillgängliga för externa länklistemoduler. Testa båda flödena på varje aktivt språk efter driftsättning.
+021	E-post
+022	E-postmeddelanden per beställning / dag
+023	E-postmeddelanden per beställning / timme
+024	Aktiverad
+025	Aktiverar det direkta onlineformuläret för frånträde som inte kräver kundkonto eller åtkomst till det ursprungliga beställningsmeddelandet. Inaktivera det endast efter en marknadsspecifik juridisk granskning.
+026	Avslutar en verifierad gästsession efter denna period av inaktivitet. Förväntat intervall: 5–240 minuter; rekommenderat standardvärde: 30.
+027	Engelsk reservtext
+028	Ange den absoluta HTTPS-URL:en till integritetspolicyn som förklarar behandlingen av personuppgifter för att ta emot och hantera frånträden.
+029	Ange den exakta adressen och praktiska anvisningar för att returnera varor. Anvisningarna får inte ställa villkor som olagligt begränsar konsumentens ångerrätt.
+030	Ange den identifierare som krävs i säljarens jurisdiktion, till exempel organisationsnummer, momsregistreringsnummer eller handelsregisternummer.
+031	Ange säljarens fullständiga juridiska eller registrerade företagsnamn, inte modulleverantörens namn. Det visas i formuläret, bekräftelsemeddelandet och PDF-filen.
+032	Ange säljarens registrerade säte eller företagsadress exakt som den ska visas i konsumentdokumentet.
+033	Länk i sidfot (behåll aktiverad för tillämpliga B2C-avtal online)
+034	Använd inte GitHubs automatiska ”Source code ZIP” för PrestaShop-installationen. Använd endast installations-ZIP-filen från versionsresurserna.
+035	För tillämpliga B2C-distansavtal som ingås via ett onlinegränssnitt kan inaktivering eller döljande av den direkta frånträdesfunktionen strida mot artikel 11a i direktiv 2011/83/EU, ändrat genom direktiv (EU) 2023/2673. Nationellt genomförande måste fortfarande granskas för varje marknad.
+036	Allmän och juridisk tillgänglighet
+037	Få Joobox-support
+038	GitHub-kontroller utförs högst en gång var sjätte timme om de inte uppdateras manuellt. Modulen hämtar eller installerar aldrig kod automatiskt.
+039	Webbhotellets cron-URL (hemlig):
+040	Hur länge engångslänken för åtkomst i e-postmeddelandet kan användas. Förväntat intervall: 5–240 minuter; rekommenderat standardvärde: 30.
+041	Ingår
+042	JOOIM Withdrawal – Frånträde från avtal online
+043	Joobox-support för denna modul
+044	Språk
+045	Språkneutrala URL:er för externa länklistor:
+046	Senast kontrollerad
+047	Senaste version på GitHub
+048	Länkar för aktiva butiksspråk
+049	Språkinställning
+050	Engångslänkens giltighet (minuter)
+051	CLI för underhåll:
+052	Huvudströmbrytare för de offentliga frånträdesflödena och kundinriktade frånträdeslänkarna. Inaktivering tar inte bort eller ändrar frånträden som redan har tagits emot.
+053	Högsta antal begäranden om åtkomstlänk som är kopplade till samma normaliserade beställningsreferens under 24 timmar.
+054	Högsta antal begäranden om åtkomstlänk som är kopplade till samma normaliserade beställningsreferens under en timme. Detta skyddar kundens brevlåda mot upprepade meddelanden.
+055	Maximal längd på kundanteckning
+056	Högsta antal tecken i vanlig text som accepteras i den valfria kundanteckningen. HTML accepteras inte. Rekommenderat standardvärde: 2000.
+057	Högsta antal åtkomstbegäranden via beställningsreferens från en pseudonymiserad IP-adress under 15 minuter. Lyckade och misslyckade sökningar delar samma gräns.
+058	Högsta antal åtkomstbegäranden via beställningsreferens från en pseudonymiserad IP-adress under 24 timmar. Den råa IP-adressen lagras inte i den juridiska registreringen av frånträdet.
+059	Maximal total livslängd för en verifierad gästsession även när kunden är fortsatt aktiv. Förväntat intervall: 15–1440 minuter; rekommenderat standardvärde: 120.
+060	Minsta väntetid innan ett nytt åtkomstmeddelande kan begäras för samma beställningsreferens. Rekommenderat standardvärde: 60 sekunder.
+061	Modulens data har tagits bort permanent.
+062	Modul aktiverad
+063	Modulen är uppdaterad.
+064	Nej
+065	Inga aktiva butiksspråk hittades.
+066	Inga data tas bort om värdet inte är exakt DELETE.
+067	Normal avinstallation av modulen bevarar registrerade frånträden. Denna destruktiva åtgärd tar bort alla modultabeller.
+068	Antal automatiska nya försök efter att ett bekräftelsemeddelande misslyckats. Frånträdet förblir giltigt även om samtliga e-postförsök misslyckas.
+069	Öppna GitHub-versioner
+070	Öppna frånträden
+071	Öppnar Back Office-listan över mottagna frånträden, deras status, dokument, återbetalningsposter och granskningshistorik.
+072	Valfritt telefonnummer till kundtjänst som visas i bekräftelsen och PDF-filen. Det används inte för att autentisera ett frånträde.
+073	Knapp i beställningsinformation
+074	Flöde via beställningsreferens
+075	PHP 8.1 eller senare krävs.
+076	Permanent datarensning
+077	Ta bort alla moduldata permanent
+078	Telefon
+079	Rekommenderad metod för schemalagt underhåll. Den tar bort utgångna tillfälliga poster, försöker skicka väntande bekräftelser igen och behandlar lagringsuppgifter.
+080	URL till integritetspolicy
+081	Offentlig ingång:
+082	Bekräftelse av rensning
+083	Klar. Nödvändiga säkerhetsvärden och modulhookar är tillgängliga.
+084	Referensprefix
+085	Uppdatera uppdateringsstatus
+086	Registrerad adress
+087	Begäranden per IP / 15 minuter
+088	Begäranden per IP / dag
+089	Väntetid före ny sändning (sekunder)
+090	Returadress / anvisningar
+091	Körtidskonfiguration:
+092	Spara inställningar
+093	Säker onlineutövning och administration av konsumentens ångerrätt.
+094	Gränser för säkerhet, session och missbruk
+095	Absolut sessionsgräns (minuter)
+096	Gräns för sessionsinaktivitet (minuter)
+097	Inställningarna sparades.
+098	Kort kod i början av frånträdesreferenser. Använd endast bokstäver, siffror och bindestreck, till exempel WD. Befintliga frånträdesreferenser ändras aldrig.
+099	Vissa körtidskrav kunde inte synkroniseras. Granska PrestaShop-loggarna före offentlig användning.
+100	Startar det säkra flödet via beställningsreferens. Kunden anger endast den offentliga beställningsreferensen; beställnings- och personuppgifter förblir dolda tills engångslänken i e-postmeddelandet har bekräftats.
+101	PrestaShop-versionerna 8.1 till 9.1 stöds.
+102	Standardvärdena är avsiktligt försiktiga. Höj gränserna först efter granskning av verklig trafik och missbruksloggar; för låga gränser kan blockera legitima konsumenter.
+103	Dessa värden identifierar den faktiska säljaren som driver den valda butiken. De lagras per butik i multistore och skrivs ut i kundbekräftelser och PDF-bevis.
+104	Denna kostnadsfria GitHub-modul tillhandahålls utan individuell teknisk support. Installation, konfiguration, produktionstestning, uppdateringar och felsökning är tillgängliga för kunder som använder Joobox PrestaShop Cloud eller en annan betaltjänst som uttryckligen avtalats med JOO INTERNET MEDIA LTD.
+105	Näringsidkarens uppgifter – aktuell butik
+106	Näringsidkarens namn
+107	Översättning
+108	Skriv DELETE
+109	Skriv DELETE för att bekräfta permanent borttagning av data.
+110	Skriv det exakta ordet DELETE för att ta bort alla frånträden, dokument, granskningshistorik, åtkomst- och återbetalningsposter. Åtgärden kan inte ångras och krävs inte för en normal moduluppdatering eller ominstallation.
+111	Det gick inte att verifiera den senaste versionen från GitHub. Kontrollera versionerna manuellt.
+112	Okänd
+113	Uppdateringskontroll
+114	Uppdateringskontrollen misslyckades: %error%
+115	Uppdateringsstatus
+116	Använd dessa URL:er i moduler som bara har ett URL-fält för alla språk. Ingångscontrollern väljer butikens aktuella eller önskade språk och omdirigerar till den lokaliserade, läsbara sökvägen.
+117	Använd endast denna URL när webbhotellet inte kan köra CLI-kommandot. Behandla token som ett lösenord: publicera den inte, skicka den inte via e-post och placera den inte i offentlig övervakning.
+118	Använd detta endast i en tillfällig testinstallation.
+119	Ja
+120	Endast Back Office-inställningar

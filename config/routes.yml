@@ -1,0 +1,2 @@
+# Front-office routes are declared through hookModuleRoutes() in jooim_withdrawal.php.
+# The Back Office currently uses a cross-version legacy ModuleAdminController.

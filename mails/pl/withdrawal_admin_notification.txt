@@ -1,0 +1,5 @@
+Zarejestrowano nowe odstąpienie od umowy.
+Numer odstąpienia: {withdrawal_reference}
+Zamówienie / umowa: {order_reference}
+Kontakt elektroniczny: {customer_email}
+Status: {status}

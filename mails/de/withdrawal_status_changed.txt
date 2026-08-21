@@ -1,0 +1,9 @@
+Der Status des Widerrufs wurde aktualisiert.
+Widerrufsreferenz: {withdrawal_reference}
+Bestellung / Vertrag: {order_reference}
+Status: {status}
+
+Mitteilung des Unternehmers:
+{public_message}
+
+Kontakt des Unternehmers: {merchant_email}

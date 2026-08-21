@@ -1,0 +1,28 @@
+Acknowledgement of contract withdrawal
+
+We acknowledge receipt of your notice of withdrawal from the contract.
+Withdrawal reference: {withdrawal_reference}
+Order / contract: {order_reference}
+Consumer: {firstname} {lastname}
+Electronic contact: {customer_email}
+Date and time received: {submitted_at}
+Received time UTC: {submitted_at_utc}
+Scope: {scope}
+
+Submission content / items:
+{items_text}
+
+Statement:
+{statement}
+
+Trader:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Return address / instructions:
+{return_address}
+
+Keep this acknowledgement. It confirms the content, date and time of your online notice.
+Immutable snapshot SHA-256 hash: {payload_hash}
