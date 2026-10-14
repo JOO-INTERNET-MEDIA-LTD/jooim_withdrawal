@@ -33,7 +33,7 @@ Englisch ist die Quellsprache für Code, Templates, Dokumentation und Übersetzu
 
 Das Modul orientiert sich am EU-Verbraucherrecht und an den Anforderungen an eine Online-Widerrufsfunktion für einschlägige Fernabsatzverträge, die über eine Online-Benutzeroberfläche geschlossen wurden. Eine Erklärung wird nicht allein aufgrund eines Datums, Bestellstatus oder Produkttyps automatisch abgelehnt.
 
-Der Händler bleibt für die rechtliche Einordnung, korrekte Händlerdaten, nationale Texte, Ausnahmen, Rücksendekosten, Erstattungsentscheidungen und Aufbewahrungsfristen verantwortlich. Siehe [docs/LEGAL-COMPLIANCE.md](docs/LEGAL-COMPLIANCE.md).
+Der Händler bleibt für die rechtliche Einordnung, korrekte Händlerdaten, nationale Texte, Ausnahmen, Rücksendekosten, Erstattungsentscheidungen und Aufbewahrungsfristen verantwortlich. Siehe lokale Projektdokumentation.
 
 ## Anforderungen
 
@@ -55,11 +55,11 @@ Das Modul verwendet keine Core-Overrides.
 5. Konfigurieren Sie im Multistore jeden Shop separat.
 6. Hinterlegen Sie Händlername, Anschrift, Kennung, Kontakte, Rücksendeadresse/-hinweise und Datenschutz-URL.
 7. Testen Sie Direktformular, sicheren Bestellablauf, E-Mail, PDF und Back Office.
-8. Führen Sie die [Abnahmetests](docs/ACCEPTANCE-TESTS.md) auf einer Staging-Kopie durch.
+8. Führen Sie die Abnahmetests auf einer Staging-Kopie durch.
 
 Version **1.0.0** ist die erste stabile öffentliche Veröffentlichung. Spätere Funktions- oder Kompatibilitätsänderungen erhalten eine neue Versionsnummer.
 
-Beim Aktualisieren einer Installation, die ein Vorab-Testpaket `1.0.0` verwendet hat muss das vollständige Modulverzeichnis ersetzt, die Modulkonfiguration einmal je Shop-Kontext geöffnet und der PrestaShop-Cache geleert werden. Die Konfigurationsseite ergänzt fehlende Laufzeitkonfiguration, Hooks und Sicherheitswerte idempotent, ohne ein vorhandenes Geheimnis zu ändern oder eingegangene Widerrufe zu löschen. Siehe [docs/INSTALLATION.md](docs/INSTALLATION.md#6-replacing-an-earlier-100-test-build).
+Beim Aktualisieren einer Installation, die ein Vorab-Testpaket `1.0.0` verwendet hat muss das vollständige Modulverzeichnis ersetzt, die Modulkonfiguration einmal je Shop-Kontext geöffnet und der PrestaShop-Cache geleert werden. Die Konfigurationsseite ergänzt fehlende Laufzeitkonfiguration, Hooks und Sicherheitswerte idempotent, ohne ein vorhandenes Geheimnis zu ändern oder eingegangene Widerrufe zu löschen. Siehe lokale Projektdokumentation.
 
 ## Kundenabläufe
 
@@ -122,4 +122,4 @@ Veröffentlicht unter der [MIT-Lizenz](LICENSE). Copyright © 2026 JOO INTERNET 
 
 ## Ďalšie jazykové názvy / Other language terms
 
-Pozri [multilingual terminology and search aliases](docs/TERMINOLOGY.md).
+Pozri multilingual terminology and search aliases.

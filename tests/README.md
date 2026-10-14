@@ -30,7 +30,7 @@ Validate the English-source XLIFF catalogues, supplied translations and localize
 python3 tests/validate_catalogs.py
 ```
 
-The GitHub Actions workflow executes all release checks with PHP 8.1 and PHP 8.4 on every push and pull request. These tests do not replace the live PrestaShop integration matrix in `docs/ACCEPTANCE-TESTS.md`.
+The GitHub Actions workflow executes all release checks with PHP 8.1 and PHP 8.4 on every push and pull request. These tests do not replace the live PrestaShop integration matrix in the staging acceptance scenarios maintained locally.
 
 Validate localized withdrawal status labels, Back Office options and audit-history presentation with:
 

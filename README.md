@@ -6,7 +6,7 @@
 
 **JOOIM Withdrawal** is a PrestaShop module for receiving, confirming and administering online consumer contract withdrawals. It provides a direct online withdrawal function, a secure order-reference flow, full and partial withdrawals, immutable evidence, email/PDF acknowledgements, multistore separation and an administrative audit trail.
 
-Common local search terms include **odstúpenie od zmluvy**, **odstoupení od smlouvy**, **Vertragswiderruf**, **rétractation du contrat**, **odstąpienie od umowy**, **desistimiento del contrato** and **recesso dal contratto**. See [multilingual terminology](docs/TERMINOLOGY.md).
+Common local search terms include **odstúpenie od zmluvy**, **odstoupení od smlouvy**, **Vertragswiderruf**, **rétractation du contrat**, **odstąpienie od umowy**, **desistimiento del contrato** and **recesso dal contratto**. See multilingual terminology.
 
 Repository: https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal  
 Author: JOO INTERNET MEDIA LTD  
@@ -46,9 +46,9 @@ This software is an operational tool, not a substitute for legal advice. The mer
 - deciding whether a withdrawal is valid and how much must be refunded;
 - setting lawful retention periods for submitted records and technical logs.
 
-See [docs/LEGAL-COMPLIANCE.md](docs/LEGAL-COMPLIANCE.md).
+See local project documentation.
 
-Footer integration details are documented in [docs/FOOTER-PLACEMENT.md](docs/FOOTER-PLACEMENT.md).
+Footer integration details are documented in local project documentation.
 
 ## Requirements
 
@@ -70,11 +70,11 @@ The module uses no PrestaShop core override.
 5. Open the module configuration for each shop in a multistore installation.
 6. Configure the merchant name, registered address, company identifier, contact details, return address/instructions and privacy-policy URL.
 7. Verify the direct withdrawal page, secure order-reference flow, email delivery, PDF generation and Back Office case handling.
-8. Complete the staging tests in [docs/ACCEPTANCE-TESTS.md](docs/ACCEPTANCE-TESTS.md) before any production deployment.
+8. Complete the staging tests in local project documentation before any production deployment.
 
 Version `1.1.1` adds complete locale packages, globally unique multistore references and post-commit recovery. Existing withdrawal records and references are preserved when upgrading. The declared compatibility range must still be verified on the merchant’s staging installation.
 
-When upgrading an installation that used a pre-release `1.0.0` test build, replace the complete module directory, open the module configuration once for each shop context and clear the PrestaShop cache. The configuration page idempotently repairs missing runtime configuration, hooks and security values without rotating an existing secret or deleting submitted records. See [docs/INSTALLATION.md](docs/INSTALLATION.md#6-replacing-an-earlier-100-test-build).
+When upgrading an installation that used a pre-release `1.0.0` test build, replace the complete module directory, open the module configuration once for each shop context and clear the PrestaShop cache. The configuration page idempotently repairs missing runtime configuration, hooks and security values without rotating an existing secret or deleting submitted records. See local project documentation.
 
 ## Public customer flows
 
@@ -155,7 +155,7 @@ Each active language receives a language-appropriate friendly route rather than 
 /de/vertragswiderruf
 ```
 
-Use the language-neutral `entry` controller in **Design → Link List**, because that module stores only one URL for all translated labels. The complete route map and universal URLs are documented in [docs/LOCALIZED-ROUTES.md](docs/LOCALIZED-ROUTES.md).
+Use the language-neutral `entry` controller in **Design → Link List**, because that module stores only one URL for all translated labels. The complete route map and universal URLs are documented in local project documentation.
 
 Public withdrawal templates extend the active theme's `page.tpl`. For a signed-in customer they use `customer/page.tpl` when the active theme or its declared parent provides it, so the process inherits the shop header, menu, account shell, typography, content container and footer instead of rendering an isolated module page.
 
@@ -181,14 +181,8 @@ The test package also requires PHP linting, XLIFF/XML parsing, archive integrity
 
 ## Documentation
 
-- [Installation](docs/INSTALLATION.md)
-- [Acceptance tests](docs/ACCEPTANCE-TESTS.md)
-- [Legal compliance notes](docs/LEGAL-COMPLIANCE.md)
-- [Localized routes](docs/LOCALIZED-ROUTES.md)
-- [Translations](docs/TRANSLATIONS.md)
-- [Multilingual terminology and search aliases](docs/TERMINOLOGY.md)
-- [Build report](docs/BUILD-REPORT.md)
-- [GitHub repository description and topics](docs/GITHUB-REPOSITORY.md)
+Extended project documentation is maintained locally and is excluded from GitHub and installation archives.
+
 - [Security policy](SECURITY.md)
 - [Support policy](SUPPORT.md)
 

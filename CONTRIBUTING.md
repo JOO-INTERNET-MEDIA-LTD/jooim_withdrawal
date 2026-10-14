@@ -19,6 +19,6 @@ Run:
 php tests/static_validation.php
 ```
 
-Also lint every PHP file, validate all XLIFF/XML files, test the installation archive and complete the relevant staging scenarios in `docs/ACCEPTANCE-TESTS.md`.
+Also lint every PHP file, validate all XLIFF/XML files, test the installation archive and complete the relevant staging scenarios in the staging acceptance scenarios maintained locally.
 
 Do not commit secrets, cron tokens, customer data, generated withdrawal PDFs or production logs.

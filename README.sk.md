@@ -42,7 +42,7 @@ Modul nie je náhradou právneho posúdenia. Prevádzkovateľ e-shopu zodpovedá
 - rozhodnutie o platnosti odstúpenia a výške refundácie;
 - zákonné retenčné lehoty právnych a technických záznamov.
 
-Pozri [docs/LEGAL-COMPLIANCE.md](docs/LEGAL-COMPLIANCE.md).
+Pozri lokálna projektová dokumentácia.
 
 ## Požiadavky
 
@@ -64,11 +64,11 @@ Modul nepoužíva override jadra PrestaShopu.
 5. V multistore otvorte konfiguráciu osobitne pre každý obchod.
 6. Doplňte obchodné meno, sídlo, identifikátor, kontakty, adresu/pokyny na vrátenie a URL zásad ochrany osobných údajov.
 7. Otestujte priamu stránku odstúpenia, bezpečný proces podľa objednávky, e-mail, PDF a administráciu prípadov.
-8. Pred produkciou vykonajte scenáre z [docs/ACCEPTANCE-TESTS.md](docs/ACCEPTANCE-TESTS.md).
+8. Pred produkciou vykonajte scenáre z lokálna projektová dokumentácia.
 
 Verzia **1.0.0** je prvé stabilné verejné vydanie. Ďalšie funkčné alebo kompatibilitné zmeny použijú nové číslo verzie.
 
-Pri aktualizácii inštalácie, ktorá používala predprodukčný testovací balík `1.0.0` nahraďte celý adresár modulu, v každom kontexte obchodu raz otvorte konfiguráciu modulu a vymažte cache PrestaShopu. Konfiguračná stránka idempotentne doplní chýbajúcu runtime konfiguráciu, hooky a bezpečnostné hodnoty bez zmeny existujúceho tajomstva alebo vymazania prijatých odstúpení. Pozrite [docs/INSTALLATION.md](docs/INSTALLATION.md#6-replacing-an-earlier-100-test-build).
+Pri aktualizácii inštalácie, ktorá používala predprodukčný testovací balík `1.0.0` nahraďte celý adresár modulu, v každom kontexte obchodu raz otvorte konfiguráciu modulu a vymažte cache PrestaShopu. Konfiguračná stránka idempotentne doplní chýbajúcu runtime konfiguráciu, hooky a bezpečnostné hodnoty bez zmeny existujúceho tajomstva alebo vymazania prijatých odstúpení. Pozrite lokálna projektová dokumentácia.
 
 ## Zákaznícke procesy
 
@@ -132,7 +132,7 @@ en-US, sk-SK, cs-CZ, de-DE, fr-FR, pl-PL
 
 Všetkých 120 názvov, popisov a upozornení v nastavení Back Office je pripravených pre 28 vytvorených locale pokrývajúcich všetky úradné jazyky EÚ, angličtinu USA/Kanady, francúzštinu Kanady a ukrajinčinu. Katalóg iba pre nastavenia sa neoznačuje ako kompletný zákaznícky preklad. Tabuľka aktívnych jazykov rozlišuje **Zahrnutý**, **Iba nastavenia Back Office** a **Anglický fallback**.
 
-E-mailové šablóny zostávajú kompletne lokalizované v `en`, `sk`, `cs`, `de`, `fr` a `pl`. Podrobnosti sú v [docs/TRANSLATIONS.md](docs/TRANSLATIONS.md).
+E-mailové šablóny zostávajú kompletne lokalizované v `en`, `sk`, `cs`, `de`, `fr` a `pl`. Podrobnosti sú v lokálna projektová dokumentácia.
 
 ## Lokalizované URL a vizuál témy
 
@@ -145,7 +145,7 @@ Každý jazyk dostáva vlastnú čitateľnú cestu, napríklad:
 /de/vertragswiderruf
 ```
 
-Do **Dizajn → Zoznam odkazov** sa vkladá jazykovo neutrálna URL `entry` controllera, pretože zoznam odkazov poskytuje iba jedno URL pole pre všetky preložené názvy. Celá mapa ciest je v [docs/LOCALIZED-ROUTES.md](docs/LOCALIZED-ROUTES.md).
+Do **Dizajn → Zoznam odkazov** sa vkladá jazykovo neutrálna URL `entry` controllera, pretože zoznam odkazov poskytuje iba jedno URL pole pre všetky preložené názvy. Celá mapa ciest je v lokálna projektová dokumentácia.
 
 Verejné šablóny modulu rozširujú `page.tpl` aktívnej témy. Pri prihlásenom zákazníkovi použijú `customer/page.tpl`, ak ju poskytuje aktívna téma alebo jej nadradená téma. Stránka tak preberá hlavičku, menu, obsahový kontajner, vizuál zákazníckeho účtu, typografiu a footer témy.
 
@@ -169,11 +169,6 @@ Statická kontrola nenahrádza test na reálnom PrestaShope, téme, SMTP, datab�
 
 ## Dokumentácia
 
-- [Inštalácia](docs/INSTALLATION.md)
-- [Akceptačné testy](docs/ACCEPTANCE-TESTS.md)
-- [Právne poznámky](docs/LEGAL-COMPLIANCE.md)
-- [Preklady](docs/TRANSLATIONS.md)
-- [GitHub popis a témy](docs/GITHUB-REPOSITORY.md)
 - [Bezpečnosť](SECURITY.md)
 - [Podpora](SUPPORT.md)
 
@@ -184,4 +179,4 @@ Modul sa distribuuje pod [licenciou MIT](LICENSE). Copyright © 2026 JOO INTERNE
 
 ## Ďalšie jazykové názvy / Other language terms
 
-Pozri [multilingual terminology and search aliases](docs/TERMINOLOGY.md).
+Pozri multilingual terminology and search aliases.

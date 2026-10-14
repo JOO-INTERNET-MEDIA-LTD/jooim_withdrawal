@@ -33,7 +33,7 @@ L’anglais est la langue source du code, des modèles, de la documentation et d
 
 Le module est conçu autour du cadre européen du droit de rétractation et des exigences relatives à la fonction de rétractation en ligne pour les contrats à distance concernés conclus au moyen d’une interface en ligne. Il ne rejette pas automatiquement une déclaration sur la seule base d’une date, d’un statut de commande ou d’un type de produit.
 
-Le marchand reste responsable de l’analyse juridique, des informations exactes du vendeur, des textes nationaux, des exceptions, des frais de retour, de la décision de remboursement et des durées de conservation. Voir [docs/LEGAL-COMPLIANCE.md](docs/LEGAL-COMPLIANCE.md).
+Le marchand reste responsable de l’analyse juridique, des informations exactes du vendeur, des textes nationaux, des exceptions, des frais de retour, de la décision de remboursement et des durées de conservation. Voir documentation locale du projet.
 
 ## Prérequis
 
@@ -55,11 +55,11 @@ Le module n’utilise aucun override du cœur de PrestaShop.
 5. En multiboutique, configurez chaque boutique séparément.
 6. Renseignez l’identité du vendeur, les coordonnées, l’adresse/les instructions de retour et l’URL de confidentialité.
 7. Testez le formulaire direct, le parcours sécurisé de commande, l’e-mail, le PDF et l’administration.
-8. Exécutez les [tests d’acceptation](docs/ACCEPTANCE-TESTS.md) sur une copie de préproduction.
+8. Exécutez les tests d’acceptation sur une copie de préproduction.
 
 La version **1.0.0** est la première version publique stable. Les évolutions fonctionnelles ou de compatibilité ultérieures utiliseront un nouveau numéro de version.
 
-Lors de la mise à niveau d’une installation qui utilisait un paquet de préversion `1.0.0`, remplacez le répertoire complet du module, ouvrez une fois sa configuration pour chaque contexte de boutique et videz le cache PrestaShop. La page de configuration complète de façon idempotente la configuration d’exécution, les hooks et les valeurs de sécurité manquants, sans modifier un secret existant ni supprimer les rétractations reçues. Voir [docs/INSTALLATION.md](docs/INSTALLATION.md#6-replacing-an-earlier-100-test-build).
+Lors de la mise à niveau d’une installation qui utilisait un paquet de préversion `1.0.0`, remplacez le répertoire complet du module, ouvrez une fois sa configuration pour chaque contexte de boutique et videz le cache PrestaShop. La page de configuration complète de façon idempotente la configuration d’exécution, les hooks et les valeurs de sécurité manquants, sans modifier un secret existant ni supprimer les rétractations reçues. Voir documentation locale du projet.
 
 ## Parcours client
 
@@ -122,4 +122,4 @@ Distribué sous [licence MIT](LICENSE). Copyright © 2026 JOO INTERNET MEDIA LTD
 
 ## Ďalšie jazykové názvy / Other language terms
 
-Pozri [multilingual terminology and search aliases](docs/TERMINOLOGY.md).
+Pozri multilingual terminology and search aliases.

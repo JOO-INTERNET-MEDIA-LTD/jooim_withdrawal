@@ -33,7 +33,7 @@ Angličtina je zdrojovým jazykem kódu, šablon, dokumentace a překladových k
 
 Modul vychází z rámce spotřebitelského práva EU a požadavků na online funkci odstoupení u relevantních smluv uzavřených na dálku prostřednictvím online rozhraní. Podání automaticky neodmítá pouze na základě data, stavu objednávky nebo typu produktu.
 
-Provozovatel obchodu nadále odpovídá za posouzení použitelného práva, správné údaje obchodníka, místní poučení, zákonné výjimky, náklady na vrácení, rozhodnutí o refundaci a retenční lhůty. Viz [docs/LEGAL-COMPLIANCE.md](docs/LEGAL-COMPLIANCE.md).
+Provozovatel obchodu nadále odpovídá za posouzení použitelného práva, správné údaje obchodníka, místní poučení, zákonné výjimky, náklady na vrácení, rozhodnutí o refundaci a retenční lhůty. Viz lokální projektová dokumentace.
 
 ## Požadavky
 
@@ -55,11 +55,11 @@ Modul nepoužívá override jádra PrestaShopu.
 5. V multistore nakonfigurujte každý obchod zvlášť.
 6. Doplňte identitu obchodníka, kontakty, adresu/pokyny pro vrácení a URL zásad ochrany osobních údajů.
 7. Ověřte přímý formulář, bezpečný proces objednávky, e-mail, PDF a Back Office.
-8. Proveďte [akceptační testy](docs/ACCEPTANCE-TESTS.md) na stagingu.
+8. Proveďte akceptační testy na stagingu.
 
 Verze **1.0.0** je první stabilní veřejné vydání. Další funkční nebo kompatibilitní změny použijí nové číslo verze.
 
-Při aktualizaci instalace, která používala předprodukční testovací balík `1.0.0` nahraďte celý adresář modulu, v každém kontextu obchodu jednou otevřete konfiguraci modulu a vymažte mezipaměť PrestaShopu. Konfigurační stránka idempotentně doplní chybějící runtime konfiguraci, hooky a bezpečnostní hodnoty bez změny existujícího tajemství nebo odstranění přijatých odstoupení. Viz [docs/INSTALLATION.md](docs/INSTALLATION.md#6-replacing-an-earlier-100-test-build).
+Při aktualizaci instalace, která používala předprodukční testovací balík `1.0.0` nahraďte celý adresář modulu, v každém kontextu obchodu jednou otevřete konfiguraci modulu a vymažte mezipaměť PrestaShopu. Konfigurační stránka idempotentně doplní chybějící runtime konfiguraci, hooky a bezpečnostní hodnoty bez změny existujícího tajemství nebo odstranění přijatých odstoupení. Viz lokální projektová dokumentace.
 
 ## Zákaznické procesy
 
@@ -124,4 +124,4 @@ Modul je distribuován pod [licencí MIT](LICENSE). Copyright © 2026 JOO INTERN
 
 ## Ďalšie jazykové názvy / Other language terms
 
-Pozri [multilingual terminology and search aliases](docs/TERMINOLOGY.md).
+Pozri multilingual terminology and search aliases.

@@ -17,3 +17,6 @@ composer.lock
 # Python development caches
 __pycache__/
 *.py[cod]
+
+# Project documentation remains local only
+/docs/

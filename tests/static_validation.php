@@ -84,14 +84,6 @@ $required = [
     'config.xml',
     'jooim_withdrawal.php',
     'logo.png',
-    'docs/GITHUB-REPOSITORY.md',
-    'docs/TRANSLATIONS.md',
-    'docs/INSTALLATION.md',
-    'docs/LOCALIZED-ROUTES.md',
-    'docs/ACCEPTANCE-TESTS.md',
-    'docs/LEGAL-COMPLIANCE.md',
-    'docs/BUILD-REPORT.md',
-    'docs/TERMINOLOGY.md',
     'sql/install.sql',
     'sql/uninstall.sql',
     'controllers/front/direct.php',
@@ -216,7 +208,7 @@ foreach (new RecursiveIteratorIterator(new RecursiveCallbackFilterIterator(
     new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS),
     static function ($file) use ($root): bool {
         $path = relativePath($root, $file->getPathname());
-        return !in_array($path, ['.git', 'var/temporary', 'var/documents', 'var/queue'], true)
+        return !in_array($path, ['.git', 'docs', 'var/temporary', 'var/documents', 'var/queue'], true)
             && !preg_match('/(?:^|\/)(?:\.env[^\/]*|[^\/]*\.(?:pem|key))$/', $path);
     }
 )) as $phpFile) {
@@ -431,7 +423,7 @@ $iterator = new RecursiveIteratorIterator(new RecursiveCallbackFilterIterator(
     new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS),
     static function ($file) use ($root): bool {
         $path = relativePath($root, $file->getPathname());
-        return !in_array($path, ['.git', 'var/temporary', 'var/documents', 'var/queue'], true)
+        return !in_array($path, ['.git', 'docs', 'var/temporary', 'var/documents', 'var/queue'], true)
             && !preg_match('/(?:^|\/)(?:\.env[^\/]*|[^\/]*\.(?:pem|key))$/', $path);
     }
 ));
@@ -582,12 +574,9 @@ foreach (['sk', 'cs', 'de', 'fr', 'pl'] as $language) {
     check(strpos($localized, '1.0.0') !== false, 'localized README preserves development version: ' . $language);
 }
 
-$githubMetadata = readFileStrict($root . '/docs/GITHUB-REPOSITORY.md');
-check(strpos($githubMetadata, 'JOO-INTERNET-MEDIA-LTD/jooim_withdrawal') !== false, 'GitHub metadata targets official repository');
-check(strpos($githubMetadata, 'jooim_withdrawal-1.0.0.zip') !== false, 'GitHub metadata names installation release asset');
-check(strpos($githubMetadata, 'first stable public release') !== false, 'GitHub metadata documents stable 1.0.0 release policy');
-check(strpos($githubMetadata, 'odstupenie-od-zmluvy') !== false, 'GitHub metadata includes Slovak discovery topic');
-check(strpos($githubMetadata, 'vertragswiderruf') !== false, 'GitHub metadata includes German discovery topic');
+check(strpos($readme, 'JOO-INTERNET-MEDIA-LTD/jooim_withdrawal') !== false, 'README targets the official repository');
+check(strpos($readme, 'jooim_withdrawal-1.1.1.zip') !== false, 'README names the installation release asset');
+check(strpos($readme, 'docs/') === false, 'public README does not link local-only documentation');
 
 $nullableInsertFiles = [
     'controllers/front/directreview.php',
@@ -617,7 +606,7 @@ foreach (new RecursiveIteratorIterator(new RecursiveCallbackFilterIterator(
     new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS),
     static function ($file) use ($root): bool {
         $path = relativePath($root, $file->getPathname());
-        return !in_array($path, ['.git', 'var/temporary', 'var/documents', 'var/queue'], true)
+        return !in_array($path, ['.git', 'docs', 'var/temporary', 'var/documents', 'var/queue'], true)
             && !preg_match('/(?:^|\/)(?:\.env[^\/]*|[^\/]*\.(?:pem|key))$/', $path);
     }
 )) as $file) {

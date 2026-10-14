@@ -33,7 +33,7 @@ Język angielski jest językiem źródłowym kodu, szablonów, dokumentacji i ka
 
 Moduł został zaprojektowany w oparciu o unijne ramy prawa konsumenta i wymogi dotyczące funkcji odstąpienia online dla właściwych umów zawartych na odległość przez interfejs online. Nie odrzuca automatycznie oświadczenia wyłącznie na podstawie daty, statusu zamówienia lub typu produktu.
 
-Sprzedawca odpowiada za ocenę prawną, prawidłowe dane przedsiębiorcy, teksty krajowe, wyjątki ustawowe, koszty zwrotu, decyzję o refundacji i okresy retencji. Zobacz [docs/LEGAL-COMPLIANCE.md](docs/LEGAL-COMPLIANCE.md).
+Sprzedawca odpowiada za ocenę prawną, prawidłowe dane przedsiębiorcy, teksty krajowe, wyjątki ustawowe, koszty zwrotu, decyzję o refundacji i okresy retencji. Zobacz lokalna dokumentacja projektu.
 
 ## Wymagania
 
@@ -55,11 +55,11 @@ Moduł nie używa override rdzenia PrestaShop.
 5. W multistore skonfiguruj każdy sklep osobno.
 6. Uzupełnij dane sprzedawcy, kontakty, adres/instrukcje zwrotu i URL polityki prywatności.
 7. Przetestuj formularz bezpośredni, bezpieczny proces zamówienia, e-mail, PDF i Back Office.
-8. Wykonaj [testy akceptacyjne](docs/ACCEPTANCE-TESTS.md) na środowisku staging.
+8. Wykonaj testy akceptacyjne na środowisku staging.
 
 Wersja **1.0.0** jest pierwszym stabilnym wydaniem publicznym. Kolejne zmiany funkcjonalne lub kompatybilności otrzymają nowy numer wersji.
 
-Podczas aktualizacji instalacji, która używała przedpremierowego pakietu testowego `1.0.0` należy wymienić cały katalog modułu, jednokrotnie otworzyć konfigurację modułu w każdym kontekście sklepu i wyczyścić pamięć podręczną PrestaShop. Strona konfiguracji idempotentnie uzupełnia brakującą konfigurację uruchomieniową, hooki i wartości bezpieczeństwa bez zmiany istniejącego sekretu ani usuwania otrzymanych odstąpień. Zobacz [docs/INSTALLATION.md](docs/INSTALLATION.md#6-replacing-an-earlier-100-test-build).
+Podczas aktualizacji instalacji, która używała przedpremierowego pakietu testowego `1.0.0` należy wymienić cały katalog modułu, jednokrotnie otworzyć konfigurację modułu w każdym kontekście sklepu i wyczyścić pamięć podręczną PrestaShop. Strona konfiguracji idempotentnie uzupełnia brakującą konfigurację uruchomieniową, hooki i wartości bezpieczeństwa bez zmiany istniejącego sekretu ani usuwania otrzymanych odstąpień. Zobacz lokalna dokumentacja projektu.
 
 ## Procesy klienta
 
@@ -122,4 +122,4 @@ Moduł jest udostępniany na [licencji MIT](LICENSE). Copyright © 2026 JOO INTE
 
 ## Ďalšie jazykové názvy / Other language terms
 
-Pozri [multilingual terminology and search aliases](docs/TERMINOLOGY.md).
+Pozri multilingual terminology and search aliases.
