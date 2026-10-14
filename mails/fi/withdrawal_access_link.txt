@@ -1,0 +1,8 @@
+Hei {firstname},
+
+Jatka turvalliseen sopimuksen peruuttamiseen verkossa tämän linkin kautta:
+Jatka peruuttamiseen: {access_url}
+
+Linkki on voimassa {expires_minutes} minuuttia. Pelkkä avaaminen ei käytä sitä; jatkaminen vahvistetaan seuraavalla sivulla.
+
+Jos et pyytänyt tätä linkkiä, voit jättää tämän viestin huomiotta.

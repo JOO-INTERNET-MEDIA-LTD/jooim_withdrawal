@@ -63,9 +63,10 @@ namespace {
 namespace JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service {
     final class ModuleConfig
     {
+        public array $values = [];
         public function get(string $key, string $default = ''): string
         {
-            return $default;
+            return $this->values[$key] ?? $default;
         }
     }
 }
@@ -158,15 +159,19 @@ namespace {
     $assert(strpos($drafts, 'submitted_at IS NOT NULL OR expires_at > UTC_TIMESTAMP()') !== false, 'idempotent draft query permits an already committed submission');
 
     require_once $root . '/src/Service/WithdrawalReferenceGenerator.php';
-    $generator = new \JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\WithdrawalReferenceGenerator(
-        new \JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\ModuleConfig()
-    );
+    $referenceConfig = new \JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\ModuleConfig();
+    $generator = new \JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\WithdrawalReferenceGenerator($referenceConfig);
     $generated = $generator->next(1, 'SK');
     $db = \Db::getInstance();
-    $assert($generated === sprintf('WD-SK-%04d-000042', (int) gmdate('Y')), 'reference generator advances the locked sequence');
+    $assert($generated === sprintf('WD-SK-S1-%04d-000042', (int) gmdate('Y')), 'reference generator advances the locked sequence');
     $assert(isset($db->selectQueries[0]['sql']) && str_ends_with($db->selectQueries[0]['sql'], 'FOR UPDATE'), 'reference locking query ends with FOR UPDATE');
     $assert(isset($db->selectQueries[0]['use_cache']) && $db->selectQueries[0]['use_cache'] === false, 'reference locking query bypasses cache');
     $assert(isset($db->updates[0]['data']['last_value']) && (int) $db->updates[0]['data']['last_value'] === 42, 'reference sequence update persists the next value');
+
+    $assert($generator->next(2, 'SK') !== $generated, 'shops with the same country and sequence have distinct references');
+
+    $referenceConfig->values['JOOIM_WITHDRAWAL_REFERENCE_PREFIX'] = 'returns';
+    $assert(str_starts_with($generator->next(1, 'sk'), 'RETURNS-SK-S1-'), 'lowercase prefix and country normalize without losing characters');
 
     if ($failures !== []) {
         echo 'FAIL: ' . count($failures) . PHP_EOL;

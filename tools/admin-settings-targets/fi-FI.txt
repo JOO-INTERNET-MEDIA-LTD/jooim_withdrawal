@@ -98,7 +98,7 @@
 098	Lyhyt koodi peruuttamisviitteiden alussa. Käytä vain kirjaimia, numeroita ja yhdysmerkkejä, esimerkiksi WD. Olemassa olevia peruuttamisviitteitä ei koskaan muuteta.
 099	Joitakin ajonaikaisia vaatimuksia ei voitu synkronoida. Tarkista PrestaShop-lokit ennen julkista käyttöä.
 100	Käynnistää suojatun tilausviitteeseen perustuvan menettelyn. Asiakas syöttää vain julkisen tilausviitteen; tilaus- ja henkilötiedot pysyvät piilossa, kunnes sähköpostin kertakäyttölinkki vahvistetaan.
-101	Tuetut PrestaShop-versiot ovat 8.1–9.1.
+101	Tuetut PrestaShop-versiot ovat 8.x ja 9.x.
 102	Oletusarvot ovat tarkoituksella varovaisia. Nosta rajoja vasta todellisen liikenteen ja väärinkäyttölokien tarkastelun jälkeen; liian matalat rajat voivat estää oikeutettuja kuluttajia.
 103	Nämä arvot yksilöivät valittua kauppaa tosiasiallisesti ylläpitävän myyjän. Ne tallennetaan multistore-ympäristössä kauppakohtaisesti ja tulostetaan asiakkaan vahvistuksiin ja PDF-todisteeseen.
 104	Tämä ilmainen GitHub-moduuli toimitetaan ilman henkilökohtaista teknistä tukea. Asennus, määritys, tuotantotestaus, päivitykset ja vianmääritys ovat saatavilla Joobox PrestaShop Cloudia käyttäville asiakkaille tai muun JOO INTERNET MEDIA LTD:n kanssa nimenomaisesti sovitun maksullisen palvelun perusteella.

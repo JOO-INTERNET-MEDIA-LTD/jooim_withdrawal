@@ -1,0 +1,5 @@
+Zabilježen je novi raskid ugovora.
+Referenca raskida: {withdrawal_reference}
+Narudžba / ugovor: {order_reference}
+Elektronički kontakt: {customer_email}
+Status: {status}

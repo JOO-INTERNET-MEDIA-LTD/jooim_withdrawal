@@ -1,0 +1,9 @@
+Atsisakymo būsena atnaujinta.
+Atsisakymo nuoroda: {withdrawal_reference}
+Užsakymas / sutartis: {order_reference}
+Būsena: {status}
+
+Prekybininko žinutė:
+{public_message}
+
+Prekybininko kontaktai: {merchant_email}

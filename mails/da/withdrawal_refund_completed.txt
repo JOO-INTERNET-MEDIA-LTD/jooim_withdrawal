@@ -1,0 +1,9 @@
+Refusionen er registreret som gennemført.
+Fortrydelsesreference: {withdrawal_reference}
+Ordre / aftale: {order_reference}
+Status: {status}
+
+Besked fra erhvervsdrivende:
+{public_message}
+
+Kontakt til erhvervsdrivende: {merchant_email}

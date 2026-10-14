@@ -98,7 +98,7 @@
 098	Código corto utilizado al inicio de las referencias de desistimiento. Utilice solo letras, números y guiones, por ejemplo WD. Las referencias existentes nunca se modifican.
 099	No se pudieron sincronizar algunos requisitos de ejecución. Revise los registros de PrestaShop antes del uso público.
 100	Inicia el proceso seguro mediante referencia de pedido. El cliente introduce únicamente la referencia pública; los datos del pedido y los datos personales permanecen ocultos hasta confirmar el enlace de correo de un solo uso.
-101	Se admiten las versiones de PrestaShop 8.1 a 9.1.
+101	Las versiones compatibles de PrestaShop son 8.x y 9.x.
 102	Los valores predeterminados son deliberadamente conservadores. Aumente los límites solo después de revisar el tráfico real y los registros de abuso; reducirlos demasiado puede bloquear a consumidores legítimos.
 103	Estos valores identifican al vendedor real que opera la tienda seleccionada. Se almacenan por tienda en multitienda y se imprimen en los acuses del cliente y en las pruebas PDF.
 104	Este módulo gratuito de GitHub se proporciona sin soporte técnico individual. La instalación, configuración, pruebas de producción, actualizaciones y resolución de problemas están disponibles para clientes de Joobox PrestaShop Cloud u otro servicio de pago acordado expresamente con JOO INTERNET MEDIA LTD.

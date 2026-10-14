@@ -1,0 +1,12 @@
+Returvejledning
+Fortrydelsesreference: {withdrawal_reference}
+Ordre / aftale: {order_reference}
+Status: {status}
+
+Besked fra erhvervsdrivende:
+{public_message}
+
+Returadresse / vejledning:
+{return_address}
+
+Kontakt til erhvervsdrivende: {merchant_email}

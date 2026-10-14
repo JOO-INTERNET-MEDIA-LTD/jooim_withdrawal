@@ -1,0 +1,9 @@
+Thaifeadamar go bhfuarthas na hearraí a seoladh ar ais.
+Tagairt aistarraingthe: {withdrawal_reference}
+Ordú / conradh: {order_reference}
+Stádas: {status}
+
+Teachtaireacht an trádálaí:
+{public_message}
+
+Teagmháil an trádálaí: {merchant_email}

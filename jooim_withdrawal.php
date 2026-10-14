@@ -36,7 +36,7 @@ use JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\WithdrawalStatusP
 
 class Jooim_Withdrawal extends Module
 {
-    public const VERSION = '1.0.0';
+    public const VERSION = '1.1.1';
     private const FRONT_ASSET_BASENAME = 'front-footer-v4';
     public const GITHUB_REPOSITORY_URL = 'https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal';
     public const GITHUB_RELEASES_URL = 'https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal/releases/latest';
@@ -63,7 +63,7 @@ class Jooim_Withdrawal extends Module
         $this->author = 'JOO INTERNET MEDIA LTD';
         $this->need_instance = 0;
         $this->bootstrap = true;
-        $this->ps_versions_compliancy = ['min' => '8.1.0', 'max' => '9.1.99'];
+        $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => '9.99.99'];
 
         parent::__construct();
 
@@ -103,8 +103,8 @@ class Jooim_Withdrawal extends Module
             $this->_errors[] = $this->trans('PHP 8.1 or newer is required.', [], self::TRANS_ADMIN);
             return false;
         }
-        if (version_compare(_PS_VERSION_, '8.1.0', '<') || version_compare(_PS_VERSION_, '9.1.99', '>')) {
-            $this->_errors[] = $this->trans('Supported PrestaShop versions are 8.1 through 9.1.', [], self::TRANS_ADMIN);
+        if (version_compare(_PS_VERSION_, '8.0.0', '<') || version_compare(_PS_VERSION_, '10.0.0', '>=')) {
+            $this->_errors[] = $this->trans('Supported PrestaShop versions are 8.x and 9.x.', [], self::TRANS_ADMIN);
             return false;
         }
 
@@ -162,6 +162,17 @@ class Jooim_Withdrawal extends Module
         return true;
     }
 
+    public function jooimWithdrawalUpgrade(): bool
+    {
+        try {
+            $this->jooimWithdrawalEnsureRuntimeIntegration();
+            return (bool) $this->synchronizeRuntimeState()['ok'];
+        } catch (Throwable $exception) {
+            $this->logRuntimeProblem('Module runtime upgrade failed.');
+            return false;
+        }
+    }
+
     /**
      * Intentionally preserves legally relevant data. Destructive purge is a separate explicit action.
      */
@@ -190,15 +201,8 @@ class Jooim_Withdrawal extends Module
 
     private function rollbackInstall(): void
     {
-        $sql = @file_get_contents(__DIR__ . '/sql/uninstall.sql');
-        if ($sql !== false) {
-            $sql = str_replace('PREFIX_', _DB_PREFIX_, $sql);
-            foreach (preg_split('/;\s*(?:\r?\n|$)/', $sql) as $statement) {
-                if (trim($statement) !== '') {
-                    Db::getInstance()->execute($statement);
-                }
-            }
-        }
+        // A failed reinstall must never drop retained legal records. Leave
+        // idempotently created tables available for a subsequent repair.
         $this->uninstallTabs();
     }
 
@@ -506,10 +510,19 @@ class Jooim_Withdrawal extends Module
                 'JOOIM_WITHDRAWAL_MERCHANT_EMAIL', 'JOOIM_WITHDRAWAL_MERCHANT_PHONE',
                 'JOOIM_WITHDRAWAL_RETURN_ADDRESS',
             ];
+            $values = [];
             foreach ($fields as $key) {
-                $config->set($key, (string) Tools::getValue($key, ''));
+                $values[$key] = trim((string) Tools::getValue($key, ''));
             }
-            $output .= $this->displayConfirmation($this->trans('Settings saved.', [], self::TRANS_ADMIN));
+            $validator = new \JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\ConfigurationValidator();
+            if (!$validator->isValid($values)) {
+                $output .= $this->displayError($this->trans('Invalid settings. Check the entered values.', [], self::TRANS_ADMIN));
+            } else {
+                $saved = $config->saveAll($values);
+                $output .= $saved
+                    ? $this->displayConfirmation($this->trans('Settings saved.', [], self::TRANS_ADMIN))
+                    : $this->displayError($this->trans('Invalid settings. Check the entered values.', [], self::TRANS_ADMIN));
+            }
         }
 
         if (Tools::isSubmit('purgeJooimWithdrawalData')) {
@@ -1072,6 +1085,10 @@ class Jooim_Withdrawal extends Module
     private function localizedRouteSlugs(string $isoCode): array
     {
         $routes = [
+            'lb' => ['base' => 'recktrett-vum-kontrakt', 'direct' => 'direkt', 'access' => 'zougang', 'verify' => 'iwwerpreiwung', 'form' => 'formular', 'review' => 'kontroll', 'submit' => 'ofschicken', 'confirmation' => 'bestaetegung', 'document' => 'dokument', 'status' => 'status'],
+            'nb' => ['base' => 'angre-pa-avtalen', 'direct' => 'direkte', 'access' => 'tilgang', 'verify' => 'bekreftelse', 'form' => 'skjema', 'review' => 'gjennomgang', 'submit' => 'send', 'confirmation' => 'kvittering', 'document' => 'dokument', 'status' => 'status'],
+            'nn' => ['base' => 'angre-pa-avtalen', 'direct' => 'direkte', 'access' => 'tilgang', 'verify' => 'stadfesting', 'form' => 'skjema', 'review' => 'gjennomgang', 'submit' => 'send', 'confirmation' => 'kvittering', 'document' => 'dokument', 'status' => 'status'],
+            'no' => ['base' => 'angre-pa-avtalen', 'direct' => 'direkte', 'access' => 'tilgang', 'verify' => 'bekreftelse', 'form' => 'skjema', 'review' => 'gjennomgang', 'submit' => 'send', 'confirmation' => 'kvittering', 'document' => 'dokument', 'status' => 'status'],
             'bg' => ['base' => 'otkaz-ot-dogovora', 'direct' => 'direktno', 'access' => 'dostap', 'verify' => 'proverka', 'form' => 'formular', 'review' => 'pregled', 'submit' => 'izprashtane', 'confirmation' => 'potvarzhdenie', 'document' => 'dokument', 'status' => 'status'],
             'cs' => ['base' => 'odstoupeni-od-smlouvy', 'direct' => 'primo', 'access' => 'pristup', 'verify' => 'overeni', 'form' => 'formular', 'review' => 'kontrola', 'submit' => 'odeslat', 'confirmation' => 'potvrzeni', 'document' => 'dokument', 'status' => 'stav'],
             'da' => ['base' => 'fortrydelse-af-aftale', 'direct' => 'direkte', 'access' => 'adgang', 'verify' => 'verificering', 'form' => 'formular', 'review' => 'gennemgang', 'submit' => 'indsend', 'confirmation' => 'kvittering', 'document' => 'dokument', 'status' => 'status'],
@@ -1515,6 +1532,10 @@ class Jooim_Withdrawal extends Module
             'es' => 'Desistimientos del contrato',
             'sv' => 'Frånträden från avtal',
             'uk' => 'Відмови від договору',
+            'lb' => 'Récktrëtter vu Kontrakter',
+            'nb' => 'Angrerettsaker',
+            'nn' => 'Angrerettsaker',
+            'no' => 'Angrerettsaker',
         ];
     }
 

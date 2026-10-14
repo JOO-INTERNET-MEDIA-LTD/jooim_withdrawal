@@ -1,0 +1,5 @@
+Új szerződéstől való elállás rögzítve.
+Elállási hivatkozás: {withdrawal_reference}
+Rendelés / szerződés: {order_reference}
+Elektronikus elérhetőség: {customer_email}
+Állapot: {status}

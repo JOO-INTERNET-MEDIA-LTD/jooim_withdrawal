@@ -98,7 +98,7 @@
 098	Kort kod i början av frånträdesreferenser. Använd endast bokstäver, siffror och bindestreck, till exempel WD. Befintliga frånträdesreferenser ändras aldrig.
 099	Vissa körtidskrav kunde inte synkroniseras. Granska PrestaShop-loggarna före offentlig användning.
 100	Startar det säkra flödet via beställningsreferens. Kunden anger endast den offentliga beställningsreferensen; beställnings- och personuppgifter förblir dolda tills engångslänken i e-postmeddelandet har bekräftats.
-101	PrestaShop-versionerna 8.1 till 9.1 stöds.
+101	PrestaShop-versionerna 8.x och 9.x stöds.
 102	Standardvärdena är avsiktligt försiktiga. Höj gränserna först efter granskning av verklig trafik och missbruksloggar; för låga gränser kan blockera legitima konsumenter.
 103	Dessa värden identifierar den faktiska säljaren som driver den valda butiken. De lagras per butik i multistore och skrivs ut i kundbekräftelser och PDF-bevis.
 104	Denna kostnadsfria GitHub-modul tillhandahålls utan individuell teknisk support. Installation, konfiguration, produktionstestning, uppdateringar och felsökning är tillgängliga för kunder som använder Joobox PrestaShop Cloud eller en annan betaltjänst som uttryckligen avtalats med JOO INTERNET MEDIA LTD.

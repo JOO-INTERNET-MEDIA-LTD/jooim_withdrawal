@@ -1,0 +1,9 @@
+Статус відмови оновлено.
+Номер відмови: {withdrawal_reference}
+Замовлення / договір: {order_reference}
+Статус: {status}
+
+Повідомлення продавця:
+{public_message}
+
+Контакт продавця: {merchant_email}

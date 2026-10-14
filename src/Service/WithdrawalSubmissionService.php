@@ -124,7 +124,7 @@ final class WithdrawalSubmissionService
             $merchant = $this->config->merchantSnapshot();
             $snapshot = [
                 'schema_version' => '1.0',
-                'module' => ['technical_name' => 'jooim_withdrawal', 'version' => '1.0.0', 'vendor' => 'JOO INTERNET MEDIA LTD'],
+                'module' => ['technical_name' => 'jooim_withdrawal', 'version' => (string) $this->module->version, 'vendor' => 'JOO INTERNET MEDIA LTD'],
                 'draft_id' => $idDraft,
                 'withdrawal_reference' => $reference,
                 'shop' => ['id' => (int) $this->context->shop->id, 'name' => (string) $this->context->shop->name, 'timezone' => $timezoneName],
@@ -144,6 +144,9 @@ final class WithdrawalSubmissionService
                 'locale' => $this->languageLocale(),
                 'form_version' => (string) ($payload['form_version'] ?? '1.0'),
                 'requires_manual_review' => (bool) ($payload['requires_manual_review'] ?? false),
+                'admin_employee_id' => isset($payload['admin_employee_id']) ? (int) $payload['admin_employee_id'] : null,
+                'received_method' => (string) ($payload['received_method'] ?? ''),
+                'received_at' => $payload['received_at'] ?? null,
             ];
             $snapshotJson = $this->encodeJson($snapshot, 'withdrawal_snapshot');
             $payloadHash = hash('sha256', $snapshotJson);
@@ -176,7 +179,7 @@ final class WithdrawalSubmissionService
                 'submitted_at_utc' => $nowUtc->format('Y-m-d H:i:s'),
                 'shop_timezone' => pSQL($timezoneName),
                 'form_version' => pSQL((string) ($payload['form_version'] ?? '1.0')),
-                'module_version' => '1.0.0',
+                'module_version' => (string) $this->module->version,
                 'legal_text_version' => pSQL((string) ($payload['legal_text_version'] ?? 'eu-crd-11a-2026-06')),
                 'privacy_text_version' => pSQL((string) (($payload['privacy']['version'] ?? 'privacy-1.0'))),
                 'payload_json' => pSQL($snapshotJson, true),
@@ -227,7 +230,7 @@ final class WithdrawalSubmissionService
             ], 'submission_history_metadata');
             $this->mustInsert($db, 'jooim_withdrawal_history', [
                 'id_jooim_withdrawal' => $idWithdrawal,
-                'id_employee' => null,
+                'id_employee' => !empty($payload['admin_employee_id']) ? (int) $payload['admin_employee_id'] : null,
                 'old_status_code' => null,
                 'new_status_code' => 'submitted',
                 'event_code' => 'withdrawal_submitted',
@@ -329,8 +332,9 @@ final class WithdrawalSubmissionService
                     $this->mustUpdate($db, 'jooim_withdrawal', [
                         'status_code' => 'acknowledged',
                         'updated_at' => gmdate('Y-m-d H:i:s'),
-                    ], 'id_jooim_withdrawal=' . (int) $idWithdrawal, 'mark_acknowledged');
-                    return true;
+                    ], 'id_jooim_withdrawal=' . (int) $idWithdrawal
+                        . ' AND id_shop=' . (int) $this->context->shop->id . " AND status_code='submitted'", 'mark_acknowledged');
+                    return $db->Affected_Rows() === 1;
                 },
                 false
             );

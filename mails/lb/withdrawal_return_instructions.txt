@@ -1,0 +1,12 @@
+Instruktioune fir de Retour
+Récktrëttsreferenz: {withdrawal_reference}
+Bestellung / Kontrakt: {order_reference}
+Status: {status}
+
+Noriicht vum Händler:
+{public_message}
+
+Retouradress / Instruktiounen:
+{return_address}
+
+Kontakt vum Händler: {merchant_email}

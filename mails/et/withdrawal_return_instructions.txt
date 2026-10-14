@@ -1,0 +1,12 @@
+Tagastamisjuhised
+Taganemise viide: {withdrawal_reference}
+Tellimus / leping: {order_reference}
+Olek: {status}
+
+Kaupleja sõnum:
+{public_message}
+
+Tagastusaadress / juhised:
+{return_address}
+
+Kaupleja kontakt: {merchant_email}

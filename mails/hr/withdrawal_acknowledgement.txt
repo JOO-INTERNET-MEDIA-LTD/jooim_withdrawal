@@ -1,0 +1,28 @@
+Potvrda raskida ugovora
+
+Potvrđujemo primitak vaše obavijesti o raskidu ugovora.
+Referenca raskida: {withdrawal_reference}
+Narudžba / ugovor: {order_reference}
+Potrošač: {firstname} {lastname}
+Elektronički kontakt: {customer_email}
+Datum i vrijeme primitka: {submitted_at}
+Vrijeme primitka UTC: {submitted_at_utc}
+Opseg: {scope}
+
+Sadržaj podneska / stavke:
+{items_text}
+
+Izjava:
+{statement}
+
+Trgovac:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Adresa za povrat / upute:
+{return_address}
+
+Sačuvajte ovu potvrdu. Ona potvrđuje sadržaj, datum i vrijeme vaše internetske obavijesti.
+SHA-256 sažetak nepromjenjive snimke: {payload_hash}

@@ -1,0 +1,9 @@
+A kereskedő rögzítette az ügy elutasítását; az indok alább olvasható.
+Elállási hivatkozás: {withdrawal_reference}
+Rendelés / szerződés: {order_reference}
+Állapot: {status}
+
+Kereskedő üzenete:
+{public_message}
+
+Kereskedő elérhetősége: {merchant_email}

@@ -99,7 +99,7 @@
   "Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.",
   "Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.",
   "Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.",
-  "Supported PrestaShop versions are 8.1 through 9.1.",
+  "Supported PrestaShop versions are 8.x and 9.x.",
   "The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.",
   "These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.",
   "This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.",

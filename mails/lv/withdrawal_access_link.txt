@@ -1,0 +1,8 @@
+Labdien, {firstname}!
+
+Izmantojiet šo saiti, lai turpinātu drošo tiešsaistes atteikuma no līguma procesu:
+Turpināt uz atteikumu: {access_url}
+
+Saite ir derīga {expires_minutes} minūtes. Tikai atverot to, tā netiek izmantota; turpināšana tiek apstiprināta nākamajā lapā.
+
+Ja nepieprasījāt šo saiti, varat ignorēt šo ziņojumu.

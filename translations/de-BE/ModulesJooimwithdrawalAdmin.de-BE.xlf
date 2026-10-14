@@ -1,0 +1,943 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="file.ext" source-language="en-US" target-language="de-BE">
+    <body>
+      <trans-unit id="105639f6b7c568ce5ecf630b6d196109" resname="A new module version is available.">
+        <source>A new module version is available.</source>
+        <target>Eine neue Modulversion ist verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="268c4326ce709c26101b720ed5e6738a" resname="A rejection requires a customer-facing reason.">
+        <source>A rejection requires a customer-facing reason.</source>
+        <target>Eine Ablehnung erfordert eine kundenbezogene Begründung.</target>
+      </trans-unit>
+      <trans-unit id="f9ee61c14e2a0ff9e4a1dac8c187e4b9" resname="Acknowledgement email could not be sent.">
+        <source>Acknowledgement email could not be sent.</source>
+        <target>Die Bestätigungs-E-Mail konnte nicht gesendet werden.</target>
+      </trans-unit>
+      <trans-unit id="b574958c30b5ba01314361601475b0d7" resname="Acknowledgement retry count">
+        <source>Acknowledgement retry count</source>
+        <target>Anzahl der Wiederholungsversuche für die Bestätigung</target>
+      </trans-unit>
+      <trans-unit id="7d04527e464401f037f7b770ef6f11ce" resname="Acknowledgement sent again">
+        <source>Acknowledgement sent again</source>
+        <target>Bestätigung erneut gesendet</target>
+      </trans-unit>
+      <trans-unit id="9b94f4f2343959f4c7dcd5b00b8524dc" resname="Acknowledgement sent.">
+        <source>Acknowledgement sent.</source>
+        <target>Bestätigung wurde gesendet.</target>
+      </trans-unit>
+      <trans-unit id="4e229fb322d31d83c5a5c3564e3a31cf" resname="Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.">
+        <source>Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.</source>
+        <target>Fügt im Bereich „Mein Konto“ des Kunden einen Eintrag zum Widerruf hinzu. Der Kunde kann weiterhin den öffentlichen Ablauf verwenden, wenn die Bestellung im Konto nicht sichtbar ist.</target>
+      </trans-unit>
+      <trans-unit id="eb8c72d6f4238351ce427d900b7acdde" resname="Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.">
+        <source>Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.</source>
+        <target>Fügt der Detailansicht einer Bestellung, die dem angemeldeten Kunden gehört, eine Schaltfläche „Vertrag widerrufen“ hinzu. Die Inhaberschaft wird serverseitig geprüft.</target>
+      </trans-unit>
+      <trans-unit id="96e3d398260724e0a83da53a2e9f20e7" resname="All statuses">
+        <source>All statuses</source>
+        <target>Alle Status</target>
+      </trans-unit>
+      <trans-unit id="b66759fdefd03410fcc05c0a0cfb1617" resname="Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.">
+        <source>Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.</source>
+        <target>Ermöglicht dem Verbraucher, einen eindeutigen Widerruf ohne Anmeldung oder Anzeige von Bestelldaten abzugeben. Halten Sie diese Funktion für einschlägige online geschlossene B2C-Verträge verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="b2f40690858b404ed10e62bdf422c704" resname="Amount">
+        <source>Amount</source>
+        <target>Betrag</target>
+      </trans-unit>
+      <trans-unit id="48f420a5ab439f6afaefd045a2e36186" resname="Attach PDF acknowledgement">
+        <source>Attach PDF acknowledgement</source>
+        <target>PDF-Eingangsbestätigung anhängen</target>
+      </trans-unit>
+      <trans-unit id="7395a545f8e75cb154506f525d21ac7f" resname="Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.">
+        <source>Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.</source>
+        <target>Fügt der Bestätigungs-E-Mail die unveränderliche PDF-Bestätigung des Widerrufs bei. Das Deaktivieren des Anhangs entfernt nicht die geschützte PDF-Datei, die beim Vorgang gespeichert ist.</target>
+      </trans-unit>
+      <trans-unit id="4174b43fcb77c71147154d70e243a3b4" resname="Audit history">
+        <source>Audit history</source>
+        <target>Audit-Historie</target>
+      </trans-unit>
+      <trans-unit id="630c3dd335d95f0e17dc7598c29a18ad" resname="Available at submission">
+        <source>Available at submission</source>
+        <target>Bei Einreichung verfügbar</target>
+      </trans-unit>
+      <trans-unit id="08fc26d02a0a34750fa794c9210ea617" resname="Back Office settings only">
+        <source>Back Office settings only</source>
+        <target>Nur Back-Office-Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="5bf9a5d2d48868e8bfd393ffb31b010a" resname="Case closed">
+        <source>Case closed</source>
+        <target>Vorgang abgeschlossen</target>
+      </trans-unit>
+      <trans-unit id="1a820eaf098af708e2e899f448284922" resname="Cases:">
+        <source>Cases:</source>
+        <target>Fälle:</target>
+      </trans-unit>
+      <trans-unit id="af5519d5b46da35f34c10fb4a6fb97b4" resname="Change status">
+        <source>Change status</source>
+        <target>Status ändern</target>
+      </trans-unit>
+      <trans-unit id="4608ac7d9d0cee7eca9bd8e6924a7ccd" resname="Company identifier">
+        <source>Company identifier</source>
+        <target>Unternehmenskennung</target>
+      </trans-unit>
+      <trans-unit id="9fecbc47aacafec4c27333c9efcdf9fa" resname="Confirmation sent">
+        <source>Confirmation sent</source>
+        <target>Bestätigung gesendet</target>
+      </trans-unit>
+      <trans-unit id="47af0d5c5812f2809b0c01a3a8dfe33b" resname="Consumer-described selected part:">
+        <source>Consumer-described selected part:</source>
+        <target>Vom Verbraucher beschriebener ausgewählter Teil:</target>
+      </trans-unit>
+      <trans-unit id="db3c3b36681eab376d98d90a8a717cf1" resname="Contract withdrawals">
+        <source>Contract withdrawals</source>
+        <target>Vertragswiderrufe</target>
+      </trans-unit>
+      <trans-unit id="304dcfa3d299ecc6138e6896cad81aa1" resname="Create manual withdrawal">
+        <source>Create manual withdrawal</source>
+        <target>Manuellen Widerruf erstellen</target>
+      </trans-unit>
+      <trans-unit id="7c947294fb915010b326d1bc14717fef" resname="Create manual withdrawal record">
+        <source>Create manual withdrawal record</source>
+        <target>Manuellen Widerrufsdatensatz erstellen</target>
+      </trans-unit>
+      <trans-unit id="68af74b08d0a6bef3a7cab83b43007a8" resname="Current module version">
+        <source>Current module version</source>
+        <target>Aktuelle Modulversion</target>
+      </trans-unit>
+      <trans-unit id="ce26601dac0dea138b7295f02b7620a7" resname="Customer">
+        <source>Customer</source>
+        <target>Kunde</target>
+      </trans-unit>
+      <trans-unit id="cf67f8ec1757747174f522cedbd0a3ef" resname="Customer account link">
+        <source>Customer account link</source>
+        <target>Link im Kundenkonto</target>
+      </trans-unit>
+      <trans-unit id="b0fb0ac18cc9bf4311d1157aff04c28a" resname="Customer and statement">
+        <source>Customer and statement</source>
+        <target>Kunde und Erklärung</target>
+      </trans-unit>
+      <trans-unit id="03361eda68f746619c2ae3341eaa2f07" resname="Customer email">
+        <source>Customer email</source>
+        <target>Kunden-E-Mail</target>
+      </trans-unit>
+      <trans-unit id="e299b273bfe65f12d5c5e635a00d0d08" resname="Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.">
+        <source>Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.</source>
+        <target>Kundenkontaktadresse für die Kommunikation zum Widerruf. Verwenden Sie ein aktiv überwachtes Postfach; tragen Sie hier nicht die E-Mail-Adresse des Kunden ein.</target>
+      </trans-unit>
+      <trans-unit id="af70c9cb6796dcfe2978ce8f010e3012" resname="Customer-facing reason/message (required for rejected)">
+        <source>Customer-facing reason/message (required for rejected)</source>
+        <target>Begründung/Nachricht für den Kunden (bei Ablehnung erforderlich)</target>
+      </trans-unit>
+      <trans-unit id="44749712dbec183e983dcd78a7736c41" resname="Date">
+        <source>Date</source>
+        <target>Datum</target>
+      </trans-unit>
+      <trans-unit id="0f4dd5b31b2621c3867dbdc20bcfd6fb" resname="Direct Article 11a function">
+        <source>Direct Article 11a function</source>
+        <target>Direkte Funktion gemäß Artikel 11a</target>
+      </trans-unit>
+      <trans-unit id="250ca4811bc3e3ed4ed5ab8d842651f7" resname="Direct withdrawal">
+        <source>Direct withdrawal</source>
+        <target>Direkter Widerruf</target>
+      </trans-unit>
+      <trans-unit id="1c68e1ef8d76b6e3068ec0095d6b24d7" resname="Direct withdrawal function:">
+        <source>Direct withdrawal function:</source>
+        <target>Direkte Widerrufsfunktion:</target>
+      </trans-unit>
+      <trans-unit id="b9f5c797ebbf55adccdd8539a65a0241" resname="Disabled">
+        <source>Disabled</source>
+        <target>Deaktiviert</target>
+      </trans-unit>
+      <trans-unit id="d0ab632cea3a5b05130f1097ac2829b4" resname="Disabled (legal review required)">
+        <source>Disabled (legal review required)</source>
+        <target>Deaktiviert (rechtliche Prüfung erforderlich)</target>
+      </trans-unit>
+      <trans-unit id="1cedb4b2ec1998c6e929abf9084480b8" resname="Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.">
+        <source>Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.</source>
+        <target>Zeigt den kundenbezogenen Link „Vertrag widerrufen“ in der Fußzeile des Shops an. Dieser Link zur rechtlichen Funktion ist unabhängig vom Joobox-Marketinghinweis.</target>
+      </trans-unit>
+      <trans-unit id="ed3c66fffe366c0a2353128130774532" resname="Documents and acknowledgement">
+        <source>Documents and acknowledgement</source>
+        <target>Dokumente und Bestätigung</target>
+      </trans-unit>
+      <trans-unit id="00c6156d5f4d21eecf8aca0c3972d4a0" resname="Duplicate submission">
+        <source>Duplicate submission</source>
+        <target>Doppelte Einreichung</target>
+      </trans-unit>
+      <trans-unit id="e04377a3e2bd9aee7e2aaaa8e42b6c31" resname="Each active shop language receives its own localized friendly path. The language-neutral entry URLs remain available for external link-list modules. Test both flows in every active language after deployment.">
+        <source>Each active shop language receives its own localized friendly path. The language-neutral entry URLs remain available for external link-list modules. Test both flows in every active language after deployment.</source>
+        <target>Jede aktive Shopsprache erhält einen eigenen lokalisierten, lesbaren Pfad. Sprachneutrale Einstiegs-URLs bleiben für externe Linklisten-Module verfügbar. Testen Sie nach der Bereitstellung beide Abläufe in jeder aktiven Sprache.</target>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d" resname="Email">
+        <source>Email</source>
+        <target>E-Mail</target>
+      </trans-unit>
+      <trans-unit id="d4785e1f28e6858ec969ad1e2ab8eb64" resname="Emails per order / day">
+        <source>Emails per order / day</source>
+        <target>E-Mails pro Bestellung / Tag</target>
+      </trans-unit>
+      <trans-unit id="199baa0f4d93ce8c32c2a0eeec862d48" resname="Emails per order / hour">
+        <source>Emails per order / hour</source>
+        <target>E-Mails pro Bestellung / Stunde</target>
+      </trans-unit>
+      <trans-unit id="f8c8b903cb2e4f297e4b96d4b9c1e98a" resname="Employee">
+        <source>Employee</source>
+        <target>Mitarbeiter</target>
+      </trans-unit>
+      <trans-unit id="00d23a76e43b46dae9ec7aa9dcbebb32" resname="Enabled">
+        <source>Enabled</source>
+        <target>Aktiviert</target>
+      </trans-unit>
+      <trans-unit id="e16b95f990f6ab5d2364ccf81cd68bd4" resname="Enables the direct online withdrawal form that does not require a customer account or access to the original order email. Disable it only after a market-specific legal review.">
+        <source>Enables the direct online withdrawal form that does not require a customer account or access to the original order email. Disable it only after a market-specific legal review.</source>
+        <target>Aktiviert das direkte Online-Widerrufsformular, das weder ein Kundenkonto noch Zugriff auf die ursprüngliche Bestell-E-Mail erfordert. Deaktivieren Sie es nur nach einer marktspezifischen rechtlichen Prüfung.</target>
+      </trans-unit>
+      <trans-unit id="1224d5fb7c458ea5af3ef2c251285b41" resname="Ends a verified guest session after this period without activity. Expected range: 5–240 minutes; recommended default: 30.">
+        <source>Ends a verified guest session after this period without activity. Expected range: 5–240 minutes; recommended default: 30.</source>
+        <target>Beendet eine verifizierte Gastsitzung nach diesem Zeitraum ohne Aktivität. Erwarteter Bereich: 5–240 Minuten; empfohlener Standardwert: 30.</target>
+      </trans-unit>
+      <trans-unit id="e7f3116e4841a8f09cfcdb891932d2c5" resname="English fallback">
+        <source>English fallback</source>
+        <target>Englischer Fallback</target>
+      </trans-unit>
+      <trans-unit id="90a62e36815a61583061bb46d6698eea" resname="Enter the absolute HTTPS URL of the privacy policy that explains processing of personal data for receiving and handling withdrawals.">
+        <source>Enter the absolute HTTPS URL of the privacy policy that explains processing of personal data for receiving and handling withdrawals.</source>
+        <target>Geben Sie die absolute HTTPS-URL der Datenschutzerklärung ein, die die Verarbeitung personenbezogener Daten bei der Entgegennahme und Bearbeitung von Widerrufen erläutert.</target>
+      </trans-unit>
+      <trans-unit id="a2dba2de45cce2c64d076b7127eea3d2" resname="Enter the exact address and practical instructions for returning goods. These instructions must not impose conditions that unlawfully restrict the consumer’s withdrawal right.">
+        <source>Enter the exact address and practical instructions for returning goods. These instructions must not impose conditions that unlawfully restrict the consumer’s withdrawal right.</source>
+        <target>Geben Sie die genaue Rücksendeadresse und praktische Hinweise zur Rückgabe von Waren ein. Diese Hinweise dürfen keine Bedingungen auferlegen, die das Widerrufsrecht des Verbrauchers rechtswidrig einschränken.</target>
+      </trans-unit>
+      <trans-unit id="bf416d02cb4378b9c79efb8b78bc6da3" resname="Enter the identifier required in the seller’s jurisdiction, for example company ID, VAT ID or commercial-register number.">
+        <source>Enter the identifier required in the seller’s jurisdiction, for example company ID, VAT ID or commercial-register number.</source>
+        <target>Geben Sie die im Rechtsraum des Verkäufers erforderliche Kennung ein, zum Beispiel Unternehmensnummer, USt-IdNr. oder Handelsregisternummer.</target>
+      </trans-unit>
+      <trans-unit id="1469fd08f814cf33fcd6010e3d3f90cf" resname="Enter the seller’s full legal or registered business name, not the module vendor. It appears in the form, acknowledgement email and PDF.">
+        <source>Enter the seller’s full legal or registered business name, not the module vendor. It appears in the form, acknowledgement email and PDF.</source>
+        <target>Geben Sie den vollständigen gesetzlichen oder eingetragenen Firmennamen des Verkäufers ein, nicht den Namen des Modulanbieters. Er erscheint im Formular, in der Bestätigungs-E-Mail und in der PDF-Datei.</target>
+      </trans-unit>
+      <trans-unit id="332da8c46d9285d34fdc6a303ef961dd" resname="Enter the seller’s registered office or business address exactly as it should appear in the consumer document.">
+        <source>Enter the seller’s registered office or business address exactly as it should appear in the consumer document.</source>
+        <target>Geben Sie den eingetragenen Sitz oder die Geschäftsanschrift des Verkäufers genau so ein, wie sie im Verbraucherdokument erscheinen soll.</target>
+      </trans-unit>
+      <trans-unit id="fb636d5dcc9a87608884c792adeba49c" resname="EU compliance note (2026):">
+        <source>EU compliance note (2026):</source>
+        <target>Hinweis zur EU-Rechtskonformität (2026):</target>
+      </trans-unit>
+      <trans-unit id="a4ecfc70574394990cf17bd83df499f7" resname="Event">
+        <source>Event</source>
+        <target>Ereignis</target>
+      </trans-unit>
+      <trans-unit id="c04f1e4841a6af78088d6ccf6f3a8a76" resname="Export CSV">
+        <source>Export CSV</source>
+        <target>CSV exportieren</target>
+      </trans-unit>
+      <trans-unit id="d7778d0c64b6ba21494c97f77a66885a" resname="Filter">
+        <source>Filter</source>
+        <target>Filter</target>
+      </trans-unit>
+      <trans-unit id="20db0bfeecd8fe60533206a2b5e9891a" resname="First name">
+        <source>First name</source>
+        <target>Vorname</target>
+      </trans-unit>
+      <trans-unit id="162a905374d1a34924bb5845530d885b" resname="Footer link (keep enabled for applicable online B2C contracts)">
+        <source>Footer link (keep enabled for applicable online B2C contracts)</source>
+        <target>Footer-Link (für einschlägige Online-B2C-Verträge aktiviert lassen)</target>
+      </trans-unit>
+      <trans-unit id="392f8cab7b4ad880e3cee9522b23e07d" resname="For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.">
+        <source>For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.</source>
+        <target>Bei einschlägigen B2C-Fernabsatzverträgen, die über eine Online-Benutzeroberfläche geschlossen wurden, kann das Deaktivieren oder Ausblenden der direkten Widerrufsfunktion gegen Artikel 11a der Richtlinie 2011/83/EU in der durch Richtlinie (EU) 2023/2673 geänderten Fassung verstoßen. Die nationale Umsetzung muss weiterhin für jeden Markt geprüft werden.</target>
+      </trans-unit>
+      <trans-unit id="1d1840de10b4c570a590a590a07b508c" resname="For PrestaShop installation, do not use GitHub automatic &quot;Source code ZIP&quot;. Use only the installation ZIP file from the release assets.">
+        <source>For PrestaShop installation, do not use GitHub automatic "Source code ZIP". Use only the installation ZIP file from the release assets.</source>
+        <target>Verwenden Sie für die PrestaShop-Installation nicht das automatisch von GitHub erzeugte „Source code ZIP“. Verwenden Sie ausschließlich die Installations-ZIP-Datei aus den Release-Assets.</target>
+      </trans-unit>
+      <trans-unit id="654fdd5a7e99e04b2f77b011cc80c368" resname="For withdrawals received by email, post, in person or another channel. This creates the same immutable submission record and sends an acknowledgement to the entered email.">
+        <source>For withdrawals received by email, post, in person or another channel. This creates the same immutable submission record and sends an acknowledgement to the entered email.</source>
+        <target>Für Widerrufe, die per E-Mail, Post, persönlich oder über einen anderen Kanal eingehen. Dadurch wird derselbe unveränderliche Einreichungsdatensatz erstellt und eine Bestätigung an die angegebene E-Mail-Adresse gesendet.</target>
+      </trans-unit>
+      <trans-unit id="4a746ff7cde7d7d2d280c05dafad842c" resname="General and legal availability">
+        <source>General and legal availability</source>
+        <target>Allgemeine und rechtliche Verfügbarkeit</target>
+      </trans-unit>
+      <trans-unit id="189797bb7c7c6b6ffecb05ab1583781a" resname="Get Joobox support">
+        <source>Get Joobox support</source>
+        <target>Joobox-Support erhalten</target>
+      </trans-unit>
+      <trans-unit id="51b0eaa3e1c15a791ac16b9b87a03e98" resname="GitHub check failed: %error%">
+        <source>GitHub check failed: %error%</source>
+        <target>GitHub-Prüfung fehlgeschlagen: %error%</target>
+      </trans-unit>
+      <trans-unit id="19939b44c683468d1479c9cf5d506e61" resname="GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.">
+        <source>GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.</source>
+        <target>GitHub-Prüfungen werden höchstens alle sechs Stunden durchgeführt, sofern sie nicht manuell aktualisiert werden. Das Modul lädt oder installiert niemals automatisch Code.</target>
+      </trans-unit>
+      <trans-unit id="39589e1c0b6ffff6f9fa814e0aebdd60" resname="Hosting cron URL (secret):">
+        <source>Hosting cron URL (secret):</source>
+        <target>Hosting-Cron-URL (geheim):</target>
+      </trans-unit>
+      <trans-unit id="2e843e03cb6a49fd569c9c675a8247bd" resname="How long the one-time email access link remains usable. Expected range: 5–240 minutes; recommended default: 30.">
+        <source>How long the one-time email access link remains usable. Expected range: 5–240 minutes; recommended default: 30.</source>
+        <target>Legt fest, wie lange der einmalige E-Mail-Zugangslink verwendet werden kann. Erwarteter Bereich: 5–240 Minuten; empfohlener Standardwert: 30.</target>
+      </trans-unit>
+      <trans-unit id="66649430c5856289b11ea03f9fe80202" resname="Immutable snapshot">
+        <source>Immutable snapshot</source>
+        <target>Unveränderlicher Snapshot</target>
+      </trans-unit>
+      <trans-unit id="984ceac16fab685fc50b8d8a5eabf7de" resname="Included">
+        <source>Included</source>
+        <target>Enthalten</target>
+      </trans-unit>
+      <trans-unit id="08643daceac5930a01274e8e41de11b3" resname="Internal note">
+        <source>Internal note</source>
+        <target>Interne Notiz</target>
+      </trans-unit>
+      <trans-unit id="9ba8da419f01d0c1b27e666e6101f589" resname="Invalid CSRF token.">
+        <source>Invalid CSRF token.</source>
+        <target>Ungültiges CSRF-Token.</target>
+      </trans-unit>
+      <trans-unit id="1b528a2959fbc9757cecd2ffc16324e3" resname="Invalid refund data.">
+        <source>Invalid refund data.</source>
+        <target>Ungültige Erstattungsdaten.</target>
+      </trans-unit>
+      <trans-unit id="195d3ae3b14a4f76fa9d6a5917d97348" resname="Invalid settings. Check the entered values.">
+        <source>Invalid settings. Check the entered values.</source>
+        <target>Ungültige Einstellungen. Prüfen Sie die eingegebenen Werte.</target>
+      </trans-unit>
+      <trans-unit id="40ab5ce84dfc50660dcd413a05aa7311" resname="Invalid withdrawal or status.">
+        <source>Invalid withdrawal or status.</source>
+        <target>Ungültiger Widerruf oder Status.</target>
+      </trans-unit>
+      <trans-unit id="526af3e106c4eafa29b03f254896f859" resname="IP / 15 min">
+        <source>IP / 15 min</source>
+        <target>IP / 15 Min.</target>
+      </trans-unit>
+      <trans-unit id="004d4043fae208c108b8838e6ba37f85" resname="IP / day">
+        <source>IP / day</source>
+        <target>IP / Tag</target>
+      </trans-unit>
+      <trans-unit id="9dea4016dbcc290b773ab2fae678aaa8" resname="Items">
+        <source>Items</source>
+        <target>Positionen</target>
+      </trans-unit>
+      <trans-unit id="f7266ba0eb429463c24906863d97f74d" resname="Joobox support for this module">
+        <source>Joobox support for this module</source>
+        <target>Joobox-Support für dieses Modul</target>
+      </trans-unit>
+      <trans-unit id="af6dd5afdfd071c1f0d57ab94e232856" resname="JOOIM Withdrawal">
+        <source>JOOIM Withdrawal</source>
+        <target>JOOIM Withdrawal</target>
+      </trans-unit>
+      <trans-unit id="0d2a03417d12c0922f7c8f09a8866cdd" resname="JOOIM Withdrawal – Online Contract Withdrawal">
+        <source>JOOIM Withdrawal – Online Contract Withdrawal</source>
+        <target>JOOIM Withdrawal – Online-Vertragswiderruf</target>
+      </trans-unit>
+      <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174" resname="Language">
+        <source>Language</source>
+        <target>Sprache</target>
+      </trans-unit>
+      <trans-unit id="0bb8ede719cfab55d1e46a227ba20f09" resname="Language-neutral URLs for external link lists:">
+        <source>Language-neutral URLs for external link lists:</source>
+        <target>Sprachneutrale URLs für externe Linklisten:</target>
+      </trans-unit>
+      <trans-unit id="712bd563f4ec14a3e9f63cd426a8f515" resname="Last checked">
+        <source>Last checked</source>
+        <target>Zuletzt geprüft</target>
+      </trans-unit>
+      <trans-unit id="8d3f5eff9c40ee315d452392bed5309b" resname="Last name">
+        <source>Last name</source>
+        <target>Nachname</target>
+      </trans-unit>
+      <trans-unit id="90725f7a92bc20cc7d26c20261af79da" resname="Latest version on GitHub">
+        <source>Latest version on GitHub</source>
+        <target>Neueste Version auf GitHub</target>
+      </trans-unit>
+      <trans-unit id="b03d6f17c7f8bac52fe77f5914c49186" resname="Links for active shop languages">
+        <source>Links for active shop languages</source>
+        <target>Links für aktive Shop-Sprachen</target>
+      </trans-unit>
+      <trans-unit id="911f0f24bdce6808f4614d6a263b143b" resname="Locale">
+        <source>Locale</source>
+        <target>Gebietsschema</target>
+      </trans-unit>
+      <trans-unit id="b968b93199b571b7ece13100627c65ce" resname="Magic link (minutes)">
+        <source>Magic link (minutes)</source>
+        <target>Magic Link (Minuten)</target>
+      </trans-unit>
+      <trans-unit id="f176436ebc257cd47b923ebfcf43ffb7" resname="Magic link validity (minutes)">
+        <source>Magic link validity (minutes)</source>
+        <target>Gültigkeit des einmaligen Links (Minuten)</target>
+      </trans-unit>
+      <trans-unit id="42315b8de2a717eced9b289382e286f7" resname="Maintenance CLI:">
+        <source>Maintenance CLI:</source>
+        <target>Wartung per CLI:</target>
+      </trans-unit>
+      <trans-unit id="c89e0d109eb50aa27826f97650626ba5" resname="Manual withdrawal created: %reference%">
+        <source>Manual withdrawal created: %reference%</source>
+        <target>Manueller Widerruf erstellt: %reference%</target>
+      </trans-unit>
+      <trans-unit id="feb2d01c3d55ad9d1e7478f2ecc6ee46" resname="Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.">
+        <source>Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.</source>
+        <target>Hauptschalter für die öffentlichen Widerrufsabläufe und kundenbezogenen Widerrufslinks. Das Deaktivieren löscht oder verändert keine bereits eingegangenen Widerrufe.</target>
+      </trans-unit>
+      <trans-unit id="ba0b7c08eb6bb4e2a041a1a0dc1a5416" resname="Maximum access-link requests associated with the same normalized order reference during 24 hours.">
+        <source>Maximum access-link requests associated with the same normalized order reference during 24 hours.</source>
+        <target>Maximale Anzahl von Zugangslink-Anfragen für dieselbe normalisierte Bestellreferenz innerhalb von 24 Stunden.</target>
+      </trans-unit>
+      <trans-unit id="6d6b5d20d325c5c90d4964db721a0ebd" resname="Maximum access-link requests associated with the same normalized order reference during one hour. This protects the customer mailbox from repeated messages.">
+        <source>Maximum access-link requests associated with the same normalized order reference during one hour. This protects the customer mailbox from repeated messages.</source>
+        <target>Maximale Anzahl von Zugangslink-Anfragen für dieselbe normalisierte Bestellreferenz innerhalb einer Stunde. Dies schützt das Kundenpostfach vor wiederholten Nachrichten.</target>
+      </trans-unit>
+      <trans-unit id="36d0c453e24108cf2523ed0cd552bf30" resname="Maximum customer note length">
+        <source>Maximum customer note length</source>
+        <target>Maximale Länge der Kundennotiz</target>
+      </trans-unit>
+      <trans-unit id="3a028adaaf8097ffc9995ec306cac1b5" resname="Maximum number of plain-text characters accepted in the optional customer note. HTML is not accepted. Recommended default: 2000.">
+        <source>Maximum number of plain-text characters accepted in the optional customer note. HTML is not accepted. Recommended default: 2000.</source>
+        <target>Maximale Anzahl von Klartextzeichen in der optionalen Kundennotiz. HTML ist nicht zulässig. Empfohlener Standardwert: 2000.</target>
+      </trans-unit>
+      <trans-unit id="854523876a065fccaa9edb66ac5396aa" resname="Maximum order-reference access requests from one pseudonymized IP during 15 minutes. Successful and unsuccessful lookups share the same limit.">
+        <source>Maximum order-reference access requests from one pseudonymized IP during 15 minutes. Successful and unsuccessful lookups share the same limit.</source>
+        <target>Maximale Anzahl von Bestellreferenz-Anfragen von einer pseudonymisierten IP-Adresse innerhalb von 15 Minuten. Erfolgreiche und erfolglose Suchen teilen sich denselben Grenzwert.</target>
+      </trans-unit>
+      <trans-unit id="c1f0b7fc8b6133385ad0bbce831cf97c" resname="Maximum order-reference access requests from one pseudonymized IP during 24 hours. The raw IP address is not stored in the legal withdrawal record.">
+        <source>Maximum order-reference access requests from one pseudonymized IP during 24 hours. The raw IP address is not stored in the legal withdrawal record.</source>
+        <target>Maximale Anzahl von Bestellreferenz-Anfragen von einer pseudonymisierten IP-Adresse innerhalb von 24 Stunden. Die unverarbeitete IP-Adresse wird nicht im rechtlichen Widerrufsnachweis gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="1b29aaded6e656c7c29df1a188724d60" resname="Maximum total lifetime of a verified guest session even when the customer remains active. Expected range: 15–1440 minutes; recommended default: 120.">
+        <source>Maximum total lifetime of a verified guest session even when the customer remains active. Expected range: 15–1440 minutes; recommended default: 120.</source>
+        <target>Maximale Gesamtdauer einer verifizierten Gastsitzung, auch wenn der Kunde aktiv bleibt. Erwarteter Bereich: 15–1440 Minuten; empfohlener Standardwert: 120.</target>
+      </trans-unit>
+      <trans-unit id="4c3880bb027f159e801041b1021e88e8" resname="Method">
+        <source>Method</source>
+        <target>Methode</target>
+      </trans-unit>
+      <trans-unit id="f4c9d126deaeb00d98b2a3b5c98e1592" resname="Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.">
+        <source>Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.</source>
+        <target>Mindestwartezeit, bevor für dieselbe Bestellreferenz eine weitere Zugangs-E-Mail angefordert werden kann. Empfohlener Standardwert: 60 Sekunden.</target>
+      </trans-unit>
+      <trans-unit id="4e19d7f8160483be13ee95ed3f7dccc2" resname="Module data was permanently deleted.">
+        <source>Module data was permanently deleted.</source>
+        <target>Moduldaten wurden dauerhaft gelöscht.</target>
+      </trans-unit>
+      <trans-unit id="eb5534a6983af195fab96bffe2ca4549" resname="Module enabled">
+        <source>Module enabled</source>
+        <target>Modul aktiviert</target>
+      </trans-unit>
+      <trans-unit id="afdac9282c19d277f0eb8c3cb62fcefb" resname="Module is up to date.">
+        <source>Module is up to date.</source>
+        <target>Das Modul ist aktuell.</target>
+      </trans-unit>
+      <trans-unit id="03c2e7e41ffc181a4e84080b4710e81e" resname="New">
+        <source>New</source>
+        <target>Neu</target>
+      </trans-unit>
+      <trans-unit id="10ac3d04253ef7e1ddc73e6091c0cd55" resname="Next">
+        <source>Next</source>
+        <target>Weiter</target>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b" resname="No">
+        <source>No</source>
+        <target>Nein</target>
+      </trans-unit>
+      <trans-unit id="fb2d1435d9fcd5b2968d8e0290ee8691" resname="No active shop languages were found.">
+        <source>No active shop languages were found.</source>
+        <target>Es wurden keine aktiven Shop-Sprachen gefunden.</target>
+      </trans-unit>
+      <trans-unit id="ff9aae6410bc98cd9a562bec02d2732c" resname="No data is deleted unless the value is exactly DELETE.">
+        <source>No data is deleted unless the value is exactly DELETE.</source>
+        <target>Es werden keine Daten gelöscht, sofern der Wert nicht exakt DELETE lautet.</target>
+      </trans-unit>
+      <trans-unit id="1f7a0c5b4c101b6a284babc2131c6851" resname="No document generated.">
+        <source>No document generated.</source>
+        <target>Kein Dokument erzeugt.</target>
+      </trans-unit>
+      <trans-unit id="1da7b8886c6f961e1bf9371aa6a6ca86" resname="No refund recorded.">
+        <source>No refund recorded.</source>
+        <target>Keine Erstattung erfasst.</target>
+      </trans-unit>
+      <trans-unit id="ec5b7d60738dbda7bd5645a78bbf9b6b" resname="No structured order items in this submission. Review the immutable snapshot/manual description.">
+        <source>No structured order items in this submission. Review the immutable snapshot/manual description.</source>
+        <target>Diese Einreichung enthält keine strukturierten Bestellpositionen. Prüfen Sie den unveränderlichen Snapshot bzw. die manuelle Beschreibung.</target>
+      </trans-unit>
+      <trans-unit id="c2b5540a62dddd2d5cb872d057c0d77c" resname="No withdrawal submissions linked to this order.">
+        <source>No withdrawal submissions linked to this order.</source>
+        <target>Für diese Bestellung sind keine Widerrufseinreichungen verknüpft.</target>
+      </trans-unit>
+      <trans-unit id="72e52e04a4f7ccf38931435e564a4074" resname="No withdrawals found.">
+        <source>No withdrawals found.</source>
+        <target>Keine Widerrufe gefunden.</target>
+      </trans-unit>
+      <trans-unit id="647583f74c004a3c608af12e603c8544" resname="Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.">
+        <source>Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.</source>
+        <target>Die normale Deinstallation des Moduls bewahrt Widerrufsdatensätze. Diese destruktive Aktion löscht alle Modultabellen.</target>
+      </trans-unit>
+      <trans-unit id="fc9d3df613063ee57906c461320744e2" resname="Note:">
+        <source>Note:</source>
+        <target>Hinweis:</target>
+      </trans-unit>
+      <trans-unit id="8d2dd0c91251585950bc6ba2ab52108b" resname="Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.">
+        <source>Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.</source>
+        <target>Anzahl automatischer Wiederholungsversuche nach dem Fehlschlagen einer Bestätigungs-E-Mail. Der Widerruf bleibt auch dann wirksam, wenn alle E-Mail-Versuche fehlschlagen.</target>
+      </trans-unit>
+      <trans-unit id="c7268757fbabf48019f4984933539d8a" resname="Old">
+        <source>Old</source>
+        <target>Alt</target>
+      </trans-unit>
+      <trans-unit id="8c912169e1c01fceba3bc0758f956fe5" resname="Open GitHub Releases">
+        <source>Open GitHub Releases</source>
+        <target>GitHub Releases öffnen</target>
+      </trans-unit>
+      <trans-unit id="1a67ec720a1d8372ddd0822ef96f1b64" resname="Open PrestaShop order">
+        <source>Open PrestaShop order</source>
+        <target>PrestaShop-Bestellung öffnen</target>
+      </trans-unit>
+      <trans-unit id="9d60cfba7dfc18f815cafc70ac701571" resname="Open withdrawals">
+        <source>Open withdrawals</source>
+        <target>Widerrufe öffnen</target>
+      </trans-unit>
+      <trans-unit id="36b030c8de809d689b3d5dc9d16ef7db" resname="Opens the Back Office list of received withdrawals, their status, documents, refund records and audit history.">
+        <source>Opens the Back Office list of received withdrawals, their status, documents, refund records and audit history.</source>
+        <target>Öffnet die Back-Office-Liste der eingegangenen Widerrufe einschließlich Status, Dokumenten, Erstattungsaufzeichnungen und Audit-Historie.</target>
+      </trans-unit>
+      <trans-unit id="8cc6aff5f8ec8880791350390f185d6b" resname="Optional customer-service phone number shown in the acknowledgement and PDF. It is not used to authenticate a withdrawal.">
+        <source>Optional customer-service phone number shown in the acknowledgement and PDF. It is not used to authenticate a withdrawal.</source>
+        <target>Optionale Telefonnummer des Kundendienstes, die in der Bestätigung und der PDF-Datei angezeigt wird. Sie wird nicht zur Authentifizierung eines Widerrufs verwendet.</target>
+      </trans-unit>
+      <trans-unit id="a240fa27925a635b08dc28c9e4f9216d" resname="Order">
+        <source>Order</source>
+        <target>Bestellung</target>
+      </trans-unit>
+      <trans-unit id="5e2a92fd3b291af5d7b511bb84a49d41" resname="Order / day">
+        <source>Order / day</source>
+        <target>Bestellung / Tag</target>
+      </trans-unit>
+      <trans-unit id="7f5ebe0cfb5428ee32b97a0788e7725f" resname="Order / hour">
+        <source>Order / hour</source>
+        <target>Bestellung / Stunde</target>
+      </trans-unit>
+      <trans-unit id="91d0c684934e62d6e3e871cf760ab1a5" resname="Order detail button">
+        <source>Order detail button</source>
+        <target>Schaltfläche in Bestelldetails</target>
+      </trans-unit>
+      <trans-unit id="5d4710f9a8250b13164a82c94d5b00d1" resname="Order reference">
+        <source>Order reference</source>
+        <target>Bestellreferenz</target>
+      </trans-unit>
+      <trans-unit id="e3226110b52a3a391cf9723cedf9afa9" resname="Order-reference flow">
+        <source>Order-reference flow</source>
+        <target>Ablauf über Bestellreferenz</target>
+      </trans-unit>
+      <trans-unit id="2ca3deb5cd68fa9119b285804fab572f" resname="Order:">
+        <source>Order:</source>
+        <target>Bestellung:</target>
+      </trans-unit>
+      <trans-unit id="26e09a1ee1517389c7b07f42df65561a" resname="Ordered">
+        <source>Ordered</source>
+        <target>Bestellt</target>
+      </trans-unit>
+      <trans-unit id="1af3e9855f57b6150f592f1f21263797" resname="Original content / internal transcription">
+        <source>Original content / internal transcription</source>
+        <target>Ursprünglicher Inhalt / interne Transkription</target>
+      </trans-unit>
+      <trans-unit id="193cfc9be3b995831c6af2fea6650e60" resname="Page">
+        <source>Page</source>
+        <target>Seite</target>
+      </trans-unit>
+      <trans-unit id="9f004157e4c148dac71da3ae5906351f" resname="Partially refunded">
+        <source>Partially refunded</source>
+        <target>Teilweise erstattet</target>
+      </trans-unit>
+      <trans-unit id="1901606ea069a83dc7beea17881ef95a" resname="Period">
+        <source>Period</source>
+        <target>Frist</target>
+      </trans-unit>
+      <trans-unit id="389d382a151949ccbc613f148039f243" resname="Permanent data purge">
+        <source>Permanent data purge</source>
+        <target>Dauerhafte Datenlöschung</target>
+      </trans-unit>
+      <trans-unit id="8bb19586e39b432b1f0d04860879f8fd" resname="Permanently delete all module data">
+        <source>Permanently delete all module data</source>
+        <target>Alle Moduldaten dauerhaft löschen</target>
+      </trans-unit>
+      <trans-unit id="bcc254b55c4a1babdf1dcb82c207506b" resname="Phone">
+        <source>Phone</source>
+        <target>Telefon</target>
+      </trans-unit>
+      <trans-unit id="9e2cdc4e408db239280c5e043d50173f" resname="PHP 8.1 or newer is required.">
+        <source>PHP 8.1 or newer is required.</source>
+        <target>PHP 8.1 oder neuer ist erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="c63031d958b58c8116035092362f25ed" resname="Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.">
+        <source>Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.</source>
+        <target>Bevorzugte Methode für die geplante Wartung. Sie entfernt abgelaufene temporäre Datensätze, wiederholt ausstehende Bestätigungen und verarbeitet Aufbewahrungsaufgaben.</target>
+      </trans-unit>
+      <trans-unit id="5dad06022a13741684f43ae813e96f81" resname="PrestaShop 8.1 or newer is required.">
+        <source>PrestaShop 8.1 or newer is required.</source>
+        <target>PrestaShop 8.1 oder neuer ist erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="5d07c1cb067f1d63d70bcf9ca59c914d" resname="PrestaShop keeps the module route slug identical in every language and adds the language prefix. Test both links in every active language after deployment.">
+        <source>PrestaShop keeps the module route slug identical in every language and adds the language prefix. Test both links in every active language after deployment.</source>
+        <target>PrestaShop verwendet in allen Sprachen denselben Modulpfad und ergänzt das Sprachpräfix. Testen Sie nach der Bereitstellung beide Links in jeder aktiven Sprache.</target>
+      </trans-unit>
+      <trans-unit id="dd1f775e443ff3b9a89270713580a51b" resname="Previous">
+        <source>Previous</source>
+        <target>Zurück</target>
+      </trans-unit>
+      <trans-unit id="4e86c1fd72fe463cdbe67c5704dbd4d9" resname="Privacy policy URL">
+        <source>Privacy policy URL</source>
+        <target>URL der Datenschutzerklärung</target>
+      </trans-unit>
+      <trans-unit id="66dc0eb61ab4157d6170494e6841a77a" resname="Private note">
+        <source>Private note</source>
+        <target>Private Notiz</target>
+      </trans-unit>
+      <trans-unit id="deb10517653c255364175796ace3553f" resname="Product">
+        <source>Product</source>
+        <target>Produkt</target>
+      </trans-unit>
+      <trans-unit id="fed94c98dce5cf7158450628d5f232c6" resname="Public entry:">
+        <source>Public entry:</source>
+        <target>Öffentlicher Einstieg:</target>
+      </trans-unit>
+      <trans-unit id="7f9b432a499e6ac8e42368ce5140094e" resname="Public message">
+        <source>Public message</source>
+        <target>Öffentliche Nachricht</target>
+      </trans-unit>
+      <trans-unit id="dc16a594f0069adea19ca1b5a4230fc7" resname="Purge confirmation">
+        <source>Purge confirmation</source>
+        <target>Bestätigung der endgültigen Löschung</target>
+      </trans-unit>
+      <trans-unit id="32cf24c131e8c90129bc9dc6252c6003" resname="Ready. Required security values and module hooks are available.">
+        <source>Ready. Required security values and module hooks are available.</source>
+        <target>Bereit. Erforderliche Sicherheitswerte und Modul-Hooks sind verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="e8599811adec0dfdf2a7a0699c43b2dc" resname="Received method">
+        <source>Received method</source>
+        <target>Empfangsmethode</target>
+      </trans-unit>
+      <trans-unit id="412aab712ec735299ce9c0973e847c8d" resname="Record refund">
+        <source>Record refund</source>
+        <target>Erstattung erfassen</target>
+      </trans-unit>
+      <trans-unit id="63d5049791d9d79d86e9a108b0a999ca" resname="Reference">
+        <source>Reference</source>
+        <target>Referenz</target>
+      </trans-unit>
+      <trans-unit id="e42f6e063d74ea96cf2c30f2552d208f" resname="Reference prefix">
+        <source>Reference prefix</source>
+        <target>Referenzpräfix</target>
+      </trans-unit>
+      <trans-unit id="0d9e71a5f31d8ddea938f07fda9a1444" resname="Refresh update status">
+        <source>Refresh update status</source>
+        <target>Update-Status aktualisieren</target>
+      </trans-unit>
+      <trans-unit id="e963a2769e317ec3289dc057845cd3e2" resname="Refund completed">
+        <source>Refund completed</source>
+        <target>Erstattung abgeschlossen</target>
+      </trans-unit>
+      <trans-unit id="3c4b7077e097b109dd3efa51a3e2ef37" resname="Refund could not be recorded.">
+        <source>Refund could not be recorded.</source>
+        <target>Die Erstattung konnte nicht erfasst werden.</target>
+      </trans-unit>
+      <trans-unit id="26d3b43de693b9d47c36dee1035a46a8" resname="Refund pending">
+        <source>Refund pending</source>
+        <target>Erstattung ausstehend</target>
+      </trans-unit>
+      <trans-unit id="18c16aedc5678290d3f50d8b0bd198f1" resname="Refund recorded">
+        <source>Refund recorded</source>
+        <target>Erstattung erfasst</target>
+      </trans-unit>
+      <trans-unit id="0298b88ff296131e6e6d7930dd94bed0" resname="Refund recorded.">
+        <source>Refund recorded.</source>
+        <target>Erstattung wurde erfasst.</target>
+      </trans-unit>
+      <trans-unit id="53beb26d8bca00f56fbd295fdee83459" resname="Refunds">
+        <source>Refunds</source>
+        <target>Erstattungen</target>
+      </trans-unit>
+      <trans-unit id="e6fa03f0b7eb9b39761dd40a3b395334" resname="Registered address">
+        <source>Registered address</source>
+        <target>Geschäftsanschrift</target>
+      </trans-unit>
+      <trans-unit id="a45536b852059a333397abd12f770f40" resname="Requests per IP / 15 minutes">
+        <source>Requests per IP / 15 minutes</source>
+        <target>Anfragen pro IP / 15 Minuten</target>
+      </trans-unit>
+      <trans-unit id="3e5fbf238d7169b08b1620f5c0ed538e" resname="Requests per IP / day">
+        <source>Requests per IP / day</source>
+        <target>Anfragen pro IP / Tag</target>
+      </trans-unit>
+      <trans-unit id="34e1bed6437ba95a13f1db8dbd1e1a82" resname="Resend acknowledgement">
+        <source>Resend acknowledgement</source>
+        <target>Bestätigung erneut senden</target>
+      </trans-unit>
+      <trans-unit id="2549e08c454fe021bf7ef601efd389f9" resname="Resend cooldown (seconds)">
+        <source>Resend cooldown (seconds)</source>
+        <target>Wartezeit bis zum erneuten Senden (Sekunden)</target>
+      </trans-unit>
+      <trans-unit id="f407eca5d4719f814784407e805a3320" resname="Return address / instructions">
+        <source>Return address / instructions</source>
+        <target>Rücksendeadresse / Anweisungen</target>
+      </trans-unit>
+      <trans-unit id="cd4b58c156cc842c8eaee4f2eda67386" resname="Returned goods received">
+        <source>Returned goods received</source>
+        <target>Rücksendung eingegangen</target>
+      </trans-unit>
+      <trans-unit id="340047998cd91b899900eed231cc7fef" resname="Runtime configuration:">
+        <source>Runtime configuration:</source>
+        <target>Laufzeitkonfiguration:</target>
+      </trans-unit>
+      <trans-unit id="d4dccb8ca2dac4e53c01bd9954755332" resname="Save settings">
+        <source>Save settings</source>
+        <target>Einstellungen speichern</target>
+      </trans-unit>
+      <trans-unit id="5d113f2038d289f391614c39043629e8" resname="Scope">
+        <source>Scope</source>
+        <target>Umfang</target>
+      </trans-unit>
+      <trans-unit id="508878a506066b8fadfa321807415ee0" resname="Secure online exercise and administration of the consumer right of withdrawal.">
+        <source>Secure online exercise and administration of the consumer right of withdrawal.</source>
+        <target>Sichere Online-Ausübung und Verwaltung des Verbraucherwiderrufsrechts.</target>
+      </trans-unit>
+      <trans-unit id="e74bf385c61436303415333107e12513" resname="Security and limits">
+        <source>Security and limits</source>
+        <target>Sicherheit und Grenzwerte</target>
+      </trans-unit>
+      <trans-unit id="2801f11e30091ea7db27772359285c58" resname="Security, session and abuse limits">
+        <source>Security, session and abuse limits</source>
+        <target>Sicherheits-, Sitzungs- und Missbrauchsgrenzwerte</target>
+      </trans-unit>
+      <trans-unit id="5ed0f9cff53e4f3e4706e194fce612b0" resname="Selected part (for partial)">
+        <source>Selected part (for partial)</source>
+        <target>Ausgewählter Teil (bei Teilwiderruf)</target>
+      </trans-unit>
+      <trans-unit id="b0aca289a0a6e06700d28253aa26cba2" resname="Session absolute limit (minutes)">
+        <source>Session absolute limit (minutes)</source>
+        <target>Absolute Sitzungsgrenze (Minuten)</target>
+      </trans-unit>
+      <trans-unit id="94a199971f738f07c8ebe772e9d57bea" resname="Session idle (minutes)">
+        <source>Session idle (minutes)</source>
+        <target>Sitzungsinaktivität (Minuten)</target>
+      </trans-unit>
+      <trans-unit id="0693fa44a6aabaf090af1bee024240fe" resname="Session inactivity limit (minutes)">
+        <source>Session inactivity limit (minutes)</source>
+        <target>Inaktivitätsgrenze der Sitzung (Minuten)</target>
+      </trans-unit>
+      <trans-unit id="3c8dad3c60aeb85fdd8114350564f3a4" resname="Session max (minutes)">
+        <source>Session max (minutes)</source>
+        <target>Maximale Sitzungsdauer (Minuten)</target>
+      </trans-unit>
+      <trans-unit id="9a7e58ee13cb727cb7c4acc68f4cafe5" resname="Settings saved.">
+        <source>Settings saved.</source>
+        <target>Einstellungen gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="9f82518d468b9fee614fcc92f76bb163" resname="Shop">
+        <source>Shop</source>
+        <target>Shop</target>
+      </trans-unit>
+      <trans-unit id="9eeed2a79a0ce14783ba54b0b0420203" resname="Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.">
+        <source>Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.</source>
+        <target>Kurzer Code am Anfang der Widerrufsreferenzen. Verwenden Sie nur Buchstaben, Ziffern und Bindestriche, zum Beispiel WD. Bestehende Widerrufsreferenzen werden niemals geändert.</target>
+      </trans-unit>
+      <trans-unit id="d10ff1b6f6ee89d06eaf83e7d441eaaf" resname="Snapshot SHA-256:">
+        <source>Snapshot SHA-256:</source>
+        <target>Snapshot-SHA-256:</target>
+      </trans-unit>
+      <trans-unit id="0cfb330ba2af0cc69f2cd95aca520abd" resname="Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.">
+        <source>Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.</source>
+        <target>Einige Laufzeitanforderungen konnten nicht synchronisiert werden. Prüfen Sie vor der öffentlichen Nutzung die PrestaShop-Protokolle.</target>
+      </trans-unit>
+      <trans-unit id="77c8b9f38491385d59ddc33d29e751fe" resname="Source:">
+        <source>Source:</source>
+        <target>Quelle:</target>
+      </trans-unit>
+      <trans-unit id="c84f3c8cccffa553f2b2322518573b57" resname="Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.">
+        <source>Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.</source>
+        <target>Startet den sicheren Ablauf anhand der Bestellreferenz. Der Kunde gibt nur die öffentliche Referenz ein; Bestell- und personenbezogene Daten bleiben verborgen, bis der einmalige E-Mail-Link bestätigt wurde.</target>
+      </trans-unit>
+      <trans-unit id="ec53a8c4f07baed5d8825072c89799be" resname="Status">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="58200c5eb0a6df1eb10635ecb7363249" resname="Status changed by administrator">
+        <source>Status changed by administrator</source>
+        <target>Status durch Administrator geändert</target>
+      </trans-unit>
+      <trans-unit id="3d10f474ca89e31e645ccc42387d272d" resname="Status updated.">
+        <source>Status updated.</source>
+        <target>Status wurde aktualisiert.</target>
+      </trans-unit>
+      <trans-unit id="24a23d787190f2c4812ff9ab11847a72" resname="Status:">
+        <source>Status:</source>
+        <target>Status:</target>
+      </trans-unit>
+      <trans-unit id="e6c6634562d0a9db19c2f1e48a4da75b" resname="Submitted UTC">
+        <source>Submitted UTC</source>
+        <target>Eingereicht (UTC)</target>
+      </trans-unit>
+      <trans-unit id="d7f06ee93905d36b8cfadf043dca9c4e" resname="Submitted UTC:">
+        <source>Submitted UTC:</source>
+        <target>Eingereicht (UTC):</target>
+      </trans-unit>
+      <trans-unit id="66e055338ea5e9bb4fd0b7aa8f37b4ed" resname="Supported PrestaShop versions are 8.x and 9.x.">
+        <source>Supported PrestaShop versions are 8.x and 9.x.</source>
+        <target>Unterstützte PrestaShop-Versionen sind 8.x und 9.x.</target>
+      </trans-unit>
+      <trans-unit id="440cefce4f97e7cb67c869bf1d8dfe16" resname="The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.">
+        <source>The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.</source>
+        <target>Die Standardwerte sind bewusst konservativ. Erhöhen Sie die Grenzwerte erst nach Prüfung des tatsächlichen Datenverkehrs und der Missbrauchsprotokolle; zu niedrige Werte können berechtigte Verbraucher blockieren.</target>
+      </trans-unit>
+      <trans-unit id="afc3f41e1b3dceb9e58a5d7fe33ca215" resname="These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.">
+        <source>These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.</source>
+        <target>Diese Werte identifizieren den tatsächlichen Verkäufer, der den ausgewählten Shop betreibt. Im Multistore werden sie pro Shop gespeichert und in Kundenbestätigungen sowie PDF-Nachweisen ausgegeben.</target>
+      </trans-unit>
+      <trans-unit id="4c2eadfe5f7438069b2526bcd5a99fb4" resname="This direct submission has not authenticated the consumer against the order. Any matching order reference is only an internal association and must be verified before relying on it.">
+        <source>This direct submission has not authenticated the consumer against the order. Any matching order reference is only an internal association and must be verified before relying on it.</source>
+        <target>Bei dieser direkten Einreichung wurde der Verbraucher nicht anhand der Bestellung authentifiziert. Eine übereinstimmende Bestellreferenz ist nur eine interne Zuordnung und muss vor einer Verwendung überprüft werden.</target>
+      </trans-unit>
+      <trans-unit id="7c590d9272ad1786e0e73357bf415267" resname="This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.">
+        <source>This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.</source>
+        <target>Dieses kostenlose GitHub-Modul wird ohne individuellen technischen Support bereitgestellt. Installation, Konfiguration, Produktivtests, Updates und Fehlerbehebung sind für Kunden von Joobox PrestaShop Cloud oder einem anderen kostenpflichtigen Dienst verfügbar, der ausdrücklich mit JOO INTERNET MEDIA LTD vereinbart wurde.</target>
+      </trans-unit>
+      <trans-unit id="ba12e59b20a9720f70fb907a55cd2620" resname="Total incl. tax">
+        <source>Total incl. tax</source>
+        <target>Gesamt inkl. MwSt.</target>
+      </trans-unit>
+      <trans-unit id="66c4c5112f455a19afde47829df363fa" resname="Total:">
+        <source>Total:</source>
+        <target>Gesamt:</target>
+      </trans-unit>
+      <trans-unit id="1bb184adfba62621740f795ec93d36e6" resname="Trader details – current shop">
+        <source>Trader details – current shop</source>
+        <target>Händlerdaten – aktueller Shop</target>
+      </trans-unit>
+      <trans-unit id="14a3e5ba5527ad9b624f6ff0a81c9b8c" resname="Trader name">
+        <source>Trader name</source>
+        <target>Händlername</target>
+      </trans-unit>
+      <trans-unit id="1b0ffaae3973401f71cd000ab9f7856e" resname="Transaction">
+        <source>Transaction</source>
+        <target>Transaktion</target>
+      </trans-unit>
+      <trans-unit id="ac2f3faa8d9b2d545e021b7e417957fc" resname="Transaction reference">
+        <source>Transaction reference</source>
+        <target>Transaktionsreferenz</target>
+      </trans-unit>
+      <trans-unit id="6dd08874f83507e9c7b23f1a46b7fa7c" resname="Translation">
+        <source>Translation</source>
+        <target>Übersetzung</target>
+      </trans-unit>
+      <trans-unit id="013033d8b098dd26ff49eb11860f1fa7" resname="Type DELETE">
+        <source>Type DELETE</source>
+        <target>DELETE eingeben</target>
+      </trans-unit>
+      <trans-unit id="9e5fb4183f6e1e965dc8f7de0c200cbf" resname="Type DELETE to confirm permanent data deletion.">
+        <source>Type DELETE to confirm permanent data deletion.</source>
+        <target>Geben Sie DELETE ein, um die dauerhafte Datenlöschung zu bestätigen.</target>
+      </trans-unit>
+      <trans-unit id="9007b9aa19e4aeeb4c9c13a065c1ff47" resname="Type the exact word DELETE to remove all withdrawals, documents, audit history, access records and refund records. This action cannot be undone and is not required for an ordinary module update or reinstall.">
+        <source>Type the exact word DELETE to remove all withdrawals, documents, audit history, access records and refund records. This action cannot be undone and is not required for an ordinary module update or reinstall.</source>
+        <target>Geben Sie exakt das Wort DELETE ein, um alle Widerrufe, Dokumente, die Audit-Historie, Zugriffsdatensätze und Erstattungsdatensätze zu entfernen. Dieser Vorgang kann nicht rückgängig gemacht werden und ist für eine normale Modulaktualisierung oder Neuinstallation nicht erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="ddc725eae7cbd49e09089df5f6cd7f50" resname="Unable to verify the latest version from GitHub. Check releases manually.">
+        <source>Unable to verify the latest version from GitHub. Check releases manually.</source>
+        <target>Die neueste Version auf GitHub konnte nicht überprüft werden. Prüfen Sie die Releases manuell.</target>
+      </trans-unit>
+      <trans-unit id="1321a344a5a1a622364582904f3d281d" resname="Under review">
+        <source>Under review</source>
+        <target>In Prüfung</target>
+      </trans-unit>
+      <trans-unit id="88183b946cc5f0e8c96b2e66e1c74a7e" resname="Unknown">
+        <source>Unknown</source>
+        <target>Unbekannt</target>
+      </trans-unit>
+      <trans-unit id="e2b8575e1fd2467e8d1ee9749a57513c" resname="Update check">
+        <source>Update check</source>
+        <target>Update-Prüfung</target>
+      </trans-unit>
+      <trans-unit id="d45473395df63bc3eaf7c87f2af3d617" resname="Update check failed: %error%">
+        <source>Update check failed: %error%</source>
+        <target>Die Aktualisierungsprüfung ist fehlgeschlagen: %error%</target>
+      </trans-unit>
+      <trans-unit id="f5359d1dd07def542aa9b0577fb27068" resname="Update status">
+        <source>Update status</source>
+        <target>Update-Status</target>
+      </trans-unit>
+      <trans-unit id="ec0680bbb63e497125e1b9b3fa3aa255" resname="Use these URLs in modules that provide only one URL field for all languages. The entry controller selects the current or preferred shop language and redirects to the localized friendly path.">
+        <source>Use these URLs in modules that provide only one URL field for all languages. The entry controller selects the current or preferred shop language and redirects to the localized friendly path.</source>
+        <target>Verwenden Sie diese URLs in Modulen, die nur ein URL-Feld für alle Sprachen bereitstellen. Der Einstiegscontroller wählt die aktuelle oder bevorzugte Shopsprache und leitet auf den lokalisierten, lesbaren Pfad weiter.</target>
+      </trans-unit>
+      <trans-unit id="731b8ef7226d81e5dcdcb73d2cbaaa56" resname="Use this only in a disposable test installation.">
+        <source>Use this only in a disposable test installation.</source>
+        <target>Nur in einer entbehrlichen Testinstallation verwenden.</target>
+      </trans-unit>
+      <trans-unit id="577f4ba99fa5b48178e116e405081470" resname="Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.">
+        <source>Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.</source>
+        <target>Verwenden Sie diese URL nur, wenn der Hostingdienst den CLI-Befehl nicht ausführen kann. Behandeln Sie das Token wie ein Passwort: Veröffentlichen Sie es nicht, senden Sie es nicht per E-Mail und verwenden Sie es nicht in öffentlicher Überwachung.</target>
+      </trans-unit>
+      <trans-unit id="9234324ddf6b4176b57d803a925b7961" resname="UTC">
+        <source>UTC</source>
+        <target>UTC</target>
+      </trans-unit>
+      <trans-unit id="01f004435882e0df6fc4d48ff6d6b2b5" resname="Waiting for returned goods">
+        <source>Waiting for returned goods</source>
+        <target>Warten auf Rücksendung</target>
+      </trans-unit>
+      <trans-unit id="523b6012389309dd396d6edbbcc16201" resname="Withdrawal not found or not accessible in this shop context.">
+        <source>Withdrawal not found or not accessible in this shop context.</source>
+        <target>Widerruf nicht gefunden oder in diesem Shop-Kontext nicht zugänglich.</target>
+      </trans-unit>
+      <trans-unit id="ef50351a64cabb13e48613b6b94f846d" resname="Withdrawal not found.">
+        <source>Withdrawal not found.</source>
+        <target>Widerruf nicht gefunden.</target>
+      </trans-unit>
+      <trans-unit id="b0578341d6fba5c8fb8282b71deaaf49" resname="Withdrawal received">
+        <source>Withdrawal received</source>
+        <target>Widerruf eingegangen</target>
+      </trans-unit>
+      <trans-unit id="76fb2a1808fbae14e8248f1b377ae5ee" resname="Withdrawal reference">
+        <source>Withdrawal reference</source>
+        <target>Widerrufsreferenz</target>
+      </trans-unit>
+      <trans-unit id="a6bf9dba77e2cf61e65fb7a0c4c07bea" resname="Withdrawal rejected">
+        <source>Withdrawal rejected</source>
+        <target>Widerruf abgelehnt</target>
+      </trans-unit>
+      <trans-unit id="0bce86ca38c0bed64f9a8831fc4dceb4" resname="Withdrawal submitted">
+        <source>Withdrawal submitted</source>
+        <target>Widerruf eingereicht</target>
+      </trans-unit>
+      <trans-unit id="f62dedad685b570f499b61e94084dab2" resname="Withdrawn">
+        <source>Withdrawn</source>
+        <target>Widerrufen</target>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435" resname="Yes">
+        <source>Yes</source>
+        <target>Ja</target>
+      </trans-unit>
+      <trans-unit id="e825de45671948e6407b872feea274b8" resname="You do not have permission to change withdrawal status.">
+        <source>You do not have permission to change withdrawal status.</source>
+        <target>Sie haben keine Berechtigung, den Widerrufsstatus zu ändern.</target>
+      </trans-unit>
+      <trans-unit id="13575a35d04e074d0ac12897c5b11271" resname="You do not have permission to create withdrawal records.">
+        <source>You do not have permission to create withdrawal records.</source>
+        <target>Sie haben keine Berechtigung, Widerrufsdatensätze zu erstellen.</target>
+      </trans-unit>
+      <trans-unit id="e04d52d932179ad96992de23cf738d57" resname="You do not have permission to record refunds.">
+        <source>You do not have permission to record refunds.</source>
+        <target>Sie haben keine Berechtigung, Erstattungen zu erfassen.</target>
+      </trans-unit>
+      <trans-unit id="1a3ffb377406f5419bc0517d1c884b58" resname="You do not have permission to resend acknowledgements.">
+        <source>You do not have permission to resend acknowledgements.</source>
+        <target>Sie haben keine Berechtigung, Bestätigungen erneut zu senden.</target>
+      </trans-unit>
+      <trans-unit id="df6e92929bbd9d799b02f356d96a6401" resname="You do not have permission to view contract withdrawals.">
+        <source>You do not have permission to view contract withdrawals.</source>
+        <target>Sie haben keine Berechtigung, Vertragswiderrufe anzuzeigen.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

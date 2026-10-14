@@ -1,0 +1,12 @@
+Instruções de devolução
+Referência da resolução: {withdrawal_reference}
+Encomenda / contrato: {order_reference}
+Estado: {status}
+
+Mensagem do comerciante:
+{public_message}
+
+Morada de devolução / instruções:
+{return_address}
+
+Contacto do comerciante: {merchant_email}

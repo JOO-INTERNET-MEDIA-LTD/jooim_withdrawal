@@ -34,7 +34,8 @@ final class WithdrawalPdfService
         $pdf->SetMargins(15, 15, 15);
         $pdf->SetAutoPageBreak(true, 15);
         $pdf->AddPage();
-        $logoName = (string) \Configuration::get('PS_LOGO');
+        $logoShop = new \Shop((int) $withdrawal['id_shop']);
+        $logoName = (string) \Configuration::get('PS_LOGO', null, (int) $logoShop->id_shop_group, (int) $withdrawal['id_shop']);
         $logoPath = $logoName !== '' ? rtrim(_PS_IMG_DIR_, '/\\') . DIRECTORY_SEPARATOR . $logoName : '';
         if ($logoPath !== '' && is_file($logoPath)) {
             try {

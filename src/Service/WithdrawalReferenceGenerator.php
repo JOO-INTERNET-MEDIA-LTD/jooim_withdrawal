@@ -50,13 +50,14 @@ final class WithdrawalReferenceGenerator
             throw $this->databaseFailure($db, 'advance_reference_sequence');
         }
 
-        $prefix = strtoupper(preg_replace('/[^A-Z0-9-]/', '', $this->config->get('JOOIM_WITHDRAWAL_REFERENCE_PREFIX', 'WD')) ?: 'WD');
-        $shopCode = strtoupper(preg_replace('/[^A-Z0-9]/', '', $shopCode));
+        $prefix = preg_replace('/[^A-Z0-9-]/', '', strtoupper($this->config->get('JOOIM_WITHDRAWAL_REFERENCE_PREFIX', 'WD'))) ?: 'WD';
+        $shopCode = preg_replace('/[^A-Z0-9]/', '', strtoupper($shopCode));
         if ($shopCode === '') {
             $shopCode = 'S' . $shopId;
         }
 
-        return sprintf('%s-%s-%04d-%06d', $prefix, $shopCode, $year, $next);
+        // Shop ID keeps references globally unique even when shops share a country and prefix.
+        return sprintf('%s-%s-S%d-%04d-%06d', $prefix, $shopCode, $shopId, $year, $next);
     }
 
     private function databaseFailure(\Db $db, string $stage): \RuntimeException

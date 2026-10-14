@@ -1,0 +1,8 @@
+Hej {firstname},
+
+Använd denna länk för att fortsätta till den säkra processen för frånträde av avtal online:
+Fortsätt till frånträde: {access_url}
+
+Länken är giltig i {expires_minutes} minuter. Att bara öppna den förbrukar den inte; fortsättningen bekräftas på nästa sida.
+
+Om du inte begärde denna länk kan du ignorera detta meddelande.

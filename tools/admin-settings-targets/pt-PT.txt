@@ -98,7 +98,7 @@
 098	Código curto utilizado no início das referências de resolução. Utilize apenas letras, algarismos e hífenes, por exemplo WD. As referências existentes nunca são alteradas.
 099	Não foi possível sincronizar alguns requisitos de execução. Consulte os registos do PrestaShop antes da utilização pública.
 100	Inicia o processo seguro por referência de encomenda. O cliente introduz apenas a referência pública; os dados da encomenda e os dados pessoais permanecem ocultos até à confirmação da ligação de e-mail de utilização única.
-101	São suportadas as versões do PrestaShop 8.1 a 9.1.
+101	As versões PrestaShop suportadas são 8.x e 9.x.
 102	Os valores predefinidos são deliberadamente conservadores. Aumente os limites apenas depois de analisar o tráfego real e os registos de abuso; reduzi-los demasiado pode bloquear consumidores legítimos.
 103	Estes valores identificam o vendedor efetivo que opera a loja selecionada. São guardados por loja em multiloja e impressos nas confirmações do cliente e nas provas em PDF.
 104	Este módulo GitHub gratuito é fornecido sem suporte técnico individual. A instalação, configuração, testes de produção, atualizações e resolução de problemas estão disponíveis para clientes do Joobox PrestaShop Cloud ou de outro serviço pago expressamente acordado com a JOO INTERNET MEDIA LTD.

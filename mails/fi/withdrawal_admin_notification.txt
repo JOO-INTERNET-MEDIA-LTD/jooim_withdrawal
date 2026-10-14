@@ -1,0 +1,5 @@
+Uusi sopimuksen peruuttaminen on kirjattu.
+Peruuttamisviite: {withdrawal_reference}
+Tilaus / sopimus: {order_reference}
+Sähköinen yhteystieto: {customer_email}
+Tila: {status}

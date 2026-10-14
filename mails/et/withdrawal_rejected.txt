@@ -1,0 +1,9 @@
+Kaupleja on registreerinud juhtumi tagasilükkamise; põhjus on toodud allpool.
+Taganemise viide: {withdrawal_reference}
+Tellimus / leping: {order_reference}
+Olek: {status}
+
+Kaupleja sõnum:
+{public_message}
+
+Kaupleja kontakt: {merchant_email}

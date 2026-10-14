@@ -18,7 +18,7 @@
 018	Turi l-link “Irtira mill-kuntratt hawn” fil-footer tal-ħanut. Din il-link ta’ funzjoni legali hija indipendenti mill-attribuzzjoni ta’ kummerċjalizzazzjoni Joobox.
 019	Nota dwar il-konformità tal-UE (2026):
 020	Kull lingwa attiva tal-ħanut tirċievi mogħdija lokalizzata u faċli biex tinqara. L-URLs tad-dħul newtrali għal-lingwa jibqgħu disponibbli għal moduli esterni ta’ listi ta’ links. Wara l-implimentazzjoni, ittestja ż-żewġ proċessi f’kull lingwa attiva.
-021	Email
+021	Posta elettronika
 022	Emails għal kull ordni / jum
 023	Emails għal kull ordni / siegħa
 024	Attivata
@@ -98,7 +98,7 @@
 098	Kodiċi qasir użat fil-bidu tar-referenzi tal-irtirar. Uża biss ittri, numri u singijiet, pereżempju WD. Ir-referenzi eżistenti tal-irtirar qatt ma jinbidlu.
 099	Xi rekwiżiti waqt it-tħaddim ma setgħux jiġu sinkronizzati. Irrevedi l-logs ta’ PrestaShop qabel l-użu pubbliku.
 100	Jibda l-proċess sigur skont ir-referenza tal-ordni. Il-klijent idaħħal biss ir-referenza pubblika tal-ordni; id-data tal-ordni u d-data personali jibqgħu moħbija sakemm tiġi kkonfermata l-link ta’ darba fl-email.
-101	Il-verżjonijiet appoġġjati ta’ PrestaShop huma minn 8.1 sa 9.1.
+101	Huma appoġġjati l-verżjonijiet PrestaShop 8.x u 9.x.
 102	Il-valuri predefiniti huma konservattivi apposta. Żid il-limiti biss wara li tirrevedi t-traffiku reali u l-logs tal-abbuż; limiti baxxi wisq jistgħu jimblukkaw konsumaturi leġittimi.
 103	Dawn il-valuri jidentifikaw il-bejjiegħ attwali li jopera l-ħanut magħżul. Jinħażnu għal kull ħanut f’multistore u jiġu stampati fil-konfermi tal-klijenti u fl-evidenza PDF.
 104	Dan il-modulu GitHub b’xejn jingħata mingħajr appoġġ tekniku individwali. L-installazzjoni, il-konfigurazzjoni, l-ittestjar fil-produzzjoni, l-aġġornamenti u s-soluzzjoni tal-problemi huma disponibbli għall-klijenti li jużaw Joobox PrestaShop Cloud jew servizz ieħor bi ħlas miftiehem espliċitament ma’ JOO INTERNET MEDIA LTD.

@@ -1,0 +1,5 @@
+Foi registada uma nova resolução do contrato.
+Referência da resolução: {withdrawal_reference}
+Encomenda / contrato: {order_reference}
+Contacto eletrónico: {customer_email}
+Estado: {status}

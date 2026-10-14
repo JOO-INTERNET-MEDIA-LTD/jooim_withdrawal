@@ -1,0 +1,9 @@
+Hemos registrado la recepción de los bienes devueltos.
+Referencia del desistimiento: {withdrawal_reference}
+Pedido / contrato: {order_reference}
+Estado: {status}
+
+Mensaje del comerciante:
+{public_message}
+
+Contacto del comerciante: {merchant_email}

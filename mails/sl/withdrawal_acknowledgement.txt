@@ -1,0 +1,28 @@
+Potrdilo odstopa od pogodbe
+
+Potrjujemo prejem vašega obvestila o odstopu od pogodbe.
+Referenca odstopa: {withdrawal_reference}
+Naročilo / pogodba: {order_reference}
+Potrošnik: {firstname} {lastname}
+Elektronski kontakt: {customer_email}
+Datum in čas prejema: {submitted_at}
+Čas prejema UTC: {submitted_at_utc}
+Obseg: {scope}
+
+Vsebina oddaje / postavke:
+{items_text}
+
+Izjava:
+{statement}
+
+Trgovec:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Naslov / navodila za vračilo:
+{return_address}
+
+Shranite to potrdilo. Potrjuje vsebino, datum in čas vašega spletnega obvestila.
+Zgoščena vrednost nespremenljivega posnetka SHA-256: {payload_hash}

@@ -1,0 +1,12 @@
+Atgriešanas norādījumi
+Atteikuma atsauce: {withdrawal_reference}
+Pasūtījums / līgums: {order_reference}
+Statuss: {status}
+
+Tirgotāja ziņojums:
+{public_message}
+
+Atgriešanas adrese / norādījumi:
+{return_address}
+
+Tirgotāja kontaktinformācija: {merchant_email}

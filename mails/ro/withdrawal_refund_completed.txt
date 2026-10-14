@@ -1,0 +1,9 @@
+Rambursarea a fost înregistrată ca finalizată.
+Referință retragere: {withdrawal_reference}
+Comandă / contract: {order_reference}
+Stare: {status}
+
+Mesajul comerciantului:
+{public_message}
+
+Contact comerciant: {merchant_email}

@@ -1,0 +1,28 @@
+Atteikuma no līguma apstiprinājums
+
+Apstiprinām jūsu paziņojuma par atteikumu no līguma saņemšanu.
+Atteikuma atsauce: {withdrawal_reference}
+Pasūtījums / līgums: {order_reference}
+Patērētājs: {firstname} {lastname}
+Elektroniskā kontaktinformācija: {customer_email}
+Saņemšanas datums un laiks: {submitted_at}
+Saņemšanas laiks UTC: {submitted_at_utc}
+Apjoms: {scope}
+
+Iesnieguma saturs / preces:
+{items_text}
+
+Paziņojums:
+{statement}
+
+Tirgotājs:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Atgriešanas adrese / norādījumi:
+{return_address}
+
+Saglabājiet šo apstiprinājumu. Tas apliecina jūsu tiešsaistes paziņojuma saturu, datumu un laiku.
+Nemaināmā momentuzņēmuma SHA-256 jaucējvērtība: {payload_hash}

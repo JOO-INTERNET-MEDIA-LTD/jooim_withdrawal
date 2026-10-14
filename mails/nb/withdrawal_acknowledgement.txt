@@ -1,0 +1,28 @@
+Bekreftelse på bruk av angrerett
+
+Vi bekrefter mottak av din melding om bruk av angrerett.
+Angrerettreferanse: {withdrawal_reference}
+Bestilling / avtale: {order_reference}
+Forbruker: {firstname} {lastname}
+Elektronisk kontakt: {customer_email}
+Dato og klokkeslett mottatt: {submitted_at}
+Mottakstid UTC: {submitted_at_utc}
+Omfang: {scope}
+
+Innsendt innhold / varer:
+{items_text}
+
+Erklæring:
+{statement}
+
+Selger:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Returadresse / instruksjoner:
+{return_address}
+
+Ta vare på denne bekreftelsen. Den bekrefter innhold, dato og klokkeslett for din nettbaserte melding.
+SHA-256-hash for uforanderlig øyeblikksbilde: {payload_hash}

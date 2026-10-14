@@ -1,0 +1,28 @@
+Bestätegung vum Récktrëtt vum Kontrakt
+
+Mir bestätegen den Empfang vun Ärer Récktrëttserklärung vum Kontrakt.
+Récktrëttsreferenz: {withdrawal_reference}
+Bestellung / Kontrakt: {order_reference}
+Verbraucher: {firstname} {lastname}
+Elektronesche Kontakt: {customer_email}
+Datum an Auerzäit vum Empfang: {submitted_at}
+Empfangszäit UTC: {submitted_at_utc}
+Ëmfang: {scope}
+
+Inhalt vun der Areechung / Artikelen:
+{items_text}
+
+Erklärung:
+{statement}
+
+Händler:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Retouradress / Instruktiounen:
+{return_address}
+
+Späichert dës Bestätegung. Se bestätegt den Inhalt, den Datum an d’Auerzäit vun Ärer Online-Erklärung.
+SHA-256-Hash vun der onverännerlecher Momentopnam: {payload_hash}

@@ -98,7 +98,7 @@
 098	Īss kods atteikuma atsauču sākumā. Izmantojiet tikai burtus, ciparus un defises, piemēram, WD. Esošās atteikuma atsauces nekad netiek mainītas.
 099	Dažas izpildlaika prasības neizdevās sinhronizēt. Pirms publiskas lietošanas pārskatiet PrestaShop žurnālus.
 100	Sāk drošo procesu pēc pasūtījuma atsauces. Klients ievada tikai publisko pasūtījuma atsauci; pasūtījuma un personas dati paliek slēpti, līdz tiek apstiprināta vienreizējā e-pasta saite.
-101	Atbalstītās PrestaShop versijas ir no 8.1 līdz 9.1.
+101	Tiek atbalstītas PrestaShop 8.x un 9.x versijas.
 102	Noklusējuma vērtības ir apzināti konservatīvas. Palieliniet limitus tikai pēc faktiskās datplūsmas un ļaunprātīgas izmantošanas žurnālu pārskatīšanas; pārāk zemi limiti var bloķēt likumīgus patērētājus.
 103	Šīs vērtības identificē faktisko pārdevēju, kas pārvalda izvēlēto veikalu. Tās tiek glabātas katram multistore veikalam un drukātas klientu apstiprinājumos un PDF pierādījumā.
 104	Šis bezmaksas GitHub modulis tiek nodrošināts bez individuāla tehniskā atbalsta. Instalēšana, konfigurēšana, ražošanas testēšana, atjauninājumi un problēmu novēršana ir pieejami Joobox PrestaShop Cloud klientiem vai saskaņā ar citu maksas pakalpojumu, par ko skaidri panākta vienošanās ar JOO INTERNET MEDIA LTD.

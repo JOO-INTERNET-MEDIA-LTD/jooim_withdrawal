@@ -2,7 +2,7 @@
 <module>
   <name>jooim_withdrawal</name>
   <displayName><![CDATA[JOOIM Withdrawal – Online Contract Withdrawal]]></displayName>
-  <version><![CDATA[1.0.0]]></version>
+  <version><![CDATA[1.1.1]]></version>
   <description><![CDATA[Secure online exercise and administration of consumer withdrawal rights.]]></description>
   <author><![CDATA[JOO INTERNET MEDIA LTD]]></author>
   <tab><![CDATA[administration]]></tab>

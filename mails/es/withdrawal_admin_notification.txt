@@ -1,0 +1,5 @@
+Se ha registrado un nuevo desistimiento del contrato.
+Referencia del desistimiento: {withdrawal_reference}
+Pedido / contrato: {order_reference}
+Contacto electrónico: {customer_email}
+Estado: {status}

@@ -38,6 +38,7 @@ namespace {
     class Module
     {
         public int $id = 132;
+        public string $version = '1.1.1';
     }
 
     class Configuration
@@ -129,6 +130,7 @@ namespace {
         private int $lastInsertId = 0;
         private int $nextId = 1000;
         private string $error = '';
+        private int $affectedRows = 0;
 
         public function __construct()
         {
@@ -263,6 +265,7 @@ namespace {
         public function update($table, $data, $where = '', $limit = 0, $nullValues = false, $useCache = true, $addPrefix = true): bool
         {
             $table = (string) $table;
+            $this->affectedRows = 0;
             $this->updateCalls[] = compact('table', 'data', 'where', 'limit', 'nullValues', 'useCache', 'addPrefix');
             if (!isset($this->tables[$table])) {
                 return true;
@@ -277,9 +280,13 @@ namespace {
                 } elseif (preg_match('/aggregate_id=(\d+)/', (string) $where, $m)) {
                     $match = (int) ($row['aggregate_id'] ?? 0) === (int) $m[1];
                 }
+                if (str_contains((string) $where, "status_code='submitted'") && ($row['status_code'] ?? '') !== 'submitted') {
+                    $match = false;
+                }
                 if (!$match) {
                     continue;
                 }
+                ++$this->affectedRows;
                 foreach ((array) $data as $key => $value) {
                     if (is_array($value) && ($value['type'] ?? '') === 'sql') {
                         $row[$key] = (int) ($row[$key] ?? 0) + 1;
@@ -292,6 +299,11 @@ namespace {
                 $this->tables[$table][$index] = $row;
             }
             return true;
+        }
+
+        public function Affected_Rows(): int
+        {
+            return $this->affectedRows;
         }
 
         public function Insert_ID(): int
@@ -396,10 +408,14 @@ namespace JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service {
 
     final class WithdrawalMailService
     {
+        public static string $mode = 'failure';
         public function sendAcknowledgement(array $withdrawal, array $snapshot, ?string $pdfContent = null): bool
         {
             echo 'MAIL_OUTPUT_MUST_NOT_ESCAPE';
-            return false;
+            if (self::$mode === 'race') {
+                \Db::getInstance()->update('jooim_withdrawal', ['status_code' => 'refunded'], 'id_jooim_withdrawal=' . (int) $withdrawal['id_jooim_withdrawal']);
+            }
+            return self::$mode !== 'failure';
         }
 
         public function sendAdminNotification(array $withdrawal): void
@@ -486,6 +502,36 @@ namespace {
     $assert($retryOutput === '', 'idempotent retry emits no output');
     $assert($beforeRetryCount === 1 && $afterRetryCount === 1, 'idempotent retry creates no duplicate withdrawal');
     $assert(($second['withdrawal']['reference'] ?? '') === 'WD-SK-2026-000001', 'idempotent retry returns the original reference');
+
+    // A manual transcription must retain its original receipt metadata in the final evidence.
+    \Db::$instance = null;
+    $db = \Db::getInstance();
+    $manual = json_decode($db->tables['jooim_withdrawal_draft'][0]['draft_payload'], true);
+    $manual['source'] = 'admin_manual';
+    $manual['admin_employee_id'] = 7;
+    $manual['received_method'] = 'email';
+    $manual['received_at'] = '2026-08-20T10:00:00Z';
+    $db->tables['jooim_withdrawal_draft'][0]['draft_payload'] = json_encode($manual);
+    ob_start(); $service->submit(900, 'plain-draft-key'); ob_end_clean();
+    $manualSnapshot = json_decode($db->tables['jooim_withdrawal'][0]['payload_json'], true);
+    $assert($manualSnapshot['admin_employee_id'] === 7 && $manualSnapshot['received_method'] === 'email'
+        && $manualSnapshot['received_at'] === '2026-08-20T10:00:00Z', 'manual original receipt metadata survives into final snapshot');
+    $assert($db->tables['jooim_withdrawal_history'][0]['id_employee'] === 7, 'manual initial history identifies the responsible employee');
+    $assert($manualSnapshot['module']['version'] === '1.1.1', 'snapshot uses installed module version');
+
+    // Model an administrator changing status during a slow acknowledgement transport.
+    \Db::$instance = null;
+    \JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\WithdrawalMailService::$mode = 'race';
+    ob_start(); $service->submit(900, 'plain-draft-key'); ob_end_clean();
+    $db = \Db::getInstance();
+    $assert($db->tables['jooim_withdrawal'][0]['status_code'] === 'refunded', 'successful acknowledgement cannot overwrite a concurrent administrator status');
+    $ackHistory = array_filter($db->tables['jooim_withdrawal_history'], static fn(array $row): bool => $row['event_code'] === 'acknowledgement_sent');
+    $assert($ackHistory === [], 'no misleading status transition history when conditional update did not affect a row');
+
+    \Db::$instance = null;
+    \JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\WithdrawalMailService::$mode = 'success';
+    ob_start(); $service->submit(900, 'plain-draft-key'); ob_end_clean();
+    $assert(\Db::getInstance()->tables['jooim_withdrawal'][0]['status_code'] === 'acknowledged', 'successful acknowledgement advances an unchanged submitted case');
 
     if ($failures !== []) {
         echo 'FAIL: ' . count($failures) . PHP_EOL;

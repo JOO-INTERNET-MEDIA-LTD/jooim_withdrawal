@@ -1,0 +1,120 @@
+001	Eng nei Modulversioun ass disponibel.
+002	Zuel vun de Bestätegungswidderhuelungen
+003	Setzt e Récktrëttslink am Beräich «Mäi Kont» vum Client dobäi. De Client kann den ëffentleche Prozess och benotzen, wann d’Bestellung net am Kont sichtbar ass.
+004	Setzt e Knäppchen «Vum Kontrakt zerécktrieden» an den Detailer vun enger Bestellung vum ugemellte Client dobäi. De Besëtz gëtt um Server kontrolléiert.
+005	Erlaabt dem Verbraucher en eendeitege Récktrëtt ouni Umeldung oder Uweise vu Bestelldonnéeën. Halt dës Funktioun fir uwendbar Online-B2C-Kontrakter disponibel.
+006	PDF-Bestätegung bäifügen
+007	Füügt déi onverännerlech PDF-Récktrëttsbestätegung un d’Bestätegungs-E-Mail bäi. D’Desaktivéiere vun der Annex läscht net déi geschützt PDF am Dossier.
+008	Dossieren:
+009	Firmenidentifikatioun
+010	Aktuell Modulversioun
+011	Link am Clientskont
+012	Kontaktadress fir Récktrëttsnoriichte vum Client. Benotzt eng reegelméisseg kontrolléiert Mailbox; gitt hei net d’E-Mail vum Client an.
+013	Direkt Funktioun nom Artikel 11a
+014	Direkte Récktrëtt
+015	Direkt Récktrëttsfunktioun:
+016	Desaktivéiert
+017	Desaktivéiert (juristesch Iwwerpréiwung erfuerderlech)
+018	Weist de Clientslink «Hei vum Kontrakt zerécktrieden» am Footer vum Buttek. Dëse Link fir déi gesetzlech Funktioun ass onofhängeg vun der Joobox-Markennennung.
+019	EU-Konformitéitsnotiz (2026):
+020	All aktiv Buttekssprooch kritt hiren eegene lokaliséierte Wee. Déi sproochneutral Aganks-URLen bleiwen fir extern Linklëscht-Moduler disponibel. Test béid Prozesser an all aktiver Sprooch no der Installatioun.
+021	E-Mail
+022	E-Maile pro Bestellung / Dag
+023	E-Maile pro Bestellung / Stonn
+024	Aktivéiert
+025	Aktivéiert den direkten Online-Récktrëttsformulaire, deen weder e Clientskont nach Zougang zur ursprénglecher Bestell-E-Mail erfuerdert. Desaktivéiert en nëmmen no enger juristescher Iwwerpréiwung fir de jeeweilege Maart.
+026	Beendegt eng verifizéiert Gaaschtsessioun no dëser Zäit ouni Aktivitéit. Erwaarte Beräich: 5–240 Minutten; recommandéiert: 30.
+027	Englesch als Ersatz
+028	Gitt déi absolut HTTPS-URL vun der Dateschutzpolitik an, déi d’Verschaffe vu perséinlechen Donnéeë fir den Empfang an d’Behandlung vu Récktrëtter erkläert.
+029	Gitt déi exakt Adress a praktesch Instruktioune fir de Retour vun de Wueren an. Dës Instruktiounen däerfen d’Récktrëttsrecht vum Verbraucher net onrechtméisseg aschränken.
+030	Gitt déi am Land vum Verkeefer erfuerderlech Identifikatioun an, zum Beispill Firmen-, TVA- oder Handelsregisternummer.
+031	Gitt de vollstännege gesetzlechen oder registréierte Firmennumm vum Verkeefer an, net dee vum Modulubidder. En erschéngt am Formulaire, an der Bestätegungs-E-Mail an an der PDF.
+032	Gitt de Sëtz oder d’Geschäftsadress vum Verkeefer genee esou an, wéi se am Dokument fir de Verbraucher soll stoen.
+033	Footer-Link (fir uwendbar Online-B2C-Kontrakter aktivéiert loossen)
+034	Benotzt fir d’PrestaShop-Installatioun net déi automatesch GitHub «Source code ZIP». Benotzt nëmmen d’Installatiouns-ZIP aus den Release-Dateien.
+035	Bei uwendbare B2C-Distanzkontrakter, déi iwwer en Online-Interface ofgeschloss ginn, kann d’Desaktivéieren oder Verstoppe vun der direkter Récktrëttsfunktioun géint den Artikel 11a vun der Direktiv 2011/83/EU, geännert duerch d’Direktiv (EU) 2023/2673, verstoussen. Déi national Ëmsetzung muss fir all Maart iwwerpréift ginn.
+036	Allgemeng a gesetzlech Disponibilitéit
+037	Joobox-Ënnerstëtzung kréien
+038	GitHub-Kontrolle ginn héchstens eemol all sechs Stonnen duerchgefouert, ausser bei manueller Aktualiséierung. De Modul luet oder installéiert ni automatesch Code.
+039	Cron-URL vum Hosting (geheim):
+040	Wéi laang den eemolegen E-Mail-Zougangslink benotzbar bleift. Erwaarte Beräich: 5–240 Minutten; recommandéiert: 30.
+041	Enthalen
+042	JOOIM Withdrawal – Online-Récktrëtt vum Kontrakt
+043	Joobox-Ënnerstëtzung fir dëse Modul
+044	Sprooch
+045	Sproochneutral URLen fir extern Linklëschten:
+046	Lescht Kontroll
+047	Neist Versioun op GitHub
+048	Linke fir aktiv Buttekssproochen
+049	Sproochvariant
+050	Gëltegkeet vum Zougangslink (Minutten)
+051	Ënnerhalt iwwer CLI:
+052	Haaptschalter fir déi ëffentlech Récktrëttsprozesser a Clientslinken. D’Desaktivéiere läscht oder ännert keng schonn empfaange Récktrëtter.
+053	Maximal Unzuel vun Zougangslink-Ufroe fir déi selwecht normaliséiert Bestellreferenz a 24 Stonnen.
+054	Maximal Unzuel vun Zougangslink-Ufroe fir déi selwecht normaliséiert Bestellreferenz an enger Stonn. Dëst schützt d’Mailbox vum Client géint widderholl Noriichten.
+055	Maximal Längt vun der Clientsnotiz
+056	Maximal Unzuel vun einfache Textzeechen an der optionaler Clientsnotiz. HTML ass net erlaabt. Recommandéiert: 2000.
+057	Maximal Unzuel vun Zougangsufroe mat Bestellreferenz vun enger pseudonymiséierter IP a 15 Minutten. Erfollegräich an erfolleglos Sichufroen deelen déi selwecht Grenz.
+058	Maximal Unzuel vun Zougangsufroe mat Bestellreferenz vun enger pseudonymiséierter IP a 24 Stonnen. Déi ursprénglech IP-Adress gëtt net am gesetzleche Récktrëttsdossier gespäichert.
+059	Maximal Gesamtdauer vun enger verifizéierter Gaaschtsessioun, och wann de Client aktiv bleift. Erwaarte Beräich: 15–1440 Minutten; recommandéiert: 120.
+060	Minimal Waardezäit virun enger neier Zougangs-E-Mail fir déi selwecht Bestellreferenz. Recommandéiert: 60 Sekonnen.
+061	D’Moduldonnéeë goufe permanent geläscht.
+062	Modul aktivéiert
+063	De Modul ass aktuell.
+064	Nee
+065	Keng aktiv Buttekssprooche fonnt.
+066	Et gi keng Donnéeë geläscht, ausser wann de Wäert genee DELETE ass.
+067	Eng normal Desinstallatioun behält d’Récktrëttsdossieren. Dës destruktiv Aktioun läscht all Modultabellen.
+068	Unzuel vun automatesche Widderhuelungsversich no enger feelgeschloener Bestätegungs-E-Mail. De Récktrëtt bleift gëlteg, och wann all E-Mail-Versich feelen.
+069	GitHub-Releases opmaachen
+070	Récktrëtter opmaachen
+071	Mécht d’Back-Office-Lëscht vun empfaange Récktrëtter mat hirem Status, Dokumenter, Remboursementer an Auditverlaf op.
+072	Optional Telefonsnummer vum Clientsservice an der Bestätegung an der PDF. Se gëtt net benotzt fir e Récktrëtt ze authentifizéieren.
+073	Knäppchen am Bestelldetail
+074	Prozess mat Bestellreferenz
+075	PHP 8.1 oder méi nei ass erfuerderlech.
+076	Permanent Donnéeëläschen
+077	All Moduldonnéeë permanent läschen
+078	Telefon
+079	Recommandéiert Method fir geplangten Ënnerhalt. Se läscht ofgelaf temporär Donnéeën, widderhëlt waarden Bestätegungen a verschafft Späichertäschten.
+080	URL vun der Dateschutzpolitik
+081	Ëffentlechen Agank:
+082	Läschbestätegung
+083	Prett. Erfuerderlech Sécherheetswäerter a Modul-Hooks si disponibel.
+084	Referenzprefix
+085	Aktualiséierungsstatus erfrëschen
+086	Registréiert Adress
+087	Ufroe pro IP / 15 Minutten
+088	Ufroe pro IP / Dag
+089	Waardezäit virum Neiverschécken (Sekonnen)
+090	Retouradress / Instruktiounen
+091	Lafzäitkonfiguratioun:
+092	Astellunge späicheren
+093	Sécher Online-Ausübung a Verwaltung vum Récktrëttsrecht vum Verbraucher.
+094	Sécherheets-, Sessiouns- a Mëssbrauchsgrenzen
+095	Absolut Sessiounsgrenz (Minutten)
+096	Sessiounsinaktivitéitsgrenz (Minutten)
+097	Astellunge gespäichert.
+098	Kuerze Code um Ufank vun de Récktrëttsreferenzen. Benotzt nëmme Buschtawen, Zifferen a Bindestrécher; zum Beispill WD. Bestoend Récktrëttsreferenze ginn ni geännert.
+099	E puer Lafzäitufuerderunge konnten net synchroniséiert ginn. Kontrolléiert d’PrestaShop-Logge virun der ëffentlecher Benotzung.
+100	Start de séchere Prozess mat Bestellreferenz. De Client gëtt nëmmen déi ëffentlech Referenz an; Bestell- a perséinlech Donnéeë bleiwen verstoppt, bis den eemolegen E-Mail-Link bestätegt gëtt.
+101	Ënnerstëtzt PrestaShop-Versioune sinn 8.x an 9.x.
+102	D’Standardwäerter si bewosst konservativ. Erhéicht d’Grenzen nëmmen no der Iwwerpréiwung vum reelle Verkéier a Mëssbrauchsloggen; ze niddreg Grenze kënnen legitim Verbraucher blockéieren.
+103	Dës Wäerter identifizéieren den tatsächleche Verkeefer vum ausgewielte Buttek. Se ginn a Multishop pro Buttek gespäichert a stinn an de Clientsbestätegungen a PDF-Beweiser.
+104	Dëse gratis GitHub-Modul gëtt ouni individuell technesch Ënnerstëtzung ugebueden. Installatioun, Konfiguratioun, Produktiounstester, Aktualiséierungen a Problembehandlung si fir Cliente vu Joobox PrestaShop Cloud oder engem anere bezuelte Service disponibel, deen ausdrécklech mat JOO INTERNET MEDIA LTD ofgemaach gouf.
+105	Händlerdetailer – aktuelle Buttek
+106	Händlernumm
+107	Iwwersetzung
+108	DELETE aginn
+109	Gitt DELETE an, fir dat permanent Läschen ze bestätegen.
+110	Gitt genee d’Wuert DELETE an, fir all Récktrëtter, Dokumenter, Auditverlaf, Zougangs- a Remboursementsdonnéeën ze läschen. Dës Aktioun kann net réckgängeg gemaach ginn an ass fir eng normal Aktualiséierung oder Neiinstallatioun net néideg.
+111	Déi neist GitHub-Versioun konnt net kontrolléiert ginn. Kontrolléiert d’Releases manuell.
+112	Onbekannt
+113	Aktualiséierungskontroll
+114	Aktualiséierungskontroll feelgeschloen: %error%
+115	Aktualiséierungsstatus
+116	Benotzt dës URLen a Moduler mat nëmmen engem URL-Feld fir all Sproochen. Den Agankscontroller wielt déi aktuell oder gewënschte Buttekssprooch a leet op de lokaliséierte Wee weider.
+117	Benotzt dës URL nëmmen, wann den Hosting de CLI-Befeel net ausféiere kann. Behandelt den Token wéi e Passwuert: publizéiert en net, schéckt en net per E-Mail a benotzt en net an ëffentlecher Iwwerwaachung.
+118	Benotzt dëst nëmmen an enger ewechzegeheien Testinstallatioun.
+119	Jo
+120	Nëmmen Astellunge vum Back Office

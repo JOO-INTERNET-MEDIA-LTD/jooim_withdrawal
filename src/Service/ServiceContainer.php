@@ -43,5 +43,6 @@ final class ServiceContainer
     public function references(): WithdrawalReferenceGenerator { return $this->services[__FUNCTION__] ??= new WithdrawalReferenceGenerator($this->config()); }
     public function drafts(): WithdrawalDraftService { return $this->services[__FUNCTION__] ??= new WithdrawalDraftService($this->context, $this->config(), $this->tokens(), $this->orderLookup(), $this->identities(), $this->quantities()); }
     public function withdrawals(): WithdrawalSubmissionService { return $this->services[__FUNCTION__] ??= new WithdrawalSubmissionService($this->context, $this->module, $this->config(), $this->tokens(), $this->withdrawalRepository(), $this->quantities(), $this->period(), $this->references(), $this->pdf(), $this->mail()); }
-    public function maintenance(): WithdrawalMaintenanceService { return $this->services[__FUNCTION__] ??= new WithdrawalMaintenanceService($this->context, $this->config(), $this->withdrawalRepository(), $this->mail(), $this->storage()); }
+    public function recovery(): WithdrawalRecoveryService { return $this->services[__FUNCTION__] ??= new WithdrawalRecoveryService($this->context, $this->config(), $this->withdrawalRepository(), $this->pdf()); }
+    public function maintenance(): WithdrawalMaintenanceService { return $this->services[__FUNCTION__] ??= new WithdrawalMaintenanceService($this->context, $this->config(), $this->withdrawalRepository(), $this->mail(), $this->storage(), $this->recovery()); }
 }

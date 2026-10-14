@@ -1,0 +1,12 @@
+Grąžinimo instrukcijos
+Atsisakymo nuoroda: {withdrawal_reference}
+Užsakymas / sutartis: {order_reference}
+Būsena: {status}
+
+Prekybininko žinutė:
+{public_message}
+
+Grąžinimo adresas / instrukcijos:
+{return_address}
+
+Prekybininko kontaktai: {merchant_email}

@@ -1,0 +1,8 @@
+Tere, {firstname}!
+
+Kasutage seda linki, et jätkata turvalise veebis lepingust taganemise protsessiga:
+Jätka taganemisega: {access_url}
+
+Link kehtib {expires_minutes} minutit. Pelgalt avamine seda ei kasuta; jätkamine kinnitatakse järgmisel lehel.
+
+Kui te seda linki ei taotlenud, võite selle sõnumi tähelepanuta jätta.

@@ -1,0 +1,120 @@
+001	En ny modulversjon er tilgjengelig.
+002	Antall forsøk på ny bekreftelse
+003	Legger til en lenke til angrerett i kundens Min konto-område. Kunden kan fortsatt bruke den offentlige løsningen når bestillingen ikke er synlig i kontoen.
+004	Legger til knappen «Bruk angreretten» i detaljene for en bestilling som tilhører den innloggede kunden. Eierskap kontrolleres på serveren.
+005	Lar forbrukeren sende en utvetydig melding om angrerett uten å logge inn eller vise bestillingsopplysninger. Hold denne funksjonen tilgjengelig for aktuelle nettbaserte B2C-avtaler.
+006	Legg ved PDF-bekreftelse
+007	Legger den uforanderlige PDF-bekreftelsen ved bekreftelses-e-posten. Hvis vedlegget deaktiveres, slettes ikke den beskyttede PDF-en som er lagret i saken.
+008	Saker:
+009	Foretaksidentifikator
+010	Gjeldende modulversjon
+011	Lenke i kundekonto
+012	Kontaktadresse for kundens kommunikasjon om angrerett. Bruk en e-postkonto som følges aktivt opp; ikke oppgi kundens e-post her.
+013	Direkte funksjon etter artikkel 11a
+014	Direkte angrerett
+015	Direkte angrerettsfunksjon:
+016	Deaktivert
+017	Deaktivert (juridisk gjennomgang kreves)
+018	Viser kundelenken «Bruk angreretten her» i butikkens bunntekst. Denne lenken til den lovpålagte funksjonen er uavhengig av Joobox-markedsføringen.
+019	Merknad om EU-samsvar (2026):
+020	Hvert aktivt butikkspråk får sin egen lokaliserte sti. Språknøytrale inngangsadresser er fortsatt tilgjengelige for eksterne lenkelistemoduler. Test begge prosessene i hvert aktivt språk etter installasjon.
+021	E-post
+022	E-poster per bestilling / dag
+023	E-poster per bestilling / time
+024	Aktivert
+025	Aktiverer det direkte nettbaserte angrerettskjemaet som ikke krever kundekonto eller tilgang til den opprinnelige bestillings-e-posten. Deaktiver det bare etter juridisk gjennomgang for det aktuelle markedet.
+026	Avslutter en bekreftet gjesteøkt etter denne perioden uten aktivitet. Forventet område: 5–240 minutter; anbefalt standard: 30.
+027	Engelsk reserveoversettelse
+028	Oppgi den absolutte HTTPS-adressen til personvernerklæringen som forklarer behandling av personopplysninger for mottak og håndtering av angrerett.
+029	Oppgi nøyaktig adresse og praktiske instruksjoner for retur av varer. Instruksjonene må ikke stille vilkår som ulovlig begrenser forbrukerens angrerett.
+030	Oppgi identifikatoren som kreves i selgerens jurisdiksjon, for eksempel organisasjonsnummer, MVA-nummer eller foretaksregisternummer.
+031	Oppgi selgerens fulle juridiske eller registrerte foretaksnavn, ikke modulleverandøren. Det vises i skjemaet, bekreftelses-e-posten og PDF-en.
+032	Oppgi selgerens registrerte forretningsadresse nøyaktig slik den skal vises i forbrukerdokumentet.
+033	Lenke i bunntekst (hold aktivert for aktuelle nettbaserte B2C-avtaler)
+034	Ikke bruk GitHubs automatiske «Source code ZIP» til PrestaShop-installasjon. Bruk bare installasjons-ZIP-filen fra utgivelsens vedlegg.
+035	For aktuelle B2C-fjernsalgsavtaler inngått gjennom et nettbasert grensesnitt kan deaktivering eller skjuling av den direkte angrerettsfunksjonen være i strid med artikkel 11a i direktiv 2011/83/EU, som endret ved direktiv (EU) 2023/2673. Nasjonal gjennomføring må fortsatt vurderes for hvert marked.
+036	Generell og juridisk tilgjengelighet
+037	Få Joobox-støtte
+038	GitHub kontrolleres høyst én gang hver sjette time, med mindre kontrollen oppdateres manuelt. Modulen laster aldri ned eller installerer kode automatisk.
+039	Cron-adresse for hosting (hemmelig):
+040	Hvor lenge engangstilgangslenken i e-posten kan brukes. Forventet område: 5–240 minutter; anbefalt standard: 30.
+041	Inkludert
+042	JOOIM Withdrawal – Nettbasert angrerett
+043	Joobox-støtte for denne modulen
+044	Språk
+045	Språknøytrale adresser for eksterne lenkelister:
+046	Sist kontrollert
+047	Nyeste versjon på GitHub
+048	Lenker for aktive butikkspråk
+049	Språkvariant
+050	Tilgangslenkens gyldighet (minutter)
+051	Vedlikehold via CLI:
+052	Hovedbryter for offentlige angrerettsprosesser og kundelenker. Deaktivering sletter eller endrer ikke allerede mottatte meldinger om angrerett.
+053	Maksimalt antall forespørsler om tilgangslenke knyttet til samme normaliserte bestillingsreferanse på 24 timer.
+054	Maksimalt antall forespørsler om tilgangslenke knyttet til samme normaliserte bestillingsreferanse på én time. Dette beskytter kundens innboks mot gjentatte meldinger.
+055	Maksimal lengde på kundemerknad
+056	Maksimalt antall rene teksttegn i den valgfrie kundemerknaden. HTML godtas ikke. Anbefalt standard: 2000.
+057	Maksimalt antall tilgangsforespørsler med bestillingsreferanse fra én pseudonymisert IP på 15 minutter. Vellykkede og mislykkede oppslag deler samme grense.
+058	Maksimalt antall tilgangsforespørsler med bestillingsreferanse fra én pseudonymisert IP på 24 timer. Den opprinnelige IP-adressen lagres ikke i den juridiske angrerettsregistreringen.
+059	Maksimal samlet varighet for en bekreftet gjesteøkt selv om kunden forblir aktiv. Forventet område: 15–1440 minutter; anbefalt standard: 120.
+060	Minste ventetid før en ny tilgangs-e-post kan forespørres for samme bestillingsreferanse. Anbefalt standard: 60 sekunder.
+061	Moduldata ble slettet permanent.
+062	Modul aktivert
+063	Modulen er oppdatert.
+064	Nei
+065	Ingen aktive butikkspråk funnet.
+066	Ingen data slettes med mindre verdien er nøyaktig DELETE.
+067	Vanlig avinstallasjon av modulen bevarer angrerettsregistreringer. Denne destruktive handlingen sletter alle modultabeller.
+068	Antall automatiske nye sendeforsøk etter at en bekreftelses-e-post mislykkes. Angreretten er fortsatt gyldig selv om alle e-postforsøk mislykkes.
+069	Åpne GitHub-utgivelser
+070	Åpne angrerettsaker
+071	Åpner administrasjonslisten over mottatte angrerettsaker, deres status, dokumenter, refusjoner og revisjonshistorikk.
+072	Valgfritt kundeservicenummer vist i bekreftelsen og PDF-en. Det brukes ikke til å autentisere bruk av angrerett.
+073	Knapp i bestillingsdetaljer
+074	Prosess med bestillingsreferanse
+075	PHP 8.1 eller nyere kreves.
+076	Permanent datasletting
+077	Slett alle moduldata permanent
+078	Telefon
+079	Foretrukket metode for planlagt vedlikehold. Den fjerner utløpte midlertidige registreringer, forsøker å sende ventende bekreftelser på nytt og utfører oppgaver knyttet til lagringstid.
+080	Adresse til personvernerklæring
+081	Offentlig inngang:
+082	Bekreftelse av sletting
+083	Klar. Nødvendige sikkerhetsverdier og modulkroker er tilgjengelige.
+084	Referanseprefiks
+085	Oppdater oppdateringsstatus
+086	Registrert adresse
+087	Forespørsler per IP / 15 minutter
+088	Forespørsler per IP / dag
+089	Ventetid for ny sending (sekunder)
+090	Returadresse / instruksjoner
+091	Kjøretidskonfigurasjon:
+092	Lagre innstillinger
+093	Sikker nettbasert bruk og administrasjon av forbrukerens angrerett.
+094	Sikkerhets-, økt- og misbruksgrenser
+095	Absolutt øktgrense (minutter)
+096	Grense for inaktiv økt (minutter)
+097	Innstillinger lagret.
+098	Kort kode i begynnelsen av angrerettreferansene. Bruk bare bokstaver, tall og bindestreker; for eksempel WD. Eksisterende angrerettreferanser endres aldri.
+099	Enkelte kjøretidskrav kunne ikke synkroniseres. Se PrestaShop-loggene før offentlig bruk.
+100	Starter den sikre prosessen med bestillingsreferanse. Kunden oppgir bare den offentlige referansen; bestillings- og personopplysninger forblir skjult til engangslenken i e-posten bekreftes.
+101	Støttede PrestaShop-versjoner er 8.x og 9.x.
+102	Standardverdiene er bevisst forsiktige. Øk grenser bare etter å ha vurdert faktisk trafikk og misbrukslogger; for lave grenser kan blokkere legitime forbrukere.
+103	Disse verdiene identifiserer den faktiske selgeren som driver valgt butikk. De lagres per butikk i multibutikk og skrives i kundebekreftelser og PDF-bevis.
+104	Denne gratis GitHub-modulen leveres uten individuell teknisk støtte. Installasjon, konfigurasjon, testing i produksjon, oppdateringer og feilsøking er tilgjengelig for kunder som bruker Joobox PrestaShop Cloud eller en annen betalt tjeneste som er uttrykkelig avtalt med JOO INTERNET MEDIA LTD.
+105	Selgeropplysninger – gjeldende butikk
+106	Selgerens navn
+107	Oversettelse
+108	Skriv DELETE
+109	Skriv DELETE for å bekrefte permanent sletting.
+110	Skriv nøyaktig ordet DELETE for å fjerne alle angrerettsaker, dokumenter, revisjonshistorikk, tilgangsregistreringer og refusjoner. Handlingen kan ikke angres og er ikke nødvendig for vanlig moduloppdatering eller reinstallasjon.
+111	Kunne ikke kontrollere nyeste versjon fra GitHub. Kontroller utgivelsene manuelt.
+112	Ukjent
+113	Oppdateringskontroll
+114	Oppdateringskontroll mislyktes: %error%
+115	Oppdateringsstatus
+116	Bruk disse adressene i moduler som bare har ett adressefelt for alle språk. Inngangskontrolleren velger gjeldende eller foretrukket butikkspråk og videresender til den lokaliserte stien.
+117	Bruk denne adressen bare når hostingen ikke kan kjøre CLI-kommandoen. Behandle tokenet som et passord: ikke publiser det, send det på e-post eller legg det i offentlig overvåking.
+118	Bruk dette bare i en disponibel testinstallasjon.
+119	Ja
+120	Bare administrasjonsinnstillinger

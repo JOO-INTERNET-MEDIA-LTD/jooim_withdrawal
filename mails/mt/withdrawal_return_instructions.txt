@@ -1,0 +1,12 @@
+Istruzzjonijiet għar-ritorn
+Referenza tal-irtirar: {withdrawal_reference}
+Ordni / kuntratt: {order_reference}
+Stat: {status}
+
+Messaġġ tan-negozjant:
+{public_message}
+
+Indirizz / istruzzjonijiet għar-ritorn:
+{return_address}
+
+Kuntatt tan-negozjant: {merchant_email}

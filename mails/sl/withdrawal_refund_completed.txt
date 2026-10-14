@@ -1,0 +1,9 @@
+Vračilo denarja je zabeleženo kot zaključeno.
+Referenca odstopa: {withdrawal_reference}
+Naročilo / pogodba: {order_reference}
+Stanje: {status}
+
+Sporočilo trgovca:
+{public_message}
+
+Kontakt trgovca: {merchant_email}

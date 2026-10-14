@@ -1,0 +1,8 @@
+Hola {firstname},
+
+Use este enlace para continuar al proceso seguro de desistimiento del contrato en línea:
+Continuar al desistimiento: {access_url}
+
+El enlace es válido durante {expires_minutes} minutos. Abrirlo no lo consume; la continuación se confirma en la página siguiente.
+
+Si no solicitó este enlace, puede ignorar este mensaje.

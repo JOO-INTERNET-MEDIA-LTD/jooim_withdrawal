@@ -1,0 +1,28 @@
+Bevestiging van herroeping van de overeenkomst
+
+Wij bevestigen de ontvangst van uw verklaring van herroeping van de overeenkomst.
+Herroepingsreferentie: {withdrawal_reference}
+Bestelling / overeenkomst: {order_reference}
+Consument: {firstname} {lastname}
+Elektronisch contact: {customer_email}
+Datum en tijd van ontvangst: {submitted_at}
+Ontvangsttijd UTC: {submitted_at_utc}
+Omvang: {scope}
+
+Inhoud van de indiening / artikelen:
+{items_text}
+
+Verklaring:
+{statement}
+
+Handelaar:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Retouradres / instructies:
+{return_address}
+
+Bewaar deze bevestiging. Ze bevestigt de inhoud, datum en tijd van uw online verklaring.
+SHA-256-hash van de onveranderlijke momentopname: {payload_hash}

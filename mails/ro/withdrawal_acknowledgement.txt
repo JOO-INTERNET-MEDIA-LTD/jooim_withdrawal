@@ -1,0 +1,28 @@
+Confirmarea retragerii din contract
+
+Confirmăm primirea notificării dumneavoastră de retragere din contract.
+Referință retragere: {withdrawal_reference}
+Comandă / contract: {order_reference}
+Consumator: {firstname} {lastname}
+Contact electronic: {customer_email}
+Data și ora primirii: {submitted_at}
+Ora primirii UTC: {submitted_at_utc}
+Domeniu: {scope}
+
+Conținutul depunerii / articole:
+{items_text}
+
+Declarație:
+{statement}
+
+Comerciant:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Adresă / instrucțiuni de returnare:
+{return_address}
+
+Păstrați această confirmare. Ea confirmă conținutul, data și ora notificării dumneavoastră online.
+Hash SHA-256 al instantaneului imuabil: {payload_hash}

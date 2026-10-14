@@ -1,0 +1,12 @@
+Upute za povrat
+Referenca raskida: {withdrawal_reference}
+Narudžba / ugovor: {order_reference}
+Status: {status}
+
+Poruka trgovca:
+{public_message}
+
+Adresa za povrat / upute:
+{return_address}
+
+Kontakt trgovca: {merchant_email}

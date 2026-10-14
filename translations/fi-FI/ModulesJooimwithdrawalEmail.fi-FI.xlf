@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="file.ext" source-language="en-US" target-language="fi-FI">
+    <body>
+      <trans-unit id="1cf7da6688bdfeb26da8d420440921e2" resname="Access to online contract withdrawal">
+        <source>Access to online contract withdrawal</source>
+        <target>Pääsy sopimuksen peruuttamiseen verkossa</target>
+      </trans-unit>
+      <trans-unit id="090d1051dc780ab04b851c8ae36f74eb" resname="Acknowledgement of contract withdrawal – %reference%">
+        <source>Acknowledgement of contract withdrawal – %reference%</source>
+        <target>Sopimuksen peruuttamisen vahvistus – %reference%</target>
+      </trans-unit>
+      <trans-unit id="5bf9a5d2d48868e8bfd393ffb31b010a" resname="Case closed">
+        <source>Case closed</source>
+        <target>Asia suljettu</target>
+      </trans-unit>
+      <trans-unit id="9fecbc47aacafec4c27333c9efcdf9fa" resname="Confirmation sent">
+        <source>Confirmation sent</source>
+        <target>Vahvistus lähetetty</target>
+      </trans-unit>
+      <trans-unit id="77ae5b8ce64c17f7379cc1889ad443f8" resname="Contract withdrawal update – %reference%">
+        <source>Contract withdrawal update – %reference%</source>
+        <target>Sopimuksen peruuttamisen päivitys – %reference%</target>
+      </trans-unit>
+      <trans-unit id="00c6156d5f4d21eecf8aca0c3972d4a0" resname="Duplicate submission">
+        <source>Duplicate submission</source>
+        <target>Päällekkäinen ilmoitus</target>
+      </trans-unit>
+      <trans-unit id="9f004157e4c148dac71da3ae5906351f" resname="Partially refunded">
+        <source>Partially refunded</source>
+        <target>Osittain hyvitetty</target>
+      </trans-unit>
+      <trans-unit id="e963a2769e317ec3289dc057845cd3e2" resname="Refund completed">
+        <source>Refund completed</source>
+        <target>Hyvitys suoritettu</target>
+      </trans-unit>
+      <trans-unit id="26d3b43de693b9d47c36dee1035a46a8" resname="Refund pending">
+        <source>Refund pending</source>
+        <target>Hyvitys odottaa käsittelyä</target>
+      </trans-unit>
+      <trans-unit id="cd4b58c156cc842c8eaee4f2eda67386" resname="Returned goods received">
+        <source>Returned goods received</source>
+        <target>Palautetut tuotteet vastaanotettu</target>
+      </trans-unit>
+      <trans-unit id="1321a344a5a1a622364582904f3d281d" resname="Under review">
+        <source>Under review</source>
+        <target>Tarkistettavana</target>
+      </trans-unit>
+      <trans-unit id="01f004435882e0df6fc4d48ff6d6b2b5" resname="Waiting for returned goods">
+        <source>Waiting for returned goods</source>
+        <target>Odotetaan palautettuja tuotteita</target>
+      </trans-unit>
+      <trans-unit id="b0578341d6fba5c8fb8282b71deaaf49" resname="Withdrawal received">
+        <source>Withdrawal received</source>
+        <target>Peruutusilmoitus vastaanotettu</target>
+      </trans-unit>
+      <trans-unit id="a6bf9dba77e2cf61e65fb7a0c4c07bea" resname="Withdrawal rejected">
+        <source>Withdrawal rejected</source>
+        <target>Peruutus hylätty</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

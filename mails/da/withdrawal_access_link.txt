@@ -1,0 +1,8 @@
+Hej {firstname},
+
+Brug dette link til at fortsætte til den sikre online aftalefortrydelse:
+Fortsæt til fortrydelse: {access_url}
+
+Linket er gyldigt i {expires_minutes} minutter. Blot at åbne det bruger det ikke; fortsættelsen bekræftes på næste side.
+
+Hvis du ikke har anmodet om dette link, kan du ignorere denne besked.

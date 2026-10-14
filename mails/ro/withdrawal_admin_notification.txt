@@ -1,0 +1,5 @@
+A fost înregistrată o nouă retragere din contract.
+Referință retragere: {withdrawal_reference}
+Comandă / contract: {order_reference}
+Contact electronic: {customer_email}
+Stare: {status}

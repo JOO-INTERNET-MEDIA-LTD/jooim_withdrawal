@@ -1,0 +1,8 @@
+Merħba, {firstname},
+
+Uża din il-link biex tkompli l-proċess sigur tal-irtirar online minn kuntratt:
+Kompli għall-irtirar: {access_url}
+
+Il-link hija valida għal {expires_minutes} minuti. Il-ftuħ tagħha biss ma jikkunsmahiex; it-tkomplija tiġi kkonfermata fil-paġna li jmiss.
+
+Jekk ma tlabtx din il-link, tista' tinjora dan il-messaġġ.

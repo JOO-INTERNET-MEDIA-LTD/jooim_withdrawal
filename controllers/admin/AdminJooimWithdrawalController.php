@@ -63,10 +63,16 @@ class AdminJooimWithdrawalController extends ModuleAdminController
                 return;
             }
             $old = (string) $row['status_code'];
-            $db->execute('START TRANSACTION');
             try {
-                $db->update('jooim_withdrawal', ['status_code' => pSQL($new), 'updated_at' => gmdate('Y-m-d H:i:s')], 'id_jooim_withdrawal=' . $id);
-                $db->insert('jooim_withdrawal_history', [
+                $this->requireDatabaseSuccess($db->execute('START TRANSACTION'));
+                $locked = $db->executeS('SELECT status_code FROM `' . _DB_PREFIX_ . 'jooim_withdrawal` WHERE id_jooim_withdrawal=' . $id
+                    . ' AND id_shop IN (' . implode(',', $this->allowedShopIds()) . ') FOR UPDATE', true, false);
+                if (!is_array($locked) || !isset($locked[0])) {
+                    throw new RuntimeException('Withdrawal is no longer accessible.');
+                }
+                $old = (string) $locked[0]['status_code'];
+                $this->requireDatabaseSuccess($db->update('jooim_withdrawal', ['status_code' => pSQL($new), 'updated_at' => gmdate('Y-m-d H:i:s')], 'id_jooim_withdrawal=' . $id));
+                $this->requireDatabaseSuccess($db->insert('jooim_withdrawal_history', [
                     'id_jooim_withdrawal' => $id,
                     'id_employee' => (int) $this->context->employee->id,
                     'old_status_code' => pSQL($old),
@@ -75,35 +81,38 @@ class AdminJooimWithdrawalController extends ModuleAdminController
                     'public_message' => $public !== '' ? pSQL($public, true) : null,
                     'private_note' => $private !== '' ? pSQL($private, true) : null,
                     'created_at' => gmdate('Y-m-d H:i:s'),
-                ], true);
-                $db->execute('COMMIT');
-                $updated = $services->withdrawalRepository()->find($id);
-                if ($updated && $new !== $old) {
-                    $services->mail()->sendStatusNotification($updated, $public);
-                }
-                Hook::exec('actionJooimWithdrawalStatusChanged', ['withdrawal_id' => $id, 'old_status' => $old, 'new_status' => $new]);
+                ], true));
+                $this->requireDatabaseSuccess($db->execute('COMMIT'));
+                $this->afterCommit(function () use ($services, $id, $new, $old, $public): void {
+                    $updated = $services->withdrawalRepository()->find($id);
+                    if ($updated && $new !== $old) {
+                        $services->mail()->sendStatusNotification($updated, $public);
+                    }
+                    Hook::exec('actionJooimWithdrawalStatusChanged', ['withdrawal_id' => $id, 'old_status' => $old, 'new_status' => $new]);
+                });
                 $this->confirmations[] = $this->module->jooimTranslate('Status updated.', [], 'Modules.Jooimwithdrawal.Admin');
             } catch (Throwable $e) {
                 $db->execute('ROLLBACK');
-                $this->errors[] = $e->getMessage();
+                $this->errors[] = $this->module->jooimTranslate('Invalid withdrawal or status.', [], 'Modules.Jooimwithdrawal.Admin');
             }
         }
 
         if (Tools::isSubmit('recordRefund')) {
             if (!$this->access('edit')) { $this->errors[] = $this->module->jooimTranslate('You do not have permission to record refunds.', [], 'Modules.Jooimwithdrawal.Admin'); return; }
             $id = (int) Tools::getValue('id_jooim_withdrawal');
-            $amount = (float) str_replace(',', '.', (string) Tools::getValue('refund_amount'));
+            $amountInput = str_replace(',', '.', trim((string) Tools::getValue('refund_amount')));
+            $amount = (float) $amountInput;
             $currency = strtoupper(trim((string) Tools::getValue('refund_currency')));
             $refundedAt = trim((string) Tools::getValue('refunded_at', gmdate('Y-m-d H:i:s')));
-            if (!$this->findAccessibleWithdrawal($id) || $amount < 0 || !preg_match('/^[A-Z]{3}$/', $currency) || !Validate::isDate($refundedAt)) {
+            if (!$this->findAccessibleWithdrawal($id) || !preg_match('/^\d{1,14}(?:\.\d{1,6})?$/D', $amountInput) || $amount <= 0 || !preg_match('/^[A-Z]{3}$/', $currency) || !Validate::isDate($refundedAt)) {
                 $this->errors[] = $this->module->jooimTranslate('Invalid refund data.', [], 'Modules.Jooimwithdrawal.Admin');
                 return;
             }
-            $db->execute('START TRANSACTION');
             try {
-            $db->insert('jooim_withdrawal_refund', [
+                $this->requireDatabaseSuccess($db->execute('START TRANSACTION'));
+            $this->requireDatabaseSuccess($db->insert('jooim_withdrawal_refund', [
                 'id_jooim_withdrawal' => $id,
-                'amount' => $amount,
+                'amount' => $amountInput,
                 'currency_iso' => pSQL($currency),
                 'refund_method' => pSQL((string) Tools::getValue('refund_method')),
                 'transaction_reference' => pSQL((string) Tools::getValue('transaction_reference')),
@@ -111,16 +120,18 @@ class AdminJooimWithdrawalController extends ModuleAdminController
                 'refunded_at' => pSQL($refundedAt),
                 'id_employee' => (int) $this->context->employee->id,
                 'created_at' => gmdate('Y-m-d H:i:s'),
-            ], true);
-            $db->insert('jooim_withdrawal_history', [
+            ], true));
+            $this->requireDatabaseSuccess($db->insert('jooim_withdrawal_history', [
                 'id_jooim_withdrawal' => $id,
                 'id_employee' => (int) $this->context->employee->id,
                 'event_code' => 'refund_recorded',
                 'metadata_json' => pSQL((string) json_encode(['amount' => $amount, 'currency' => $currency], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES), true),
                 'created_at' => gmdate('Y-m-d H:i:s'),
-            ], true);
-            $db->execute('COMMIT');
-            Hook::exec('actionJooimWithdrawalRefundRecorded', ['withdrawal_id' => $id, 'amount' => $amount, 'currency' => $currency]);
+            ], true));
+            $this->requireDatabaseSuccess($db->execute('COMMIT'));
+            $this->afterCommit(function () use ($id, $amount, $currency): void {
+                Hook::exec('actionJooimWithdrawalRefundRecorded', ['withdrawal_id' => $id, 'amount' => $amount, 'currency' => $currency]);
+            });
             $this->confirmations[] = $this->module->jooimTranslate('Refund recorded.', [], 'Modules.Jooimwithdrawal.Admin');
             } catch (Throwable $e) {
                 $db->execute('ROLLBACK');
@@ -166,16 +177,41 @@ class AdminJooimWithdrawalController extends ModuleAdminController
                 $payload['admin_employee_id'] = (int) $this->context->employee->id;
                 $payload['received_method'] = (string) Tools::getValue('manual_received_method');
                 $payload['received_at'] = (string) Tools::getValue('manual_received_at', gmdate('c'));
-                $db->update('jooim_withdrawal_draft', [
+                $this->requireDatabaseSuccess($db->update('jooim_withdrawal_draft', [
                     'source' => 'admin_manual',
                     'draft_payload' => pSQL((string) json_encode($payload, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES), true),
                     'updated_at' => gmdate('Y-m-d H:i:s'),
-                ], 'id_draft=' . (int) $draft['id_draft']);
+                ], 'id_draft=' . (int) $draft['id_draft']));
                 $result = $services->withdrawals()->submit((int) $draft['id_draft'], (string) $draft['key']);
                 $this->confirmations[] = $this->module->jooimTranslate('Manual withdrawal created: %reference%', ['%reference%' => (string) $result['withdrawal']['reference']], 'Modules.Jooimwithdrawal.Admin');
             } catch (Throwable $e) {
-                $this->errors[] = $e->getMessage();
+                $this->errors[] = $this->module->jooimTranslate('Invalid withdrawal or status.', [], 'Modules.Jooimwithdrawal.Admin');
             }
+        }
+    }
+
+    private function afterCommit(callable $callback): void
+    {
+        $level = ob_get_level();
+        ob_start();
+        try {
+            $callback();
+        } catch (Throwable $exception) {
+            try {
+                PrestaShopLogger::addLog('JOOIM Withdrawal admin post-commit notification failed.', 3);
+            } catch (Throwable $ignored) {
+            }
+        } finally {
+            while (ob_get_level() > $level) {
+                ob_end_clean();
+            }
+        }
+    }
+
+    private function requireDatabaseSuccess(bool $ok): void
+    {
+        if (!$ok) {
+            throw new RuntimeException('The withdrawal database operation failed.');
         }
     }
 

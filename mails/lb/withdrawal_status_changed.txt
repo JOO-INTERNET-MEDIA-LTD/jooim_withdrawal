@@ -1,0 +1,9 @@
+De Récktrëttsstatus gouf aktualiséiert.
+Récktrëttsreferenz: {withdrawal_reference}
+Bestellung / Kontrakt: {order_reference}
+Status: {status}
+
+Noriicht vum Händler:
+{public_message}
+
+Kontakt vum Händler: {merchant_email}

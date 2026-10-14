@@ -1,0 +1,28 @@
+Conferma del recesso dal contratto
+
+Confermiamo la ricezione della tua comunicazione di recesso dal contratto.
+Riferimento del recesso: {withdrawal_reference}
+Ordine / contratto: {order_reference}
+Consumatore: {firstname} {lastname}
+Contatto elettronico: {customer_email}
+Data e ora di ricezione: {submitted_at}
+Ora di ricezione UTC: {submitted_at_utc}
+Ambito: {scope}
+
+Contenuto della richiesta / articoli:
+{items_text}
+
+Dichiarazione:
+{statement}
+
+Venditore:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Indirizzo di reso / istruzioni:
+{return_address}
+
+Conserva questa conferma. Attesta il contenuto, la data e l’ora della tua comunicazione online.
+Hash SHA-256 dell’istantanea immutabile: {payload_hash}

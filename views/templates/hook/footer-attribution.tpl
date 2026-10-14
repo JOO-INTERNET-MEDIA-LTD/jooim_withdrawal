@@ -1,5 +1,5 @@
 {* Shared Joobox attribution. Keep exactly one Joobox marketing attribution even when several JOOIM modules are installed. *}
-<div class="jooim-joobox-attribution jooim-withdrawal-attribution" data-jooim-attribution="jooim_withdrawal" style="font-size:12px;line-height:1.4;text-align:center;margin:10px 0;opacity:.75;display:none;">
+<div class="jooim-joobox-attribution jooim-withdrawal-attribution" data-jooim-attribution="jooim_withdrawal" style="font-size:12px;line-height:1.4;text-align:center;margin:10px 0;opacity:.75;">
   <span>{l s='PrestaShop module by' d='Modules.Jooimwithdrawal.Shop'}</span>
   <a href="{$joobox_home_url|escape:'html':'UTF-8'}" target="_blank" rel="noopener" style="text-decoration:none;">joobox.eu</a>
 </div>

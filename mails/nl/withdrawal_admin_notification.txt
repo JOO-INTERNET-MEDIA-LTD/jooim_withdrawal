@@ -1,0 +1,5 @@
+Er is een nieuwe herroeping van de overeenkomst geregistreerd.
+Herroepingsreferentie: {withdrawal_reference}
+Bestelling / overeenkomst: {order_reference}
+Elektronisch contact: {customer_email}
+Status: {status}

@@ -1,0 +1,12 @@
+Instrucciones de devolución
+Referencia del desistimiento: {withdrawal_reference}
+Pedido / contrato: {order_reference}
+Estado: {status}
+
+Mensaje del comerciante:
+{public_message}
+
+Dirección de devolución / instrucciones:
+{return_address}
+
+Contacto del comerciante: {merchant_email}

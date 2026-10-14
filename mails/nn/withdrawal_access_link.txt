@@ -1,0 +1,8 @@
+Hei {firstname},
+
+Bruk denne lenkja for å halde fram til den trygge nettbaserte angrerettsprosessen:
+Hald fram til angrerett: {access_url}
+
+Lenkja er gyldig i {expires_minutes} minutt. Berre det å opne den brukar den ikkje opp; du stadfestar framhaldet på neste side.
+
+Dersom du ikkje ba om denne lenkja, kan du ignorere denne meldinga.

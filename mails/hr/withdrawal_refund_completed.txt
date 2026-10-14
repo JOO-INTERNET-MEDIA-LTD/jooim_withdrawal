@@ -1,0 +1,9 @@
+Povrat novca zabilježen je kao dovršen.
+Referenca raskida: {withdrawal_reference}
+Narudžba / ugovor: {order_reference}
+Status: {status}
+
+Poruka trgovca:
+{public_message}
+
+Kontakt trgovca: {merchant_email}

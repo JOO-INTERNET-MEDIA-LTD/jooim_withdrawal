@@ -42,7 +42,7 @@ class Jooim_WithdrawalReviewModuleFrontController extends FrontControllerBase
             } catch (\Throwable $e) {
             // JOOIM_WITHDRAWAL_CATCH_DIAGNOSTICS
             JooimWithdrawalRuntimeDiagnostics::report($e, __METHOD__);
-                $error = $e->getMessage();
+                $error = $this->module->jooimTranslate('Unable to prepare withdrawal', [], 'Modules.Jooimwithdrawal.Shop');
             }
         }
         if (!$draft) {

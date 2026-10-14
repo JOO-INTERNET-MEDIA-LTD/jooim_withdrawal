@@ -178,7 +178,7 @@ final class TranslationCatalogInstaller
             'hu' => 'hu-HU', 'it' => 'it-IT', 'lt' => 'lt-LT', 'lv' => 'lv-LV',
             'mt' => 'mt-MT', 'nl' => 'nl-NL', 'pl' => 'pl-PL', 'pt' => 'pt-PT',
             'ro' => 'ro-RO', 'sk' => 'sk-SK', 'sl' => 'sl-SI', 'sv' => 'sv-SE',
-            'uk' => 'uk-UA',
+            'uk' => 'uk-UA', 'lb' => 'lb-LU', 'nb' => 'nb-NO', 'nn' => 'nn-NO', 'no' => 'no-NO',
         ];
         if (isset($preferredByIso[$iso])) {
             $candidates[] = $preferredByIso[$iso];

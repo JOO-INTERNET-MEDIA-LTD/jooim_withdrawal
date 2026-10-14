@@ -1,0 +1,8 @@
+Kedves {firstname}!
+
+Ezzel a hivatkozással folytathatja a biztonságos online szerződéstől való elállást:
+Tovább az elálláshoz: {access_url}
+
+A hivatkozás {expires_minutes} percig érvényes. A puszta megnyitás nem használja fel; a folytatást a következő oldalon kell megerősíteni.
+
+Ha nem Ön kérte ezt a hivatkozást, figyelmen kívül hagyhatja ezt az üzenetet.

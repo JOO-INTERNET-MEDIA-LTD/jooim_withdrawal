@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en-US" target-language="fr-FR" datatype="plaintext" original="file.ext">
+  <file datatype="plaintext" original="file.ext" source-language="en-US" target-language="fr-FR">
     <body>
       <trans-unit id="1cf7da6688bdfeb26da8d420440921e2" resname="Access to online contract withdrawal">
         <source>Access to online contract withdrawal</source>

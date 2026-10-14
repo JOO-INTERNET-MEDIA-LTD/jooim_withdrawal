@@ -1,0 +1,5 @@
+Uus lepingust taganemine on registreeritud.
+Taganemise viide: {withdrawal_reference}
+Tellimus / leping: {order_reference}
+Elektrooniline kontakt: {customer_email}
+Olek: {status}

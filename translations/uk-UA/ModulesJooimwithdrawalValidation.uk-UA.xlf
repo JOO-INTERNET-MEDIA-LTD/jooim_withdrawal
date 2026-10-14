@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="file.ext" source-language="en-US" target-language="uk-UA">
+    <body>
+      <trans-unit id="28487bbd545a693164e4472f2e40a03e" resname="The confirmation session expired. Please start again.">
+        <source>The confirmation session expired. Please start again.</source>
+        <target>Термін дії сесії підтвердження минув. Почніть знову.</target>
+      </trans-unit>
+      <trans-unit id="7fa2a070e29ea963e2994b3e78f6345a" resname="The form expired. Please start again.">
+        <source>The form expired. Please start again.</source>
+        <target>Термін дії форми минув. Почніть знову.</target>
+      </trans-unit>
+      <trans-unit id="3a8a7102998325cbd0735a0730060b55" resname="The form expired. Please try again.">
+        <source>The form expired. Please try again.</source>
+        <target>Термін дії форми минув. Спробуйте знову.</target>
+      </trans-unit>
+      <trans-unit id="25ac74e795a5d505b431d3d2e68a6ac7" resname="The verification page expired. Open the link from the email again.">
+        <source>The verification page expired. Open the link from the email again.</source>
+        <target>Термін дії сторінки перевірки минув. Відкрийте посилання з листа знову.</target>
+      </trans-unit>
+      <trans-unit id="76088c5162ed7e04045d51e08d9a0bc3" resname="This access link is invalid, expired or already used.">
+        <source>This access link is invalid, expired or already used.</source>
+        <target>Це посилання доступу недійсне, прострочене або вже використане.</target>
+      </trans-unit>
+      <trans-unit id="f6cc6be2d97fe34bc2d6344a64226965" resname="This confirmation link is invalid or expired.">
+        <source>This confirmation link is invalid or expired.</source>
+        <target>Це посилання підтвердження недійсне або прострочене.</target>
+      </trans-unit>
+      <trans-unit id="66b12941aafba2d0d6104964a86ed979" resname="This status link is invalid or expired.">
+        <source>This status link is invalid or expired.</source>
+        <target>Це посилання статусу недійсне або прострочене.</target>
+      </trans-unit>
+      <trans-unit id="e6e10a5ac9a894ab82f50a3b6e3d4ceb" resname="Your secure order session expired. Please request a new access link.">
+        <source>Your secure order session expired. Please request a new access link.</source>
+        <target>Термін дії безпечної сесії замовлення минув. Запросіть нове посилання доступу.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

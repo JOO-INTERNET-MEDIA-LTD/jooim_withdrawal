@@ -1,0 +1,28 @@
+Acuse de recibo del desistimiento del contrato
+
+Acusamos recibo de su declaración de desistimiento del contrato.
+Referencia del desistimiento: {withdrawal_reference}
+Pedido / contrato: {order_reference}
+Consumidor: {firstname} {lastname}
+Contacto electrónico: {customer_email}
+Fecha y hora de recepción: {submitted_at}
+Hora de recepción UTC: {submitted_at_utc}
+Alcance: {scope}
+
+Contenido del envío / artículos:
+{items_text}
+
+Declaración:
+{statement}
+
+Comerciante:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Dirección de devolución / instrucciones:
+{return_address}
+
+Conserve este acuse de recibo. Confirma el contenido, la fecha y la hora de su comunicación en línea.
+Hash SHA-256 de la instantánea inmutable: {payload_hash}

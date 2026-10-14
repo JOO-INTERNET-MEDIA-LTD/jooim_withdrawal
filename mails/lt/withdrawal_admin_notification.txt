@@ -1,0 +1,5 @@
+Užregistruotas naujas sutarties atsisakymas.
+Atsisakymo nuoroda: {withdrawal_reference}
+Užsakymas / sutartis: {order_reference}
+Elektroniniai kontaktai: {customer_email}
+Būsena: {status}

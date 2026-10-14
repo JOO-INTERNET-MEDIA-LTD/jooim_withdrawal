@@ -1,0 +1,120 @@
+001	Une nouvelle version du module est disponible.
+002	Nombre de tentatives d’envoi de l’accusé de réception
+003	Ajoute une entrée de rétractation dans l’espace Mon compte du client. Le client peut toujours utiliser le parcours public lorsque la commande n’est pas visible dans son compte.
+004	Ajoute un bouton « Se rétracter du contrat » dans le détail d’une commande appartenant au client connecté. La propriété de la commande est vérifiée côté serveur.
+005	Permet au consommateur d’envoyer une déclaration de rétractation non équivoque sans se connecter ni afficher les données de la commande. Maintenez cette fonction disponible pour les contrats B2C en ligne concernés.
+006	Joindre l’accusé de réception PDF
+007	Joint à l’e-mail d’accusé de réception le PDF immuable confirmant la rétractation. La désactivation de la pièce jointe ne supprime pas le PDF protégé stocké avec le dossier.
+008	Dossiers :
+009	Identifiant de l’entreprise
+010	Version actuelle du module
+011	Lien dans le compte client
+012	Adresse de contact destinée au client pour les communications relatives à la rétractation. Utilisez une boîte activement surveillée ; ne saisissez pas ici l’adresse e-mail du client.
+013	Fonction directe prévue à l’article 11a
+014	Rétractation directe
+015	Fonction directe de rétractation :
+016	Désactivé
+017	Désactivé (examen juridique requis)
+018	Affiche dans le pied de page de la boutique le lien destiné au client « Se rétracter du contrat ». Ce lien de fonction juridique est indépendant de la mention marketing Joobox.
+019	Note de conformité au droit de l’UE (2026) :
+020	Chaque langue active de la boutique dispose de son propre chemin convivial localisé. Les URL d’entrée indépendantes de la langue restent disponibles pour les modules externes de listes de liens. Après le déploiement, testez les deux parcours dans chaque langue active.
+021	E-mail
+022	E-mails par commande / jour
+023	E-mails par commande / heure
+024	Activé
+025	Active le formulaire direct de rétractation en ligne qui ne nécessite ni compte client ni accès à l’e-mail de commande d’origine. Ne le désactivez qu’après une analyse juridique propre au marché concerné.
+026	Met fin à une session invité vérifiée après cette période d’inactivité. Plage attendue : 5–240 minutes ; valeur par défaut recommandée : 30.
+027	Repli en anglais
+028	Saisissez l’URL HTTPS absolue de la politique de confidentialité qui explique le traitement des données personnelles pour la réception et la gestion des rétractations.
+029	Saisissez l’adresse exacte et les instructions pratiques de retour des marchandises. Ces instructions ne doivent pas imposer de conditions limitant illégalement le droit de rétractation du consommateur.
+030	Saisissez l’identifiant exigé dans la juridiction du vendeur, par exemple le numéro d’entreprise, le numéro de TVA ou le numéro du registre du commerce.
+031	Saisissez la dénomination légale ou commerciale complète du vendeur, et non celle du fournisseur du module. Elle apparaît dans le formulaire, l’e-mail d’accusé de réception et le PDF.
+032	Saisissez le siège social ou l’adresse professionnelle du vendeur exactement comme il doit apparaître dans le document destiné au consommateur.
+033	Lien de pied de page (à laisser activé pour les contrats B2C en ligne concernés)
+034	Pour l’installation dans PrestaShop, n’utilisez pas l’archive automatique « Source code ZIP » de GitHub. Utilisez uniquement le fichier ZIP d’installation fourni dans les ressources de la version.
+035	Pour les contrats B2C à distance concernés conclus au moyen d’une interface en ligne, la désactivation ou le masquage de la fonction directe de rétractation peut être contraire à l’article 11a de la directive 2011/83/UE telle que modifiée par la directive (UE) 2023/2673. La transposition nationale doit toujours être vérifiée pour chaque marché.
+036	Disponibilité générale et juridique
+037	Obtenir le support Joobox
+038	Les vérifications GitHub sont effectuées au maximum une fois toutes les six heures, sauf actualisation manuelle. Le module ne télécharge ni n’installe jamais de code automatiquement.
+039	URL cron hébergée (secrète) :
+040	Définit la durée pendant laquelle le lien d’accès unique envoyé par e-mail reste utilisable. Plage attendue : 5–240 minutes ; valeur par défaut recommandée : 30.
+041	Incluse
+042	JOOIM Withdrawal – Rétractation du contrat en ligne
+043	Support Joobox pour ce module
+044	Langue
+045	URL indépendantes de la langue pour les listes de liens externes :
+046	Dernière vérification
+047	Dernière version sur GitHub
+048	Liens pour les langues actives de la boutique
+049	Paramètres régionaux
+050	Validité du lien unique (minutes)
+051	Maintenance CLI :
+052	Interrupteur principal des parcours publics de rétractation et des liens de rétractation destinés au client. Sa désactivation ne supprime ni ne modifie les rétractations déjà reçues.
+053	Nombre maximal de demandes de lien d’accès associées à la même référence de commande normalisée sur 24 heures.
+054	Nombre maximal de demandes de lien d’accès associées à la même référence de commande normalisée pendant une heure. Cela protège la boîte du client contre les messages répétés.
+055	Longueur maximale de la note du client
+056	Nombre maximal de caractères en texte brut acceptés dans la note facultative du client. Le HTML n’est pas accepté. Valeur par défaut recommandée : 2000.
+057	Nombre maximal de demandes fondées sur une référence de commande depuis une adresse IP pseudonymisée pendant 15 minutes. Les recherches réussies et échouées partagent la même limite.
+058	Nombre maximal de demandes fondées sur une référence de commande depuis une adresse IP pseudonymisée sur 24 heures. L’adresse IP brute n’est pas stockée dans le dossier juridique de rétractation.
+059	Durée de vie totale maximale d’une session invité vérifiée, même si le client reste actif. Plage attendue : 15–1440 minutes ; valeur par défaut recommandée : 120.
+060	Délai minimal avant qu’un nouvel e-mail d’accès puisse être demandé pour la même référence de commande. Valeur par défaut recommandée : 60 secondes.
+061	Les données du module ont été supprimées définitivement.
+062	Module activé
+063	Le module est à jour.
+064	Non
+065	Aucune langue active de la boutique n’a été trouvée.
+066	Aucune donnée n’est supprimée sauf si la valeur est exactement DELETE.
+067	La désinstallation normale du module conserve les dossiers de rétractation. Cette action destructive supprime toutes les tables du module.
+068	Nombre de tentatives automatiques supplémentaires après l’échec d’un e-mail d’accusé de réception. La rétractation reste valable même si toutes les tentatives d’e-mail échouent.
+069	Ouvrir les versions GitHub
+070	Ouvrir les rétractations
+071	Ouvre la liste Back Office des rétractations reçues, avec leurs états, documents, enregistrements de remboursement et historique d’audit.
+072	Numéro de téléphone facultatif du service client affiché dans l’accusé de réception et le PDF. Il n’est pas utilisé pour authentifier une rétractation.
+073	Bouton dans le détail de la commande
+074	Parcours par référence de commande
+075	PHP 8.1 ou version ultérieure est requis.
+076	Suppression définitive des données
+077	Supprimer définitivement toutes les données du module
+078	Téléphone
+079	Méthode recommandée pour la maintenance planifiée. Elle supprime les enregistrements temporaires expirés, retente les accusés de réception en attente et traite les tâches de conservation.
+080	URL de la politique de confidentialité
+081	Accès public :
+082	Confirmation de la suppression définitive
+083	Prêt. Les valeurs de sécurité requises et les hooks du module sont disponibles.
+084	Préfixe de référence
+085	Actualiser l’état de la mise à jour
+086	Adresse du siège
+087	Requêtes par IP / 15 minutes
+088	Requêtes par IP / jour
+089	Délai avant nouvel envoi (secondes)
+090	Adresse de retour / instructions
+091	Configuration d’exécution :
+092	Enregistrer les paramètres
+093	Exercice en ligne sécurisé et gestion du droit de rétractation du consommateur.
+094	Limites de sécurité, de session et de prévention des abus
+095	Limite absolue de session (minutes)
+096	Limite d’inactivité de session (minutes)
+097	Paramètres enregistrés.
+098	Code court utilisé au début des références de rétractation. Utilisez uniquement des lettres, des chiffres et des traits d’union, par exemple WD. Les références de rétractation existantes ne sont jamais modifiées.
+099	Certaines exigences d’exécution n’ont pas pu être synchronisées. Consultez les journaux PrestaShop avant toute utilisation publique.
+100	Lance le parcours sécurisé à partir de la référence de commande. Le client saisit uniquement la référence publique ; les données de commande et les données personnelles restent masquées jusqu’à la confirmation du lien unique envoyé par e-mail.
+101	Les versions PrestaShop prises en charge sont 8.x et 9.x.
+102	Les valeurs par défaut sont volontairement prudentes. N’augmentez les limites qu’après examen du trafic réel et des journaux d’abus ; des valeurs trop faibles peuvent bloquer des consommateurs légitimes.
+103	Ces valeurs identifient le vendeur réel qui exploite la boutique sélectionnée. En multiboutique, elles sont stockées séparément pour chaque boutique et figurent dans les accusés de réception du client et les preuves PDF.
+104	Ce module GitHub gratuit est fourni sans support technique individuel. L’installation, la configuration, les tests en production, les mises à jour et le dépannage sont disponibles pour les clients utilisant Joobox PrestaShop Cloud ou un autre service payant explicitement convenu avec JOO INTERNET MEDIA LTD.
+105	Coordonnées du vendeur – boutique actuelle
+106	Nom du vendeur
+107	Traduction
+108	Saisissez DELETE
+109	Saisissez DELETE pour confirmer la suppression définitive des données.
+110	Saisissez exactement le mot DELETE pour supprimer toutes les rétractations, tous les documents, l’historique d’audit, les enregistrements d’accès et de remboursement. Cette action est irréversible et n’est pas nécessaire pour une mise à jour ou une réinstallation ordinaire du module.
+111	Impossible de vérifier la dernière version sur GitHub. Consultez les versions publiées manuellement.
+112	Inconnue
+113	Vérification des mises à jour
+114	La vérification de mise à jour a échoué : %error%
+115	État de la mise à jour
+116	Utilisez ces URL dans les modules qui ne proposent qu’un seul champ URL pour toutes les langues. Le contrôleur d’entrée sélectionne la langue actuelle ou préférée de la boutique et redirige vers le chemin convivial localisé.
+117	Utilisez cette URL uniquement lorsque l’hébergement ne peut pas exécuter la commande CLI. Traitez le jeton comme un mot de passe : ne le publiez pas, ne l’envoyez pas par e-mail et ne l’insérez pas dans un outil de surveillance public.
+118	À utiliser uniquement dans une installation de test jetable.
+119	Oui
+120	Paramètres du back-office uniquement

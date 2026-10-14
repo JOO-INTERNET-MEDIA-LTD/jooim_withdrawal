@@ -1,0 +1,11 @@
+{
+  "en-US": "en", "en-GB": "en", "en-CA": "en",
+  "fr-FR": "fr", "fr-CA": "fr", "fr-BE": "fr",
+  "de-DE": "de", "de-BE": "de", "nl-NL": "nl", "nl-BE": "nl",
+  "sk-SK": "sk", "cs-CZ": "cs", "pl-PL": "pl",
+  "es-ES": "es", "it-IT": "it", "pt-PT": "pt", "lb-LU": "lb",
+  "da-DK": "da", "sv-SE": "sv", "nb-NO": "nb", "nn-NO": "nn", "no-NO": "no",
+  "fi-FI": "fi", "uk-UA": "uk", "bg-BG": "bg", "hr-HR": "hr",
+  "et-EE": "et", "el-GR": "el", "hu-HU": "hu", "ga-IE": "ga",
+  "lv-LV": "lv", "lt-LT": "lt", "mt-MT": "mt", "ro-RO": "ro", "sl-SI": "sl"
+}

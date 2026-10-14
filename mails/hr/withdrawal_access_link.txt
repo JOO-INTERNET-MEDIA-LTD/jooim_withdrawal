@@ -1,0 +1,8 @@
+Pozdrav {firstname},
+
+Upotrijebite ovu poveznicu za nastavak sigurnog internetskog raskida ugovora:
+Nastavi na raskid: {access_url}
+
+Poveznica vrijedi {expires_minutes} minuta. Samo otvaranje ne iskorištava je; nastavak se potvrđuje na sljedećoj stranici.
+
+Ako niste zatražili ovu poveznicu, možete zanemariti ovu poruku.

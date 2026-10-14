@@ -1,0 +1,9 @@
+Återbetalningen har registrerats som slutförd.
+Frånträdesreferens: {withdrawal_reference}
+Order / avtal: {order_reference}
+Status: {status}
+
+Meddelande från näringsidkaren:
+{public_message}
+
+Kontakt till näringsidkare: {merchant_email}

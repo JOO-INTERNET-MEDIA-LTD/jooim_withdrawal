@@ -1,0 +1,9 @@
+De handelaar heeft een afwijzing van het dossier geregistreerd; de reden staat hieronder.
+Herroepingsreferentie: {withdrawal_reference}
+Bestelling / overeenkomst: {order_reference}
+Status: {status}
+
+Bericht van de handelaar:
+{public_message}
+
+Contact van de handelaar: {merchant_email}

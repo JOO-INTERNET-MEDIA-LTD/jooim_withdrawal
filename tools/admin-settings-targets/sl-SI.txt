@@ -98,7 +98,7 @@
 098	Kratka koda na začetku referenc odstopa. Uporabljajte samo črke, številke in vezaje, na primer WD. Obstoječe reference odstopa se nikoli ne spremenijo.
 099	Nekaterih zahtev med izvajanjem ni bilo mogoče uskladiti. Pred javno uporabo preglejte dnevnike PrestaShop.
 100	Začne varen postopek po referenci naročila. Kupec vnese samo javno referenco naročila; podatki naročila in osebni podatki ostanejo skriti, dokler ni potrjena enkratna povezava v e-poštnem sporočilu.
-101	Podprte različice PrestaShop so od 8.1 do 9.1.
+101	Podprti sta različici PrestaShop 8.x in 9.x.
 102	Privzete vrednosti so namenoma previdne. Omejitve povečajte šele po pregledu dejanskega prometa in dnevnikov zlorab; prenizke omejitve lahko blokirajo upravičene potrošnike.
 103	Te vrednosti identificirajo dejanskega prodajalca, ki upravlja izbrano trgovino. V okolju multistore se shranijo za vsako trgovino posebej in se natisnejo v potrditvah kupcu ter dokazilu PDF.
 104	Ta brezplačni modul GitHub je na voljo brez individualne tehnične podpore. Namestitev, konfiguracija, produkcijsko preskušanje, posodobitve in odpravljanje težav so na voljo strankam, ki uporabljajo Joobox PrestaShop Cloud ali drugo plačljivo storitev, izrecno dogovorjeno z JOO INTERNET MEDIA LTD.

@@ -98,7 +98,7 @@
 098	Kort kode i begyndelsen af fortrydelsesreferencer. Brug kun bogstaver, tal og bindestreger, f.eks. WD. Eksisterende fortrydelsesreferencer ændres aldrig.
 099	Nogle kørselskrav kunne ikke synkroniseres. Gennemgå PrestaShop-loggene før offentlig brug.
 100	Starter det sikre forløb efter ordrereference. Kunden indtaster kun den offentlige ordrereference; ordre- og personoplysninger forbliver skjult, indtil engangslinket i e-mailen er bekræftet.
-101	Understøttede PrestaShop-versioner er 8.1 til 9.1.
+101	Understøttede PrestaShop-versioner er 8.x og 9.x.
 102	Standardværdierne er bevidst forsigtige. Forøg kun grænserne efter gennemgang af reel trafik og misbrugslogge; for lave værdier kan blokere legitime forbrugere.
 103	Disse værdier identificerer den faktiske sælger, som driver den valgte butik. De gemmes pr. butik i multistore og udskrives i kundekvitteringer og PDF-dokumentation.
 104	Dette gratis GitHub-modul leveres uden individuel teknisk support. Installation, konfiguration, produktionstest, opdateringer og fejlfinding tilbydes kunder, der bruger Joobox PrestaShop Cloud eller en anden betalt tjeneste, som udtrykkeligt er aftalt med JOO INTERNET MEDIA LTD.

@@ -98,7 +98,7 @@
 098	Kratki kôd na početku referenci odustanka. Koristite samo slova, znamenke i crtice, primjerice WD. Postojeće reference odustanka nikada se ne mijenjaju.
 099	Neke zahtjeve tijekom izvođenja nije bilo moguće sinkronizirati. Prije javne uporabe pregledajte zapisnike PrestaShopa.
 100	Pokreće sigurni postupak prema referenci narudžbe. Kupac unosi samo javnu referencu; podaci narudžbe i osobni podaci ostaju skriveni dok se ne potvrdi jednokratna poveznica iz e-poruke.
-101	Podržane verzije PrestaShopa su od 8.1 do 9.1.
+101	Podržane su verzije PrestaShopa 8.x i 9.x.
 102	Zadane vrijednosti namjerno su konzervativne. Povećajte ograničenja tek nakon pregleda stvarnog prometa i zapisnika zlouporabe; preniska ograničenja mogu blokirati legitimne potrošače.
 103	Ove vrijednosti identificiraju stvarnog prodavatelja koji upravlja odabranom trgovinom. Pohranjuju se zasebno za svaku trgovinu u multistore okruženju i ispisuju se u potvrdama kupcu i PDF dokazima.
 104	Ovaj besplatni GitHub modul pruža se bez pojedinačne tehničke podrške. Instalacija, konfiguracija, produkcijsko testiranje, ažuriranja i rješavanje problema dostupni su korisnicima Joobox PrestaShop Clouda ili druge plaćene usluge izričito ugovorene s JOO INTERNET MEDIA LTD.
