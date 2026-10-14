@@ -20,3 +20,6 @@ __pycache__/
 
 # Project documentation remains local only
 /docs/
+
+# Prepared release archives remain local only
+/dist/
