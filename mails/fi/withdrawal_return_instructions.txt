@@ -1,0 +1,12 @@
+Palautusohjeet
+Peruuttamisviite: {withdrawal_reference}
+Tilaus / sopimus: {order_reference}
+Tila: {status}
+
+Elinkeinonharjoittajan viesti:
+{public_message}
+
+Palautusosoite / ohjeet:
+{return_address}
+
+Elinkeinonharjoittajan yhteystieto: {merchant_email}

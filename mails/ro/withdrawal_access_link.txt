@@ -1,0 +1,8 @@
+Bună ziua, {firstname}!
+
+Folosiți acest link pentru a continua procesul securizat de retragere online din contract:
+Continuă la retragere: {access_url}
+
+Linkul este valid timp de {expires_minutes} minute. Simpla deschidere nu îl consumă; continuarea este confirmată pe pagina următoare.
+
+Dacă nu ați solicitat acest link, puteți ignora acest mesaj.

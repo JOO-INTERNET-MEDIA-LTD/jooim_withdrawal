@@ -98,7 +98,7 @@
 098	Cod scurt utilizat la începutul referințelor retragerii. Folosiți numai litere, cifre și cratime, de exemplu WD. Referințele existente ale retragerilor nu sunt modificate niciodată.
 099	Unele cerințe de rulare nu au putut fi sincronizate. Verificați jurnalele PrestaShop înainte de utilizarea publică.
 100	Pornește fluxul securizat pe baza referinței comenzii. Clientul introduce numai referința publică a comenzii; datele comenzii și datele personale rămân ascunse până la confirmarea linkului unic din e-mail.
-101	Versiunile PrestaShop acceptate sunt de la 8.1 la 9.1.
+101	Sunt acceptate versiunile PrestaShop 8.x și 9.x.
 102	Valorile implicite sunt intenționat prudente. Măriți limitele numai după analizarea traficului real și a jurnalelor de abuz; limitele prea mici pot bloca consumatorii legitimi.
 103	Aceste valori identifică vânzătorul real care operează magazinul selectat. Sunt stocate pentru fiecare magazin în multistore și sunt tipărite în confirmările clientului și în dovada PDF.
 104	Acest modul GitHub gratuit este furnizat fără asistență tehnică individuală. Instalarea, configurarea, testarea în producție, actualizările și depanarea sunt disponibile pentru clienții care folosesc Joobox PrestaShop Cloud sau un alt serviciu cu plată convenit în mod explicit cu JOO INTERNET MEDIA LTD.

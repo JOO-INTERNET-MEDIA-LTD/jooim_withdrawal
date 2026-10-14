@@ -145,7 +145,7 @@ $assert(
     'no editable setting is silently submitted as a hidden field'
 );
 $assert(substr_count($configTemplate, 'class="help-block"') >= 30, 'Back Office inputs and operations include help text');
-$assert(strpos($main, "public const VERSION = '1.0.0'") !== false, 'module version remains 1.0.0');
+$assert(strpos($main, "public const VERSION = '1.1.0'") !== false, 'module version is 1.1.0');
 $assert($frontJsRevision === $frontJs, 'revisioned footer JavaScript matches canonical source');
 $assert($frontCssRevision === $frontCss, 'revisioned footer CSS matches canonical source');
 $assert(strpos($main, "FRONT_ASSET_BASENAME = 'front-footer-v4'") !== false, 'revisioned footer assets are registered');

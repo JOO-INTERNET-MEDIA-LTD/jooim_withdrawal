@@ -1,0 +1,12 @@
+Οδηγίες επιστροφής
+Αναφορά υπαναχώρησης: {withdrawal_reference}
+Παραγγελία / σύμβαση: {order_reference}
+Κατάσταση: {status}
+
+Μήνυμα εμπόρου:
+{public_message}
+
+Διεύθυνση / οδηγίες επιστροφής:
+{return_address}
+
+Επικοινωνία εμπόρου: {merchant_email}

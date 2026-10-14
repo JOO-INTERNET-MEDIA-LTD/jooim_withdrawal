@@ -1,0 +1,9 @@
+Selgeren har registrert et avslag på saken; begrunnelsen er oppgitt nedenfor.
+Angrerettreferanse: {withdrawal_reference}
+Bestilling / avtale: {order_reference}
+Status: {status}
+
+Melding fra selgeren:
+{public_message}
+
+Selgerens kontakt: {merchant_email}

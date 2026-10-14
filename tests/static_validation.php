@@ -145,7 +145,7 @@ foreach (glob($root . '/src/**/*.bak*', GLOB_BRACE) ?: [] as $path) {
 check($temporaryArtifacts === [], 'no backup or patch-residue files in release tree');
 
 $main = readFileStrict($root . '/jooim_withdrawal.php');
-check(strpos($main, "public const VERSION = '1.0.0';") !== false, 'module version remains exactly 1.0.0');
+check(strpos($main, "public const VERSION = '1.1.0';") !== false, 'module version is exactly 1.1.0');
 check(strpos($main, "\$this->name = 'jooim_withdrawal';") !== false, 'technical module name');
 check(strpos($main, 'Modules.Jooimwithdrawal.Admin') !== false, 'explicit Admin translation domain');
 check(strpos($main, 'Modules.Jooimwithdrawal.Shop') !== false, 'explicit Shop translation domain');
@@ -212,7 +212,14 @@ check(is_file($root . '/tools/build_status_translation_catalogs.py'), 'determini
 check(is_file($root . '/tests/status_localization_smoke.php'), 'status localization regression test');
 
 $invalidExternalTranslationCalls = [];
-foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS)) as $phpFile) {
+foreach (new RecursiveIteratorIterator(new RecursiveCallbackFilterIterator(
+    new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS),
+    static function ($file) use ($root): bool {
+        $path = relativePath($root, $file->getPathname());
+        return !in_array($path, ['.git', 'var/temporary', 'var/documents', 'var/queue'], true)
+            && !preg_match('/(?:^|\/)(?:\.env[^\/]*|[^\/]*\.(?:pem|key))$/', $path);
+    }
+)) as $phpFile) {
     if (!$phpFile->isFile() || strtolower($phpFile->getExtension()) !== 'php') {
         continue;
     }
@@ -231,7 +238,7 @@ check(
 );
 
 $configXml = readFileStrict($root . '/config.xml');
-check(strpos($configXml, '<version><![CDATA[1.0.0]]></version>') !== false, 'config.xml version 1.0.0');
+check(strpos($configXml, '<version><![CDATA[1.1.0]]></version>') !== false, 'config.xml version 1.1.0');
 check(strpos($configXml, '<name>jooim_withdrawal</name>') !== false, 'config.xml technical name');
 
 $composerRaw = readFileStrict($root . '/composer.json');
@@ -420,7 +427,14 @@ foreach ([
 check(strpos($sql, 'UNIQUE KEY `uniq_withdrawal_source_draft`') !== false, 'database idempotency unique key');
 
 $phpFiles = [];
-$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS));
+$iterator = new RecursiveIteratorIterator(new RecursiveCallbackFilterIterator(
+    new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS),
+    static function ($file) use ($root): bool {
+        $path = relativePath($root, $file->getPathname());
+        return !in_array($path, ['.git', 'var/temporary', 'var/documents', 'var/queue'], true)
+            && !preg_match('/(?:^|\/)(?:\.env[^\/]*|[^\/]*\.(?:pem|key))$/', $path);
+    }
+));
 foreach ($iterator as $file) {
     if ($file->isFile() && strtolower($file->getExtension()) === 'php') {
         $phpFiles[] = $file->getPathname();
@@ -435,6 +449,14 @@ foreach ($phpFiles as $file) {
     check($code === 0, 'PHP lint: ' . relativePath($root, $file));
 }
 
+// Keep additional runtime regressions in the existing CI/release validation entry point.
+foreach (['configuration_validation_smoke.php', 'recovery_smoke.php', 'admin_transaction_smoke.php'] as $regression) {
+    $output = [];
+    $code = 0;
+    exec(escapeshellarg(PHP_BINARY) . ' ' . escapeshellarg($root . '/tests/' . $regression) . ' 2>&1', $output, $code);
+    check($code === 0, 'runtime regression: ' . $regression . ($code ? ' / ' . implode(' ', $output) : ''));
+}
+
 $mailCount = count(glob($root . '/mails/{sk,cs,en,de,fr,pl}/*.{html,txt}', GLOB_BRACE));
 check($mailCount === 96, '96 localized mail template files');
 
@@ -442,7 +464,8 @@ $locales = ['en-US', 'sk-SK', 'cs-CZ', 'de-DE', 'fr-FR', 'pl-PL'];
 $domains = ['Admin', 'Shop', 'Email', 'Pdf', 'Validation'];
 $xlfFiles = glob($root . '/translations/*/*.xlf');
 sort($xlfFiles);
-check(count($xlfFiles) === 74, '74 packaged XLIFF catalogues (complete core locales plus settings locales)');
+$localeManifest = json_decode(readFileStrict($root . '/tools/locales.json'), true);
+check(count($xlfFiles) === count($localeManifest) * 5, 'five complete catalogues for every supported locale');
 
 $criticalTranslations = [
     'Joobox support for this module',
@@ -590,7 +613,14 @@ $secretPatterns = [
     implode('', ['github_', 'pat_']),
 ];
 $secretFindings = [];
-foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS)) as $file) {
+foreach (new RecursiveIteratorIterator(new RecursiveCallbackFilterIterator(
+    new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS),
+    static function ($file) use ($root): bool {
+        $path = relativePath($root, $file->getPathname());
+        return !in_array($path, ['.git', 'var/temporary', 'var/documents', 'var/queue'], true)
+            && !preg_match('/(?:^|\/)(?:\.env[^\/]*|[^\/]*\.(?:pem|key))$/', $path);
+    }
+)) as $file) {
     if (!$file->isFile() || $file->getSize() > 2 * 1024 * 1024) {
         continue;
     }

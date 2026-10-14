@@ -1,0 +1,5 @@
+En ny aftalefortrydelse er registreret.
+Fortrydelsesreference: {withdrawal_reference}
+Ordre / aftale: {order_reference}
+Elektronisk kontakt: {customer_email}
+Status: {status}

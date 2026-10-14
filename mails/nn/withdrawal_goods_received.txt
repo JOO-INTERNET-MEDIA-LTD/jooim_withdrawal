@@ -1,0 +1,9 @@
+Vi har registrert mottak av dei returnerte varene.
+Angrerettreferanse: {withdrawal_reference}
+Bestilling / avtale: {order_reference}
+Status: {status}
+
+Melding frå seljaren:
+{public_message}
+
+Seljaren sin kontakt: {merchant_email}

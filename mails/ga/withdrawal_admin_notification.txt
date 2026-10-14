@@ -1,0 +1,5 @@
+Taifeadadh aistarraingt nua ó chonradh.
+Tagairt aistarraingthe: {withdrawal_reference}
+Ordú / conradh: {order_reference}
+Teagmháil leictreonach: {customer_email}
+Stádas: {status}

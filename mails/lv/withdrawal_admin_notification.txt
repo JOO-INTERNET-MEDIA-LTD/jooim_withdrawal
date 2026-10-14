@@ -1,0 +1,5 @@
+Reģistrēts jauns atteikums no līguma.
+Atteikuma atsauce: {withdrawal_reference}
+Pasūtījums / līgums: {order_reference}
+Elektroniskā kontaktinformācija: {customer_email}
+Statuss: {status}

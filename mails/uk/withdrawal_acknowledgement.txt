@@ -1,0 +1,28 @@
+Підтвердження відмови від договору
+
+Підтверджуємо отримання вашого повідомлення про відмову від договору.
+Номер відмови: {withdrawal_reference}
+Замовлення / договір: {order_reference}
+Споживач: {firstname} {lastname}
+Електронний контакт: {customer_email}
+Дата й час отримання: {submitted_at}
+Час отримання UTC: {submitted_at_utc}
+Обсяг: {scope}
+
+Вміст подання / товари:
+{items_text}
+
+Заява:
+{statement}
+
+Продавець:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Адреса повернення / інструкції:
+{return_address}
+
+Збережіть це підтвердження. Воно засвідчує зміст, дату й час вашого онлайн-повідомлення.
+Хеш SHA-256 незмінного знімка: {payload_hash}

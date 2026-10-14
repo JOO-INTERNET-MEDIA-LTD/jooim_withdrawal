@@ -1,0 +1,9 @@
+Oleme registreerinud tagastatud kaupade vastuvõtmise.
+Taganemise viide: {withdrawal_reference}
+Tellimus / leping: {order_reference}
+Olek: {status}
+
+Kaupleja sõnum:
+{public_message}
+
+Kaupleja kontakt: {merchant_email}

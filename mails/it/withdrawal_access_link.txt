@@ -1,0 +1,8 @@
+Ciao {firstname},
+
+Usa questo link per proseguire alla procedura sicura di recesso dal contratto online:
+Continua al recesso: {access_url}
+
+Il link è valido per {expires_minutes} minuti. La sola apertura non lo consuma; il proseguimento viene confermato nella pagina successiva.
+
+Se non hai richiesto questo link, puoi ignorare questo messaggio.

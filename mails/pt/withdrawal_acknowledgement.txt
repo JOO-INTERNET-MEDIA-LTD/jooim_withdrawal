@@ -1,0 +1,28 @@
+Confirmação da resolução do contrato
+
+Confirmamos a receção da sua declaração de resolução do contrato.
+Referência da resolução: {withdrawal_reference}
+Encomenda / contrato: {order_reference}
+Consumidor: {firstname} {lastname}
+Contacto eletrónico: {customer_email}
+Data e hora de receção: {submitted_at}
+Hora de receção UTC: {submitted_at_utc}
+Âmbito: {scope}
+
+Conteúdo da submissão / artigos:
+{items_text}
+
+Declaração:
+{statement}
+
+Comerciante:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Morada de devolução / instruções:
+{return_address}
+
+Guarde esta confirmação. Confirma o conteúdo, a data e a hora da sua comunicação em linha.
+Hash SHA-256 do instantâneo imutável: {payload_hash}

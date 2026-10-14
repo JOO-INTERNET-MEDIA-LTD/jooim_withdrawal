@@ -1,0 +1,28 @@
+Bekräftelse av avtalsfrånträde
+
+Vi bekräftar mottagandet av ditt meddelande om frånträde av avtalet.
+Frånträdesreferens: {withdrawal_reference}
+Order / avtal: {order_reference}
+Konsument: {firstname} {lastname}
+Elektronisk kontakt: {customer_email}
+Mottagningsdatum och tid: {submitted_at}
+Mottagningstid UTC: {submitted_at_utc}
+Omfattning: {scope}
+
+Inlämningens innehåll / artiklar:
+{items_text}
+
+Meddelande:
+{statement}
+
+Näringsidkare:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Returadress / instruktioner:
+{return_address}
+
+Spara denna bekräftelse. Den bekräftar innehållet, datumet och tiden för ditt meddelande online.
+SHA-256-hash för oföränderlig ögonblicksbild: {payload_hash}

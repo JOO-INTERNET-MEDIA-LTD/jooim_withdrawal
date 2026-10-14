@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 from xml.etree import ElementTree as ET
+from xliff_helpers import indent
 
 ROOT = Path(__file__).resolve().parents[1]
 TRANSLATIONS = ROOT / "translations"
@@ -42,7 +43,7 @@ def write_xlf(path: Path, locale: str, entries: dict[str, str]) -> None:
         })
         ET.SubElement(unit, f"{{{NS}}}source").text = source
         ET.SubElement(unit, f"{{{NS}}}target").text = entries[source]
-    ET.indent(xliff, space="  ")
+    indent(xliff)
     ET.ElementTree(xliff).write(path, encoding="UTF-8", xml_declaration=True)
 
 

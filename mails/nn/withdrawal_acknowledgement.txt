@@ -1,0 +1,28 @@
+Stadfesting på bruk av angrerett
+
+Vi stadfestar mottak av meldinga di om bruk av angrerett.
+Angrerettreferanse: {withdrawal_reference}
+Bestilling / avtale: {order_reference}
+Forbrukar: {firstname} {lastname}
+Elektronisk kontakt: {customer_email}
+Dato og klokkeslett motteke: {submitted_at}
+Mottakstid UTC: {submitted_at_utc}
+Omfang: {scope}
+
+Innsendt innhald / varer:
+{items_text}
+
+Erklæring:
+{statement}
+
+Seljar:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Returadresse / instruksjonar:
+{return_address}
+
+Ta vare på denne stadfestinga. Den stadfestar innhald, dato og klokkeslett for den nettbaserte meldinga di.
+SHA-256-hash for uforanderleg augneblinksbilete: {payload_hash}

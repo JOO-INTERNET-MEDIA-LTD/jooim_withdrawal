@@ -1,0 +1,9 @@
+In-negozjant irreġistra ċaħda tal-każ; ir-raġuni tinsab hawn taħt.
+Referenza tal-irtirar: {withdrawal_reference}
+Ordni / kuntratt: {order_reference}
+Stat: {status}
+
+Messaġġ tan-negozjant:
+{public_message}
+
+Kuntatt tan-negozjant: {merchant_email}

@@ -1,0 +1,8 @@
+Olá {firstname},
+
+Use esta ligação para continuar o processo seguro de resolução do contrato em linha:
+Continuar para a resolução: {access_url}
+
+A ligação é válida durante {expires_minutes} minutos. A simples abertura não a consome; a continuação é confirmada na página seguinte.
+
+Se não pediu esta ligação, pode ignorar esta mensagem.

@@ -1,0 +1,9 @@
+Den Händler huet eng Oflehnung vum Dossier registréiert; de Grond steet hei ënnendrënner.
+Récktrëttsreferenz: {withdrawal_reference}
+Bestellung / Kontrakt: {order_reference}
+Status: {status}
+
+Noriicht vum Händler:
+{public_message}
+
+Kontakt vum Händler: {merchant_email}

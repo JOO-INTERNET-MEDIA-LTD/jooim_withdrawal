@@ -1,0 +1,9 @@
+De Remboursement gouf als ofgeschloss registréiert.
+Récktrëttsreferenz: {withdrawal_reference}
+Bestellung / Kontrakt: {order_reference}
+Status: {status}
+
+Noriicht vum Händler:
+{public_message}
+
+Kontakt vum Händler: {merchant_email}

@@ -1,6 +1,6 @@
 {
   "name": "joo-internet-media/jooim-withdrawal",
-  "description": "Multilingual online contract withdrawal module for PrestaShop 8.1-9.1 with secure EU-oriented flows, immutable evidence and multistore administration",
+  "description": "Multilingual online contract withdrawal module for PrestaShop 8.x and 9.x with secure EU-oriented flows, immutable evidence and multistore administration",
   "type": "prestashop-module",
   "license": "MIT",
   "require": {

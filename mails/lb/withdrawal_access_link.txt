@@ -1,0 +1,8 @@
+Moien {firstname},
+
+Benotzt dëse Link fir mam sécheren Online-Récktrëttsprozess weiderzefueren:
+Weider beim Récktrëtt: {access_url}
+
+De Link ass {expires_minutes} Minutte gëlteg. D’Opmaachen eleng verbraucht en net; d’Weiderfuere gëtt op der nächster Säit bestätegt.
+
+Wann Dir dëse Link net ugefrot hutt, kënnt Dir dës Noriicht ignoréieren.

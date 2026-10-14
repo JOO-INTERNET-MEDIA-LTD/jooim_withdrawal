@@ -98,7 +98,7 @@
 098	Korte code aan het begin van herroepingsreferenties. Gebruik alleen letters, cijfers en koppeltekens, bijvoorbeeld WD. Bestaande herroepingsreferenties worden nooit gewijzigd.
 099	Sommige runtimevereisten konden niet worden gesynchroniseerd. Controleer de PrestaShop-logboeken vóór openbaar gebruik.
 100	Start de beveiligde procedure op basis van de bestelreferentie. De klant voert alleen de openbare bestelreferentie in; bestel- en persoonsgegevens blijven verborgen totdat de eenmalige e-maillink is bevestigd.
-101	Ondersteunde PrestaShop-versies zijn 8.1 tot en met 9.1.
+101	Ondersteunde PrestaShop-versies zijn 8.x en 9.x.
 102	De standaardwaarden zijn bewust voorzichtig. Verhoog limieten pas na beoordeling van echt verkeer en misbruiklogboeken; te lage waarden kunnen legitieme consumenten blokkeren.
 103	Deze waarden identificeren de daadwerkelijke verkoper die de geselecteerde winkel exploiteert. Ze worden per winkel in multistore opgeslagen en afgedrukt in klantbevestigingen en PDF-bewijs.
 104	Deze gratis GitHub-module wordt zonder individuele technische ondersteuning aangeboden. Installatie, configuratie, productietests, updates en probleemoplossing zijn beschikbaar voor klanten die Joobox PrestaShop Cloud gebruiken of een andere betaalde dienst die uitdrukkelijk met JOO INTERNET MEDIA LTD is overeengekomen.

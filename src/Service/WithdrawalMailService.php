@@ -54,11 +54,13 @@ final class WithdrawalMailService
     {
         $idLang = (int) $withdrawal['id_lang'];
         $idShop = (int) $withdrawal['id_shop'];
+        $locale = $this->localeForLanguage($idLang);
         $email = (string) $withdrawal['customer_email'];
         $subject = $this->module->jooimTranslate(
             'Acknowledgement of contract withdrawal – %reference%',
             ['%reference%' => (string) $withdrawal['reference']],
-            'Modules.Jooimwithdrawal.Email'
+            'Modules.Jooimwithdrawal.Email',
+            $locale
         );
         $mailId = $this->log((int) $withdrawal['id_jooim_withdrawal'], null, 'withdrawal_acknowledgement', $email, $subject);
         $attachment = null;
@@ -96,9 +98,9 @@ final class WithdrawalMailService
                     '{submitted_at_utc}' => (string) ($snapshot['submitted_at_utc'] ?? $withdrawal['submitted_at_utc']),
 
                     '{submitted_at_utc_html}' => $this->h((string) ((string) ($snapshot['submitted_at_utc'] ?? $withdrawal['submitted_at_utc']))),
-                    '{scope}' => (string) $withdrawal['scope'],
+                    '{scope}' => $this->module->jooimTranslate($withdrawal['scope'] === 'full' ? 'Entire contract/order' : 'Selected goods or contract part', [], 'Modules.Jooimwithdrawal.Pdf', $locale),
 
-                    '{scope_html}' => $this->h((string) ((string) $withdrawal['scope'])),
+                    '{scope_html}' => $this->h($this->module->jooimTranslate($withdrawal['scope'] === 'full' ? 'Entire contract/order' : 'Selected goods or contract part', [], 'Modules.Jooimwithdrawal.Pdf', $locale)),
                     '{statement}' => (string) $withdrawal['statement_text'],
 
                     '{statement_html}' => $this->h((string) ((string) $withdrawal['statement_text'])),
@@ -283,7 +285,7 @@ final class WithdrawalMailService
             $lines[] = (string) $snapshot['manual_items_description'];
         }
         if ($lines === []) {
-            $lines[] = (string) (($snapshot['scope'] ?? '') === 'full' ? 'Entire contract/order' : 'See withdrawal statement');
+            $lines[] = $this->module->jooimTranslate(($snapshot['scope'] ?? '') === 'full' ? 'Entire contract/order' : 'Selected goods or contract part', [], 'Modules.Jooimwithdrawal.Pdf', (string) ($snapshot['locale'] ?? 'en-US'));
         }
         $text = implode("\n", $lines);
         $html = implode('<br>', array_map(static fn(string $line): string => htmlspecialchars($line, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'), $lines));

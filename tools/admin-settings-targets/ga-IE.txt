@@ -98,7 +98,7 @@
 098	Cód gearr a úsáidtear ag tús tagairtí tarraingthe siar. Ná húsáid ach litreacha, digití agus fleiscíní, mar shampla WD. Ní athraítear tagairtí tarraingthe siar atá ann cheana riamh.
 099	Níorbh fhéidir roinnt riachtanas ama rite a shioncronú. Athbhreithnigh logaí PrestaShop roimh úsáid phoiblí.
 100	Tosaíonn sé an próiseas slán de réir tagartha ordaithe. Ní chuireann an custaiméir isteach ach an tagairt phoiblí ordaithe; fanann sonraí ordaithe agus pearsanta i bhfolach go dtí go ndeimhnítear an nasc aonuaire sa ríomhphost.
-101	Is iad 8.1 go 9.1 na leaganacha PrestaShop a dtacaítear leo.
+101	Tacaítear le leaganacha PrestaShop 8.x agus 9.x.
 102	Tá na luachanna réamhshocraithe coimeádach d'aon ghnó. Ná méadaigh teorainneacha ach tar éis athbhreithniú a dhéanamh ar thrácht iarbhír agus ar logaí mí-úsáide; d'fhéadfadh teorainneacha ró-ísle tomhaltóirí dlisteanacha a bhlocáil.
 103	Sainaithníonn na luachanna seo an díoltóir iarbhír a oibríonn an siopa roghnaithe. Stóráiltear iad de réir siopa in multistore agus cuirtear i gcló iad in admhálacha custaiméara agus i bhfianaise PDF.
 104	Cuirtear an modúl GitHub saor in aisce seo ar fáil gan tacaíocht theicniúil aonair. Tá suiteáil, cumraíocht, tástáil táirgeachta, nuashonruithe agus fabhtcheartú ar fáil do chustaiméirí a úsáideann Joobox PrestaShop Cloud nó seirbhís íoctha eile a comhaontaíodh go sainráite le JOO INTERNET MEDIA LTD.

@@ -1,0 +1,12 @@
+Returinstruksjonar
+Angrerettreferanse: {withdrawal_reference}
+Bestilling / avtale: {order_reference}
+Status: {status}
+
+Melding frå seljaren:
+{public_message}
+
+Returadresse / instruksjonar:
+{return_address}
+
+Seljaren sin kontakt: {merchant_email}

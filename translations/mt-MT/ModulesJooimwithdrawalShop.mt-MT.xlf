@@ -1,22 +1,218 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en-US" target-language="mt-MT" datatype="plaintext" original="file.ext">
+  <file datatype="plaintext" original="file.ext" source-language="en-US" target-language="mt-MT">
     <body>
+      <trans-unit id="5ed9c0437e81bd9163fde222f23f2ab5" resname="Acknowledgement email">
+        <source>Acknowledgement email</source>
+        <target>Email ta' konferma</target>
+      </trans-unit>
+      <trans-unit id="78945de8de090e90045d299651a68a9b" resname="Available">
+        <source>Available</source>
+        <target>Disponibbli</target>
+      </trans-unit>
       <trans-unit id="5bf9a5d2d48868e8bfd393ffb31b010a" resname="Case closed">
         <source>Case closed</source>
         <target>Każ magħluq</target>
+      </trans-unit>
+      <trans-unit id="01c4bbdc9dd9310f535a254db3aa18fa" resname="Check the information before the final confirmation.">
+        <source>Check the information before the final confirmation.</source>
+        <target>Iċċekkja l-informazzjoni qabel il-konferma finali.</target>
+      </trans-unit>
+      <trans-unit id="f684ba1206d548f129babd1fb5d74a61" resname="Confirm that these are the details you want to submit.">
+        <source>Confirm that these are the details you want to submit.</source>
+        <target>Ikkonferma li dawn huma d-dettalji li tixtieq tissottometti.</target>
+      </trans-unit>
+      <trans-unit id="bfb5d2f2774104b4fac0113941b97d80" resname="Confirm withdrawal">
+        <source>Confirm withdrawal</source>
+        <target>Ikkonferma l-irtirar</target>
+      </trans-unit>
+      <trans-unit id="663e44f5ef8f8b0c879d1c5c990acc97" resname="Confirmation email:">
+        <source>Confirmation email:</source>
+        <target>Email ta' konferma:</target>
       </trans-unit>
       <trans-unit id="9fecbc47aacafec4c27333c9efcdf9fa" resname="Confirmation sent">
         <source>Confirmation sent</source>
         <target>Konferma mibgħuta</target>
       </trans-unit>
+      <trans-unit id="9e638e94f23f369b4898389152a167d3" resname="Confirmation unavailable">
+        <source>Confirmation unavailable</source>
+        <target>Konferma mhux disponibbli</target>
+      </trans-unit>
+      <trans-unit id="7353c006a5ea88a1f26e201ac723c6ba" resname="Continue securely">
+        <source>Continue securely</source>
+        <target>Kompli b'mod sigur</target>
+      </trans-unit>
+      <trans-unit id="548cddc23e0e84a7a3816e29433a1f62" resname="Continue to order">
+        <source>Continue to order</source>
+        <target>Kompli lejn l-ordni</target>
+      </trans-unit>
+      <trans-unit id="6de8f1c3ded68ea7458f755c3312a913" resname="Continue to review">
+        <source>Continue to review</source>
+        <target>Kompli għar-reviżjoni</target>
+      </trans-unit>
+      <trans-unit id="35611b166aa8c70b05c240575b22a2cb" resname="Contract withdrawal">
+        <source>Contract withdrawal</source>
+        <target>Irtirar minn kuntratt</target>
+      </trans-unit>
+      <trans-unit id="5eea367ea73b909880393bd1ae79fc67" resname="Customer:">
+        <source>Customer:</source>
+        <target>Klijent:</target>
+      </trans-unit>
+      <trans-unit id="d28dc0431a3a82b4e872dbe5c7a55437" resname="Describe the selected goods or contract part">
+        <source>Describe the selected goods or contract part</source>
+        <target>Iddeskrivi l-oġġetti magħżula jew il-parti mill-kuntratt</target>
+      </trans-unit>
+      <trans-unit id="8d27334be5730484e7c3390aa1cce7db" resname="Download PDF acknowledgement">
+        <source>Download PDF acknowledgement</source>
+        <target>Niżżel il-konferma PDF</target>
+      </trans-unit>
       <trans-unit id="00c6156d5f4d21eecf8aca0c3972d4a0" resname="Duplicate submission">
         <source>Duplicate submission</source>
         <target>Sottomissjoni duplikata</target>
       </trans-unit>
+      <trans-unit id="01abdb61b28f0c19f3e0667bf303f919" resname="Email for the withdrawal acknowledgement">
+        <source>Email for the withdrawal acknowledgement</source>
+        <target>Email għall-konferma tal-irtirar</target>
+      </trans-unit>
+      <trans-unit id="d02bfc29750d5fdf8023509bcf2fe1fc" resname="Entire contract/order">
+        <source>Entire contract/order</source>
+        <target>Il-kuntratt/ordni kollu</target>
+      </trans-unit>
+      <trans-unit id="14478ac58b72fae4906a8b935b6d26b8" resname="Error reference: %reference%">
+        <source>Error reference: %reference%</source>
+        <target>Referenza tal-iżball: %reference%</target>
+      </trans-unit>
+      <trans-unit id="20db0bfeecd8fe60533206a2b5e9891a" resname="First name">
+        <source>First name</source>
+        <target>Isem</target>
+      </trans-unit>
+      <trans-unit id="b3130ff0f7db9c0f9f00390497c02850" resname="Form expired">
+        <source>Form expired</source>
+        <target>Il-formola skadiet</target>
+      </trans-unit>
+      <trans-unit id="2f4ae53374a8722b30114eeb4e528983" resname="I do not want to state a reason">
+        <source>I do not want to state a reason</source>
+        <target>Ma nixtieqx nagħti raġuni</target>
+      </trans-unit>
+      <trans-unit id="9c0c349a1a6b78c5dc046625925bdf66" resname="I hereby unequivocally notify you that I withdraw from the identified contract or its selected part.">
+        <source>I hereby unequivocally notify you that I withdraw from the identified contract or its selected part.</source>
+        <target>B'dan ninnotifikak b'mod ċar li qed nirtira mill-kuntratt identifikat jew mill-parti magħżula tiegħu.</target>
+      </trans-unit>
+      <trans-unit id="f5074a7a4ceb0e221b9dd7d53d1b5f15" resname="I no longer need the product">
+        <source>I no longer need the product</source>
+        <target>Ma għadx għandi bżonn il-prodott</target>
+      </trans-unit>
+      <trans-unit id="20bd6e7422b872295eebd1d7450dfeeb" resname="I withdraw from the entire contract/order">
+        <source>I withdraw from the entire contract/order</source>
+        <target>Nirtira mill-kuntratt/ordni kollu</target>
+      </trans-unit>
+      <trans-unit id="504ed9c4ebb25c937feeab9628da13c4" resname="I withdraw only from selected items">
+        <source>I withdraw only from selected items</source>
+        <target>Nirtira biss mill-oġġetti magħżula</target>
+      </trans-unit>
+      <trans-unit id="fcb10df173ea4b5f99e51cc6f5fd3e5b" resname="If we found an order with the reference provided, we sent a continuation link to the email address associated with that order.">
+        <source>If we found an order with the reference provided, we sent a continuation link to the email address associated with that order.</source>
+        <target>Jekk sibna ordni bir-referenza mogħtija, bgħatna link biex tkompli lill-indirizz tal-email assoċjat ma' dik l-ordni.</target>
+      </trans-unit>
+      <trans-unit id="7d74f3b92b19da5e606d737d339a9679" resname="Item">
+        <source>Item</source>
+        <target>Oġġett</target>
+      </trans-unit>
+      <trans-unit id="8d3f5eff9c40ee315d452392bed5309b" resname="Last name">
+        <source>Last name</source>
+        <target>Kunjom</target>
+      </trans-unit>
+      <trans-unit id="49ee3087348e8d44e1feda1917443987" resname="Name">
+        <source>Name</source>
+        <target>Isem</target>
+      </trans-unit>
+      <trans-unit id="cefa09f18556dc054b7a87e85d574b6e" resname="No access to the original email?">
+        <source>No access to the original email?</source>
+        <target>Ma għandekx aċċess għall-email oriġinali?</target>
+      </trans-unit>
+      <trans-unit id="9e076f5885f5cc16a4b5aeb8de4adff5" resname="Not found">
+        <source>Not found</source>
+        <target>Ma nstabx</target>
+      </trans-unit>
+      <trans-unit id="b3ccbc57cdbc9c38eb75e35cedd3a08d" resname="Note (optional)">
+        <source>Note (optional)</source>
+        <target>Nota (mhux obbligatorja)</target>
+      </trans-unit>
+      <trans-unit id="6aada96edf3615d6c57edf7cfd5df748" resname="Online contract withdrawal">
+        <source>Online contract withdrawal</source>
+        <target>Irtirar online minn kuntratt</target>
+      </trans-unit>
+      <trans-unit id="a5fab851f2e275956334b32e80439c4e" resname="Online withdrawal is temporarily unavailable.">
+        <source>Online withdrawal is temporarily unavailable.</source>
+        <target>L-irtirar online mhux disponibbli temporanjament.</target>
+      </trans-unit>
+      <trans-unit id="ebb7b0037bc7f4064f9dea9fb89af800" resname="Online withdrawal temporarily unavailable">
+        <source>Online withdrawal temporarily unavailable</source>
+        <target>Irtirar online temporanjament mhux disponibbli</target>
+      </trans-unit>
+      <trans-unit id="9d58bdc636ee12265d000ca4c3d778dd" resname="Only selected goods or part of the contract">
+        <source>Only selected goods or part of the contract</source>
+        <target>L-oġġetti magħżula jew parti mill-kuntratt biss</target>
+      </trans-unit>
+      <trans-unit id="29aa4a44370b0d9deb296251d73c1052" resname="Order / contract reference">
+        <source>Order / contract reference</source>
+        <target>Referenza tal-ordni / kuntratt</target>
+      </trans-unit>
+      <trans-unit id="e4385a4a05c63fca1ba9d26996261df2" resname="Order number or reference">
+        <source>Order number or reference</source>
+        <target>Numru jew referenza tal-ordni</target>
+      </trans-unit>
+      <trans-unit id="2ca3deb5cd68fa9119b285804fab572f" resname="Order:">
+        <source>Order:</source>
+        <target>Ordni:</target>
+      </trans-unit>
+      <trans-unit id="26e09a1ee1517389c7b07f42df65561a" resname="Ordered">
+        <source>Ordered</source>
+        <target>Ordnat</target>
+      </trans-unit>
+      <trans-unit id="0c8822be31a09f7b5239bc4b69a66be8" resname="Other reason">
+        <source>Other reason</source>
+        <target>Raġuni oħra</target>
+      </trans-unit>
       <trans-unit id="9f004157e4c148dac71da3ae5906351f" resname="Partially refunded">
         <source>Partially refunded</source>
         <target>Rifużjoni parzjali</target>
+      </trans-unit>
+      <trans-unit id="4737e32004f69772c6f885a21ccc0988" resname="Please try again later or contact the trader using another available withdrawal channel.">
+        <source>Please try again later or contact the trader using another available withdrawal channel.</source>
+        <target>Erġa' pprova aktar tard jew ikkuntattja lin-negozjant permezz ta' kanal ieħor disponibbli għall-irtirar.</target>
+      </trans-unit>
+      <trans-unit id="ddc796b10ff22262407e143e3b59fdff" resname="PrestaShop module by">
+        <source>PrestaShop module by</source>
+        <target>Modulu PrestaShop minn</target>
+      </trans-unit>
+      <trans-unit id="56c34c6410dd45c5cec44149ad0ce037" resname="Privacy policy">
+        <source>Privacy policy</source>
+        <target>Politika tal-privatezza</target>
+      </trans-unit>
+      <trans-unit id="694e8d1f2ee056f98ee488bdc4982d73" resname="Quantity">
+        <source>Quantity</source>
+        <target>Kwantità</target>
+      </trans-unit>
+      <trans-unit id="11f6876bc0f91b0ebd4b28cb7fd890d4" resname="Quantity to withdraw">
+        <source>Quantity to withdraw</source>
+        <target>Kwantità għall-irtirar</target>
+      </trans-unit>
+      <trans-unit id="170556ec5afd4fec2fb4116ddc669ffb" resname="Reason (optional)">
+        <source>Reason (optional)</source>
+        <target>Raġuni (mhux obbligatorja)</target>
+      </trans-unit>
+      <trans-unit id="6324f0ee9725f6a0229ef9da1e543ad2" resname="Received at (UTC):">
+        <source>Received at (UTC):</source>
+        <target>Riċevut fi (UTC):</target>
+      </trans-unit>
+      <trans-unit id="63d5049791d9d79d86e9a108b0a999ca" resname="Reference">
+        <source>Reference</source>
+        <target>Referenza</target>
+      </trans-unit>
+      <trans-unit id="3dd42bfc8345e82c43b4a40a3426ec49" resname="Reference:">
+        <source>Reference:</source>
+        <target>Referenza:</target>
       </trans-unit>
       <trans-unit id="e963a2769e317ec3289dc057845cd3e2" resname="Refund completed">
         <source>Refund completed</source>
@@ -26,17 +222,117 @@
         <source>Refund pending</source>
         <target>Rifużjoni pendenti</target>
       </trans-unit>
+      <trans-unit id="432a53a2ceeb179d88d03e70137ac951" resname="Request a new access link">
+        <source>Request a new access link</source>
+        <target>Itlob link ta' aċċess ġdida</target>
+      </trans-unit>
       <trans-unit id="cd4b58c156cc842c8eaee4f2eda67386" resname="Returned goods received">
         <source>Returned goods received</source>
         <target>Oġġetti rritornati riċevuti</target>
+      </trans-unit>
+      <trans-unit id="c5ab8466b84d4dd0ad64f22c9c753015" resname="Review withdrawal">
+        <source>Review withdrawal</source>
+        <target>Irrevedi l-irtirar</target>
+      </trans-unit>
+      <trans-unit id="5d113f2038d289f391614c39043629e8" resname="Scope">
+        <source>Scope</source>
+        <target>Ambitu</target>
+      </trans-unit>
+      <trans-unit id="6237185a82d404f50da7851870637de1" resname="Scope:">
+        <source>Scope:</source>
+        <target>Ambitu:</target>
+      </trans-unit>
+      <trans-unit id="6f2f5cf6d955d9609231045d26dd33ed" resname="Secure access to withdrawal">
+        <source>Secure access to withdrawal</source>
+        <target>Aċċess sigur għall-irtirar</target>
+      </trans-unit>
+      <trans-unit id="8bfecf5fd1c55d363fdeb25f0896c655" resname="Selected goods or contract part">
+        <source>Selected goods or contract part</source>
+        <target>Oġġetti magħżula jew parti mill-kuntratt</target>
+      </trans-unit>
+      <trans-unit id="3713a99a6284e39061bd48069807aa52" resname="Selected items">
+        <source>Selected items</source>
+        <target>Oġġetti magħżula</target>
+      </trans-unit>
+      <trans-unit id="674c7a9abadb097d03e6d81bfeaeedb4" resname="Selected part">
+        <source>Selected part</source>
+        <target>Parti magħżula</target>
+      </trans-unit>
+      <trans-unit id="24a23d787190f2c4812ff9ab11847a72" resname="Status:">
+        <source>Status:</source>
+        <target>Stat:</target>
+      </trans-unit>
+      <trans-unit id="b22746d02f2408685984b6ffe2f7243f" resname="Submission failed">
+        <source>Submission failed</source>
+        <target>Is-sottomissjoni falliet</target>
+      </trans-unit>
+      <trans-unit id="f39e3c89f1e4271dd921af41feb4a0a9" resname="Telephone (optional)">
+        <source>Telephone (optional)</source>
+        <target>Telefon (mhux obbligatorju)</target>
+      </trans-unit>
+      <trans-unit id="5208832ee85f03c9f32190680cd7985f" resname="The access link is valid. Continue to the order to choose the withdrawal scope.">
+        <source>The access link is valid. Continue to the order to choose the withdrawal scope.</source>
+        <target>Il-link ta' aċċess hija valida. Kompli lejn l-ordni biex tagħżel l-ambitu tal-irtirar.</target>
+      </trans-unit>
+      <trans-unit id="14bba703a144505e7b4547e6c7a7148e" resname="The acknowledgement will be sent to this electronic address. Enter it carefully.">
+        <source>The acknowledgement will be sent to this electronic address. Enter it carefully.</source>
+        <target>Il-konferma tintbagħat lil dan l-indirizz elettroniku. Daħħlu bir-reqqa.</target>
+      </trans-unit>
+      <trans-unit id="9a922116188dfc34c9360212b9ca1e1e" resname="The online withdrawal page could not be loaded. Please try again later or contact the trader.">
+        <source>The online withdrawal page could not be loaded. Please try again later or contact the trader.</source>
+        <target>Il-paġna tal-irtirar online ma setgħetx tittella'. Erġa' pprova aktar tard jew ikkuntattja lin-negozjant.</target>
+      </trans-unit>
+      <trans-unit id="bddb65b76cce1b768dd15699ad3c6191" resname="The order was created by mistake">
+        <source>The order was created by mistake</source>
+        <target>L-ordni nħolqot bi żball</target>
+      </trans-unit>
+      <trans-unit id="e1fc12b8e1e767b039ff49f9e53cecbc" resname="The product does not suit me">
+        <source>The product does not suit me</source>
+        <target>Il-prodott ma jaqbilx għalija</target>
+      </trans-unit>
+      <trans-unit id="572e7efe792d90f5a73c317ad250a096" resname="This access link is invalid, expired or already used. Request a new link from the withdrawal page.">
+        <source>This access link is invalid, expired or already used. Request a new link from the withdrawal page.</source>
+        <target>Din il-link ta' aċċess hija invalida, skaduta jew diġà użata. Itlob link ġdida mill-paġna tal-irtirar.</target>
+      </trans-unit>
+      <trans-unit id="799e48fcf20b514eea9a1587ac52cb67" resname="This direct form lets you send an online withdrawal statement without signing in. It does not display any order data.">
+        <source>This direct form lets you send an online withdrawal statement without signing in. It does not display any order data.</source>
+        <target>Din il-formola diretta tippermettilek tibgħat dikjarazzjoni ta' rtirar online mingħajr ma tidħol. Ma turix data tal-ordni.</target>
+      </trans-unit>
+      <trans-unit id="4aa67516afa37316279726bbdc00cc47" resname="Too many attempts">
+        <source>Too many attempts</source>
+        <target>Wisq tentattivi</target>
+      </trans-unit>
+      <trans-unit id="c87ef138d953555f0f2f591ffcd7139c" resname="Unable to prepare withdrawal">
+        <source>Unable to prepare withdrawal</source>
+        <target>Ma jistax jitħejja l-irtirar</target>
       </trans-unit>
       <trans-unit id="1321a344a5a1a622364582904f3d281d" resname="Under review">
         <source>Under review</source>
         <target>Taħt reviżjoni</target>
       </trans-unit>
+      <trans-unit id="272e34b108c49584a715e2a5dff5d268" resname="Use your order reference to securely display the order and choose all or selected items.">
+        <source>Use your order reference to securely display the order and choose all or selected items.</source>
+        <target>Uża r-referenza tal-ordni biex turi l-ordni b'mod sigur u tagħżel l-oġġetti kollha jew xi wħud minnhom.</target>
+      </trans-unit>
       <trans-unit id="01f004435882e0df6fc4d48ff6d6b2b5" resname="Waiting for returned goods">
         <source>Waiting for returned goods</source>
         <target>Qed jistenna l-oġġetti rritornati</target>
+      </trans-unit>
+      <trans-unit id="3b5f3aea0c658e4d9767e88780644c72" resname="We have sent an acknowledgement to the electronic address specified for this withdrawal. The submission remains recorded even if email delivery fails.">
+        <source>We have sent an acknowledgement to the electronic address specified for this withdrawal. The submission remains recorded even if email delivery fails.</source>
+        <target>Bgħatna konferma lill-indirizz elettroniku speċifikat għal dan l-irtirar. Is-sottomissjoni tibqa' rreġistrata anki jekk il-kunsinna tal-email tfalli.</target>
+      </trans-unit>
+      <trans-unit id="a1cc1b4b8e3acde615a4ff68e8d91f1c" resname="We process the personal data entered in this form for the purpose of receiving, recording and handling your contract withdrawal. Details are available in our privacy policy.">
+        <source>We process the personal data entered in this form for the purpose of receiving, recording and handling your contract withdrawal. Details are available in our privacy policy.</source>
+        <target>Nipproċessaw id-data personali mdaħħla f'din il-formola biex nirċievu, nirreġistraw u nittrattaw l-irtirar tiegħek minn kuntratt. Id-dettalji jinsabu fil-politika tal-privatezza tagħna.</target>
+      </trans-unit>
+      <trans-unit id="e3b50d8a88e7f084ddac41eb534db8f3" resname="Withdraw from contract">
+        <source>Withdraw from contract</source>
+        <target>Irtira mill-kuntratt</target>
+      </trans-unit>
+      <trans-unit id="8f9bbecece73dcba9954029007bc5795" resname="Withdraw from contract here">
+        <source>Withdraw from contract here</source>
+        <target>Irtira mill-kuntratt hawn</target>
       </trans-unit>
       <trans-unit id="17adcd5d26326aa74ac6016ca9638c92" resname="Withdraw from the contract here">
         <source>Withdraw from the contract here</source>
@@ -46,9 +342,45 @@
         <source>Withdrawal received</source>
         <target>Irtirar riċevut</target>
       </trans-unit>
+      <trans-unit id="5061d9220fc6aa9a2098301e8834e270" resname="Withdrawal reference:">
+        <source>Withdrawal reference:</source>
+        <target>Referenza tal-irtirar:</target>
+      </trans-unit>
       <trans-unit id="a6bf9dba77e2cf61e65fb7a0c4c07bea" resname="Withdrawal rejected">
         <source>Withdrawal rejected</source>
         <target>Irtirar miċħud</target>
+      </trans-unit>
+      <trans-unit id="72ce8cc05a0575bf6941f8e1c2d6fd1b" resname="Withdrawal scope">
+        <source>Withdrawal scope</source>
+        <target>Ambitu tal-irtirar</target>
+      </trans-unit>
+      <trans-unit id="6ff0fdcf6b0fe36eebce211f1cd4187a" resname="Withdrawal statement:">
+        <source>Withdrawal statement:</source>
+        <target>Dikjarazzjoni tal-irtirar:</target>
+      </trans-unit>
+      <trans-unit id="666de3e33079068232283a1dbeeb5933" resname="Withdrawal status">
+        <source>Withdrawal status</source>
+        <target>Stat tal-irtirar</target>
+      </trans-unit>
+      <trans-unit id="2420e464d150c7dda9c555265239f0f5" resname="Wrong size or variant">
+        <source>Wrong size or variant</source>
+        <target>Daqs jew varjant ħażin</target>
+      </trans-unit>
+      <trans-unit id="437f23dbc9a3359c0205efe1d1fb0596" resname="You can find the order reference in your order confirmation email or invoice.">
+        <source>You can find the order reference in your order confirmation email or invoice.</source>
+        <target>Tista' ssib ir-referenza tal-ordni fl-email ta' konferma tal-ordni jew fil-fattura.</target>
+      </trans-unit>
+      <trans-unit id="26af23e95368c2dd46a690cbcdea7529" resname="You can still send an unequivocal online withdrawal statement without displaying any order data.">
+        <source>You can still send an unequivocal online withdrawal statement without displaying any order data.</source>
+        <target>Xorta tista' tibgħat dikjarazzjoni ċara ta' rtirar online mingħajr ma tintwera data tal-ordni.</target>
+      </trans-unit>
+      <trans-unit id="fc8ba5d722c6fb4f552e910ee48cc8ee" resname="Your statement:">
+        <source>Your statement:</source>
+        <target>Id-dikjarazzjoni tiegħek:</target>
+      </trans-unit>
+      <trans-unit id="866bc8f15014a9a3113856c0f9cc1d47" resname="Your withdrawal statement has been received">
+        <source>Your withdrawal statement has been received</source>
+        <target>Id-dikjarazzjoni tal-irtirar tiegħek ġiet riċevuta</target>
       </trans-unit>
     </body>
   </file>

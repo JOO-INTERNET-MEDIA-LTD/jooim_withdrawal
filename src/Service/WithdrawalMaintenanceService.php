@@ -10,17 +10,33 @@ final class WithdrawalMaintenanceService
     private WithdrawalRepository $repo;
     private WithdrawalMailService $mail;
     private StorageService $storage;
+    private ?WithdrawalRecoveryService $recovery;
 
-    public function __construct(\Context $context, ModuleConfig $config, WithdrawalRepository $repo, WithdrawalMailService $mail, StorageService $storage)
+    public function __construct(\Context $context, ModuleConfig $config, WithdrawalRepository $repo, WithdrawalMailService $mail, StorageService $storage, ?WithdrawalRecoveryService $recovery = null)
     {
         $this->context = $context;
         $this->config = $config;
         $this->repo = $repo;
         $this->mail = $mail;
         $this->storage = $storage;
+        $this->recovery = $recovery;
     }
 
     public function run(): array
+    {
+        $db = \Db::getInstance();
+        $lock = 'jooim_withdrawal_maintenance_' . substr(hash('sha256', _DB_PREFIX_ . _PS_ROOT_DIR_), 0, 24);
+        if ((int) $db->getValue("SELECT GET_LOCK('" . pSQL($lock) . "',0)", false) !== 1) {
+            return ['already_running' => 1];
+        }
+        try {
+            return $this->runUnlocked();
+        } finally {
+            $db->getValue("SELECT RELEASE_LOCK('" . pSQL($lock) . "')", false);
+        }
+    }
+
+    private function runUnlocked(): array
     {
         $db = \Db::getInstance();
         $result = [];
@@ -33,6 +49,7 @@ final class WithdrawalMaintenanceService
         $db->execute('DELETE FROM `' . _DB_PREFIX_ . 'jooim_withdrawal_draft` WHERE expires_at < DATE_SUB(UTC_TIMESTAMP(), INTERVAL 1 DAY) AND submitted_at IS NULL');
         $result['drafts_deleted'] = $db->Affected_Rows();
 
+        $result = array_merge($result, $this->recovery ? $this->recovery->run() : []);
         $result['acknowledgements_retried'] = $this->retryAcknowledgements();
         return $result;
     }
@@ -87,7 +104,10 @@ final class WithdrawalMaintenanceService
                     if ($ok) {
                         $db = \Db::getInstance();
                         if ((string) $withdrawal['status_code'] === 'submitted') {
-                            $db->update('jooim_withdrawal', ['status_code' => 'acknowledged', 'updated_at' => gmdate('Y-m-d H:i:s')], 'id_jooim_withdrawal=' . (int) $withdrawal['id_jooim_withdrawal']);
+                            if (!$db->update('jooim_withdrawal', ['status_code' => 'acknowledged', 'updated_at' => gmdate('Y-m-d H:i:s')],
+                                'id_jooim_withdrawal=' . (int) $withdrawal['id_jooim_withdrawal'] . ' AND id_shop=' . (int) $shopId . " AND status_code='submitted'")) {
+                                throw new \RuntimeException('Cannot mark the retried acknowledgement.');
+                            }
                         }
                         $db->insert('jooim_withdrawal_history', [
                             'id_jooim_withdrawal' => (int) $withdrawal['id_jooim_withdrawal'],
@@ -103,4 +123,5 @@ final class WithdrawalMaintenanceService
         }
 
         return $retried;
-    }}
+    }
+}

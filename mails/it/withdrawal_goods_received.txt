@@ -1,0 +1,9 @@
+Abbiamo registrato la ricezione dei beni restituiti.
+Riferimento del recesso: {withdrawal_reference}
+Ordine / contratto: {order_reference}
+Stato: {status}
+
+Messaggio del venditore:
+{public_message}
+
+Contatto del venditore: {merchant_email}

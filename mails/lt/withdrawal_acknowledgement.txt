@@ -1,0 +1,28 @@
+Sutarties atsisakymo patvirtinimas
+
+Patvirtiname, kad gavome jūsų pranešimą apie sutarties atsisakymą.
+Atsisakymo nuoroda: {withdrawal_reference}
+Užsakymas / sutartis: {order_reference}
+Vartotojas: {firstname} {lastname}
+Elektroniniai kontaktai: {customer_email}
+Gavimo data ir laikas: {submitted_at}
+Gavimo laikas UTC: {submitted_at_utc}
+Apimtis: {scope}
+
+Pateikimo turinys / prekės:
+{items_text}
+
+Pareiškimas:
+{statement}
+
+Prekybininkas:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Grąžinimo adresas / instrukcijos:
+{return_address}
+
+Išsaugokite šį patvirtinimą. Jis patvirtina jūsų internetinio pranešimo turinį, datą ir laiką.
+Nekintamos momentinės kopijos SHA-256 maiša: {payload_hash}

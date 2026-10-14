@@ -1,0 +1,28 @@
+Szerződéstől való elállás visszaigazolása
+
+Visszaigazoljuk a szerződéstől való elállási értesítésének beérkezését.
+Elállási hivatkozás: {withdrawal_reference}
+Rendelés / szerződés: {order_reference}
+Fogyasztó: {firstname} {lastname}
+Elektronikus elérhetőség: {customer_email}
+Beérkezés dátuma és időpontja: {submitted_at}
+Beérkezési idő UTC: {submitted_at_utc}
+Terjedelem: {scope}
+
+Beadvány tartalma / tételek:
+{items_text}
+
+Nyilatkozat:
+{statement}
+
+Kereskedő:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Visszaküldési cím / útmutató:
+{return_address}
+
+Őrizze meg ezt a visszaigazolást. Igazolja az online értesítés tartalmát, dátumát és időpontját.
+Változtathatatlan pillanatkép SHA-256-kivonata: {payload_hash}

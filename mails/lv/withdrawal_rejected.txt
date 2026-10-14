@@ -1,0 +1,9 @@
+Tirgotājs reģistrējis lietas noraidījumu; pamatojums norādīts zemāk.
+Atteikuma atsauce: {withdrawal_reference}
+Pasūtījums / līgums: {order_reference}
+Statuss: {status}
+
+Tirgotāja ziņojums:
+{public_message}
+
+Tirgotāja kontaktinformācija: {merchant_email}

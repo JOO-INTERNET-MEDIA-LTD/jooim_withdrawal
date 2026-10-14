@@ -1,0 +1,28 @@
+Konferma tal-irtirar minn kuntratt
+
+Nikkonfermaw ir-riċeviment tal-avviż tiegħek ta' rtirar mill-kuntratt.
+Referenza tal-irtirar: {withdrawal_reference}
+Ordni / kuntratt: {order_reference}
+Konsumatur: {firstname} {lastname}
+Kuntatt elettroniku: {customer_email}
+Data u ħin tar-riċeviment: {submitted_at}
+Ħin tar-riċeviment UTC: {submitted_at_utc}
+Ambitu: {scope}
+
+Kontenut tas-sottomissjoni / oġġetti:
+{items_text}
+
+Dikjarazzjoni:
+{statement}
+
+Negozjant:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Indirizz / istruzzjonijiet għar-ritorn:
+{return_address}
+
+Żomm din il-konferma. Tikkonferma l-kontenut, id-data u l-ħin tal-avviż online tiegħek.
+Hash SHA-256 tal-kopja immutabbli: {payload_hash}

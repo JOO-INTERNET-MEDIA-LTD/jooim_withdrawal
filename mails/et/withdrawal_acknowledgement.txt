@@ -1,0 +1,28 @@
+Lepingust taganemise kinnitus
+
+Kinnitame teie lepingust taganemise teate kättesaamist.
+Taganemise viide: {withdrawal_reference}
+Tellimus / leping: {order_reference}
+Tarbija: {firstname} {lastname}
+Elektrooniline kontakt: {customer_email}
+Vastuvõtmise kuupäev ja kellaaeg: {submitted_at}
+Vastuvõtmisaeg UTC: {submitted_at_utc}
+Ulatus: {scope}
+
+Esitatud sisu / kaubad:
+{items_text}
+
+Avaldus:
+{statement}
+
+Kaupleja:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Tagastusaadress / juhised:
+{return_address}
+
+Hoidke see kinnitus alles. See kinnitab teie veebiteate sisu, kuupäeva ja kellaaega.
+Muutumatu hetktõmmise SHA-256 räsi: {payload_hash}

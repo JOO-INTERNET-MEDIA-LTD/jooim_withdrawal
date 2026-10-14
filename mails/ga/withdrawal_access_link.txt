@@ -1,0 +1,8 @@
+Dia duit, {firstname},
+
+Úsáid an nasc seo chun leanúint leis an bpróiseas slán aistarraingthe ó chonradh ar líne:
+Lean ar aghaidh chuig an aistarraingt: {access_url}
+
+Tá an nasc bailí ar feadh {expires_minutes} nóiméad. Ní chaitear é trína oscailt amháin; deimhnítear an leanúint ar an gcéad leathanach eile.
+
+Murar iarr tú an nasc seo, is féidir neamhaird a dhéanamh den teachtaireacht seo.

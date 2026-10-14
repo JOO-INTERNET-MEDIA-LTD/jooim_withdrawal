@@ -1,0 +1,28 @@
+Sopimuksen peruuttamisen vahvistus
+
+Vahvistamme vastaanottaneemme ilmoituksesi sopimuksen peruuttamisesta.
+Peruuttamisviite: {withdrawal_reference}
+Tilaus / sopimus: {order_reference}
+Kuluttaja: {firstname} {lastname}
+Sähköinen yhteystieto: {customer_email}
+Vastaanottopäivä ja -aika: {submitted_at}
+Vastaanottoaika UTC: {submitted_at_utc}
+Laajuus: {scope}
+
+Lähetyksen sisältö / tuotteet:
+{items_text}
+
+Ilmoitus:
+{statement}
+
+Elinkeinonharjoittaja:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Palautusosoite / ohjeet:
+{return_address}
+
+Säilytä tämä vahvistus. Se vahvistaa verkkoperuuttamisilmoituksesi sisällön, päivämäärän ja ajan.
+Muuttumattoman tilannekuvan SHA-256-tiiviste: {payload_hash}

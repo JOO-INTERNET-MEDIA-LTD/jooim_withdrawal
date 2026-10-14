@@ -1,0 +1,8 @@
+Pozdravljeni, {firstname}!
+
+S to povezavo nadaljujte varen postopek spletnega odstopa od pogodbe:
+Nadaljuj na odstop: {access_url}
+
+Povezava velja {expires_minutes} minut. Samo odpiranje je ne porabi; nadaljevanje se potrdi na naslednji strani.
+
+Če niste zahtevali te povezave, lahko to sporočilo prezrete.

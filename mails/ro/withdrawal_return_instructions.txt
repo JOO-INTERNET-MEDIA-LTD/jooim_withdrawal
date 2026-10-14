@@ -1,0 +1,12 @@
+Instrucțiuni de returnare
+Referință retragere: {withdrawal_reference}
+Comandă / contract: {order_reference}
+Stare: {status}
+
+Mesajul comerciantului:
+{public_message}
+
+Adresă / instrucțiuni de returnare:
+{return_address}
+
+Contact comerciant: {merchant_email}

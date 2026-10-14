@@ -14,6 +14,7 @@ import re
 import sys
 from pathlib import Path
 from xml.etree import ElementTree as ET
+from xliff_helpers import indent
 
 ROOT = Path(__file__).resolve().parents[1]
 TRANSLATIONS = ROOT / "translations"
@@ -139,7 +140,7 @@ def write_xlf(locale: str, entries: dict[str, str]) -> Path:
         target_node = ET.SubElement(unit, f"{{{NS}}}target")
         target_node.text = target
 
-    ET.indent(xliff, space="  ")
+    indent(xliff)
     tree = ET.ElementTree(xliff)
     tree.write(path, encoding="UTF-8", xml_declaration=True)
     # ElementTree emits a compact declaration compatible with PrestaShop.

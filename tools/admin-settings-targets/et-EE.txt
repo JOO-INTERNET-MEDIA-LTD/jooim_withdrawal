@@ -98,7 +98,7 @@
 098	Taganemisviidete alguses kasutatav lühikood. Kasutage ainult tähti, numbreid ja sidekriipse, näiteks WD. Olemasolevaid taganemisviiteid ei muudeta kunagi.
 099	Mõnda käitusaegset nõuet ei saanud sünkroonida. Vaadake enne avalikku kasutamist üle PrestaShopi logid.
 100	Käivitab turvalise tellimuse viite protsessi. Klient sisestab ainult avaliku tellimuse viite; tellimuse- ja isikuandmed jäävad peidetuks, kuni ühekordne e-posti link on kinnitatud.
-101	Toetatud PrestaShopi versioonid on 8.1 kuni 9.1.
+101	Toetatud PrestaShopi versioonid on 8.x ja 9.x.
 102	Vaikeväärtused on teadlikult konservatiivsed. Suurendage piiranguid alles pärast tegeliku liikluse ja väärkasutuslogide ülevaatamist; liiga madalad piirangud võivad blokeerida õiguspäraseid tarbijaid.
 103	Need väärtused tuvastavad valitud poodi tegelikult käitava müüja. Need salvestatakse multistore'is poe kaupa ning trükitakse kliendi kinnitustele ja PDF-tõendile.
 104	See tasuta GitHubi moodul antakse individuaalse tehnilise toeta. Paigaldus, seadistamine, tootmiskeskkonna testimine, uuendused ja tõrkeotsing on saadaval Joobox PrestaShop Cloudi klientidele või muu tasulise teenuse alusel, milles on JOO INTERNET MEDIA LTD-ga selgesõnaliselt kokku lepitud.

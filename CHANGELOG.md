@@ -2,6 +2,31 @@
 
 All notable changes to **JOOIM Withdrawal** are documented in this file.
 
+## [1.1.0] - 2026-10-14
+
+### Added
+
+- complete five-domain catalogues and email templates for all supported locales, including Belgian, Canadian, Luxembourgish and Norwegian variants;
+- bounded maintenance recovery for missing acknowledgement PDFs and failed creation hooks;
+- maintenance locking to prevent overlapping workers and configuration validation before saving;
+- a non-destructive upgrade hook and regressions for recovery, multishop references and invalid settings.
+
+### Fixed
+
+- withdrawal references include shop ID to prevent collisions between shops sharing the same country and prefix;
+- manual records preserve employee, original receipt time and channel in the immutable snapshot;
+- rejected database writes in administrative actions trigger rollback; post-commit notification failures do not undo accepted actions;
+- review errors no longer expose raw exception messages;
+- Joobox footer attribution remains visible without JavaScript;
+- closed cases retain their withdrawn quantities;
+- acknowledgement scope and fallback item descriptions use the customer's language.
+
+### Compatibility
+
+- declared module compatibility covers PrestaShop 8.x and 9.x on PHP 8.1 or newer;
+- existing records, references and schema are preserved; no database migration is required;
+- runtime integration on each supported PrestaShop/hosting combination remains an acceptance check.
+
 ## [1.0.0] - 2026-08-21
 
 ### Added
@@ -41,3 +66,5 @@ All notable changes to **JOOIM Withdrawal** are documented in this file.
 - active-theme inheritance for public pages and customer-account flows.
 
 [1.0.0]: https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal/releases/tag/v1.0.0
+
+[1.1.0]: https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal/releases/tag/v1.1.0

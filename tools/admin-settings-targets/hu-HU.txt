@@ -98,7 +98,7 @@
 098	Az elállási hivatkozások elején használt rövid kód. Csak betűket, számjegyeket és kötőjeleket használjon, például WD. A meglévő elállási hivatkozások soha nem változnak.
 099	Bizonyos futásidejű követelményeket nem sikerült szinkronizálni. Nyilvános használat előtt tekintse át a PrestaShop naplóit.
 100	Elindítja a biztonságos, rendelési hivatkozás alapú folyamatot. A vásárló csak a nyilvános rendelési hivatkozást írja be; a rendelési és személyes adatok rejtve maradnak az egyszer használatos e-mailes hivatkozás megerősítéséig.
-101	A támogatott PrestaShop-verziók: 8.1–9.1.
+101	A támogatott PrestaShop-verziók: 8.x és 9.x.
 102	Az alapértékek szándékosan óvatosak. Csak a valós forgalom és a visszaélési naplók áttekintése után emelje a korlátokat; a túl alacsony értékek jogos fogyasztókat is blokkolhatnak.
 103	Ezek az értékek a kiválasztott áruházat ténylegesen üzemeltető eladót azonosítják. Multistore esetén áruházanként tárolódnak, és megjelennek a vásárlói visszaigazolásokban és a PDF-bizonyítékban.
 104	Ez az ingyenes GitHub-modul egyéni műszaki támogatás nélkül érhető el. Telepítés, konfigurálás, éles tesztelés, frissítés és hibaelhárítás a Joobox PrestaShop Cloudot használó ügyfeleknek vagy a JOO INTERNET MEDIA LTD-vel kifejezetten egyeztetett más fizetős szolgáltatás részeként érhető el.

@@ -10,36 +10,87 @@ final class ModuleConfig
         $this->context = $context;
     }
 
+    private function scope(): array
+    {
+        // PrestaShop stores single-shop configuration in the global context.
+        if (!\Shop::isFeatureActive()) {
+            return [0, 0];
+        }
+        return [(int) $this->context->shop->id_shop_group, (int) $this->context->shop->id];
+    }
+
     public function get(string $key, $default = null): string
     {
+        [$groupId, $shopId] = $this->scope();
         $value = \Configuration::get(
             $key,
             null,
-            (int) $this->context->shop->id_shop_group,
-            (int) $this->context->shop->id
+            $groupId,
+            $shopId
         );
         return $value === false ? (string) $default : (string) $value;
     }
 
     public function has(string $key): bool
     {
+        [$groupId, $shopId] = $this->scope();
         return \Configuration::hasKey(
             $key,
             null,
-            (int) $this->context->shop->id_shop_group,
-            (int) $this->context->shop->id
+            $groupId,
+            $shopId
         );
     }
 
     public function set(string $key, string $value): bool
     {
+        [$groupId, $shopId] = $this->scope();
         return (bool) \Configuration::updateValue(
             $key,
             $value,
             false,
-            (int) $this->context->shop->id_shop_group,
-            (int) $this->context->shop->id
+            $groupId,
+            $shopId
         );
+    }
+
+    /** Save one validated configuration atomically, restoring the core cache after rollback. */
+    public function saveAll(array $values): bool
+    {
+        $previous = [];
+        foreach ($values as $key => $value) {
+            if (!$this->has((string) $key)) {
+                return false;
+            }
+            $previous[$key] = $this->get((string) $key);
+        }
+        $db = \Db::getInstance();
+        $started = false;
+        try {
+            if (!$db->execute('START TRANSACTION', false)) {
+                return false;
+            }
+            $started = true;
+            foreach ($values as $key => $value) {
+                if (!$this->set((string) $key, (string) $value)) {
+                    throw new \RuntimeException('Configuration write failed.');
+                }
+            }
+            if (!$db->execute('COMMIT', false)) {
+                throw new \RuntimeException('Configuration commit failed.');
+            }
+            return true;
+        } catch (\Throwable $exception) {
+            if ($started) {
+                $db->execute('ROLLBACK', false);
+            }
+            // Configuration::set changes only the in-process core cache, not the database.
+            foreach ($previous as $key => $value) {
+                [$groupId, $shopId] = $this->scope();
+                \Configuration::set($key, $value, $groupId, $shopId);
+            }
+            return false;
+        }
     }
 
     public function bool(string $key, bool $default = false): bool

@@ -1,0 +1,12 @@
+Returinstruktioner
+Frånträdesreferens: {withdrawal_reference}
+Order / avtal: {order_reference}
+Status: {status}
+
+Meddelande från näringsidkaren:
+{public_message}
+
+Returadress / instruktioner:
+{return_address}
+
+Kontakt till näringsidkare: {merchant_email}

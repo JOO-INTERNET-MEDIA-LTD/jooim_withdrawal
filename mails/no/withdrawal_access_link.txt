@@ -1,0 +1,8 @@
+Hei {firstname},
+
+Bruk denne lenken for å fortsette til den sikre nettbaserte angrerettsprosessen:
+Fortsett til angrerett: {access_url}
+
+Lenken er gyldig i {expires_minutes} minutter. Bare det å åpne den bruker den ikke opp; du bekrefter fortsettelsen på neste side.
+
+Hvis du ikke ba om denne lenken, kan du ignorere denne meldingen.

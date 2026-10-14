@@ -1,0 +1,28 @@
+Admháil aistarraingthe ó chonradh
+
+Admhaímid go bhfuarthas d'fhógra aistarraingthe ón gconradh.
+Tagairt aistarraingthe: {withdrawal_reference}
+Ordú / conradh: {order_reference}
+Tomhaltóir: {firstname} {lastname}
+Teagmháil leictreonach: {customer_email}
+Dáta agus am glactha: {submitted_at}
+Am glactha UTC: {submitted_at_utc}
+Raon: {scope}
+
+Ábhar an taiscthe / míreanna:
+{items_text}
+
+Ráiteas:
+{statement}
+
+Trádálaí:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Seoladh / treoracha seolta ar ais:
+{return_address}
+
+Coinnigh an admháil seo. Deimhníonn sí ábhar, dáta agus am d'fhógra ar líne.
+Hais SHA-256 an léargais do-athraithe: {payload_hash}

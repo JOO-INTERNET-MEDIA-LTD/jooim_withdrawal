@@ -98,7 +98,7 @@
 098	Trumpas kodas sutarties atsisakymo nuorodų pradžioje. Naudokite tik raides, skaitmenis ir brūkšnelius, pavyzdžiui, WD. Esamos nuorodos niekada nekeičiamos.
 099	Kai kurių vykdymo reikalavimų nepavyko sinchronizuoti. Prieš viešai naudodami peržiūrėkite „PrestaShop“ žurnalus.
 100	Pradeda saugų procesą pagal užsakymo nuorodą. Klientas įveda tik viešą užsakymo nuorodą; užsakymo ir asmens duomenys lieka paslėpti, kol patvirtinama vienkartinė el. pašto nuoroda.
-101	Palaikomos „PrestaShop“ versijos nuo 8.1 iki 9.1.
+101	Palaikomos PrestaShop 8.x ir 9.x versijos.
 102	Numatytosios reikšmės sąmoningai konservatyvios. Didinkite ribas tik peržiūrėję tikrą srautą ir piktnaudžiavimo žurnalus; per mažos ribos gali blokuoti teisėtus vartotojus.
 103	Šios reikšmės identifikuoja faktinį pardavėją, valdantį pasirinktą parduotuvę. Jos saugomos kiekvienai multistore parduotuvei ir spausdinamos kliento patvirtinimuose bei PDF įrodymuose.
 104	Šis nemokamas „GitHub“ modulis teikiamas be individualios techninės pagalbos. Diegimas, konfigūravimas, testavimas gamybinėje aplinkoje, naujinimai ir trikčių šalinimas teikiami „Joobox PrestaShop Cloud“ klientams arba pagal kitą mokamą paslaugą, aiškiai suderintą su JOO INTERNET MEDIA LTD.

@@ -1,0 +1,9 @@
+Thaifead an trádálaí diúltú don chás; luaitear an chúis thíos.
+Tagairt aistarraingthe: {withdrawal_reference}
+Ordú / conradh: {order_reference}
+Stádas: {status}
+
+Teachtaireacht an trádálaí:
+{public_message}
+
+Teagmháil an trádálaí: {merchant_email}

@@ -1,0 +1,120 @@
+001	Eine neue Modulversion ist verfügbar.
+002	Anzahl der Wiederholungsversuche für die Bestätigung
+003	Fügt im Bereich „Mein Konto“ des Kunden einen Eintrag zum Widerruf hinzu. Der Kunde kann weiterhin den öffentlichen Ablauf verwenden, wenn die Bestellung im Konto nicht sichtbar ist.
+004	Fügt der Detailansicht einer Bestellung, die dem angemeldeten Kunden gehört, eine Schaltfläche „Vertrag widerrufen“ hinzu. Die Inhaberschaft wird serverseitig geprüft.
+005	Ermöglicht dem Verbraucher, einen eindeutigen Widerruf ohne Anmeldung oder Anzeige von Bestelldaten abzugeben. Halten Sie diese Funktion für einschlägige online geschlossene B2C-Verträge verfügbar.
+006	PDF-Eingangsbestätigung anhängen
+007	Fügt der Bestätigungs-E-Mail die unveränderliche PDF-Bestätigung des Widerrufs bei. Das Deaktivieren des Anhangs entfernt nicht die geschützte PDF-Datei, die beim Vorgang gespeichert ist.
+008	Fälle:
+009	Unternehmenskennung
+010	Aktuelle Modulversion
+011	Link im Kundenkonto
+012	Kundenkontaktadresse für die Kommunikation zum Widerruf. Verwenden Sie ein aktiv überwachtes Postfach; tragen Sie hier nicht die E-Mail-Adresse des Kunden ein.
+013	Direkte Funktion gemäß Artikel 11a
+014	Direkter Widerruf
+015	Direkte Widerrufsfunktion:
+016	Deaktiviert
+017	Deaktiviert (rechtliche Prüfung erforderlich)
+018	Zeigt den kundenbezogenen Link „Vertrag widerrufen“ in der Fußzeile des Shops an. Dieser Link zur rechtlichen Funktion ist unabhängig vom Joobox-Marketinghinweis.
+019	Hinweis zur EU-Rechtskonformität (2026):
+020	Jede aktive Shopsprache erhält einen eigenen lokalisierten, lesbaren Pfad. Sprachneutrale Einstiegs-URLs bleiben für externe Linklisten-Module verfügbar. Testen Sie nach der Bereitstellung beide Abläufe in jeder aktiven Sprache.
+021	E-Mail
+022	E-Mails pro Bestellung / Tag
+023	E-Mails pro Bestellung / Stunde
+024	Aktiviert
+025	Aktiviert das direkte Online-Widerrufsformular, das weder ein Kundenkonto noch Zugriff auf die ursprüngliche Bestell-E-Mail erfordert. Deaktivieren Sie es nur nach einer marktspezifischen rechtlichen Prüfung.
+026	Beendet eine verifizierte Gastsitzung nach diesem Zeitraum ohne Aktivität. Erwarteter Bereich: 5–240 Minuten; empfohlener Standardwert: 30.
+027	Englischer Fallback
+028	Geben Sie die absolute HTTPS-URL der Datenschutzerklärung ein, die die Verarbeitung personenbezogener Daten bei der Entgegennahme und Bearbeitung von Widerrufen erläutert.
+029	Geben Sie die genaue Rücksendeadresse und praktische Hinweise zur Rückgabe von Waren ein. Diese Hinweise dürfen keine Bedingungen auferlegen, die das Widerrufsrecht des Verbrauchers rechtswidrig einschränken.
+030	Geben Sie die im Rechtsraum des Verkäufers erforderliche Kennung ein, zum Beispiel Unternehmensnummer, USt-IdNr. oder Handelsregisternummer.
+031	Geben Sie den vollständigen gesetzlichen oder eingetragenen Firmennamen des Verkäufers ein, nicht den Namen des Modulanbieters. Er erscheint im Formular, in der Bestätigungs-E-Mail und in der PDF-Datei.
+032	Geben Sie den eingetragenen Sitz oder die Geschäftsanschrift des Verkäufers genau so ein, wie sie im Verbraucherdokument erscheinen soll.
+033	Footer-Link (für einschlägige Online-B2C-Verträge aktiviert lassen)
+034	Verwenden Sie für die PrestaShop-Installation nicht das automatisch von GitHub erzeugte „Source code ZIP“. Verwenden Sie ausschließlich die Installations-ZIP-Datei aus den Release-Assets.
+035	Bei einschlägigen B2C-Fernabsatzverträgen, die über eine Online-Benutzeroberfläche geschlossen wurden, kann das Deaktivieren oder Ausblenden der direkten Widerrufsfunktion gegen Artikel 11a der Richtlinie 2011/83/EU in der durch Richtlinie (EU) 2023/2673 geänderten Fassung verstoßen. Die nationale Umsetzung muss weiterhin für jeden Markt geprüft werden.
+036	Allgemeine und rechtliche Verfügbarkeit
+037	Joobox-Support erhalten
+038	GitHub-Prüfungen werden höchstens alle sechs Stunden durchgeführt, sofern sie nicht manuell aktualisiert werden. Das Modul lädt oder installiert niemals automatisch Code.
+039	Hosting-Cron-URL (geheim):
+040	Legt fest, wie lange der einmalige E-Mail-Zugangslink verwendet werden kann. Erwarteter Bereich: 5–240 Minuten; empfohlener Standardwert: 30.
+041	Enthalten
+042	JOOIM Withdrawal – Online-Vertragswiderruf
+043	Joobox-Support für dieses Modul
+044	Sprache
+045	Sprachneutrale URLs für externe Linklisten:
+046	Zuletzt geprüft
+047	Neueste Version auf GitHub
+048	Links für aktive Shop-Sprachen
+049	Gebietsschema
+050	Gültigkeit des einmaligen Links (Minuten)
+051	Wartung per CLI:
+052	Hauptschalter für die öffentlichen Widerrufsabläufe und kundenbezogenen Widerrufslinks. Das Deaktivieren löscht oder verändert keine bereits eingegangenen Widerrufe.
+053	Maximale Anzahl von Zugangslink-Anfragen für dieselbe normalisierte Bestellreferenz innerhalb von 24 Stunden.
+054	Maximale Anzahl von Zugangslink-Anfragen für dieselbe normalisierte Bestellreferenz innerhalb einer Stunde. Dies schützt das Kundenpostfach vor wiederholten Nachrichten.
+055	Maximale Länge der Kundennotiz
+056	Maximale Anzahl von Klartextzeichen in der optionalen Kundennotiz. HTML ist nicht zulässig. Empfohlener Standardwert: 2000.
+057	Maximale Anzahl von Bestellreferenz-Anfragen von einer pseudonymisierten IP-Adresse innerhalb von 15 Minuten. Erfolgreiche und erfolglose Suchen teilen sich denselben Grenzwert.
+058	Maximale Anzahl von Bestellreferenz-Anfragen von einer pseudonymisierten IP-Adresse innerhalb von 24 Stunden. Die unverarbeitete IP-Adresse wird nicht im rechtlichen Widerrufsnachweis gespeichert.
+059	Maximale Gesamtdauer einer verifizierten Gastsitzung, auch wenn der Kunde aktiv bleibt. Erwarteter Bereich: 15–1440 Minuten; empfohlener Standardwert: 120.
+060	Mindestwartezeit, bevor für dieselbe Bestellreferenz eine weitere Zugangs-E-Mail angefordert werden kann. Empfohlener Standardwert: 60 Sekunden.
+061	Moduldaten wurden dauerhaft gelöscht.
+062	Modul aktiviert
+063	Das Modul ist aktuell.
+064	Nein
+065	Es wurden keine aktiven Shop-Sprachen gefunden.
+066	Es werden keine Daten gelöscht, sofern der Wert nicht exakt DELETE lautet.
+067	Die normale Deinstallation des Moduls bewahrt Widerrufsdatensätze. Diese destruktive Aktion löscht alle Modultabellen.
+068	Anzahl automatischer Wiederholungsversuche nach dem Fehlschlagen einer Bestätigungs-E-Mail. Der Widerruf bleibt auch dann wirksam, wenn alle E-Mail-Versuche fehlschlagen.
+069	GitHub Releases öffnen
+070	Widerrufe öffnen
+071	Öffnet die Back-Office-Liste der eingegangenen Widerrufe einschließlich Status, Dokumenten, Erstattungsaufzeichnungen und Audit-Historie.
+072	Optionale Telefonnummer des Kundendienstes, die in der Bestätigung und der PDF-Datei angezeigt wird. Sie wird nicht zur Authentifizierung eines Widerrufs verwendet.
+073	Schaltfläche in Bestelldetails
+074	Ablauf über Bestellreferenz
+075	PHP 8.1 oder neuer ist erforderlich.
+076	Dauerhafte Datenlöschung
+077	Alle Moduldaten dauerhaft löschen
+078	Telefon
+079	Bevorzugte Methode für die geplante Wartung. Sie entfernt abgelaufene temporäre Datensätze, wiederholt ausstehende Bestätigungen und verarbeitet Aufbewahrungsaufgaben.
+080	URL der Datenschutzerklärung
+081	Öffentlicher Einstieg:
+082	Bestätigung der endgültigen Löschung
+083	Bereit. Erforderliche Sicherheitswerte und Modul-Hooks sind verfügbar.
+084	Referenzpräfix
+085	Update-Status aktualisieren
+086	Geschäftsanschrift
+087	Anfragen pro IP / 15 Minuten
+088	Anfragen pro IP / Tag
+089	Wartezeit bis zum erneuten Senden (Sekunden)
+090	Rücksendeadresse / Anweisungen
+091	Laufzeitkonfiguration:
+092	Einstellungen speichern
+093	Sichere Online-Ausübung und Verwaltung des Verbraucherwiderrufsrechts.
+094	Sicherheits-, Sitzungs- und Missbrauchsgrenzwerte
+095	Absolute Sitzungsgrenze (Minuten)
+096	Inaktivitätsgrenze der Sitzung (Minuten)
+097	Einstellungen gespeichert.
+098	Kurzer Code am Anfang der Widerrufsreferenzen. Verwenden Sie nur Buchstaben, Ziffern und Bindestriche, zum Beispiel WD. Bestehende Widerrufsreferenzen werden niemals geändert.
+099	Einige Laufzeitanforderungen konnten nicht synchronisiert werden. Prüfen Sie vor der öffentlichen Nutzung die PrestaShop-Protokolle.
+100	Startet den sicheren Ablauf anhand der Bestellreferenz. Der Kunde gibt nur die öffentliche Referenz ein; Bestell- und personenbezogene Daten bleiben verborgen, bis der einmalige E-Mail-Link bestätigt wurde.
+101	Unterstützte PrestaShop-Versionen sind 8.x und 9.x.
+102	Die Standardwerte sind bewusst konservativ. Erhöhen Sie die Grenzwerte erst nach Prüfung des tatsächlichen Datenverkehrs und der Missbrauchsprotokolle; zu niedrige Werte können berechtigte Verbraucher blockieren.
+103	Diese Werte identifizieren den tatsächlichen Verkäufer, der den ausgewählten Shop betreibt. Im Multistore werden sie pro Shop gespeichert und in Kundenbestätigungen sowie PDF-Nachweisen ausgegeben.
+104	Dieses kostenlose GitHub-Modul wird ohne individuellen technischen Support bereitgestellt. Installation, Konfiguration, Produktivtests, Updates und Fehlerbehebung sind für Kunden von Joobox PrestaShop Cloud oder einem anderen kostenpflichtigen Dienst verfügbar, der ausdrücklich mit JOO INTERNET MEDIA LTD vereinbart wurde.
+105	Händlerdaten – aktueller Shop
+106	Händlername
+107	Übersetzung
+108	DELETE eingeben
+109	Geben Sie DELETE ein, um die dauerhafte Datenlöschung zu bestätigen.
+110	Geben Sie exakt das Wort DELETE ein, um alle Widerrufe, Dokumente, die Audit-Historie, Zugriffsdatensätze und Erstattungsdatensätze zu entfernen. Dieser Vorgang kann nicht rückgängig gemacht werden und ist für eine normale Modulaktualisierung oder Neuinstallation nicht erforderlich.
+111	Die neueste Version auf GitHub konnte nicht überprüft werden. Prüfen Sie die Releases manuell.
+112	Unbekannt
+113	Update-Prüfung
+114	Die Aktualisierungsprüfung ist fehlgeschlagen: %error%
+115	Update-Status
+116	Verwenden Sie diese URLs in Modulen, die nur ein URL-Feld für alle Sprachen bereitstellen. Der Einstiegscontroller wählt die aktuelle oder bevorzugte Shopsprache und leitet auf den lokalisierten, lesbaren Pfad weiter.
+117	Verwenden Sie diese URL nur, wenn der Hostingdienst den CLI-Befehl nicht ausführen kann. Behandeln Sie das Token wie ein Passwort: Veröffentlichen Sie es nicht, senden Sie es nicht per E-Mail und verwenden Sie es nicht in öffentlicher Überwachung.
+118	Nur in einer entbehrlichen Testinstallation verwenden.
+119	Ja
+120	Nur Back-Office-Einstellungen

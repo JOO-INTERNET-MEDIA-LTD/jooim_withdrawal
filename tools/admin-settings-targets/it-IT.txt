@@ -98,7 +98,7 @@
 098	Codice breve usato all’inizio dei riferimenti di recesso. Utilizzare solo lettere, cifre e trattini, ad esempio WD. I riferimenti esistenti non vengono mai modificati.
 099	Non è stato possibile sincronizzare alcuni requisiti di runtime. Consultare i log PrestaShop prima dell’uso pubblico.
 100	Avvia il flusso sicuro tramite riferimento d’ordine. Il cliente inserisce solo il riferimento pubblico; i dati dell’ordine e quelli personali restano nascosti fino alla conferma del link e-mail monouso.
-101	Sono supportate le versioni PrestaShop da 8.1 a 9.1.
+101	Le versioni PrestaShop supportate sono 8.x e 9.x.
 102	I valori predefiniti sono volutamente prudenti. Aumentare i limiti solo dopo aver esaminato il traffico reale e i log degli abusi; valori troppo bassi possono bloccare consumatori legittimi.
 103	Questi valori identificano il venditore effettivo che gestisce il negozio selezionato. Nel multistore sono memorizzati per negozio e stampati nelle conferme al cliente e nelle prove PDF.
 104	Questo modulo GitHub gratuito è fornito senza assistenza tecnica individuale. Installazione, configurazione, test di produzione, aggiornamenti e risoluzione dei problemi sono disponibili per i clienti di Joobox PrestaShop Cloud o di un altro servizio a pagamento espressamente concordato con JOO INTERNET MEDIA LTD.

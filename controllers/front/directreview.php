@@ -51,7 +51,7 @@ class Jooim_WithdrawalDirectreviewModuleFrontController extends FrontControllerB
         } catch (\Throwable $e) {
             // JOOIM_WITHDRAWAL_CATCH_DIAGNOSTICS
             JooimWithdrawalRuntimeDiagnostics::report($e, __METHOD__);
-            $this->context->smarty->assign(['message_title' => $this->module->jooimTranslate('Unable to prepare withdrawal', [], 'Modules.Jooimwithdrawal.Shop'), 'message_text' => $e->getMessage()]);
+            $this->context->smarty->assign(['message_title' => $this->module->jooimTranslate('Unable to prepare withdrawal', [], 'Modules.Jooimwithdrawal.Shop'), 'message_text' => $this->module->jooimTranslate('Unable to prepare withdrawal', [], 'Modules.Jooimwithdrawal.Shop')]);
             $this->renderModule('message.tpl');
             return;
         }

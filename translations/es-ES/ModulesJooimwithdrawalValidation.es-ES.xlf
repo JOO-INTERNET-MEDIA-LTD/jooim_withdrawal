@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="file.ext" source-language="en-US" target-language="es-ES">
+    <body>
+      <trans-unit id="28487bbd545a693164e4472f2e40a03e" resname="The confirmation session expired. Please start again.">
+        <source>The confirmation session expired. Please start again.</source>
+        <target>La sesión de confirmación ha caducado. Empiece de nuevo.</target>
+      </trans-unit>
+      <trans-unit id="7fa2a070e29ea963e2994b3e78f6345a" resname="The form expired. Please start again.">
+        <source>The form expired. Please start again.</source>
+        <target>El formulario ha caducado. Empiece de nuevo.</target>
+      </trans-unit>
+      <trans-unit id="3a8a7102998325cbd0735a0730060b55" resname="The form expired. Please try again.">
+        <source>The form expired. Please try again.</source>
+        <target>El formulario ha caducado. Inténtelo de nuevo.</target>
+      </trans-unit>
+      <trans-unit id="25ac74e795a5d505b431d3d2e68a6ac7" resname="The verification page expired. Open the link from the email again.">
+        <source>The verification page expired. Open the link from the email again.</source>
+        <target>La página de verificación ha caducado. Abra de nuevo el enlace del correo.</target>
+      </trans-unit>
+      <trans-unit id="76088c5162ed7e04045d51e08d9a0bc3" resname="This access link is invalid, expired or already used.">
+        <source>This access link is invalid, expired or already used.</source>
+        <target>Este enlace de acceso no es válido, ha caducado o ya se ha utilizado.</target>
+      </trans-unit>
+      <trans-unit id="f6cc6be2d97fe34bc2d6344a64226965" resname="This confirmation link is invalid or expired.">
+        <source>This confirmation link is invalid or expired.</source>
+        <target>Este enlace de confirmación no es válido o ha caducado.</target>
+      </trans-unit>
+      <trans-unit id="66b12941aafba2d0d6104964a86ed979" resname="This status link is invalid or expired.">
+        <source>This status link is invalid or expired.</source>
+        <target>Este enlace de estado no es válido o ha caducado.</target>
+      </trans-unit>
+      <trans-unit id="e6e10a5ac9a894ab82f50a3b6e3d4ceb" resname="Your secure order session expired. Please request a new access link.">
+        <source>Your secure order session expired. Please request a new access link.</source>
+        <target>Su sesión segura ha caducado. Solicite un nuevo enlace de acceso.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
 """Validate JOOIM Withdrawal translation catalogues and localized mail templates.
 
-The validation distinguishes two scopes:
-
-* complete customer-facing catalogues: en-US, sk-SK, cs-CZ, de-DE, fr-FR,
-  pl-PL (Admin, Shop, Email, Pdf and Validation);
-* Back Office settings catalogues: all packaged EU/US/Canada/Ukrainian locales.
-
-This prevents a settings-only catalogue from being misrepresented as a complete
-front-office/legal translation while still enforcing the requested Back Office
-coverage for every packaged locale.
+Every supported locale must contain all five domains and localized mail
+text. English is authoritative; structural completeness, placeholder parity
+and long English prose fallbacks are enforced for the full locale manifest.
 """
 
 from __future__ import annotations
@@ -24,13 +18,9 @@ ROOT = Path(__file__).resolve().parents[1]
 TRANSLATIONS = ROOT / "translations"
 ADMIN_SOURCES_FILE = ROOT / "tools" / "admin_settings_sources.json"
 STATUS_LABELS_FILE = ROOT / "tools" / "status_label_translations.json"
-FULL_LOCALES = ["en-US", "sk-SK", "cs-CZ", "de-DE", "fr-FR", "pl-PL"]
-ADMIN_LOCALES = [
-    "bg-BG", "cs-CZ", "da-DK", "de-DE", "el-GR", "en-CA", "en-GB", "en-US",
-    "es-ES", "et-EE", "fi-FI", "fr-CA", "fr-FR", "ga-IE", "hr-HR", "hu-HU",
-    "it-IT", "lt-LT", "lv-LV", "mt-MT", "nl-NL", "pl-PL", "pt-PT", "ro-RO",
-    "sk-SK", "sl-SI", "sv-SE", "uk-UA",
-]
+LOCALE_MAIL = json.loads((ROOT / "tools" / "locales.json").read_text(encoding="utf-8"))
+FULL_LOCALES = ["en-US"] + sorted(set(LOCALE_MAIL) - {"en-US"})
+ADMIN_LOCALES = sorted(LOCALE_MAIL)
 FULL_DOMAINS = ["Admin", "Shop", "Email", "Pdf", "Validation"]
 XLIFF_NS = {"x": "urn:oasis:names:tc:xliff:document:1.2"}
 PLACEHOLDER_RE = re.compile(r"%(?:[A-Za-z_][A-Za-z0-9_]*|\d+)%|\{[A-Za-z_][A-Za-z0-9_]*\}")
@@ -139,9 +129,14 @@ def validate_complete_catalogues(errors: list[str]) -> None:
                 continue
             catalogues[locale] = entries
 
-            if locale != "en-US":
+            if locale not in {"en-US", "en-GB", "en-CA"}:
                 identical = {source for source, target in entries.items() if source == target}
-                allowed = ALLOWED_IDENTICAL.get((locale, domain), set())
+                base_locale = {"fr-CA": "fr-FR", "fr-BE": "fr-FR", "de-BE": "de-DE", "nl-BE": "nl-NL", "no-NO": "nb-NO"}.get(locale, locale)
+                allowed = ALLOWED_IDENTICAL.get((base_locale, domain), set())
+                # New languages can legitimately share short words with English
+                # (e.g. Status, Email). Long unchanged prose is never accepted.
+                if base_locale not in {"sk-SK", "cs-CZ", "de-DE", "fr-FR", "pl-PL"}:
+                    allowed = {value for value in identical if len(value) <= 20}
                 unexpected = identical - allowed
                 missing_expected = allowed - identical
                 if unexpected:
@@ -274,7 +269,7 @@ def validate_status_labels(errors: list[str]) -> tuple[int, int]:
     return len(status_sources), len(event_sources)
 
 def validate_mail_templates(errors: list[str]) -> int:
-    languages = ["en", "sk", "cs", "de", "fr", "pl"]
+    languages = sorted(set(LOCALE_MAIL.values()))
     total = 0
     for extension in ("html", "txt"):
         source_files = sorted((ROOT / "mails" / "en").glob(f"*.{extension}"))

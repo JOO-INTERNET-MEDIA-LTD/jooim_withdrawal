@@ -1,0 +1,8 @@
+Hallo {firstname},
+
+Gebruik deze link om door te gaan naar de beveiligde online herroepingsprocedure:
+Doorgaan naar herroeping: {access_url}
+
+De link is {expires_minutes} minuten geldig. Alleen openen maakt hem niet ongeldig; u bevestigt het vervolg op de volgende pagina.
+
+Als u deze link niet heeft aangevraagd, kunt u dit bericht negeren.

@@ -1,0 +1,28 @@
+Kvittering for aftalefortrydelse
+
+Vi bekræfter modtagelsen af din meddelelse om fortrydelse af aftalen.
+Fortrydelsesreference: {withdrawal_reference}
+Ordre / aftale: {order_reference}
+Forbruger: {firstname} {lastname}
+Elektronisk kontakt: {customer_email}
+Modtagelsesdato og -tid: {submitted_at}
+Modtagelsestid UTC: {submitted_at_utc}
+Omfang: {scope}
+
+Indsendelsens indhold / varer:
+{items_text}
+
+Erklæring:
+{statement}
+
+Erhvervsdrivende:
+{merchant_name}
+{merchant_address}
+{merchant_identifier}
+{merchant_email}
+
+Returadresse / vejledning:
+{return_address}
+
+Gem denne kvittering. Den bekræfter indholdet, datoen og tidspunktet for din online meddelelse.
+SHA-256-hash for uforanderligt øjebliksbillede: {payload_hash}

@@ -1,10 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en-US" target-language="da-DK" datatype="plaintext" original="file.ext">
+  <file datatype="plaintext" original="file.ext" source-language="en-US" target-language="da-DK">
     <body>
       <trans-unit id="105639f6b7c568ce5ecf630b6d196109" resname="A new module version is available.">
         <source>A new module version is available.</source>
         <target>En ny modulversion er tilgængelig.</target>
+      </trans-unit>
+      <trans-unit id="268c4326ce709c26101b720ed5e6738a" resname="A rejection requires a customer-facing reason.">
+        <source>A rejection requires a customer-facing reason.</source>
+        <target>En afvisning kræver en begrundelse til kunden.</target>
+      </trans-unit>
+      <trans-unit id="f9ee61c14e2a0ff9e4a1dac8c187e4b9" resname="Acknowledgement email could not be sent.">
+        <source>Acknowledgement email could not be sent.</source>
+        <target>Kvitteringsmailen kunne ikke sendes.</target>
       </trans-unit>
       <trans-unit id="b574958c30b5ba01314361601475b0d7" resname="Acknowledgement retry count">
         <source>Acknowledgement retry count</source>
@@ -14,6 +22,10 @@
         <source>Acknowledgement sent again</source>
         <target>Bekræftelse sendt igen</target>
       </trans-unit>
+      <trans-unit id="9b94f4f2343959f4c7dcd5b00b8524dc" resname="Acknowledgement sent.">
+        <source>Acknowledgement sent.</source>
+        <target>Kvittering sendt.</target>
+      </trans-unit>
       <trans-unit id="4e229fb322d31d83c5a5c3564e3a31cf" resname="Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.">
         <source>Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.</source>
         <target>Tilføjer et punkt om fortrydelse i kundens Min konto-område. Kunden kan stadig bruge det offentlige forløb, når ordren ikke er synlig på kontoen.</target>
@@ -22,9 +34,17 @@
         <source>Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.</source>
         <target>Tilføjer knappen »Fortryd aftalen« til detaljerne for en ordre, der tilhører den indloggede kunde. Ejerskabet kontrolleres på serveren.</target>
       </trans-unit>
+      <trans-unit id="96e3d398260724e0a83da53a2e9f20e7" resname="All statuses">
+        <source>All statuses</source>
+        <target>Alle statusser</target>
+      </trans-unit>
       <trans-unit id="b66759fdefd03410fcc05c0a0cfb1617" resname="Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.">
         <source>Allows the consumer to submit an unequivocal withdrawal without signing in or displaying order data. Keep this function available for applicable online B2C contracts.</source>
         <target>Gør det muligt for forbrugeren at afgive en utvetydig meddelelse om fortrydelse uden at logge ind eller få vist ordredata. Bevar funktionen tilgængelig for relevante online B2C-aftaler.</target>
+      </trans-unit>
+      <trans-unit id="b2f40690858b404ed10e62bdf422c704" resname="Amount">
+        <source>Amount</source>
+        <target>Beløb</target>
       </trans-unit>
       <trans-unit id="48f420a5ab439f6afaefd045a2e36186" resname="Attach PDF acknowledgement">
         <source>Attach PDF acknowledgement</source>
@@ -33,6 +53,14 @@
       <trans-unit id="7395a545f8e75cb154506f525d21ac7f" resname="Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.">
         <source>Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.</source>
         <target>Vedhæfter den uforanderlige PDF-bekræftelse af fortrydelsen til kvitteringsmailen. Deaktivering af vedhæftningen fjerner ikke den beskyttede PDF, der er gemt sammen med sagen.</target>
+      </trans-unit>
+      <trans-unit id="4174b43fcb77c71147154d70e243a3b4" resname="Audit history">
+        <source>Audit history</source>
+        <target>Revisionshistorik</target>
+      </trans-unit>
+      <trans-unit id="630c3dd335d95f0e17dc7598c29a18ad" resname="Available at submission">
+        <source>Available at submission</source>
+        <target>Tilgængelig ved indsendelse</target>
       </trans-unit>
       <trans-unit id="08fc26d02a0a34750fa794c9210ea617" resname="Back Office settings only">
         <source>Back Office settings only</source>
@@ -46,6 +74,10 @@
         <source>Cases:</source>
         <target>Sager:</target>
       </trans-unit>
+      <trans-unit id="af5519d5b46da35f34c10fb4a6fb97b4" resname="Change status">
+        <source>Change status</source>
+        <target>Skift status</target>
+      </trans-unit>
       <trans-unit id="4608ac7d9d0cee7eca9bd8e6924a7ccd" resname="Company identifier">
         <source>Company identifier</source>
         <target>Virksomhedsidentifikator</target>
@@ -54,17 +86,53 @@
         <source>Confirmation sent</source>
         <target>Bekræftelse sendt</target>
       </trans-unit>
+      <trans-unit id="47af0d5c5812f2809b0c01a3a8dfe33b" resname="Consumer-described selected part:">
+        <source>Consumer-described selected part:</source>
+        <target>Den valgte del beskrevet af forbrugeren:</target>
+      </trans-unit>
+      <trans-unit id="db3c3b36681eab376d98d90a8a717cf1" resname="Contract withdrawals">
+        <source>Contract withdrawals</source>
+        <target>Fortrydelse af aftaler</target>
+      </trans-unit>
+      <trans-unit id="304dcfa3d299ecc6138e6896cad81aa1" resname="Create manual withdrawal">
+        <source>Create manual withdrawal</source>
+        <target>Opret manuel fortrydelse</target>
+      </trans-unit>
+      <trans-unit id="7c947294fb915010b326d1bc14717fef" resname="Create manual withdrawal record">
+        <source>Create manual withdrawal record</source>
+        <target>Opret manuel registrering af fortrydelse</target>
+      </trans-unit>
       <trans-unit id="68af74b08d0a6bef3a7cab83b43007a8" resname="Current module version">
         <source>Current module version</source>
         <target>Aktuel modulversion</target>
+      </trans-unit>
+      <trans-unit id="ce26601dac0dea138b7295f02b7620a7" resname="Customer">
+        <source>Customer</source>
+        <target>Kunde</target>
       </trans-unit>
       <trans-unit id="cf67f8ec1757747174f522cedbd0a3ef" resname="Customer account link">
         <source>Customer account link</source>
         <target>Link på kundekontoen</target>
       </trans-unit>
+      <trans-unit id="b0fb0ac18cc9bf4311d1157aff04c28a" resname="Customer and statement">
+        <source>Customer and statement</source>
+        <target>Kunde og erklæring</target>
+      </trans-unit>
+      <trans-unit id="03361eda68f746619c2ae3341eaa2f07" resname="Customer email">
+        <source>Customer email</source>
+        <target>Kundens e-mail</target>
+      </trans-unit>
       <trans-unit id="e299b273bfe65f12d5c5e635a00d0d08" resname="Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.">
         <source>Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.</source>
         <target>Kundevendt kontaktadresse til kommunikation om fortrydelse. Brug en aktivt overvåget postkasse; indtast ikke kundens e-mailadresse her.</target>
+      </trans-unit>
+      <trans-unit id="af70c9cb6796dcfe2978ce8f010e3012" resname="Customer-facing reason/message (required for rejected)">
+        <source>Customer-facing reason/message (required for rejected)</source>
+        <target>Begrundelse/besked til kunden (påkrævet ved afvisning)</target>
+      </trans-unit>
+      <trans-unit id="44749712dbec183e983dcd78a7736c41" resname="Date">
+        <source>Date</source>
+        <target>Dato</target>
       </trans-unit>
       <trans-unit id="0f4dd5b31b2621c3867dbdc20bcfd6fb" resname="Direct Article 11a function">
         <source>Direct Article 11a function</source>
@@ -90,6 +158,10 @@
         <source>Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.</source>
         <target>Viser det kundevendte link »Fortryd aftalen her« i butikkens sidefod. Dette juridiske funktionslink er uafhængigt af Joobox-markedsføringskrediteringen.</target>
       </trans-unit>
+      <trans-unit id="ed3c66fffe366c0a2353128130774532" resname="Documents and acknowledgement">
+        <source>Documents and acknowledgement</source>
+        <target>Dokumenter og kvittering</target>
+      </trans-unit>
       <trans-unit id="00c6156d5f4d21eecf8aca0c3972d4a0" resname="Duplicate submission">
         <source>Duplicate submission</source>
         <target>Dubletindsendelse</target>
@@ -109,6 +181,10 @@
       <trans-unit id="199baa0f4d93ce8c32c2a0eeec862d48" resname="Emails per order / hour">
         <source>Emails per order / hour</source>
         <target>E-mails pr. ordre / time</target>
+      </trans-unit>
+      <trans-unit id="f8c8b903cb2e4f297e4b96d4b9c1e98a" resname="Employee">
+        <source>Employee</source>
+        <target>Medarbejder</target>
       </trans-unit>
       <trans-unit id="00d23a76e43b46dae9ec7aa9dcbebb32" resname="Enabled">
         <source>Enabled</source>
@@ -150,6 +226,22 @@
         <source>EU compliance note (2026):</source>
         <target>Bemærkning om EU-overholdelse (2026):</target>
       </trans-unit>
+      <trans-unit id="a4ecfc70574394990cf17bd83df499f7" resname="Event">
+        <source>Event</source>
+        <target>Hændelse</target>
+      </trans-unit>
+      <trans-unit id="c04f1e4841a6af78088d6ccf6f3a8a76" resname="Export CSV">
+        <source>Export CSV</source>
+        <target>Eksportér CSV</target>
+      </trans-unit>
+      <trans-unit id="d7778d0c64b6ba21494c97f77a66885a" resname="Filter">
+        <source>Filter</source>
+        <target>Filter</target>
+      </trans-unit>
+      <trans-unit id="20db0bfeecd8fe60533206a2b5e9891a" resname="First name">
+        <source>First name</source>
+        <target>Fornavn</target>
+      </trans-unit>
       <trans-unit id="162a905374d1a34924bb5845530d885b" resname="Footer link (keep enabled for applicable online B2C contracts)">
         <source>Footer link (keep enabled for applicable online B2C contracts)</source>
         <target>Link i sidefod (bevar aktiveret for relevante online B2C-aftaler)</target>
@@ -162,6 +254,10 @@
         <source>For PrestaShop installation, do not use GitHub automatic "Source code ZIP". Use only the installation ZIP file from the release assets.</source>
         <target>Ved installation i PrestaShop må GitHubs automatiske »Source code ZIP« ikke bruges. Brug kun installations-ZIP-filen fra udgivelsesaktiverne.</target>
       </trans-unit>
+      <trans-unit id="654fdd5a7e99e04b2f77b011cc80c368" resname="For withdrawals received by email, post, in person or another channel. This creates the same immutable submission record and sends an acknowledgement to the entered email.">
+        <source>For withdrawals received by email, post, in person or another channel. This creates the same immutable submission record and sends an acknowledgement to the entered email.</source>
+        <target>Til fortrydelser modtaget via e-mail, post, personligt eller en anden kanal. Dette opretter samme uforanderlige registrering og sender en kvittering til den indtastede e-mailadresse.</target>
+      </trans-unit>
       <trans-unit id="4a746ff7cde7d7d2d280c05dafad842c" resname="General and legal availability">
         <source>General and legal availability</source>
         <target>Generel og juridisk tilgængelighed</target>
@@ -169,6 +265,10 @@
       <trans-unit id="189797bb7c7c6b6ffecb05ab1583781a" resname="Get Joobox support">
         <source>Get Joobox support</source>
         <target>Få Joobox-support</target>
+      </trans-unit>
+      <trans-unit id="51b0eaa3e1c15a791ac16b9b87a03e98" resname="GitHub check failed: %error%">
+        <source>GitHub check failed: %error%</source>
+        <target>GitHub-kontrollen mislykkedes: %error%</target>
       </trans-unit>
       <trans-unit id="19939b44c683468d1479c9cf5d506e61" resname="GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.">
         <source>GitHub checks are performed at most once every six hours unless manually refreshed. The module never downloads or installs code automatically.</source>
@@ -182,13 +282,53 @@
         <source>How long the one-time email access link remains usable. Expected range: 5–240 minutes; recommended default: 30.</source>
         <target>Hvor længe engangslinket i e-mailen kan bruges. Forventet interval: 5–240 minutter; anbefalet standard: 30.</target>
       </trans-unit>
+      <trans-unit id="66649430c5856289b11ea03f9fe80202" resname="Immutable snapshot">
+        <source>Immutable snapshot</source>
+        <target>Uforanderligt øjebliksbillede</target>
+      </trans-unit>
       <trans-unit id="984ceac16fab685fc50b8d8a5eabf7de" resname="Included">
         <source>Included</source>
         <target>Inkluderet</target>
       </trans-unit>
+      <trans-unit id="08643daceac5930a01274e8e41de11b3" resname="Internal note">
+        <source>Internal note</source>
+        <target>Intern note</target>
+      </trans-unit>
+      <trans-unit id="9ba8da419f01d0c1b27e666e6101f589" resname="Invalid CSRF token.">
+        <source>Invalid CSRF token.</source>
+        <target>Ugyldigt CSRF-token.</target>
+      </trans-unit>
+      <trans-unit id="1b528a2959fbc9757cecd2ffc16324e3" resname="Invalid refund data.">
+        <source>Invalid refund data.</source>
+        <target>Ugyldige refusionsdata.</target>
+      </trans-unit>
+      <trans-unit id="195d3ae3b14a4f76fa9d6a5917d97348" resname="Invalid settings. Check the entered values.">
+        <source>Invalid settings. Check the entered values.</source>
+        <target>Ugyldige indstillinger. Kontrollér de indtastede værdier.</target>
+      </trans-unit>
+      <trans-unit id="40ab5ce84dfc50660dcd413a05aa7311" resname="Invalid withdrawal or status.">
+        <source>Invalid withdrawal or status.</source>
+        <target>Ugyldig fortrydelse eller status.</target>
+      </trans-unit>
+      <trans-unit id="526af3e106c4eafa29b03f254896f859" resname="IP / 15 min">
+        <source>IP / 15 min</source>
+        <target>IP / 15 min.</target>
+      </trans-unit>
+      <trans-unit id="004d4043fae208c108b8838e6ba37f85" resname="IP / day">
+        <source>IP / day</source>
+        <target>IP / dag</target>
+      </trans-unit>
+      <trans-unit id="9dea4016dbcc290b773ab2fae678aaa8" resname="Items">
+        <source>Items</source>
+        <target>Varer</target>
+      </trans-unit>
       <trans-unit id="f7266ba0eb429463c24906863d97f74d" resname="Joobox support for this module">
         <source>Joobox support for this module</source>
         <target>Joobox-support til dette modul</target>
+      </trans-unit>
+      <trans-unit id="af6dd5afdfd071c1f0d57ab94e232856" resname="JOOIM Withdrawal">
+        <source>JOOIM Withdrawal</source>
+        <target>JOOIM Withdrawal</target>
       </trans-unit>
       <trans-unit id="0d2a03417d12c0922f7c8f09a8866cdd" resname="JOOIM Withdrawal – Online Contract Withdrawal">
         <source>JOOIM Withdrawal – Online Contract Withdrawal</source>
@@ -206,6 +346,10 @@
         <source>Last checked</source>
         <target>Senest kontrolleret</target>
       </trans-unit>
+      <trans-unit id="8d3f5eff9c40ee315d452392bed5309b" resname="Last name">
+        <source>Last name</source>
+        <target>Efternavn</target>
+      </trans-unit>
       <trans-unit id="90725f7a92bc20cc7d26c20261af79da" resname="Latest version on GitHub">
         <source>Latest version on GitHub</source>
         <target>Seneste version på GitHub</target>
@@ -218,6 +362,10 @@
         <source>Locale</source>
         <target>Landestandard</target>
       </trans-unit>
+      <trans-unit id="b968b93199b571b7ece13100627c65ce" resname="Magic link (minutes)">
+        <source>Magic link (minutes)</source>
+        <target>Engangslink (minutter)</target>
+      </trans-unit>
       <trans-unit id="f176436ebc257cd47b923ebfcf43ffb7" resname="Magic link validity (minutes)">
         <source>Magic link validity (minutes)</source>
         <target>Gyldighed af magic link (minutter)</target>
@@ -225,6 +373,10 @@
       <trans-unit id="42315b8de2a717eced9b289382e286f7" resname="Maintenance CLI:">
         <source>Maintenance CLI:</source>
         <target>Vedligeholdelses-CLI:</target>
+      </trans-unit>
+      <trans-unit id="c89e0d109eb50aa27826f97650626ba5" resname="Manual withdrawal created: %reference%">
+        <source>Manual withdrawal created: %reference%</source>
+        <target>Manuel fortrydelse oprettet: %reference%</target>
       </trans-unit>
       <trans-unit id="feb2d01c3d55ad9d1e7478f2ecc6ee46" resname="Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.">
         <source>Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.</source>
@@ -258,6 +410,10 @@
         <source>Maximum total lifetime of a verified guest session even when the customer remains active. Expected range: 15–1440 minutes; recommended default: 120.</source>
         <target>Maksimal samlet levetid for en verificeret gæstesession, selv når kunden fortsat er aktiv. Forventet interval: 15–1440 minutter; anbefalet standard: 120.</target>
       </trans-unit>
+      <trans-unit id="4c3880bb027f159e801041b1021e88e8" resname="Method">
+        <source>Method</source>
+        <target>Metode</target>
+      </trans-unit>
       <trans-unit id="f4c9d126deaeb00d98b2a3b5c98e1592" resname="Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.">
         <source>Minimum delay before another access email can be requested for the same order reference. Recommended default: 60 seconds.</source>
         <target>Mindste ventetid, før der kan anmodes om endnu en adgangsmail for samme ordrereference. Anbefalet standard: 60 sekunder.</target>
@@ -274,6 +430,14 @@
         <source>Module is up to date.</source>
         <target>Modulet er opdateret.</target>
       </trans-unit>
+      <trans-unit id="03c2e7e41ffc181a4e84080b4710e81e" resname="New">
+        <source>New</source>
+        <target>Ny</target>
+      </trans-unit>
+      <trans-unit id="10ac3d04253ef7e1ddc73e6091c0cd55" resname="Next">
+        <source>Next</source>
+        <target>Næste</target>
+      </trans-unit>
       <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b" resname="No">
         <source>No</source>
         <target>Nej</target>
@@ -286,17 +450,49 @@
         <source>No data is deleted unless the value is exactly DELETE.</source>
         <target>Ingen data slettes, medmindre værdien er præcis DELETE.</target>
       </trans-unit>
+      <trans-unit id="1f7a0c5b4c101b6a284babc2131c6851" resname="No document generated.">
+        <source>No document generated.</source>
+        <target>Intet dokument genereret.</target>
+      </trans-unit>
+      <trans-unit id="1da7b8886c6f961e1bf9371aa6a6ca86" resname="No refund recorded.">
+        <source>No refund recorded.</source>
+        <target>Ingen refusion registreret.</target>
+      </trans-unit>
+      <trans-unit id="ec5b7d60738dbda7bd5645a78bbf9b6b" resname="No structured order items in this submission. Review the immutable snapshot/manual description.">
+        <source>No structured order items in this submission. Review the immutable snapshot/manual description.</source>
+        <target>Ingen strukturerede ordrevarer i denne indsendelse. Gennemgå det uforanderlige øjebliksbillede/den manuelle beskrivelse.</target>
+      </trans-unit>
+      <trans-unit id="c2b5540a62dddd2d5cb872d057c0d77c" resname="No withdrawal submissions linked to this order.">
+        <source>No withdrawal submissions linked to this order.</source>
+        <target>Ingen fortrydelser knyttet til denne ordre.</target>
+      </trans-unit>
+      <trans-unit id="72e52e04a4f7ccf38931435e564a4074" resname="No withdrawals found.">
+        <source>No withdrawals found.</source>
+        <target>Ingen fortrydelser fundet.</target>
+      </trans-unit>
       <trans-unit id="647583f74c004a3c608af12e603c8544" resname="Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.">
         <source>Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.</source>
         <target>Normal afinstallation af modulet bevarer fortrydelsesregistreringerne. Denne destruktive handling fjerner alle modulets tabeller.</target>
+      </trans-unit>
+      <trans-unit id="fc9d3df613063ee57906c461320744e2" resname="Note:">
+        <source>Note:</source>
+        <target>Note:</target>
       </trans-unit>
       <trans-unit id="8d2dd0c91251585950bc6ba2ab52108b" resname="Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.">
         <source>Number of automatic resend attempts after an acknowledgement email fails. The withdrawal remains valid even when all email attempts fail.</source>
         <target>Antal automatiske genforsøg efter en mislykket kvitteringsmail. Fortrydelsen forbliver gyldig, selv når alle e-mailforsøg mislykkes.</target>
       </trans-unit>
+      <trans-unit id="c7268757fbabf48019f4984933539d8a" resname="Old">
+        <source>Old</source>
+        <target>Gammel</target>
+      </trans-unit>
       <trans-unit id="8c912169e1c01fceba3bc0758f956fe5" resname="Open GitHub Releases">
         <source>Open GitHub Releases</source>
         <target>Åbn GitHub-udgivelser</target>
+      </trans-unit>
+      <trans-unit id="1a67ec720a1d8372ddd0822ef96f1b64" resname="Open PrestaShop order">
+        <source>Open PrestaShop order</source>
+        <target>Åbn PrestaShop-ordre</target>
       </trans-unit>
       <trans-unit id="9d60cfba7dfc18f815cafc70ac701571" resname="Open withdrawals">
         <source>Open withdrawals</source>
@@ -310,17 +506,53 @@
         <source>Optional customer-service phone number shown in the acknowledgement and PDF. It is not used to authenticate a withdrawal.</source>
         <target>Valgfrit kundeservicetelefonnummer, der vises i kvitteringen og PDF-filen. Det bruges ikke til at godkende en fortrydelse.</target>
       </trans-unit>
+      <trans-unit id="a240fa27925a635b08dc28c9e4f9216d" resname="Order">
+        <source>Order</source>
+        <target>Ordre</target>
+      </trans-unit>
+      <trans-unit id="5e2a92fd3b291af5d7b511bb84a49d41" resname="Order / day">
+        <source>Order / day</source>
+        <target>Ordre / dag</target>
+      </trans-unit>
+      <trans-unit id="7f5ebe0cfb5428ee32b97a0788e7725f" resname="Order / hour">
+        <source>Order / hour</source>
+        <target>Ordre / time</target>
+      </trans-unit>
       <trans-unit id="91d0c684934e62d6e3e871cf760ab1a5" resname="Order detail button">
         <source>Order detail button</source>
         <target>Knap i ordredetaljer</target>
+      </trans-unit>
+      <trans-unit id="5d4710f9a8250b13164a82c94d5b00d1" resname="Order reference">
+        <source>Order reference</source>
+        <target>Ordrereference</target>
       </trans-unit>
       <trans-unit id="e3226110b52a3a391cf9723cedf9afa9" resname="Order-reference flow">
         <source>Order-reference flow</source>
         <target>Forløb efter ordrereference</target>
       </trans-unit>
+      <trans-unit id="2ca3deb5cd68fa9119b285804fab572f" resname="Order:">
+        <source>Order:</source>
+        <target>Ordre:</target>
+      </trans-unit>
+      <trans-unit id="26e09a1ee1517389c7b07f42df65561a" resname="Ordered">
+        <source>Ordered</source>
+        <target>Bestilt</target>
+      </trans-unit>
+      <trans-unit id="1af3e9855f57b6150f592f1f21263797" resname="Original content / internal transcription">
+        <source>Original content / internal transcription</source>
+        <target>Oprindeligt indhold / intern transskription</target>
+      </trans-unit>
+      <trans-unit id="193cfc9be3b995831c6af2fea6650e60" resname="Page">
+        <source>Page</source>
+        <target>Side</target>
+      </trans-unit>
       <trans-unit id="9f004157e4c148dac71da3ae5906351f" resname="Partially refunded">
         <source>Partially refunded</source>
         <target>Delvist tilbagebetalt</target>
+      </trans-unit>
+      <trans-unit id="1901606ea069a83dc7beea17881ef95a" resname="Period">
+        <source>Period</source>
+        <target>Periode</target>
       </trans-unit>
       <trans-unit id="389d382a151949ccbc613f148039f243" resname="Permanent data purge">
         <source>Permanent data purge</source>
@@ -342,13 +574,37 @@
         <source>Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.</source>
         <target>Foretrukken metode til planlagt vedligeholdelse. Den fjerner udløbne midlertidige registreringer, forsøger igen med ventende kvitteringer og behandler opbevaringsopgaver.</target>
       </trans-unit>
+      <trans-unit id="5dad06022a13741684f43ae813e96f81" resname="PrestaShop 8.1 or newer is required.">
+        <source>PrestaShop 8.1 or newer is required.</source>
+        <target>PrestaShop 8.1 eller nyere er påkrævet.</target>
+      </trans-unit>
+      <trans-unit id="5d07c1cb067f1d63d70bcf9ca59c914d" resname="PrestaShop keeps the module route slug identical in every language and adds the language prefix. Test both links in every active language after deployment.">
+        <source>PrestaShop keeps the module route slug identical in every language and adds the language prefix. Test both links in every active language after deployment.</source>
+        <target>PrestaShop bevarer samme modulsti på alle sprog og tilføjer sprogpræfikset. Test begge links på alle aktive sprog efter installation.</target>
+      </trans-unit>
+      <trans-unit id="dd1f775e443ff3b9a89270713580a51b" resname="Previous">
+        <source>Previous</source>
+        <target>Forrige</target>
+      </trans-unit>
       <trans-unit id="4e86c1fd72fe463cdbe67c5704dbd4d9" resname="Privacy policy URL">
         <source>Privacy policy URL</source>
         <target>URL til privatlivspolitik</target>
       </trans-unit>
+      <trans-unit id="66dc0eb61ab4157d6170494e6841a77a" resname="Private note">
+        <source>Private note</source>
+        <target>Privat note</target>
+      </trans-unit>
+      <trans-unit id="deb10517653c255364175796ace3553f" resname="Product">
+        <source>Product</source>
+        <target>Produkt</target>
+      </trans-unit>
       <trans-unit id="fed94c98dce5cf7158450628d5f232c6" resname="Public entry:">
         <source>Public entry:</source>
         <target>Offentlig indgang:</target>
+      </trans-unit>
+      <trans-unit id="7f9b432a499e6ac8e42368ce5140094e" resname="Public message">
+        <source>Public message</source>
+        <target>Offentlig besked</target>
       </trans-unit>
       <trans-unit id="dc16a594f0069adea19ca1b5a4230fc7" resname="Purge confirmation">
         <source>Purge confirmation</source>
@@ -357,6 +613,18 @@
       <trans-unit id="32cf24c131e8c90129bc9dc6252c6003" resname="Ready. Required security values and module hooks are available.">
         <source>Ready. Required security values and module hooks are available.</source>
         <target>Klar. Nødvendige sikkerhedsværdier og modulhooks er tilgængelige.</target>
+      </trans-unit>
+      <trans-unit id="e8599811adec0dfdf2a7a0699c43b2dc" resname="Received method">
+        <source>Received method</source>
+        <target>Modtagelsesmetode</target>
+      </trans-unit>
+      <trans-unit id="412aab712ec735299ce9c0973e847c8d" resname="Record refund">
+        <source>Record refund</source>
+        <target>Registrér refusion</target>
+      </trans-unit>
+      <trans-unit id="63d5049791d9d79d86e9a108b0a999ca" resname="Reference">
+        <source>Reference</source>
+        <target>Reference</target>
       </trans-unit>
       <trans-unit id="e42f6e063d74ea96cf2c30f2552d208f" resname="Reference prefix">
         <source>Reference prefix</source>
@@ -370,6 +638,10 @@
         <source>Refund completed</source>
         <target>Tilbagebetaling gennemført</target>
       </trans-unit>
+      <trans-unit id="3c4b7077e097b109dd3efa51a3e2ef37" resname="Refund could not be recorded.">
+        <source>Refund could not be recorded.</source>
+        <target>Refusionen kunne ikke registreres.</target>
+      </trans-unit>
       <trans-unit id="26d3b43de693b9d47c36dee1035a46a8" resname="Refund pending">
         <source>Refund pending</source>
         <target>Tilbagebetaling afventer</target>
@@ -377,6 +649,14 @@
       <trans-unit id="18c16aedc5678290d3f50d8b0bd198f1" resname="Refund recorded">
         <source>Refund recorded</source>
         <target>Tilbagebetaling registreret</target>
+      </trans-unit>
+      <trans-unit id="0298b88ff296131e6e6d7930dd94bed0" resname="Refund recorded.">
+        <source>Refund recorded.</source>
+        <target>Refusion registreret.</target>
+      </trans-unit>
+      <trans-unit id="53beb26d8bca00f56fbd295fdee83459" resname="Refunds">
+        <source>Refunds</source>
+        <target>Refusioner</target>
       </trans-unit>
       <trans-unit id="e6fa03f0b7eb9b39761dd40a3b395334" resname="Registered address">
         <source>Registered address</source>
@@ -389,6 +669,10 @@
       <trans-unit id="3e5fbf238d7169b08b1620f5c0ed538e" resname="Requests per IP / day">
         <source>Requests per IP / day</source>
         <target>Anmodninger pr. IP / dag</target>
+      </trans-unit>
+      <trans-unit id="34e1bed6437ba95a13f1db8dbd1e1a82" resname="Resend acknowledgement">
+        <source>Resend acknowledgement</source>
+        <target>Gensend kvittering</target>
       </trans-unit>
       <trans-unit id="2549e08c454fe021bf7ef601efd389f9" resname="Resend cooldown (seconds)">
         <source>Resend cooldown (seconds)</source>
@@ -410,45 +694,97 @@
         <source>Save settings</source>
         <target>Gem indstillinger</target>
       </trans-unit>
+      <trans-unit id="5d113f2038d289f391614c39043629e8" resname="Scope">
+        <source>Scope</source>
+        <target>Omfang</target>
+      </trans-unit>
       <trans-unit id="508878a506066b8fadfa321807415ee0" resname="Secure online exercise and administration of the consumer right of withdrawal.">
         <source>Secure online exercise and administration of the consumer right of withdrawal.</source>
         <target>Sikker onlineudøvelse og administration af forbrugerens fortrydelsesret.</target>
+      </trans-unit>
+      <trans-unit id="e74bf385c61436303415333107e12513" resname="Security and limits">
+        <source>Security and limits</source>
+        <target>Sikkerhed og grænser</target>
       </trans-unit>
       <trans-unit id="2801f11e30091ea7db27772359285c58" resname="Security, session and abuse limits">
         <source>Security, session and abuse limits</source>
         <target>Sikkerheds-, sessions- og misbrugsgrænser</target>
       </trans-unit>
+      <trans-unit id="5ed0f9cff53e4f3e4706e194fce612b0" resname="Selected part (for partial)">
+        <source>Selected part (for partial)</source>
+        <target>Valgt del (ved delvis fortrydelse)</target>
+      </trans-unit>
       <trans-unit id="b0aca289a0a6e06700d28253aa26cba2" resname="Session absolute limit (minutes)">
         <source>Session absolute limit (minutes)</source>
         <target>Absolut sessionsgrænse (minutter)</target>
+      </trans-unit>
+      <trans-unit id="94a199971f738f07c8ebe772e9d57bea" resname="Session idle (minutes)">
+        <source>Session idle (minutes)</source>
+        <target>Sessionens inaktivitet (minutter)</target>
       </trans-unit>
       <trans-unit id="0693fa44a6aabaf090af1bee024240fe" resname="Session inactivity limit (minutes)">
         <source>Session inactivity limit (minutes)</source>
         <target>Grænse for sessionsinaktivitet (minutter)</target>
       </trans-unit>
+      <trans-unit id="3c8dad3c60aeb85fdd8114350564f3a4" resname="Session max (minutes)">
+        <source>Session max (minutes)</source>
+        <target>Sessionens maksimum (minutter)</target>
+      </trans-unit>
       <trans-unit id="9a7e58ee13cb727cb7c4acc68f4cafe5" resname="Settings saved.">
         <source>Settings saved.</source>
         <target>Indstillingerne blev gemt.</target>
+      </trans-unit>
+      <trans-unit id="9f82518d468b9fee614fcc92f76bb163" resname="Shop">
+        <source>Shop</source>
+        <target>Butik</target>
       </trans-unit>
       <trans-unit id="9eeed2a79a0ce14783ba54b0b0420203" resname="Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.">
         <source>Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.</source>
         <target>Kort kode i begyndelsen af fortrydelsesreferencer. Brug kun bogstaver, tal og bindestreger, f.eks. WD. Eksisterende fortrydelsesreferencer ændres aldrig.</target>
       </trans-unit>
+      <trans-unit id="d10ff1b6f6ee89d06eaf83e7d441eaaf" resname="Snapshot SHA-256:">
+        <source>Snapshot SHA-256:</source>
+        <target>Øjebliksbillede SHA-256:</target>
+      </trans-unit>
       <trans-unit id="0cfb330ba2af0cc69f2cd95aca520abd" resname="Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.">
         <source>Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.</source>
         <target>Nogle kørselskrav kunne ikke synkroniseres. Gennemgå PrestaShop-loggene før offentlig brug.</target>
+      </trans-unit>
+      <trans-unit id="77c8b9f38491385d59ddc33d29e751fe" resname="Source:">
+        <source>Source:</source>
+        <target>Kilde:</target>
       </trans-unit>
       <trans-unit id="c84f3c8cccffa553f2b2322518573b57" resname="Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.">
         <source>Starts the secure order-reference flow. The customer enters only the public order reference; order and personal data remain hidden until the one-time email link is confirmed.</source>
         <target>Starter det sikre forløb efter ordrereference. Kunden indtaster kun den offentlige ordrereference; ordre- og personoplysninger forbliver skjult, indtil engangslinket i e-mailen er bekræftet.</target>
       </trans-unit>
+      <trans-unit id="ec53a8c4f07baed5d8825072c89799be" resname="Status">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
       <trans-unit id="58200c5eb0a6df1eb10635ecb7363249" resname="Status changed by administrator">
         <source>Status changed by administrator</source>
         <target>Status ændret af administrator</target>
       </trans-unit>
-      <trans-unit id="34a1e6159e4b3b9f19d11093f9cf1c48" resname="Supported PrestaShop versions are 8.1 through 9.1.">
-        <source>Supported PrestaShop versions are 8.1 through 9.1.</source>
-        <target>Understøttede PrestaShop-versioner er 8.1 til 9.1.</target>
+      <trans-unit id="3d10f474ca89e31e645ccc42387d272d" resname="Status updated.">
+        <source>Status updated.</source>
+        <target>Status opdateret.</target>
+      </trans-unit>
+      <trans-unit id="24a23d787190f2c4812ff9ab11847a72" resname="Status:">
+        <source>Status:</source>
+        <target>Status:</target>
+      </trans-unit>
+      <trans-unit id="e6c6634562d0a9db19c2f1e48a4da75b" resname="Submitted UTC">
+        <source>Submitted UTC</source>
+        <target>Indsendt UTC</target>
+      </trans-unit>
+      <trans-unit id="d7f06ee93905d36b8cfadf043dca9c4e" resname="Submitted UTC:">
+        <source>Submitted UTC:</source>
+        <target>Indsendt UTC:</target>
+      </trans-unit>
+      <trans-unit id="66e055338ea5e9bb4fd0b7aa8f37b4ed" resname="Supported PrestaShop versions are 8.x and 9.x.">
+        <source>Supported PrestaShop versions are 8.x and 9.x.</source>
+        <target>Understøttede PrestaShop-versioner er 8.x og 9.x.</target>
       </trans-unit>
       <trans-unit id="440cefce4f97e7cb67c869bf1d8dfe16" resname="The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.">
         <source>The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.</source>
@@ -458,9 +794,21 @@
         <source>These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.</source>
         <target>Disse værdier identificerer den faktiske sælger, som driver den valgte butik. De gemmes pr. butik i multistore og udskrives i kundekvitteringer og PDF-dokumentation.</target>
       </trans-unit>
+      <trans-unit id="4c2eadfe5f7438069b2526bcd5a99fb4" resname="This direct submission has not authenticated the consumer against the order. Any matching order reference is only an internal association and must be verified before relying on it.">
+        <source>This direct submission has not authenticated the consumer against the order. Any matching order reference is only an internal association and must be verified before relying on it.</source>
+        <target>Denne direkte indsendelse har ikke verificeret forbrugeren i forhold til ordren. En matchende ordrereference er kun en intern tilknytning og skal verificeres, før den lægges til grund.</target>
+      </trans-unit>
       <trans-unit id="7c590d9272ad1786e0e73357bf415267" resname="This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.">
         <source>This free GitHub module is provided without individual technical support. Installation, configuration, production testing, updates and troubleshooting are available for customers using Joobox PrestaShop Cloud or another paid service explicitly agreed with JOO INTERNET MEDIA LTD.</source>
         <target>Dette gratis GitHub-modul leveres uden individuel teknisk support. Installation, konfiguration, produktionstest, opdateringer og fejlfinding tilbydes kunder, der bruger Joobox PrestaShop Cloud eller en anden betalt tjeneste, som udtrykkeligt er aftalt med JOO INTERNET MEDIA LTD.</target>
+      </trans-unit>
+      <trans-unit id="ba12e59b20a9720f70fb907a55cd2620" resname="Total incl. tax">
+        <source>Total incl. tax</source>
+        <target>Total inkl. afgifter</target>
+      </trans-unit>
+      <trans-unit id="66c4c5112f455a19afde47829df363fa" resname="Total:">
+        <source>Total:</source>
+        <target>Total:</target>
       </trans-unit>
       <trans-unit id="1bb184adfba62621740f795ec93d36e6" resname="Trader details – current shop">
         <source>Trader details – current shop</source>
@@ -469,6 +817,14 @@
       <trans-unit id="14a3e5ba5527ad9b624f6ff0a81c9b8c" resname="Trader name">
         <source>Trader name</source>
         <target>Sælgernavn</target>
+      </trans-unit>
+      <trans-unit id="1b0ffaae3973401f71cd000ab9f7856e" resname="Transaction">
+        <source>Transaction</source>
+        <target>Transaktion</target>
+      </trans-unit>
+      <trans-unit id="ac2f3faa8d9b2d545e021b7e417957fc" resname="Transaction reference">
+        <source>Transaction reference</source>
+        <target>Transaktionsreference</target>
       </trans-unit>
       <trans-unit id="6dd08874f83507e9c7b23f1a46b7fa7c" resname="Translation">
         <source>Translation</source>
@@ -522,13 +878,29 @@
         <source>Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.</source>
         <target>Brug kun denne URL, når hostingtjenesten ikke kan køre CLI-kommandoen. Behandl tokenet som en adgangskode: offentliggør det ikke, send det ikke via e-mail, og placer det ikke i offentlig overvågning.</target>
       </trans-unit>
+      <trans-unit id="9234324ddf6b4176b57d803a925b7961" resname="UTC">
+        <source>UTC</source>
+        <target>UTC</target>
+      </trans-unit>
       <trans-unit id="01f004435882e0df6fc4d48ff6d6b2b5" resname="Waiting for returned goods">
         <source>Waiting for returned goods</source>
         <target>Afventer returnerede varer</target>
       </trans-unit>
+      <trans-unit id="523b6012389309dd396d6edbbcc16201" resname="Withdrawal not found or not accessible in this shop context.">
+        <source>Withdrawal not found or not accessible in this shop context.</source>
+        <target>Fortrydelsen blev ikke fundet eller er ikke tilgængelig i denne butikskontekst.</target>
+      </trans-unit>
+      <trans-unit id="ef50351a64cabb13e48613b6b94f846d" resname="Withdrawal not found.">
+        <source>Withdrawal not found.</source>
+        <target>Fortrydelsen blev ikke fundet.</target>
+      </trans-unit>
       <trans-unit id="b0578341d6fba5c8fb8282b71deaaf49" resname="Withdrawal received">
         <source>Withdrawal received</source>
         <target>Fortrydelse modtaget</target>
+      </trans-unit>
+      <trans-unit id="76fb2a1808fbae14e8248f1b377ae5ee" resname="Withdrawal reference">
+        <source>Withdrawal reference</source>
+        <target>Fortrydelsesreference</target>
       </trans-unit>
       <trans-unit id="a6bf9dba77e2cf61e65fb7a0c4c07bea" resname="Withdrawal rejected">
         <source>Withdrawal rejected</source>
@@ -538,9 +910,33 @@
         <source>Withdrawal submitted</source>
         <target>Fortrydelse indsendt</target>
       </trans-unit>
+      <trans-unit id="f62dedad685b570f499b61e94084dab2" resname="Withdrawn">
+        <source>Withdrawn</source>
+        <target>Fortrudt</target>
+      </trans-unit>
       <trans-unit id="93cba07454f06a4a960172bbd6e2a435" resname="Yes">
         <source>Yes</source>
         <target>Ja</target>
+      </trans-unit>
+      <trans-unit id="e825de45671948e6407b872feea274b8" resname="You do not have permission to change withdrawal status.">
+        <source>You do not have permission to change withdrawal status.</source>
+        <target>Du har ikke tilladelse til at ændre fortrydelsens status.</target>
+      </trans-unit>
+      <trans-unit id="13575a35d04e074d0ac12897c5b11271" resname="You do not have permission to create withdrawal records.">
+        <source>You do not have permission to create withdrawal records.</source>
+        <target>Du har ikke tilladelse til at oprette fortrydelsesregistreringer.</target>
+      </trans-unit>
+      <trans-unit id="e04d52d932179ad96992de23cf738d57" resname="You do not have permission to record refunds.">
+        <source>You do not have permission to record refunds.</source>
+        <target>Du har ikke tilladelse til at registrere refusioner.</target>
+      </trans-unit>
+      <trans-unit id="1a3ffb377406f5419bc0517d1c884b58" resname="You do not have permission to resend acknowledgements.">
+        <source>You do not have permission to resend acknowledgements.</source>
+        <target>Du har ikke tilladelse til at gensende kvitteringer.</target>
+      </trans-unit>
+      <trans-unit id="df6e92929bbd9d799b02f356d96a6401" resname="You do not have permission to view contract withdrawals.">
+        <source>You do not have permission to view contract withdrawals.</source>
+        <target>Du har ikke tilladelse til at se aftalefortrydelser.</target>
       </trans-unit>
     </body>
   </file>

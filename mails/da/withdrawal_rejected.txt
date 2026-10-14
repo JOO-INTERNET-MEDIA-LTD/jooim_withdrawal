@@ -1,0 +1,9 @@
+Den erhvervsdrivende har registreret en afvisning af sagen; begrundelsen fremgår nedenfor.
+Fortrydelsesreference: {withdrawal_reference}
+Ordre / aftale: {order_reference}
+Status: {status}
+
+Besked fra erhvervsdrivende:
+{public_message}
+
+Kontakt til erhvervsdrivende: {merchant_email}

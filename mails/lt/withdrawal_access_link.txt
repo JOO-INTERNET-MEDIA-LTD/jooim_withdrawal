@@ -1,0 +1,8 @@
+Sveiki, {firstname}!
+
+Naudokite šią nuorodą saugiam internetinio sutarties atsisakymo procesui tęsti:
+Tęsti į atsisakymą: {access_url}
+
+Nuoroda galioja {expires_minutes} minučių. Vien ją atvėrus ji nepanaudojama; tęsinys patvirtinamas kitame puslapyje.
+
+Jei neprašėte šios nuorodos, galite nepaisyti šio pranešimo.

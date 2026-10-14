@@ -1,0 +1,5 @@
+Zabeležen je nov odstop od pogodbe.
+Referenca odstopa: {withdrawal_reference}
+Naročilo / pogodba: {order_reference}
+Elektronski kontakt: {customer_email}
+Stanje: {status}

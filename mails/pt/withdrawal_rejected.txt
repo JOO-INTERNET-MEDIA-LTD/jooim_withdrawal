@@ -1,0 +1,9 @@
+O comerciante registou a rejeição do caso; o motivo é indicado abaixo.
+Referência da resolução: {withdrawal_reference}
+Encomenda / contrato: {order_reference}
+Estado: {status}
+
+Mensagem do comerciante:
+{public_message}
+
+Contacto do comerciante: {merchant_email}

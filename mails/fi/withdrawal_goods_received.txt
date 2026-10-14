@@ -1,0 +1,9 @@
+Olemme kirjanneet palautettujen tuotteiden vastaanoton.
+Peruuttamisviite: {withdrawal_reference}
+Tilaus / sopimus: {order_reference}
+Tila: {status}
+
+Elinkeinonharjoittajan viesti:
+{public_message}
+
+Elinkeinonharjoittajan yhteystieto: {merchant_email}

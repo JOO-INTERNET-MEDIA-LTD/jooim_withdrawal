@@ -1,0 +1,12 @@
+Retourinstructies
+Herroepingsreferentie: {withdrawal_reference}
+Bestelling / overeenkomst: {order_reference}
+Status: {status}
+
+Bericht van de handelaar:
+{public_message}
+
+Retouradres / instructies:
+{return_address}
+
+Contact van de handelaar: {merchant_email}

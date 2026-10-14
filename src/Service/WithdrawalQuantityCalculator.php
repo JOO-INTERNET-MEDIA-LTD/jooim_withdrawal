@@ -5,7 +5,7 @@ final class WithdrawalQuantityCalculator
 {
     private const ACTIVE = [
         'submitted','acknowledged','awaiting_goods','goods_received','under_review',
-        'refund_pending','partially_refunded','refunded'
+        'refund_pending','partially_refunded','refunded','closed'
     ];
 
     public function orderItems(\Order $order): array

@@ -1,0 +1,12 @@
+Navodila za vračilo
+Referenca odstopa: {withdrawal_reference}
+Naročilo / pogodba: {order_reference}
+Stanje: {status}
+
+Sporočilo trgovca:
+{public_message}
+
+Naslov / navodila za vračilo:
+{return_address}
+
+Kontakt trgovca: {merchant_email}

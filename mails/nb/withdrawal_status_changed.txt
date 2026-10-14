@@ -1,0 +1,9 @@
+Status for angrerettsaken er oppdatert.
+Angrerettreferanse: {withdrawal_reference}
+Bestilling / avtale: {order_reference}
+Status: {status}
+
+Melding fra selgeren:
+{public_message}
+
+Selgerens kontakt: {merchant_email}

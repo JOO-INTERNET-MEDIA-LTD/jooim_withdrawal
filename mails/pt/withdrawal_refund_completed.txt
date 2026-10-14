@@ -1,0 +1,9 @@
+O reembolso foi registado como concluído.
+Referência da resolução: {withdrawal_reference}
+Encomenda / contrato: {order_reference}
+Estado: {status}
+
+Mensagem do comerciante:
+{public_message}
+
+Contacto do comerciante: {merchant_email}

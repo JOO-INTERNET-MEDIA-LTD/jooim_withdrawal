@@ -1,0 +1,5 @@
+Ġie rreġistrat irtirar ġdid minn kuntratt.
+Referenza tal-irtirar: {withdrawal_reference}
+Ordni / kuntratt: {order_reference}
+Kuntatt elettroniku: {customer_email}
+Stat: {status}

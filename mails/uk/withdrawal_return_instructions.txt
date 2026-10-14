@@ -1,0 +1,12 @@
+Інструкції щодо повернення
+Номер відмови: {withdrawal_reference}
+Замовлення / договір: {order_reference}
+Статус: {status}
+
+Повідомлення продавця:
+{public_message}
+
+Адреса повернення / інструкції:
+{return_address}
+
+Контакт продавця: {merchant_email}

@@ -1,0 +1,9 @@
+Rögzítettük a visszaküldött áruk beérkezését.
+Elállási hivatkozás: {withdrawal_reference}
+Rendelés / szerződés: {order_reference}
+Állapot: {status}
+
+Kereskedő üzenete:
+{public_message}
+
+Kereskedő elérhetősége: {merchant_email}

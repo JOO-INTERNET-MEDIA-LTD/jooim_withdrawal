@@ -1,0 +1,5 @@
+Регистриран е нов отказ от договор.
+Номер на отказа: {withdrawal_reference}
+Поръчка / договор: {order_reference}
+Електронен контакт: {customer_email}
+Статус: {status}

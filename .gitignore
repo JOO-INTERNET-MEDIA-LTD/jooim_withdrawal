@@ -13,3 +13,7 @@ composer.lock
 !/var/documents/.gitkeep
 !/var/queue/.gitkeep
 !/var/temporary/.gitkeep
+
+# Python development caches
+__pycache__/
+*.py[cod]

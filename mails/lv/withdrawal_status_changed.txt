@@ -1,0 +1,9 @@
+Atteikuma statuss ir atjaunināts.
+Atteikuma atsauce: {withdrawal_reference}
+Pasūtījums / līgums: {order_reference}
+Statuss: {status}
+
+Tirgotāja ziņojums:
+{public_message}
+
+Tirgotāja kontaktinformācija: {merchant_email}

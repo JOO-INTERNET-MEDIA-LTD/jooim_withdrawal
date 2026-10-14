@@ -1,0 +1,5 @@
+Ett nytt frånträde av avtal har registrerats.
+Frånträdesreferens: {withdrawal_reference}
+Order / avtal: {order_reference}
+Elektronisk kontakt: {customer_email}
+Status: {status}

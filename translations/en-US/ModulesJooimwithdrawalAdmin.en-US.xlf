@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en-US" target-language="en-US" datatype="plaintext" original="file.ext">
+  <file datatype="plaintext" original="file.ext" source-language="en-US" target-language="en-US">
     <body>
       <trans-unit id="105639f6b7c568ce5ecf630b6d196109" resname="A new module version is available.">
         <source>A new module version is available.</source>
@@ -301,6 +301,10 @@
       <trans-unit id="1b528a2959fbc9757cecd2ffc16324e3" resname="Invalid refund data.">
         <source>Invalid refund data.</source>
         <target>Invalid refund data.</target>
+      </trans-unit>
+      <trans-unit id="195d3ae3b14a4f76fa9d6a5917d97348" resname="Invalid settings. Check the entered values.">
+        <source>Invalid settings. Check the entered values.</source>
+        <target>Invalid settings. Check the entered values.</target>
       </trans-unit>
       <trans-unit id="40ab5ce84dfc50660dcd413a05aa7311" resname="Invalid withdrawal or status.">
         <source>Invalid withdrawal or status.</source>
@@ -778,9 +782,9 @@
         <source>Submitted UTC:</source>
         <target>Submitted UTC:</target>
       </trans-unit>
-      <trans-unit id="34a1e6159e4b3b9f19d11093f9cf1c48" resname="Supported PrestaShop versions are 8.1 through 9.1.">
-        <source>Supported PrestaShop versions are 8.1 through 9.1.</source>
-        <target>Supported PrestaShop versions are 8.1 through 9.1.</target>
+      <trans-unit id="66e055338ea5e9bb4fd0b7aa8f37b4ed" resname="Supported PrestaShop versions are 8.x and 9.x.">
+        <source>Supported PrestaShop versions are 8.x and 9.x.</source>
+        <target>Supported PrestaShop versions are 8.x and 9.x.</target>
       </trans-unit>
       <trans-unit id="440cefce4f97e7cb67c869bf1d8dfe16" resname="The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.">
         <source>The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.</source>
