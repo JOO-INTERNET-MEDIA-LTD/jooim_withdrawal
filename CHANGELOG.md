@@ -2,6 +2,13 @@
 
 All notable changes to **JOOIM Withdrawal** are documented in this file.
 
+## [1.1.1] - 2026-10-14
+
+### Fixed
+
+- explicitly sort XML attributes to keep catalogue regeneration identical on Python 3.7 and modern Python used by CI;
+- preserve the original v1.1.0 tag and publish the corrected package as a patch version.
+
 ## [1.1.0] - 2026-10-14
 
 ### Added
@@ -68,3 +75,5 @@ All notable changes to **JOOIM Withdrawal** are documented in this file.
 [1.0.0]: https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal/releases/tag/v1.0.0
 
 [1.1.0]: https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal/releases/tag/v1.1.0
+
+[1.1.1]: https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal/releases/tag/v1.1.1

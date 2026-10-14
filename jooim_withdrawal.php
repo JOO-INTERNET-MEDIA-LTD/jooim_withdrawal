@@ -36,7 +36,7 @@ use JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\WithdrawalStatusP
 
 class Jooim_Withdrawal extends Module
 {
-    public const VERSION = '1.1.0';
+    public const VERSION = '1.1.1';
     private const FRONT_ASSET_BASENAME = 'front-footer-v4';
     public const GITHUB_REPOSITORY_URL = 'https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal';
     public const GITHUB_RELEASES_URL = 'https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal/releases/latest';

@@ -38,7 +38,7 @@ namespace {
     class Module
     {
         public int $id = 132;
-        public string $version = '1.1.0';
+        public string $version = '1.1.1';
     }
 
     class Configuration
@@ -517,7 +517,7 @@ namespace {
     $assert($manualSnapshot['admin_employee_id'] === 7 && $manualSnapshot['received_method'] === 'email'
         && $manualSnapshot['received_at'] === '2026-08-20T10:00:00Z', 'manual original receipt metadata survives into final snapshot');
     $assert($db->tables['jooim_withdrawal_history'][0]['id_employee'] === 7, 'manual initial history identifies the responsible employee');
-    $assert($manualSnapshot['module']['version'] === '1.1.0', 'snapshot uses installed module version');
+    $assert($manualSnapshot['module']['version'] === '1.1.1', 'snapshot uses installed module version');
 
     // Model an administrator changing status during a slow acknowledgement transport.
     \Db::$instance = null;

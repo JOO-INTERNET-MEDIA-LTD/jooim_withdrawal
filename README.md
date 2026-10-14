@@ -11,7 +11,7 @@ Common local search terms include **odstúpenie od zmluvy**, **odstoupení od sm
 Repository: https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal  
 Author: JOO INTERNET MEDIA LTD  
 Technical name and required module folder: `jooim_withdrawal`  
-Release version: `1.1.0`
+Release version: `1.1.1`
 Status: **stable public release**
 
 English is the source language for code, templates, documentation and translation catalogues. Complete five-domain catalogues and email templates are supplied for all packaged locales listed below.
@@ -63,7 +63,7 @@ The module uses no PrestaShop core override.
 
 ## Installation
 
-1. Download the dedicated installation ZIP named `jooim_withdrawal-1.1.0.zip` from the GitHub Release assets.
+1. Download the dedicated installation ZIP named `jooim_withdrawal-1.1.1.zip` from the GitHub Release assets.
 2. Do **not** use GitHub's automatically generated **Source code (zip)** archive for installation. Its folder layout is intended for developers, not the PrestaShop Module Manager.
 3. In PrestaShop Back Office, open **Modules → Module Manager → Upload a module**.
 4. Upload the installation ZIP and install the module.
@@ -72,7 +72,7 @@ The module uses no PrestaShop core override.
 7. Verify the direct withdrawal page, secure order-reference flow, email delivery, PDF generation and Back Office case handling.
 8. Complete the staging tests in [docs/ACCEPTANCE-TESTS.md](docs/ACCEPTANCE-TESTS.md) before any production deployment.
 
-Version `1.1.0` adds complete locale packages, globally unique multistore references and post-commit recovery. Existing withdrawal records and references are preserved when upgrading. The declared compatibility range must still be verified on the merchant’s staging installation.
+Version `1.1.1` adds complete locale packages, globally unique multistore references and post-commit recovery. Existing withdrawal records and references are preserved when upgrading. The declared compatibility range must still be verified on the merchant’s staging installation.
 
 When upgrading an installation that used a pre-release `1.0.0` test build, replace the complete module directory, open the module configuration once for each shop context and clear the PrestaShop cache. The configuration page idempotently repairs missing runtime configuration, hooks and security values without rotating an existing secret or deleting submitted records. See [docs/INSTALLATION.md](docs/INSTALLATION.md#6-replacing-an-earlier-100-test-build).
 
@@ -169,7 +169,7 @@ php tests/static_validation.php
 
 The test package also requires PHP linting, XLIFF/XML parsing, archive integrity checks and staging integration tests. Static checks cannot prove compatibility with every theme, mail transport, payment module, database version or national legal implementation.
 
-## Out of scope for version 1.1.0
+## Out of scope for version 1.1.1
 
 - automatic payment refunds;
 - carrier return labels;

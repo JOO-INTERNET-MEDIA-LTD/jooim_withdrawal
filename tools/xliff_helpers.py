@@ -1,6 +1,13 @@
 """Deterministic XML indentation, including Python 3.7/3.8 development hosts."""
 
 def indent(element, level=0):
+    if level == 0:
+        # Python <3.8 sorts XML attributes; newer versions preserve insertion order.
+        # Normalize explicitly so release catalogues are identical on both.
+        for node in element.iter():
+            attributes = sorted(node.attrib.items())
+            node.attrib.clear()
+            node.attrib.update(attributes)
     whitespace = "\n" + "  " * level
     if len(element):
         if not element.text or not element.text.strip():

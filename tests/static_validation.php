@@ -145,7 +145,7 @@ foreach (glob($root . '/src/**/*.bak*', GLOB_BRACE) ?: [] as $path) {
 check($temporaryArtifacts === [], 'no backup or patch-residue files in release tree');
 
 $main = readFileStrict($root . '/jooim_withdrawal.php');
-check(strpos($main, "public const VERSION = '1.1.0';") !== false, 'module version is exactly 1.1.0');
+check(strpos($main, "public const VERSION = '1.1.1';") !== false, 'module version is exactly 1.1.1');
 check(strpos($main, "\$this->name = 'jooim_withdrawal';") !== false, 'technical module name');
 check(strpos($main, 'Modules.Jooimwithdrawal.Admin') !== false, 'explicit Admin translation domain');
 check(strpos($main, 'Modules.Jooimwithdrawal.Shop') !== false, 'explicit Shop translation domain');
@@ -238,7 +238,7 @@ check(
 );
 
 $configXml = readFileStrict($root . '/config.xml');
-check(strpos($configXml, '<version><![CDATA[1.1.0]]></version>') !== false, 'config.xml version 1.1.0');
+check(strpos($configXml, '<version><![CDATA[1.1.1]]></version>') !== false, 'config.xml version 1.1.1');
 check(strpos($configXml, '<name>jooim_withdrawal</name>') !== false, 'config.xml technical name');
 
 $composerRaw = readFileStrict($root . '/composer.json');
