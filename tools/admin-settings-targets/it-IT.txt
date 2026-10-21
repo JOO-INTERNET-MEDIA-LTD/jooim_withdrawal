@@ -39,7 +39,7 @@
 039	URL cron dell’hosting (segreto):
 040	Durata di utilizzo del link di accesso monouso inviato via e-mail. Intervallo previsto: 5–240 minuti; valore consigliato: 30.
 041	Incluso
-042	JOOIM Withdrawal – Recesso contrattuale online
+042	Recesso contrattuale online
 043	Assistenza Joobox per questo modulo
 044	Lingua
 045	URL indipendenti dalla lingua per elenchi link esterni:

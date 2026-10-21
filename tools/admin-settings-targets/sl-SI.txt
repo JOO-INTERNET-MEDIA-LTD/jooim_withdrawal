@@ -39,7 +39,7 @@
 039	URL gostiteljskega crona (skriven):
 040	Kako dolgo je enkratna povezava za dostop v e-poštnem sporočilu uporabna. Pričakovani razpon: 5–240 minut; priporočena privzeta vrednost: 30.
 041	Vključeno
-042	JOOIM Withdrawal – Spletni odstop od pogodbe
+042	Spletni odstop od pogodbe
 043	Podpora Joobox za ta modul
 044	Jezik
 045	Jezikovno nevtralni URL-ji za zunanje sezname povezav:

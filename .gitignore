@@ -23,3 +23,10 @@ __pycache__/
 
 # Prepared release archives remain local only
 /dist/
+
+/AGENTS.md
+/.tools/
+.env
+.env.*
+*.pem
+*.key

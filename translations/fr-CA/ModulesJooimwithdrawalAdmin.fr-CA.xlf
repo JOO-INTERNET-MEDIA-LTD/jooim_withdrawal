@@ -122,6 +122,10 @@
         <source>Customer email</source>
         <target>E-mail du client</target>
       </trans-unit>
+      <trans-unit id="0b5864f567238ef8c2ff214994789ed3" resname="Customer Right of Withdrawal">
+        <source>Customer Right of Withdrawal</source>
+        <target>Rétractation du contrat en ligne</target>
+      </trans-unit>
       <trans-unit id="e299b273bfe65f12d5c5e635a00d0d08" resname="Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.">
         <source>Customer-facing contact address for withdrawal communication. Use an actively monitored mailbox; do not enter the customer’s email here.</source>
         <target>Adresse de contact destinée au client pour les communications relatives à la rétractation. Utilisez une boîte activement surveillée ; ne saisissez pas ici l’adresse e-mail du client.</target>
@@ -329,10 +333,6 @@
       <trans-unit id="af6dd5afdfd071c1f0d57ab94e232856" resname="JOOIM Withdrawal">
         <source>JOOIM Withdrawal</source>
         <target>JOOIM Withdrawal</target>
-      </trans-unit>
-      <trans-unit id="0d2a03417d12c0922f7c8f09a8866cdd" resname="JOOIM Withdrawal – Online Contract Withdrawal">
-        <source>JOOIM Withdrawal – Online Contract Withdrawal</source>
-        <target>JOOIM Withdrawal – Rétractation du contrat en ligne</target>
       </trans-unit>
       <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174" resname="Language">
         <source>Language</source>

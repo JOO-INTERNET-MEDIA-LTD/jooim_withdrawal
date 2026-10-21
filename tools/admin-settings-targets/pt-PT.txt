@@ -39,7 +39,7 @@
 039	URL cron do alojamento (secreto):
 040	Período durante o qual a ligação de acesso de utilização única enviada por e-mail permanece válida. Intervalo previsto: 5–240 minutos; valor recomendado: 30.
 041	Incluído
-042	JOOIM Withdrawal – Resolução contratual em linha
+042	Resolução contratual em linha
 043	Suporte Joobox para este módulo
 044	Idioma
 045	URL independentes do idioma para listas externas de ligações:

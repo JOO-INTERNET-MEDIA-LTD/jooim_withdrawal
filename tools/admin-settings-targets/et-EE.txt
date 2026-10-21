@@ -39,7 +39,7 @@
 039	Hostingu cron-i URL (salajane):
 040	Kui kaua on ühekordne e-posti juurdepääsulink kasutatav. Eeldatav vahemik: 5–240 minutit; soovituslik vaikeväärtus: 30.
 041	Sisaldub
-042	JOOIM Withdrawal – Veebipõhine lepingust taganemine
+042	Veebipõhine lepingust taganemine
 043	Jooboxi tugi sellele moodulile
 044	Keel
 045	Keeleliselt neutraalsed URL-id välistele lingiloenditele:

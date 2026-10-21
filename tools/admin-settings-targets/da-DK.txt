@@ -39,7 +39,7 @@
 039	Hosting-cron-URL (hemmelig):
 040	Hvor længe engangslinket i e-mailen kan bruges. Forventet interval: 5–240 minutter; anbefalet standard: 30.
 041	Inkluderet
-042	JOOIM Withdrawal – Onlinefortrydelse af aftale
+042	Onlinefortrydelse af aftale
 043	Joobox-support til dette modul
 044	Sprog
 045	Sprogneutrale URL'er til eksterne linklister:

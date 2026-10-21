@@ -39,7 +39,7 @@
 039	URL cron óstála (rúnda):
 040	An fad a bhíonn an nasc rochtana aonuaire sa ríomhphost inúsáidte. Raon ionchais: 5–240 nóiméad; réamhshocrú molta: 30.
 041	San áireamh
-042	JOOIM Withdrawal – Tarraingt siar ó chonradh ar líne
+042	Tarraingt siar ó chonradh ar líne
 043	Tacaíocht Joobox don mhodúl seo
 044	Teanga
 045	URLanna neodracha ó thaobh teanga do liostaí seachtracha nasc:

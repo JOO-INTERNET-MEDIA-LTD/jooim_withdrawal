@@ -39,7 +39,7 @@
 039	Palvelun cron-URL (salainen):
 040	Kuinka kauan sähköpostin kertakäyttöinen pääsylinkki on käytettävissä. Odotettu alue: 5–240 minuuttia; suositeltu oletus: 30.
 041	Sisältyy
-042	JOOIM Withdrawal – Sopimuksen peruuttaminen verkossa
+042	Sopimuksen peruuttaminen verkossa
 043	Joobox-tuki tälle moduulille
 044	Kieli
 045	Kielestä riippumattomat URL-osoitteet ulkoisille linkkiluetteloille:

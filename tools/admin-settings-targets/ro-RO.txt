@@ -39,7 +39,7 @@
 039	URL cron al găzduirii (secret):
 040	Perioada în care linkul unic de acces din e-mail rămâne utilizabil. Interval estimat: 5–240 de minute; valoare implicită recomandată: 30.
 041	Inclus
-042	JOOIM Withdrawal – Retragere online din contract
+042	Retragere online din contract
 043	Asistență Joobox pentru acest modul
 044	Limbă
 045	URL-uri neutre din punct de vedere lingvistic pentru liste externe de linkuri:

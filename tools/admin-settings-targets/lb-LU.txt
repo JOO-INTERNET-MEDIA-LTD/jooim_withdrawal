@@ -39,7 +39,7 @@
 039	Cron-URL vum Hosting (geheim):
 040	Wéi laang den eemolegen E-Mail-Zougangslink benotzbar bleift. Erwaarte Beräich: 5–240 Minutten; recommandéiert: 30.
 041	Enthalen
-042	JOOIM Withdrawal – Online-Récktrëtt vum Kontrakt
+042	Online-Récktrëtt vum Kontrakt
 043	Joobox-Ënnerstëtzung fir dëse Modul
 044	Sprooch
 045	Sproochneutral URLen fir extern Linklëschten:

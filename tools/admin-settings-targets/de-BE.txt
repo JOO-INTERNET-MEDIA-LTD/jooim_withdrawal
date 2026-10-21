@@ -39,7 +39,7 @@
 039	Hosting-Cron-URL (geheim):
 040	Legt fest, wie lange der einmalige E-Mail-Zugangslink verwendet werden kann. Erwarteter Bereich: 5–240 Minuten; empfohlener Standardwert: 30.
 041	Enthalten
-042	JOOIM Withdrawal – Online-Vertragswiderruf
+042	Online-Vertragswiderruf
 043	Joobox-Support für dieses Modul
 044	Sprache
 045	Sprachneutrale URLs für externe Linklisten:

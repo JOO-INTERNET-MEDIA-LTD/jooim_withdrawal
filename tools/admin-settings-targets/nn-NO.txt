@@ -39,7 +39,7 @@
 039	Cron-adresse for hosting (hemmeleg):
 040	Kor lenge eingongstilgangslenkja i e-posten kan brukast. Venta område: 5–240 minutt; tilrådd standard: 30.
 041	Inkludert
-042	JOOIM Withdrawal – Nettbasert angrerett
+042	Nettbasert angrerett
 043	Joobox-støtte for denne modulen
 044	Språk
 045	Språknøytrale adresser for eksterne lenkjelister:

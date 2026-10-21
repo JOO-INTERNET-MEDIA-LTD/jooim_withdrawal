@@ -39,7 +39,7 @@
 039	URL adresa hosting crona (tajna):
 040	Koliko dugo jednokratna poveznica za pristup iz e-poruke ostaje upotrebljiva. Očekivani raspon: 5–240 minuta; preporučena zadana vrijednost: 30.
 041	Uključeno
-042	JOOIM Withdrawal – Mrežni odustanak od ugovora
+042	Mrežni odustanak od ugovora
 043	Joobox podrška za ovaj modul
 044	Jezik
 045	Jezično neutralne URL adrese za vanjske popise poveznica:
