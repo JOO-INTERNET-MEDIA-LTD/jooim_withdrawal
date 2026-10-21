@@ -253,21 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function deduplicateJooboxAttribution() {
-    var candidates = Array.prototype.slice.call(document.querySelectorAll(
-      '.jooim-joobox-attribution, [data-jooim-attribution]'
-    ));
-    var keeper = null;
-
-    candidates.forEach(function (candidate) {
-      if (!candidate.querySelector || !candidate.querySelector('a[href*="joobox.eu"]')) {
-        return;
-      }
-      if (keeper === null) {
-        keeper = candidate;
-        return;
-      }
-      removeNode(candidate);
-    });
+    if (window.JooboxAttribution) window.JooboxAttribution.reconcile();
   }
 
   function normalize() {

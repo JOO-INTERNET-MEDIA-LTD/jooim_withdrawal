@@ -330,9 +330,9 @@
         <source>JOOIM Withdrawal</source>
         <target>JOOIM Withdrawal</target>
       </trans-unit>
-      <trans-unit id="0d2a03417d12c0922f7c8f09a8866cdd" resname="JOOIM Withdrawal – Online Contract Withdrawal">
-        <source>JOOIM Withdrawal – Online Contract Withdrawal</source>
-        <target>JOOIM Withdrawal – Online-Récktrëtt vum Kontrakt</target>
+      <trans-unit id="0b5864f567238ef8c2ff214994789ed3" resname="Customer Right of Withdrawal">
+        <source>Customer Right of Withdrawal</source>
+        <target>Online-Récktrëtt vum Kontrakt</target>
       </trans-unit>
       <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174" resname="Language">
         <source>Language</source>

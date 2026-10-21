@@ -39,7 +39,7 @@
 039	Webbhotellets cron-URL (hemlig):
 040	Hur länge engångslänken för åtkomst i e-postmeddelandet kan användas. Förväntat intervall: 5–240 minuter; rekommenderat standardvärde: 30.
 041	Ingår
-042	JOOIM Withdrawal – Frånträde från avtal online
+042\tFrånträde från avtal online
 043	Joobox-support för denna modul
 044	Språk
 045	Språkneutrala URL:er för externa länklistor:

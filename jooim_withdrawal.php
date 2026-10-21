@@ -68,7 +68,7 @@ class Jooim_Withdrawal extends Module
         parent::__construct();
 
         $this->displayName = $this->trans(
-            'JOOIM Withdrawal – Online Contract Withdrawal',
+            'Customer Right of Withdrawal',
             [],
             self::TRANS_ADMIN
         );

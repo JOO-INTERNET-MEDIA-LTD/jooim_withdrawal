@@ -39,7 +39,7 @@
 039	Hosting-cron-URL (geheim):
 040	Hoe lang de eenmalige toegangslink in de e-mail bruikbaar blijft. Verwacht bereik: 5–240 minuten; aanbevolen standaard: 30.
 041	Inbegrepen
-042	JOOIM Withdrawal – Online herroeping van de overeenkomst
+042\tOnline herroeping van de overeenkomst
 043	Joobox-ondersteuning voor deze module
 044	Taal
 045	Taalneutrale URL's voor externe linklijsten:

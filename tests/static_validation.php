@@ -242,13 +242,15 @@ check(($composer['support']['source'] ?? '') === 'https://github.com/JOO-INTERNE
 check(($composer['require']['php'] ?? '') === '>=8.1', 'Composer minimum PHP 8.1');
 
 $footerAttribution = readFileStrict($root . '/views/templates/hook/footer-attribution.tpl');
+$attributionManager = readFileStrict($root . '/views/templates/hook/joobox-attribution-script.tpl');
 check(strpos($footerAttribution, "data-jooim-attribution=\"jooim_withdrawal\"") !== false, 'module-specific attribution marker');
-check(strpos($footerAttribution, '.jooim-joobox-attribution') !== false, 'shared JOOIM attribution selector');
-check(strpos($footerAttribution, "a[href*=\"joobox.eu\"]") !== false, 'duplicate Joobox attribution detection');
+check(strpos($attributionManager, '[data-jooim-attribution]') !== false, 'shared JOOIM attribution selector');
+check(strpos($footerAttribution, 'module:jooim_withdrawal/views/templates/hook/joobox-attribution-script.tpl') !== false, 'footer delegates to the shared exact-host attribution manager');
 check(strpos($footerAttribution, "s='PrestaShop module by'") !== false, 'English footer attribution source string');
-check(substr_count($footerAttribution, 'https://joobox.eu') === 0, 'footer URL supplied by trusted module constant');
-check(strpos($footerAttribution, 'removeChild(candidate)') !== false, 'duplicate attribution removes only duplicate blocks');
-check(strpos($footerAttribution, 'DOMContentLoaded') !== false, 'attribution deduplication runs after the complete footer DOM exists');
+check(substr_count($footerAttribution, 'href="https://joobox.eu/"') === 1, 'canonical fixed HTTPS footer URL');
+check(strpos($footerAttribution, 'target="_blank" rel="noopener noreferrer"') !== false, 'footer link isolates the destination window');
+check(strpos($attributionManager, "node.hidden = true") !== false && strpos($attributionManager, "node.id === 'joo-consent'") !== false, 'duplicate attribution hides credit blocks and preserves consent controls');
+check(strpos($attributionManager, 'DOMContentLoaded') !== false, 'attribution deduplication runs after the complete footer DOM exists');
 check(strpos($footerAttribution, 'document.currentScript.previousElementSibling') === false, 'attribution deduplication does not depend on script placement');
 
 $footerWithdrawal = readFileStrict($root . '/views/templates/hook/footer_withdrawal_link.tpl');
@@ -562,7 +564,7 @@ $readme = readFileStrict($root . '/README.md');
 foreach (['README.sk.md', 'README.cs.md', 'README.de.md', 'README.fr.md', 'README.pl.md'] as $localizedReadme) {
     check(strpos($readme, $localizedReadme) !== false, 'English README links to ' . $localizedReadme);
 }
-check(strpos($readme, 'Status: **stable public release**') !== false, 'README identifies 1.0.0 as the stable public release');
+check(strpos($readme, '`1.1.1`') !== false, 'README identifies the current declared source version without inventing release status');
 check(strpos($readme, 'Joobox support for this module') !== false, 'README documents Joobox support');
 check(strpos($readme, 'Joobox footer attribution') !== false, 'README documents shared footer attribution');
 check(strpos($readme, 'GitHub update check') !== false, 'README documents update checker');
