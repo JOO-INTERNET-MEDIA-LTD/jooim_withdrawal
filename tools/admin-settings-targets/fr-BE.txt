@@ -39,7 +39,7 @@
 039	URL cron hébergée (secrète) :
 040	Définit la durée pendant laquelle le lien d’accès unique envoyé par e-mail reste utilisable. Plage attendue : 5–240 minutes ; valeur par défaut recommandée : 30.
 041	Incluse
-042\tRétractation du contrat en ligne
+042	Rétractation du contrat en ligne
 043	Support Joobox pour ce module
 044	Langue
 045	URL indépendantes de la langue pour les listes de liens externes :

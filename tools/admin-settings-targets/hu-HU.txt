@@ -39,7 +39,7 @@
 039	Tárhely cron URL-je (titkos):
 040	Az egyszer használatos e-mailes hozzáférési hivatkozás használhatósági ideje. Elvárt tartomány: 5–240 perc; ajánlott alapérték: 30.
 041	Tartalmazza
-042\tOnline elállás a szerződéstől
+042	Online elállás a szerződéstől
 043	Joobox-támogatás ehhez a modulhoz
 044	Nyelv
 045	Nyelvfüggetlen URL-ek külső hivatkozáslistákhoz:

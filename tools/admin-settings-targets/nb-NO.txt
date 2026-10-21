@@ -39,7 +39,7 @@
 039	Cron-adresse for hosting (hemmelig):
 040	Hvor lenge engangstilgangslenken i e-posten kan brukes. Forventet område: 5–240 minutter; anbefalt standard: 30.
 041	Inkludert
-042\tNettbasert angrerett
+042	Nettbasert angrerett
 043	Joobox-støtte for denne modulen
 044	Språk
 045	Språknøytrale adresser for eksterne lenkelister:

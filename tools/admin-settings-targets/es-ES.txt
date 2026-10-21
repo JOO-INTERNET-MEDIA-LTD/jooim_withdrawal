@@ -39,7 +39,7 @@
 039	URL cron del alojamiento (secreta):
 040	Tiempo durante el que puede utilizarse el enlace de acceso de un solo uso enviado por correo. Intervalo esperado: 5–240 minutos; valor recomendado: 30.
 041	Incluido
-042\tDesistimiento contractual en línea
+042	Desistimiento contractual en línea
 043	Soporte de Joobox para este módulo
 044	Idioma
 045	URL independientes del idioma para listas de enlaces externas:

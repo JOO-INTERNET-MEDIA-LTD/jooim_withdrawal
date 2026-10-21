@@ -39,7 +39,7 @@
 039	Hostinga cron URL (slepenais):
 040	Cik ilgi vienreizējā e-pasta piekļuves saite paliek izmantojama. Paredzamais diapazons: 5–240 minūtes; ieteicamā noklusējuma vērtība: 30.
 041	Iekļauts
-042\tAtteikšanās no līguma tiešsaistē
+042	Atteikšanās no līguma tiešsaistē
 043	Joobox atbalsts šim modulim
 044	Valoda
 045	No valodas neatkarīgi URL ārējiem saišu sarakstiem:

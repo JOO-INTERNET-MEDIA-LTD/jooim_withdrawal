@@ -39,7 +39,7 @@
 039	Prieglobos cron URL (slaptas):
 040	Kiek laiko galima naudoti vienkartinę el. pašto prieigos nuorodą. Tikėtinas intervalas: 5–240 minučių; rekomenduojama numatytoji reikšmė: 30.
 041	Įtraukta
-042\tSutarties atsisakymas internetu
+042	Sutarties atsisakymas internetu
 043	„Joobox“ pagalba šiam moduliui
 044	Kalba
 045	Nuo kalbos nepriklausomi URL išoriniams nuorodų sąrašams:

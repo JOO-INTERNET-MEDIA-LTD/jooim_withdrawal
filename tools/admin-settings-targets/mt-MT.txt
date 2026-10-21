@@ -39,7 +39,7 @@
 039	URL cron tal-hosting (sigriet):
 040	Kemm iddum tista’ tintuża l-link ta’ aċċess ta’ darba fl-email. Firxa mistennija: 5–240 minuta; valur predefinit rakkomandat: 30.
 041	Inkluż
-042\tIrtirar minn kuntratt online
+042	Irtirar minn kuntratt online
 043	Appoġġ Joobox għal dan il-modulu
 044	Lingwa
 045	URLs newtrali għal-lingwa għal listi esterni ta’ links:
