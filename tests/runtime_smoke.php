@@ -140,10 +140,20 @@ $assert(
 preg_match_all('/name="(JOOIM_WITHDRAWAL_[A-Z0-9_]+)"/', $configTemplate, $matches);
 $configurationInputs = array_values(array_unique($matches[1] ?? []));
 $assert(count($configurationInputs) === 24, 'all 24 editable settings are visible in Back Office');
-$assert(
-    strpos($configTemplate, 'type="hidden" name="JOOIM_WITHDRAWAL_') === false,
-    'no editable setting is silently submitted as a hidden field'
-);
+preg_match_all('/type="hidden" name="(JOOIM_WITHDRAWAL_[A-Z0-9_]+)" value="0"/', $configTemplate, $hiddenBooleans);
+$assert(count($hiddenBooleans[1]) === 6, 'six boolean switches submit an explicit unchecked zero');
+foreach ($configurationInputs as $field) {
+    $assert(
+        preg_match('/<(?:input|textarea|select)\b(?![^>]*type="hidden")[^>]*name="' . preg_quote($field, '/') . '"/', $configTemplate) === 1,
+        $field . ' has a visible editable control'
+    );
+}
+foreach ($hiddenBooleans[1] as $field) {
+    $assert(
+        preg_match('/type="checkbox" role="switch"[^>]*name="' . preg_quote($field, '/') . '" value="1"/', $configTemplate) === 1,
+        $field . ' has an explicit checked one companion'
+    );
+}
 $assert(substr_count($configTemplate, 'class="help-block"') >= 30, 'Back Office inputs and operations include help text');
 $assert(strpos($main, "public const VERSION = '1.1.1'") !== false, 'module version is 1.1.1');
 $assert($frontJsRevision === $frontJs, 'revisioned footer JavaScript matches canonical source');
@@ -197,5 +207,8 @@ if ($failures !== []) {
     }
     exit(1);
 }
+
+// Keep presentation checks inside the existing CI entry point.
+require __DIR__ . '/portfolio-ui.php';
 
 echo "PASS: runtime smoke checks\n";

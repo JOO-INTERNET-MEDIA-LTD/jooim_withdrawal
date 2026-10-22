@@ -383,7 +383,7 @@ foreach ([
 }
 check(substr_count($configureTemplate, 'class="help-block"') >= 30, 'Back Office settings include purpose and expected-value help text');
 check(strpos($configureTemplate, 'type="hidden" name="JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH"') === false, 'customer note limit is visible in Back Office');
-check(strpos($configureTemplate, 'type="hidden" name="JOOIM_WITHDRAWAL_ATTACH_PDF"') === false, 'PDF acknowledgement setting is visible in Back Office');
+check(preg_match('/type="checkbox" role="switch"[^>]*name="JOOIM_WITHDRAWAL_ATTACH_PDF"/', $configureTemplate) === 1, 'PDF acknowledgement setting is a visible native switch in Back Office');
 
 $frontTemplates = glob($root . '/views/templates/front/*.tpl') ?: [];
 sort($frontTemplates);
