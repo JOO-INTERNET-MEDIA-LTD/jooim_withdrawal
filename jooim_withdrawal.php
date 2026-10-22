@@ -565,10 +565,12 @@ class Jooim_Withdrawal extends Module
                 'token' => (string) Configuration::get('JOOIM_WITHDRAWAL_CRON_TOKEN'),
             ], true),
         ]);
-        return $output
+        require_once __DIR__.'/classes/PortfolioAdmin.php';
+        return JooimPortfolioAdmin::presentation($this, $output
             . $this->renderJooboxSupportPanel()
             . $this->renderUpdateCheckPanel()
-            . $this->display(__FILE__, 'views/templates/admin/configure.tpl');
+            . '<!--jooim-settings-->'
+            . $this->display(__FILE__, 'views/templates/admin/configure.tpl'), $this->_path);
     }
 
     protected function synchronizeFooterAttributionHook(): bool
@@ -799,9 +801,9 @@ class Jooim_Withdrawal extends Module
 
     protected function renderJooboxSupportPanel(): string
     {
-        $supportUrl = $this->getJooboxSupportUrl();
+        $supportUrl = 'https://support.joobox.eu';
 
-        return '<div class="panel jooim-withdrawal-support-panel">'
+        return '<div class="panel jooim-support jooim-withdrawal-support-panel">'
             . '<h3><i class="icon-life-ring"></i> '
             . $this->trans('Joobox support for this module', [], self::TRANS_ADMIN)
             . '</h3>'
@@ -814,11 +816,11 @@ class Jooim_Withdrawal extends Module
             . '</p>'
             . '<p><a class="btn btn-primary" href="'
             . htmlspecialchars($supportUrl, ENT_QUOTES, 'UTF-8')
-            . '" target="_blank" rel="noopener">'
+            . '" target="_blank" rel="noopener noreferrer">'
             . $this->trans('Get Joobox support', [], self::TRANS_ADMIN)
             . '</a> <a class="btn btn-default" href="'
             . htmlspecialchars(self::GITHUB_REPOSITORY_URL, ENT_QUOTES, 'UTF-8')
-            . '" target="_blank" rel="noopener">GitHub</a></p>'
+            . '" target="_blank" rel="noopener noreferrer">GitHub</a></p>'
             . '</div>';
     }
 
@@ -856,7 +858,7 @@ class Jooim_Withdrawal extends Module
             . '&token=' . rawurlencode(Tools::getAdminTokenLite('AdminModules'))
             . '&jooim_refresh_update=1';
 
-        $html = '<div class="panel jooim-withdrawal-update-panel">';
+        $html = '<div class="panel jooim-updates jooim-withdrawal-update-panel">';
         $html .= '<h3><i class="icon-refresh"></i> '
             . $this->trans('Update check', [], self::TRANS_ADMIN)
             . '</h3>';
@@ -883,7 +885,7 @@ class Jooim_Withdrawal extends Module
             . '</p>';
         $html .= '<p><a class="btn btn-primary" href="'
             . htmlspecialchars(self::GITHUB_RELEASES_URL, ENT_QUOTES, 'UTF-8')
-            . '" target="_blank" rel="noopener">'
+            . '" target="_blank" rel="noopener noreferrer">'
             . $this->trans('Open GitHub Releases', [], self::TRANS_ADMIN)
             . '</a> <a class="btn btn-default" href="'
             . htmlspecialchars($refreshUrl, ENT_QUOTES, 'UTF-8')

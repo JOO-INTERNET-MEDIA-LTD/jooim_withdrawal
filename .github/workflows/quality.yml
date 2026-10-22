@@ -44,6 +44,9 @@ jobs:
       - name: Runtime regression smoke test
         run: php tests/runtime_smoke.php
 
+      - name: Configuration presentation and form regression
+        run: php tests/portfolio-ui.php
+
       - name: PrestaShop 8 translation bridge regression
         run: php tests/translation_bridge_smoke.php
 

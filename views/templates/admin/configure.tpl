@@ -1,11 +1,11 @@
 <div class="panel">
-  <h3><i class="icon-legal"></i> JOOIM Withdrawal</h3>
+
   <div class="alert alert-info">
     <strong>{l s='EU compliance note (2026):' d='Modules.Jooimwithdrawal.Admin'}</strong>
     {l s='For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.' d='Modules.Jooimwithdrawal.Admin'}
   </div>
 
-  <dl class="jooim-withdrawal-link-list">
+  <dl class="jooim-withdrawal-link-list jooim-diagnostics">
     <dt>{l s='Public entry:' d='Modules.Jooimwithdrawal.Admin'}</dt>
     <dd>
       <a href="{$public_url|escape:'htmlall':'UTF-8'}" target="_blank" rel="noopener">{$public_url|escape:'htmlall':'UTF-8'}</a>
@@ -103,48 +103,33 @@
   <div class="panel">
     <h3>{l s='General and legal availability' d='Modules.Jooimwithdrawal.Admin'}</h3>
 
-    <div class="form-group">
+    <div class="form-group jooim-toggle-field">
       <label for="jooim-enabled">{l s='Module enabled' d='Modules.Jooimwithdrawal.Admin'}</label>
-      <select id="jooim-enabled" name="JOOIM_WITHDRAWAL_ENABLED" class="form-control">
-        <option value="1" {if $config.JOOIM_WITHDRAWAL_ENABLED == '1'}selected{/if}>{l s='Yes' d='Modules.Jooimwithdrawal.Admin'}</option>
-        <option value="0" {if $config.JOOIM_WITHDRAWAL_ENABLED != '1'}selected{/if}>{l s='No' d='Modules.Jooimwithdrawal.Admin'}</option>
-      </select>
+      <span class="jooim-toggle"><input type="hidden" name="JOOIM_WITHDRAWAL_ENABLED" value="0"><input type="checkbox" role="switch" id="jooim-enabled" name="JOOIM_WITHDRAWAL_ENABLED" value="1" {if $config.JOOIM_WITHDRAWAL_ENABLED == '1'}checked{/if}><span class="jooim-toggle-track" aria-hidden="true"></span></span>
       <p class="help-block">{l s='Master switch for the public withdrawal flows and customer-facing withdrawal links. Disabling it does not delete or alter withdrawals already received.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
-    <div class="form-group">
+    <div class="form-group jooim-toggle-field">
       <label for="jooim-direct-function">{l s='Direct Article 11a function' d='Modules.Jooimwithdrawal.Admin'}</label>
-      <select id="jooim-direct-function" name="JOOIM_WITHDRAWAL_DIRECT_FUNCTION" class="form-control">
-        <option value="1" {if $config.JOOIM_WITHDRAWAL_DIRECT_FUNCTION == '1'}selected{/if}>{l s='Enabled' d='Modules.Jooimwithdrawal.Admin'}</option>
-        <option value="0" {if $config.JOOIM_WITHDRAWAL_DIRECT_FUNCTION != '1'}selected{/if}>{l s='Disabled (legal review required)' d='Modules.Jooimwithdrawal.Admin'}</option>
-      </select>
+      <span class="jooim-toggle"><input type="hidden" name="JOOIM_WITHDRAWAL_DIRECT_FUNCTION" value="0"><input type="checkbox" role="switch" id="jooim-direct-function" name="JOOIM_WITHDRAWAL_DIRECT_FUNCTION" value="1" {if $config.JOOIM_WITHDRAWAL_DIRECT_FUNCTION == '1'}checked{/if}><span class="jooim-toggle-track" aria-hidden="true"></span></span>
       <p class="help-block">{l s='Enables the direct online withdrawal form that does not require a customer account or access to the original order email. Disable it only after a market-specific legal review.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
-    <div class="form-group">
+    <div class="form-group jooim-toggle-field">
       <label for="jooim-footer-link">{l s='Footer link (keep enabled for applicable online B2C contracts)' d='Modules.Jooimwithdrawal.Admin'}</label>
-      <select id="jooim-footer-link" name="JOOIM_WITHDRAWAL_FOOTER_LINK" class="form-control">
-        <option value="1" {if $config.JOOIM_WITHDRAWAL_FOOTER_LINK == '1'}selected{/if}>{l s='Enabled' d='Modules.Jooimwithdrawal.Admin'}</option>
-        <option value="0" {if $config.JOOIM_WITHDRAWAL_FOOTER_LINK != '1'}selected{/if}>{l s='Disabled' d='Modules.Jooimwithdrawal.Admin'}</option>
-      </select>
+      <span class="jooim-toggle"><input type="hidden" name="JOOIM_WITHDRAWAL_FOOTER_LINK" value="0"><input type="checkbox" role="switch" id="jooim-footer-link" name="JOOIM_WITHDRAWAL_FOOTER_LINK" value="1" {if $config.JOOIM_WITHDRAWAL_FOOTER_LINK == '1'}checked{/if}><span class="jooim-toggle-track" aria-hidden="true"></span></span>
       <p class="help-block">{l s='Displays the customer-facing “Withdraw from contract here” link in the shop footer. This legal-function link is independent of the Joobox marketing attribution.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
-    <div class="form-group">
+    <div class="form-group jooim-toggle-field">
       <label for="jooim-account-link">{l s='Customer account link' d='Modules.Jooimwithdrawal.Admin'}</label>
-      <select id="jooim-account-link" name="JOOIM_WITHDRAWAL_ACCOUNT_LINK" class="form-control">
-        <option value="1" {if $config.JOOIM_WITHDRAWAL_ACCOUNT_LINK == '1'}selected{/if}>{l s='Enabled' d='Modules.Jooimwithdrawal.Admin'}</option>
-        <option value="0" {if $config.JOOIM_WITHDRAWAL_ACCOUNT_LINK != '1'}selected{/if}>{l s='Disabled' d='Modules.Jooimwithdrawal.Admin'}</option>
-      </select>
+      <span class="jooim-toggle"><input type="hidden" name="JOOIM_WITHDRAWAL_ACCOUNT_LINK" value="0"><input type="checkbox" role="switch" id="jooim-account-link" name="JOOIM_WITHDRAWAL_ACCOUNT_LINK" value="1" {if $config.JOOIM_WITHDRAWAL_ACCOUNT_LINK == '1'}checked{/if}><span class="jooim-toggle-track" aria-hidden="true"></span></span>
       <p class="help-block">{l s='Adds a withdrawal entry to the customer’s My account area. The customer is still allowed to use the public flow when the order is not visible in the account.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
-    <div class="form-group">
+    <div class="form-group jooim-toggle-field">
       <label for="jooim-order-button">{l s='Order detail button' d='Modules.Jooimwithdrawal.Admin'}</label>
-      <select id="jooim-order-button" name="JOOIM_WITHDRAWAL_ORDER_BUTTON" class="form-control">
-        <option value="1" {if $config.JOOIM_WITHDRAWAL_ORDER_BUTTON == '1'}selected{/if}>{l s='Enabled' d='Modules.Jooimwithdrawal.Admin'}</option>
-        <option value="0" {if $config.JOOIM_WITHDRAWAL_ORDER_BUTTON != '1'}selected{/if}>{l s='Disabled' d='Modules.Jooimwithdrawal.Admin'}</option>
-      </select>
+      <span class="jooim-toggle"><input type="hidden" name="JOOIM_WITHDRAWAL_ORDER_BUTTON" value="0"><input type="checkbox" role="switch" id="jooim-order-button" name="JOOIM_WITHDRAWAL_ORDER_BUTTON" value="1" {if $config.JOOIM_WITHDRAWAL_ORDER_BUTTON == '1'}checked{/if}><span class="jooim-toggle-track" aria-hidden="true"></span></span>
       <p class="help-block">{l s='Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
   </div>
@@ -259,12 +244,9 @@
         <p class="help-block">{l s='Maximum number of plain-text characters accepted in the optional customer note. HTML is not accepted. Recommended default: 2000.' d='Modules.Jooimwithdrawal.Admin'}</p>
       </div>
 
-      <div class="col-md-4 form-group">
+      <div class="col-md-4 form-group jooim-toggle-field">
         <label for="jooim-attach-pdf">{l s='Attach PDF acknowledgement' d='Modules.Jooimwithdrawal.Admin'}</label>
-        <select id="jooim-attach-pdf" name="JOOIM_WITHDRAWAL_ATTACH_PDF" class="form-control">
-          <option value="1" {if $config.JOOIM_WITHDRAWAL_ATTACH_PDF == '1'}selected{/if}>{l s='Enabled' d='Modules.Jooimwithdrawal.Admin'}</option>
-          <option value="0" {if $config.JOOIM_WITHDRAWAL_ATTACH_PDF != '1'}selected{/if}>{l s='Disabled' d='Modules.Jooimwithdrawal.Admin'}</option>
-        </select>
+        <span class="jooim-toggle"><input type="hidden" name="JOOIM_WITHDRAWAL_ATTACH_PDF" value="0"><input type="checkbox" role="switch" id="jooim-attach-pdf" name="JOOIM_WITHDRAWAL_ATTACH_PDF" value="1" {if $config.JOOIM_WITHDRAWAL_ATTACH_PDF == '1'}checked{/if}><span class="jooim-toggle-track" aria-hidden="true"></span></span>
         <p class="help-block">{l s='Attaches the immutable withdrawal confirmation PDF to the acknowledgement email. Disabling the attachment does not remove the protected PDF stored with the case.' d='Modules.Jooimwithdrawal.Admin'}</p>
       </div>
 
@@ -281,9 +263,9 @@
       <p class="help-block">{l s='Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
-    <button class="btn btn-primary" type="submit" name="submitJooimWithdrawal" value="1">
+    <div class="jooim-actions"><button class="btn btn-primary" type="submit" name="submitJooimWithdrawal" value="1">
       <i class="icon-save"></i> {l s='Save settings' d='Modules.Jooimwithdrawal.Admin'}
-    </button>
+    </button></div>
   </div>
 </form>
 
