@@ -208,4 +208,7 @@ if ($failures !== []) {
     exit(1);
 }
 
+// Keep presentation checks inside the existing CI entry point.
+require __DIR__ . '/portfolio-ui.php';
+
 echo "PASS: runtime smoke checks\n";
