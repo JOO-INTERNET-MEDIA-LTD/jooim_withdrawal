@@ -1,0 +1,359 @@
+{
+  "language": "ro",
+  "title": "Manual",
+  "settings": "Setări",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Setări",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Disponibilitate",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Activați modulul",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Activați fluxul de retragere. Dezactivarea nu șterge înregistrările de retragere păstrate și nu soluționează cererile existente.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Funcție de retragere directă",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Permiteți punctul direct de intrare pentru retragere. Nu elimină verificarea identității și comenzii cerută de flux.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Link în subsol",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Afișați linkul de retragere în subsol când tema redă hook-ul său. Este independent de atribuirea comună joobox.eu.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Link în contul clientului",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Afișați accesul la retragere în contul clientului. Nu face accesibile comenzile altor clienți.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Buton în detaliile comenzii",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Afișați un buton de retragere pe pagina comenzii relevante. Eligibilitatea și verificarea se aplică în continuare.",
+            "text_language": "ro",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Datele comerciantului",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Numele comerciantului",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Denumirea juridică sau comercială a vânzătorului afișată în documentele de retragere.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Adresa comerciantului",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Adresa poștală completă a comerciantului pentru documente, nu automat o adresă de retur a coletelor.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Numărul de înregistrare al comerciantului",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Identificarea firmei sau înregistrării comerciantului afișată clientului.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "E-mailul comerciantului",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "E-mail de contact valid al comerciantului pentru fluxul de retragere.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Telefonul comerciantului",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Telefon de contact al comerciantului destinat clienților.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Adresa de retur",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Adresa completă și instrucțiunile de returnare a bunurilor. Verificați că este locul efectiv de primire.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL-ul politicii de confidențialitate",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "URL-ul complet al politicii de confidențialitate a magazinului. Legați informații relevante pentru datele de retragere colectate.",
+            "text_language": "ro",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Securitate",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Valabilitatea linkului de acces (minute)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Timpul până la expirarea unui link de acces pentru oaspeți nou emis. Limitele mai scurte reduc expunerea, dar pot expira înainte de citirea e-mailului.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Limita de inactivitate a sesiunii (minute)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Inactivitatea maximă înainte de expirarea sesiunii de oaspete. Nu trebuie să depășească durata absolută a sesiunii.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Durata absolută a sesiunii (minute)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Durata totală maximă a sesiunii de oaspete, chiar cu activitate. Trebuie să fie cel puțin egală cu limita de inactivitate.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Pauză înainte de retrimitere (secunde)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Așteptarea minimă înainte de a solicita alt e-mail de acces. Limitează avalanșa de e-mailuri; nu prelungește valabilitatea linkului.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Solicitări per IP / 15 minute",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Limita solicitărilor de la un IP în 15 minute. IP-urile partajate de gospodării sau firme împart limita.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Solicitări per IP / zi",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Limita zilnică a solicitărilor per IP; trebuie să fie cel puțin egală cu limita intervalului mai scurt.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Solicitări per comandă / oră",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Limita orară a solicitărilor pentru o comandă, independent de IP-ul solicitant.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Solicitări per comandă / zi",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Limita zilnică a solicitărilor per comandă; trebuie să fie cel puțin egală cu limita orară.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Lungimea maximă a notei",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Lungimea maximă a notei clientului în caractere. Nu solicitați informații sensibile inutile în notă.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Număr de reîncercări e-mail",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Numărul reîncercărilor de livrare pentru coada de e-mailuri a modulului. Zero le dezactivează; nu dovedește că primul e-mail a ajuns la destinatar.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Atașare PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Atașați PDF-ul de retragere generat e-mailului relevant. Dezactivat trimite e-mailul fără acel atașament; nu șterge retragerea înregistrată.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Prefixul referinței",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Folosiți 1–12 litere, cifre sau cratime pentru noile referințe de retragere. Etichetează înregistrări noi, nu referințele originale ale comenzilor magazinului.",
+            "text_language": "ro",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Ștergere date",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Confirmare ștergere",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Tastați literal DELETE numai când intenționați ștergerea permanentă a datelor modulului. Nu introduceți pentru modificări obișnuite de setări.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Ștergere permanentă a datelor modulului",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Eliminați ireversibil dovezile de retragere ale modulului și datele asociate. Faceți întâi backup și verificați obligațiile de păstrare. Este o acțiune distructivă separată, nu butonul Salvare; comenzile și clienții magazinului nu sunt ținta ștergerii.",
+            "text_language": "ro",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operații",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Salvează",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Salvare aplică formularul curent magazinului selectat; simpla schimbare a unui comutator sau selector nu salvează. În GA4, salvarea acoperă împreună Măsurare, Comenzi și Avansat; formularele separate ale bannerului se salvează independent.",
+            "text_language": "ro",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Verificarea actualizărilor",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Verificați metadatele ultimei versiuni stabile de pe GitHub. Nu descarcă și nu instalează cod. Versiunea instalată, ultima versiune și ora verificării UTC sunt valori diferite; indisponibil nu înseamnă actualizat. Instalați numai arhiva ZIP de instalare a versiunii, cu SHA256 aferent.",
+            "text_language": "ro",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Găsiți aceeași filă și denumire a setării ca în formularul de configurare. Fiecare intrare explică efectul, ce trebuie introdus și opțiunile disponibile. Modificați setările unui magazin, apoi folosiți butonul Salvare din secțiunea respectivă.",
+      "default": "Valoare implicită",
+      "expected": "Ce să introduceți / alegeți",
+      "choices": "Opțiuni disponibile",
+      "on": "Activat",
+      "off": "Dezactivat",
+      "empty": "Gol",
+      "action": "Acțiune; fără valoare salvată",
+      "dynamic": "Depinde de magazin / limba selectată"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

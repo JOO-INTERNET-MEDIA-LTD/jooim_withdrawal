@@ -1,0 +1,247 @@
+{
+  "bg-BG": {
+    "Links": "Връзки",
+    "Availability": "Достъпност",
+    "Trader": "Търговец",
+    "Security": "Сигурност",
+    "Data removal": "Изтриване"
+  },
+  "cs-CZ": {
+    "Links": "Odkazy",
+    "Availability": "Dostupnost",
+    "Trader": "Obchodník",
+    "Security": "Zabezpečení",
+    "Data removal": "Vymazání"
+  },
+  "da-DK": {
+    "Links": "Links",
+    "Availability": "Tilgængelighed",
+    "Trader": "Forhandler",
+    "Security": "Sikkerhed",
+    "Data removal": "Datasletning"
+  },
+  "de-BE": {
+    "Links": "Links",
+    "Availability": "Verfügbarkeit",
+    "Trader": "Händler",
+    "Security": "Sicherheit",
+    "Data removal": "Datenlöschung"
+  },
+  "de-DE": {
+    "Links": "Links",
+    "Availability": "Verfügbarkeit",
+    "Trader": "Händler",
+    "Security": "Sicherheit",
+    "Data removal": "Datenlöschung"
+  },
+  "el-GR": {
+    "Links": "Σύνδεσμοι",
+    "Availability": "Διαθεσιμότητα",
+    "Trader": "Έμπορος",
+    "Security": "Ασφάλεια",
+    "Data removal": "Διαγραφή δεδομένων"
+  },
+  "en-CA": {
+    "Links": "Links",
+    "Availability": "Availability",
+    "Trader": "Trader",
+    "Security": "Security",
+    "Data removal": "Data removal"
+  },
+  "en-GB": {
+    "Links": "Links",
+    "Availability": "Availability",
+    "Trader": "Trader",
+    "Security": "Security",
+    "Data removal": "Data removal"
+  },
+  "en-US": {
+    "Links": "Links",
+    "Availability": "Availability",
+    "Trader": "Trader",
+    "Security": "Security",
+    "Data removal": "Data removal"
+  },
+  "es-ES": {
+    "Links": "Enlaces",
+    "Availability": "Disponibilidad",
+    "Trader": "Vendedor",
+    "Security": "Seguridad",
+    "Data removal": "Borrado de datos"
+  },
+  "et-EE": {
+    "Links": "Lingid",
+    "Availability": "Saadavus",
+    "Trader": "Kaupleja",
+    "Security": "Turvalisus",
+    "Data removal": "Andmete kustutamine"
+  },
+  "fi-FI": {
+    "Links": "Linkit",
+    "Availability": "Saatavuus",
+    "Trader": "Myyjä",
+    "Security": "Tietoturva",
+    "Data removal": "Tietojen poisto"
+  },
+  "fr-BE": {
+    "Links": "Liens",
+    "Availability": "Disponibilité",
+    "Trader": "Vendeur",
+    "Security": "Sécurité",
+    "Data removal": "Suppression"
+  },
+  "fr-CA": {
+    "Links": "Liens",
+    "Availability": "Disponibilité",
+    "Trader": "Vendeur",
+    "Security": "Sécurité",
+    "Data removal": "Suppression"
+  },
+  "fr-FR": {
+    "Links": "Liens",
+    "Availability": "Disponibilité",
+    "Trader": "Vendeur",
+    "Security": "Sécurité",
+    "Data removal": "Suppression"
+  },
+  "ga-IE": {
+    "Links": "Naisc",
+    "Availability": "Infhaighteacht",
+    "Trader": "Trádálaí",
+    "Security": "Slándáil",
+    "Data removal": "Scriosadh sonraí"
+  },
+  "hr-HR": {
+    "Links": "Poveznice",
+    "Availability": "Dostupnost",
+    "Trader": "Trgovac",
+    "Security": "Sigurnost",
+    "Data removal": "Brisanje podataka"
+  },
+  "hu-HU": {
+    "Links": "Hivatkozások",
+    "Availability": "Elérhetőség",
+    "Trader": "Kereskedő",
+    "Security": "Biztonság",
+    "Data removal": "Adattörlés"
+  },
+  "it-IT": {
+    "Links": "Collegamenti",
+    "Availability": "Disponibilità",
+    "Trader": "Venditore",
+    "Security": "Sicurezza",
+    "Data removal": "Eliminazione dati"
+  },
+  "lb-LU": {
+    "Links": "Linken",
+    "Availability": "Disponibilitéit",
+    "Trader": "Händler",
+    "Security": "Sécherheet",
+    "Data removal": "Donnéeë läschen"
+  },
+  "lt-LT": {
+    "Links": "Nuorodos",
+    "Availability": "Prieinamumas",
+    "Trader": "Pardavėjas",
+    "Security": "Saugumas",
+    "Data removal": "Duomenų šalinimas"
+  },
+  "lv-LV": {
+    "Links": "Saites",
+    "Availability": "Pieejamība",
+    "Trader": "Tirgotājs",
+    "Security": "Drošība",
+    "Data removal": "Datu dzēšana"
+  },
+  "mt-MT": {
+    "Links": "Links",
+    "Availability": "Disponibbiltà",
+    "Trader": "Negozjant",
+    "Security": "Sigurtà",
+    "Data removal": "Tħassir tad-dejta"
+  },
+  "nb-NO": {
+    "Links": "Lenker",
+    "Availability": "Tilgjengelighet",
+    "Trader": "Forhandler",
+    "Security": "Sikkerhet",
+    "Data removal": "Slett data"
+  },
+  "nl-BE": {
+    "Links": "Links",
+    "Availability": "Beschikbaarheid",
+    "Trader": "Verkoper",
+    "Security": "Beveiliging",
+    "Data removal": "Gegevens wissen"
+  },
+  "nl-NL": {
+    "Links": "Links",
+    "Availability": "Beschikbaarheid",
+    "Trader": "Verkoper",
+    "Security": "Beveiliging",
+    "Data removal": "Gegevens wissen"
+  },
+  "nn-NO": {
+    "Links": "Lenkjer",
+    "Availability": "Tilgjenge",
+    "Trader": "Forhandlar",
+    "Security": "Tryggleik",
+    "Data removal": "Slett data"
+  },
+  "no-NO": {
+    "Links": "Lenker",
+    "Availability": "Tilgjengelighet",
+    "Trader": "Forhandler",
+    "Security": "Sikkerhet",
+    "Data removal": "Slett data"
+  },
+  "pl-PL": {
+    "Links": "Odnośniki",
+    "Availability": "Dostępność",
+    "Trader": "Sprzedawca",
+    "Security": "Bezpieczeństwo",
+    "Data removal": "Usuwanie danych"
+  },
+  "pt-PT": {
+    "Links": "Ligações",
+    "Availability": "Disponibilidade",
+    "Trader": "Comerciante",
+    "Security": "Segurança",
+    "Data removal": "Eliminar dados"
+  },
+  "ro-RO": {
+    "Links": "Legături",
+    "Availability": "Disponibilitate",
+    "Trader": "Comerciant",
+    "Security": "Securitate",
+    "Data removal": "Ștergere date"
+  },
+  "sk-SK": {
+    "Links": "Odkazy",
+    "Availability": "Dostupnosť",
+    "Trader": "Obchodník",
+    "Security": "Bezpečnosť",
+    "Data removal": "Vymazanie"
+  },
+  "sl-SI": {
+    "Links": "Povezave",
+    "Availability": "Dostopnost",
+    "Trader": "Trgovec",
+    "Security": "Varnost",
+    "Data removal": "Izbris podatkov"
+  },
+  "sv-SE": {
+    "Links": "Länkar",
+    "Availability": "Tillgänglighet",
+    "Trader": "Säljare",
+    "Security": "Säkerhet",
+    "Data removal": "Radera data"
+  },
+  "uk-UA": {
+    "Links": "Посилання",
+    "Availability": "Доступність",
+    "Trader": "Продавець",
+    "Security": "Безпека",
+    "Data removal": "Видалення даних"
+  }
+}

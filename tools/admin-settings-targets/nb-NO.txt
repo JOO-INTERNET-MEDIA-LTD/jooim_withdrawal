@@ -118,3 +118,8 @@
 118	Bruk dette bare i en disponibel testinstallasjon.
 119	Ja
 120	Bare administrasjonsinnstillinger
+121	Lenker
+122	Tilgjengelighet
+123	Forhandler
+124	Sikkerhet
+125	Slett data

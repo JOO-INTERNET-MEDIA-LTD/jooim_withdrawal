@@ -118,3 +118,8 @@
 118	Izmantojiet to tikai vienreizlietojamā testa instalācijā.
 119	Jā
 120	Tikai Back Office iestatījumi
+121	Saites
+122	Pieejamība
+123	Tirgotājs
+124	Drošība
+125	Datu dzēšana

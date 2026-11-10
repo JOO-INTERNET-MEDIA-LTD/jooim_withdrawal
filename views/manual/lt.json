@@ -1,0 +1,359 @@
+{
+  "language": "lt",
+  "title": "Vadovas",
+  "settings": "Nustatymai",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Nustatymai",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Prieinamumas",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Įjungti modulį",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Įjunkite sutarties atsisakymo procesą. Išjungimas neištrina išsaugotų atsisakymų įrašų ir neišsprendžia esamų reikalavimų.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Tiesioginio atsisakymo funkcija",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Leiskite tiesioginį atsisakymo prieigos tašką. Tai neatleidžia nuo procese reikalingo tapatybės ir užsakymo tikrinimo.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Nuoroda poraštėje",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Rodykite atsisakymo prieigos nuorodą parduotuvės poraštėje, kai tema atvaizduoja jos kablį. Tai nepriklauso nuo bendros joobox.eu nuorodos.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Nuoroda kliento paskyroje",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Rodykite atsisakymo prieigą kliento paskyroje. Kitų klientų užsakymai netampa prieinami.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Mygtukas užsakymo informacijoje",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Rodykite atsisakymo mygtuką atitinkamame užsakymo puslapyje. Tinkamumas ir tikrinimas vis tiek taikomi.",
+            "text_language": "lt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Pardavėjo duomenys",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Pardavėjo pavadinimas",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Teisinis ar prekybinis pardavėjo pavadinimas atsisakymo dokumentuose.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Pardavėjo adresas",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Visas pardavėjo pašto adresas dokumentams, ne automatiškai siuntų grąžinimo adresas.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Pardavėjo registracijos numeris",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Pardavėjo įmonės ar registracijos identifikatorius, rodomas klientui.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Pardavėjo el. paštas",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Galiojantis pardavėjo kontaktinis el. paštas atsisakymo procesui.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Pardavėjo telefonas",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Klientams skirtas pardavėjo kontaktinis telefonas.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Grąžinimo adresas",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Visas prekių grąžinimo adresas ir instrukcijos. Patikrinkite, ar tai tikra gavimo vieta.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "Privatumo politikos URL",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Visas šios parduotuvės privatumo politikos URL. Pateikite nuorodą į informaciją, susijusią su renkamais atsisakymo duomenimis.",
+            "text_language": "lt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Saugumas",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Prieigos nuorodos galiojimas (minutės)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Laikas iki naujos svečio prieigos nuorodos galiojimo pabaigos. Trumpesnės ribos mažina riziką, bet gali baigtis prieš perskaitant laišką.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Seanso neveiklos riba (minutės)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Didžiausia neveikla iki svečio seanso pabaigos. Negali viršyti absoliučios seanso trukmės.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Absoliuti seanso trukmė (minutės)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Didžiausia bendra svečio seanso trukmė net esant veiklai. Turi būti bent lygi neveiklos ribai.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Pakartotinio siuntimo laukimas (sekundėmis)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Trumpiausias laukimas iki kito prieigos laiško prašymo. Ribojamas laiškų užtvindymas; nuorodos galiojimas nepratęsiamas.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Užklausos vienam IP / 15 minučių",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Užklausų iš vieno IP riba per 15 minučių. Bendri namų ar įmonių IP dalijasi riba.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Užklausos vienam IP / dieną",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Dienos užklausų riba vienam IP; turi būti bent lygi trumpesnio intervalo ribai.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Užklausos užsakymui / valandai",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Valandos užklausų riba vienam užsakymui, nepriklausomai nuo prašančio IP.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Užklausos užsakymui / dienai",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Dienos užklausų riba vienam užsakymui; turi būti bent lygi valandos ribai.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Didžiausias pastabos ilgis",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Didžiausias kliento pastabos ilgis ženklais. Neprašykite nereikalingos jautrios informacijos pastaboje.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Pakartotinių laiško bandymų skaičius",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Pakartotinių pristatymo bandymų skaičius modulio el. pašto eilėje. Nulis juos išjungia; neįrodo, kad pirmas laiškas pasiekė gavėją.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Pridėti PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Pridėkite sugeneruotą atsisakymo PDF prie atitinkamo laiško. Išjungta siunčia laišką be priedo; neištrina užregistruoto atsisakymo.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Nuorodos prefiksas",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Naudokite 1–12 raidžių, skaičių ar brūkšnelių naujų atsisakymų nuorodoms. Žymi naujus įrašus, ne pradines parduotuvės užsakymų nuorodas.",
+            "text_language": "lt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Duomenų šalinimas",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Trynimo patvirtinimas",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Įveskite pažodinį DELETE tik ketindami visam laikui ištrinti modulio duomenis. Neįveskite įprastiems nustatymų pakeitimams.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Visam laikui ištrinti modulio duomenis",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Negrįžtamai pašalinkite modulio atsisakymo įrodymus ir susijusius duomenis. Pirmiausia sukurkite atsarginę kopiją ir patikrinkite saugojimo prievoles. Tai atskiras naikinantis veiksmas, ne Išsaugoti; parduotuvės užsakymai ir klientai nėra trynimo tikslas.",
+            "text_language": "lt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operacijos",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Išsaugoti",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Išsaugoti pritaiko dabartinę formą pasirinktai parduotuvei; vien jungiklio ar pasirinkimo pakeitimas neišsaugo. GA4 išsaugojimas kartu apima Matavimą, Užsakymus ir Išplėstinius nustatymus; atskiros juostos formos išsaugomos nepriklausomai.",
+            "text_language": "lt",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Naujinimo tikrinimas",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Patikrinkite naujausios stabilios GitHub laidos metaduomenis. Kodas neatsisiunčiamas ir neįdiegiamas. Įdiegta versija, naujausia versija ir tikrinimo laikas UTC yra skirtingos reikšmės; nepasiekiama nereiškia atnaujinta. Diekite tik laidos diegimo ZIP su jo SHA256.",
+            "text_language": "lt",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Raskite tą patį skirtuką ir nustatymo pavadinimą kaip konfigūracijos formoje. Kiekvienas įrašas paaiškina poveikį, ką įvesti ir galimus pasirinkimus. Pakeiskite vienos parduotuvės nustatymus, tada naudokite tos skilties mygtuką Išsaugoti.",
+      "default": "Numatytoji reikšmė",
+      "expected": "Ką įvesti / pasirinkti",
+      "choices": "Galimos parinktys",
+      "on": "Įjungta",
+      "off": "Išjungta",
+      "empty": "Tuščia",
+      "action": "Veiksmas; reikšmė neišsaugoma",
+      "dynamic": "Priklauso nuo parduotuvės / pasirinktos kalbos"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

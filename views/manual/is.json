@@ -1,0 +1,359 @@
+{
+  "language": "is",
+  "title": "Handbók",
+  "settings": "Stillingar",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Stillingar",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Framboð",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Virkja einingu",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Virkjaðu ferli afturköllunar kaupa. Afvirkjun eyðir ekki vistuðum afturköllunarfærslum eða leysir fyrirliggjandi kröfur.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Bein afturköllunaraðgerð",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Leyfðu beinan aðgang að afturköllun. Þetta fellir ekki niður auðkennis- og pöntunarstaðfestingu sem ferlið krefst.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Tengill í síðufæti",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Sýndu afturköllunartengil í síðufæti þegar þemað birtir krók hans. Þetta er óháð sameiginlegri joobox.eu-tilvísun.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Tengill í viðskiptavinareikningi",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Sýndu aðgang að afturköllun í viðskiptavinareikningi. Þetta gerir ekki pantanir annarra viðskiptavina aðgengilegar.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Hnappur í pöntunarupplýsingum",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Sýndu afturköllunarhnapp á viðeigandi pöntunarsíðu. Gjaldgengi og staðfesting gilda áfram.",
+            "text_language": "is",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Upplýsingar söluaðila",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Heiti söluaðila",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Lögformlegt heiti eða viðskiptaheiti söluaðila sem birt er á afturköllunarskjölum.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Heimilisfang söluaðila",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Fullt póstfang söluaðila fyrir skjöl, ekki sjálfkrafa heimilisfang fyrir skilapakka.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Skráningarnúmer söluaðila",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Fyrirtækja- eða skráningarauðkenni söluaðila sem birt er viðskiptavini.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Netfang söluaðila",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Gilt samskiptanetfang söluaðila fyrir afturköllunarferlið.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Sími söluaðila",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Símanúmer söluaðila ætlað viðskiptavinum.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Skilaheimilisfang",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Fullt heimilisfang og leiðbeiningar um skil vöru. Athugaðu að þetta sé raunverulegur móttökustaður.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL persónuverndarstefnu",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Fullt URL persónuverndarstefnu verslunarinnar. Tengdu á upplýsingar sem eiga við afturköllunargögnin sem þú safnar.",
+            "text_language": "is",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Öryggi",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Gildistími aðgangstengils (mínútur)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Tími þar til nýútgefinn gestaaðgangstengill rennur út. Styttri mörk minnka áhættu en kunna að renna út áður en tölvupóstur er lesinn.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Aðgerðaleysismörk setu (mínútur)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Hámarksaðgerðaleysi þar til gestaseta rennur út. Má ekki fara yfir algildan líftíma setunnar.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Algildur líftími setu (mínútur)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Hámarksheildarlengd gestasetu jafnvel með virkni. Verður að vera að minnsta kosti jöfn aðgerðaleysismörkum.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Bið eftir endursendingu (sekúndur)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Lágmarksbið áður en biðja má um annan aðgangspóst. Takmarkar póstflóð; lengir ekki gildi tengils.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Beiðnir á IP / 15 mínútur",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Beiðnimörk frá einu IP á 15 mínútum. Sameiginleg heimilis- eða fyrirtækja-IP deila mörkunum.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Beiðnir á IP / dag",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Dagleg beiðnimörk á IP; verða að vera að minnsta kosti jöfn mörkum styttra tímabils.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Beiðnir á pöntun / klukkustund",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Beiðnimörk á klukkustund fyrir eina pöntun, óháð IP beiðanda.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Beiðnir á pöntun / dag",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Dagleg beiðnimörk á pöntun; verða að vera að minnsta kosti jöfn klukkustundarmörkum.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Hámarkslengd athugasemdar",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Hámarkslengd athugasemdar viðskiptavinar í stöfum. Ekki biðja um óþarfar viðkvæmar upplýsingar í athugasemdinni.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Fjöldi endurtilrauna tölvupósts",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Fjöldi endurtilrauna sendingar fyrir póströð einingarinnar. Núll slekkur á endurtilraunum; það sannar ekki að fyrsti pósturinn hafi borist viðtakanda.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Hengja PDF við",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Hengdu myndað afturköllunar-PDF við viðeigandi tölvupóst. Slökkt sendir póstinn án þess viðhengis; það eyðir ekki skráðri afturköllun.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Forskeyti tilvísunar",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Notaðu 1–12 bókstafi, tölustafi eða bandstrik fyrir nýjar afturköllunartilvísanir. Þetta merkir nýjar færslur, ekki upprunalegar pöntunartilvísanir verslunarinnar.",
+            "text_language": "is",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Eyðing gagna",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Staðfesting eyðingar",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Sláðu bókstaflega inn DELETE aðeins þegar þú ætlar að eyða einingagögnum varanlega. Ekki slá þetta inn fyrir venjulegar stillingabreytingar.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Eyða einingagögnum varanlega",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Fjarlægðu óafturkræft afturköllunarsönnunargögn einingar og tengd gögn. Taktu fyrst öryggisafrit og athugaðu varðveisluskyldur. Þetta er aðskilin eyðandi aðgerð, ekki Vista-hnappurinn; pantanir og viðskiptavinir verslunarinnar eru ekki markmið eyðingar.",
+            "text_language": "is",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Aðgerðir",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Vista",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Vista beitir núverandi eyðublaði á valda verslun; breyting á rofa eða vali ein og sér vistar ekki. Í GA4 nær vistun saman yfir Mælingar, Pantanir og Ítarlegt; aðskilin eyðublöð borðans eru vistuð sjálfstætt.",
+            "text_language": "is",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Athuga uppfærslur",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Athugaðu lýsigögn nýjustu stöðugu GitHub-útgáfunnar. Þetta sækir ekki eða setur upp kóða. Uppsett útgáfa, nýjasta útgáfa og UTC-tími athugunar eru ólík gildi; ótiltækt merkir ekki uppfært. Settu aðeins upp uppsetningar-ZIP útgáfunnar með tilheyrandi SHA256.",
+            "text_language": "is",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Finndu sama flipa og heiti stillingar og í uppsetningareyðublaðinu. Hver færsla útskýrir áhrif, hvað skal slá inn og tiltæka valkosti. Breyttu stillingum einnar verslunar og notaðu síðan Vista-hnapp þess hluta.",
+      "default": "Sjálfgefið",
+      "expected": "Hvað á að slá inn / velja",
+      "choices": "Valkostir",
+      "on": "Kveikt",
+      "off": "Slökkt",
+      "empty": "Tómt",
+      "action": "Aðgerð; ekkert vistað gildi",
+      "dynamic": "Fer eftir verslun / völdu tungumáli"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

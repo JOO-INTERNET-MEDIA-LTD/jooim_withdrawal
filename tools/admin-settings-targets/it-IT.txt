@@ -118,3 +118,8 @@
 118	Utilizzare questa funzione solo in un’installazione di test eliminabile.
 119	Sì
 120	Solo impostazioni Back Office
+121	Collegamenti
+122	Disponibilità
+123	Venditore
+124	Sicurezza
+125	Eliminazione dati

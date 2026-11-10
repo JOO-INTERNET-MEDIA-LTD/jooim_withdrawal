@@ -118,3 +118,8 @@
 118	Gebruik dit alleen in een tijdelijke testinstallatie.
 119	Ja
 120	Alleen Back Office-instellingen
+121	Links
+122	Beschikbaarheid
+123	Verkoper
+124	Beveiliging
+125	Gegevens wissen

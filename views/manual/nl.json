@@ -1,0 +1,359 @@
+{
+  "language": "nl",
+  "title": "Handleiding",
+  "settings": "Instellingen",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Instellingen",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Beschikbaarheid",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Module inschakelen",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Schakel de herroepingsworkflow in. Uitschakelen wist geen opgeslagen herroepingsregistraties en handelt bestaande claims niet af.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Directe herroepingsfunctie",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Sta het directe herroepingsingangspunt toe. Dit heft de door de workflow vereiste identiteits-/bestelverificatie niet op.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Voettekstlink",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Toon de herroepingslink in de winkelvoettekst wanneer het thema de betreffende hook weergeeft. Dit staat los van de algemene joobox.eu-bronvermelding.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Link in het klantaccount",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Toon het herroepingsingangspunt in het klantaccount. Dit maakt bestellingen van andere klanten niet toegankelijk.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Knop in besteldetails",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Toon een herroepingsknop op de betreffende bestelpagina. Geschiktheid en verificatie blijven van toepassing.",
+            "text_language": "nl",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Handelaarsgegevens",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Naam handelaar",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Juridische/handelsnaam van de handelaar die op herroepingsdocumenten wordt getoond.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Adres handelaar",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Volledig postadres van de handelaar voor documenten, niet automatisch een retourpakketadres.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Registratienummer handelaar",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Bedrijfs-/registratie-identificatie van de handelaar die aan de klant wordt getoond.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "E-mail handelaar",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Geldig contact-e-mailadres van de handelaar voor de herroepingsworkflow.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Telefoon handelaar",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Contacttelefoonnummer van de handelaar voor klanten.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Retouradres",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Volledig adres en instructies voor het retourneren van goederen. Controleer dat dit de werkelijke ontvangstlocatie is.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL van privacybeleid",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Volledige privacybeleid-URL voor deze winkel. Verwijs naar informatie die relevant is voor de herroepingsgegevens die u verzamelt.",
+            "text_language": "nl",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Beveiliging",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Geldigheidsduur toegangslink (minuten)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Tijd totdat een nieuw uitgegeven gasttoegangslink verloopt. Kortere grenzen verminderen blootstelling maar kunnen verlopen voordat de e-mail wordt gelezen.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Inactiviteitstime-out sessie (minuten)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Maximale inactiviteit voordat de gastsessie verloopt. Mag de absolute sessieduur niet overschrijden.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Absolute sessieduur (minuten)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Maximale totale duur van een gastsessie, ook bij activiteit. Moet minstens gelijk zijn aan de inactiviteitstime-out.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Wachttijd voor opnieuw verzenden (seconden)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Minimale wachttijd voordat opnieuw een toegangse-mail kan worden aangevraagd. Beperkt e-mailoverlast; verlengt de geldigheid van de link niet.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Aanvragen per IP / 15 minuten",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Aanvraaglimiet vanaf één IP gedurende 15 minuten. Gedeelde huishoud-/bedrijfs-IPs delen de limiet.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Aanvragen per IP / dag",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Dagelijkse aanvraaglimiet per IP; moet minstens gelijk zijn aan de limiet voor het kortere tijdvenster.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Aanvragen per bestelling / uur",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Aanvraaglimiet per uur voor één bestelling, onafhankelijk van het aanvragende IP.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Aanvragen per bestelling / dag",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Dagelijkse aanvraaglimiet per bestelling; moet minstens gelijk zijn aan de uurlimiet.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Maximale notitielengte",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Maximale lengte van een klantnotitie in tekens. Vraag in de notitie geen onnodige gevoelige informatie.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Aantal herhaalde e-mailpogingen",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Aantal herhaalde afleverpogingen voor de module-e-mailwachtrij. Nul schakelt herhalingen uit; dit bewijst niet dat de eerste e-mail de ontvanger heeft bereikt.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "PDF bijvoegen",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Voeg de gegenereerde herroepings-PDF aan de betreffende e-mail toe. Uit verstuurt de e-mail zonder die bijlage; de geregistreerde herroeping wordt niet verwijderd.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Voorvoegsel van referentie",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Gebruik 1–12 letters, cijfers of koppeltekens voor nieuwe herroepingsreferenties. Dit labelt nieuwe registraties, niet de oorspronkelijke winkelbestelreferenties.",
+            "text_language": "nl",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Gegevens wissen",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Verwijderingsbevestiging",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Typ letterlijk DELETE alleen wanneer u modulegegevens permanent wilt verwijderen. Voer dit niet in voor gewone instellingswijzigingen.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Modulegegevens permanent verwijderen",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Verwijder het herroepingsbewijs van de module en bijbehorende gegevens onomkeerbaar. Maak eerst een back-up en controleer bewaarplichten. Dit is een afzonderlijke destructieve actie, niet de knop Opslaan; winkelbestellingen en klanten zijn niet het verwijderingsdoel.",
+            "text_language": "nl",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Bewerkingen",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Opslaan",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Opslaan past het huidige formulier toe op de geselecteerde winkel; alleen een schakelaar of selectie wijzigen slaat niets op. In GA4 omvat opslaan Meting, Bestellingen en Geavanceerd samen; de afzonderlijke bannerformulieren worden onafhankelijk opgeslagen.",
+            "text_language": "nl",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Updatecontrole",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Controleer de metadata van de nieuwste stabiele GitHub-release. Er wordt geen code gedownload of geïnstalleerd. De geïnstalleerde versie, nieuwste versie en UTC-controleertijd zijn verschillende waarden; niet beschikbaar betekent niet hetzelfde als actueel. Installeer uitsluitend het installatie-ZIP van de release met zijn SHA256.",
+            "text_language": "nl",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Zoek hetzelfde tabblad en dezelfde instellingsnaam als in het configuratieformulier. Elke vermelding beschrijft het effect, wat u moet invoeren en de beschikbare keuzes. Wijzig instellingen voor één winkel en gebruik vervolgens de knop Opslaan van dat onderdeel.",
+      "default": "Standaardwaarde",
+      "expected": "Wat invoeren / kiezen",
+      "choices": "Beschikbare opties",
+      "on": "Aan",
+      "off": "Uit",
+      "empty": "Leeg",
+      "action": "Actie; geen opgeslagen waarde",
+      "dynamic": "Afhankelijk van de winkel / de gekozen taal"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

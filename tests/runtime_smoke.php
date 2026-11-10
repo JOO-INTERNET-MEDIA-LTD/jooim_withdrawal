@@ -155,7 +155,7 @@ foreach ($hiddenBooleans[1] as $field) {
     );
 }
 $assert(substr_count($configTemplate, 'class="help-block"') >= 30, 'Back Office inputs and operations include help text');
-$assert(strpos($main, "public const VERSION = '1.1.1'") !== false, 'module version is 1.1.1');
+$assert(strpos($main, "public const VERSION = '1.00.01'") !== false, 'module version is 1.00.01');
 $assert($frontJsRevision === $frontJs, 'revisioned footer JavaScript matches canonical source');
 $assert($frontCssRevision === $frontCss, 'revisioned footer CSS matches canonical source');
 $assert(strpos($main, "FRONT_ASSET_BASENAME = 'front-footer-v4'") !== false, 'revisioned footer assets are registered');

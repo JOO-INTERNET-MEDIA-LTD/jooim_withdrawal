@@ -1,0 +1,359 @@
+{
+  "language": "ga",
+  "title": "Lámhleabhar",
+  "settings": "Socruithe",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Socruithe",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Infhaighteacht",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Cumasaigh an modúl",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Cumasaigh próiseas aistarraingthe ón gconradh. Ní scriosann díchumasú taifid aistarraingthe stóráilte ná ní réitíonn sé éilimh atá ann.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Feidhm dhíreach aistarraingthe",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Ceadaigh an pointe iontrála díreach don aistarraingt. Ní tharscaoileann sé seo fíorú aitheantais/ordaithe a éilíonn an próiseas.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Nasc buntáisc",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Taispeáin nasc iontrála aistarraingthe i mbuntásc éadan an tsiopa nuair a rindreálann an téama a chrúca. Tá sé seo neamhspleách ar an admháil choiteann joobox.eu.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Nasc i gcuntas an chustaiméara",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Taispeáin pointe iontrála aistarraingthe i gcuntas an chustaiméara. Ní chuireann sé orduithe custaiméirí eile ar fáil.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Cnaipe i sonraí an ordaithe",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Taispeáin cnaipe iontrála aistarraingthe ar leathanach an ordaithe ábhartha. Tá incháilitheacht agus fíorú i bhfeidhm fós.",
+            "text_language": "ga",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Sonraí an trádálaí",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Ainm an cheannaí",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Ainm dlíthiúil/trádála an cheannaí a thaispeántar i ndoiciméid aistarraingthe.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Seoladh an cheannaí",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Seoladh poist iomlán an cheannaí do dhoiciméid, ní seoladh fillte beartán go huathoibríoch.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Uimhir chlárúcháin an cheannaí",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Aitheantas cuideachta/clárúcháin an cheannaí a thaispeántar don chustaiméir.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Ríomhphost an cheannaí",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Seoladh ríomhphoist bailí teagmhála an cheannaí don phróiseas aistarraingthe.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Teileafón an cheannaí",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Uimhir theileafóin teagmhála an cheannaí do chustaiméirí.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Seoladh fillte",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Seoladh iomlán agus treoracha chun earraí a chur ar ais. Seiceáil gurb é an suíomh iarbhír glactha é.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL an bheartais phríobháideachais",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "URL iomlán bheartas príobháideachais an tsiopa seo. Nasc le faisnéis a bhaineann leis na sonraí aistarraingthe a bhailíonn tú.",
+            "text_language": "ga",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Slándáil",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Saolré an naisc rochtana (nóiméid)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Am sula dtéann nasc rochtana nua-eisithe d'aoi in éag. Laghdaíonn teorainneacha níos giorra nochtadh ach féadfaidh siad dul in éag sula léitear an ríomhphost.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Teorainn neamhghníomhaíochta an tseisiúin (nóiméid)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Uastréimhse neamhghníomhaíochta sula dtéann seisiún an aoi in éag. Ní ceadmhach di dul thar shaolré iomlán an tseisiúin.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Saolré iomlán an tseisiúin (nóiméid)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Uasfhad iomlán sheisiún an aoi fiú le gníomhaíocht. Caithfidh sé a bheith ar a laghad chomh fada leis an teorainn neamhghníomhaíochta.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Moill athsheolta (soicindí)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Íosfhanacht sular féidir ríomhphost rochtana eile a iarraidh. Cuireann sé teorainn le tuile ríomhphoist; ní shíneann sé bailíocht naisc.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Iarrataí in aghaidh IP / 15 nóiméad",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Teorainn ráta d'iarratais ó IP amháin thar 15 nóiméad. Roinneann IPanna teaghlaigh/cuideachta comhroinnte an teorainn.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Iarrataí in aghaidh IP / lá",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Teorainn laethúil iarratas in aghaidh an IP; caithfidh sí a bheith ar a laghad chomh hard leis an teorainn ama níos giorra.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Iarratais in aghaidh an ordaithe / na huaire",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Teorainn iarratas in aghaidh na huaire d'ordú amháin, neamhspleách ar an IP iarrthach.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Iarratais in aghaidh an ordaithe / lae",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Teorainn laethúil iarratas in aghaidh an ordaithe; caithfidh sí a bheith ar a laghad chomh hard leis an teorainn uair an chloig.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Uasfhad nóta",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Uasfhad nóta custaiméara i gcarachtair. Ná hiarr faisnéis íogair neamhriachtanach sa nóta.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Líon athiarrachtaí ríomhphoist",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Líon athiarrachtaí seachadta do scuaine ríomhphoist an mhodúil. Díchumasaíonn nialas athiarrachtaí; ní chruthaíonn sé gur shroich an chéad ríomhphost an faighteoir.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Ceangail PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Ceangail an PDF aistarraingthe ginte leis an ríomhphost ábhartha. Seolann As an ríomhphost gan an ceangaltán sin; ní scriosann sé an aistarraingt thaifeadta.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Réimír tagartha",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Úsáid 1–12 litir, uimhir nó fleiscín do thagairtí nua aistarraingthe. Lipéadaíonn sé seo taifid nua, ní buntagairtí orduithe an tsiopa.",
+            "text_language": "ga",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Scriosadh sonraí",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Deimhniú scriosta",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Clóscríobh an téacs litriúil DELETE ach amháin nuair atá sé ar intinn agat sonraí an mhodúil a scriosadh go buan. Ná hiontráil é le haghaidh gnáthathruithe socruithe.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Scrios sonraí an mhodúil go buan",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Bain fianaise aistarraingthe an mhodúil agus sonraí gaolmhara go do-aisiompaithe. Déan cúltaca agus seiceáil dualgais coinneála ar dtús. Gníomh scriosach ar leith é seo, ní an cnaipe Sábháil; ní orduithe/custaiméirí an tsiopa sprioc an scriosta.",
+            "text_language": "ga",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Oibríochtaí",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Sábháil",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Cuireann Sábháil an fhoirm reatha i bhfeidhm ar an siopa roghnaithe; ní shábhálann athrú lasca nó roghnóra amháin aon rud. In GA4 sábháiltear Tomhas, Orduithe agus Ardroghanna le chéile; sábháiltear foirmeacha ar leith na meirge go neamhspleách.",
+            "text_language": "ga",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Seiceáil nuashonraithe",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Seiceáil meiteashonraí an eisiúna chobhsaí is déanaí ar GitHub. Ní íoslódálann ná ní shuiteálann sé cód. Is luachanna éagsúla iad an leagan suiteáilte, an leagan is déanaí agus am seiceála UTC; ní chiallaíonn faisnéis nach bhfuil ar fáil go bhfuil tú cothrom le dáta. Suiteáil ZIP suiteála an eisiúna lena SHA256 amháin.",
+            "text_language": "ga",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Aimsigh an cluaisín agus ainm an tsocraithe céanna atá san fhoirm chumraíochta. Míníonn gach iontráil a héifeacht, cad atá le hiontráil agus na roghanna atá ar fáil. Athraigh socruithe do shiopa amháin agus ansin úsáid cnaipe Sábháil na rannóige sin.",
+      "default": "Réamhshocrú",
+      "expected": "Cad ba cheart a iontráil / a roghnú",
+      "choices": "Roghanna atá ar fáil",
+      "on": "Ar siúl",
+      "off": "Múchta",
+      "empty": "Folamh",
+      "action": "Gníomh; ní stóráiltear luach",
+      "dynamic": "Ag brath ar an siopa / ar an teanga roghnaithe"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

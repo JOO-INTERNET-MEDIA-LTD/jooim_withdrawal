@@ -1,0 +1,6 @@
+.jooim-portfolio-admin .jooim-withdrawal-settings .wd-tabs{display:flex;flex-wrap:wrap;gap:24px;border-bottom:1px solid #dce5ec;margin-bottom:24px}
+.jooim-portfolio-admin .jooim-withdrawal-settings .wd-tabs button{appearance:none;background:transparent;border:0;border-bottom:3px solid transparent;border-radius:0;padding:14px 2px;margin:0;font:inherit;font-weight:600;color:#536b7d;cursor:pointer}
+.jooim-portfolio-admin .jooim-withdrawal-settings .wd-tabs button[aria-selected=true]{border-bottom-color:#008caf;color:#123047}
+.jooim-portfolio-admin .jooim-withdrawal-settings [hidden]{display:none!important}
+.jooim-portfolio-admin .jooim-withdrawal-settings .wd-tab-panel{min-width:0}
+@media(max-width:700px){.jooim-portfolio-admin .jooim-withdrawal-settings .wd-tabs{gap:12px}.jooim-portfolio-admin .jooim-withdrawal-settings .wd-tabs button{padding:12px 0}}

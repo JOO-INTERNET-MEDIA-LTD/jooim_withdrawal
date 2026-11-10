@@ -1,0 +1,359 @@
+{
+  "language": "sk",
+  "title": "Manuál",
+  "settings": "Nastavenia",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Nastavenia",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Dostupnosť",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Povoliť modul",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Povolí postup odstúpenia. Vypnutie nevymaže záznamy ani nevybaví existujúce žiadosti.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Priame odstúpenie od zmluvy",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Povolí priamy vstup na odstúpenie. Neruší overovanie identity a objednávky požadované postupom.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Odkaz v pätičke",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Zobrazí odkaz na odstúpenie v pätičke, ak téma vykresľuje príslušný hook. Je nezávislý od spoločného odkazu joobox.eu.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Odkaz v zákazníckom účte",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Zobrazí vstup na odstúpenie v zákazníckom účte. Nesprístupní objednávky iných zákazníkov.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Tlačidlo v detaile objednávky",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Zobrazí tlačidlo vstupu na odstúpenie pri príslušnej objednávke. Naďalej platia podmienky a overovanie.",
+            "text_language": "sk",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Údaje obchodníka",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Názov obchodníka",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Právny/obchodný názov predávajúceho v dokumentoch odstúpenia.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Adresa obchodníka",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Celá poštová adresa predávajúceho pre dokumenty, nie automaticky adresa na vrátenie zásielky.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Registračné číslo obchodníka",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Identifikačné alebo registračné číslo predávajúceho zobrazené zákazníkovi.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "E-mail obchodníka",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Platný kontaktný e-mail predávajúceho pre postup odstúpenia.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Telefón obchodníka",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Kontaktné telefónne číslo predávajúceho pre zákazníka.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Adresa na vrátenie tovaru",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Celá adresa a pokyny na vrátenie tovaru. Overte, že ide o skutočné miesto príjmu.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL zásad ochrany osobných údajov",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Celá URL zásad ochrany osobných údajov obchodu. Odkážte na informácie k údajom získavaným pri odstúpení.",
+            "text_language": "sk",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Bezpečnosť",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Platnosť prístupového odkazu (minúty)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Čas do vypršania nového prístupového odkazu hosťa. Kratší limit znižuje riziko, ale odkaz môže vypršať pred prečítaním e-mailu.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Limit nečinnosti relácie (minúty)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Najvyššia nečinnosť pred vypršaním relácie hosťa. Nesmie prekročiť celkové trvanie relácie.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Celkové trvanie relácie (minúty)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Najvyššie celkové trvanie relácie hosťa aj pri aktivite. Musí byť aspoň rovné limitu nečinnosti.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Čas medzi opakovaným odoslaním (sekundy)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Najkratšie čakanie pred ďalšou žiadosťou o prístupový e-mail. Obmedzuje zahlcovanie; nepredlžuje platnosť odkazu.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Žiadosti na IP / 15 minút",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Limit žiadostí z jednej IP za 15 minút. Domácnosti a firmy so spoločnou IP zdieľajú limit.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Žiadosti na IP / deň",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Denný limit žiadostí z IP; musí byť aspoň rovný limitu kratšieho obdobia.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Žiadosti na objednávku za hodinu",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Hodinový limit žiadostí pre jednu objednávku nezávisle od žiadajúcej IP.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Žiadosti na objednávku za deň",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Denný limit pre objednávku; musí byť aspoň rovný hodinovému.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Najvyššia dĺžka poznámky",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Najvyššia dĺžka poznámky zákazníka v znakoch. Nežiadajte zbytočné citlivé údaje.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Počet opakovaných pokusov o odoslanie e-mailu",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Počet opakovaných pokusov doručenia vo fronte e-mailov modulu. Nula vypne opakovanie; nepotvrdzuje doručenie prvého e-mailu.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Priložiť PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Pripojí vygenerované PDF odstúpenia k príslušnému e-mailu. Vypnuté odošle e-mail bez prílohy; nevymaže zaznamenané odstúpenie.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Prefix referencie",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Použite 1–12 písmen, číslic alebo pomlčiek pre nové referencie odstúpenia. Označuje nové záznamy, nie referencie pôvodných objednávok.",
+            "text_language": "sk",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Vymazanie",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Potvrdenie vymazania",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Zadajte presné DELETE len pri úmyselnom trvalom vymazaní údajov modulu. Nezadávajte ho pri bežnej zmene nastavení.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Trvalo odstrániť údaje modulu",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Nezvratne odstráni evidenciu odstúpení a súvisiace údaje modulu. Najprv zálohujte a overte povinnosti uchovávania. Ide o samostatnú deštruktívnu akciu, nie Uložiť; cieľom nie sú objednávky ani zákazníci obchodu.",
+            "text_language": "sk",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operácie",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Uložiť",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Uložiť potvrdí aktuálny formulár pre vybraný obchod; samotné prepnutie alebo výber nič neukladá. V GA4 sa spolu ukladajú Meranie, Objednávky a Pokročilé; samostatné formuláre bannera sa ukladajú oddelene.",
+            "text_language": "sk",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Kontrola aktualizácií",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Skontroluje údaje najnovšieho stabilného vydania na GitHube. Kód nesťahuje ani neinštaluje. Nainštalovaná verzia, najnovšia verzia a čas kontroly UTC sú odlišné údaje; nedostupné neznamená aktuálne. Inštalujte iba inštalačný ZIP vydania s jeho SHA256.",
+            "text_language": "sk",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Nájdite rovnaký tab a názov voľby ako vo formulári nastavení. Pri každej voľbe je vysvetlený účinok, čo zadať a význam dostupných možností. Vyberte konkrétny obchod a zmeny potvrďte tlačidlom Uložiť v danej časti.",
+      "default": "Predvolené nastavenie",
+      "expected": "Čo zadať alebo zvoliť",
+      "choices": "Dostupné možnosti",
+      "on": "Zapnuté",
+      "off": "Vypnuté",
+      "empty": "Prázdne",
+      "action": "Akcia; neukladá vlastnú hodnotu",
+      "dynamic": "Podľa obchodu / vybraného jazyka"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

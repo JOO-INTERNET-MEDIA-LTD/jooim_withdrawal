@@ -118,3 +118,8 @@
 118	Käytä tätä vain kertakäyttöisessä testiympäristössä.
 119	Kyllä
 120	Vain Back Office -asetukset
+121	Linkit
+122	Saatavuus
+123	Myyjä
+124	Tietoturva
+125	Tietojen poisto

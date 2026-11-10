@@ -36,7 +36,7 @@ use JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\WithdrawalStatusP
 
 class Jooim_Withdrawal extends Module
 {
-    public const VERSION = '1.1.1';
+    public const VERSION = '1.00.01';
     private const FRONT_ASSET_BASENAME = 'front-footer-v4';
     public const GITHUB_REPOSITORY_URL = 'https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal';
     public const GITHUB_RELEASES_URL = 'https://github.com/JOO-INTERNET-MEDIA-LTD/jooim_withdrawal/releases/latest';
@@ -552,6 +552,8 @@ class Jooim_Withdrawal extends Module
             . '&controller=entry&target=';
 
         $this->context->smarty->assign([
+            'withdrawal_tab_labels' => (new \JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service\AdminTabLabels(__DIR__ . '/translations/admin-tabs.json'))->labels($this->context->language, fn (string $source): string => $this->jooimTranslate($source, [], self::TRANS_ADMIN)),
+            'withdrawal_active_tab' => in_array(Tools::getValue('withdrawal_active_tab', 'links'), ['links', 'availability', 'trader', 'security', 'data'], true) ? Tools::getValue('withdrawal_active_tab', 'links') : 'links',
             'config' => $config->all(),
             'runtime_sync' => $runtimeSync,
             'current_configure_url' => $currentConfigureUrl,
@@ -570,7 +572,9 @@ class Jooim_Withdrawal extends Module
             . $this->renderJooboxSupportPanel()
             . $this->renderUpdateCheckPanel()
             . '<!--jooim-settings-->'
-            . $this->display(__FILE__, 'views/templates/admin/configure.tpl'), $this->_path);
+            . $this->display(__FILE__, 'views/templates/admin/configure.tpl', null, $this->getDefaultCompileId() . '|admin-tabs-i18n-2')
+            . '<link rel="stylesheet" href="' . htmlspecialchars($this->_path . 'views/css/admin-tabs.css?v=1', ENT_QUOTES, 'UTF-8') . '">'
+            . '<script defer src="' . htmlspecialchars($this->_path . 'views/js/admin-tabs.js?v=1', ENT_QUOTES, 'UTF-8') . '"></script>', $this->_path);
     }
 
     protected function synchronizeFooterAttributionHook(): bool

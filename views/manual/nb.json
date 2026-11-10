@@ -1,0 +1,359 @@
+{
+  "language": "nb",
+  "title": "Brukerveiledning",
+  "settings": "Innstillinger",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Innstillinger",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Tilgjengelighet",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Aktiver modul",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Aktiver angrerettsflyten. Deaktivering sletter ikke lagrede angrerettsoppføringer og avgjør ikke eksisterende krav.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Direkte angrerettsfunksjon",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Tillat direkte inngang til angrerett. Dette fritar ikke fra identitets-/bestillingskontrollen arbeidsflyten krever.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Bunntekstlenke",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Vis inngangslenke til angrerett i butikkens bunntekst når temaet viser tilhørende krok. Dette er uavhengig av den felles joobox.eu-krediteringen.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Lenke i kundekonto",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Vis inngang til angrerett i kundekontoen. Dette gjør ikke andre kunders bestillinger tilgjengelige.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Knapp i bestillingsdetaljer",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Vis en knapp for angrerett på relevant bestillingsside. Kvalifikasjonskrav og verifisering gjelder fortsatt.",
+            "text_language": "nb",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Forhandleropplysninger",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Forhandlernavn",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Forhandlerens juridiske navn/handelsnavn som vises i angrerettsdokumenter.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Forhandleradresse",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Fullstendig postadresse for forhandleren til dokumenter, ikke automatisk returpakkeadresse.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Forhandlerens registreringsnummer",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Forhandlerens firma-/registreringsidentifikasjon som vises til kunden.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Forhandlerens e-post",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Gyldig kontakt-e-post til forhandleren for angrerettsflyten.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Forhandlertelefon",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Forhandlerens kundevendte kontakttelefon.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Returadresse",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Fullstendig adresse og instruksjoner for retur av varer. Kontroller at dette er faktisk mottakssted.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "Adresse til personvernerklæring",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Fullstendig URL til butikkens personvernpolicy. Lenk til informasjon relevant for angrerettsdataene du samler inn.",
+            "text_language": "nb",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Sikkerhet",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Tilgangslenkens levetid (minutter)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Tid før en nyutstedt gjestetilgangslenke utløper. Kortere grenser reduserer eksponering, men kan utløpe før e-posten leses.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Inaktivitetsgrense for økt (minutter)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Maksimal inaktivitet før gjesteøkten utløper. Må ikke overskride absolutt øktlevetid.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Absolutt øktlevetid (minutter)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Maksimal samlet gjesteøktvarighet også med aktivitet. Må være minst like lang som inaktivitetsgrensen.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Ventetid for ny sending (sekunder)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Minste ventetid før en ny tilgangs-e-post kan bes om. Begrenser e-postflom; forlenger ikke lenkens gyldighet.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Forespørsler per IP / 15 minutter",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Frekvensgrense for forespørsler fra én IP i 15 minutter. Delte husholdnings-/firma-IP-er deler grensen.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Forespørsler per IP / dag",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Daglig forespørselsgrense per IP; må være minst like stor som grensen for det kortere tidsvinduet.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Forespørsler per bestilling / time",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Timegrense for forespørsler for én bestilling, uavhengig av forespørrerens IP.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Forespørsler per bestilling / dag",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Daglig forespørselsgrense per bestilling; må være minst like stor som timegrensen.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Maksimal merknadslengde",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Maksimal lengde på kundemerknad i tegn. Ikke be om unødvendige sensitive opplysninger i merknaden.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Antall nye e-postforsøk",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Antall nye leveringsforsøk for modulens e-postkø. Null deaktiverer nye forsøk; det beviser ikke at første e-post nådde mottakeren.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Legg ved PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Legg generert angreretts-PDF ved relevant e-post. Av sender e-post uten dette vedlegget; det sletter ikke registrert angrerett.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Referanseprefiks",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Bruk 1–12 bokstaver, tall eller bindestreker for nye angrerettsreferanser. Dette merker nye oppføringer, ikke butikkens opprinnelige bestillingsreferanser.",
+            "text_language": "nb",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Slett data",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Slettebekreftelse",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Skriv nøyaktig DELETE bare når du ønsker permanent sletting av moduldata. Ikke angi dette ved vanlige innstillingsendringer.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Slett moduldata permanent",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Fjern modulens angrerettsbevis og tilhørende data irreversibelt. Ta sikkerhetskopi og kontroller lagringsplikter først. Dette er en separat destruktiv handling, ikke Lagre-knappen; butikkbestillinger/kunder er ikke målet for slettingen.",
+            "text_language": "nb",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operasjoner",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Lagre",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Lagre bruker gjeldende skjema på valgt butikk; endring av en bryter eller liste lagrer ikke alene. I GA4 lagres Måling, Bestillinger og Avansert samlet; bannerets separate skjemaer lagres uavhengig.",
+            "text_language": "nb",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Oppdateringskontroll",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Kontroller metadata for siste stabile GitHub-utgivelse. Dette laster ikke ned eller installerer kode. Installert versjon, nyeste versjon og kontrolltid i UTC er ulike verdier; utilgjengelig betyr ikke oppdatert. Installer bare utgivelsens installasjons-ZIP med tilhørende SHA256.",
+            "text_language": "nb",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Finn samme fane og innstillingsnavn som i konfigurasjonsskjemaet. Hver oppføring forklarer virkningen, hva du skal angi og tilgjengelige valg. Endre innstillingene for én butikk, og bruk deretter Lagre i den aktuelle delen.",
+      "default": "Standardverdi",
+      "expected": "Hva du skal skrive inn / velge",
+      "choices": "Tilgjengelige valg",
+      "on": "På",
+      "off": "Av",
+      "empty": "Tom",
+      "action": "Handling; ingen lagret verdi",
+      "dynamic": "Avhenger av butikken / det valgte språket"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

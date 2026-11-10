@@ -118,3 +118,8 @@
 118	Benotzt dëst nëmmen an enger ewechzegeheien Testinstallatioun.
 119	Jo
 120	Nëmmen Astellunge vum Back Office
+121	Linken
+122	Disponibilitéit
+123	Händler
+124	Sécherheet
+125	Donnéeë läschen

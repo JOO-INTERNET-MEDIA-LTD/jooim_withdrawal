@@ -118,3 +118,8 @@
 118	Nur in einer entbehrlichen Testinstallation verwenden.
 119	Ja
 120	Nur Back-Office-Einstellungen
+121	Links
+122	Verfügbarkeit
+123	Händler
+124	Sicherheit
+125	Datenlöschung

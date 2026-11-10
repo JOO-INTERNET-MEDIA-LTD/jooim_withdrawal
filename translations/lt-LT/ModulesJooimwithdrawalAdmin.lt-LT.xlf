@@ -58,6 +58,10 @@
         <source>Audit history</source>
         <target>Audito istorija</target>
       </trans-unit>
+      <trans-unit id="faeaec9eda6bc4c8cb6e1a9156a858be" resname="Availability">
+        <source>Availability</source>
+        <target>Prieinamumas</target>
+      </trans-unit>
       <trans-unit id="630c3dd335d95f0e17dc7598c29a18ad" resname="Available at submission">
         <source>Available at submission</source>
         <target>Prieinama pateikimo metu</target>
@@ -133,6 +137,10 @@
       <trans-unit id="af70c9cb6796dcfe2978ce8f010e3012" resname="Customer-facing reason/message (required for rejected)">
         <source>Customer-facing reason/message (required for rejected)</source>
         <target>Klientui skirta priežastis/žinutė (privaloma atmetant)</target>
+      </trans-unit>
+      <trans-unit id="d0d2f902c9dc3a9601dcc3228221916c" resname="Data removal">
+        <source>Data removal</source>
+        <target>Duomenų šalinimas</target>
       </trans-unit>
       <trans-unit id="44749712dbec183e983dcd78a7736c41" resname="Date">
         <source>Date</source>
@@ -353,6 +361,10 @@
       <trans-unit id="90725f7a92bc20cc7d26c20261af79da" resname="Latest version on GitHub">
         <source>Latest version on GitHub</source>
         <target>Naujausia versija „GitHub“</target>
+      </trans-unit>
+      <trans-unit id="bd908db5ccb07777ced8023dffc802f4" resname="Links">
+        <source>Links</source>
+        <target>Nuorodos</target>
       </trans-unit>
       <trans-unit id="b03d6f17c7f8bac52fe77f5914c49186" resname="Links for active shop languages">
         <source>Links for active shop languages</source>
@@ -702,6 +714,10 @@
         <source>Secure online exercise and administration of the consumer right of withdrawal.</source>
         <target>Saugus vartotojo teisės atsisakyti sutarties įgyvendinimas ir administravimas internetu.</target>
       </trans-unit>
+      <trans-unit id="2fae32629d4ef4fc6341f1751b405e45" resname="Security">
+        <source>Security</source>
+        <target>Saugumas</target>
+      </trans-unit>
       <trans-unit id="e74bf385c61436303415333107e12513" resname="Security and limits">
         <source>Security and limits</source>
         <target>Saugumas ir ribos</target>
@@ -809,6 +825,10 @@
       <trans-unit id="66c4c5112f455a19afde47829df363fa" resname="Total:">
         <source>Total:</source>
         <target>Iš viso:</target>
+      </trans-unit>
+      <trans-unit id="1771895abd68a02faf9440de2c009077" resname="Trader">
+        <source>Trader</source>
+        <target>Pardavėjas</target>
       </trans-unit>
       <trans-unit id="1bb184adfba62621740f795ec93d36e6" resname="Trader details – current shop">
         <source>Trader details – current shop</source>

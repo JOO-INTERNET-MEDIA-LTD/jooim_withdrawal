@@ -118,3 +118,8 @@
 118	Brug kun dette i en midlertidig testinstallation.
 119	Ja
 120	Kun Back Office-indstillinger
+121	Links
+122	Tilgængelighed
+123	Forhandler
+124	Sikkerhed
+125	Datasletning

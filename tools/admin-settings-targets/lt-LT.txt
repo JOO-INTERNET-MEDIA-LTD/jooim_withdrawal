@@ -118,3 +118,8 @@
 118	Naudokite tik vienkartinėje testavimo aplinkoje.
 119	Taip
 120	Tik Back Office nustatymai
+121	Nuorodos
+122	Prieinamumas
+123	Pardavėjas
+124	Saugumas
+125	Duomenų šalinimas

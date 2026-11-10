@@ -1,9 +1,14 @@
-<div class="panel">
+<div class="jooim-withdrawal-settings" data-wd-settings data-active-tab="{$withdrawal_active_tab|escape:'htmlall':'UTF-8'}">
+<div class="wd-tabs">
+<button type="button" id="wd-tab-links" data-wd-tab="links" aria-controls="wd-panel-links">{$withdrawal_tab_labels.links|escape:'htmlall':'UTF-8'}</button>
+<button type="button" id="wd-tab-availability" data-wd-tab="availability" aria-controls="wd-panel-availability">{$withdrawal_tab_labels.availability|escape:'htmlall':'UTF-8'}</button>
+<button type="button" id="wd-tab-trader" data-wd-tab="trader" aria-controls="wd-panel-trader">{$withdrawal_tab_labels.trader|escape:'htmlall':'UTF-8'}</button>
+<button type="button" id="wd-tab-security" data-wd-tab="security" aria-controls="wd-panel-security">{$withdrawal_tab_labels.security|escape:'htmlall':'UTF-8'}</button>
+<button type="button" id="wd-tab-data" data-wd-tab="data" aria-controls="wd-panel-data">{$withdrawal_tab_labels.data|escape:'htmlall':'UTF-8'}</button>
+</div>
+<section class="panel wd-tab-panel" id="wd-panel-links" data-wd-panel="links" aria-labelledby="wd-tab-links">
 
-  <div class="alert alert-info">
-    <strong>{l s='EU compliance note (2026):' d='Modules.Jooimwithdrawal.Admin'}</strong>
-    {l s='For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.' d='Modules.Jooimwithdrawal.Admin'}
-  </div>
+
 
   <dl class="jooim-withdrawal-link-list jooim-diagnostics">
     <dt>{l s='Public entry:' d='Modules.Jooimwithdrawal.Admin'}</dt>
@@ -74,34 +79,17 @@
     <div class="alert alert-warning">{l s='No active shop languages were found.' d='Modules.Jooimwithdrawal.Admin'}</div>
   {/if}
 
-  <hr>
-  <p>
-    <strong>{l s='Maintenance CLI:' d='Modules.Jooimwithdrawal.Admin'}</strong>
-    <code>php bin/console jooim:withdrawal:maintenance</code>
-  </p>
-  <p class="help-block">{l s='Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.' d='Modules.Jooimwithdrawal.Admin'}</p>
 
-  <p>
-    <strong>{l s='Hosting cron URL (secret):' d='Modules.Jooimwithdrawal.Admin'}</strong>
-    <code class="jooim-withdrawal-secret-url">{$maintenance_url|escape:'htmlall':'UTF-8'}</code>
-  </p>
-  <p class="help-block">{l s='Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.' d='Modules.Jooimwithdrawal.Admin'}</p>
-
-  {if isset($runtime_sync) && $runtime_sync}
-    <div class="alert {if $runtime_sync.ok}alert-success{else}alert-warning{/if}">
-      <strong>{l s='Runtime configuration:' d='Modules.Jooimwithdrawal.Admin'}</strong>
-      {if $runtime_sync.ok}
-        {l s='Ready. Required security values and module hooks are available.' d='Modules.Jooimwithdrawal.Admin'}
-      {else}
-        {l s='Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.' d='Modules.Jooimwithdrawal.Admin'}
-      {/if}
-    </div>
-  {/if}
-</div>
+</section>
 
 <form method="post" action="{$current_configure_url|escape:'htmlall':'UTF-8'}">
-  <div class="panel">
+  <input type="hidden" name="withdrawal_active_tab" value="{$withdrawal_active_tab|escape:'htmlall':'UTF-8'}">
+  <section class="panel wd-tab-panel" id="wd-panel-availability" data-wd-panel="availability" aria-labelledby="wd-tab-availability">
     <h3>{l s='General and legal availability' d='Modules.Jooimwithdrawal.Admin'}</h3>
+  <div class="alert alert-info">
+    <strong>{l s='EU compliance note (2026):' d='Modules.Jooimwithdrawal.Admin'}</strong>
+    {l s='For applicable B2C distance contracts concluded through an online interface, disabling or hiding the direct withdrawal function may conflict with Article 11a of Directive 2011/83/EU as amended by Directive (EU) 2023/2673. National implementation must still be reviewed for each market.' d='Modules.Jooimwithdrawal.Admin'}
+  </div>
 
     <div class="form-group jooim-toggle-field">
       <label for="jooim-enabled">{l s='Module enabled' d='Modules.Jooimwithdrawal.Admin'}</label>
@@ -132,27 +120,27 @@
       <span class="jooim-toggle"><input type="hidden" name="JOOIM_WITHDRAWAL_ORDER_BUTTON" value="0"><input type="checkbox" role="switch" id="jooim-order-button" name="JOOIM_WITHDRAWAL_ORDER_BUTTON" value="1" {if $config.JOOIM_WITHDRAWAL_ORDER_BUTTON == '1'}checked{/if}><span class="jooim-toggle-track" aria-hidden="true"></span></span>
       <p class="help-block">{l s='Adds a “Withdraw from contract” button to the detail of an order owned by the signed-in customer. Ownership is checked on the server.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
-  </div>
+  </section>
 
-  <div class="panel">
+  <section class="panel wd-tab-panel" id="wd-panel-trader" data-wd-panel="trader" aria-labelledby="wd-tab-trader">
     <h3>{l s='Trader details – current shop' d='Modules.Jooimwithdrawal.Admin'}</h3>
     <p class="help-block">{l s='These values identify the actual seller operating the selected shop. They are stored per shop in multistore and are printed in customer acknowledgements and PDF evidence.' d='Modules.Jooimwithdrawal.Admin'}</p>
 
     <div class="form-group">
       <label for="jooim-merchant-name">{l s='Trader name' d='Modules.Jooimwithdrawal.Admin'}</label>
-      <input id="jooim-merchant-name" class="form-control" name="JOOIM_WITHDRAWAL_MERCHANT_NAME" maxlength="255" value="{$config.JOOIM_WITHDRAWAL_MERCHANT_NAME|escape:'htmlall':'UTF-8'}" placeholder="Example Store s.r.o.">
+      <input id="jooim-merchant-name" class="form-control" name="JOOIM_WITHDRAWAL_MERCHANT_NAME" maxlength="255" value="{$config.JOOIM_WITHDRAWAL_MERCHANT_NAME|escape:'htmlall':'UTF-8'}" placeholder="{l s='Trader name' d='Modules.Jooimwithdrawal.Admin'}">
       <p class="help-block">{l s='Enter the seller’s full legal or registered business name, not the module vendor. It appears in the form, acknowledgement email and PDF.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
     <div class="form-group">
       <label for="jooim-merchant-address">{l s='Registered address' d='Modules.Jooimwithdrawal.Admin'}</label>
-      <textarea id="jooim-merchant-address" class="form-control" name="JOOIM_WITHDRAWAL_MERCHANT_ADDRESS" rows="3" maxlength="1000" placeholder="Street, number, postal code, city, country">{$config.JOOIM_WITHDRAWAL_MERCHANT_ADDRESS|escape:'htmlall':'UTF-8'}</textarea>
+      <textarea id="jooim-merchant-address" class="form-control" name="JOOIM_WITHDRAWAL_MERCHANT_ADDRESS" rows="3" maxlength="1000" placeholder="{l s='Registered address' d='Modules.Jooimwithdrawal.Admin'}">{$config.JOOIM_WITHDRAWAL_MERCHANT_ADDRESS|escape:'htmlall':'UTF-8'}</textarea>
       <p class="help-block">{l s='Enter the seller’s registered office or business address exactly as it should appear in the consumer document.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
     <div class="form-group">
       <label for="jooim-merchant-id">{l s='Company identifier' d='Modules.Jooimwithdrawal.Admin'}</label>
-      <input id="jooim-merchant-id" class="form-control" name="JOOIM_WITHDRAWAL_MERCHANT_ID" maxlength="255" value="{$config.JOOIM_WITHDRAWAL_MERCHANT_ID|escape:'htmlall':'UTF-8'}" placeholder="Company ID / VAT ID / registration number">
+      <input id="jooim-merchant-id" class="form-control" name="JOOIM_WITHDRAWAL_MERCHANT_ID" maxlength="255" value="{$config.JOOIM_WITHDRAWAL_MERCHANT_ID|escape:'htmlall':'UTF-8'}" placeholder="{l s='Company identifier' d='Modules.Jooimwithdrawal.Admin'}">
       <p class="help-block">{l s='Enter the identifier required in the seller’s jurisdiction, for example company ID, VAT ID or commercial-register number.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
@@ -170,7 +158,7 @@
 
     <div class="form-group">
       <label for="jooim-return-address">{l s='Return address / instructions' d='Modules.Jooimwithdrawal.Admin'}</label>
-      <textarea id="jooim-return-address" class="form-control" name="JOOIM_WITHDRAWAL_RETURN_ADDRESS" rows="4" maxlength="2000" placeholder="Return address and practical packing or delivery instructions">{$config.JOOIM_WITHDRAWAL_RETURN_ADDRESS|escape:'htmlall':'UTF-8'}</textarea>
+      <textarea id="jooim-return-address" class="form-control" name="JOOIM_WITHDRAWAL_RETURN_ADDRESS" rows="4" maxlength="2000" placeholder="{l s='Return address / instructions' d='Modules.Jooimwithdrawal.Admin'}">{$config.JOOIM_WITHDRAWAL_RETURN_ADDRESS|escape:'htmlall':'UTF-8'}</textarea>
       <p class="help-block">{l s='Enter the exact address and practical instructions for returning goods. These instructions must not impose conditions that unlawfully restrict the consumer’s withdrawal right.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
@@ -179,9 +167,9 @@
       <input id="jooim-privacy-url" class="form-control" type="url" name="JOOIM_WITHDRAWAL_PRIVACY_URL" maxlength="2048" value="{$config.JOOIM_WITHDRAWAL_PRIVACY_URL|escape:'htmlall':'UTF-8'}" placeholder="https://example.com/privacy-policy">
       <p class="help-block">{l s='Enter the absolute HTTPS URL of the privacy policy that explains processing of personal data for receiving and handling withdrawals.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
-  </div>
+  </section>
 
-  <div class="panel">
+  <section class="panel wd-tab-panel" id="wd-panel-security" data-wd-panel="security" aria-labelledby="wd-tab-security">
     <h3>{l s='Security, session and abuse limits' d='Modules.Jooimwithdrawal.Admin'}</h3>
     <p class="help-block">{l s='The default values are deliberately conservative. Increase limits only after reviewing real traffic and abuse logs; lowering them too far can block legitimate consumers.' d='Modules.Jooimwithdrawal.Admin'}</p>
 
@@ -263,17 +251,41 @@
       <p class="help-block">{l s='Short code used at the beginning of withdrawal references. Use only letters, digits and hyphens; for example WD. Existing withdrawal references are never changed.' d='Modules.Jooimwithdrawal.Admin'}</p>
     </div>
 
-    <div class="jooim-actions"><button class="btn btn-primary" type="submit" name="submitJooimWithdrawal" value="1">
+  <hr>
+  <p>
+    <strong>{l s='Maintenance CLI:' d='Modules.Jooimwithdrawal.Admin'}</strong>
+    <code>php bin/console jooim:withdrawal:maintenance</code>
+  </p>
+  <p class="help-block">{l s='Preferred scheduled-maintenance method. It removes expired temporary records, retries queued acknowledgements and processes retention tasks.' d='Modules.Jooimwithdrawal.Admin'}</p>
+
+  <p>
+    <strong>{l s='Hosting cron URL (secret):' d='Modules.Jooimwithdrawal.Admin'}</strong>
+    <code class="jooim-withdrawal-secret-url">{$maintenance_url|escape:'htmlall':'UTF-8'}</code>
+  </p>
+  <p class="help-block">{l s='Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.' d='Modules.Jooimwithdrawal.Admin'}</p>
+
+  {if isset($runtime_sync) && $runtime_sync}
+    <div class="alert {if $runtime_sync.ok}alert-success{else}alert-warning{/if}">
+      <strong>{l s='Runtime configuration:' d='Modules.Jooimwithdrawal.Admin'}</strong>
+      {if $runtime_sync.ok}
+        {l s='Ready. Required security values and module hooks are available.' d='Modules.Jooimwithdrawal.Admin'}
+      {else}
+        {l s='Some runtime requirements could not be synchronized. Review the PrestaShop logs before public use.' d='Modules.Jooimwithdrawal.Admin'}
+      {/if}
+    </div>
+  {/if}
+  </section>
+    <div class="jooim-actions" data-wd-settings-actions><button class="btn btn-primary" type="submit" name="submitJooimWithdrawal" value="1">
       <i class="icon-save"></i> {l s='Save settings' d='Modules.Jooimwithdrawal.Admin'}
     </button></div>
-  </div>
 </form>
 
-<div class="panel panel-danger">
+<section class="panel panel-danger wd-tab-panel" id="wd-panel-data" data-wd-panel="data" aria-labelledby="wd-tab-data">
   <h3>{l s='Permanent data purge' d='Modules.Jooimwithdrawal.Admin'}</h3>
   <p>{l s='Normal module uninstall preserves withdrawal records. This destructive action drops all module tables.' d='Modules.Jooimwithdrawal.Admin'}</p>
   <p class="help-block"><strong>{l s='Use this only in a disposable test installation.' d='Modules.Jooimwithdrawal.Admin'}</strong> {l s='Type the exact word DELETE to remove all withdrawals, documents, audit history, access records and refund records. This action cannot be undone and is not required for an ordinary module update or reinstall.' d='Modules.Jooimwithdrawal.Admin'}</p>
   <form method="post" action="{$current_configure_url|escape:'htmlall':'UTF-8'}">
+  <input type="hidden" name="withdrawal_active_tab" value="{$withdrawal_active_tab|escape:'htmlall':'UTF-8'}">
     <div class="form-group">
       <label for="jooim-purge-confirmation">{l s='Purge confirmation' d='Modules.Jooimwithdrawal.Admin'}</label>
       <input id="jooim-purge-confirmation" class="form-control" style="max-width:240px" name="purge_confirmation" autocomplete="off" placeholder="{l s='Type DELETE' d='Modules.Jooimwithdrawal.Admin'}">
@@ -283,4 +295,5 @@
       <i class="icon-trash"></i> {l s='Permanently delete all module data' d='Modules.Jooimwithdrawal.Admin'}
     </button>
   </form>
+</section>
 </div>

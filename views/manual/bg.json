@@ -1,0 +1,359 @@
+{
+  "language": "bg",
+  "title": "Ръководство",
+  "settings": "Настройки",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Настройки",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Достъпност",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Включване на модула",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Включете процеса за отказ от покупка. Изключването не изтрива съхранените записи за отказ и не урежда съществуващи искания.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Функция за пряк отказ от покупка",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Разрешете прекия вход за отказ от покупка. Това не отменя необходимата проверка на самоличност и поръчка в процеса.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Връзка във футъра",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Показвайте връзката за отказ във футъра на магазина, когато темата изобразява съответния hook. Това е независимо от общото обозначение joobox.eu.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Връзка в клиентския профил",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Показвайте входа за отказ в клиентския акаунт. Това не прави поръчките на други клиенти достъпни.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Бутон в подробностите за поръчката",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Показвайте бутон за отказ на съответната страница на поръчка. Допустимостта и проверката остават приложими.",
+            "text_language": "bg",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Данни на търговеца",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Име на търговеца",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Юридическо или търговско име на търговеца, показвано в документите за отказ.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Адрес на търговеца",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Пълен пощенски адрес на търговеца за документите, не автоматично адрес за връщане на пратки.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Регистрационен номер на търговеца",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Фирмена или регистрационна идентификация на търговеца, показвана на клиента.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Имейл на търговеца",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Валиден контактен имейл на търговеца за процеса на отказ.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Телефон на търговеца",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Контактен телефон на търговеца за клиенти.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Адрес за връщане",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Пълен адрес и инструкции за връщане на стоките. Проверете дали е действителното място за получаване.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL адрес на политиката за поверителност",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Пълен URL на политиката за поверителност на магазина. Посочете информация, относима към данните за отказ, които събирате.",
+            "text_language": "bg",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Сигурност",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Валидност на връзката за достъп (минути)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Срок до изтичане на новоиздадена връзка за достъп на гост. По-кратките срокове намаляват риска, но може да изтекат преди прочитане на имейла.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Срок на бездействие на сесията (минути)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Максимално бездействие преди изтичане на сесията на гост. Не трябва да надвишава абсолютната продължителност на сесията.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Абсолютна продължителност на сесията (минути)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Максимална обща продължителност на сесия на гост, дори при активност. Трябва да е поне равна на срока за бездействие.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Изчакване преди повторно изпращане (секунди)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Минимално изчакване преди заявяване на нов имейл за достъп. Ограничава заливането с имейли; не удължава валидността на връзката.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Заявки от IP / 15 минути",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Лимит на заявки от един IP за 15 минути. Споделените домашни или фирмени IP адреси споделят лимита.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Заявки от IP / ден",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Дневен лимит на заявки за IP; трябва да е поне равен на лимита за по-краткия прозорец.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Заявки за поръчка / час",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Часов лимит на заявки за една поръчка независимо от заявяващия IP.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Заявки за поръчка / ден",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Дневен лимит на заявки за поръчка; трябва да е поне равен на часовия лимит.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Максимална дължина на бележка",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Максимална дължина на клиентската бележка в знаци. Не изисквайте ненужна чувствителна информация в бележката.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Брой повторни опити за имейл",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Брой повторни опити за доставка в имейл опашката на модула. Нула ги изключва; не доказва, че първият имейл е достигнал получателя.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Прикачване на PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Прикачете генерирания PDF за отказ към съответния имейл. Изключено изпраща имейла без този файл; не изтрива записания отказ.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Префикс на референцията",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Използвайте 1–12 букви, цифри или тирета за новите референции на откази. Това означава новите записи, не оригиналните референции на поръчки в магазина.",
+            "text_language": "bg",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Изтриване",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Потвърждение за изтриване",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Въведете буквално DELETE само когато желаете окончателно изтриване на данните на модула. Не го въвеждайте за обикновени промени на настройки.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Окончателно изтриване на данните на модула",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Необратимо премахнете доказателствата за отказ на модула и свързаните данни. Първо архивирайте и проверете задълженията за съхранение. Това е отделно разрушително действие, не бутонът Запазване; не цели изтриване на поръчките и клиентите на магазина.",
+            "text_language": "bg",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Операции",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Запазване",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Запазване прилага текущия формуляр към избрания магазин; само промяната на превключвател или избор не запазва. В GA4 запазването обхваща заедно Измерване, Поръчки и Разширени; отделните формуляри на банера се запазват независимо.",
+            "text_language": "bg",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Проверка за актуализация",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Проверете метаданните на последната стабилна версия в GitHub. Не се изтегля или инсталира код. Инсталираната версия, последната версия и часът на проверката в UTC са различни стойности; недостъпно не означава актуално. Инсталирайте само инсталационния ZIP на версията с неговия SHA256.",
+            "text_language": "bg",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Намерете същия раздел и име на настройката като във формуляра за конфигуриране. Всеки запис обяснява действието, какво да въведете и наличните възможности. Променете настройките за един магазин, след което използвайте бутона Запазване в съответния раздел.",
+      "default": "Стойност по подразбиране",
+      "expected": "Какво да въведете / изберете",
+      "choices": "Налични опции",
+      "on": "Включено",
+      "off": "Изключено",
+      "empty": "Празно",
+      "action": "Действие; без запазена стойност",
+      "dynamic": "Зависи от магазина / избрания език"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

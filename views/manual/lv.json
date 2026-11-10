@@ -1,0 +1,359 @@
+{
+  "language": "lv",
+  "title": "Rokasgrāmata",
+  "settings": "Iestatījumi",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Iestatījumi",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Pieejamība",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Iespējot moduli",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Ieslēdziet atteikuma tiesību darbplūsmu. Izslēgšana neizdzēš saglabātos atteikumu ierakstus un nenokārto esošās prasības.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Tiešā atteikuma funkcija",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Atļaujiet tiešo atteikuma ievades punktu. Tas neatceļ darbplūsmai nepieciešamo identitātes/pasūtījuma pārbaudi.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Kājenes saite",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Rādiet atteikuma ievades saiti veikala kājenē, kad motīvs attēlo tās āķi. Tas ir neatkarīgi no kopējās joobox.eu atsauces.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Saite klienta kontā",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Rādiet atteikuma ievades punktu klienta kontā. Tas nepadara citu klientu pasūtījumus pieejamus.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Poga pasūtījuma detaļās",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Rādiet atteikuma pogu attiecīgajā pasūtījuma lapā. Atbilstība un pārbaude joprojām ir spēkā.",
+            "text_language": "lv",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Tirgotāja informācija",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Tirgotāja nosaukums",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Tirgotāja juridiskais/komercnosaukums, kas rādīts atteikuma dokumentos.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Tirgotāja adrese",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Pilna tirgotāja pasta adrese dokumentiem, nevis automātiski atgriežamu paku adrese.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Tirgotāja reģistrācijas numurs",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Tirgotāja uzņēmuma/reģistrācijas identifikācija, kas rādīta klientam.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Tirgotāja epasts",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Derīgs tirgotāja kontakta epasts atteikuma darbplūsmai.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Tirgotāja tālrunis",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Klientiem paredzēts tirgotāja kontakttālrunis.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Atgriešanas adrese",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Pilna adrese un norādījumi preču atgriešanai. Pārbaudiet, vai tā ir faktiskā saņemšanas vieta.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "Konfidencialitātes politikas URL",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Pilns šī veikala privātuma politikas URL. Saistiet informāciju, kas attiecas uz jūsu vāktajiem atteikuma datiem.",
+            "text_language": "lv",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Drošība",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Piekļuves saites derīgums (minūtes)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Laiks līdz tikko izsniegtas viesa piekļuves saites beigām. Īsāki ierobežojumi mazina risku, bet var beigties pirms epasta izlasīšanas.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Sesijas neaktivitātes taimauts (minūtes)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Maksimālā neaktivitāte pirms viesa sesijas beigām. Nedrīkst pārsniegt absolūto sesijas ilgumu.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Absolūtais sesijas ilgums (minūtes)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Maksimālais kopējais viesa sesijas ilgums arī ar aktivitāti. Jābūt vismaz neaktivitātes taimauta garumā.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Atkārtotas nosūtīšanas gaidīšanas laiks (sekundes)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Minimālā gaidīšana, pirms var pieprasīt citu piekļuves epastu. Ierobežo epastu pārpludināšanu; nepagarina saites derīgumu.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Pieprasījumi uz IP / 15 minūtes",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Pieprasījumu limits no viena IP 15 minūtēs. Koplietoti mājsaimniecības/uzņēmuma IP dala limitu.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Pieprasījumi uz IP / dienā",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Dienas pieprasījumu limits uz IP; jābūt vismaz īsākā intervāla limita lielumā.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Pieprasījumi uz pasūtījumu / stundā",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Stundas pieprasījumu limits vienam pasūtījumam neatkarīgi no pieprasītāja IP.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Pieprasījumi uz pasūtījumu / dienā",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Dienas pieprasījumu limits uz pasūtījumu; jābūt vismaz stundas limita lielumā.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Maksimālais piezīmes garums",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Maksimālais klienta piezīmes garums rakstzīmēs. Neprasiet piezīmē nevajadzīgu sensitīvu informāciju.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Epasta atkārtojumu skaits",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Moduļa epasta rindas atkārtoto piegādes mēģinājumu skaits. Nulle atspējo atkārtošanu; tas nepierāda pirmā epasta saņemšanu.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Pievienot PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Pievienojiet ģenerēto atteikuma PDF attiecīgajam epastam. Izslēgts sūta epastu bez šī pielikuma; reģistrētais atteikums netiek dzēsts.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Atsauces prefikss",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Jaunām atteikuma atsaucēm izmantojiet 1–12 burtus, ciparus vai defises. Tas marķē jaunus ierakstus, nevis sākotnējās veikala pasūtījumu atsauces.",
+            "text_language": "lv",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Datu dzēšana",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Dzēšanas apstiprinājums",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Ierakstiet burtiski DELETE tikai tad, ja plānojat neatgriezeniski dzēst moduļa datus. Neievadiet to parastām iestatījumu izmaiņām.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Neatgriezeniski dzēst moduļa datus",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Neatgriezeniski noņemiet moduļa atteikumu pierādījumus un saistītos datus. Vispirms izveidojiet rezerves kopiju un pārbaudiet glabāšanas pienākumus. Tā ir atsevišķa destruktīva darbība, nevis poga Saglabāt; veikala pasūtījumi/klienti nav dzēšanas mērķis.",
+            "text_language": "lv",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Darbības",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Saglabāt",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Saglabāt piemēro pašreizējo veidlapu atlasītajam veikalam; tikai slēdža vai izvēles maiņa nesaglabā. GA4 saglabāšana kopā aptver Mērījumus, Pasūtījumus un Papildu; reklāmkaroga atsevišķās veidlapas tiek saglabātas neatkarīgi.",
+            "text_language": "lv",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Atjauninājuma pārbaude",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Pārbaudiet jaunākā stabilā GitHub laidiena metadatus. Kods netiek lejupielādēts vai instalēts. Instalētā versija, jaunākā versija un UTC pārbaudes laiks ir atšķirīgas vērtības; nav pieejams nenozīmē atjaunināts. Instalējiet tikai laidiena instalācijas ZIP ar tā SHA256.",
+            "text_language": "lv",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Atrodiet to pašu cilni un iestatījuma nosaukumu kā konfigurācijas veidlapā. Katrs ieraksts izskaidro ietekmi, ievadāmo vērtību un pieejamās izvēles. Mainiet viena veikala iestatījumus un pēc tam izmantojiet attiecīgās sadaļas pogu Saglabāt.",
+      "default": "Noklusējuma vērtība",
+      "expected": "Ko ievadīt / izvēlēties",
+      "choices": "Pieejamās iespējas",
+      "on": "Ieslēgts",
+      "off": "Izslēgts",
+      "empty": "Tukšs",
+      "action": "Darbība; vērtība netiek saglabāta",
+      "dynamic": "Atkarīgs no veikala / izvēlētās valodas"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

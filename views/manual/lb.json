@@ -1,0 +1,359 @@
+{
+  "language": "lb",
+  "title": "Handbuch",
+  "settings": "Astellungen",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Astellungen",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Disponibilitéit",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Modul aktivéieren",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Aktivéiert de Récktrëttsprozess. Deaktivéiere läscht keng gespäichert Récktrëttsrecords a regelt keng bestoend Fuerderungen.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Direkt Récktrëttsfunktioun",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Erlaabt den direkten Agank fir Récktrëtt. Dat verzicht net op déi am Prozess verlaangt Identitéits-/Bestellverifikatioun.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Footerlink",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Weist de Récktrëttslink am Butteksfooter, wann d'Thema den zoustännegen Hook rendert. Dat ass onofhängeg vun der gemeinsamer joobox.eu-Attributioun.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Link am Clientskont",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Weist den Agank fir Récktrëtt am Clientskonto. Dat mécht keng Bestellunge vun anere Clienten accessibel.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Knäppchen am Bestelldetail",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Weist e Récktrëttsknäppchen op der relevanter Bestellsäit. Berechtegung a Verifikatioun gëlle weider.",
+            "text_language": "lb",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Händlerdetailer",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Händlernumm",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Gesetzlechen/Handelsnumm vum Händler, deen a Récktrëttsdokumenter gewise gëtt.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Händleradress",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Komplett Händlerpostadress fir Dokumenter, net automatesch eng Retourpakadress.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Registréierungsnummer vum Händler",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Firma-/Registréierungsidentifikatioun vum Händler, déi dem Client gewise gëtt.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Händler-E-Mail",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Gëlteg Händlerkontakt-E-Mail fir de Récktrëttsprozess.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Händlertelefon",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Händlerkontakttelefon fir Clienten.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Retouradress",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Komplett Adress an Instruktioune fir Wueren zréckzeschécken. Kontrolléiert, datt et déi richteg Empfangsplaz ass.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL vun der Dateschutzpolitik",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Komplett Dateschutzpolitik-URL fir dëse Buttek. Verlinkt Informatiounen iwwer déi Récktrëttsdaten, déi Dir sammelt.",
+            "text_language": "lb",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Sécherheet",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Liewensdauer vum Zougrëffslink (Minutten)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Zäit bis en nei ausgestallte Gaaschtzougrëffslink ofleeft. Méi kuerz Grenze reduzéieren d'Expositioun, kënnen awer oflafen, ier d'E-Mail gelies gëtt.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Sessiounsinaktivitéitsgrenz (Minutten)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Maximal Inaktivitéit ier d'Gaaschtsessioun ofleeft. Däerf déi absolut Sessiounsliewensdauer net iwwerschreiden.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Absolut Sessiounsliewensdauer (Minutten)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Maximal Gesamtdauer vun enger Gaaschtsessioun och mat Aktivitéit. Muss mindestens sou laang wéi d'Inaktivitéitsgrenz sinn.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Waardezäit virum Neiverschécken (Sekonnen)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Minimal Waardezäit ier eng weider Zougrëffs-E-Mail ugefrot ka ginn. Limitéiert E-Mail-Iwwerschwemmung; verlängert d'Linkgëltegkeet net.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Ufroe pro IP / 15 Minutten",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Ufrolimit vun enger IP a 15 Minutten. Gedeelt Stot-/Firma-IPen deelen de Limit.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Ufroe pro IP / Dag",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Deeglechen Ufrolimit pro IP; muss mindestens dem méi kuerzen Zäitfënsterlimit entspriechen.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Ufroe pro Bestellung / Stonn",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Stonneweis Ufrolimit fir eng Bestellung, onofhängeg vun der ufroender IP.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Ufroe pro Bestellung / Dag",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Deeglechen Ufrolimit pro Bestellung; muss mindestens dem Stonnelimit entspriechen.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Maximal Notizlängt",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Maximal Längt vun der Clientsnotiz a Zeechen. Frot keng onnéideg sensibel Informatiounen an der Notiz un.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Zuel vun E-Mail-Widderhuelungen",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Zuel vu Liwwerwidderhuelunge fir d'Modul-E-Mail-Schlaang. Null deaktivéiert Widderhuelungen; et beweist net, datt déi éischt E-Mail beim Empfänger ukomm ass.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "PDF unhänken",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Hänkt de generéierte Récktrëtts-PDF un déi relevant E-Mail. Aus schéckt d'E-Mail ouni dësen Unhang; et läscht net de registréierte Récktrëtt.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Referenzprefix",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Benotzt 1–12 Buschtawen, Zuelen oder Bindestrécher fir nei Récktrëttsreferenzen. Dat markéiert nei Records, net déi ursprénglech Butteksbestellreferenzen.",
+            "text_language": "lb",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Donnéeë läschen",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Läschung bestätegen",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Tippt wuertwiertlech DELETE nëmme wann Dir Moduldate permanent läsche wëllt. Gitt et net bei normalen Astellungsännerungen an.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Moduldate permanent läschen",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Läscht d'Récktrëttsbeweiser vum Modul an déi verbonne Donnéeën irreversibel. Maacht als éischt eng Sécherung a kontrolléiert d'Späicherflichten. Dat ass eng separat destruktiv Aktioun, net de Späicheren-Knäppchen; Butteksbestellungen/Cliente sinn net d'Zil vun der Läschung.",
+            "text_language": "lb",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operatiounen",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Späicheren",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Späicheren applizéiert den aktuelle Formular op de gewielte Buttek; nëmmen e Schalter oder eng Lëscht z'änneren späichert net. Am GA4 ginn Miessung, Bestellungen an Erweidert zesumme gespäichert; déi separat Formulare vum Banner ginn onofhängeg gespäichert.",
+            "text_language": "lb",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Aktualiséierungskontroll",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Kontrolléiert d'Metadate vun der neister stabiler GitHub-Verëffentlechung. Et gëtt kee Code erofgelueden oder installéiert. Installéiert Versioun, neist Versioun an UTC-Kontrollzäit si verschidde Wäerter; net verfügbar heescht net aktuell. Installéiert nëmmen den Installatiouns-ZIP vun der Verëffentlechung mat sengem SHA256.",
+            "text_language": "lb",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Sicht déi selwecht Tab an Astellungsbezeechnung wéi am Konfiguratiounsformular. All Entrée erkläert d'Wierkung, wat anzeginn ass an déi verfügbar Optiounen. Ännert d'Astellunge fir ee Buttek a benotzt duerno de Späicheren-Knäppche vun där Sektioun.",
+      "default": "Standardwäert",
+      "expected": "Wat aginn / auswielen",
+      "choices": "Disponibel Optiounen",
+      "on": "Ugeschalt",
+      "off": "Ausgeschalt",
+      "empty": "Eidel",
+      "action": "Aktioun; kee gespäicherte Wäert",
+      "dynamic": "Ofhängeg vum Buttek / vun der gewielter Sprooch"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

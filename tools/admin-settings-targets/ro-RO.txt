@@ -118,3 +118,8 @@
 118	Utilizați această funcție numai într-o instalare de test de unică folosință.
 119	Da
 120	Numai setările Back Office
+121	Legături
+122	Disponibilitate
+123	Comerciant
+124	Securitate
+125	Ștergere date

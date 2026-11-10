@@ -1,0 +1,359 @@
+{
+  "language": "pt",
+  "title": "Manual",
+  "settings": "Definições",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Definições",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Disponibilidade",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Ativar módulo",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Ative o fluxo de livre resolução. Desativar não apaga registos guardados de livre resolução nem resolve reclamações existentes.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Função direta de livre resolução",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Permita o ponto de entrada direto para a livre resolução. Não dispensa a verificação de identidade/encomenda exigida pelo fluxo.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Ligação no rodapé",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Apresente a ligação de entrada para a livre resolução no rodapé da loja quando o tema apresenta o respetivo hook. É independente da atribuição comum joobox.eu.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Ligação na conta do cliente",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Apresente o ponto de entrada para a livre resolução na conta do cliente. Não torna acessíveis encomendas de outros clientes.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Botão no detalhe da encomenda",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Apresente um botão de entrada para a livre resolução na página da encomenda pertinente. A elegibilidade e a verificação continuam a aplicar-se.",
+            "text_language": "pt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Dados do comerciante",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Nome do comerciante",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Nome legal/comercial do comerciante apresentado nos documentos de livre resolução.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Morada do comerciante",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Morada postal completa do comerciante para documentos, não automaticamente uma morada de devolução de encomendas.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Número de registo do comerciante",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Identificação empresarial/de registo do comerciante apresentada ao cliente.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Email do comerciante",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Email de contacto válido do comerciante para o fluxo de livre resolução.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Telefone do comerciante",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Telefone de contacto do comerciante destinado aos clientes.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Morada de devolução",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Morada completa e instruções para devolução de artigos. Verifique que é o local efetivo de receção.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL da política de privacidade",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "URL completo da política de privacidade desta loja. Ligue a informações relevantes para os dados de livre resolução que recolhe.",
+            "text_language": "pt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Segurança",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Validade da ligação de acesso (minutos)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Tempo até expirar uma ligação de acesso de convidado recém-emitida. Limites menores reduzem a exposição, mas podem expirar antes de o email ser lido.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Limite de inatividade da sessão (minutos)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Inatividade máxima antes de expirar a sessão de convidado. Não pode exceder a duração absoluta da sessão.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Duração absoluta da sessão (minutos)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Duração total máxima da sessão de convidado mesmo com atividade. Tem de ser pelo menos igual ao limite de inatividade.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Intervalo entre reenvios (segundos)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Espera mínima antes de poder pedir outro email de acesso. Limita o envio excessivo de emails; não prolonga a validade da ligação.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Pedidos por IP / 15 minutos",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Limite de pedidos de um IP durante 15 minutos. IPs partilhados por famílias/empresas partilham o limite.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Pedidos por IP / dia",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Limite diário de pedidos por IP; tem de ser pelo menos igual ao limite do intervalo mais curto.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Pedidos por encomenda / hora",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Limite horário de pedidos para uma encomenda, independentemente do IP que faz o pedido.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Pedidos por encomenda / dia",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Limite diário de pedidos por encomenda; tem de ser pelo menos igual ao limite horário.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Comprimento máximo da nota",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Comprimento máximo da nota do cliente em carateres. Não solicite informações sensíveis desnecessárias na nota.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Número de novas tentativas de email",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Número de novas tentativas de entrega da fila de emails do módulo. Zero desativa repetições; não prova que o primeiro email chegou ao destinatário.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Anexar PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Anexe o PDF de livre resolução gerado ao email pertinente. Desativado envia o email sem esse anexo; não elimina a livre resolução registada.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Prefixo da referência",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Utilize 1–12 letras, algarismos ou hífenes nas novas referências de livre resolução. Identifica novos registos, não as referências originais das encomendas da loja.",
+            "text_language": "pt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Eliminar dados",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Confirmação de eliminação",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Escreva literalmente DELETE apenas quando pretende eliminar permanentemente os dados do módulo. Não introduza para alterações normais de definições.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Eliminar permanentemente os dados do módulo",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Remova irreversivelmente as provas de livre resolução do módulo e os dados associados. Faça primeiro uma cópia de segurança e verifique as obrigações de retenção. É uma ação destrutiva separada, não o botão Guardar; encomendas/clientes da loja não são o alvo da eliminação.",
+            "text_language": "pt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operações",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Guardar",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Guardar aplica o formulário atual à loja selecionada; alterar apenas um interruptor ou seleção não guarda. No GA4, o mesmo salvamento abrange Medição, Encomendas e Avançado; os formulários separados do banner são guardados de forma independente.",
+            "text_language": "pt",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Verificação de atualizações",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Consulte os metadados da versão estável mais recente no GitHub. Não transfere nem instala código. A versão instalada, a versão mais recente e a hora UTC da verificação são valores distintos; indisponível não significa atualizado. Instale apenas o ZIP de instalação da versão com o respetivo SHA256.",
+            "text_language": "pt",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Procure o mesmo separador e nome de definição que aparecem no formulário de configuração. Cada entrada explica o efeito, o que introduzir e as opções disponíveis. Altere as definições de uma loja e utilize depois o botão Guardar dessa secção.",
+      "default": "Valor predefinido",
+      "expected": "O que introduzir / escolher",
+      "choices": "Opções disponíveis",
+      "on": "Ativado",
+      "off": "Desativado",
+      "empty": "Vazio",
+      "action": "Ação; sem valor guardado",
+      "dynamic": "Depende da loja / do idioma selecionado"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

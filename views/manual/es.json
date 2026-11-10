@@ -1,0 +1,359 @@
+{
+  "language": "es",
+  "title": "Manual",
+  "settings": "Ajustes",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Ajustes",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Disponibilidad",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Activar módulo",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Active el flujo de desistimiento. Desactivarlo no borra los registros de desistimiento guardados ni resuelve las reclamaciones existentes.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Función de desistimiento directo",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Permita el punto de entrada directo de desistimiento. No exime de verificar la identidad y el pedido según exige el flujo.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Enlace en el pie de página",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Muestre el enlace de entrada al desistimiento en el pie de la tienda cuando el tema renderice su hook. Es independiente de la atribución común joobox.eu.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Enlace en la cuenta del cliente",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Muestre el acceso al desistimiento en la cuenta del cliente. No permite acceder a pedidos de otros clientes.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Botón en el detalle del pedido",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Muestre un botón de desistimiento en la página del pedido correspondiente. Siguen aplicándose la elegibilidad y la verificación.",
+            "text_language": "es",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Datos del vendedor",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Nombre del comercio",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Razón social o nombre comercial del vendedor mostrado en los documentos de desistimiento.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Dirección del comercio",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Dirección postal completa del vendedor para los documentos, no automáticamente una dirección de devolución de paquetes.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Número de registro del comercio",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Identificación empresarial o registral del vendedor mostrada al cliente.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Correo del comercio",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Correo de contacto válido del vendedor para el flujo de desistimiento.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Teléfono del comercio",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Teléfono de contacto del vendedor para los clientes.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Dirección de devolución",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Dirección completa e instrucciones para devolver los productos. Compruebe que sea el lugar real de recepción.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL de la política de privacidad",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "URL completa de la política de privacidad de esta tienda. Enlace a información pertinente para los datos de desistimiento que recoge.",
+            "text_language": "es",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Seguridad",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Validez del enlace de acceso (minutos)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Tiempo hasta que caduca un enlace de acceso de invitado recién emitido. Los límites menores reducen la exposición, pero pueden caducar antes de que se lea el correo.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Tiempo de inactividad de sesión (minutos)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Inactividad máxima antes de que caduque la sesión de invitado. No debe superar la duración absoluta de la sesión.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Duración absoluta de la sesión (minutos)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Duración total máxima de la sesión de invitado, incluso con actividad. Debe ser al menos igual al tiempo de inactividad permitido.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Espera entre reenvíos (segundos)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Espera mínima antes de poder solicitar otro correo de acceso. Limita el envío masivo de correos; no prolonga la validez del enlace.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Solicitudes por IP / 15 minutos",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Límite de solicitudes desde una IP durante 15 minutos. Las IP compartidas de hogares o empresas comparten este límite.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Solicitudes por IP / día",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Límite diario de solicitudes por IP; debe ser al menos igual al límite del intervalo más corto.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Solicitudes por pedido / hora",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Límite de solicitudes por hora para un pedido, independientemente de la IP solicitante.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Solicitudes por pedido / día",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Límite diario de solicitudes por pedido; debe ser al menos igual al límite horario.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Longitud máxima de la nota",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Longitud máxima de la nota del cliente en caracteres. No solicite información sensible innecesaria en la nota.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Número de reintentos de correo",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Número de reintentos de envío para la cola de correos del módulo. Cero desactiva los reintentos; no demuestra que el primer correo haya llegado al destinatario.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Adjuntar PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Adjunte el PDF de desistimiento generado al correo correspondiente. Desactivado envía el correo sin ese adjunto; no elimina el desistimiento registrado.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Prefijo de referencia",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Use 1–12 letras, números o guiones para las nuevas referencias de desistimiento. Identifica registros nuevos, no las referencias originales de pedidos de la tienda.",
+            "text_language": "es",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Borrado de datos",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Confirmación de eliminación",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Escriba el texto literal DELETE solo cuando quiera eliminar permanentemente los datos del módulo. No lo introduzca para cambios ordinarios de ajustes.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Eliminar permanentemente los datos del módulo",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Elimine irreversiblemente las pruebas de desistimiento del módulo y los datos asociados. Antes, haga una copia de seguridad y compruebe las obligaciones de conservación. Es una acción destructiva separada, no el botón Guardar; no tiene como objetivo eliminar pedidos o clientes de la tienda.",
+            "text_language": "es",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operaciones",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Guardar",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Guardar aplica el formulario actual a la tienda seleccionada; cambiar solamente un interruptor o selector no guarda los cambios. En GA4, el guardado abarca Medición, Pedidos y Avanzado conjuntamente; los formularios separados del banner se guardan de forma independiente.",
+            "text_language": "es",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Comprobación de actualizaciones",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Compruebe los metadatos de la última versión estable de GitHub. No descarga ni instala código. La versión instalada, la última versión y la hora de comprobación UTC son valores diferentes; no disponible no significa actualizado. Instale únicamente el ZIP de instalación de la versión con su SHA256.",
+            "text_language": "es",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Busque la misma pestaña y el mismo nombre de ajuste que en el formulario de configuración. Cada entrada explica su efecto, qué introducir y las opciones disponibles. Cambie los ajustes de una tienda y después use el botón Guardar de esa sección.",
+      "default": "Valor predeterminado",
+      "expected": "Qué introducir / elegir",
+      "choices": "Opciones disponibles",
+      "on": "Activado",
+      "off": "Desactivado",
+      "empty": "Vacío",
+      "action": "Acción; sin valor guardado",
+      "dynamic": "Depende de la tienda / del idioma seleccionado"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

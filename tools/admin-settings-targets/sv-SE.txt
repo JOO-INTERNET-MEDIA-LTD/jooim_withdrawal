@@ -118,3 +118,8 @@
 118	Använd detta endast i en tillfällig testinstallation.
 119	Ja
 120	Endast Back Office-inställningar
+121	Länkar
+122	Tillgänglighet
+123	Säljare
+124	Säkerhet
+125	Radera data

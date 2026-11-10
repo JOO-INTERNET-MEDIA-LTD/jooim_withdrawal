@@ -1,0 +1,10 @@
+{
+  "files": [
+    "jooim_withdrawal.php",
+    "src/Service/AdminTabLabels.php",
+    "src/Service/ConfigurationValidator.php",
+    "src/Service/ModuleConfig.php",
+    "views/templates/admin/configure.tpl"
+  ],
+  "sha256": "9420eef733749ec07abb69abf970cfa8bea666f44f03d6e9d1df587250162d39"
+}
