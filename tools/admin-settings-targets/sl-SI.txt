@@ -118,3 +118,8 @@
 118	Uporabite samo v začasni preskusni namestitvi.
 119	Da
 120	Samo nastavitve Back Office
+121	Povezave
+122	Dostopnost
+123	Trgovec
+124	Varnost
+125	Izbris podatkov

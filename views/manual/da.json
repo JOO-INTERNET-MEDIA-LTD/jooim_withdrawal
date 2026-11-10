@@ -1,0 +1,359 @@
+{
+  "language": "da",
+  "title": "Vejledning",
+  "settings": "Indstillinger",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Indstillinger",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Tilgængelighed",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Aktivér modul",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Aktivér fortrydelsesflowet. Deaktivering sletter ikke gemte fortrydelsesposter og afgør ikke eksisterende krav.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Direkte fortrydelsesfunktion",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Tillad det direkte indgangspunkt til fortrydelse. Det fritager ikke for den identitets-/ordreverifikation, flowet kræver.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Sidefodslink",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Vis fortrydelseslinket i butikkens sidefod, når temaet gengiver dets hook. Det er uafhængigt af den fælles joobox.eu-kreditering.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Link på kundekontoen",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Vis indgangen til fortrydelse i kundekontoen. Det giver ikke adgang til andre kunders ordrer.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Knap i ordredetaljer",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Vis en fortrydelsesknap på den relevante ordreside. Berettigelse og verifikation gælder stadig.",
+            "text_language": "da",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Forhandleroplysninger",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Forhandlernavn",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Forhandlerens juridiske navn/handelsnavn vist i fortrydelsesdokumenter.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Forhandleradresse",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Forhandlerens fulde postadresse til dokumenter, ikke automatisk en returpakkeadresse.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Forhandlerens registreringsnummer",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Forhandlerens virksomheds-/registreringsidentifikation vist til kunden.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Forhandleremail",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Gyldig kontakt-email til forhandleren til fortrydelsesflowet.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Forhandlertelefon",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Forhandlerens kundevendte kontakttelefon.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Returadresse",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Fuld adresse og vejledning til returnering af varer. Kontrollér, at dette er det faktiske modtagelsessted.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL til privatlivspolitik",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Fuld URL til butikkens privatlivspolitik. Link til oplysninger relevante for de fortrydelsesdata, du indsamler.",
+            "text_language": "da",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Sikkerhed",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Adgangslinkets levetid (minutter)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Tid før et nyligt udstedt gæsteadgangslink udløber. Kortere grænser mindsker eksponering, men kan udløbe, før emailen læses.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Sessionens inaktivitetsgrænse (minutter)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Højeste inaktivitet før gæstesessionen udløber. Må ikke overstige sessionens absolutte levetid.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Absolut sessionslevetid (minutter)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Højeste samlede gæstesessionsvarighed, også ved aktivitet. Skal mindst svare til inaktivitetsgrænsen.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Ventetid mellem gensendelser (sekunder)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Korteste ventetid, før endnu en adgangsemail kan anmodes. Begrænser emailoversvømmelse; forlænger ikke linkets gyldighed.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Anmodninger pr. IP / 15 minutter",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Anmodningsgrænse fra én IP i 15 minutter. Delte husstands-/virksomheds-IP'er deler grænsen.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Anmodninger pr. IP / dag",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Daglig anmodningsgrænse pr. IP; skal mindst svare til grænsen for det kortere tidsvindue.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Anmodninger pr. ordre / time",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Timegrænse for anmodninger til én ordre, uafhængigt af den anmodende IP.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Anmodninger pr. ordre / dag",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Daglig anmodningsgrænse pr. ordre; skal mindst svare til timegrænsen.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Højeste notelængde",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Højeste længde af kundenote i tegn. Bed ikke om unødvendige følsomme oplysninger i noten.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Antal nye emailforsøg",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Antal nye leveringsforsøg for modulets emailkø. Nul deaktiverer gentagelser; det beviser ikke, at første email nåede modtageren.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Vedhæft PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Vedhæft den genererede fortrydelses-PDF til den relevante email. Fra sender emailen uden bilaget; registreret fortrydelse slettes ikke.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Referencepræfiks",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Brug 1–12 bogstaver, cifre eller bindestreger til nye fortrydelsesreferencer. Dette mærker nye poster, ikke butikkens oprindelige ordrereferencer.",
+            "text_language": "da",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Datasletning",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Bekræftelse af sletning",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Skriv bogstaveligt DELETE kun, når du vil slette moduldata permanent. Angiv det ikke ved almindelige indstillingsændringer.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Slet moduldata permanent",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Fjern uigenkaldeligt modulets fortrydelsesdokumentation og tilknyttede data. Tag først sikkerhedskopi og kontrollér opbevaringsforpligtelser. Dette er en separat destruktiv handling, ikke Gem-knappen; butikkens ordrer/kunder er ikke sletningens mål.",
+            "text_language": "da",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Handlinger",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Gem",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Gem anvender den aktuelle formular på den valgte butik; alene at ændre en kontakt eller et valg gemmer ikke. I GA4 gemmes Måling, Ordrer og Avanceret samlet; bannerets separate formularer gemmes uafhængigt.",
+            "text_language": "da",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Opdateringskontrol",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Kontrollér metadata for den seneste stabile GitHub-udgivelse. Der hentes eller installeres ingen kode. Installeret version, seneste version og UTC-kontroltid er forskellige værdier; utilgængelig betyder ikke opdateret. Installér kun udgivelsens installations-ZIP med dens SHA256.",
+            "text_language": "da",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Find samme fane og indstillingsnavn som i konfigurationsformularen. Hver post forklarer virkningen, hvad der skal indtastes, og de tilgængelige valg. Ret indstillinger for én butik, og brug derefter afsnittets Gem-knap.",
+      "default": "Standardværdi",
+      "expected": "Hvad du skal indtaste / vælge",
+      "choices": "Tilgængelige valg",
+      "on": "Til",
+      "off": "Fra",
+      "empty": "Tom",
+      "action": "Handling; ingen gemt værdi",
+      "dynamic": "Afhænger af butikken / det valgte sprog"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

@@ -118,3 +118,8 @@
 118	Bruk dette berre i ein disponibel testinstallasjon.
 119	Ja
 120	Berre administrasjonsinnstillingar
+121	Lenkjer
+122	Tilgjenge
+123	Forhandlar
+124	Tryggleik
+125	Slett data

@@ -118,3 +118,8 @@
 118	À utiliser uniquement dans une installation de test jetable.
 119	Oui
 120	Paramètres du back-office uniquement
+121	Liens
+122	Disponibilité
+123	Vendeur
+124	Sécurité
+125	Suppression

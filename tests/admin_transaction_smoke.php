@@ -146,7 +146,7 @@ namespace JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Service {
 namespace {
     require dirname(__DIR__) . '/jooim_withdrawal.php';
     require dirname(__DIR__) . '/controllers/admin/AdminJooimWithdrawalController.php';
-    require dirname(__DIR__) . '/upgrade/upgrade-1.1.0.php';
+    require dirname(__DIR__) . '/upgrade/upgrade-1.00.01.php';
     $assertions = 0;
     $assert = static function (bool $condition, string $message) use (&$assertions): void {
         ++$assertions;
@@ -226,10 +226,10 @@ namespace {
     $assert($db->state['retained_legal_record'] === 123 && Module::$uninstalls === 1, 'Failed reinstall preserves legal records while unregistering the module.');
     $assert(!array_filter($db->queries, static fn($q) => preg_match('/\b(?:DROP|TRUNCATE|DELETE)\b/i', $q)), 'Installation rollback must not issue destructive SQL.');
     $db->reset();
-    $assert(upgrade_module_1_1_0($module) === true && $db->state['retained_legal_record'] === 123, 'Real upgrade orchestration succeeds without deleting legal records.');
+    $assert(upgrade_module_1_00_01($module) === true && $db->state['retained_legal_record'] === 123, 'Real upgrade orchestration succeeds without deleting legal records.');
     $assert((bool) array_filter($db->queries, static fn($q) => strpos($q, 'CREATE TABLE IF NOT EXISTS') === 0), 'Upgrade performs idempotent schema synchronization.');
     $db->reset('schema');
-    $assert(upgrade_module_1_1_0($module) === false && $db->state['retained_legal_record'] === 123, 'Upgrade synchronization failure reports false and retains records.');
+    $assert(upgrade_module_1_00_01($module) === false && $db->state['retained_legal_record'] === 123, 'Upgrade synchronization failure reports false and retains records.');
     $labelMethod = new ReflectionMethod(Jooim_Withdrawal::class, 'jooimWithdrawalAdminTabLabel');
     $labelMethod->setAccessible(true);
     foreach (['lb', 'nb', 'nn', 'no'] as $iso) {

@@ -118,3 +118,8 @@
 118	Ná húsáid é seo ach i suiteáil tástála indiúscartha.
 119	Tá
 120	Socruithe Back Office amháin
+121	Naisc
+122	Infhaighteacht
+123	Trádálaí
+124	Slándáil
+125	Scriosadh sonraí

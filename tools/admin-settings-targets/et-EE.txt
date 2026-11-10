@@ -118,3 +118,8 @@
 118	Kasutage seda ainult ühekordses testinstallatsioonis.
 119	Jah
 120	Ainult Back Office'i seaded
+121	Lingid
+122	Saadavus
+123	Kaupleja
+124	Turvalisus
+125	Andmete kustutamine

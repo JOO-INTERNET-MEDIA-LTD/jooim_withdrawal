@@ -118,3 +118,8 @@
 118	Koristite ovo samo u jednokratnoj testnoj instalaciji.
 119	Da
 120	Samo postavke Back Officea
+121	Poveznice
+122	Dostupnost
+123	Trgovac
+124	Sigurnost
+125	Brisanje podataka

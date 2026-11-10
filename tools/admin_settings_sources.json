@@ -118,5 +118,10 @@
   "Use this URL only when the hosting service cannot run the CLI command. Treat the token as a password: do not publish it, send it by email or place it in public monitoring.",
   "Use this only in a disposable test installation.",
   "Yes",
-  "Back Office settings only"
+  "Back Office settings only",
+  "Links",
+  "Availability",
+  "Trader",
+  "Security",
+  "Data removal"
 ]

@@ -1,0 +1,359 @@
+{
+  "language": "mt",
+  "title": "Manwal",
+  "settings": "Konfigurazzjoni",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Konfigurazzjoni",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Disponibbiltà",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Attiva l-modulu",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Attiva l-fluss tal-irtirar. Id-diżattivazzjoni ma tħassarx rekords salvati tal-irtirar u ma ssolvix talbiet eżistenti.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Funzjoni diretta tal-irtirar",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Ippermetti l-punt tad-dħul dirett għall-irtirar. Dan ma jneħħix il-verifika tal-identità/ordni meħtieġa mill-fluss.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Link fil-footer",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Uri l-link tad-dħul għall-irtirar fil-footer tal-ħanut meta t-tema tirrendi l-hook tiegħu. Dan huwa indipendenti mill-attribuzzjoni komuni joobox.eu.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Link fil-kont tal-klijent",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Uri l-punt tad-dħul għall-irtirar fil-kont tal-klijent. Ma jagħmilx l-ordnijiet ta' klijenti oħra aċċessibbli.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Buttuna fid-dettalji tal-ordni",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Uri buttuna tad-dħul għall-irtirar fil-paġna rilevanti tal-ordni. L-eliġibbiltà u l-verifika xorta japplikaw.",
+            "text_language": "mt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Dettalji tal-kummerċjant",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Isem tal-merkant",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Isem legali/kummerċjali tal-merkant muri fid-dokumenti tal-irtirar.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Indirizz tal-merkant",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Indirizz postali sħiħ tal-merkant għad-dokumenti, mhux awtomatikament indirizz għar-ritorn tal-pakketti.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Numru tar-reġistrazzjoni tal-merkant",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Identifikazzjoni tal-kumpanija/reġistrazzjoni tal-merkant murija lill-klijent.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Email tal-merkant",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Email valida ta' kuntatt tal-merkant għall-fluss tal-irtirar.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Telefon tal-merkant",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Telefon ta' kuntatt tal-merkant għall-klijenti.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Indirizz għar-ritorn",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Indirizz sħiħ u struzzjonijiet għar-ritorn tal-oġġetti. Iċċekkja li huwa l-post reali tar-riċeviment.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL tal-politika tal-privatezza",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "URL sħiħ tal-politika tal-privatezza ta' dan il-ħanut. Illinkja informazzjoni rilevanti għad-dejta tal-irtirar li tiġbor.",
+            "text_language": "mt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Sigurtà",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Validità tal-link tal-aċċess (minuti)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Żmien qabel ma tiskadi link tal-aċċess għall-mistieden maħruġa ġdida. Limiti iqsar inaqqsu l-espożizzjoni iżda jistgħu jiskadu qabel ma tinqara l-email.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Limitu ta' inattività tas-sessjoni (minuti)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Inattività massima qabel ma tiskadi s-sessjoni tal-mistieden. Ma tridx taqbeż il-ħajja assoluta tas-sessjoni.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Ħajja assoluta tas-sessjoni (minuti)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Tul totali massimu tas-sessjoni tal-mistieden anke b'attività. Irid ikun mill-inqas daqs il-limitu tal-inattività.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Pawża qabel tibgħat mill-ġdid (sekondi)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Stennija minima qabel ma tista' tintalab email oħra ta' aċċess. Tillimita għargħar ta' emails; ma testendix il-validità tal-link.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Talbiet għal kull IP / 15-il minuta",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Limitu tar-rata ta' talbiet minn IP wieħed matul 15-il minuta. IPs kondiviżi minn familja/kumpanija jaqsmu l-limitu.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Talbiet għal kull IP / jum",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Limitu ta' talbiet kuljum għal kull IP; irid ikun mill-inqas daqs il-limitu tal-intervall iqsar.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Talbiet għal kull ordni / siegħa",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Limitu ta' talbiet fis-siegħa għal ordni waħda, indipendentement mill-IP li jagħmel it-talba.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Talbiet għal kull ordni / jum",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Limitu ta' talbiet kuljum għal kull ordni; irid ikun mill-inqas daqs il-limitu fis-siegħa.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Tul massimu tan-nota",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Tul massimu tan-nota tal-klijent f'karattri. Titlobx informazzjoni sensittiva mhux meħtieġa fin-nota.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Numru ta' tentattivi mill-ġdid tal-email",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Numru ta' tentattivi mill-ġdid ta' konsenja għall-kju tal-email tal-modulu. Żero jiddiżattiva tentattivi mill-ġdid; ma jipprovax li l-ewwel email waslet għand ir-riċevitur.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Ehmeż PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Ehmeż il-PDF tal-irtirar iġġenerat mal-email rilevanti. Mitfi jibgħat l-email mingħajr dak l-anness; ma jħassarx l-irtirar irreġistrat.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Prefiss tar-referenza",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Uża 1–12-il ittra, numru jew sing għal referenzi ġodda tal-irtirar. Dan jimmarka rekords ġodda, mhux ir-referenzi oriġinali tal-ordnijiet tal-ħanut.",
+            "text_language": "mt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Tħassir tad-dejta",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Konferma tat-tħassir",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Ittajpja litteralment DELETE biss meta tkun biħsiebek tħassar id-dejta tal-modulu b'mod permanenti. Tdaħħlux għal bidliet ordinarji tas-settings.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Ħassar id-dejta tal-modulu b'mod permanenti",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Neħħi b'mod irriversibbli l-evidenza tal-irtirar tal-modulu u d-dejta assoċjata. Agħmel backup u ċċekkja l-obbligi ta' żamma l-ewwel. Din hija azzjoni distruttiva separata, mhux il-buttuna Issejvja; l-ordnijiet/klijenti tal-ħanut mhumiex il-mira tat-tħassir tagħha.",
+            "text_language": "mt",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operazzjonijiet",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Issejvja",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Issejvja tapplika l-formola attwali għall-ħanut magħżul; bidla fi swiċċ jew lista waħedha ma tissejvjax. Fil-GA4 l-issejvjar ikopri l-Kejl, l-Ordnijiet u l-Avvanzat flimkien; il-formoli separati tal-banner jiġu ssejvjati indipendentement.",
+            "text_language": "mt",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Kontroll tal-aġġornament",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Iċċekkja l-metadata tal-aħħar rilaxx stabbli ta’ GitHub. Ma jniżżilx jew jinstalla kodiċi. Il-verżjoni installata, l-aħħar verżjoni u l-ħin tal-kontroll UTC huma valuri differenti; mhux disponibbli ma jfissirx aġġornat. Installa biss iż-ZIP tal-installazzjoni tar-rilaxx bis-SHA256 tiegħu.",
+            "text_language": "mt",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Sib l-istess tab u isem tas-setting bħal fil-formola tal-konfigurazzjoni. Kull entrata tispjega l-effett, x’għandek iddaħħal u l-għażliet disponibbli. Ibdel is-settings għal ħanut wieħed, imbagħad uża l-buttuna Issejvja ta’ dik it-taqsima.",
+      "default": "Valur predefinit",
+      "expected": "X'għandek iddaħħal / tagħżel",
+      "choices": "Għażliet disponibbli",
+      "on": "Mixgħul",
+      "off": "Mitfi",
+      "empty": "Vojt",
+      "action": "Azzjoni; ebda valur maħżun",
+      "dynamic": "Skont il-ħanut / il-lingwa magħżula"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

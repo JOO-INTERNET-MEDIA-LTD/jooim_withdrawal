@@ -34,7 +34,7 @@ ALLOWED_IDENTICAL = {
     ("cs-CZ", "Admin"): {"IP / 15 min", "JOOIM Withdrawal", "Reference", "UTC"},
     ("cs-CZ", "Pdf"): {"Reference"},
     ("cs-CZ", "Shop"): {"Reference", "Reference:"},
-    ("de-DE", "Admin"): {"Filter", "JOOIM Withdrawal", "Shop", "Status", "Status:", "UTC"},
+    ("de-DE", "Admin"): {"Links", "Filter", "JOOIM Withdrawal", "Shop", "Status", "Status:", "UTC"},
     ("de-DE", "Shop"): {"Name", "Status:"},
     ("fr-FR", "Admin"): {"Date", "IP / 15 min", "JOOIM Withdrawal", "Page", "Transaction", "UTC"},
     ("pl-PL", "Admin"): {"IP / 15 min", "JOOIM Withdrawal", "Status", "Status:", "UTC"},
@@ -298,6 +298,19 @@ def main() -> int:
     admin_source_count = validate_admin_settings(errors)
     status_count, event_count = validate_status_labels(errors)
     mail_count = validate_mail_templates(errors)
+    # Runtime tab fallback must be complete and exactly agree with native XLIFF.
+    try:
+        runtime_tabs = json.loads((TRANSLATIONS / 'admin-tabs.json').read_text(encoding='utf-8'))
+        if set(runtime_tabs) != set(ADMIN_LOCALES):
+            errors.append('Runtime tab locale coverage differs from supported locales')
+        for locale in ADMIN_LOCALES:
+            entries, _, _ = load_catalogue(catalogue_path(locale, 'Admin'))
+            expected = {source: entries[source] for source in ['Links', 'Availability', 'Trader', 'Security', 'Data removal']}
+            if runtime_tabs.get(locale) != expected:
+                errors.append(f'{locale}: runtime tab labels differ from native XLIFF')
+    except (ValueError, KeyError, OSError) as error:
+        errors.append(f'Runtime tab catalogue: {error}')
+
 
     if errors:
         print(f"FAIL: {len(errors)}")

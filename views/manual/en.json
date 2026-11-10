@@ -1,0 +1,359 @@
+{
+  "language": "en",
+  "title": "Manual",
+  "settings": "Settings",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Settings",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Availability",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Enable module",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Enable the withdrawal workflow. Disabling does not erase stored withdrawal records or settle existing claims.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Direct withdrawal function",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Allow the direct withdrawal entry point. This does not waive the identity/order verification required by the workflow.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Footer link",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Show the withdrawal entry link in the storefront footer when the theme renders its hook. This is independent of the common joobox.eu attribution.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Customer account link",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Show the withdrawal entry point in the customer account. It does not make other customers’ orders accessible.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Order detail button",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Show a withdrawal entry button on the relevant order page. Eligibility and verification still apply.",
+            "text_language": "en",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Trader details",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Merchant name",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Legal/trading name of the merchant shown in withdrawal documents.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Merchant address",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Complete merchant postal address for documents, not automatically a return-parcel address.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Merchant registration number",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Merchant company/registration identification shown to the customer.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Merchant email",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Valid merchant contact email for the withdrawal workflow.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Merchant phone",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Customer-facing merchant contact telephone.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Return address",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Complete address and instructions for returning goods. Check it is the actual receiving location.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "Privacy policy URL",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Full privacy-policy URL for this shop. Link to information relevant to the withdrawal data you collect.",
+            "text_language": "en",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Security",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Access link lifetime (minutes)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Time before a newly issued guest access link expires. Shorter limits reduce exposure but may expire before the email is read.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Session idle timeout (minutes)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Maximum inactivity before the guest session expires. Must not exceed the absolute session lifetime.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Absolute session lifetime (minutes)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Maximum total guest session duration even with activity. Must be at least the idle timeout.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Resend cooldown (seconds)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Minimum wait before another access email can be requested. Limits email flooding; it does not extend link validity.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Requests per IP / 15 minutes",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Rate limit for requests from one IP during 15 minutes. Shared household/company IPs share the limit.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Requests per IP / day",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Daily per-IP request limit; must be at least the shorter-window limit.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Requests per order / hour",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Hourly request limit for one order, independently of the requesting IP.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Requests per order / day",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Daily per-order request limit; must be at least the hourly limit.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Maximum note length",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Maximum customer note length in characters. Do not request unnecessary sensitive information in the note.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Email retry count",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Number of delivery retries for the module email queue. Zero disables retries; it does not prove the first email reached the recipient.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Attach PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Attach the generated withdrawal PDF to the relevant email. Off sends the email without that attachment; it does not delete the recorded withdrawal.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Reference prefix",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Use 1–12 letters, numbers or hyphens for new withdrawal references. This labels new records, not the original shop order references.",
+            "text_language": "en",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Data removal",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Deletion confirmation",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Type the literal DELETE only when you intend permanent deletion of module data. Do not enter it for ordinary settings changes.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Permanently delete module data",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Irreversibly remove the module withdrawal evidence and associated data. Back up and check retention obligations first. This is a separate destructive action, not the Save button; shop orders/customers are not its deletion target.",
+            "text_language": "en",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operations",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Save",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Save applies the current form to the selected shop; changing a switch/select alone does not save. In GA4 the save covers Measurement, Orders and Advanced together; the banner’s separate forms are saved independently.",
+            "text_language": "en",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Update check",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Check the latest stable GitHub release metadata. It does not download or install code. The installed version, latest version and UTC check time are different values; unavailable is not the same as up to date. Install only the release installation ZIP with its SHA256.",
+            "text_language": "en",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Find the same tab and setting name as in the configuration form. Each entry explains its effect, what to enter and the available choices. Change settings for one shop, then use the Save button of that section.",
+      "default": "Default",
+      "expected": "What to enter / choose",
+      "choices": "Available choices",
+      "on": "On",
+      "off": "Off",
+      "empty": "Empty",
+      "action": "Action; no saved value",
+      "dynamic": "Depends on the shop / selected language"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

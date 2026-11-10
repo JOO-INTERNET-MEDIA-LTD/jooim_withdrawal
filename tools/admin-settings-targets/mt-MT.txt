@@ -118,3 +118,8 @@
 118	Uża dan biss f’installazzjoni tat-test li tista’ tintrema.
 119	Iva
 120	Settings tal-Back Office biss
+121	Links
+122	Disponibbiltà
+123	Negozjant
+124	Sigurtà
+125	Tħassir tad-dejta

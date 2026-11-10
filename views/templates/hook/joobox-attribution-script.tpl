@@ -1,6 +1,6 @@
 <script>
 {literal}
-/* Joobox attribution protocol 1.0. One manager per document, no tracking or storage. */
+/* Joobox attribution protocol 1.1. One manager per document, no tracking or storage. */
 (function (w, d) {
   'use strict';
   if (w.JooboxAttribution) { w.JooboxAttribution.reconcile(); return; }
@@ -35,8 +35,15 @@
       if (node.id === 'joo-consent' || node.matches('footer,#footer,.footer-container') || node.querySelector('button,input,form,dialog')) return false;
       return Array.prototype.some.call(node.querySelectorAll('a[href]'), home);
     });
+    function caption(node) { return (node.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase(); }
+    var captions = nodes.map(caption).filter(function (text) { return text.length > 'joobox.eu'.length; });
     var manual = Array.prototype.some.call(d.querySelectorAll('footer a[href],#footer a[href],.footer-container a[href]'), function (link) {
-      return !link.closest(selector) && home(link) && visible(link, false);
+      if (link.closest(selector) || !home(link) || !visible(link, false)) return false;
+      // A general branding, hosting or theme link is not the required module credit.
+      var parent = link.parentElement;
+      var texts = [caption(link)];
+      if (parent && !parent.querySelector(selector) && caption(parent).length <= 350) texts.push(caption(parent));
+      return texts.some(function (text) { return captions.some(function (credit) { return text.indexOf(credit) !== -1; }); });
     });
     var keeper = null;
     nodes.forEach(function (node) {
@@ -49,7 +56,7 @@
     if (pending) return; pending = true;
     (w.requestAnimationFrame || function (fn) { w.setTimeout(fn, 0); })(function () { pending = false; reconcile(); });
   }
-  Object.defineProperty(w, 'JooboxAttribution', {value:Object.freeze({version:'1.0',reconcile:reconcile}),writable:false,configurable:false});
+  Object.defineProperty(w, 'JooboxAttribution', {value:Object.freeze({version:'1.1',reconcile:reconcile}),writable:false,configurable:false});
   if (w.MutationObserver) new w.MutationObserver(schedule).observe(d.documentElement, {childList:true,subtree:true,attributes:true,attributeFilter:['href','class','style','hidden']});
   d.addEventListener('DOMContentLoaded', reconcile, {once:true});
   w.addEventListener('pageshow', reconcile); w.addEventListener('resize', schedule);

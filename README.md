@@ -5,7 +5,7 @@ Lets customers exercise and administer the right of withdrawal through authentic
 | | |
 | --- | --- |
 | Module | `jooim_withdrawal` |
-| Source version | `1.1.1` |
+| Source version | `1.00.01` |
 | Target platforms | PrestaShop 8.x and 9.x; staging validation required |
 | Author | JOO INTERNET MEDIA LTD |
 
@@ -31,11 +31,19 @@ Do not install GitHub’s automatic **Source code ZIP**. The archive must contai
 
 JOOIM_WITHDRAWAL_* defaults include enabled and footer/account/order/direct switches; WD reference prefix; magic TTL 30 min; idle/max session 30/120 min; resend cooldown 60 s; IP 15m/day 5/20; order hour/day 3/10; note limit 2000; attach PDF=1; retry count=3; privacy URL and merchant/return identity fields. ConfigurationValidator defines ranges and dependencies. Legal records and retained files are scoped to their shop; operational Configuration uses the current context. Use the complete source/default inventory and existing manuals for exact fields.
 
+### Settings tabs
+
+The module settings use five tabs: **Links**, **Availability**, **Trader**, **Security** and **Data removal**. Links contains the public/localized withdrawal URLs; Availability contains legal availability and storefront switches; Trader contains the selected shop’s seller details; Security contains session/abuse limits and maintenance; Data removal contains only the separate permanent-purge action.
+
+Settings are saved together across the three editable tabs. Permanent purge keeps its own confirmation form. Tabs support keyboard arrows/Home/End, retain their selection after submission and open the relevant panel when browser input validation fails. Without JavaScript all sections remain accessible. The five captions and every current settings-template text are included in all 35 supported locale variants. Tab captions follow the Back Office language and use a bundled runtime fallback if the native translation cache still returns English; merchant-customized translations take precedence. Belgian and Canadian variants use their corresponding language catalogs.
+
 ## Languages
 
 English source uses the module’s existing PrestaShop translation mechanism. Bundled language coverage varies by module and installed shop languages. Belgian locales use French/Dutch/German variants; Canadian locales use English/French variants. New wording may use English fallback where a locale is incomplete. Native-speaker review is not claimed.
 
 ## Troubleshooting and known limitations
+
+Installation packages include the module-local `autoload.php`; storefront controllers use it without requiring a Composer `vendor/` directory. If an older package gives a blank direct-withdrawal page, replace it with the corrected installation ZIP and clear compiled PrestaShop/Smarty cache. Preserve the database and withdrawal records; uninstalling is not required for this file correction. The package regression test loads every front controller from the extracted ZIP without Composer.
 
 Legal suitability, actual consumer journey, mail/PDF delivery, retention and authorization need merchant/platform review. Do not describe this module as a blanket legal compliance guarantee.
 
@@ -69,8 +77,8 @@ Use the support link above for paid installation, configuration, testing and tro
 
 ## Joobox footer attribution
 
-The shared manager shows one eligible “PrestaShop module by joobox.eu” credit across installed modules. A visible existing manual Joobox footer link takes precedence. Cross-module deduplication requires JavaScript and does not hide the legal withdrawal link or cookie controls.
+The shared manager shows one eligible “PrestaShop module by joobox.eu” credit across installed modules. A visible existing manual footer credit with the same module attribution text takes precedence; a generic theme, hosting or PrestaShop link does not. Cross-module deduplication requires JavaScript and does not hide the legal withdrawal link or cookie controls.
 
 ## GitHub update check
 
-The configuration page shows the installed version, latest verified release metadata and last check in UTC. Cached checks are limited to six hours unless manually refreshed. No code is downloaded or installed automatically. Use an approved installation asset such as `jooim_withdrawal-1.1.1.zip` with its matching SHA256; an example filename is not proof that a release has been published.
+The configuration page shows the installed version, latest verified release metadata and last check in UTC. Cached checks are limited to six hours unless manually refreshed. No code is downloaded or installed automatically. Use an approved installation asset such as `jooim_withdrawal-1.00.01.zip` with its matching SHA256; an example filename is not proof that a release has been published.

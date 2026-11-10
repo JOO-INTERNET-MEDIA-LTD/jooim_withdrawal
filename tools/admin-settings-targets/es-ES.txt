@@ -118,3 +118,8 @@
 118	Utilice esto únicamente en una instalación de prueba desechable.
 119	Sí
 120	Solo ajustes del Back Office
+121	Enlaces
+122	Disponibilidad
+123	Vendedor
+124	Seguridad
+125	Borrado de datos

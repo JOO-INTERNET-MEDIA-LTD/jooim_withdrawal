@@ -1,0 +1,359 @@
+{
+  "language": "uk",
+  "title": "Посібник",
+  "settings": "Налаштування",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Налаштування",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Доступність",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Увімкнути модуль",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Увімкніть процес відмови від договору. Вимкнення не стирає збережені записи відмов і не врегульовує наявні вимоги.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Пряма функція відмови від договору",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Дозвольте прямий вхід до відмови від договору. Це не скасовує перевірки особи/замовлення, потрібної в процесі.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Посилання в підвалі",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Показуйте посилання для початку відмови в підвалі вітрини, коли тема виводить відповідний хук. Це незалежне від загального зазначення joobox.eu.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Посилання в обліковому записі покупця",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Показуйте початок відмови в обліковому записі клієнта. Замовлення інших клієнтів не стають доступними.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Кнопка в деталях замовлення",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Показуйте кнопку початку відмови на відповідній сторінці замовлення. Право на відмову й перевірка залишаються чинними.",
+            "text_language": "uk",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Дані продавця",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Назва продавця",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Юридична/торгова назва продавця в документах відмови від договору.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Адреса продавця",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Повна поштова адреса продавця для документів, не автоматично адреса повернення посилок.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Реєстраційний номер продавця",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Ідентифікаційний/реєстраційний номер компанії продавця, показаний клієнтові.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Електронна адреса продавця",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Дійсна контактна електронна адреса продавця для процесу відмови.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Телефон продавця",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Контактний телефон продавця для клієнтів.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Адреса повернення",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Повна адреса й інструкції повернення товарів. Перевірте, чи це справжнє місце приймання.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL політики конфіденційності",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Повний URL політики приватності цього магазину. Посилайтеся на інформацію про дані, які збираєте під час відмови.",
+            "text_language": "uk",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Безпека",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Строк дії посилання доступу (хвилини)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Час до завершення дії щойно виданого гостьового посилання доступу. Коротші межі знижують ризик, але посилання може сплинути до прочитання листа.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Тайм-аут неактивності сеансу (хвилини)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Максимальна неактивність до завершення гостьового сеансу. Не має перевищувати абсолютний строк сеансу.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Абсолютний строк сеансу (хвилини)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Максимальна загальна тривалість гостьового сеансу навіть за активності. Має бути не меншою за тайм-аут неактивності.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Затримка повторного надсилання (секунди)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Мінімальне очікування до запиту наступного листа доступу. Обмежує засипання листами; не продовжує дію посилання.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Запитів з IP / 15 хвилин",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Ліміт частоти запитів з однієї IP за 15 хвилин. Спільні IP домогосподарств/компаній ділять ліміт.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Запитів з IP / день",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Денний ліміт запитів на IP; має бути не меншим за ліміт коротшого вікна.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Запити на замовлення / годину",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Годинний ліміт запитів для одного замовлення незалежно від IP запитувача.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Запити на замовлення / день",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Денний ліміт запитів на замовлення; має бути не меншим за годинний.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Максимальна довжина примітки",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Максимальна довжина примітки клієнта в символах. Не вимагайте непотрібної чутливої інформації в примітці.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Кількість повторів листа",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Кількість повторних спроб доставки в поштовій черзі модуля. Нуль вимикає повтори; це не доводить отримання першого листа адресатом.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Додати PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Додайте створений PDF відмови до відповідного листа. Вимкнення надсилає лист без цього вкладення; записана відмова не видаляється.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Префікс номера",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Використовуйте 1–12 літер, цифр або дефісів для нових номерів відмов. Це позначає нові записи, а не початкові номери замовлень магазину.",
+            "text_language": "uk",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Видалення даних",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Підтвердження видалення",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Введіть буквально DELETE лише якщо плануєте остаточне видалення даних модуля. Не вводьте для звичайних змін налаштувань.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Остаточно видалити дані модуля",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Незворотно видаліть докази відмов модуля й пов’язані дані. Спершу зробіть резервну копію й перевірте обов’язки зберігання. Це окрема руйнівна дія, а не кнопка Зберегти; замовлення/клієнти магазину не є ціллю видалення.",
+            "text_language": "uk",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Операції",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Зберегти",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Зберегти застосовує поточну форму до вибраного магазину; сама зміна перемикача чи списку не зберігає дані. У GA4 збереження охоплює разом Вимірювання, Замовлення й Додатково; окремі форми банера зберігаються незалежно.",
+            "text_language": "uk",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Перевірка оновлень",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Перевірте метадані останнього стабільного випуску GitHub. Код не завантажується й не встановлюється. Встановлена версія, остання версія й час перевірки UTC — різні значення; недоступність не означає актуальність. Установлюйте лише інсталяційний ZIP випуску з його SHA256.",
+            "text_language": "uk",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Знайдіть ту саму вкладку й назву налаштування, що у формі конфігурації. Кожен запис пояснює дію, потрібне значення й доступні варіанти. Змініть налаштування одного магазину, а потім натисніть Зберегти в цьому розділі.",
+      "default": "Типове значення",
+      "expected": "Що ввести / вибрати",
+      "choices": "Доступні варіанти",
+      "on": "Увімкнено",
+      "off": "Вимкнено",
+      "empty": "Порожньо",
+      "action": "Дія; значення не зберігається",
+      "dynamic": "Залежить від магазину / вибраної мови"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "language": "de",
+  "title": "Handbuch",
+  "settings": "Einstellungen",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Einstellungen",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Verfügbarkeit",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Modul aktivieren",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Aktivieren Sie den Widerrufsablauf. Deaktivieren löscht keine gespeicherten Widerrufsnachweise und erledigt keine bestehenden Ansprüche.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Direkte Widerrufsfunktion",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Erlauben Sie den direkten Widerrufseinstieg. Dies hebt die vom Ablauf erforderliche Identitäts-/Bestellprüfung nicht auf.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Fußzeilenlink",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Zeigen Sie den Widerrufslink in der Shopfußzeile, wenn das Theme seinen Hook ausgibt. Dies ist unabhängig vom allgemeinen joobox.eu-Herkunftshinweis.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Link im Kundenkonto",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Zeigen Sie den Widerrufseinstieg im Kundenkonto. Dadurch werden keine Bestellungen anderer Kunden zugänglich.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Schaltfläche in Bestelldetails",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Zeigen Sie eine Widerrufsschaltfläche auf der zugehörigen Bestellseite. Berechtigung und Verifizierung gelten weiterhin.",
+            "text_language": "de",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Händlerangaben",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Händlername",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Rechtlicher/geschäftlicher Name des Händlers in Widerrufsdokumenten.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Händleranschrift",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Vollständige Händlerpostanschrift für Dokumente, nicht automatisch eine Rücksendeadresse für Pakete.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Händlerregistrierungsnummer",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Dem Kunden angezeigte Unternehmens-/Registrierungskennung des Händlers.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Händler-E-Mail",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Gültige Kontakt-E-Mail-Adresse des Händlers für den Widerrufsablauf.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Händlertelefon",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Für Kunden bestimmte Kontakttelefonnummer des Händlers.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Rücksendeadresse",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Vollständige Adresse und Anweisungen für Warenrücksendungen. Prüfen Sie, dass dies der tatsächliche Empfangsort ist.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL der Datenschutzerklärung",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Vollständige URL der Datenschutzrichtlinie dieses Shops. Verlinken Sie Informationen, die für die von Ihnen erfassten Widerrufsdaten relevant sind.",
+            "text_language": "de",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Sicherheit",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Gültigkeitsdauer des Zugangslinks (Minuten)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Zeit bis zum Ablauf eines neu ausgestellten Gastzugangslinks. Kürzere Grenzen verringern die Gefährdung, können aber vor dem Lesen der E-Mail ablaufen.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Inaktivitätslimit der Sitzung (Minuten)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Maximale Inaktivität bis zum Ablauf der Gastsitzung. Darf die absolute Sitzungsdauer nicht überschreiten.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Absolute Sitzungsdauer (Minuten)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Maximale Gesamtdauer einer Gastsitzung auch bei Aktivität. Muss mindestens dem Inaktivitätslimit entsprechen.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Wartezeit bis zum erneuten Senden (Sekunden)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Mindestwartezeit bis zur Anforderung einer weiteren Zugangs-E-Mail. Begrenzt E-Mail-Fluten; verlängert nicht die Linkgültigkeit.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Anfragen pro IP / 15 Minuten",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Anfragelimit für eine IP innerhalb von 15 Minuten. Gemeinsam verwendete Haushalts-/Firmen-IPs teilen das Limit.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Anfragen pro IP / Tag",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Tägliches Anfragelimit je IP; muss mindestens dem Limit des kürzeren Zeitfensters entsprechen.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Anfragen je Bestellung / Stunde",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Stündliches Anfragelimit für eine Bestellung, unabhängig von der anfragenden IP.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Anfragen je Bestellung / Tag",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Tägliches Anfragelimit je Bestellung; muss mindestens dem stündlichen Limit entsprechen.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Maximale Notizlänge",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Maximale Länge einer Kundennotiz in Zeichen. Fordern Sie in der Notiz keine unnötigen sensiblen Informationen an.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Anzahl E-Mail-Wiederholungsversuche",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Anzahl erneuter Zustellversuche der Modul-E-Mail-Warteschlange. Null deaktiviert Wiederholungen; dies beweist nicht, dass die erste E-Mail den Empfänger erreicht hat.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "PDF anhängen",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Hängen Sie das erzeugte Widerrufs-PDF an die betreffende E-Mail an. Aus sendet die E-Mail ohne diesen Anhang; der aufgezeichnete Widerruf wird nicht gelöscht.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Referenzpräfix",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Verwenden Sie 1–12 Buchstaben, Zahlen oder Bindestriche für neue Widerrufsreferenzen. Dies kennzeichnet neue Nachweise, nicht die ursprünglichen Shopbestellreferenzen.",
+            "text_language": "de",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Datenlöschung",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Löschbestätigung",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Geben Sie wörtlich DELETE nur ein, wenn Sie Moduldaten dauerhaft löschen möchten. Geben Sie es nicht bei gewöhnlichen Einstellungsänderungen ein.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Moduldaten dauerhaft löschen",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Entfernen Sie die Widerrufsnachweise des Moduls und zugehörige Daten unumkehrbar. Erstellen Sie zuerst eine Sicherung und prüfen Sie Aufbewahrungspflichten. Dies ist eine separate destruktive Aktion, nicht die Schaltfläche Speichern; Shopbestellungen und Kunden sind nicht das Löschziel.",
+            "text_language": "de",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operationen",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Speichern",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Speichern übernimmt das aktuelle Formular für den ausgewählten Shop; allein das Ändern eines Schalters oder einer Auswahl speichert nichts. In GA4 werden Messung, Bestellungen und Erweitert gemeinsam gespeichert; die getrennten Bannerformulare werden unabhängig gespeichert.",
+            "text_language": "de",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Update-Prüfung",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Prüfen Sie die Metadaten der neuesten stabilen GitHub-Veröffentlichung. Dabei wird kein Code heruntergeladen oder installiert. Installierte Version, neueste Version und UTC-Prüfzeit sind unterschiedliche Werte; nicht verfügbar bedeutet nicht aktuell. Installieren Sie nur das Installations-ZIP der Veröffentlichung mit seiner SHA256-Prüfsumme.",
+            "text_language": "de",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Suchen Sie dieselbe Registerkarte und denselben Einstellungsnamen wie im Konfigurationsformular. Jeder Eintrag erklärt die Wirkung, die Eingabe und die verfügbaren Optionen. Ändern Sie die Einstellungen für einen Shop und verwenden Sie anschließend die Schaltfläche Speichern des jeweiligen Abschnitts.",
+      "default": "Standardwert",
+      "expected": "Was eingeben / auswählen",
+      "choices": "Verfügbare Optionen",
+      "on": "Ein",
+      "off": "Aus",
+      "empty": "Leer",
+      "action": "Aktion; kein gespeicherter Wert",
+      "dynamic": "Abhängig vom Shop / der gewählten Sprache"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

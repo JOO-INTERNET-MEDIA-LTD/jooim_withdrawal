@@ -118,3 +118,8 @@
 118	Ezt csak eldobható teszttelepítésben használja.
 119	Igen
 120	Csak Back Office-beállítások
+121	Hivatkozások
+122	Elérhetőség
+123	Kereskedő
+124	Biztonság
+125	Adattörlés

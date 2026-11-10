@@ -137,7 +137,7 @@ foreach (glob($root . '/src/**/*.bak*', GLOB_BRACE) ?: [] as $path) {
 check($temporaryArtifacts === [], 'no backup or patch-residue files in release tree');
 
 $main = readFileStrict($root . '/jooim_withdrawal.php');
-check(strpos($main, "public const VERSION = '1.1.1';") !== false, 'module version is exactly 1.1.1');
+check(strpos($main, "public const VERSION = '1.00.01';") !== false, 'module version is exactly 1.00.01');
 check(strpos($main, "\$this->name = 'jooim_withdrawal';") !== false, 'technical module name');
 check(strpos($main, 'Modules.Jooimwithdrawal.Admin') !== false, 'explicit Admin translation domain');
 check(strpos($main, 'Modules.Jooimwithdrawal.Shop') !== false, 'explicit Shop translation domain');
@@ -230,7 +230,7 @@ check(
 );
 
 $configXml = readFileStrict($root . '/config.xml');
-check(strpos($configXml, '<version><![CDATA[1.1.1]]></version>') !== false, 'config.xml version 1.1.1');
+check(strpos($configXml, '<version><![CDATA[1.00.01]]></version>') !== false, 'config.xml version 1.00.01');
 check(strpos($configXml, '<name>jooim_withdrawal</name>') !== false, 'config.xml technical name');
 
 $composerRaw = readFileStrict($root . '/composer.json');
@@ -508,7 +508,8 @@ foreach ($locales as $locale) {
         check(isset($adminLookup[$source]), 'configuration translation source exists (' . $locale . '): ' . $source);
         if (isset($adminLookup[$source])) {
             check($adminLookup[$source] !== '', 'configuration translation target is non-empty (' . $locale . '): ' . $source);
-            if ($locale !== 'en-US' && $source !== 'JOOIM Withdrawal') {
+            // German uses the same word Links; this is not an English fallback.
+            if ($locale !== 'en-US' && $source !== 'JOOIM Withdrawal' && !($locale === 'de-DE' && $source === 'Links')) {
                 check($adminLookup[$source] !== $source, 'configuration help is translated (' . $locale . '): ' . $source);
             }
         }
@@ -541,7 +542,7 @@ $adminLocales = [
     'sk-SK', 'sl-SI', 'sv-SE', 'uk-UA',
 ];
 $settingsSources = json_decode(readFileStrict($root . '/tools/admin_settings_sources.json'), true);
-check(is_array($settingsSources) && count($settingsSources) === 120, 'authoritative list contains 120 Back Office settings strings');
+check(is_array($settingsSources) && count($settingsSources) === 125, 'authoritative list contains 125 Back Office settings strings');
 foreach ($adminLocales as $locale) {
     $adminPath = $root . '/translations/' . $locale . '/ModulesJooimwithdrawalAdmin.' . $locale . '.xlf';
     check(is_file($adminPath), 'Back Office settings catalogue: ' . $locale);
@@ -564,7 +565,7 @@ $readme = readFileStrict($root . '/README.md');
 foreach (['README.sk.md', 'README.cs.md', 'README.de.md', 'README.fr.md', 'README.pl.md'] as $localizedReadme) {
     check(strpos($readme, $localizedReadme) !== false, 'English README links to ' . $localizedReadme);
 }
-check(strpos($readme, '`1.1.1`') !== false, 'README identifies the current declared source version without inventing release status');
+check(strpos($readme, '`1.00.01`') !== false, 'README identifies the current declared source version without inventing release status');
 check(strpos($readme, 'Joobox support for this module') !== false, 'README documents Joobox support');
 check(strpos($readme, 'Joobox footer attribution') !== false, 'README documents shared footer attribution');
 check(strpos($readme, 'GitHub update check') !== false, 'README documents update checker');
@@ -577,7 +578,7 @@ foreach (['sk', 'cs', 'de', 'fr', 'pl'] as $language) {
 }
 
 check(strpos($readme, 'JOO-INTERNET-MEDIA-LTD/jooim_withdrawal') !== false, 'README targets the official repository');
-check(strpos($readme, 'jooim_withdrawal-1.1.1.zip') !== false, 'README names the installation release asset');
+check(strpos($readme, 'jooim_withdrawal-1.00.01.zip') !== false, 'README names the installation release asset');
 check(strpos($readme, 'docs/') === false, 'public README does not link local-only documentation');
 
 $nullableInsertFiles = [

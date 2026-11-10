@@ -41,8 +41,16 @@ jobs:
       - name: Static module validation
         run: php tests/static_validation.php
 
+      - name: Installation ZIP front-controller bootstrap without Composer
+        run: |
+          python3 tools/build-candidate.py --candidate
+          python3 tests/package_bootstrap.py
+
       - name: Runtime regression smoke test
         run: php tests/runtime_smoke.php
+
+      - name: Admin tab captions with stale translator cache
+        run: php tests/admin_tab_labels.php
 
       - name: PrestaShop 8 translation bridge regression
         run: php tests/translation_bridge_smoke.php

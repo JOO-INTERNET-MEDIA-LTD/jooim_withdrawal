@@ -1,0 +1,359 @@
+{
+  "language": "cs",
+  "title": "Manuál",
+  "settings": "Nastavení",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Nastavení",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Dostupnost",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Povolit modul",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Zapněte proces odstoupení od smlouvy. Vypnutí nemaže uložené záznamy odstoupení ani nevyřizuje existující nároky.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Přímé odstoupení od smlouvy",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Povolte přímý vstup pro odstoupení. Neruší to ověření identity a objednávky požadované procesem.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Odkaz v zápatí",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Zobrazte odkaz pro odstoupení v zápatí výlohy, pokud šablona vykresluje jeho hook. Je to nezávislé na společném odkazu joobox.eu.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Odkaz v zákaznickém účtu",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Zobrazte vstup pro odstoupení v zákaznickém účtu. Nezpřístupňuje to objednávky jiných zákazníků.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Tlačítko v detailu objednávky",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Zobrazte tlačítko pro odstoupení na příslušné stránce objednávky. Způsobilost a ověření stále platí.",
+            "text_language": "cs",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Údaje obchodníka",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Název obchodníka",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Právní nebo obchodní název obchodníka zobrazený v dokumentech odstoupení.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Adresa obchodníka",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Úplná poštovní adresa obchodníka pro dokumenty, nikoli automaticky adresa pro vrácení zásilek.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Registrační číslo obchodníka",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Firemní nebo registrační identifikace obchodníka zobrazená zákazníkovi.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "E-mail obchodníka",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Platný kontaktní e-mail obchodníka pro proces odstoupení.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Telefon obchodníka",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Kontaktní telefon obchodníka určený zákazníkům.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Adresa pro vrácení zboží",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Úplná adresa a pokyny pro vrácení zboží. Ověřte, že jde o skutečné místo příjmu.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL zásad ochrany osobních údajů",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Úplná URL zásad ochrany osobních údajů tohoto obchodu. Odkazujte na informace relevantní pro údaje odstoupení, které shromažďujete.",
+            "text_language": "cs",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Zabezpečení",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Platnost přístupového odkazu (minuty)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Doba do vypršení nově vydaného přístupového odkazu hosta. Kratší limity omezují riziko, ale mohou vypršet před přečtením e-mailu.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Limit nečinnosti relace (minuty)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Maximální nečinnost před vypršením relace hosta. Nesmí překročit absolutní životnost relace.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Celková doba relace (minuty)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Maximální celková doba relace hosta i při aktivitě. Musí být alespoň rovna limitu nečinnosti.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Prodleva mezi opakovaným odesláním (sekundy)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Minimální čekání před další žádostí o přístupový e-mail. Omezuje zahlcení e-maily; neprodlužuje platnost odkazu.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Žádosti na IP / 15 minut",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Limit požadavků z jedné IP během 15 minut. Sdílené domácí nebo firemní IP sdílejí limit.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Žádosti na IP / den",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Denní limit požadavků na IP; musí být alespoň roven limitu kratšího okna.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Žádosti na objednávku za hodinu",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Hodinový limit požadavků pro jednu objednávku nezávisle na IP žadatele.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Žádosti na objednávku za den",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Denní limit požadavků na objednávku; musí být alespoň roven hodinovému limitu.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Nejvyšší délka poznámky",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Maximální délka zákaznické poznámky ve znacích. Nevyžadujte v poznámce zbytečné citlivé informace.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Počet opakovaných pokusů o odeslání e-mailu",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Počet opakovaných pokusů o doručení ve frontě e-mailů modulu. Nula opakování vypne; nedokazuje, že první e-mail došel příjemci.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Přiložit PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Připojte vygenerované PDF odstoupení k příslušnému e-mailu. Vypnuto odešle e-mail bez této přílohy; nesmaže zaznamenané odstoupení.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Prefix reference",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Pro nové reference odstoupení použijte 1–12 písmen, číslic nebo pomlček. Označuje to nové záznamy, nikoli původní reference objednávek obchodu.",
+            "text_language": "cs",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Vymazání",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Potvrzení vymazání",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Zadejte doslovně DELETE pouze tehdy, když zamýšlíte trvalé smazání dat modulu. Nezadávejte to při běžných změnách nastavení.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Trvale odstranit údaje modulu",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Nevratně odstraňte důkazy odstoupení modulu a související data. Nejprve vytvořte zálohu a ověřte povinnosti uchovávání. Jde o samostatnou destruktivní akci, nikoli tlačítko Uložit; objednávky a zákazníci obchodu nejsou cílem mazání.",
+            "text_language": "cs",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operace",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Uložit",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Uložit použije aktuální formulář pro vybraný obchod; samotné přepnutí přepínače nebo změna výběru nic neuloží. V GA4 se společně ukládají Měření, Objednávky a Pokročilé; oddělené formuláře banneru se ukládají samostatně.",
+            "text_language": "cs",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Kontrola aktualizací",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Zkontrolujte metadata nejnovějšího stabilního vydání na GitHubu. Kód se nestahuje ani neinstaluje. Nainstalovaná verze, nejnovější verze a čas kontroly UTC jsou různé hodnoty; nedostupné není totéž co aktuální. Instalujte pouze instalační ZIP vydání s jeho SHA256.",
+            "text_language": "cs",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Najděte stejnou záložku a název nastavení jako v konfiguračním formuláři. Každá položka vysvětluje její účinek, co zadat a dostupné možnosti. Změňte nastavení jednoho obchodu a pak použijte tlačítko Uložit v příslušné části.",
+      "default": "Výchozí hodnota",
+      "expected": "Co zadat / zvolit",
+      "choices": "Dostupné možnosti",
+      "on": "Zapnuto",
+      "off": "Vypnuto",
+      "empty": "Prázdné",
+      "action": "Akce; neukládá vlastní hodnotu",
+      "dynamic": "Podle obchodu / vybraného jazyka"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

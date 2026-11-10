@@ -1,0 +1,359 @@
+{
+  "language": "et",
+  "title": "Juhend",
+  "settings": "Seaded",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Seaded",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Saadavus",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Luba moodul",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Lubage taganemisvoog. Keelamine ei kustuta salvestatud taganemiskirjeid ega lahenda olemasolevaid nõudeid.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Otsene taganemisfunktsioon",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Lubage taganemise otsene sisenemispunkt. See ei vabasta voo nõutud isiku-/tellimusekontrollist.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Jaluse link",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Näidake taganemise sisenemislinki poe jaluses, kui teema kuvab selle haagi. See on sõltumatu üldisest joobox.eu viitest.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Link kliendikontol",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Näidake taganemise sisenemispunkti kliendikontol. See ei tee teiste klientide tellimusi kättesaadavaks.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Nupp tellimuse üksikasjades",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Näidake asjakohasel tellimuslehel taganemisnuppu. Sobivus ja kontroll kehtivad endiselt.",
+            "text_language": "et",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Kaupmehe andmed",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Kaupmehe nimi",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Kaupmehe juriidiline/ärinimi, mida kuvatakse taganemisdokumentidel.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Kaupmehe aadress",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Kaupmehe täielik postiaadress dokumentidele, mitte automaatselt tagastuspakkide aadress.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Kaupmehe registrinumber",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Kaupmehe ettevõtte-/registritunnus, mida näidatakse kliendile.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Kaupmehe meil",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Kaupmehe kehtiv kontaktmeil taganemisvoo jaoks.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Kaupmehe telefon",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Kaupmehe kliendile mõeldud kontakttelefon.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Tagastusaadress",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Täielik aadress ja juhised kauba tagastamiseks. Kontrollige, et see oleks tegelik vastuvõtukoht.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "Privaatsuspoliitika URL",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Poe privaatsuspoliitika täielik URL. Viidake teabele, mis on seotud kogutavate taganemisandmetega.",
+            "text_language": "et",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Turvalisus",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Pääsulingi kehtivus (minutit)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Aeg äsja väljastatud külalispääsulingi aegumiseni. Lühemad piirid vähendavad avatust, kuid võivad aeguda enne meili lugemist.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Seansi tegevusetuse ajapiir (minutit)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Maksimaalne tegevusetus külalisseansi aegumiseni. Ei tohi ületada seansi absoluutset kestust.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Seansi absoluutne kestus (minutit)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Külalisseansi maksimaalne kogukestus ka aktiivsuse korral. Peab olema vähemalt tegevusetuse ajapiiri pikkune.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Kordussaatmise ooteaeg (sekundites)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Minimaalne ooteaeg uue pääsumeili taotlemiseni. Piirab meilidega üleujutamist; ei pikenda lingi kehtivust.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Taotlusi IP kohta / 15 minutit",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Ühe IP päringupiirang 15 minuti jooksul. Ühised kodu-/ettevõtte IP-d jagavad piirangut.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Taotlusi IP kohta / päev",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Päevane päringupiirang IP kohta; peab olema vähemalt lühema ajavahemiku piirangu suurune.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Päringuid tellimuse kohta / tund",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Tunnine päringupiirang ühele tellimusele, sõltumata taotleja IP-st.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Päringuid tellimuse kohta / päev",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Päevane päringupiirang tellimuse kohta; peab olema vähemalt tunnipiirangu suurune.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Märkuse maksimaalne pikkus",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Kliendimärkuse maksimaalne pikkus märkides. Ärge küsige märkuses tarbetuid tundlikke andmeid.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Meili korduskatsete arv",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Mooduli meilijärjekorra korduvate saatmiskatsete arv. Null keelab korduskatsed; see ei tõesta esimese meili jõudmist saajani.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Lisa PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Lisage loodud taganemise PDF vastavale meilile. Väljas saadab meili selle manuseta; registreeritud taganemist ei kustutata.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Viite prefiks",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Kasutage uutes taganemisviidetes 1–12 tähte, numbrit või sidekriipsu. See märgistab uusi kirjeid, mitte algseid poe tellimusviiteid.",
+            "text_language": "et",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Andmete kustutamine",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Kustutamise kinnitus",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Sisestage sõnasõnalt DELETE ainult siis, kui kavatsete mooduli andmed jäädavalt kustutada. Ärge sisestage seda tavaliste seadistusmuudatuste jaoks.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Kustuta mooduliandmed jäädavalt",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Eemaldage pöördumatult mooduli taganemistõendid ja seotud andmed. Tehke esmalt varukoopia ja kontrollige säilituskohustusi. See on eraldi hävitav tegevus, mitte nupp Salvesta; poe tellimused/kliendid pole selle kustutamise sihtmärk.",
+            "text_language": "et",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Toimingud",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Salvesta",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Salvesta rakendab praeguse vormi valitud poele; pelgalt lüliti või valiku muutmine ei salvesta. GA4 puhul salvestatakse Mõõtmine, Tellimused ja Täpsemalt koos; bänneri eraldi vormid salvestatakse sõltumatult.",
+            "text_language": "et",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Uuenduse kontroll",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Kontrollige uusima stabiilse GitHubi väljalaske metaandmeid. Koodi ei laadita alla ega paigaldata. Paigaldatud versioon, uusim versioon ja UTC kontrolliaeg on erinevad väärtused; pole saadaval ei tähenda ajakohast. Paigaldage ainult väljalaske paigaldus-ZIP koos selle SHA256-ga.",
+            "text_language": "et",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Leidke sama vahekaart ja seadistuse nimi nagu seadistusvormil. Iga kirje selgitab mõju, sisestatavat väärtust ja valikuid. Muutke ühe poe seadistusi ning kasutage seejärel vastava jaotise nuppu Salvesta.",
+      "default": "Vaikeväärtus",
+      "expected": "Mida sisestada / valida",
+      "choices": "Saadaolevad valikud",
+      "on": "Sees",
+      "off": "Väljas",
+      "empty": "Tühi",
+      "action": "Toiming; väärtust ei salvestata",
+      "dynamic": "Sõltub poest / valitud keelest"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

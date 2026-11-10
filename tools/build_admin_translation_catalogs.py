@@ -2,7 +2,7 @@
 """Build complete Back Office settings XLIFF catalogues for JOOIM Withdrawal.
 
 The English source catalogue is authoritative. Existing reviewed catalogue units are
-preserved, while the 120 settings strings are merged from deterministic locale
+preserved, while the settings strings are merged from deterministic locale
 files under tools/admin-settings-targets/.
 """
 from __future__ import annotations
@@ -179,6 +179,14 @@ def main() -> int:
         else:
             raise ValueError(f"Missing target file for {locale}")
 
+        tab_keys = ['Links', 'Availability', 'Trader', 'Security', 'Data removal']
+        tab_rows = json.loads((ROOT / 'tools/admin-tab-translations.json').read_text(encoding='utf-8'))
+        language = json.loads((ROOT / 'tools/locales.json').read_text(encoding='utf-8'))[locale]
+        tab_values = tab_rows[language].split('|')
+        if len(tab_values) != len(tab_keys):
+            raise ValueError(f'{locale}: invalid tab translation count')
+        entries.update(dict(zip(tab_keys, tab_values)))
+
         missing = [source for source in sources if not entries.get(source, "").strip()]
         if missing:
             raise ValueError(f"{locale}: {len(missing)} settings translations missing: {missing[:3]}")
@@ -193,6 +201,13 @@ def main() -> int:
 
         output = write_xlf(locale, entries)
         reports.append(f"{locale}: {len(entries)} units -> {output.relative_to(ROOT)}")
+
+    # Runtime captions must work before a refreshed Symfony catalogue is loaded.
+    tab_catalogues = {}
+    for locale in locales:
+        entries = parse_xlf(TRANSLATIONS / locale / f"{DOMAIN}.{locale}.xlf")
+        tab_catalogues[locale] = {key: entries[key] for key in ['Links', 'Availability', 'Trader', 'Security', 'Data removal']}
+    (TRANSLATIONS / 'admin-tabs.json').write_text(json.dumps(tab_catalogues, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
 
     print("\n".join(reports))
     return 0

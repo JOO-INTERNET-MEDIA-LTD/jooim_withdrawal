@@ -1,0 +1,359 @@
+{
+  "language": "sv",
+  "title": "Handbok",
+  "settings": "Inställningar",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Inställningar",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Tillgänglighet",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Aktivera modul",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Aktivera ångerflödet. Avaktivering raderar inte sparade ångerposter och reglerar inte befintliga anspråk.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Direkt ångerfunktion",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Tillåt direkt ingång till ångerfunktionen. Detta undanröjer inte flödets krav på identitets-/beställningsverifiering.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Sidfotslänk",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Visa ångerlänken i butikens sidfot när temat återger dess hook. Detta är oberoende av den gemensamma joobox.eu-hänvisningen.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Länk på kundkontot",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Visa ingången till ångerfunktionen i kundkontot. Andra kunders beställningar blir inte tillgängliga.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Knapp i beställningsinformation",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Visa en ångerknapp på relevant beställningssida. Behörighet och verifiering gäller fortfarande.",
+            "text_language": "sv",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Handlaruppgifter",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Handlarnamn",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Handlarens juridiska namn/firmanamn som visas i ångerdokument.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Handlaradress",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Handlarens fullständiga postadress för dokument, inte automatiskt returadress för paket.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Handlarens registreringsnummer",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Handlarens företags-/registreringsidentifiering som visas för kunden.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Handlarens e-post",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Giltig kontaktadress för e-post till handlaren för ångerflödet.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Handlartelefon",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Handlarens kundinriktade kontakttelefon.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Returadress",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Fullständig adress och anvisningar för varureturer. Kontrollera att detta är den faktiska mottagningsplatsen.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL till integritetspolicy",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Fullständig URL till butikens integritetspolicy. Länka till information som är relevant för insamlade ångeruppgifter.",
+            "text_language": "sv",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Säkerhet",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Åtkomstlänkens giltighet (minuter)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Tid tills en nyutfärdad gäståtkomstlänk löper ut. Kortare gränser minskar exponeringen men kan löpa ut innan e-post läses.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Sessionens inaktivitetsgräns (minuter)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Längsta inaktivitet innan gästsessionen löper ut. Får inte överskrida sessionens absoluta livslängd.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Absolut sessionslivslängd (minuter)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Gästsessionens längsta totala längd även vid aktivitet. Måste vara minst lika lång som inaktivitetsgränsen.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Väntetid före ny sändning (sekunder)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Kortaste väntetid innan ett nytt åtkomstmeddelande kan begäras. Begränsar e-postöversvämning; förlänger inte länkens giltighet.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Begäranden per IP / 15 minuter",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Begärandegräns från en IP under 15 minuter. Delade hushålls-/företags-IP:n delar gränsen.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Begäranden per IP / dag",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Daglig begärandegräns per IP; måste vara minst lika stor som gränsen för det kortare tidsfönstret.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Begäranden per beställning / timme",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Begärandegräns per timme för en beställning, oberoende av begärande IP.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Begäranden per beställning / dag",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Daglig begärandegräns per beställning; måste vara minst lika stor som timgränsen.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Högsta anteckningslängd",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Högsta längd på kundanteckning i tecken. Be inte om onödiga känsliga uppgifter i anteckningen.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Antal återförsök för e-post",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Antal nya leveransförsök för modulens e-postkö. Noll inaktiverar återförsök; det bevisar inte att första meddelandet nått mottagaren.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Bifoga PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Bifoga skapad ånger-PDF till relevant e-post. Av skickar meddelandet utan bilagan; registrerat ångermeddelande raderas inte.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Referensprefix",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Använd 1–12 bokstäver, siffror eller bindestreck för nya ångerreferenser. Detta märker nya poster, inte butikens ursprungliga beställningsreferenser.",
+            "text_language": "sv",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Radera data",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Raderingsbekräftelse",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Skriv bokstavligen DELETE endast när du avser att radera moduldata permanent. Ange det inte vid vanliga inställningsändringar.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Radera moduldata permanent",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Ta oåterkalleligt bort modulens ångerbevis och tillhörande data. Säkerhetskopiera och kontrollera lagringsskyldigheter först. Detta är en separat destruktiv åtgärd, inte Spara-knappen; butikens beställningar/kunder är inte raderingens mål.",
+            "text_language": "sv",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Åtgärder",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Spara",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Spara tillämpar det aktuella formuläret på vald butik; enbart ändring av en omkopplare eller ett val sparar ingenting. I GA4 sparas Mätning, Beställningar och Avancerat tillsammans; bannerns separata formulär sparas oberoende.",
+            "text_language": "sv",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Uppdateringskontroll",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Kontrollera metadata för den senaste stabila GitHub-versionen. Ingen kod hämtas eller installeras. Installerad version, senaste version och kontrolltid i UTC är olika värden; otillgänglig betyder inte aktuell. Installera endast versionens installations-ZIP med dess SHA256.",
+            "text_language": "sv",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Hitta samma flik och inställningsnamn som i konfigurationsformuläret. Varje post förklarar effekten, vad som ska anges och tillgängliga val. Ändra inställningarna för en butik och använd sedan avsnittets Spara-knapp.",
+      "default": "Standardvärde",
+      "expected": "Vad du ska ange / välja",
+      "choices": "Tillgängliga alternativ",
+      "on": "På",
+      "off": "Av",
+      "empty": "Tomt",
+      "action": "Åtgärd; inget sparat värde",
+      "dynamic": "Beror på butiken / det valda språket"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

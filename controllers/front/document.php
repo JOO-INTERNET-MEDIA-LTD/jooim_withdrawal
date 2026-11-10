@@ -3,7 +3,6 @@ require_once dirname(__DIR__, 2) . '/autoload.php'; // JOOIM_WITHDRAWAL_FRONT_AU
 
 use JooInternetMedia\PrestaShop\Module\JooimWithdrawal\Compatibility\FrontControllerBase;
 
-require_once dirname(__DIR__, 2) . '/vendor/autoload.php';
 
 class Jooim_WithdrawalDocumentModuleFrontController extends FrontControllerBase
 {

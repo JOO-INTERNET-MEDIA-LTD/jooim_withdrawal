@@ -1,0 +1,359 @@
+{
+  "language": "fi",
+  "title": "Käyttöohje",
+  "settings": "Asetukset",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Asetukset",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Saatavuus",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Ota moduuli käyttöön",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Ota sopimuksesta peruuttamisen prosessi käyttöön. Poiskytkentä ei poista tallennettuja peruutustietueita eikä ratkaise nykyisiä vaatimuksia.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Suora peruutustoiminto",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Salli suora peruutuksen aloituskohta. Tämä ei poista prosessin vaatimaa henkilöllisyyden/tilauksen tarkistusta.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Alatunnistelinkki",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Näytä peruutuksen aloituslinkki kaupan alatunnisteessa, kun teema renderöi sen koukun. Tämä on riippumaton yhteisestä joobox.eu-maininnasta.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Linkki asiakastilillä",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Näytä peruutuksen aloitus asiakastilillä. Muiden asiakkaiden tilaukset eivät tule saataville.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Painike tilauksen tiedoissa",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Näytä peruutuksen aloituspainike kyseisellä tilaussivulla. Kelpoisuus ja varmennus ovat yhä voimassa.",
+            "text_language": "fi",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Kauppiaan tiedot",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Kauppiaan nimi",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Kauppiaan virallinen/kaupallinen nimi peruutusasiakirjoissa.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Kauppiaan osoite",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Kauppiaan täydellinen postiosoite asiakirjoihin, ei automaattisesti palautuspaketin osoite.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Kauppiaan rekisterinumero",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Asiakkaalle näytettävä kauppiaan yritys-/rekisteritunniste.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Kauppiaan sähköposti",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Kelvollinen kauppiaan yhteyssähköposti peruutusprosessiin.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Kauppiaan puhelin",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Asiakkaille tarkoitettu kauppiaan yhteyspuhelin.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Palautusosoite",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Täydellinen osoite ja ohjeet tavaroiden palautukseen. Varmista sen olevan todellinen vastaanottopaikka.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "Tietosuojakäytännön URL",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Kaupan täydellinen tietosuojakäytännön URL. Linkitä keräämiäsi peruutustietoja koskeviin tietoihin.",
+            "text_language": "fi",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Tietoturva",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Käyttölinkin voimassaolo (minuuttia)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Aika uuden vieraskäyttölinkin vanhenemiseen. Lyhyemmät rajat vähentävät altistusta, mutta linkki voi vanheta ennen viestin lukemista.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Istunnon toimettomuusraja (minuuttia)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Suurin toimettomuus ennen vierasistunnon vanhenemista. Ei saa ylittää istunnon ehdotonta kestoa.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Istunnon ehdoton kesto (minuuttia)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Vierasistunnon enimmäiskokonaiskesto myös aktiivisena. Sen on oltava vähintään toimettomuusrajan pituinen.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Uudelleenlähetyksen odotusaika (sekuntia)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Vähimmäisodotus ennen uuden käyttöviestin pyyntöä. Rajoittaa viestitulvaa; ei pidennä linkin voimassaoloa.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Pyyntöjä IP:tä kohti / 15 minuuttia",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Yhden IP:n pyyntötiheysraja 15 minuutissa. Kotitalouksien/yritysten yhteiset IP:t jakavat rajan.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Pyyntöjä IP:tä kohti / päivä",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Päivittäinen IP-kohtainen pyyntöraja; vähintään lyhyemmän aikaikkunan raja.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Pyynnöt tilausta kohti / tunti",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Yhden tilauksen tunnittainen pyyntöraja riippumatta pyytäjän IP:stä.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Pyynnöt tilausta kohti / päivä",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Päivittäinen tilauskohtainen pyyntöraja; vähintään tuntirajan suuruinen.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Huomautuksen enimmäispituus",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Asiakkaan huomautuksen enimmäispituus merkkeinä. Älä pyydä huomautuksessa tarpeettomia arkaluonteisia tietoja.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Sähköpostin uusintamäärä",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Moduulin sähköpostijonon toimitusuusintojen määrä. Nolla poistaa uusinnat käytöstä; tämä ei todista ensimmäisen viestin saapumista vastaanottajalle.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Liitä PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Liitä luotu peruutus-PDF asiaankuuluvaan sähköpostiin. Pois lähettää viestin ilman liitettä; kirjattua peruutusta ei poisteta.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Viitteen etuliite",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Käytä 1–12 kirjainta, numeroa tai yhdysmerkkiä uusissa peruutusviitteissä. Tämä nimeää uudet tietueet, ei kaupan alkuperäisiä tilausviitteitä.",
+            "text_language": "fi",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Tietojen poisto",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Poiston vahvistus",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Kirjoita täsmälleen DELETE vain, kun tarkoitat moduulitietojen pysyvää poistamista. Älä syötä tavallisiin asetusmuutoksiin.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Poista moduulitiedot pysyvästi",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Poista peruuttamattomasti moduulin peruutusnäyttö ja liittyvät tiedot. Varmuuskopioi ja tarkista säilytysvelvollisuudet ensin. Tämä on erillinen tuhoava toiminto, ei Tallenna-painike; kaupan tilaukset/asiakkaat eivät ole poiston kohde.",
+            "text_language": "fi",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Toiminnot",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Tallenna",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Tallenna ottaa nykyisen lomakkeen käyttöön valitussa kaupassa; pelkkä kytkimen tai valinnan muuttaminen ei tallenna. GA4:ssä tallennus kattaa Mittauksen, Tilaukset ja Lisäasetukset yhdessä; bannerin erilliset lomakkeet tallennetaan erikseen.",
+            "text_language": "fi",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Päivitystarkistus",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Tarkista uusimman vakaan GitHub-julkaisun metatiedot. Tämä ei lataa eikä asenna koodia. Asennettu versio, uusin versio ja UTC-tarkistusaika ovat eri arvoja; tietojen puuttuminen ei tarkoita ajantasaisuutta. Asenna vain julkaisun asennus-ZIP ja sen SHA256.",
+            "text_language": "fi",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Etsi sama välilehti ja asetuksen nimi kuin määrityslomakkeessa. Kukin kohta selittää vaikutuksen, syötettävän arvon ja vaihtoehdot. Muuta yhden kaupan asetuksia ja paina sitten kyseisen osion Tallenna-painiketta.",
+      "default": "Oletusarvo",
+      "expected": "Mitä syöttää / valita",
+      "choices": "Käytettävissä olevat vaihtoehdot",
+      "on": "Käytössä",
+      "off": "Pois käytöstä",
+      "empty": "Tyhjä",
+      "action": "Toiminto; arvoa ei tallenneta",
+      "dynamic": "Riippuu kaupasta / valitusta kielestä"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

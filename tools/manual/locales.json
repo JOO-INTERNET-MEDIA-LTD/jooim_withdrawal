@@ -1,0 +1,114 @@
+{
+  "en": {
+    "manual": "Manual",
+    "settings": "Settings"
+  },
+  "sk": {
+    "manual": "Manuál",
+    "settings": "Nastavenia"
+  },
+  "cs": {
+    "manual": "Manuál",
+    "settings": "Nastavení"
+  },
+  "de": {
+    "manual": "Handbuch",
+    "settings": "Einstellungen"
+  },
+  "fr": {
+    "manual": "Manuel",
+    "settings": "Paramètres"
+  },
+  "pl": {
+    "manual": "Instrukcja",
+    "settings": "Ustawienia"
+  },
+  "es": {
+    "manual": "Manual",
+    "settings": "Ajustes"
+  },
+  "it": {
+    "manual": "Manuale",
+    "settings": "Impostazioni"
+  },
+  "pt": {
+    "manual": "Manual",
+    "settings": "Definições"
+  },
+  "nl": {
+    "manual": "Handleiding",
+    "settings": "Instellingen"
+  },
+  "da": {
+    "manual": "Vejledning",
+    "settings": "Indstillinger"
+  },
+  "sv": {
+    "manual": "Handbok",
+    "settings": "Inställningar"
+  },
+  "nb": {
+    "manual": "Brukerveiledning",
+    "settings": "Innstillinger"
+  },
+  "fi": {
+    "manual": "Käyttöohje",
+    "settings": "Asetukset"
+  },
+  "uk": {
+    "manual": "Посібник",
+    "settings": "Налаштування"
+  },
+  "bg": {
+    "manual": "Ръководство",
+    "settings": "Настройки"
+  },
+  "hr": {
+    "manual": "Priručnik",
+    "settings": "Postavke"
+  },
+  "sl": {
+    "manual": "Priročnik",
+    "settings": "Nastavitve"
+  },
+  "hu": {
+    "manual": "Kézikönyv",
+    "settings": "Beállítások"
+  },
+  "ro": {
+    "manual": "Manual",
+    "settings": "Setări"
+  },
+  "el": {
+    "manual": "Εγχειρίδιο",
+    "settings": "Ρυθμίσεις"
+  },
+  "et": {
+    "manual": "Juhend",
+    "settings": "Seaded"
+  },
+  "lv": {
+    "manual": "Rokasgrāmata",
+    "settings": "Iestatījumi"
+  },
+  "lt": {
+    "manual": "Vadovas",
+    "settings": "Nustatymai"
+  },
+  "is": {
+    "manual": "Handbók",
+    "settings": "Stillingar"
+  },
+  "lb": {
+    "manual": "Handbuch",
+    "settings": "Astellungen"
+  },
+  "ga": {
+    "manual": "Lámhleabhar",
+    "settings": "Socruithe"
+  },
+  "mt": {
+    "manual": "Manwal",
+    "settings": "Konfigurazzjoni"
+  }
+}

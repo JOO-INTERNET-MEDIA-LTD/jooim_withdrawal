@@ -1,0 +1,359 @@
+{
+  "language": "el",
+  "title": "Εγχειρίδιο",
+  "settings": "Ρυθμίσεις",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Ρυθμίσεις",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Διαθεσιμότητα",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Ενεργοποίηση πρόσθετου",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Ενεργοποιήστε τη διαδικασία υπαναχώρησης. Η απενεργοποίηση δεν διαγράφει αποθηκευμένες εγγραφές ούτε διευθετεί υπάρχουσες αξιώσεις.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Άμεση λειτουργία υπαναχώρησης",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Επιτρέψτε άμεσο σημείο έναρξης υπαναχώρησης. Δεν καταργεί την επαλήθευση ταυτότητας/παραγγελίας που απαιτεί η διαδικασία.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Σύνδεσμος υποσέλιδου",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Εμφανίστε σύνδεσμο έναρξης υπαναχώρησης στο υποσέλιδο όταν το θέμα αποδίδει το αντίστοιχο hook. Είναι ανεξάρτητο από την κοινή αναφορά joobox.eu.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Σύνδεσμος στον λογαριασμό πελάτη",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Εμφανίστε σημείο έναρξης υπαναχώρησης στον λογαριασμό πελάτη. Δεν καθιστά προσβάσιμες παραγγελίες άλλων πελατών.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Κουμπί στις λεπτομέρειες παραγγελίας",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Εμφανίστε κουμπί έναρξης υπαναχώρησης στη σχετική σελίδα παραγγελίας. Η επιλεξιμότητα και επαλήθευση παραμένουν σε ισχύ.",
+            "text_language": "el",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Στοιχεία εμπόρου",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Επωνυμία εμπόρου",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Νομική/εμπορική επωνυμία εμπόρου που εμφανίζεται στα έγγραφα υπαναχώρησης.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Διεύθυνση εμπόρου",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Πλήρης ταχυδρομική διεύθυνση εμπόρου για έγγραφα, όχι αυτόματα διεύθυνση επιστροφής δεμάτων.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Αριθμός μητρώου εμπόρου",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Εταιρικό/μητρώου αναγνωριστικό εμπόρου που εμφανίζεται στον πελάτη.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Email εμπόρου",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Έγκυρο email επικοινωνίας εμπόρου για τη διαδικασία υπαναχώρησης.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Τηλέφωνο εμπόρου",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Τηλέφωνο επικοινωνίας εμπόρου για πελάτες.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Διεύθυνση επιστροφής",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Πλήρης διεύθυνση και οδηγίες επιστροφής αγαθών. Ελέγξτε ότι είναι ο πραγματικός τόπος παραλαβής.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL πολιτικής απορρήτου",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Πλήρες URL πολιτικής απορρήτου καταστήματος. Συνδέστε πληροφορίες σχετικές με τα δεδομένα υπαναχώρησης που συλλέγετε.",
+            "text_language": "el",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Ασφάλεια",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Διάρκεια συνδέσμου πρόσβασης (λεπτά)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Χρόνος μέχρι τη λήξη νέου συνδέσμου πρόσβασης επισκέπτη. Μικρότερα όρια μειώνουν την έκθεση αλλά μπορεί να λήξουν πριν διαβαστεί το email.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Όριο αδράνειας συνεδρίας (λεπτά)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Μέγιστη αδράνεια πριν λήξει η συνεδρία επισκέπτη. Δεν πρέπει να υπερβαίνει την απόλυτη διάρκεια συνεδρίας.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Απόλυτη διάρκεια συνεδρίας (λεπτά)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Μέγιστη συνολική διάρκεια συνεδρίας επισκέπτη ακόμη και με δραστηριότητα. Πρέπει να είναι τουλάχιστον ίση με το όριο αδράνειας.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Χρόνος αναμονής επαναποστολής (δευτερόλεπτα)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Ελάχιστη αναμονή πριν ζητηθεί άλλο email πρόσβασης. Περιορίζει την πλημμύρα email· δεν παρατείνει την ισχύ συνδέσμου.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Αιτήματα ανά IP / 15 λεπτά",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Όριο ρυθμού αιτημάτων από μία IP σε 15 λεπτά. Κοινές οικιακές/εταιρικές IP μοιράζονται το όριο.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Αιτήματα ανά IP / ημέρα",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Ημερήσιο όριο αιτημάτων ανά IP· τουλάχιστον ίσο με το όριο μικρότερου χρονικού παραθύρου.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Αιτήματα ανά παραγγελία / ώρα",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Ωριαίο όριο αιτημάτων για μία παραγγελία, ανεξάρτητα από την IP αιτούντος.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Αιτήματα ανά παραγγελία / ημέρα",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Ημερήσιο όριο αιτημάτων ανά παραγγελία· τουλάχιστον ίσο με το ωριαίο.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Μέγιστο μήκος σημείωσης",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Μέγιστο μήκος σημείωσης πελάτη σε χαρακτήρες. Μην ζητάτε περιττές ευαίσθητες πληροφορίες στη σημείωση.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Αριθμός επαναπροσπαθειών email",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Αριθμός επαναπροσπαθειών παράδοσης για την ουρά email της μονάδας. Το μηδέν απενεργοποιεί επαναπροσπάθειες· δεν αποδεικνύει ότι το πρώτο email έφτασε στον παραλήπτη.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Επισύναψη PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Επισυνάψτε το παραγόμενο PDF υπαναχώρησης στο σχετικό email. Το Ανενεργό στέλνει χωρίς αυτό το συνημμένο· δεν διαγράφει την καταγεγραμμένη υπαναχώρηση.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Πρόθεμα αναφοράς",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Χρησιμοποιήστε 1–12 γράμματα, αριθμούς ή παύλες για νέες αναφορές υπαναχώρησης. Επισημαίνει νέες εγγραφές, όχι τις αρχικές αναφορές παραγγελιών καταστήματος.",
+            "text_language": "el",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Διαγραφή δεδομένων",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Επιβεβαίωση διαγραφής",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Πληκτρολογήστε ακριβώς DELETE μόνο όταν σκοπεύετε να διαγράψετε οριστικά δεδομένα μονάδας. Μην το εισάγετε για συνήθεις αλλαγές ρυθμίσεων.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Οριστική διαγραφή δεδομένων μονάδας",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Αφαιρέστε μη αναστρέψιμα αποδεικτικά υπαναχώρησης της μονάδας και σχετικά δεδομένα. Πρώτα αντίγραφο ασφαλείας και έλεγχος υποχρεώσεων διατήρησης. Είναι ξεχωριστή καταστροφική ενέργεια, όχι Αποθήκευση· παραγγελίες/πελάτες καταστήματος δεν είναι στόχος διαγραφής.",
+            "text_language": "el",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Λειτουργίες",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Αποθήκευση",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Η Αποθήκευση εφαρμόζει την τρέχουσα φόρμα στο επιλεγμένο κατάστημα· η απλή αλλαγή διακόπτη ή λίστας δεν αποθηκεύει. Στο GA4 αποθηκεύονται μαζί Μέτρηση, Παραγγελίες και Για προχωρημένους· οι ξεχωριστές φόρμες του banner αποθηκεύονται ανεξάρτητα.",
+            "text_language": "el",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Έλεγχος ενημερώσεων",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Ελέγξτε τα μεταδεδομένα της τελευταίας σταθερής έκδοσης GitHub. Δεν γίνεται λήψη ή εγκατάσταση κώδικα. Η εγκατεστημένη έκδοση, η τελευταία έκδοση και ο χρόνος ελέγχου UTC είναι διαφορετικές τιμές· το μη διαθέσιμο δεν σημαίνει ενημερωμένο. Εγκαθιστάτε μόνο το ZIP εγκατάστασης της έκδοσης με το SHA256 του.",
+            "text_language": "el",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Βρείτε την ίδια καρτέλα και ονομασία ρύθμισης όπως στη φόρμα διαμόρφωσης. Κάθε καταχώριση εξηγεί την επίδραση, την τιμή που απαιτείται και τις επιλογές. Αλλάξτε τις ρυθμίσεις για ένα κατάστημα και μετά χρησιμοποιήστε την Αποθήκευση της αντίστοιχης ενότητας.",
+      "default": "Προεπιλεγμένη τιμή",
+      "expected": "Τι να εισαγάγετε / επιλέξετε",
+      "choices": "Διαθέσιμες επιλογές",
+      "on": "Ενεργό",
+      "off": "Ανενεργό",
+      "empty": "Κενό",
+      "action": "Ενέργεια· δεν αποθηκεύεται τιμή",
+      "dynamic": "Εξαρτάται από το κατάστημα / την επιλεγμένη γλώσσα"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

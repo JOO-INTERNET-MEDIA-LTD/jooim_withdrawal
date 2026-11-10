@@ -27,12 +27,18 @@ if (!class_exists('JooimPortfolioAdmin', false)) {
             $html = preg_replace_callback('/<form\b[^>]*>/i', static function ($match) use ($hidden) {
                 return $match[0].(preg_match('/\bmethod\s*=\s*[\'\"]?post\b/i', $match[0]) ? $hidden : '');
             }, $html);
-            return self::presentation($module, $html, $path);
+            return self::presentation($module, $html, $path, $context->language ?? null);
         }
         /** Explicit boundary supplied by each renderer; never parse or rearrange forms. */
-        public static function presentation($module, $html, $path)
+        public static function presentation($module, $html, $path, $language = null)
         {
             $parts = explode('<!--jooim-settings-->', $html, 2);
+            $manualRoot = defined('_PS_MODULE_DIR_') ? rtrim(_PS_MODULE_DIR_, '/\\') . '/' . $module->name : dirname(__DIR__);
+            if (count($parts) === 2 && preg_match('/^[a-z0-9_]+$/D', $module->name) && basename($manualRoot) === $module->name && is_file($manualRoot . '/views/manual/en.json')) {
+                require_once $manualRoot . '/classes/JooboxManual.php';
+                $language = $language ?? (method_exists('Context', 'getContext') ? Context::getContext()->language : (object) ['iso_code' => 'en']);
+                $parts[1] = JooboxModuleManual::tabs($manualRoot, $language, $module->name, $module->version, $parts[1], $path);
+            }
             if (count($parts) === 2) {
                 $html = $parts[0].'<section class="panel jooim-settings">'
                     .'<header class="jooim-heading">'.(is_file(__DIR__.'/../logo.png') ? '<img width="64" height="64" alt="" src="'.self::escape($path.'logo.png').'">' : '')

@@ -6,6 +6,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--candidate', action='store_true', required=True)
 parser.parse_args()
 root = Path(__file__).resolve().parents[1]
+# Read-only setting documentation is a package prerequisite.
+import subprocess
+subprocess.run(['python3', str(root / 'tools/manual/build.py')], check=True)
+subprocess.run(['php', str(root / 'tools/manual/test.php')], check=True)
 module = root.name
 source = (root / (module + '.php')).read_text()
 match = re.search(r"\$this->version\s*=\s*'([^']+)'", source)

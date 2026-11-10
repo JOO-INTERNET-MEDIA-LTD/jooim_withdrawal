@@ -1,0 +1,359 @@
+{
+  "language": "pl",
+  "title": "Instrukcja",
+  "settings": "Ustawienia",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Ustawienia",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Dostępność",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Włącz moduł",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Włącz obsługę odstąpienia od umowy. Wyłączenie nie usuwa zapisanych odstąpień ani nie rozstrzyga istniejących roszczeń.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Bezpośrednia funkcja odstąpienia",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Zezwól na bezpośrednie rozpoczęcie odstąpienia. Nie znosi to weryfikacji tożsamości i zamówienia wymaganej przez proces.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Link w stopce",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Pokaż link rozpoczęcia odstąpienia w stopce witryny, gdy motyw renderuje odpowiedni hook. Jest to niezależne od wspólnego oznaczenia joobox.eu.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Link w koncie klienta",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Pokaż możliwość rozpoczęcia odstąpienia na koncie klienta. Nie udostępnia zamówień innych klientów.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Przycisk w szczegółach zamówienia",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Pokaż przycisk rozpoczęcia odstąpienia na odpowiedniej stronie zamówienia. Warunki uprawnienia i weryfikacji nadal obowiązują.",
+            "text_language": "pl",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Dane sprzedawcy",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Nazwa sprzedawcy",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Nazwa prawna/handlowa sprzedawcy widoczna w dokumentach odstąpienia.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Adres sprzedawcy",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Pełny adres pocztowy sprzedawcy do dokumentów; nie jest automatycznie adresem zwrotu przesyłek.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Numer rejestracyjny sprzedawcy",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Identyfikator firmy/rejestracji sprzedawcy widoczny dla klienta.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "E-mail sprzedawcy",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Poprawny kontaktowy e-mail sprzedawcy dla procesu odstąpienia.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Telefon sprzedawcy",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Telefon kontaktowy sprzedawcy przeznaczony dla klientów.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Adres zwrotu",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Pełny adres i instrukcje zwrotu towarów. Sprawdź, czy jest to rzeczywiste miejsce odbioru.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL polityki prywatności",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Pełny URL polityki prywatności tego sklepu. Linkuj informacje dotyczące danych zbieranych przy odstąpieniu.",
+            "text_language": "pl",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Bezpieczeństwo",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Ważność linku dostępu (minuty)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Czas do wygaśnięcia nowo wydanego linku dostępu dla gościa. Krótsze limity zmniejszają narażenie, ale link może wygasnąć przed odczytaniem e-maila.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Limit bezczynności sesji (minuty)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Maksymalna bezczynność przed wygaśnięciem sesji gościa. Nie może przekraczać bezwzględnego czasu sesji.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Bezwzględny czas sesji (minuty)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Maksymalny łączny czas sesji gościa także przy aktywności. Musi wynosić co najmniej limit bezczynności.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Czas do ponownego wysłania (sekundy)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Minimalne oczekiwanie przed żądaniem kolejnego e-maila dostępu. Ogranicza zalewanie poczty; nie przedłuża ważności linku.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Żądania na IP / 15 minut",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Limit żądań z jednego IP w ciągu 15 minut. Wspólne adresy IP gospodarstw i firm dzielą limit.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Żądania na IP / dzień",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Dzienny limit żądań na IP; musi wynosić co najmniej limit krótszego okna.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Żądania na zamówienie / godzinę",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Godzinowy limit żądań dla jednego zamówienia, niezależnie od IP żądającego.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Żądania na zamówienie / dzień",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Dzienny limit żądań na zamówienie; musi wynosić co najmniej limit godzinowy.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Maksymalna długość notatki",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Maksymalna długość notatki klienta w znakach. Nie żądaj w notatce niepotrzebnych danych wrażliwych.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Liczba ponowień e-maila",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Liczba ponowień dostawy dla kolejki e-mail modułu. Zero wyłącza ponowienia; nie dowodzi, że pierwszy e-mail dotarł do odbiorcy.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Dołącz PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Dołącz wygenerowany PDF odstąpienia do odpowiedniego e-maila. Wyłączenie wysyła e-mail bez załącznika; nie usuwa zapisanego odstąpienia.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Prefiks numeru referencyjnego",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Użyj 1–12 liter, cyfr lub łączników dla nowych referencji odstąpień. Oznacza nowe rekordy, a nie oryginalne referencje zamówień sklepu.",
+            "text_language": "pl",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Usuwanie danych",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Potwierdzenie usunięcia",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Wpisz dosłownie DELETE tylko wtedy, gdy zamierzasz trwale usunąć dane modułu. Nie wpisuj przy zwykłych zmianach ustawień.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Trwale usuń dane modułu",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Nieodwracalnie usuń dowody odstąpień modułu i powiązane dane. Najpierw wykonaj kopię i sprawdź obowiązki przechowywania. To osobne działanie destrukcyjne, a nie przycisk Zapisz; celem usuwania nie są zamówienia ani klienci sklepu.",
+            "text_language": "pl",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operacje",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Zapisz",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Zapisz stosuje bieżący formularz do wybranego sklepu; sama zmiana przełącznika lub listy nie zapisuje danych. W GA4 zapis obejmuje razem Pomiar, Zamówienia i Zaawansowane; oddzielne formularze banera zapisuje się niezależnie.",
+            "text_language": "pl",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Sprawdzanie aktualizacji",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Sprawdź metadane najnowszego stabilnego wydania GitHub. Nie pobiera ani nie instaluje kodu. Wersja zainstalowana, najnowsza wersja i czas sprawdzenia UTC to różne wartości; niedostępność nie oznacza aktualności. Instaluj wyłącznie instalacyjny plik ZIP wydania z jego SHA256.",
+            "text_language": "pl",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Znajdź tę samą kartę i nazwę ustawienia co w formularzu konfiguracji. Każdy wpis wyjaśnia działanie, wymaganą wartość i dostępne opcje. Zmień ustawienia jednego sklepu, a następnie użyj przycisku Zapisz w danej sekcji.",
+      "default": "Wartość domyślna",
+      "expected": "Co wpisać / wybrać",
+      "choices": "Dostępne opcje",
+      "on": "Włączone",
+      "off": "Wyłączone",
+      "empty": "Puste",
+      "action": "Działanie; bez zapisywanej wartości",
+      "dynamic": "Zależnie od sklepu / wybranego języka"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "language": "hr",
+  "title": "Priručnik",
+  "settings": "Postavke",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Postavke",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Dostupnost",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Omogući modul",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Uključite postupak jednostranog raskida. Isključivanje ne briše spremljene zapise raskida ni rješava postojeće zahtjeve.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Funkcija izravnog jednostranog raskida",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Dopustite izravnu ulaznu točku raskida. Time se ne ukida provjera identiteta i narudžbe koju postupak zahtijeva.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Poveznica u podnožju",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Prikažite poveznicu za raskid u podnožju trgovine kad tema iscrtava njezinu kuku. Neovisno je o zajedničkoj atribuciji joobox.eu.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Poveznica u računu kupca",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Prikažite ulaznu točku raskida u računu kupca. Ne čini narudžbe drugih kupaca dostupnima.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Gumb u detaljima narudžbe",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Prikažite gumb za raskid na odgovarajućoj stranici narudžbe. Prihvatljivost i provjera i dalje vrijede.",
+            "text_language": "hr",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Podaci trgovca",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Naziv trgovca",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Pravni ili trgovački naziv trgovca prikazan u dokumentima raskida.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Adresa trgovca",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Puna poštanska adresa trgovca za dokumente, ne automatski adresa povrata paketa.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Registracijski broj trgovca",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Poslovna ili registracijska identifikacija trgovca prikazana kupcu.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "E-pošta trgovca",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Valjana kontaktna adresa e-pošte trgovca za postupak raskida.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Telefon trgovca",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Kontaktni telefon trgovca namijenjen kupcima.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Adresa za povrat",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Puna adresa i upute za vraćanje robe. Provjerite da je stvarno mjesto primitka.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL pravila privatnosti",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Puni URL politike privatnosti trgovine. Povežite informacije relevantne podacima raskida koje prikupljate.",
+            "text_language": "hr",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Sigurnost",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Valjanost pristupne poveznice (minute)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Vrijeme do isteka novog pristupnog linka gosta. Kraći rokovi smanjuju izloženost, ali mogu isteći prije čitanja e-pošte.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Vrijeme neaktivnosti sesije (minute)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Najdulja neaktivnost prije isteka sesije gosta. Ne smije premašiti apsolutno trajanje sesije.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Apsolutno trajanje sesije (minute)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Najdulje ukupno trajanje sesije gosta, čak i uz aktivnost. Mora biti barem jednako roku neaktivnosti.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Pauza prije ponovnog slanja (sekunde)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Najkraće čekanje prije zahtjeva za novu pristupnu e-poštu. Ograničava zatrpavanje e-poštom; ne produljuje valjanost poveznice.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Zahtjevi po IP-u / 15 minuta",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Ograničenje zahtjeva s jedne IP adrese tijekom 15 minuta. Zajedničke kućne ili poslovne IP adrese dijele ograničenje.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Zahtjevi po IP-u / dan",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Dnevno ograničenje zahtjeva po IP adresi; mora biti barem jednako ograničenju kraćeg razdoblja.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Zahtjevi po narudžbi / satu",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Satno ograničenje zahtjeva za jednu narudžbu, neovisno o IP adresi podnositelja.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Zahtjevi po narudžbi / danu",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Dnevno ograničenje zahtjeva po narudžbi; mora biti barem jednako satnom.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Najveća duljina napomene",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Najveća duljina napomene kupca u znakovima. Ne tražite nepotrebne osjetljive podatke u napomeni.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Broj ponovnih pokušaja e-pošte",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Broj ponovnih pokušaja slanja za red e-pošte modula. Nula isključuje ponovne pokušaje; ne dokazuje da je prva poruka stigla primatelju.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Priloži PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Priložite generirani PDF raskida odgovarajućoj e-pošti. Isključeno šalje poruku bez tog privitka; ne briše zabilježeni raskid.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Prefiks reference",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Koristite 1–12 slova, brojeva ili spojnica za nove reference raskida. Označava nove zapise, ne izvorne reference narudžbi trgovine.",
+            "text_language": "hr",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Brisanje podataka",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Potvrda brisanja",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Upišite doslovni DELETE samo kad namjeravate trajno izbrisati podatke modula. Ne unosite ga za obične promjene postavki.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Trajno izbriši podatke modula",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Nepovratno uklonite dokaze raskida modula i povezane podatke. Prvo napravite sigurnosnu kopiju i provjerite obveze zadržavanja. Ovo je zasebna destruktivna radnja, ne gumb Spremi; cilj brisanja nisu narudžbe ni kupci trgovine.",
+            "text_language": "hr",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Operacije",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Spremi",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Spremi primjenjuje trenutačni obrazac na odabranu trgovinu; sama promjena prekidača ili odabira ne sprema. U GA4 spremanje zajedno obuhvaća Mjerenje, Narudžbe i Napredno; zasebni obrasci natpisa spremaju se neovisno.",
+            "text_language": "hr",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Provjera ažuriranja",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Provjerite metapodatke najnovijeg stabilnog izdanja na GitHubu. Ne preuzima niti instalira kod. Instalirana verzija, najnovija verzija i vrijeme provjere u UTC-u različite su vrijednosti; nedostupno nije isto što i ažurno. Instalirajte samo instalacijski ZIP izdanja s njegovim SHA256.",
+            "text_language": "hr",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Pronađite istu karticu i naziv postavke kao u konfiguracijskom obrascu. Svaka stavka objašnjava učinak, što unijeti i dostupne mogućnosti. Promijenite postavke za jednu trgovinu pa upotrijebite gumb Spremi u tom odjeljku.",
+      "default": "Zadana vrijednost",
+      "expected": "Što unijeti / odabrati",
+      "choices": "Dostupne mogućnosti",
+      "on": "Uključeno",
+      "off": "Isključeno",
+      "empty": "Prazno",
+      "action": "Radnja; bez spremljene vrijednosti",
+      "dynamic": "Ovisi o trgovini / odabranom jeziku"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

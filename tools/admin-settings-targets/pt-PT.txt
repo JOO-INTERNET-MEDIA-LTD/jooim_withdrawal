@@ -118,3 +118,8 @@
 118	Utilize isto apenas numa instalação de teste descartável.
 119	Sim
 120	Apenas definições do Back Office
+121	Ligações
+122	Disponibilidade
+123	Comerciante
+124	Segurança
+125	Eliminar dados

@@ -1,0 +1,359 @@
+{
+  "language": "hu",
+  "title": "Kézikönyv",
+  "settings": "Beállítások",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Beállítások",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Elérhetőség",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Modul engedélyezése",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Engedélyezze az elállási munkafolyamatot. A letiltás nem törli a tárolt elállási rekordokat és nem rendezi a meglévő igényeket.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Közvetlen elállási funkció",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Engedélyezze az elállás közvetlen belépési pontját. Ez nem engedi el a munkafolyamat személyazonosság-/rendelésellenőrzését.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Lábléchivatkozás",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Jelenítse meg az elállás indítási hivatkozását a kirakat láblécében, ha a téma megjeleníti a megfelelő horgot. Ez független a közös joobox.eu-megjelöléstől.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Hivatkozás a vásárlói fiókban",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Jelenítse meg az elállási belépési pontot az ügyfélfiókban. Más ügyfelek rendeléseit nem teszi elérhetővé.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Gomb a rendelés részleteiben",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Jelenítsen meg elállásindító gombot a megfelelő rendelési oldalon. A jogosultság és ellenőrzés továbbra is szükséges.",
+            "text_language": "hu",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Kereskedő adatai",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Kereskedő neve",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "A kereskedő jogi/kereskedelmi neve az elállási dokumentumokon.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Kereskedő címe",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "A kereskedő teljes postacíme a dokumentumokhoz; nem automatikusan a visszaküldött csomagok címe.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Kereskedő nyilvántartási száma",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Az ügyfélnek megjelenített kereskedői cég-/nyilvántartási azonosító.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "Kereskedő e-mail-címe",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "A kereskedő érvényes kapcsolati e-mail-címe az elállási folyamathoz.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Kereskedő telefonszáma",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Az ügyfeleknek szánt kereskedői kapcsolati telefonszám.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Visszaküldési cím",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Teljes cím és útmutató a termékek visszaküldéséhez. Ellenőrizze, hogy ez a tényleges átvételi hely.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "Adatvédelmi szabályzat URL-je",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "Az üzlet adatvédelmi szabályzatának teljes URL-je. A gyűjtött elállási adatokra vonatkozó tájékoztatóra hivatkozzon.",
+            "text_language": "hu",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Biztonság",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Hozzáférési hivatkozás élettartama (perc)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Az újonnan kiadott vendéghozzáférési hivatkozás lejárati ideje. A rövidebb korlát csökkenti a kitettséget, de lejárhat az e-mail elolvasása előtt.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Munkamenet inaktivitási korlátja (perc)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "A vendégmunkamenet lejárata előtti legnagyobb inaktivitás. Nem haladhatja meg az abszolút munkamenet-élettartamot.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Abszolút munkamenet-élettartam (perc)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "A vendégmunkamenet teljes maximális időtartama aktivitás mellett is. Legalább az inaktivitási időkorláttal egyenlő legyen.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Újraküldési várakozás (másodperc)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Minimális várakozás újabb hozzáférési e-mail kéréséig. Korlátozza az e-mail-árasztást; nem hosszabbítja a hivatkozás érvényességét.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Kérések IP-nként / 15 perc",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Egy IP-ről érkező kérések korlátja 15 perc alatt. A közös háztartási/céges IP-címek megosztják a keretet.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Kérések IP-nként / nap",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Napi kéréskorlát IP-nként; legalább a rövidebb időablak korlátjával egyenlő legyen.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Kérések rendelésenként / óra",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Óránkénti kéréskorlát egy rendelésre, a kérelmező IP-jétől függetlenül.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Kérések rendelésenként / nap",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Napi kéréskorlát rendelésenként; legalább az óránkénti korláttal egyenlő legyen.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Megjegyzés legnagyobb hossza",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Az ügyfélmegjegyzés legnagyobb hossza karakterben. Ne kérjen szükségtelen érzékeny adatot a megjegyzésben.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "E-mail-újrapróbálások száma",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "A modul e-mail-várólistájának kézbesítési újrapróbálásai. A nulla letiltja az újrapróbálást; nem bizonyítja, hogy az első e-mail eljutott a címzetthez.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "PDF csatolása",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Csatolja a generált elállási PDF-et a megfelelő e-mailhez. A Ki melléklet nélkül küldi a levelet; nem törli a rögzített elállást.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Hivatkozási előtag",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Új elállási hivatkozásokhoz használjon 1–12 betűt, számot vagy kötőjelet. Ez új rekordokat jelöl, nem az eredeti üzleti rendelési hivatkozásokat.",
+            "text_language": "hu",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Adattörlés",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Törlés megerősítése",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "A szó szerinti DELETE értéket csak akkor írja be, ha a moduladatok végleges törlését kívánja. Szokásos beállításmódosításkor ne adja meg.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Moduladatok végleges törlése",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Visszafordíthatatlanul távolítsa el a modul elállási bizonyítékait és kapcsolódó adatait. Előbb készítsen mentést és ellenőrizze a megőrzési kötelezettségeket. Ez külön romboló művelet, nem a Mentés gomb; nem az üzlet rendeléseinek/ügyfeleinek törlése a célja.",
+            "text_language": "hu",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Műveletek",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Mentés",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "A Mentés az aktuális űrlapot alkalmazza a kiválasztott üzletre; egy kapcsoló vagy lista módosítása önmagában nem ment. A GA4-ben a Mérés, Rendelések és Speciális együtt mentődik; a szalag külön űrlapjai egymástól függetlenül mentődnek.",
+            "text_language": "hu",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Frissítés ellenőrzése",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Ellenőrizze a legújabb stabil GitHub-kiadás metaadatait. Nem tölt le és nem telepít kódot. A telepített verzió, a legújabb verzió és az ellenőrzés UTC-időpontja külön értékek; az elérhetetlenség nem jelent naprakészséget. Csak a kiadás telepítési ZIP-jét telepítse a hozzá tartozó SHA256-tal.",
+            "text_language": "hu",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Keresse meg a konfigurációs űrlappal azonos lapot és beállításnevet. Minden bejegyzés ismerteti a hatást, a megadandó értéket és a lehetőségeket. Egy üzlet beállításait módosítsa, majd használja az adott rész Mentés gombját.",
+      "default": "Alapértelmezett érték",
+      "expected": "Mit kell megadni / kiválasztani",
+      "choices": "Elérhető lehetőségek",
+      "on": "Bekapcsolva",
+      "off": "Kikapcsolva",
+      "empty": "Üres",
+      "action": "Művelet; nincs mentett érték",
+      "dynamic": "Az áruháztól / a kiválasztott nyelvtől függ"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}

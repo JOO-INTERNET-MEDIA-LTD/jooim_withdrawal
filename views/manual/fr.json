@@ -1,0 +1,359 @@
+{
+  "language": "fr",
+  "title": "Manuel",
+  "settings": "Paramètres",
+  "scope": "",
+  "examples": "",
+  "sections": [
+    {
+      "id": "configuration",
+      "title": "Paramètres",
+      "text": ""
+    }
+  ],
+  "configuration": {
+    "schema": 2,
+    "groups": [
+      {
+        "id": "availability",
+        "title": "Disponibilité",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_ENABLED",
+            "label": "Activer le module",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ENABLED",
+            "text": "Activez le processus de rétractation. Le désactiver n’efface pas les enregistrements de rétractation et ne règle pas les demandes existantes.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "label": "Fonction de rétractation directe",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_DIRECT_FUNCTION",
+            "text": "Autorisez le point d’entrée direct de rétractation. Cela ne dispense pas de la vérification d’identité et de commande exigée par le processus.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "label": "Lien de pied de page",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_FOOTER_LINK",
+            "text": "Affichez le lien d’accès à la rétractation dans le pied de page lorsque le thème rend son hook. Cela est indépendant de l’attribution commune joobox.eu.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "label": "Lien dans le compte client",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ACCOUNT_LINK",
+            "text": "Affichez l’accès à la rétractation dans le compte client. Cela ne rend pas accessibles les commandes d’autres clients.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "label": "Bouton dans le détail de la commande",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_BUTTON",
+            "text": "Affichez un bouton de rétractation sur la page de commande concernée. Les conditions d’admissibilité et de vérification restent applicables.",
+            "text_language": "fr",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "trader",
+        "title": "Coordonnées du commerçant",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "label": "Nom du marchand",
+            "type": "text",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_NAME",
+            "expected": "≤ 255",
+            "text": "Dénomination légale ou commerciale du marchand figurant sur les documents de rétractation.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "label": "Adresse du marchand",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ADDRESS",
+            "expected": "≤ 1000",
+            "text": "Adresse postale complète du marchand pour les documents, pas automatiquement une adresse de retour des colis.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "label": "Numéro d’immatriculation du marchand",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_ID",
+            "expected": "≤ 255",
+            "text": "Identifiant de société ou d’immatriculation du marchand présenté au client.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "label": "E-mail du marchand",
+            "type": "email",
+            "default": null,
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_EMAIL",
+            "expected": "≤ 254",
+            "text": "Adresse e-mail de contact valide du marchand pour le processus de rétractation.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "label": "Téléphone du marchand",
+            "type": "text",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_MERCHANT_PHONE",
+            "expected": "≤ 64",
+            "text": "Téléphone de contact du marchand destiné aux clients.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "label": "Adresse de retour",
+            "type": "textarea",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_RETURN_ADDRESS",
+            "expected": "≤ 2000",
+            "text": "Adresse complète et instructions de retour des marchandises. Vérifiez qu’il s’agit du lieu de réception effectif.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "label": "URL de la politique de confidentialité",
+            "type": "url",
+            "default": "",
+            "meaning": "field:JOOIM_WITHDRAWAL_PRIVACY_URL",
+            "expected": "≤ 2048",
+            "text": "URL complète de la politique de confidentialité de cette boutique. Renvoyez vers les informations pertinentes pour les données de rétractation collectées.",
+            "text_language": "fr",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Sécurité",
+        "fields": [
+          {
+            "name": "JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "label": "Durée de validité du lien d’accès (minutes)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_MAGIC_TTL_MINUTES",
+            "expected": "5–240",
+            "text": "Délai avant expiration d’un nouveau lien d’accès invité. Des limites plus courtes réduisent l’exposition mais peuvent expirer avant la lecture de l’e-mail.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "label": "Délai d’inactivité de session (minutes)",
+            "type": "number",
+            "default": 30,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_IDLE_MINUTES",
+            "expected": "5–240",
+            "text": "Inactivité maximale avant expiration de la session invité. Ne doit pas dépasser la durée absolue de session.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "label": "Durée absolue de session (minutes)",
+            "type": "number",
+            "default": 120,
+            "meaning": "field:JOOIM_WITHDRAWAL_SESSION_MAX_MINUTES",
+            "expected": "15–1440",
+            "text": "Durée totale maximale de la session invité, même en cas d’activité. Doit être au moins égale au délai d’inactivité.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "label": "Délai avant nouvel envoi (secondes)",
+            "type": "number",
+            "default": 60,
+            "meaning": "field:JOOIM_WITHDRAWAL_RESEND_COOLDOWN_SECONDS",
+            "expected": "30–3600",
+            "text": "Attente minimale avant de pouvoir demander un nouvel e-mail d’accès. Limite les envois massifs ; ne prolonge pas la validité du lien.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "label": "Requêtes par IP / 15 minutes",
+            "type": "number",
+            "default": 5,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_15M_LIMIT",
+            "expected": "1–1000",
+            "text": "Limite de requêtes depuis une IP sur 15 minutes. Les IP partagées de foyers ou d’entreprises partagent cette limite.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "label": "Requêtes par IP / jour",
+            "type": "number",
+            "default": 20,
+            "meaning": "field:JOOIM_WITHDRAWAL_IP_DAY_LIMIT",
+            "expected": "1–10000",
+            "text": "Limite quotidienne de requêtes par IP ; doit être au moins égale à la limite de la fenêtre plus courte.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "label": "Requêtes par commande / heure",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_HOUR_LIMIT",
+            "expected": "1–100",
+            "text": "Limite horaire de requêtes pour une commande, indépendamment de l’IP demandeuse.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "label": "Requêtes par commande / jour",
+            "type": "number",
+            "default": 10,
+            "meaning": "field:JOOIM_WITHDRAWAL_ORDER_DAY_LIMIT",
+            "expected": "1–1000",
+            "text": "Limite quotidienne de requêtes par commande ; doit être au moins égale à la limite horaire.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "label": "Longueur maximale de la note",
+            "type": "number",
+            "default": 2000,
+            "meaning": "field:JOOIM_WITHDRAWAL_NOTE_MAX_LENGTH",
+            "expected": "250–10000",
+            "text": "Longueur maximale de la note client en caractères. Ne demandez aucune information sensible inutile dans la note.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "label": "Nombre de nouvelles tentatives d’envoi d’e-mail",
+            "type": "number",
+            "default": 3,
+            "meaning": "field:JOOIM_WITHDRAWAL_RETRY_COUNT",
+            "expected": "0–10",
+            "text": "Nombre de nouvelles tentatives d’envoi pour la file d’e-mails du module. Zéro les désactive ; cela ne prouve pas que le premier e-mail est arrivé au destinataire.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "label": "Joindre le PDF",
+            "type": "switch",
+            "default": true,
+            "meaning": "field:JOOIM_WITHDRAWAL_ATTACH_PDF",
+            "text": "Joignez le PDF de rétractation généré à l’e-mail concerné. Désactivé envoie l’e-mail sans cette pièce jointe ; cela ne supprime pas la rétractation enregistrée.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "label": "Préfixe de référence",
+            "type": "text",
+            "default": "WD",
+            "meaning": "field:JOOIM_WITHDRAWAL_REFERENCE_PREFIX",
+            "text": "Utilisez 1–12 lettres, chiffres ou tirets pour les nouvelles références de rétractation. Cela identifie les nouveaux enregistrements, pas les références originales des commandes de boutique.",
+            "text_language": "fr",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "removal",
+        "title": "Suppression",
+        "fields": [
+          {
+            "name": "purge_confirmation",
+            "label": "Confirmation de suppression",
+            "type": "text",
+            "default": "",
+            "meaning": "field:purge_confirmation",
+            "text": "Saisissez le texte littéral DELETE uniquement pour une suppression définitive des données du module. Ne le saisissez pas pour modifier des réglages ordinaires.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "purgeJooimWithdrawalData",
+            "label": "Supprimer définitivement les données du module",
+            "type": "action",
+            "default": null,
+            "meaning": "field:purgeJooimWithdrawalData",
+            "text": "Supprimez irréversiblement les preuves de rétractation du module et les données associées. Sauvegardez et vérifiez d’abord les obligations de conservation. Cette action destructive est distincte du bouton Enregistrer ; elle ne vise pas les commandes ou clients de la boutique.",
+            "text_language": "fr",
+            "options": []
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "Opérations",
+        "fields": [
+          {
+            "name": "@save",
+            "label": "Enregistrer",
+            "type": "action",
+            "default": null,
+            "meaning": "save",
+            "text": "Enregistrer applique le formulaire actuel à la boutique sélectionnée ; modifier un interrupteur ou une sélection ne suffit pas. Dans GA4, l’enregistrement couvre ensemble Mesure, Commandes et Avancé ; les formulaires distincts de la bannière sont enregistrés indépendamment.",
+            "text_language": "fr",
+            "options": []
+          },
+          {
+            "name": "@updates",
+            "label": "Vérification des mises à jour",
+            "type": "action",
+            "default": null,
+            "meaning": "update",
+            "text": "Vérifiez les métadonnées de la dernière version stable sur GitHub. Aucun code n’est téléchargé ni installé. La version installée, la dernière version et l’heure de vérification UTC sont des valeurs différentes ; indisponible ne signifie pas à jour. Installez uniquement le ZIP d’installation de la version, accompagné de son SHA256.",
+            "text_language": "fr",
+            "options": []
+          }
+        ]
+      }
+    ],
+    "captions": {
+      "intro": "Retrouvez le même onglet et le même nom de réglage que dans le formulaire de configuration. Chaque entrée explique son effet, la valeur à saisir et les choix disponibles. Modifiez les réglages d’une boutique, puis utilisez le bouton Enregistrer de la section concernée.",
+      "default": "Valeur par défaut",
+      "expected": "Que saisir / choisir",
+      "choices": "Choix disponibles",
+      "on": "Activé",
+      "off": "Désactivé",
+      "empty": "Vide",
+      "action": "Action ; aucune valeur enregistrée",
+      "dynamic": "Selon la boutique / la langue sélectionnée"
+    },
+    "missing_translations": [],
+    "source_language": "en"
+  }
+}
